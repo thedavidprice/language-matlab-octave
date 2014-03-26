@@ -1,0 +1,10 @@
+'.source.matlab':
+  'editor':
+    'commentStart': '% '
+    'increaseIndentPattern': '(?x)^\\s*\n    \\b(\n       function\n       |if|else|elseif\n       |switch|case|otherwise\n       |for|parfor|while\n       |try|catch\n       |unwind_protect\n\t)\\b'
+    'decreaseIndentPattern': '^\\s*\\b(end\\w*|catch|else|elseif|case|otherwise)\\b'
+'.source.octave':
+  'editor':
+    'commentStart': '% '
+    'increaseIndentPattern': '^\\s*(catch|else|elseif|for|parfor|function|if|switch|while|try).*'
+    'decreaseIndentPattern': '^\\s*(catch|else|elseif|end|endfunction|endif|endswitch|endwhile|endfor|endparfor|endtry)\\b'

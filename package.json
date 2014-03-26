@@ -1,0 +1,12 @@
+{
+  "name": "language-matlab-octave",
+  "version": "0.0.0",
+  "description": "Support for Matlab / Octave languages converted from TextMate Bundle",
+  "repository": "https://github.com/atom/language-matlab-octave",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

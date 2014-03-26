@@ -1,0 +1,113 @@
+'.source.matlab':
+  'Octave function':
+    'prefix': 'octfun'
+    'body': '## Copyright (C) ${TM_YEAR} $TM_FULLNAME\n##\n## This program is free software; you can redistribute it and/or modify\n## it under the terms of the GNU General Public License as published by\n## the Free Software Foundation; either version 2 of the License, or\n## (at your option) any later version.\n##\n## This program is distributed in the hope that it will be useful,\n## but WITHOUT ANY WARRANTY; without even the implied warranty of\n## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n## GNU General Public License for more details.\n##\n## You should have received a copy of the GNU General Public License\n## along with this program; If not, see <http://www.gnu.org/licenses/>.\n\n## -*- texinfo -*-\n## @deftypefn {Function File} {${1:Outputs} = } ${2:Function Name} (${3:Input Arguments)\n## ${4:Short Description}\n##\n## ${5:Long Description}\n##\n## @seealso{${6:functions}}\n## @end deftypefn\n\n## Author:  $TM_FULLNAME\n\n$0\n\nendfunction'
+  'switch … case … end':
+    'prefix': 'switch'
+    'body': 'switch ${1:var}\ncase ${2:\'${3:string}\'}\n\t$0\n`if [[ $TM_USE_OCTAVE -ne \'0\' ]]\n\tthen echo "endswitch"\nelse\n\techo "end"\nfi`'
+  'switch … case … otherwise … end':
+    'prefix': 'switcho'
+    'body': 'switch ${1:var}\n\tcase ${2:\'${3:string}\'}\n\t\t$4\n\totherwise\n\t\t$0\n`if [[ $TM_USE_OCTAVE -ne \'0\' ]]\n\tthen echo "endswitch"\nelse\n\techo "end"\nfi`'
+  'try … catch … end':
+    'prefix': 'try'
+    'body': 'try \n\t$1\ncatch \n\t$0\n`if [[ $TM_USE_OCTAVE -ne \'0\' ]]\n\tthen echo "end_try_catch"\nelse\n\techo "end"\nfi`'
+  'unwind_protect … cleanup … end':
+    'prefix': 'unwind'
+    'body': 'unwind_protect \n\t$1\nunwnd_protect_cleanup \n\t$0\nend_unwind_protect'
+'.source.matlab, .source.octave':
+  '^':
+    'prefix': '^'
+    'body': '^($1) $2'
+  'case':
+    'prefix': 'case'
+    'body': 'case ${2:\'${3:string}\'}\n\t$0'
+  'disp sprintf':
+    'prefix': 'dsp'
+    'body': 'disp(sprintf(\'${1:%s}\\\\n\'${1/([^%]|%%)*(%.)?.*/(?2:, :\\))/}$2${1/([^%]|%%)*(%.)?.*/(?2:\\))/});'
+  'disp':
+    'prefix': 'disp'
+    'body': 'disp(\'${1:Text}\');'
+  'dlmwrite':
+    'prefix': 'dlmwrite'
+    'body': 'dlmwrite(\'${1:filename}.dat\', [${2:variables}], ${3:\'${4:delimiter}\', \'${5:\\t}\'});\n$0'
+  'else':
+    'prefix': 'else'
+    'body': 'else\n\t${1:body}'
+  'elseif':
+    'prefix': 'elseif'
+    'body': 'elseif ${1:condition}\n\t$0'
+  'error':
+    'prefix': 'error'
+    'body': 'error(\'${1:Description}\');'
+  'exp':
+    'prefix': 'e'
+    'body': 'exp($1) $2'
+  'for … end cell strings':
+    'prefix': 'fors'
+    'body': 'for ${1:s} = transpose(${2:strings}(:)); $1 = $1{1};\n\t$0\n`if [[ $TM_USE_OCTAVE -ne \'0\' ]]\n\tthen echo "endfor"\nelse\n\techo "end"\nfi`; clear $1;'
+  'for … end':
+    'prefix': 'for'
+    'body': 'for ${1:ii}=${2:1}${3::${4:n}}\n\t$0\n`if [[ $TM_USE_OCTAVE -ne \'0\' ]]\n\tthen echo "endfor"\nelse\n\techo "end"\nfi`'
+  'fprintf':
+    'prefix': 'fpr'
+    'body': 'fprintf(${1:fid}, \'${2:%s}\\\\n\'${2/([^%]|%%)*(%.)?.*/(?2:, :\\);)/}$3${2/([^%]|%%)*(%.)?.*/(?2:\\);)/}'
+  'function':
+    'prefix': 'function'
+    'body': 'function ${1:out} = ${2:?${TM_FILENAME/\\.m//:f}}(${3:in})\n% ${2/.*/\\U$0/} ${4:Description}\n%\t${1/.*/\\U$0/} = ${2/.*/\\U$0/}(${6:${3/.*/\\U$0/}})\n%\n% ${5:Long description}\n\n$0\n\n`if [[ $TM_CLOSE_FUNCTIONS -ne \'0\' ]]\n\tthen\n\tif [[ $TM_USE_OCTAVE -ne \'0\' ]]\n\t\tthen echo "endfunction"\n\telse\n\t\techo "end ${TM_COMMENT_START}function" \n\tfi\nfi`\n'
+  'get':
+    'prefix': 'get'
+    'body': 'get(${1:gca},\'${2:PropertyName}\');'
+  'griddata':
+    'prefix': 'griddata'
+    'body': 'griddata(${1:xx}, ${2:yy}, ${3:zz}, ${4:xi}, ${5:yi}); '
+  'if … else …end':
+    'prefix': 'ife'
+    'body': 'if ${1:condition}\n\t$2\nelse\n\t$3\n`if [[ $TM_USE_OCTAVE -ne \'0\' ]]\n\tthen echo "endif"\nelse\n\techo "end"\nfi`'
+  'if … elseif … end':
+    'prefix': 'ifeif'
+    'body': 'if ${1:condition}\n\t${2:body}\nelseif ${3:condition}\n\t${4:body}\nelse\n\t${5:body}\nend\n'
+  'if … end':
+    'prefix': 'if'
+    'body': 'if ${1:condition}\n\t$0\n`if [[ $TM_USE_OCTAVE -ne \'0\' ]]\n\tthen echo "endif"\nelse\n\techo "end"\nfi`'
+  'line':
+    'prefix': 'line'
+    'body': 'line(${1:xvector},${2:yvector}${3:,\'Color\',\'${4:b}\',\'LineWidth\',${5:1},\'LineStyle\',\'${6:-}\'})\n'
+  'nargchk':
+    'prefix': 'nargchk'
+    'body': 'error(nargchk(${1:min}, ${2:max}, ${3:nargin}, `if [[ $TM_USE_OCTAVE -eq \'0\' ]]; then\n\techo -n "\'struct\'"\nfi` ));\n'
+  'set':
+    'prefix': 'set'
+    'body': 'set(${1:get(${2:gca},\'${3:PropertyName}\')},\'${4:PropertyName}\',${5:PropertyValue});'
+  'small function':
+    'prefix': 'f'
+    'body': 'function ${1:out} = ${2:f}(${3:in})\n\t$0\n`if [[ $TM_CLOSE_FUNCTIONS -ne \'0\' ]]\n\tthen\n\tif [[ $TM_USE_OCTAVE -ne \'0\' ]]\n\t\tthen echo "endfunction"\n\telse\n\t\techo "end"\n\tfi\nfi`'
+  'sprintf':
+    'prefix': 'spr'
+    'body': 'sprintf(\'${1:%s}\\\\n\'${1/([^%]|%%)*(%.)?.*/(?2:, :\\);)/}$2${1/([^%]|%%)*(%.)?.*/(?2:\\);)/}'
+  'title':
+    'prefix': 'zla'
+    'body': 'set(get(gca,\'Title\'),\'String\',${1:\'${2}\'});'
+  'unix':
+    'prefix': 'uni'
+    'body': '[${1:s},${2:w}] = unix(\'${3:Unix commands}\');'
+  'warning':
+    'prefix': 'war'
+    'body': 'warning([\'${1:Description}\']);'
+  'while':
+    'prefix': 'whi'
+    'body': 'while ${1:condition}\n\t${2:body}\nend\n'
+  'xlabel':
+    'prefix': 'xla'
+    'body': 'set(get(gca,\'XLabel\'),\'String\',${1:\'${2}\'});'
+  'xtick':
+    'prefix': 'xti'
+    'body': 'set(gca,\'XTick\',${1:[${2}]});'
+  'ylabel':
+    'prefix': 'yla'
+    'body': 'set(get(gca,\'YLabel\'),\'String\',${1:\'${2}\'});'
+  'ytick':
+    'prefix': 'yti'
+    'body': 'set(gca,\'YTick\',${1:[${2}]});'
+  'zlabel':
+    'prefix': 'zla'
+    'body': 'set(get(gca,\'ZLabel\'),\'String\',${1:\'${2}\'});'
