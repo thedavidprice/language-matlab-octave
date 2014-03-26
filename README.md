@@ -1,4 +1,4 @@
 # language-matlab-octave package
 
-Support for Matlab / Octave languages converted from TextMate Bundle:
+Atom.io language support for Matlab / Octave converted from TextMate Bundle:
 https://github.com/textmate/matlab.tmbundle
