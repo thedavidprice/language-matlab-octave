@@ -1,6 +1,6 @@
 {
   "name": "language-matlab-octave",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Support for Matlab / Octave languages converted from TextMate Bundle",
   "keywords": [
     "MATLAB",
