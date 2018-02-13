@@ -322,7 +322,7 @@ repository:
     repository:
       contants:
         comment: "MATLAB constants"
-        match: "(?<!\\.)\\b(eps|false|Inf|inf|intmax|intmin|namelengthmax|NaN|nan|on|off|realmax|realmin|true)\\b"
+        match: "(?<!\\.)\\b(eps|false|Inf|inf|intmax|intmin|namelengthmax|NaN|nan|on|off|realmax|realmin|private|true)\\b"
         name: "constant.language.matlab"
       keywords:
         patterns: [
@@ -333,7 +333,7 @@ repository:
           }
           {
             comment: "Control keywords"
-            match: "(?<!\\.)\\b(break|case|catch|continue|else|elseif|end|for|parfor|if|otherwise|pause|rethrow|return|start|startat|stop|switch|try|wait|while)\\b"
+            match: "(?<!\\.)\\b(break|case|catch|continue|else|elseif|end|for|parfor|if|otherwise|pause|rethrow|return|start|startat|stop|properties|switch|try|wait|while)\\b"
             name: "keyword.control.matlab"
           }
           {
@@ -353,7 +353,7 @@ repository:
           }
           {
             comment: "Other keywords"
-            match: "(?<!\\.)\\b(addOptional|addParamValue|addRequired|addtodate|ans|arrayfun|assert|blanks|builtin|calendar|cell|celldisp|cellfun|cellplot|clock|cputime|createCopy|datatipinfo|date|datenum|datestr|datevec|dbmex|deal|deblank|depdir|depfun|echo|eomday|error|etime|eval|evalc|evalin|exist|feval|fieldnames|findstr|func2str|genvarname|getfield|global|inferiorto|inmem|intersect|intwarning|lasterr|lasterror|lastwarn|loadobj|lower|methods|methodsview|mex|mexext|mfilename|mlock|munlock|nargchk|nargoutchk|now|orderfields|parse|pcode|regexp|regexpi|regexprep|regexptranslate|rmfield|run|saveobj|setdiff|setfield|sprintf|sscanf|strcat|strcmp|strcmpi|strfind|strings|strjust|strmatch|strncmp|strncmpi|strread|strrep|strtok|strtrim|structfun|strvcat|subsasgn|subsindex|subsref|substruct|superiorto|swapbytes|symvar|tic|timer|timerfind|timerfindall|toc|typecast|upper|warning|weekday|who|whos)\\b"
+            match: "(?<!\\.)\\b(addOptional|addParamValue|addRequired|Access|SetAccess|GetAccess|Dependent|Hidden|addtodate|ans|arrayfun|assert|blanks|builtin|calendar|cell|celldisp|cellfun|cellplot|clock|cputime|createCopy|datatipinfo|date|datenum|datestr|datevec|dbmex|deal|deblank|depdir|depfun|echo|eomday|error|etime|eval|evalc|evalin|exist|feval|fieldnames|findstr|func2str|genvarname|getfield|global|inferiorto|inmem|intersect|intwarning|lasterr|lasterror|lastwarn|loadobj|lower|methods|methodsview|mex|mexext|mfilename|mlock|munlock|nargchk|nargoutchk|now|orderfields|parse|pcode|regexp|regexpi|regexprep|regexptranslate|rmfield|run|saveobj|setdiff|setfield|sprintf|sscanf|strcat|strcmp|strcmpi|strfind|strings|strjust|strmatch|strncmp|strncmpi|strread|strrep|strtok|strtrim|structfun|strvcat|subsasgn|subsindex|subsref|substruct|superiorto|swapbytes|symvar|tic|timer|timerfind|timerfindall|toc|typecast|upper|warning|weekday|who|whos)\\b"
             name: "keyword.other.matlab"
           }
         ]
@@ -371,7 +371,7 @@ repository:
           }
           {
             comment: "Storage types"
-            match: "(?<!\\.)\\b(class|double|function|functions|input|inputname|inputParser|int16|int32|int64|int8|logical|single|struct|uint16|uint32|uint64|uint8)\\b"
+            match: "(?<!\\.)\\b(class|double|classdef|function|functions|input|inputname|inputParser|int16|int32|int64|int8|logical|single|struct|uint16|uint32|uint64|uint8)\\b"
             name: "storage.type.matlab"
           }
         ]
