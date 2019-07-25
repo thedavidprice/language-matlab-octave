@@ -6,6 +6,8 @@ https://github.com/textmate/matlab.tmbundle
 The syntax highlighting comes from the MathWorks TextMate grammar:
 https://github.com/mathworks/MATLAB-Language-grammar
 
+![language-matlab-octave-highlighting](https://user-images.githubusercontent.com/43882944/61577281-29e12680-aab3-11e9-900d-527a0afa8e37.png)
+
 ## Release 0.2+
 Release version 0.2+ updated using the most recent version of textmate tmbundle (it's, ahem, been about 4 years since last full update, which looks like 2 years out of sync with textmate -- sorry about that). Appears to be mostly minor changes and file formatting updates. Please do report any new issues as/if needed.
 
@@ -25,13 +27,3 @@ Change `name: "meta.class.matlab"` to `name: ""`. This prevents atom from improp
 
 1. Add in function highlighting from functions.cson
 MATLAB-Language-grammar does not highlight MATLAB functions like the TextMate grammar. The file `functions.cson` contains the functions from the TextMate grammar to be highlighted. Just add the components of this file to the corresponding places in `grammars/m.cson`.
-
-## Testing/Verifying Grammar Changes
-See the MATLAB file `highlighting.m` for MATLAB code snippets to test syntax highlighting changes. Supposing you've updated `grammars/m.cson` you can test your changes by doing the following:
-```bash
-cd your-repo-clone
-apm remove language-matlab-octave
-apm link .
-atom .
-```
-Open `highlighting.m` and ensure that the syntax highlighting is as desired. If you fix something specific consider adding a code snippet to that file locking down your change for future testing.
