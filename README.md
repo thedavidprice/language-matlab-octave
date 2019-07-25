@@ -25,5 +25,15 @@ Repo contains init travis.yml and setup to run testing on push/PR. However, **no
 1. Apply an Atom-specific patch
 Change `name: "meta.class.matlab"` to `name: ""`. This prevents atom from improperly coloring of all class contents.
 
-1. Add in function highlighting from functions.cson
-MATLAB-Language-grammar does not highlight MATLAB functions like the TextMate grammar. The file `functions.cson` contains the functions from the TextMate grammar to be highlighted. Just add the components of this file to the corresponding places in `grammars/m.cson`.
+1. Add in function highlighting from the current `grammars/m.cson`
+MATLAB-Language-grammar does not highlight MATLAB functions like the TextMate grammar. The file `grammars/m.cson` contains the functions from the TextMate grammar to be highlighted. Just diff the generated grammar to see the existing function highlighting definitions.
+
+## Testing/Verifying Grammar Changes
+See the MATLAB file `highlighting-test.m` for MATLAB code snippets to test syntax highlighting changes. Supposing you've updated `grammars/m.cson` you can test your changes by doing the following:
+```bash
+cd your-repo-clone
+apm remove language-matlab-octave
+apm link .
+atom .
+```
+Open `highlighting-test.m` and ensure that the syntax highlighting is as desired. If you fix something specific consider adding a code snippet to that file locking down your change for future testing.
