@@ -11,9 +11,6 @@ https://github.com/mathworks/MATLAB-Language-grammar
 ## Release 0.2+
 Release version 0.2+ updated using the most recent version of textmate tmbundle (it's, ahem, been about 4 years since last full update, which looks like 2 years out of sync with textmate -- sorry about that). Appears to be mostly minor changes and file formatting updates. Please do report any new issues as/if needed.
 
-## CI Dev Note
-Repo contains init travis.yml and setup to run testing on push/PR. However, **no unit tests are run** as this is just a placeholder until tests are written in the future. Might be overkill at this point...
-
 ## Converting the MathWorks TextMate Grammar
 1. Clone and convert the grammar
     ```bash
@@ -37,3 +34,4 @@ apm link .
 atom .
 ```
 Open `highlighting-test.m` and ensure that the syntax highlighting is as desired. If you fix something specific consider adding a code snippet to that file locking down your change for future testing.
+
