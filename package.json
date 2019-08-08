@@ -1,6 +1,6 @@
 {
   "name": "language-matlab-octave",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "description": "MATLAB grammar support from official Mathworks bundle (used on Github.com). Octave support converted from TextMate.",
   "keywords": [
     "MATLAB",
