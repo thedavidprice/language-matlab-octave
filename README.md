@@ -1,7 +1,7 @@
-# Atom.io Package for Matlab and Octave Language Support
+# Atom.io Package for MATLAB and Octave Language Support
 
 ## Version 1.0.0+ Major Update
-**Breaking change:** as of v1 release August 2019, migrated Matlab grammar source from TextMate to official Matlab support mathworks/MATLAB-Language-grammar. This fixed many reported issues and improved Matlab highlighting to match official [github/linguist](https://github.com/github/linguist) used on Github.com.
+**Breaking change:** as of v1 release August 2019, migrated MATLAB grammar source from TextMate to official MATLAB support mathworks/MATLAB-Language-grammar. This fixed many reported issues and improved MATLAB highlighting to match official [github/linguist](https://github.com/github/linguist) used on Github.com.
 
 Octave grammar source remains unchanged.
 
@@ -9,18 +9,18 @@ Octave grammar source remains unchanged.
 Octave grammar is converted from TextMate Bundle and remains unchanged from v0 to v1. Last update was v0.2. See:
 https://github.com/textmate/matlab.tmbundle
 
-### Matlab language Support (v1.0.0+)
+### MATLAB language Support (v1.0.0+)
 The syntax highlighting comes from the MathWorks TextMate grammar:
 https://github.com/mathworks/MATLAB-Language-grammar
 
 #### Commit Hash: MATLAB-Language-grammar used for current grammar version
-https://github.com/mathworks/MATLAB-Language-grammar/tree/5b0013fbf2eb490d1fde8832aa15152f4d100515
+https://github.com/mathworks/MATLAB-Language-grammar/tree/5915f67761daa34b5f0fb9daf3d266198219a472
 
 #### Screenshot Example: preview of included file `highlighting-test.m`_
 ![language-matlab-octave-highlighting](https://user-images.githubusercontent.com/43882944/61577281-29e12680-aab3-11e9-900d-527a0afa8e37.png)
 
 
-## Process for Updating Matlab Grammar
+## Process for Updating MATLAB Grammar
 ### Converting the MathWorks TextMate Grammar
 1. Clone, convert, and update the grammar:
     ```bash
