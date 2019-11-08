@@ -334,20 +334,7 @@ repository:
           							(^\\s*)								# Leading whitespace
           							(classdef)
           							\\b\\s*
-          							(									# Optional attributes
-          								\\( [^)]* \\)
-          							)?
-          							\\s*
-          							(
-          								([a-zA-Z][a-zA-Z0-9_]*)			# Class name
-          								(?:								# Optional inheritance
-          									\\s*
-          									(<)
-          									\\s*
-          									([^%]*)
-          								)?
-          							)
-          							\\s*($|(?=%))
+          							(.*)
 
         '''
         beginCaptures:
@@ -356,38 +343,62 @@ repository:
           "3":
             patterns: [
               {
-                match: "[a-zA-Z][a-zA-Z0-9_]*"
-                name: "variable.parameter.class.matlab"
-              }
-              {
-                begin: "=\\s*"
-                end: ",|(?=\\))"
-                patterns: [
-                  {
-                    match: "true|false"
-                    name: "constant.language.boolean.matlab"
-                  }
-                  {
-                    include: "#string"
-                  }
-                ]
-              }
-            ]
-          "4":
-            name: "meta.class-declaration.matlab"
-          "5":
-            name: "entity.name.section.class.matlab"
-          "6":
-            name: "keyword.operator.other.matlab"
-          "7":
-            patterns: [
-              {
-                match: "[a-zA-Z][a-zA-Z0-9_]*(\\.[a-zA-Z][a-zA-Z0-9_]*)*"
-                name: "entity.other.inherited-class.matlab"
-              }
-              {
-                match: "&"
-                name: "keyword.operator.other.matlab"
+                match: '''
+                  (?x)
+                  										(									# Optional attributes
+                  											 \\( [^)]* \\)
+                  										)?
+                  										\\s*
+                  										(
+                  											([a-zA-Z][a-zA-Z0-9_]*)			# Class name
+                  											(?:								# Optional inheritance
+                  												\\s*
+                  												(<)
+                  												\\s*
+                  												([^%]*)
+                  											)?
+                  										)
+                  										\\s*($|(?=(%|...)))
+
+                '''
+                captures:
+                  "1":
+                    patterns: [
+                      {
+                        match: "[a-zA-Z][a-zA-Z0-9_]*"
+                        name: "variable.parameter.class.matlab"
+                      }
+                      {
+                        begin: "=\\s*"
+                        end: ",|(?=\\))"
+                        patterns: [
+                          {
+                            match: "true|false"
+                            name: "constant.language.boolean.matlab"
+                          }
+                          {
+                            include: "#string"
+                          }
+                        ]
+                      }
+                    ]
+                  "2":
+                    name: "meta.class-declaration.matlab"
+                  "3":
+                    name: "entity.name.section.class.matlab"
+                  "4":
+                    name: "keyword.operator.other.matlab"
+                  "5":
+                    patterns: [
+                      {
+                        match: "[a-zA-Z][a-zA-Z0-9_]*(\\.[a-zA-Z][a-zA-Z0-9_]*)*"
+                        name: "entity.other.inherited-class.matlab"
+                      }
+                      {
+                        match: "&"
+                        name: "keyword.operator.other.matlab"
+                      }
+                    ]
               }
             ]
         end: "^\\s*(end)\\b"
@@ -439,21 +450,7 @@ repository:
             name: "meta.properties.matlab"
             patterns: [
               {
-                comment: "     1 property name           2 size          3 type                       4 validator function"
-                match: "^\\s*([a-zA-Z][a-zA-Z0-9_]*)\\s*(\\([^\\)]*\\))?\\s*([a-zA-Z][a-zA-Z0-9_\\.]*)?\\s*({[^}]*})?\\s*(.*)$"
-                captures:
-                  "2":
-                    name: "storage.type.matlab"
-                  "3":
-                    name: "storage.type.matlab"
-                  "4":
-                    name: "storage.type.matlab"
-                  "5":
-                    patterns: [
-                      {
-                        include: "$self"
-                      }
-                    ]
+                include: "#validators"
               }
               {
                 include: "$self"
@@ -710,6 +707,42 @@ repository:
             ]
           }
           {
+            begin: '''
+              (?x)
+              									(^\\s*)								# Leading whitespace
+              									(arguments)\\b(.*)$
+              									\\s*
+              									(									# Optional attributes
+              										\\( [^)]* \\)
+              									)?
+              									\\s*($|(?=%))
+
+            '''
+            beginCaptures:
+              "2":
+                name: "keyword.control.arguments.matlab"
+              "3":
+                patterns: [
+                  {
+                    match: "[a-zA-Z][a-zA-Z0-9_]*"
+                    name: "variable.parameter.arguments.matlab"
+                  }
+                ]
+            end: "^\\s*(end)\\b"
+            endCaptures:
+              "1":
+                name: "keyword.control.end.arguments.matlab"
+            name: "meta.arguments.matlab"
+            patterns: [
+              {
+                include: "#validators"
+              }
+              {
+                include: "$self"
+              }
+            ]
+          }
+          {
             include: "$self"
           }
         ]
@@ -814,6 +847,141 @@ repository:
     comment: "Operator symbols"
     match: "(?<=\\s)(==|~=|>|>=|<|<=|&|&&|:|\\||\\|\\||\\+|-|\\*|\\.\\*|/|\\./|\\\\|\\.\\\\|\\^|\\.\\^)(?=\\s)"
     name: "keyword.operator.symbols.matlab"
+  validators:
+    comment: "Property and argument validation. Match an identifier allowing . and ?."
+    begin: "\\s*[;]?\\s*([a-zA-Z][a-zA-Z0-9_\\.\\?]*)"
+    end: "([;\\n%=].*)"
+    endCaptures:
+      "1":
+        patterns: [
+          {
+            comment: "Match comments"
+            match: "([%].*)"
+            captures:
+              "1":
+                patterns: [
+                  {
+                    include: "$self"
+                  }
+                ]
+          }
+          {
+            comment: "Handle things like arg = val; nextArg"
+            match: "(=[^;]*)"
+            captures:
+              "1":
+                patterns: [
+                  {
+                    include: "$self"
+                  }
+                ]
+          }
+          {
+            comment: "End of property/argument patterns which start a new property/argument. Look for beginning of identifier after semicolon. Otherwise treat as regular code."
+            match: "([\\n;]\\s*[a-zA-Z].*)"
+            captures:
+              "1":
+                patterns: [
+                  {
+                    include: "#validators"
+                  }
+                ]
+          }
+          {
+            include: "$self"
+          }
+        ]
+    patterns: [
+      {
+        include: "#line_continuation"
+      }
+      {
+        comment: "Size declaration"
+        match: "\\s*(\\([^\\)]*\\))"
+        name: "storage.type.matlab"
+      }
+      {
+        comment: "Type declaration"
+        match: "([a-zA-Z][a-zA-Z0-9_\\.]*)"
+        name: "storage.type.matlab"
+      }
+      {
+        include: "#braced_validator_list"
+      }
+    ]
+  braced_validator_list:
+    comment: "Validator functions. Treated as a recursive group to permit nested brackets, quotes, etc."
+    begin: "\\s*({)\\s*"
+    beginCaptures:
+      "1":
+        name: "storage.type.matlab"
+    end: "(})"
+    endCaptures:
+      "1":
+        name: "storage.type.matlab"
+    patterns: [
+      {
+        include: "#braced_validator_list"
+      }
+      {
+        include: "#validator_strings"
+      }
+      {
+        include: "#line_continuation"
+      }
+      {
+        match: "([^{}}'\"\\.]+)"
+        captures:
+          "1":
+            name: "storage.type.matlab"
+      }
+      {
+        match: "\\."
+        name: "storage.type.matlab"
+      }
+    ]
+  validator_strings:
+    comment: "Simplified string patterns nested inside validator functions which don't change scopes of matches."
+    patterns: [
+      {
+        patterns: [
+          {
+            begin: "((?<=(\\[|\\(|\\{|=|\\s|;|:|,|~|<|>|&|\\||-|\\+|\\*|/|\\\\|\\.|\\^))|^)'"
+            comment: "Character vector literal (single-quoted)"
+            end: "'(?=(\\[|\\(|\\{|\\]|\\)|\\}|=|~|<|>|&|\\||-|\\+|\\*|/|\\\\|\\.|\\^|\\s|;|:|,))"
+            name: "storage.type.matlab"
+            patterns: [
+              {
+                match: "''"
+              }
+              {
+                match: "'(?=.)"
+              }
+              {
+                match: "([^']+)"
+              }
+            ]
+          }
+          {
+            begin: "((?<=(\\[|\\(|\\{|=|\\s|;|:|,|~|<|>|&|\\||-|\\+|\\*|/|\\\\|\\.|\\^))|^)\""
+            comment: "String literal (double-quoted)"
+            end: "\"(?=(\\[|\\(|\\{|\\]|\\)|\\}|=|~|<|>|&|\\||-|\\+|\\*|/|\\\\|\\.|\\^|\\||\\s|;|:|,))"
+            name: "storage.type.matlab"
+            patterns: [
+              {
+                match: "\"\""
+              }
+              {
+                match: "\"(?=.)"
+              }
+              {
+                match: "[^\"]+"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   keywords:
     patterns: [
       {
