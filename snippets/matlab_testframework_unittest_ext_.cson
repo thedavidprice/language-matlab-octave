@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "matlab.unittest.internal.TestSuiteExtension.fromProject [matlab]":
+        prefix: "matlab.unittest.internal.TestSuiteExtension.fromProject"
+        body: '''matlab.unittest.internal.TestSuiteExtension.fromProject(${1:project}, 'IncludingReferencedProjects', ${2:value}, 'BaseFolder', ${3:value}, 'Name', ${4:value}, 'ParameterName', ${5:value}, 'ParameterProperty', ${6:value}, 'Tag', ${7:value}, 'ProcedureName', ${8:value}, 'ExternalParameters', ${9:value}, 'Superclass', ${10:value})'''
+        description: '''[matlab] 
+        matlab.unittest.internal.TestSuiteExtension.fromProject(project, 'IncludingReferencedProjects', value, 'BaseFolder', value, 'Name', value, 'ParameterName', value, 'ParameterProperty', value, 'Tag', value, 'ProcedureName', value, 'ExternalParameters', value, 'Superclass', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.unittest.internal.TestSuiteExtension.fromProject.html'
+

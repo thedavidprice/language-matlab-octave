@@ -1,0 +1,21 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "optimizableVariable [stats]":
+        prefix: "optimizableVariable"
+        body: '''optimizableVariable(${1:Name}, ${2:Range}, 'Type', ${3:value}, 'Transform', ${4:value}, 'Optimize', ${5:value})'''
+        description: '''[stats] Variable description for bayesopt or other
+            optimizers
+        optimizableVariable(Name, Range, 'Type', value, 'Transform', value, 'Optimize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/optimizablevariable.html'
+
+
+    "bayesopt [stats]":
+        prefix: "bayesopt"
+        body: '''bayesopt(${1:fun}, ${2:vars}, 'AcquisitionFunctionName', ${3:value}, 'IsObjectiveDeterministic', ${4:value}, 'ExplorationRatio', ${5:value}, 'GPActiveSetSize', ${6:value}, 'UseParallel', ${7:value}, 'ParallelMethod', ${8:value}, 'MinWorkerUtilization', ${9:value}, 'MaxObjectiveEvaluations', ${10:value}, 'MaxTime', ${11:value}, 'NumSeedPoints', ${12:value}, 'XConstraintFcn', ${13:value}, 'ConditionalVariableFcn', ${14:value}, 'NumCoupledConstraints', ${15:value}, 'AreCoupledConstraintsDeterministic', ${16:value}, 'Verbose', ${17:value}, 'OutputFcn', ${18:value}, 'SaveFileName', ${19:value}, 'SaveVariableName', ${20:value}, 'PlotFcn', ${21:value}, 'InitialX', ${22:value}, 'InitialObjective', ${23:value}, 'InitialConstraintViolations', ${24:value}, 'InitialErrorValues', ${25:value}, 'InitialUserData', ${26:value}, 'InitialObjectiveEvaluationTimes', ${27:value}, 'InitialIterationTimes', ${28:value})'''
+        description: '''[stats] Select optimal machine learning hyperparameters using Bayesian optimization
+        bayesopt(fun, vars, 'AcquisitionFunctionName', value, 'IsObjectiveDeterministic', value, 'ExplorationRatio', value, 'GPActiveSetSize', value, 'UseParallel', value, 'ParallelMethod', value, 'MinWorkerUtilization', value, 'MaxObjectiveEvaluations', value, 'MaxTime', value, 'NumSeedPoints', value, 'XConstraintFcn', value, 'ConditionalVariableFcn', value, 'NumCoupledConstraints', value, 'AreCoupledConstraintsDeterministic', value, 'Verbose', value, 'OutputFcn', value, 'SaveFileName', value, 'SaveVariableName', value, 'PlotFcn', value, 'InitialX', value, 'InitialObjective', value, 'InitialConstraintViolations', value, 'InitialErrorValues', value, 'InitialUserData', value, 'InitialObjectiveEvaluationTimes', value, 'InitialIterationTimes', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/bayesopt.html'
+

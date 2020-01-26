@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "dsp.DCT [shared]":
+        prefix: "dsp.DCT"
+        body: '''dsp.DCT(${1:arg})'''
+        description: '''[shared] (To be removed) Discrete cosine transform (DCT)
+        dsp.DCT(arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/dsp.dct-system-object.html'
+

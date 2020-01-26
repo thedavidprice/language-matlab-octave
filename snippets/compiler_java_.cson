@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "deploytool [compiler]":
+        prefix: "deploytool"
+        body: '''deploytool(${1:filename}, ${2:optional_varargin})'''
+        description: '''[compiler] Compile and package functions for external deployment
+        deploytool(filename, optional_varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/compiler/hadoop/deploytool.html'
+

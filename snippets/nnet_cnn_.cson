@@ -1,0 +1,659 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "groupedConvolution2dLayer [nnet]":
+        prefix: "groupedConvolution2dLayer"
+        body: '''groupedConvolution2dLayer(${1:filterSize}, ${2:numFiltersPerGroup}, ${3:numGroups}, 'Stride', ${4:value}, 'DilationFactor', ${5:value}, 'Padding', ${6:value}, 'WeightLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'WeightL2Factor', ${9:value}, 'BiasL2Factor', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value}, 'Name', ${15:value})'''
+        description: '''[nnet] 2-D grouped convolutional layer
+        groupedConvolution2dLayer(filterSize, numFiltersPerGroup, numGroups, 'Stride', value, 'DilationFactor', value, 'Padding', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.groupedconvolution2dlayer.html'
+
+
+    "DAGNetwork.predict [nnet]":
+        prefix: "DAGNetwork.predict"
+        body: '''DAGNetwork.predict(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
+        description: '''[nnet] 
+        DAGNetwork.predict(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/DAGNetwork.predict.html'
+
+
+    "augmentedImageDatastore [nnet]":
+        prefix: "augmentedImageDatastore"
+        body: '''augmentedImageDatastore(${1:OutputSize}, ${2:imds}, 'DataAugmentation', ${3:value}, 'ColorPreprocessing', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})'''
+        description: '''[nnet] Transform batches to augment image data
+        augmentedImageDatastore(OutputSize, imds, 'DataAugmentation', value, 'ColorPreprocessing', value, 'OutputSizeMode', value, 'DispatchInBackground', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/augmentedimagedatastore.html'
+
+
+    "leakyReluLayer [nnet]":
+        prefix: "leakyReluLayer"
+        body: '''leakyReluLayer(${1:Scale}, 'Name', ${2:value})'''
+        description: '''[nnet] Leaky Rectified Linear Unit (ReLU) layer
+        leakyReluLayer(Scale, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.leakyrelulayer.html'
+
+
+    "flattenLayer [nnet]":
+        prefix: "flattenLayer"
+        body: '''flattenLayer('Name', ${1:value})'''
+        description: '''[nnet] Flatten layer
+        flattenLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.flattenlayer.html'
+
+
+    "alexnet [nnet]":
+        prefix: "alexnet"
+        body: '''alexnet()'''
+        description: '''[nnet] Pretrained AlexNet convolutional neural network
+        alexnet()
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/alexnet.html'
+
+
+    "sequenceUnfoldingLayer [nnet]":
+        prefix: "sequenceUnfoldingLayer"
+        body: '''sequenceUnfoldingLayer('Name', ${1:value})'''
+        description: '''[nnet] Sequence unfolding layer
+        sequenceUnfoldingLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.sequenceunfoldinglayer.html'
+
+
+    "batchNormalizationLayer [nnet]":
+        prefix: "batchNormalizationLayer"
+        body: '''batchNormalizationLayer('Name', ${1:value}, 'Offset', ${2:value}, 'Scale', ${3:value}, 'TrainedMean', ${4:value}, 'TrainedVariance', ${5:value}, 'Epsilon', ${6:value}, 'OffsetLearnRateFactor', ${7:value}, 'ScaleLearnRateFactor', ${8:value}, 'OffsetL2Factor', ${9:value}, 'ScaleL2Factor', ${10:value}, 'OffsetInitializer', ${11:value}, 'ScaleInitializer', ${12:value})'''
+        description: '''[nnet] Batch normalization layer
+        batchNormalizationLayer('Name', value, 'Offset', value, 'Scale', value, 'TrainedMean', value, 'TrainedVariance', value, 'Epsilon', value, 'OffsetLearnRateFactor', value, 'ScaleLearnRateFactor', value, 'OffsetL2Factor', value, 'ScaleL2Factor', value, 'OffsetInitializer', value, 'ScaleInitializer', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.batchnormalizationlayer.html'
+
+
+    "trainNetwork [nnet]":
+        prefix: "trainNetwork"
+        body: '''trainNetwork(${1:tbl}, ${2:responseNames}, ${3:layers}, ${4:options})'''
+        description: '''[nnet] Train neural network for deep learning
+        trainNetwork(tbl, responseNames, layers, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/trainnetwork.html'
+
+
+    "nnet.internal.cnn.layer.Externalizable.getLearnRateFactor [nnet]":
+        prefix: "nnet.internal.cnn.layer.Externalizable.getLearnRateFactor"
+        body: '''nnet.internal.cnn.layer.Externalizable.getLearnRateFactor(${1:layer}, ${2:learnableParameterName})'''
+        description: '''[nnet] 
+        nnet.internal.cnn.layer.Externalizable.getLearnRateFactor(layer, learnableParameterName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.internal.cnn.layer.Externalizable.getLearnRateFactor.html'
+
+
+    "nnet.cnn.LayerGraph.removeLayers [nnet]":
+        prefix: "nnet.cnn.LayerGraph.removeLayers"
+        body: '''nnet.cnn.LayerGraph.removeLayers(${1:lgraph}, ${2:layerNames})'''
+        description: '''[nnet] 
+        nnet.cnn.LayerGraph.removeLayers(lgraph, layerNames)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.cnn.LayerGraph.removeLayers.html'
+
+
+    "crossChannelNormalizationLayer [nnet]":
+        prefix: "crossChannelNormalizationLayer"
+        body: '''crossChannelNormalizationLayer(${1:WindowChannelSize}, 'Alpha', ${2:value}, 'Beta', ${3:value}, 'K', ${4:value}, 'Name', ${5:value})'''
+        description: '''[nnet]   Channel-wise local response normalization layer
+        crossChannelNormalizationLayer(WindowChannelSize, 'Alpha', value, 'Beta', value, 'K', value, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.crosschannelnormalizationlayer.html'
+
+
+    "tanhLayer [nnet]":
+        prefix: "tanhLayer"
+        body: '''tanhLayer('Name', ${1:value})'''
+        description: '''[nnet] Hyperbolic tangent (tanh) layer
+        tanhLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.tanhlayer.html'
+
+
+    "maxPooling3dLayer [nnet]":
+        prefix: "maxPooling3dLayer"
+        body: '''maxPooling3dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value}, 'HasUnpoolingOutputs', ${5:value})'''
+        description: '''[nnet] 3-D max pooling layer
+        maxPooling3dLayer(poolSize, 'Stride', value, 'Padding', value, 'Name', value, 'HasUnpoolingOutputs', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.maxpooling3dlayer.html'
+
+
+    "nnet.internal.cnn.layer.Externalizable.setL2Factor [nnet]":
+        prefix: "nnet.internal.cnn.layer.Externalizable.setL2Factor"
+        body: '''nnet.internal.cnn.layer.Externalizable.setL2Factor(${1:layer}, ${2:learnableParameterName}, ${3:learnRateFactor})'''
+        description: '''[nnet] 
+        nnet.internal.cnn.layer.Externalizable.setL2Factor(layer, learnableParameterName, learnRateFactor)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.internal.cnn.layer.Externalizable.setL2Factor.html'
+
+
+    "eluLayer [nnet]":
+        prefix: "eluLayer"
+        body: '''eluLayer(${1:Alpha}, 'Name', ${2:value})'''
+        description: '''[nnet] Exponential linear unit (ELU) layer
+        eluLayer(Alpha, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.elulayer.html'
+
+
+    "DAGNetwork.plot [nnet]":
+        prefix: "DAGNetwork.plot"
+        body: '''DAGNetwork.plot(${1:net})'''
+        description: '''[nnet] 
+        DAGNetwork.plot(net)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/DAGNetwork.plot.html'
+
+
+    "nnet.cnn.LayerGraph.connectLayers [nnet]":
+        prefix: "nnet.cnn.LayerGraph.connectLayers"
+        body: '''nnet.cnn.LayerGraph.connectLayers(${1:lgraph}, ${2:source}, ${3:destination})'''
+        description: '''[nnet] 
+        nnet.cnn.LayerGraph.connectLayers(lgraph, source, destination)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.cnn.LayerGraph.connectLayers.html'
+
+
+    "concatenationLayer [nnet]":
+        prefix: "concatenationLayer"
+        body: '''concatenationLayer(${1:Dim}, ${2:NumInputs}, 'Name', ${3:value})'''
+        description: '''[nnet] Concatenation layer
+        concatenationLayer(Dim, NumInputs, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.concatenationlayer.html'
+
+
+    "nnet.cnn.LayerGraph.replaceLayer [nnet]":
+        prefix: "nnet.cnn.LayerGraph.replaceLayer"
+        body: '''nnet.cnn.LayerGraph.replaceLayer(${1:lgraph}, ${2:layerName}, ${3:larray}, 'ReconnectBy', ${4:value})'''
+        description: '''[nnet] 
+        nnet.cnn.LayerGraph.replaceLayer(lgraph, layerName, larray, 'ReconnectBy', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.cnn.LayerGraph.replaceLayer.html'
+
+
+    "transposedConv2dLayer [nnet]":
+        prefix: "transposedConv2dLayer"
+        body: '''transposedConv2dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'Cropping', ${4:value}, 'NumChannels', ${5:value}, 'WeightLearnRateFactor', ${6:value}, 'BiasLearnRateFactor', ${7:value}, 'WeightL2Factor', ${8:value}, 'BiasL2Factor', ${9:value}, 'Name', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value})'''
+        description: '''[nnet] Transposed 2-D convolution layer
+        transposedConv2dLayer(filterSize, numFilters, 'Stride', value, 'Cropping', value, 'NumChannels', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'Name', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/transposedconv2dlayer.html'
+
+
+    "transposedConv3dLayer [nnet]":
+        prefix: "transposedConv3dLayer"
+        body: '''transposedConv3dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'Cropping', ${4:value}, 'NumChannels', ${5:value}, 'WeightLearnRateFactor', ${6:value}, 'BiasLearnRateFactor', ${7:value}, 'WeightL2Factor', ${8:value}, 'BiasL2Factor', ${9:value}, 'Name', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value})'''
+        description: '''[nnet] Transposed 3-D convolution layer
+        transposedConv3dLayer(filterSize, numFilters, 'Stride', value, 'Cropping', value, 'NumChannels', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'Name', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/transposedconv3dlayer.html'
+
+
+    "classificationLayer [nnet]":
+        prefix: "classificationLayer"
+        body: '''classificationLayer('Name', ${1:value}, 'Classes', ${2:value})'''
+        description: '''[nnet] Classification output layer
+        classificationLayer('Name', value, 'Classes', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/classificationlayer.html'
+
+
+    "maxPooling2dLayer [nnet]":
+        prefix: "maxPooling2dLayer"
+        body: '''maxPooling2dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value}, 'HasUnpoolingOutputs', ${5:value})'''
+        description: '''[nnet] Max pooling layer
+        maxPooling2dLayer(poolSize, 'Stride', value, 'Padding', value, 'Name', value, 'HasUnpoolingOutputs', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.maxpooling2dlayer.html'
+
+
+    "regressionLayer [nnet]":
+        prefix: "regressionLayer"
+        body: '''regressionLayer('Name', ${1:value}, 'ResponseNames', ${2:value})'''
+        description: '''[nnet] Create a regression output layer
+        regressionLayer('Name', value, 'ResponseNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/regressionlayer.html'
+
+
+    "dlnetwork [nnet]":
+        prefix: "dlnetwork"
+        body: '''dlnetwork(${1:lgraph})'''
+        description: '''[nnet] Deep learning network for custom training loops
+        dlnetwork(lgraph)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/dlnetwork.html'
+
+
+    "dlnetwork.predict [nnet]":
+        prefix: "dlnetwork.predict"
+        body: '''dlnetwork.predict(${1:dlnet}, ${2:dlX}, 'Outputs', ${3:value})'''
+        description: '''[nnet] 
+        dlnetwork.predict(dlnet, dlX, 'Outputs', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlnetwork.predict.html'
+
+
+    "augmentedImageSource [nnet]":
+        prefix: "augmentedImageSource"
+        body: '''augmentedImageSource(${1:OutputSize}, ${2:imds}, 'DataAugmentation', ${3:value}, 'ColorPreprocessing', ${4:value}, 'OutputSizeMode', ${5:value}, 'BackgroundExecution', ${6:value})'''
+        description: '''[nnet] (To be removed) Generate batches of augmented image data
+        augmentedImageSource(OutputSize, imds, 'DataAugmentation', value, 'ColorPreprocessing', value, 'OutputSizeMode', value, 'BackgroundExecution', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/augmentedimagesource.html'
+
+
+    "checkLayer [nnet]":
+        prefix: "checkLayer"
+        body: '''checkLayer(${1:layer}, ${2:validInputSize}, 'ObservationDimension', ${3:value})'''
+        description: '''[nnet] Check validity of custom layer
+        checkLayer(layer, validInputSize, 'ObservationDimension', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/checklayer.html'
+
+
+    "clippedReluLayer [nnet]":
+        prefix: "clippedReluLayer"
+        body: '''clippedReluLayer(${1:Ceiling}, 'Name', ${2:value})'''
+        description: '''[nnet] Clipped Rectified Linear Unit (ReLU) layer
+        clippedReluLayer(Ceiling, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.clippedrelulayer.html'
+
+
+    "sequenceFoldingLayer [nnet]":
+        prefix: "sequenceFoldingLayer"
+        body: '''sequenceFoldingLayer('Name', ${1:value})'''
+        description: '''[nnet] Sequence folding layer
+        sequenceFoldingLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.sequencefoldinglayer.html'
+
+
+    "DAGNetwork.activations [nnet]":
+        prefix: "DAGNetwork.activations"
+        body: '''DAGNetwork.activations(${1:net}, ${2:X}, ${3:layer}, 'OutputAs', ${4:value}, 'MiniBatchSize', ${5:value}, 'ExecutionEnvironment', ${6:value}, 'Acceleration', ${7:value}, 'SequenceLength', ${8:value}, 'SequencePaddingValue', ${9:value}, 'SequencePaddingDirection', ${10:value})'''
+        description: '''[nnet] 
+        DAGNetwork.activations(net, X, layer, 'OutputAs', value, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/DAGNetwork.activations.html'
+
+
+    "vgg19 [nnet]":
+        prefix: "vgg19"
+        body: '''vgg19()'''
+        description: '''[nnet] Pretrained VGG-19 convolutional neural network
+        vgg19()
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/vgg19.html'
+
+
+    "DAGNetwork.classify [nnet]":
+        prefix: "DAGNetwork.classify"
+        body: '''DAGNetwork.classify(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
+        description: '''[nnet] 
+        DAGNetwork.classify(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/DAGNetwork.classify.html'
+
+
+    "SeriesNetwork.activations [nnet]":
+        prefix: "SeriesNetwork.activations"
+        body: '''SeriesNetwork.activations(${1:net}, ${2:X}, ${3:layer}, 'OutputAs', ${4:value}, 'MiniBatchSize', ${5:value}, 'ExecutionEnvironment', ${6:value}, 'Acceleration', ${7:value}, 'SequenceLength', ${8:value}, 'SequencePaddingValue', ${9:value}, 'SequencePaddingDirection', ${10:value})'''
+        description: '''[nnet] 
+        SeriesNetwork.activations(net, X, layer, 'OutputAs', value, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/SeriesNetwork.activations.html'
+
+
+    "SeriesNetwork.classifyAndUpdateState [nnet]":
+        prefix: "SeriesNetwork.classifyAndUpdateState"
+        body: '''SeriesNetwork.classifyAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
+        description: '''[nnet] 
+        SeriesNetwork.classifyAndUpdateState(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value, 'Acceleration', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/SeriesNetwork.classifyAndUpdateState.html'
+
+
+    "convolution2dLayer [nnet]":
+        prefix: "convolution2dLayer"
+        body: '''convolution2dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'DilationFactor', ${4:value}, 'Padding', ${5:value}, 'NumChannels', ${6:value}, 'WeightLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'WeightL2Factor', ${9:value}, 'BiasL2Factor', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value}, 'Name', ${15:value})'''
+        description: '''[nnet] 2-D convolutional layer
+        convolution2dLayer(filterSize, numFilters, 'Stride', value, 'DilationFactor', value, 'Padding', value, 'NumChannels', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.convolution2dlayer.html'
+
+
+    "softmaxLayer [nnet]":
+        prefix: "softmaxLayer"
+        body: '''softmaxLayer('Name', ${1:value})'''
+        description: '''[nnet] Softmax layer
+        softmaxLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.softmaxlayer.html'
+
+
+    "globalAveragePooling2dLayer [nnet]":
+        prefix: "globalAveragePooling2dLayer"
+        body: '''globalAveragePooling2dLayer('Name', ${1:value})'''
+        description: '''[nnet] Global average pooling layer
+        globalAveragePooling2dLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.globalaveragepooling2dlayer.html'
+
+
+    "nnet.cnn.LayerGraph.plot [nnet]":
+        prefix: "nnet.cnn.LayerGraph.plot"
+        body: '''nnet.cnn.LayerGraph.plot(${1:lgraph})'''
+        description: '''[nnet] 
+        nnet.cnn.LayerGraph.plot(lgraph)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.cnn.LayerGraph.plot.html'
+
+
+    "SeriesNetwork.resetState [nnet]":
+        prefix: "SeriesNetwork.resetState"
+        body: '''SeriesNetwork.resetState(${1:net})'''
+        description: '''[nnet] 
+        SeriesNetwork.resetState(net)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/SeriesNetwork.resetState.html'
+
+
+    "dlnetwork.forward [nnet]":
+        prefix: "dlnetwork.forward"
+        body: '''dlnetwork.forward(${1:dlnet}, ${2:dlX}, 'Outputs', ${3:value})'''
+        description: '''[nnet] 
+        dlnetwork.forward(dlnet, dlX, 'Outputs', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlnetwork.forward.html'
+
+
+    "maxUnpooling2dLayer [nnet]":
+        prefix: "maxUnpooling2dLayer"
+        body: '''maxUnpooling2dLayer('Name', ${1:value})'''
+        description: '''[nnet] Max unpooling layer
+        maxUnpooling2dLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.maxunpooling2dlayer.html'
+
+
+    "crop2dLayer [nnet]":
+        prefix: "crop2dLayer"
+        body: '''crop2dLayer(${1:Mode}, 'Name', ${2:value})'''
+        description: '''[nnet] 2-D crop layer
+        crop2dLayer(Mode, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.crop2dlayer.html'
+
+
+    "DAGNetwork.classifyAndUpdateState [nnet]":
+        prefix: "DAGNetwork.classifyAndUpdateState"
+        body: '''DAGNetwork.classifyAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
+        description: '''[nnet] 
+        DAGNetwork.classifyAndUpdateState(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/DAGNetwork.classifyAndUpdateState.html'
+
+
+    "nnet.cnn.LayerGraph.disconnectLayers [nnet]":
+        prefix: "nnet.cnn.LayerGraph.disconnectLayers"
+        body: '''nnet.cnn.LayerGraph.disconnectLayers(${1:lgraph}, ${2:source}, ${3:destination})'''
+        description: '''[nnet] 
+        nnet.cnn.LayerGraph.disconnectLayers(lgraph, source, destination)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.cnn.LayerGraph.disconnectLayers.html'
+
+
+    "SeriesNetwork.predict [nnet]":
+        prefix: "SeriesNetwork.predict"
+        body: '''SeriesNetwork.predict(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
+        description: '''[nnet] 
+        SeriesNetwork.predict(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value, 'Acceleration', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/SeriesNetwork.predict.html'
+
+
+    "deepDreamImage [nnet]":
+        prefix: "deepDreamImage"
+        body: '''deepDreamImage(${1:net}, ${2:layer}, ${3:channels}, 'InitialImage', ${4:value}, 'PyramidLevels', ${5:value}, 'PyramidScale', ${6:value}, 'NumIterations', ${7:value}, 'OutputScaling', ${8:value}, 'Verbose', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
+        description: '''[nnet] Visualize network features using deep dream
+        deepDreamImage(net, layer, channels, 'InitialImage', value, 'PyramidLevels', value, 'PyramidScale', value, 'NumIterations', value, 'OutputScaling', value, 'Verbose', value, 'ExecutionEnvironment', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/deepdreamimage.html'
+
+
+    "image3dInputLayer [nnet]":
+        prefix: "image3dInputLayer"
+        body: '''image3dInputLayer(${1:inputSize}, 'Normalization', ${2:value}, 'NormalizationDimension', ${3:value}, 'Name', ${4:value}, 'Mean', ${5:value}, 'StandardDeviation', ${6:value}, 'Min', ${7:value}, 'Max', ${8:value})'''
+        description: '''[nnet] 3-D image input layer
+        image3dInputLayer(inputSize, 'Normalization', value, 'NormalizationDimension', value, 'Name', value, 'Mean', value, 'StandardDeviation', value, 'Min', value, 'Max', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.image3dinputlayer.html'
+
+
+    "averagePooling3dLayer [nnet]":
+        prefix: "averagePooling3dLayer"
+        body: '''averagePooling3dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value})'''
+        description: '''[nnet] 3-D average pooling layer
+        averagePooling3dLayer(poolSize, 'Stride', value, 'Padding', value, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.averagepooling3dlayer.html'
+
+
+    "SeriesNetwork.classify [nnet]":
+        prefix: "SeriesNetwork.classify"
+        body: '''SeriesNetwork.classify(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
+        description: '''[nnet] 
+        SeriesNetwork.classify(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value, 'Acceleration', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/SeriesNetwork.classify.html'
+
+
+    "trainingOptions [nnet]":
+        prefix: "trainingOptions"
+        body: '''trainingOptions(${1:solverName}, 'SquaredGradientDecayFactor', ${2:value}, 'Epsilon', ${3:value}, 'CheckpointPath', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'InitialLearnRate', ${6:value}, 'LearnRateSchedule', ${7:value}, 'LearnRateDropFactor', ${8:value}, 'LearnRateDropPeriod', ${9:value}, 'L2Regularization', ${10:value}, 'GradientThresholdMethod', ${11:value}, 'GradientThreshold', ${12:value}, 'MaxEpochs', ${13:value}, 'MiniBatchSize', ${14:value}, 'ResetInputNormalization', ${15:value}, 'OutputFcn', ${16:value}, 'Plots', ${17:value}, 'Shuffle', ${18:value}, 'ValidationData', ${19:value}, 'ValidationFrequency', ${20:value}, 'ValidationPatience', ${21:value}, 'Verbose', ${22:value}, 'VerboseFrequency', ${23:value}, 'WorkerLoad', ${24:value}, 'SequenceLength', ${25:value}, 'SequencePaddingValue', ${26:value}, 'SequencePaddingDirection', ${27:value})'''
+        description: '''[nnet] Options for training deep learning neural network
+        trainingOptions(solverName, 'SquaredGradientDecayFactor', value, 'Epsilon', value, 'CheckpointPath', value, 'ExecutionEnvironment', value, 'InitialLearnRate', value, 'LearnRateSchedule', value, 'LearnRateDropFactor', value, 'LearnRateDropPeriod', value, 'L2Regularization', value, 'GradientThresholdMethod', value, 'GradientThreshold', value, 'MaxEpochs', value, 'MiniBatchSize', value, 'ResetInputNormalization', value, 'OutputFcn', value, 'Plots', value, 'Shuffle', value, 'ValidationData', value, 'ValidationFrequency', value, 'ValidationPatience', value, 'Verbose', value, 'VerboseFrequency', value, 'WorkerLoad', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/trainingoptions.html'
+
+
+    "lstmLayer [nnet]":
+        prefix: "lstmLayer"
+        body: '''lstmLayer(${1:numHiddenUnits}, 'Name', ${2:value}, 'OutputMode', ${3:value}, 'StateActivationFunction', ${4:value}, 'GateActivationFunction', ${5:value}, 'InputWeightsLearnRateFactor', ${6:value}, 'RecurrentWeightsLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'InputWeightsL2Factor', ${9:value}, 'RecurrentWeightsL2Factor', ${10:value}, 'BiasL2Factor', ${11:value}, 'InputWeightsInitializer', ${12:value}, 'RecurrentWeightsInitializer', ${13:value}, 'BiasInitializer', ${14:value}, 'InputWeights', ${15:value}, 'RecurrentWeights', ${16:value}, 'Bias', ${17:value}, 'HiddenState', ${18:value}, 'CellState', ${19:value})'''
+        description: '''[nnet] Long short-term memory (LSTM) layer
+        lstmLayer(numHiddenUnits, 'Name', value, 'OutputMode', value, 'StateActivationFunction', value, 'GateActivationFunction', value, 'InputWeightsLearnRateFactor', value, 'RecurrentWeightsLearnRateFactor', value, 'BiasLearnRateFactor', value, 'InputWeightsL2Factor', value, 'RecurrentWeightsL2Factor', value, 'BiasL2Factor', value, 'InputWeightsInitializer', value, 'RecurrentWeightsInitializer', value, 'BiasInitializer', value, 'InputWeights', value, 'RecurrentWeights', value, 'Bias', value, 'HiddenState', value, 'CellState', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.lstmlayer.html'
+
+
+    "vgg16 [nnet]":
+        prefix: "vgg16"
+        body: '''vgg16()'''
+        description: '''[nnet] Pretrained VGG-16 convolutional neural network
+        vgg16()
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/vgg16.html'
+
+
+    "averagePooling2dLayer [nnet]":
+        prefix: "averagePooling2dLayer"
+        body: '''averagePooling2dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value})'''
+        description: '''[nnet] Average pooling layer
+        averagePooling2dLayer(poolSize, 'Stride', value, 'Padding', value, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.averagepooling2dlayer.html'
+
+
+    "crop3dLayer [nnet]":
+        prefix: "crop3dLayer"
+        body: '''crop3dLayer(${1:CropLocation}, 'Name', ${2:value})'''
+        description: '''[nnet] 3-D crop layer
+        crop3dLayer(CropLocation, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.crop3dlayer.html'
+
+
+    "fullyConnectedLayer [nnet]":
+        prefix: "fullyConnectedLayer"
+        body: '''fullyConnectedLayer(${1:outputSize}, 'WeightLearnRateFactor', ${2:value}, 'BiasLearnRateFactor', ${3:value}, 'WeightL2Factor', ${4:value}, 'BiasL2Factor', ${5:value}, 'Name', ${6:value}, 'WeightsInitializer', ${7:value}, 'BiasInitializer', ${8:value}, 'Weights', ${9:value}, 'Bias', ${10:value})'''
+        description: '''[nnet] Fully connected layer
+        fullyConnectedLayer(outputSize, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'Name', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.fullyconnectedlayer.html'
+
+
+    "reluLayer [nnet]":
+        prefix: "reluLayer"
+        body: '''reluLayer('Name', ${1:value})'''
+        description: '''[nnet] Rectified Linear Unit (ReLU) layer
+        reluLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.relulayer.html'
+
+
+    "imageDataAugmenter [nnet]":
+        prefix: "imageDataAugmenter"
+        body: '''imageDataAugmenter('FillValue', ${1:value}, 'RandXReflection', ${2:value}, 'RandYReflection', ${3:value}, 'RandRotation', ${4:value}, 'RandXScale', ${5:value}, 'RandScale', ${6:value}, 'RandYScale', ${7:value}, 'RandXShear', ${8:value}, 'RandYShear', ${9:value}, 'RandXTranslation', ${10:value}, 'RandYTranslation', ${11:value})'''
+        description: '''[nnet] Configure image data augmentation
+        imageDataAugmenter('FillValue', value, 'RandXReflection', value, 'RandYReflection', value, 'RandRotation', value, 'RandXScale', value, 'RandScale', value, 'RandYScale', value, 'RandXShear', value, 'RandYShear', value, 'RandXTranslation', value, 'RandYTranslation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/imagedataaugmenter.html'
+
+
+    "additionLayer [nnet]":
+        prefix: "additionLayer"
+        body: '''additionLayer(${1:NumInputs}, 'Name', ${2:value})'''
+        description: '''[nnet] Addition layer
+        additionLayer(NumInputs, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.additionlayer.html'
+
+
+    "bilstmLayer [nnet]":
+        prefix: "bilstmLayer"
+        body: '''bilstmLayer(${1:numHiddenUnits}, 'Name', ${2:value}, 'OutputMode', ${3:value}, 'StateActivationFunction', ${4:value}, 'GateActivationFunction', ${5:value}, 'InputWeightsLearnRateFactor', ${6:value}, 'RecurrentWeightsLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'InputWeightsL2Factor', ${9:value}, 'RecurrentWeightsL2Factor', ${10:value}, 'BiasL2Factor', ${11:value}, 'InputWeightsInitializer', ${12:value}, 'RecurrentWeightsInitializer', ${13:value}, 'BiasInitializer', ${14:value}, 'InputWeights', ${15:value}, 'RecurrentWeights', ${16:value}, 'Bias', ${17:value}, 'HiddenState', ${18:value}, 'CellState', ${19:value})'''
+        description: '''[nnet] Bidirectional long short-term memory (BiLSTM) layer
+        bilstmLayer(numHiddenUnits, 'Name', value, 'OutputMode', value, 'StateActivationFunction', value, 'GateActivationFunction', value, 'InputWeightsLearnRateFactor', value, 'RecurrentWeightsLearnRateFactor', value, 'BiasLearnRateFactor', value, 'InputWeightsL2Factor', value, 'RecurrentWeightsL2Factor', value, 'BiasL2Factor', value, 'InputWeightsInitializer', value, 'RecurrentWeightsInitializer', value, 'BiasInitializer', value, 'InputWeights', value, 'RecurrentWeights', value, 'Bias', value, 'HiddenState', value, 'CellState', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.bilstmlayer.html'
+
+
+    "layerGraph [nnet]":
+        prefix: "layerGraph"
+        body: '''layerGraph(${1:dlnet})'''
+        description: '''[nnet] Graph of network layers for deep learning
+        layerGraph(dlnet)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layergraph.html'
+
+
+    "SeriesNetwork.predictAndUpdateState [nnet]":
+        prefix: "SeriesNetwork.predictAndUpdateState"
+        body: '''SeriesNetwork.predictAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
+        description: '''[nnet] 
+        SeriesNetwork.predictAndUpdateState(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value, 'Acceleration', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/SeriesNetwork.predictAndUpdateState.html'
+
+
+    "nnet.cnn.LayerGraph.addLayers [nnet]":
+        prefix: "nnet.cnn.LayerGraph.addLayers"
+        body: '''nnet.cnn.LayerGraph.addLayers(${1:lgraph}, ${2:larray})'''
+        description: '''[nnet] 
+        nnet.cnn.LayerGraph.addLayers(lgraph, larray)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.cnn.LayerGraph.addLayers.html'
+
+
+    "sequenceInputLayer [nnet]":
+        prefix: "sequenceInputLayer"
+        body: '''sequenceInputLayer(${1:inputSize}, 'Normalization', ${2:value}, 'NormalizationDimension', ${3:value}, 'Name', ${4:value}, 'Mean', ${5:value}, 'StandardDeviation', ${6:value}, 'Min', ${7:value}, 'Max', ${8:value})'''
+        description: '''[nnet] Sequence input layer
+        sequenceInputLayer(inputSize, 'Normalization', value, 'NormalizationDimension', value, 'Name', value, 'Mean', value, 'StandardDeviation', value, 'Min', value, 'Max', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.sequenceinputlayer.html'
+
+
+    "DAGNetwork.predictAndUpdateState [nnet]":
+        prefix: "DAGNetwork.predictAndUpdateState"
+        body: '''DAGNetwork.predictAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
+        description: '''[nnet] 
+        DAGNetwork.predictAndUpdateState(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/DAGNetwork.predictAndUpdateState.html'
+
+
+    "nnet.internal.cnn.layer.Externalizable.getL2Factor [nnet]":
+        prefix: "nnet.internal.cnn.layer.Externalizable.getL2Factor"
+        body: '''nnet.internal.cnn.layer.Externalizable.getL2Factor(${1:layer}, ${2:learnableParameterName})'''
+        description: '''[nnet] 
+        nnet.internal.cnn.layer.Externalizable.getL2Factor(layer, learnableParameterName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.internal.cnn.layer.Externalizable.getL2Factor.html'
+
+
+    "imageInputLayer [nnet]":
+        prefix: "imageInputLayer"
+        body: '''imageInputLayer(${1:inputSize}, 'Normalization', ${2:value}, 'NormalizationDimension', ${3:value}, 'Name', ${4:value}, 'Mean', ${5:value}, 'StandardDeviation', ${6:value}, 'Min', ${7:value}, 'Max', ${8:value})'''
+        description: '''[nnet] Image input layer
+        imageInputLayer(inputSize, 'Normalization', value, 'NormalizationDimension', value, 'Name', value, 'Mean', value, 'StandardDeviation', value, 'Min', value, 'Max', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.imageinputlayer.html'
+
+
+    "globalAveragePooling3dLayer [nnet]":
+        prefix: "globalAveragePooling3dLayer"
+        body: '''globalAveragePooling3dLayer('Name', ${1:value})'''
+        description: '''[nnet] 3-D global average pooling layer
+        globalAveragePooling3dLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.globalaveragepooling3dlayer.html'
+
+
+    "dropoutLayer [nnet]":
+        prefix: "dropoutLayer"
+        body: '''dropoutLayer(${1:probability}, 'Name', ${2:value})'''
+        description: '''[nnet] Dropout layer
+        dropoutLayer(probability, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.dropoutlayer.html'
+
+
+    "convolution3dLayer [nnet]":
+        prefix: "convolution3dLayer"
+        body: '''convolution3dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'DilationFactor', ${4:value}, 'Padding', ${5:value}, 'NumChannels', ${6:value}, 'WeightLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'WeightL2Factor', ${9:value}, 'BiasL2Factor', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value}, 'Name', ${15:value})'''
+        description: '''[nnet] 3-D convolutional layer
+        convolution3dLayer(filterSize, numFilters, 'Stride', value, 'DilationFactor', value, 'Padding', value, 'NumChannels', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.convolution3dlayer.html'
+
+
+    "depthConcatenationLayer [nnet]":
+        prefix: "depthConcatenationLayer"
+        body: '''depthConcatenationLayer(${1:NumInputs}, 'Name', ${2:value})'''
+        description: '''[nnet] Depth concatenation layer
+        depthConcatenationLayer(NumInputs, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/nnet.cnn.layer.depthconcatenationlayer.html'
+
+
+    "nnet.internal.cnn.layer.Externalizable.setLearnRateFactor [nnet]":
+        prefix: "nnet.internal.cnn.layer.Externalizable.setLearnRateFactor"
+        body: '''nnet.internal.cnn.layer.Externalizable.setLearnRateFactor(${1:layer}, ${2:learnableParameterName}, ${3:learnRateFactor})'''
+        description: '''[nnet] 
+        nnet.internal.cnn.layer.Externalizable.setLearnRateFactor(layer, learnableParameterName, learnRateFactor)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/nnet.internal.cnn.layer.Externalizable.setLearnRateFactor.html'
+

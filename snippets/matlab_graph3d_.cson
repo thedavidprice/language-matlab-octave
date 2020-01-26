@@ -1,0 +1,65 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "lighting [matlab]":
+        prefix: "lighting"
+        body: '''lighting(${1:optional_ax}, ${2:style})'''
+        description: '''[matlab] Specify lighting algorithm
+        lighting(optional_ax, style)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lighting.html'
+
+
+    "material [matlab]":
+        prefix: "material"
+        body: '''material(${1:optional_ax}, ${2:properties})'''
+        description: '''[matlab] Control reflectance properties of surfaces and patches
+        material(optional_ax, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/material.html'
+
+
+    "shading [matlab]":
+        prefix: "shading"
+        body: '''shading(${1:optional_ax}, ${2:style})'''
+        description: '''[matlab] Set color shading properties
+        shading(optional_ax, style)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/shading.html'
+
+
+    "zlabel [matlab]":
+        prefix: "zlabel"
+        body: '''${1:h} = zlabel(${1:optional_ax}, ${2:str}, ${3:opts})'''
+        description: '''[matlab] Label  z-axis
+        h = zlabel(optional_ax, str, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/zlabel.html'
+
+
+    "caxis [matlab]":
+        prefix: "caxis"
+        body: '''${1:limits} = caxis(${1:optional_ax})'''
+        description: '''[matlab] Set colormap limits
+        limits = caxis(optional_ax)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/caxis.html'
+
+
+    "surf [matlab]":
+        prefix: "surf"
+        body: '''${1:h} = surf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
+        description: '''[matlab] Surface plot
+        h = surf(optional_ax, x, y, z, optional_c, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/surf.html'
+
+
+    "colormap [matlab]":
+        prefix: "colormap"
+        body: '''${1:cmap} = colormap(${1:optional_ax}, ${2:map})'''
+        description: '''[matlab] View and set current colormap
+        cmap = colormap(optional_ax, map)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/colormap.html'
+

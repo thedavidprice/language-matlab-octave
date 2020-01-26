@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "matlab.io.internal.TiffReader [shared]":
+        prefix: "matlab.io.internal.TiffReader"
+        body: '''matlab.io.internal.TiffReader(${1:filename}, 'ImageIndex', ${2:value}, 'SubIFDOffset', ${3:value})'''
+        description: '''[shared] 
+        matlab.io.internal.TiffReader(filename, 'ImageIndex', value, 'SubIFDOffset', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.internal.TiffReader.html'
+

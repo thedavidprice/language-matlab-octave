@@ -1,0 +1,299 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "true [matlab]":
+        prefix: "true"
+        body: '''${1:T} = true(${1:sz}, ${2:'like'}, ${3:p})'''
+        description: '''[matlab] Logical 1 (true)
+        T = true(sz, 'like', p)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/true.html'
+
+
+    "intmin [matlab]":
+        prefix: "intmin"
+        body: '''intmin(${1:optional_classname})'''
+        description: '''[matlab] Smallest value of specified integer type
+        intmin(optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/intmin.html'
+
+
+    "realmin [matlab]":
+        prefix: "realmin"
+        body: '''realmin(${1:optional_classname})'''
+        description: '''[matlab] Smallest normalized floating-point number
+        realmin(optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/realmin.html'
+
+
+    "find [matlab]":
+        prefix: "find"
+        body: '''find(${1:X}, ${2:n}, ${3:optional_direction})'''
+        description: '''[matlab] Search in Embedded Coder Dictionary section 
+        find(X, n, optional_direction)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/coder.dictionary.section.find.html'
+
+
+    "numel [matlab]":
+        prefix: "numel"
+        body: '''${1:n} = numel(${1:A})'''
+        description: '''[matlab] Number of array elements
+        n = numel(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/numel.html'
+
+
+    "linspace [matlab]":
+        prefix: "linspace"
+        body: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:optional_n})'''
+        description: '''[matlab] Generate linearly spaced vector
+        y = linspace(x1, x2, optional_n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/linspace.html'
+
+
+    "length [matlab]":
+        prefix: "length"
+        body: '''${1:L} = length(${1:X})'''
+        description: '''[matlab] Number of key-value pairs in the data cache
+        L = length(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/mps_dev_test/length.html'
+
+
+    "hadamard [matlab]":
+        prefix: "hadamard"
+        body: '''hadamard(${1:n}, ${2:optional_classname})'''
+        description: '''[matlab] Hadamard matrix
+        hadamard(n, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hadamard.html'
+
+
+    "false [matlab]":
+        prefix: "false"
+        body: '''${1:F} = false(${1:sz}, ${2:'like'}, ${3:p})'''
+        description: '''[matlab] Logical 0 (false)
+        F = false(sz, 'like', p)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/false.html'
+
+
+    "flintmax [matlab]":
+        prefix: "flintmax"
+        body: '''flintmax(${1:optional_classname})'''
+        description: '''[matlab] Largest consecutive integer in floating-point format
+        flintmax(optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/flintmax.html'
+
+
+    "isempty [matlab]":
+        prefix: "isempty"
+        body: '''${1:TF} = isempty(${1:A})'''
+        description: '''[matlab] Determine whether MetaData object is empty
+        TF = isempty(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.isempty.html'
+
+
+    "nan [matlab]":
+        prefix: "nan"
+        body: '''${1:N} = nan(${1:sz}, ${2:optional_classname})'''
+        description: '''[matlab] 
+        N = nan(sz, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/nan.html'
+
+
+    "invhilb [matlab]":
+        prefix: "invhilb"
+        body: '''invhilb(${1:n}, ${2:optional_classname})'''
+        description: '''[matlab] Inverse of Hilbert matrix
+        invhilb(n, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/invhilb.html'
+
+
+    "inf [matlab]":
+        prefix: "inf"
+        body: '''${1:I} = inf(${1:sz}, ${2:optional_classname})'''
+        description: '''[matlab] 
+        I = inf(sz, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/inf.html'
+
+
+    "wilkinson [matlab]":
+        prefix: "wilkinson"
+        body: '''wilkinson(${1:n}, ${2:optional_classname})'''
+        description: '''[matlab] Wilkinson's eigenvalue test matrix
+        wilkinson(n, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/wilkinson.html'
+
+
+    "rosser [matlab]":
+        prefix: "rosser"
+        body: '''rosser(${1:optional_classname})'''
+        description: '''[matlab] Classic symmetric eigenvalue test problem
+        rosser(optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rosser.html'
+
+
+    "intmax [matlab]":
+        prefix: "intmax"
+        body: '''intmax(${1:optional_classname})'''
+        description: '''[matlab] Largest value of specific integer type
+        intmax(optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/intmax.html'
+
+
+    "Inf [matlab]":
+        prefix: "Inf"
+        body: '''${1:I} = Inf(${1:sz}, ${2:optional_classname})'''
+        description: '''[matlab] Create array of all Inf values
+        I = Inf(sz, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/inf.html'
+
+
+    "ones [matlab]":
+        prefix: "ones"
+        body: '''${1:X} = ones(${1:sz}, ${2:optional_classname})'''
+        description: '''[matlab] Create array of all ones
+        X = ones(sz, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ones.html'
+
+
+    "zeros [matlab]":
+        prefix: "zeros"
+        body: '''${1:X} = zeros(${1:sz}, ${2:optional_classname})'''
+        description: '''[matlab] Create array of all zeros
+        X = zeros(sz, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/zeros.html'
+
+
+    "size [matlab]":
+        prefix: "size"
+        body: '''size(${1:A}, ${2:optional_dim})'''
+        description: '''[matlab] Return size of MetaData object
+        size(A, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.size.html'
+
+
+    "squeeze [matlab]":
+        prefix: "squeeze"
+        body: '''squeeze(${1:A})'''
+        description: '''[matlab] Remove dimensions of length 1
+        squeeze(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/squeeze.html'
+
+
+    "pascal [matlab]":
+        prefix: "pascal"
+        body: '''pascal(${1:n}, ${2:optional_opt}, ${3:optional_classname})'''
+        description: '''[matlab] Pascal matrix
+        pascal(n, optional_opt, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pascal.html'
+
+
+    "realmax [matlab]":
+        prefix: "realmax"
+        body: '''realmax(${1:optional_classname})'''
+        description: '''[matlab] Largest positive floating-point number
+        realmax(optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/realmax.html'
+
+
+    "hilb [matlab]":
+        prefix: "hilb"
+        body: '''hilb(${1:n}, ${2:optional_classname})'''
+        description: '''[matlab] Hilbert matrix
+        hilb(n, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hilb.html'
+
+
+    "eps [matlab]":
+        prefix: "eps"
+        body: '''eps(${1:optional_classname})'''
+        description: '''[matlab] Floating-point relative accuracy
+        eps(optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/eps.html'
+
+
+    "eye [matlab]":
+        prefix: "eye"
+        body: '''${1:N} = eye(${1:optional_n}, ${2:m}, ${3:optional_classname})'''
+        description: '''[matlab] Identity matrix
+        N = eye(optional_n, m, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/eye.html'
+
+
+    "cat [matlab]":
+        prefix: "cat"
+        body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        description: '''[matlab] Concatenate geographic or planar vector
+        C = cat(dim, A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/geopoint.cat.html'
+
+
+    "repmat [matlab]":
+        prefix: "repmat"
+        body: '''repmat(${1:A}, ${2:r})'''
+        description: '''[matlab] Repeat copies of array
+        repmat(A, r)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/repmat.html'
+
+
+    "reshape [matlab]":
+        prefix: "reshape"
+        body: '''reshape(${1:A}, ${2:sz})'''
+        description: '''[matlab] Change shape of model array
+        reshape(A, sz)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/reshape.html'
+
+
+    "freqspace [matlab]":
+        prefix: "freqspace"
+        body: '''freqspace(${1:N}, ${2:optional_opt})'''
+        description: '''[matlab] Frequency spacing for frequency response
+        freqspace(N, optional_opt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/freqspace.html'
+
+
+    "NaN [matlab]":
+        prefix: "NaN"
+        body: '''${1:N} = NaN(${1:sz}, ${2:optional_classname})'''
+        description: '''[matlab] Create array of all NaN values
+        N = NaN(sz, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/nan.html'
+
+
+    "gallery [matlab]":
+        prefix: "gallery"
+        body: '''gallery(${1:matname}, ${2:ilim}, ${3:sz}, ${4:j}, ${5:optional_classname})'''
+        description: '''[matlab] Test matrices
+        gallery(matname, ilim, sz, j, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gallery.html'
+

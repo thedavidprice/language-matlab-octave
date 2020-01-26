@@ -1,0 +1,29 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "dsp.StateLevels [shared]":
+        prefix: "dsp.StateLevels"
+        body: '''dsp.StateLevels(${1:arg})'''
+        description: '''[shared] 
+        dsp.StateLevels(arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.StateLevels.html'
+
+
+    "dsp.TransitionMetrics [shared]":
+        prefix: "dsp.TransitionMetrics"
+        body: '''dsp.TransitionMetrics(${1:arg})'''
+        description: '''[shared] 
+        dsp.TransitionMetrics(arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.TransitionMetrics.html'
+
+
+    "dsp.PulseMetrics [shared]":
+        prefix: "dsp.PulseMetrics"
+        body: '''dsp.PulseMetrics(${1:arg})'''
+        description: '''[shared] 
+        dsp.PulseMetrics(arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.PulseMetrics.html'
+

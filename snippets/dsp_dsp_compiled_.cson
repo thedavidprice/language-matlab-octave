@@ -1,0 +1,679 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "dsp.Minimum [dsp]":
+        prefix: "dsp.Minimum"
+        body: '''dsp.Minimum(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Minimum(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Minimum.html'
+
+
+    "dsp.ArrayVectorDivider [dsp]":
+        prefix: "dsp.ArrayVectorDivider"
+        body: '''dsp.ArrayVectorDivider(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.ArrayVectorDivider(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ArrayVectorDivider.html'
+
+
+    "dsp.VariableFractionalDelay [dsp]":
+        prefix: "dsp.VariableFractionalDelay"
+        body: '''dsp.VariableFractionalDelay(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.VariableFractionalDelay(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.VariableFractionalDelay.html'
+
+
+    "dsp.LowerTriangularSolver [dsp]":
+        prefix: "dsp.LowerTriangularSolver"
+        body: '''dsp.LowerTriangularSolver(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.LowerTriangularSolver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.LowerTriangularSolver.html'
+
+
+    "dsp.AudioRecorder [dsp]":
+        prefix: "dsp.AudioRecorder"
+        body: '''dsp.AudioRecorder(${1:SampleRate}, ${2:SamplesPerFrame}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.AudioRecorder(SampleRate, SamplesPerFrame, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AudioRecorder.html'
+
+
+    "dsp.LPCToLSP [dsp]":
+        prefix: "dsp.LPCToLSP"
+        body: '''dsp.LPCToLSP(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert linear prediction coefficients to line spectral
+            pairs
+        dsp.LPCToLSP(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.lpctolsp-system-object.html'
+
+
+    "dsp.StandardDeviation [dsp]":
+        prefix: "dsp.StandardDeviation"
+        body: '''dsp.StandardDeviation(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.StandardDeviation(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.StandardDeviation.html'
+
+
+    "dsp.NCO [dsp]":
+        prefix: "dsp.NCO"
+        body: '''dsp.NCO(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.NCO(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.NCO.html'
+
+
+    "dsp.RMS [dsp]":
+        prefix: "dsp.RMS"
+        body: '''dsp.RMS(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.RMS(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.RMS.html'
+
+
+    "dsp.CumulativeProduct [dsp]":
+        prefix: "dsp.CumulativeProduct"
+        body: '''dsp.CumulativeProduct(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.CumulativeProduct(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.CumulativeProduct.html'
+
+
+    "dsp.UpperTriangularSolver [dsp]":
+        prefix: "dsp.UpperTriangularSolver"
+        body: '''dsp.UpperTriangularSolver(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.UpperTriangularSolver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.UpperTriangularSolver.html'
+
+
+    "dsp.ArrayVectorAdder [dsp]":
+        prefix: "dsp.ArrayVectorAdder"
+        body: '''dsp.ArrayVectorAdder(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.ArrayVectorAdder(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ArrayVectorAdder.html'
+
+
+    "dsp.AudioFileWriter [dsp]":
+        prefix: "dsp.AudioFileWriter"
+        body: '''dsp.AudioFileWriter(${1:Filename}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.AudioFileWriter(Filename, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AudioFileWriter.html'
+
+
+    "dsp.UDPSender [dsp]":
+        prefix: "dsp.UDPSender"
+        body: '''dsp.UDPSender(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.UDPSender(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.UDPSender.html'
+
+
+    "dsp.Crosscorrelator [dsp]":
+        prefix: "dsp.Crosscorrelator"
+        body: '''dsp.Crosscorrelator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Crosscorrelator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Crosscorrelator.html'
+
+
+    "dsp.LDLFactor [dsp]":
+        prefix: "dsp.LDLFactor"
+        body: '''dsp.LDLFactor(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.LDLFactor(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.LDLFactor.html'
+
+
+    "dsp.ZeroCrossingDetector [dsp]":
+        prefix: "dsp.ZeroCrossingDetector"
+        body: '''dsp.ZeroCrossingDetector(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.ZeroCrossingDetector(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ZeroCrossingDetector.html'
+
+
+    "dsp.UniformEncoder [dsp]":
+        prefix: "dsp.UniformEncoder"
+        body: '''dsp.UniformEncoder(${1:PeakValue}, ${2:NumBits}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.UniformEncoder(PeakValue, NumBits, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.UniformEncoder.html'
+
+
+    "dsp.VectorQuantizerDecoder [dsp]":
+        prefix: "dsp.VectorQuantizerDecoder"
+        body: '''dsp.VectorQuantizerDecoder(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.VectorQuantizerDecoder(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.VectorQuantizerDecoder.html'
+
+
+    "dsp.ArrayVectorMultiplier [dsp]":
+        prefix: "dsp.ArrayVectorMultiplier"
+        body: '''dsp.ArrayVectorMultiplier(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.ArrayVectorMultiplier(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ArrayVectorMultiplier.html'
+
+
+    "dsp.CepstralToLPC [dsp]":
+        prefix: "dsp.CepstralToLPC"
+        body: '''dsp.CepstralToLPC(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert cepstral coefficients to linear prediction
+            coefficients
+        dsp.CepstralToLPC(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.cepstraltolpc-system-object.html'
+
+
+    "dsp.PhaseUnwrapper [dsp]":
+        prefix: "dsp.PhaseUnwrapper"
+        body: '''dsp.PhaseUnwrapper(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.PhaseUnwrapper(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.PhaseUnwrapper.html'
+
+
+    "dsp.RCToAutocorrelation [dsp]":
+        prefix: "dsp.RCToAutocorrelation"
+        body: '''dsp.RCToAutocorrelation(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert reflection coefficients to autocorrelation
+            coefficients
+        dsp.RCToAutocorrelation(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.rctoautocorrelation-system-object.html'
+
+
+    "dsp.Maximum [dsp]":
+        prefix: "dsp.Maximum"
+        body: '''dsp.Maximum(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Maximum(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Maximum.html'
+
+
+    "dsp.VectorQuantizerEncoder [dsp]":
+        prefix: "dsp.VectorQuantizerEncoder"
+        body: '''dsp.VectorQuantizerEncoder(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.VectorQuantizerEncoder(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.VectorQuantizerEncoder.html'
+
+
+    "dsp.Chirp [dsp]":
+        prefix: "dsp.Chirp"
+        body: '''dsp.Chirp(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Chirp(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Chirp.html'
+
+
+    "dsp.IIRFilter [dsp]":
+        prefix: "dsp.IIRFilter"
+        body: '''dsp.IIRFilter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.IIRFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.IIRFilter.html'
+
+
+    "dsp.DyadicSynthesisFilterBank [dsp]":
+        prefix: "dsp.DyadicSynthesisFilterBank"
+        body: '''dsp.DyadicSynthesisFilterBank(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.DyadicSynthesisFilterBank(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.DyadicSynthesisFilterBank.html'
+
+
+    "dsp.LSFToLPC [dsp]":
+        prefix: "dsp.LSFToLPC"
+        body: '''dsp.LSFToLPC(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert line spectral frequencies to linear prediction
+            coefficients
+        dsp.LSFToLPC(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.lsftolpc-system-object.html'
+
+
+    "dsp.DyadicAnalysisFilterBank [dsp]":
+        prefix: "dsp.DyadicAnalysisFilterBank"
+        body: '''dsp.DyadicAnalysisFilterBank(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.DyadicAnalysisFilterBank(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.DyadicAnalysisFilterBank.html'
+
+
+    "dsp.SineWave [dsp]":
+        prefix: "dsp.SineWave"
+        body: '''dsp.SineWave(${1:Amplitude}, ${2:Frequency}, ${3:PhaseOffset}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.SineWave(Amplitude, Frequency, PhaseOffset, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.SineWave.html'
+
+
+    "dsp.LPCToRC [dsp]":
+        prefix: "dsp.LPCToRC"
+        body: '''dsp.LPCToRC(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert linear prediction coefficients to reflection
+            coefficients
+        dsp.LPCToRC(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.lpctorc-system-object.html'
+
+
+    "dsp.UDPReceiver [dsp]":
+        prefix: "dsp.UDPReceiver"
+        body: '''dsp.UDPReceiver(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.UDPReceiver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.UDPReceiver.html'
+
+
+    "dsp.Window [dsp]":
+        prefix: "dsp.Window"
+        body: '''dsp.Window(${1:WindowFunction}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.Window(WindowFunction, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Window.html'
+
+
+    "dsp.Autocorrelator [dsp]":
+        prefix: "dsp.Autocorrelator"
+        body: '''dsp.Autocorrelator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Autocorrelator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Autocorrelator.html'
+
+
+    "dsp.LMSFilter [dsp]":
+        prefix: "dsp.LMSFilter"
+        body: '''dsp.LMSFilter(${1:Length}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.LMSFilter(Length, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.LMSFilter.html'
+
+
+    "dsp.AudioFileReader [dsp]":
+        prefix: "dsp.AudioFileReader"
+        body: '''dsp.AudioFileReader(${1:Filename}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.AudioFileReader(Filename, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AudioFileReader.html'
+
+
+    "dsp.CumulativeSum [dsp]":
+        prefix: "dsp.CumulativeSum"
+        body: '''dsp.CumulativeSum(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.CumulativeSum(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.CumulativeSum.html'
+
+
+    "dsp.Delay [dsp]":
+        prefix: "dsp.Delay"
+        body: '''dsp.Delay(${1:Length}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.Delay(Length, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Delay.html'
+
+
+    "dsp.LPCToLSF [dsp]":
+        prefix: "dsp.LPCToLSF"
+        body: '''dsp.LPCToLSF(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert linear prediction coefficients to line spectral
+            frequencies
+        dsp.LPCToLSF(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.lpctolsf-system-object.html'
+
+
+    "dsp.Mean [dsp]":
+        prefix: "dsp.Mean"
+        body: '''dsp.Mean(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Mean(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Mean.html'
+
+
+    "dsp.Interpolator [dsp]":
+        prefix: "dsp.Interpolator"
+        body: '''dsp.Interpolator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Interpolator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Interpolator.html'
+
+
+    "dsp.Convolver [dsp]":
+        prefix: "dsp.Convolver"
+        body: '''dsp.Convolver(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Convolver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Convolver.html'
+
+
+    "dsp.FFT [dsp]":
+        prefix: "dsp.FFT"
+        body: '''dsp.FFT(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.FFT(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FFT.html'
+
+
+    "dsp.DelayLine [dsp]":
+        prefix: "dsp.DelayLine"
+        body: '''dsp.DelayLine(${1:Length}, ${2:InitialConditions}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.DelayLine(Length, InitialConditions, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.DelayLine.html'
+
+
+    "dsp.FIRFilter [dsp]":
+        prefix: "dsp.FIRFilter"
+        body: '''dsp.FIRFilter(${1:Numerator}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.FIRFilter(Numerator, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FIRFilter.html'
+
+
+    "dsp.BiquadFilter [dsp]":
+        prefix: "dsp.BiquadFilter"
+        body: '''dsp.BiquadFilter(${1:SOSMatrix}, ${2:ScaleValues}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.BiquadFilter(SOSMatrix, ScaleValues, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.BiquadFilter.html'
+
+
+    "dsp.Variance [dsp]":
+        prefix: "dsp.Variance"
+        body: '''dsp.Variance(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Variance(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Variance.html'
+
+
+    "dsp.UniformDecoder [dsp]":
+        prefix: "dsp.UniformDecoder"
+        body: '''dsp.UniformDecoder(${1:PeakValue}, ${2:NumBits}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.UniformDecoder(PeakValue, NumBits, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.UniformDecoder.html'
+
+
+    "dsp.RCToLPC [dsp]":
+        prefix: "dsp.RCToLPC"
+        body: '''dsp.RCToLPC(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert reflection coefficients to linear prediction
+            coefficients
+        dsp.RCToLPC(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.rctolpc-system-object.html'
+
+
+    "dsp.FIRDecimator [dsp]":
+        prefix: "dsp.FIRDecimator"
+        body: '''dsp.FIRDecimator(${1:DecimationFactor}, ${2:Numerator}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.FIRDecimator(DecimationFactor, Numerator, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FIRDecimator.html'
+
+
+    "dsp.LPCToAutocorrelation [dsp]":
+        prefix: "dsp.LPCToAutocorrelation"
+        body: '''dsp.LPCToAutocorrelation(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert linear prediction coefficients to autocorrelation
+            coefficients
+        dsp.LPCToAutocorrelation(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.lpctoautocorrelation-system-object.html'
+
+
+    "dsp.PeakFinder [dsp]":
+        prefix: "dsp.PeakFinder"
+        body: '''dsp.PeakFinder(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.PeakFinder(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.PeakFinder.html'
+
+
+    "dsp.IDCT [dsp]":
+        prefix: "dsp.IDCT"
+        body: '''dsp.IDCT(${1:varargin})'''
+        description: '''[dsp] (To be removed) Inverse discrete cosine transform (IDCT)
+        dsp.IDCT(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.idct-system-object.html'
+
+
+    "dsp.BurgAREstimator [dsp]":
+        prefix: "dsp.BurgAREstimator"
+        body: '''dsp.BurgAREstimator(${1:varargin})'''
+        description: '''[dsp] (To be removed) Estimate of autoregressive (AR) model parameters using Burg
+            method
+        dsp.BurgAREstimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.burgarestimator-system-object.html'
+
+
+    "dsp.IFFT [dsp]":
+        prefix: "dsp.IFFT"
+        body: '''dsp.IFFT(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.IFFT(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.IFFT.html'
+
+
+    "dsp.AllpoleFilter [dsp]":
+        prefix: "dsp.AllpoleFilter"
+        body: '''dsp.AllpoleFilter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.AllpoleFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AllpoleFilter.html'
+
+
+    "dsp.Counter [dsp]":
+        prefix: "dsp.Counter"
+        body: '''dsp.Counter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Counter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Counter.html'
+
+
+    "dsp.ScalarQuantizerDecoder [dsp]":
+        prefix: "dsp.ScalarQuantizerDecoder"
+        body: '''dsp.ScalarQuantizerDecoder(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.ScalarQuantizerDecoder(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ScalarQuantizerDecoder.html'
+
+
+    "dsp.FIRRateConverter [dsp]":
+        prefix: "dsp.FIRRateConverter"
+        body: '''dsp.FIRRateConverter(${1:InterpolationFactor}, ${2:DecimationFactor}, ${3:Numerator}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.FIRRateConverter(InterpolationFactor, DecimationFactor, Numerator, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FIRRateConverter.html'
+
+
+    "dsp.Median [dsp]":
+        prefix: "dsp.Median"
+        body: '''dsp.Median(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Median(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Median.html'
+
+
+    "dsp.FIRInterpolator [dsp]":
+        prefix: "dsp.FIRInterpolator"
+        body: '''dsp.FIRInterpolator(${1:InterpolationFactor}, ${2:Numerator}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.FIRInterpolator(InterpolationFactor, Numerator, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FIRInterpolator.html'
+
+
+    "audioDeviceWriter [dsp]":
+        prefix: "audioDeviceWriter"
+        body: '''audioDeviceWriter(${1:SampleRate}, ${2:varargin})'''
+        description: '''[dsp] 
+        audioDeviceWriter(SampleRate, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/audioDeviceWriter.html'
+
+
+    "dsp.LPCToCepstral [dsp]":
+        prefix: "dsp.LPCToCepstral"
+        body: '''dsp.LPCToCepstral(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert linear prediction coefficients to cepstral
+            coefficients
+        dsp.LPCToCepstral(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.lpctocepstral-system-object.html'
+
+
+    "dsp.AudioPlayer [dsp]":
+        prefix: "dsp.AudioPlayer"
+        body: '''dsp.AudioPlayer(${1:SampleRate}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.AudioPlayer(SampleRate, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AudioPlayer.html'
+
+
+    "dsp.BlockLMSFilter [dsp]":
+        prefix: "dsp.BlockLMSFilter"
+        body: '''dsp.BlockLMSFilter(${1:Length}, ${2:BlockSize}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.BlockLMSFilter(Length, BlockSize, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.BlockLMSFilter.html'
+
+
+    "dsp.LevinsonSolver [dsp]":
+        prefix: "dsp.LevinsonSolver"
+        body: '''dsp.LevinsonSolver(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.LevinsonSolver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.LevinsonSolver.html'
+
+
+    "dsp.LSPToLPC [dsp]":
+        prefix: "dsp.LSPToLPC"
+        body: '''dsp.LSPToLPC(${1:varargin})'''
+        description: '''[dsp] (To be removed) Convert line spectral pairs to linear prediction
+            coefficients
+        dsp.LSPToLPC(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.lsptolpc-system-object.html'
+
+
+    "dsp.Buffer [dsp]":
+        prefix: "dsp.Buffer"
+        body: '''dsp.Buffer(${1:Length}, ${2:OverlapLength}, ${3:InitialConditions}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.Buffer(Length, OverlapLength, InitialConditions, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Buffer.html'
+
+
+    "dsp.VariableIntegerDelay [dsp]":
+        prefix: "dsp.VariableIntegerDelay"
+        body: '''dsp.VariableIntegerDelay(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.VariableIntegerDelay(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.VariableIntegerDelay.html'
+
+
+    "dsp.Histogram [dsp]":
+        prefix: "dsp.Histogram"
+        body: '''dsp.Histogram(${1:LowerLimit}, ${2:UpperLimit}, ${3:NumBins}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.Histogram(LowerLimit, UpperLimit, NumBins, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Histogram.html'
+
+
+    "dsp.LUFactor [dsp]":
+        prefix: "dsp.LUFactor"
+        body: '''dsp.LUFactor(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.LUFactor(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.LUFactor.html'
+
+
+    "dsp.ScalarQuantizerEncoder [dsp]":
+        prefix: "dsp.ScalarQuantizerEncoder"
+        body: '''dsp.ScalarQuantizerEncoder(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.ScalarQuantizerEncoder(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ScalarQuantizerEncoder.html'
+
+
+    "dsp.Normalizer [dsp]":
+        prefix: "dsp.Normalizer"
+        body: '''dsp.Normalizer(${1:varargin})'''
+        description: '''[dsp] (To be removed) Vector normalization along specified dimension
+        dsp.Normalizer(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.normalizer-system-object.html'
+

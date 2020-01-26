@@ -1,0 +1,66 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "signalLabelDefinition [shared]":
+        prefix: "signalLabelDefinition"
+        body: '''signalLabelDefinition(${1:name}, 'LabelType', ${2:value}, 'LabelDataType', ${3:value}, 'Categories', ${4:value}, 'ROILimitsDataType', ${5:value}, 'PointLocationsDataType', ${6:value}, 'ValidationFunction', ${7:value}, 'DefaultValue', ${8:value}, 'Description', ${9:value}, 'Tag', ${10:value}, 'Sublabels', ${11:value})'''
+        description: '''[shared] Create signal label definition
+        signalLabelDefinition(name, 'LabelType', value, 'LabelDataType', value, 'Categories', value, 'ROILimitsDataType', value, 'PointLocationsDataType', value, 'ValidationFunction', value, 'DefaultValue', value, 'Description', value, 'Tag', value, 'Sublabels', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/signallabeldefinition.html'
+
+
+    "xwvd [shared]":
+        prefix: "xwvd"
+        body: '''[${1:d}, ${2:f}, ${3:t}] = xwvd(${1:x}, ${2:y}, ${3:optional_ts}, ${4:'smoothedPseudo'}, ${5:'NumFrequencyPoints'}, ${6:nf}, ${7:'MinThreshold'}, ${8:optional_thresh})'''
+        description: '''[shared] Cross Wigner-Ville distribution and cross smoothed pseudo Wigner-Ville
+      distribution
+        [d, f, t] = xwvd(x, y, optional_ts, 'smoothedPseudo', 'NumFrequencyPoints', nf, 'MinThreshold', optional_thresh)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/xwvd.html'
+
+
+    "hilbert [shared]":
+        prefix: "hilbert"
+        body: '''${1:x} = hilbert(${1:xr}, ${2:optional_n})'''
+        description: '''[shared] Discrete-time analytic signal using Hilbert transform
+        x = hilbert(xr, optional_n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/hilbert.html'
+
+
+    "hht [shared]":
+        prefix: "hht"
+        body: '''[${1:hs}, ${2:f}, ${3:t}, ${4:imfinsf}, ${5:imfinse}] = hht(${1:imf}, ${2:fs}, ${3:optional_freqlocation})'''
+        description: '''[shared] Hilbert-Huang transform
+        [hs, f, t, imfinsf, imfinse] = hht(imf, fs, optional_freqlocation)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/hht.html'
+
+
+    "wvd [shared]":
+        prefix: "wvd"
+        body: '''[${1:d}, ${2:f}, ${3:t}] = wvd(${1:x}, ${2:optional_ts}, ${3:'MinThreshold'}, ${4:optional_thresh})'''
+        description: '''[shared] Wigner-Ville distribution and smoothed pseudo Wigner-Ville distribution
+        [d, f, t] = wvd(x, optional_ts, 'MinThreshold', optional_thresh)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/wvd.html'
+
+
+    "labeledSignalSet [shared]":
+        prefix: "labeledSignalSet"
+        body: '''labeledSignalSet(${1:src}, ${2:optional_lbldefs}, 'Description', ${3:value}, 'SampleRate', ${4:value}, 'SampleTime', ${5:value}, 'TimeValues', ${6:value}, 'NumMembers', ${7:value}, 'Labels', ${8:value}, 'TimeInformation', ${9:value}, 'Source', ${10:value})'''
+        description: '''[shared] Create labeled signal set
+        labeledSignalSet(src, optional_lbldefs, 'Description', value, 'SampleRate', value, 'SampleTime', value, 'TimeValues', value, 'NumMembers', value, 'Labels', value, 'TimeInformation', value, 'Source', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/labeledsignalset.html'
+
+
+    "emd [shared]":
+        prefix: "emd"
+        body: '''[${1:imf}, ${2:residual}, ${3:info}] = emd(${1:X}, 'SiftRelativeTolerance', ${2:value}, 'SiftMaxIterations', ${3:value}, 'MaxNumIMF', ${4:value}, 'MaxNumExtrema', ${5:value}, 'MaxEnergyRatio', ${6:value}, 'Interpolation', ${7:value}, 'Display', ${8:value})'''
+        description: '''[shared] Empirical mode decomposition
+        [imf, residual, info] = emd(X, 'SiftRelativeTolerance', value, 'SiftMaxIterations', value, 'MaxNumIMF', value, 'MaxNumExtrema', value, 'MaxEnergyRatio', value, 'Interpolation', value, 'Display', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/emd.html'
+

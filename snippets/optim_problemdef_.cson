@@ -1,0 +1,335 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "optim.problemdef.OptimizationProblem.writeproblem [optim]":
+        prefix: "optim.problemdef.OptimizationProblem.writeproblem"
+        body: '''optim.problemdef.OptimizationProblem.writeproblem(${1:prob}, ${2:optional_filename})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationProblem.writeproblem(prob, optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationProblem.writeproblem.html'
+
+
+    "optim.problemdef.OptimizationVariable.writebounds [optim]":
+        prefix: "optim.problemdef.OptimizationVariable.writebounds"
+        body: '''optim.problemdef.OptimizationVariable.writebounds(${1:x}, ${2:optional_filename})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationVariable.writebounds(x, optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationVariable.writebounds.html'
+
+
+    "optim.problemdef.OptimizationProblem.prob2struct [optim]":
+        prefix: "optim.problemdef.OptimizationProblem.prob2struct"
+        body: '''optim.problemdef.OptimizationProblem.prob2struct(${1:prob}, ${2:optional_x0}, 'FileLocation', ${3:value}, 'Options', ${4:value}, 'ObjectiveFunctionName', ${5:value}, 'ConstraintFunctionName', ${6:value})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationProblem.prob2struct(prob, optional_x0, 'FileLocation', value, 'Options', value, 'ObjectiveFunctionName', value, 'ConstraintFunctionName', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationProblem.prob2struct.html'
+
+
+    "optimeq [optim]":
+        prefix: "optimeq"
+        body: '''${1:eqs} = optimeq(${1:n})'''
+        description: '''[optim] Create empty optimization equality array
+        eqs = optimeq(n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/ug/optimeq.html'
+
+
+    "optimineq [optim]":
+        prefix: "optimineq"
+        body: '''${1:ineq} = optimineq(${1:n})'''
+        description: '''[optim] Create empty optimization inequality array
+        ineq = optimineq(n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/ug/optimineq.html'
+
+
+    "optim.problemdef.OptimizationVariable.writevar [optim]":
+        prefix: "optim.problemdef.OptimizationVariable.writevar"
+        body: '''optim.problemdef.OptimizationVariable.writevar(${1:x}, ${2:optional_filename})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationVariable.writevar(x, optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationVariable.writevar.html'
+
+
+    "optim.problemdef.OptimizationConstraint._parenAssign [optim]":
+        prefix: "optim.problemdef.OptimizationConstraint._parenAssign"
+        body: '''optim.problemdef.OptimizationConstraint._parenAssign(${1:c}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationConstraint._parenAssign(c, dim1, dim2, dim3)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationConstraint._parenAssign.html'
+
+
+    "optim.problemdef.OptimizationProblem.showproblem [optim]":
+        prefix: "optim.problemdef.OptimizationProblem.showproblem"
+        body: '''optim.problemdef.OptimizationProblem.showproblem(${1:prob})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationProblem.showproblem(prob)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationProblem.showproblem.html'
+
+
+    "optim.problemdef.OptimizationVariable.showbounds [optim]":
+        prefix: "optim.problemdef.OptimizationVariable.showbounds"
+        body: '''optim.problemdef.OptimizationVariable.showbounds(${1:x})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationVariable.showbounds(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationVariable.showbounds.html'
+
+
+    "optim.problemdef.EquationProblem.prob2struct [optim]":
+        prefix: "optim.problemdef.EquationProblem.prob2struct"
+        body: '''optim.problemdef.EquationProblem.prob2struct(${1:prob}, ${2:optional_x0}, 'FileLocation', ${3:value}, 'Options', ${4:value}, 'EquationFunctionName', ${5:value})'''
+        description: '''[optim] 
+        optim.problemdef.EquationProblem.prob2struct(prob, optional_x0, 'FileLocation', value, 'Options', value, 'EquationFunctionName', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.EquationProblem.prob2struct.html'
+
+
+    "optimproblem [optim]":
+        prefix: "optimproblem"
+        body: '''${1:prob} = optimproblem('Constraints', ${1:value}, 'Description', ${2:value}, 'Objective', ${3:value}, 'ObjectiveSense', ${4:value})'''
+        description: '''[optim] Create optimization problem
+        prob = optimproblem('Constraints', value, 'Description', value, 'Objective', value, 'ObjectiveSense', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/ug/optimproblem.html'
+
+
+    "optimvar [optim]":
+        prefix: "optimvar"
+        body: '''${1:x} = optimvar(${1:Name}, ${2:optional_n}, 'Type', ${3:value}, 'LowerBound', ${4:value}, 'UpperBound', ${5:value})'''
+        description: '''[optim] Create optimization variables
+        x = optimvar(Name, optional_n, 'Type', value, 'LowerBound', value, 'UpperBound', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/ug/optimvar.html'
+
+
+    "optim.problemdef.OptimizationConstraint.write [optim]":
+        prefix: "optim.problemdef.OptimizationConstraint.write"
+        body: '''optim.problemdef.OptimizationConstraint.write(${1:constr}, ${2:optional_filename})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationConstraint.write(constr, optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationConstraint.write.html'
+
+
+    "optim.problemdef.OptimizationVariable.write [optim]":
+        prefix: "optim.problemdef.OptimizationVariable.write"
+        body: '''optim.problemdef.OptimizationVariable.write(${1:x}, ${2:optional_filename})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationVariable.write(x, optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationVariable.write.html'
+
+
+    "optim.problemdef.OptimizationConstraint.infeasibility [optim]":
+        prefix: "optim.problemdef.OptimizationConstraint.infeasibility"
+        body: '''optim.problemdef.OptimizationConstraint.infeasibility(${1:constr}, ${2:varval})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationConstraint.infeasibility(constr, varval)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationConstraint.infeasibility.html'
+
+
+    "optim.problemdef.OptimizationConstraint.showconstr [optim]":
+        prefix: "optim.problemdef.OptimizationConstraint.showconstr"
+        body: '''optim.problemdef.OptimizationConstraint.showconstr(${1:constr})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationConstraint.showconstr(constr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationConstraint.showconstr.html'
+
+
+    "optim.problemdef.EquationProblem.solve [optim]":
+        prefix: "optim.problemdef.EquationProblem.solve"
+        body: '''optim.problemdef.EquationProblem.solve(${1:prob}, ${2:optional_x0}, 'Solver', ${3:value}, 'Options', ${4:value})'''
+        description: '''[optim] 
+        optim.problemdef.EquationProblem.solve(prob, optional_x0, 'Solver', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.EquationProblem.solve.html'
+
+
+    "optim.problemdef.OptimizationExpression._parenReference [optim]":
+        prefix: "optim.problemdef.OptimizationExpression._parenReference"
+        body: '''optim.problemdef.OptimizationExpression._parenReference(${1:e}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationExpression._parenReference(e, dim1, dim2, dim3)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationExpression._parenReference.html'
+
+
+    "optim.problemdef.OptimizationExpression.showexpr [optim]":
+        prefix: "optim.problemdef.OptimizationExpression.showexpr"
+        body: '''optim.problemdef.OptimizationExpression.showexpr(${1:expr})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationExpression.showexpr(expr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationExpression.showexpr.html'
+
+
+    "optim.problemdef.OptimizationExpression._parenAssign [optim]":
+        prefix: "optim.problemdef.OptimizationExpression._parenAssign"
+        body: '''optim.problemdef.OptimizationExpression._parenAssign(${1:e}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationExpression._parenAssign(e, dim1, dim2, dim3)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationExpression._parenAssign.html'
+
+
+    "optim.problemdef.OptimizationExpression.show [optim]":
+        prefix: "optim.problemdef.OptimizationExpression.show"
+        body: '''optim.problemdef.OptimizationExpression.show(${1:expr})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationExpression.show(expr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationExpression.show.html'
+
+
+    "optim.problemdef.OptimizationProblem.write [optim]":
+        prefix: "optim.problemdef.OptimizationProblem.write"
+        body: '''optim.problemdef.OptimizationProblem.write(${1:prob}, ${2:optional_filename})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationProblem.write(prob, optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationProblem.write.html'
+
+
+    "optimconstr [optim]":
+        prefix: "optimconstr"
+        body: '''${1:constr} = optimconstr(${1:n})'''
+        description: '''[optim] Create empty optimization constraint array
+        constr = optimconstr(n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/ug/optimconstr.html'
+
+
+    "optim.problemdef.OptimizationVariable._parenReference [optim]":
+        prefix: "optim.problemdef.OptimizationVariable._parenReference"
+        body: '''optim.problemdef.OptimizationVariable._parenReference(${1:v}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationVariable._parenReference(v, dim1, dim2, dim3)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationVariable._parenReference.html'
+
+
+    "optim.problemdef.OptimizationConstraint.show [optim]":
+        prefix: "optim.problemdef.OptimizationConstraint.show"
+        body: '''optim.problemdef.OptimizationConstraint.show(${1:constr})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationConstraint.show(constr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationConstraint.show.html'
+
+
+    "fcn2optimexpr [optim]":
+        prefix: "fcn2optimexpr"
+        body: '''${1:constr} = fcn2optimexpr(${1:fun}, ${2:optional_Xin}, 'ReuseEvaluation', ${3:value}, 'OutputSize', ${4:value})'''
+        description: '''[optim] Convert function to optimization expression
+        constr = fcn2optimexpr(fun, optional_Xin, 'ReuseEvaluation', value, 'OutputSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/ug/fcn2optimexpr.html'
+
+
+    "optim.problemdef.OptimizationVariable._parenAssign [optim]":
+        prefix: "optim.problemdef.OptimizationVariable._parenAssign"
+        body: '''optim.problemdef.OptimizationVariable._parenAssign(${1:v}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationVariable._parenAssign(v, dim1, dim2, dim3)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationVariable._parenAssign.html'
+
+
+    "optim.problemdef.OptimizationExpression.evaluate [optim]":
+        prefix: "optim.problemdef.OptimizationExpression.evaluate"
+        body: '''optim.problemdef.OptimizationExpression.evaluate(${1:expr}, ${2:optional_varval})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationExpression.evaluate(expr, optional_varval)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationExpression.evaluate.html'
+
+
+    "optim.problemdef.OptimizationConstraint._parenReference [optim]":
+        prefix: "optim.problemdef.OptimizationConstraint._parenReference"
+        body: '''optim.problemdef.OptimizationConstraint._parenReference(${1:c}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationConstraint._parenReference(c, dim1, dim2, dim3)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationConstraint._parenReference.html'
+
+
+    "optim.problemdef.OptimizationVariable.show [optim]":
+        prefix: "optim.problemdef.OptimizationVariable.show"
+        body: '''optim.problemdef.OptimizationVariable.show(${1:x})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationVariable.show(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationVariable.show.html'
+
+
+    "optimexpr [optim]":
+        prefix: "optimexpr"
+        body: '''${1:expr} = optimexpr(${1:n})'''
+        description: '''[optim] Create empty optimization expression array
+        expr = optimexpr(n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/ug/optimexpr.html'
+
+
+    "optim.problemdef.OptimizationVariable.showvar [optim]":
+        prefix: "optim.problemdef.OptimizationVariable.showvar"
+        body: '''optim.problemdef.OptimizationVariable.showvar(${1:x})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationVariable.showvar(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationVariable.showvar.html'
+
+
+    "optim.problemdef.OptimizationProblem.show [optim]":
+        prefix: "optim.problemdef.OptimizationProblem.show"
+        body: '''optim.problemdef.OptimizationProblem.show(${1:prob})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationProblem.show(prob)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationProblem.show.html'
+
+
+    "optim.problemdef.OptimizationVariable.findindex [optim]":
+        prefix: "optim.problemdef.OptimizationVariable.findindex"
+        body: '''optim.problemdef.OptimizationVariable.findindex(${1:x}, ${2:cstr})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationVariable.findindex(x, cstr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationVariable.findindex.html'
+
+
+    "optim.problemdef.OptimizationProblem.solve [optim]":
+        prefix: "optim.problemdef.OptimizationProblem.solve"
+        body: '''optim.problemdef.OptimizationProblem.solve(${1:prob}, ${2:optional_x0}, 'Solver', ${3:value}, 'Options', ${4:value})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationProblem.solve(prob, optional_x0, 'Solver', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationProblem.solve.html'
+
+
+    "optim.problemdef.OptimizationConstraint.writeconstr [optim]":
+        prefix: "optim.problemdef.OptimizationConstraint.writeconstr"
+        body: '''optim.problemdef.OptimizationConstraint.writeconstr(${1:constr}, ${2:optional_filename})'''
+        description: '''[optim] 
+        optim.problemdef.OptimizationConstraint.writeconstr(constr, optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/optim.problemdef.OptimizationConstraint.writeconstr.html'
+
+
+    "eqnproblem [optim]":
+        prefix: "eqnproblem"
+        body: '''${1:prob} = eqnproblem('Description', ${1:value}, 'Equations', ${2:value})'''
+        description: '''[optim] Create equation problem
+        prob = eqnproblem('Description', value, 'Equations', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/optim/ug/eqnproblem.html'
+

@@ -1,0 +1,29 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "yyaxis [matlab]":
+        prefix: "yyaxis"
+        body: '''yyaxis(${1:optional_ax}, ${2:optional_side})'''
+        description: '''[matlab] Create chart with two y-axes
+        yyaxis(optional_ax, optional_side)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/yyaxis.html'
+
+
+    "axes [matlab]":
+        prefix: "axes"
+        body: '''${1:h} = axes(${1:optional_parent}, ${2:properties})'''
+        description: '''[matlab] Create Cartesian axes
+        h = axes(optional_parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/axes.html'
+
+
+    "hold [matlab]":
+        prefix: "hold"
+        body: '''hold(${1:optional_ax}, ${2:optional_action})'''
+        description: '''[matlab] Retain current plot when adding new plots
+        hold(optional_ax, optional_action)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hold.html'
+

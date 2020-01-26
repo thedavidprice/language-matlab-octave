@@ -1,0 +1,75 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "importCaffeLayers [nnet]":
+        prefix: "importCaffeLayers"
+        body: '''importCaffeLayers(${1:protofile}, 'InputSize', ${2:value})'''
+        description: '''[nnet] Import convolutional neural network layers from Caffe
+        importCaffeLayers(protofile, 'InputSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/importcaffelayers.html'
+
+
+    "exportONNXNetwork [nnet]":
+        prefix: "exportONNXNetwork"
+        body: '''exportONNXNetwork(${1:net}, ${2:filename}, 'NetworkName', ${3:value}, 'OpsetVersion', ${4:value})'''
+        description: '''[nnet] Export network to ONNX model format
+        exportONNXNetwork(net, filename, 'NetworkName', value, 'OpsetVersion', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/exportonnxnetwork.html'
+
+
+    "importONNXNetwork [nnet]":
+        prefix: "importONNXNetwork"
+        body: '''importONNXNetwork(${1:modelfile}, 'OutputLayerType', ${2:value}, 'Classes', ${3:value})'''
+        description: '''[nnet] Import pretrained ONNX network
+        importONNXNetwork(modelfile, 'OutputLayerType', value, 'Classes', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/importonnxnetwork.html'
+
+
+    "importKerasNetwork [nnet]":
+        prefix: "importKerasNetwork"
+        body: '''importKerasNetwork(${1:modelfile}, 'WeightFile', ${2:value}, 'OutputLayerType', ${3:value}, 'ImageInputSize', ${4:value}, 'Classes', ${5:value})'''
+        description: '''[nnet] Import a pretrained Keras network and weights
+        importKerasNetwork(modelfile, 'WeightFile', value, 'OutputLayerType', value, 'ImageInputSize', value, 'Classes', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/importkerasnetwork.html'
+
+
+    "importONNXLayers [nnet]":
+        prefix: "importONNXLayers"
+        body: '''importONNXLayers(${1:modelfile}, 'ImportWeights', ${2:value}, 'OutputLayerType', ${3:value})'''
+        description: '''[nnet] Import layers from ONNX network
+        importONNXLayers(modelfile, 'ImportWeights', value, 'OutputLayerType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/importonnxlayers.html'
+
+
+    "alexnet [nnet]":
+        prefix: "alexnet"
+        body: '''alexnet()'''
+        description: '''[nnet] Pretrained AlexNet convolutional neural network
+        alexnet()
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/alexnet.html'
+
+
+    "importKerasLayers [nnet]":
+        prefix: "importKerasLayers"
+        body: '''importKerasLayers(${1:modelfile}, 'OutputLayerType', ${2:value}, 'ImageInputSize', ${3:value}, 'ImportWeights', ${4:value}, 'WeightFile', ${5:value})'''
+        description: '''[nnet] Import layers from Keras network
+        importKerasLayers(modelfile, 'OutputLayerType', value, 'ImageInputSize', value, 'ImportWeights', value, 'WeightFile', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/importkeraslayers.html'
+
+
+    "importCaffeNetwork [nnet]":
+        prefix: "importCaffeNetwork"
+        body: '''importCaffeNetwork(${1:protofile}, ${2:datafile}, 'InputSize', ${3:value}, 'AverageImage', ${4:value}, 'Classes', ${5:value})'''
+        description: '''[nnet] Import pretrained convolutional neural network models
+from Caffe
+        importCaffeNetwork(protofile, datafile, 'InputSize', value, 'AverageImage', value, 'Classes', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/importcaffenetwork.html'
+

@@ -1,0 +1,74 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius [shared]":
+        prefix: "pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius"
+        body: '''pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius(${1:ptCloud}, ${2:point}, ${3:radius}, 'Sort', ${4:value}, 'MaxLeafChecks', ${5:value})'''
+        description: '''[shared] 
+        pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius(ptCloud, point, radius, 'Sort', value, 'MaxLeafChecks', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius.html'
+
+
+    "pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors [shared]":
+        prefix: "pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors"
+        body: '''pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors(${1:ptCloud}, ${2:point}, ${3:K}, 'Sort', ${4:value}, 'MaxLeafChecks', ${5:value})'''
+        description: '''[shared] 
+        pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors(ptCloud, point, K, 'Sort', value, 'MaxLeafChecks', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors.html'
+
+
+    "pointCloud [shared]":
+        prefix: "pointCloud"
+        body: '''pointCloud(${1:xyzPoints}, 'Color', ${2:value}, 'Normal', ${3:value}, 'Intensity', ${4:value})'''
+        description: '''[shared] Object for storing 3-D point cloud
+        pointCloud(xyzPoints, 'Color', value, 'Normal', value, 'Intensity', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pointcloud.html'
+
+
+    "pcplayer.view [shared]":
+        prefix: "pcplayer.view"
+        body: '''pcplayer.view(${1:player}, ${2:ptCloud})'''
+        description: '''[shared] 
+        pcplayer.view(player, ptCloud)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/pcplayer.view.html'
+
+
+    "pcplayer [shared]":
+        prefix: "pcplayer"
+        body: '''pcplayer(${1:xlimits}, ${2:ylimits}, ${3:zlimits}, 'MarkerSize', ${4:value}, 'VerticalAxis', ${5:value}, 'VerticalAxisDir', ${6:value})'''
+        description: '''[shared] Visualize streaming 3-D point cloud data
+        pcplayer(xlimits, ylimits, zlimits, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pcplayer.html'
+
+
+    "pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints [shared]":
+        prefix: "pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints"
+        body: '''pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints(${1:ptCloud})'''
+        description: '''[shared] 
+        pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints(ptCloud)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints.html'
+
+
+    "pointclouds.internal.pc.pointCloudImpl.select [shared]":
+        prefix: "pointclouds.internal.pc.pointCloudImpl.select"
+        body: '''pointclouds.internal.pc.pointCloudImpl.select(${1:ptCloud}, ${2:row}, ${3:column}, 'OutputSize', ${4:value})'''
+        description: '''[shared] 
+        pointclouds.internal.pc.pointCloudImpl.select(ptCloud, row, column, 'OutputSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.select.html'
+
+
+    "pointclouds.internal.pc.pointCloudImpl.findPointsInROI [shared]":
+        prefix: "pointclouds.internal.pc.pointCloudImpl.findPointsInROI"
+        body: '''pointclouds.internal.pc.pointCloudImpl.findPointsInROI(${1:ptCloud}, ${2:roi})'''
+        description: '''[shared] 
+        pointclouds.internal.pc.pointCloudImpl.findPointsInROI(ptCloud, roi)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.findPointsInROI.html'
+

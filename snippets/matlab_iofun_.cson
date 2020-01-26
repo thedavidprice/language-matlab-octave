@@ -1,0 +1,438 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "xmlread [matlab]":
+        prefix: "xmlread"
+        body: '''xmlread(${1:filename}, ${2:optional_varargin}, 'AllowDoctype', ${3:value})'''
+        description: '''[matlab] Read XML document and return Document Object Model node
+        xmlread(filename, optional_varargin, 'AllowDoctype', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xmlread.html'
+
+
+    "matfile [matlab]":
+        prefix: "matfile"
+        body: '''${1:m} = matfile(${1:filename}, 'Writable', ${2:value})'''
+        description: '''[matlab] Access and change variables in MAT-file without loading file into
+      memory
+        m = matfile(filename, 'Writable', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.io.matfile.html'
+
+
+    "xslt [matlab]":
+        prefix: "xslt"
+        body: '''${1:result} = xslt(${1:source}, ${2:style}, ${3:dest}, ${4:optional_'-web'})'''
+        description: '''[matlab] Transform XML document using XSLT engine
+        result = xslt(source, style, dest, optional_'-web')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xslt.html'
+
+
+    "writematrix [matlab]":
+        prefix: "writematrix"
+        body: '''writematrix(${1:M}, ${2:filename}, 'FileType', ${3:value}, 'DateLocale', ${4:value}, 'Encoding', ${5:value}, 'Delimiter', ${6:value}, 'QuoteStrings', ${7:value})'''
+        description: '''[matlab] Write a matrix to a file
+        writematrix(M, filename, 'FileType', value, 'DateLocale', value, 'Encoding', value, 'Delimiter', value, 'QuoteStrings', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/writematrix.html'
+
+
+    "timerfind [matlab]":
+        prefix: "timerfind"
+        body: '''${1:out} = timerfind(${1:optional_t}, ${2:optional_S}, 'BusyMode', ${3:value}, 'ErrorFcn', ${4:value}, 'ExecutionMode', ${5:value}, 'Name', ${6:value}, 'ObjectVisibility', ${7:value}, 'Period', ${8:value}, 'StartDelay', ${9:value}, 'StartFcn', ${10:value}, 'StopFcn', ${11:value}, 'Tag', ${12:value}, 'TasksToExecute', ${13:value}, 'TimerFcn', ${14:value}, 'UserData', ${15:value})'''
+        description: '''[matlab] Find timer object
+        out = timerfind(optional_t, optional_S, 'BusyMode', value, 'ErrorFcn', value, 'ExecutionMode', value, 'Name', value, 'ObjectVisibility', value, 'Period', value, 'StartDelay', value, 'StartFcn', value, 'StopFcn', value, 'Tag', value, 'TasksToExecute', value, 'TimerFcn', value, 'UserData', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/timer.timerfind.html'
+
+
+    "writecell [matlab]":
+        prefix: "writecell"
+        body: '''writecell(${1:C}, ${2:filename}, 'FileType', ${3:value}, 'DateLocale', ${4:value}, 'Encoding', ${5:value}, 'Delimiter', ${6:value}, 'QuoteStrings', ${7:value})'''
+        description: '''[matlab] Write cell array to file
+        writecell(C, filename, 'FileType', value, 'DateLocale', value, 'Encoding', value, 'Delimiter', value, 'QuoteStrings', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/writecell.html'
+
+
+    "textscan [matlab]":
+        prefix: "textscan"
+        body: '''[${1:C}, ${2:position}] = textscan(${1:source}, ${2:formatSpec}, ${3:optional_N}, 'CollectOutput', ${4:value}, 'CommentStyle', ${5:value}, 'DateLocale', ${6:value}, 'Delimiter', ${7:value}, 'EmptyValue', ${8:value}, 'EndOfLine', ${9:value}, 'ExpChars', ${10:value}, 'HeaderLines', ${11:value}, 'MultipleDelimsAsOne', ${12:value}, 'ReturnOnError', ${13:value}, 'TreatAsEmpty', ${14:value}, 'Whitespace', ${15:value}, 'TextType', ${16:value})'''
+        description: '''[matlab] Read formatted data from text file or string
+        [C, position] = textscan(source, formatSpec, optional_N, 'CollectOutput', value, 'CommentStyle', value, 'DateLocale', value, 'Delimiter', value, 'EmptyValue', value, 'EndOfLine', value, 'ExpChars', value, 'HeaderLines', value, 'MultipleDelimsAsOne', value, 'ReturnOnError', value, 'TreatAsEmpty', value, 'Whitespace', value, 'TextType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/textscan.html'
+
+
+    "tar [matlab]":
+        prefix: "tar"
+        body: '''tar(${1:tarfilename}, ${2:filenames}, ${3:optional_rootfolder})'''
+        description: '''[matlab] Compress files into tar file
+        tar(tarfilename, filenames, optional_rootfolder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tar.html'
+
+
+    "timer [matlab]":
+        prefix: "timer"
+        body: '''${1:t} = timer('BusyMode', ${1:value}, 'ErrorFcn', ${2:value}, 'ExecutionMode', ${3:value}, 'Name', ${4:value}, 'ObjectVisibility', ${5:value}, 'Period', ${6:value}, 'StartDelay', ${7:value}, 'StartFcn', ${8:value}, 'StopFcn', ${9:value}, 'Tag', ${10:value}, 'TasksToExecute', ${11:value}, 'TimerFcn', ${12:value}, 'UserData', ${13:value})'''
+        description: '''[matlab] Create object to schedule execution of MATLAB commands
+        t = timer('BusyMode', value, 'ErrorFcn', value, 'ExecutionMode', value, 'Name', value, 'ObjectVisibility', value, 'Period', value, 'StartDelay', value, 'StartFcn', value, 'StopFcn', value, 'Tag', value, 'TasksToExecute', value, 'TimerFcn', value, 'UserData', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/timer-class.html'
+
+
+    "zip [matlab]":
+        prefix: "zip"
+        body: '''zip(${1:zipfile}, ${2:files}, ${3:optional_rootfolder})'''
+        description: '''[matlab] Compress files into zip file
+        zip(zipfile, files, optional_rootfolder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/zip.html'
+
+
+    "fileread [matlab]":
+        prefix: "fileread"
+        body: '''${1:text} = fileread(${1:filename})'''
+        description: '''[matlab] Read contents of file as text
+        text = fileread(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fileread.html'
+
+
+    "feof [matlab]":
+        prefix: "feof"
+        body: '''${1:status} = feof(${1:fileID})'''
+        description: '''[matlab] Test for end of file
+        status = feof(fileID)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/feof.html'
+
+
+    "fseek [matlab]":
+        prefix: "fseek"
+        body: '''${1:status} = fseek(${1:fileID}, ${2:offset}, ${3:origin})'''
+        description: '''[matlab] Move to specified position in file
+        status = fseek(fileID, offset, origin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fseek.html'
+
+
+    "writetable [matlab]":
+        prefix: "writetable"
+        body: '''writetable(${1:T}, ${2:filename}, 'FileType', ${3:value}, 'WriteVariableNames', ${4:value}, 'WriteRowNames', ${5:value}, 'DateLocale', ${6:value}, 'Delimiter', ${7:value}, 'QuoteStrings', ${8:value}, 'Encoding', ${9:value})'''
+        description: '''[matlab] Write table to file
+        writetable(T, filename, 'FileType', value, 'WriteVariableNames', value, 'WriteRowNames', value, 'DateLocale', value, 'Delimiter', value, 'QuoteStrings', value, 'Encoding', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/writetable.html'
+
+
+    "xmlwrite [matlab]":
+        prefix: "xmlwrite"
+        body: '''${1:chr} = xmlwrite(${1:DOMnode})'''
+        description: '''[matlab] Write XML Document Object Model node
+        chr = xmlwrite(DOMnode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xmlwrite.html'
+
+
+    "xlsread [matlab]":
+        prefix: "xlsread"
+        body: '''[${1:num}, ${2:txt}, ${3:raw}, ${4:custom}] = xlsread(${1:filename}, ${2:-1})'''
+        description: '''[matlab] (Not recommended) Read Microsoft
+            Excel spreadsheet file
+        [num, txt, raw, custom] = xlsread(filename, -1)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xlsread.html'
+
+
+    "fgetl [matlab]":
+        prefix: "fgetl"
+        body: '''${1:tline} = fgetl(${1:fileID})'''
+        description: '''[matlab] Read line of text from instrument and discard terminator
+        tline = fgetl(fileID)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fgetl.html'
+
+
+    "fwrite [matlab]":
+        prefix: "fwrite"
+        body: '''${1:count} = fwrite(${1:fileID}, ${2:A}, ${3:precision}, ${4:skip}, ${5:machinefmt})'''
+        description: '''[matlab] Write binary data to instrument
+        count = fwrite(fileID, A, precision, skip, machinefmt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fwrite.html'
+
+
+    "writetimetable [matlab]":
+        prefix: "writetimetable"
+        body: '''writetimetable(${1:TT}, ${2:filename}, 'FileType', ${3:value}, 'DateLocale', ${4:value}, 'Encoding', ${5:value}, 'Delimiter', ${6:value}, 'QuoteStrings', ${7:value}, 'WriteVariableNames', ${8:value})'''
+        description: '''[matlab] Write timetable to file
+        writetimetable(TT, filename, 'FileType', value, 'DateLocale', value, 'Encoding', value, 'Delimiter', value, 'QuoteStrings', value, 'WriteVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/writetimetable.html'
+
+
+    "readmatrix [matlab]":
+        prefix: "readmatrix"
+        body: '''${1:A} = readmatrix(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})'''
+        description: '''[matlab] Read matrix from file
+        A = readmatrix(filename, opts, 'Sheet', value, 'UseExcel', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/readmatrix.html'
+
+
+    "dlmwrite [matlab]":
+        prefix: "dlmwrite"
+        body: '''dlmwrite(${1:filename}, ${2:N}, ${3:optional_'-append'}, 'delimiter', ${4:value}, 'roffset', ${5:value}, 'coffset', ${6:value}, 'precision', ${7:value}, 'newline', ${8:value})'''
+        description: '''[matlab] (Not recommended) Write matrix to ASCII-delimited file
+        dlmwrite(filename, N, optional_'-append', 'delimiter', value, 'roffset', value, 'coffset', value, 'precision', value, 'newline', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dlmwrite.html'
+
+
+    "importdata [matlab]":
+        prefix: "importdata"
+        body: '''[${1:A}, ${2:delimiterOut}, ${3:headerlinesOut}] = importdata(${1:filename}, ${2:delimiterIn}, ${3:optional_headerlinesIn})'''
+        description: '''[matlab] Load data from file
+        [A, delimiterOut, headerlinesOut] = importdata(filename, delimiterIn, optional_headerlinesIn)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/importdata.html'
+
+
+    "startat [matlab]":
+        prefix: "startat"
+        body: '''startat(${1:t}, ${2:firingTime})'''
+        description: '''[matlab] Schedule timer to fire at specified time
+        startat(t, firingTime)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/timer.startat.html'
+
+
+    "readtable [matlab]":
+        prefix: "readtable"
+        body: '''${1:T} = readtable(${1:filename}, ${2:opts}, 'ReadVariableNames', ${3:value}, 'ReadRowNames', ${4:value}, 'Sheet', ${5:value}, 'UseExcel', ${6:value})'''
+        description: '''[matlab] Create table from file
+        T = readtable(filename, opts, 'ReadVariableNames', value, 'ReadRowNames', value, 'Sheet', value, 'UseExcel', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/readtable.html'
+
+
+    "readvars [matlab]":
+        prefix: "readvars"
+        body: '''${1:A} = readvars(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})'''
+        description: '''[matlab] Read variables from file
+        A = readvars(filename, opts, 'Sheet', value, 'UseExcel', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/readvars.html'
+
+
+    "fullfile [matlab]":
+        prefix: "fullfile"
+        body: '''${1:f} = fullfile(${1:filepart})'''
+        description: '''[matlab] Build full file name from parts
+        f = fullfile(filepart)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fullfile.html'
+
+
+    "ftell [matlab]":
+        prefix: "ftell"
+        body: '''${1:position} = ftell(${1:fileID})'''
+        description: '''[matlab] Current position
+        position = ftell(fileID)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ftell.html'
+
+
+    "gzip [matlab]":
+        prefix: "gzip"
+        body: '''gzip(${1:files}, ${2:optional_outputdir})'''
+        description: '''[matlab] Compress files into GNU zip files
+        gzip(files, optional_outputdir)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gzip.html'
+
+
+    "frewind [matlab]":
+        prefix: "frewind"
+        body: '''frewind(${1:fileID})'''
+        description: '''[matlab] Move file position indicator to beginning of open file
+        frewind(fileID)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/frewind.html'
+
+
+    "ferror [matlab]":
+        prefix: "ferror"
+        body: '''[${1:message}, ${2:errnum}] = ferror(${1:fileID}, ${2:optional_'clear'})'''
+        description: '''[matlab] File I/O error information
+        [message, errnum] = ferror(fileID, optional_'clear')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ferror.html'
+
+
+    "fgets [matlab]":
+        prefix: "fgets"
+        body: '''${1:tline} = fgets(${1:fileID}, ${2:optional_nchar})'''
+        description: '''[matlab] Read line of text from instrument and include terminator
+        tline = fgets(fileID, optional_nchar)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fgets.html'
+
+
+    "unzip [matlab]":
+        prefix: "unzip"
+        body: '''unzip(${1:zipfilename}, ${2:optional_outputdir})'''
+        description: '''[matlab] Extract contents of zip file
+        unzip(zipfilename, optional_outputdir)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unzip.html'
+
+
+    "readcell [matlab]":
+        prefix: "readcell"
+        body: '''${1:A} = readcell(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})'''
+        description: '''[matlab] Read cell array from file
+        A = readcell(filename, opts, 'Sheet', value, 'UseExcel', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/readcell.html'
+
+
+    "csvread [matlab]":
+        prefix: "csvread"
+        body: '''csvread(${1:filename}, ${2:R1}, ${3:C1}, ${4:optional_range})'''
+        description: '''[matlab] (Not recommended) Read comma-separated value (CSV) file
+        csvread(filename, R1, C1, optional_range)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/csvread.html'
+
+
+    "xlswrite [matlab]":
+        prefix: "xlswrite"
+        body: '''[${1:status}, ${2:message}] = xlswrite(${1:filename}, ${2:A}, ${3:optional_sheet}, ${4:optional_xlRange})'''
+        description: '''[matlab] (Not recommended) Write Microsoft Excel spreadsheet file
+        [status, message] = xlswrite(filename, A, optional_sheet, optional_xlRange)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xlswrite.html'
+
+
+    "timerfindall [matlab]":
+        prefix: "timerfindall"
+        body: '''${1:out} = timerfindall(${1:optional_t}, ${2:optional_S}, 'BusyMode', ${3:value}, 'ErrorFcn', ${4:value}, 'ExecutionMode', ${5:value}, 'Name', ${6:value}, 'ObjectVisibility', ${7:value}, 'Period', ${8:value}, 'StartDelay', ${9:value}, 'StartFcn', ${10:value}, 'StopFcn', ${11:value}, 'Tag', ${12:value}, 'TasksToExecute', ${13:value}, 'TimerFcn', ${14:value}, 'UserData', ${15:value})'''
+        description: '''[matlab] Find timer object, regardless of visibility
+        out = timerfindall(optional_t, optional_S, 'BusyMode', value, 'ErrorFcn', value, 'ExecutionMode', value, 'Name', value, 'ObjectVisibility', value, 'Period', value, 'StartDelay', value, 'StartFcn', value, 'StopFcn', value, 'Tag', value, 'TasksToExecute', value, 'TimerFcn', value, 'UserData', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/timer.timerfindall.html'
+
+
+    "ftp.ftp [matlab]":
+        prefix: "ftp.ftp"
+        body: '''ftp.ftp(${1:host}, ${2:username}, ${3:password}, 'LocalDataConnectionMethod', ${4:value})'''
+        description: '''[matlab] 
+        ftp.ftp(host, username, password, 'LocalDataConnectionMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ftp.ftp.html'
+
+
+    "xlsfinfo [matlab]":
+        prefix: "xlsfinfo"
+        body: '''[${1:status}, ${2:sheets}, ${3:xlFormat}] = xlsfinfo(${1:filename})'''
+        description: '''[matlab] (Not recommended) Determine if file contains Microsoft
+            Excel spreadsheet
+        [status, sheets, xlFormat] = xlsfinfo(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xlsfinfo.html'
+
+
+    "gunzip [matlab]":
+        prefix: "gunzip"
+        body: '''gunzip(${1:files}, ${2:optional_outputdir})'''
+        description: '''[matlab] Extract contents of GNU zip file
+        gunzip(files, optional_outputdir)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gunzip.html'
+
+
+    "fclose [matlab]":
+        prefix: "fclose"
+        body: '''${1:status} = fclose(${1:'all'})'''
+        description: '''[matlab] Disconnect interface object from instrument
+        status = fclose('all')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fclose.html'
+
+
+    "readtimetable [matlab]":
+        prefix: "readtimetable"
+        body: '''${1:A} = readtimetable(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value}, 'ReadVariableNames', ${5:value}, 'RowTimes', ${6:value}, 'SampleRate', ${7:value}, 'StartTime', ${8:value}, 'TimeStep', ${9:value})'''
+        description: '''[matlab] Create timetable from file
+        A = readtimetable(filename, opts, 'Sheet', value, 'UseExcel', value, 'ReadVariableNames', value, 'RowTimes', value, 'SampleRate', value, 'StartTime', value, 'TimeStep', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/readtimetable.html'
+
+
+    "csvwrite [matlab]":
+        prefix: "csvwrite"
+        body: '''csvwrite(${1:filename}, ${2:M}, ${3:row}, ${4:col})'''
+        description: '''[matlab] (Not recommended) Write comma-separated value file
+        csvwrite(filename, M, row, col)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/csvwrite.html'
+
+
+    "dlmread [matlab]":
+        prefix: "dlmread"
+        body: '''dlmread(${1:filename}, ${2:optional_varargin})'''
+        description: '''[matlab] (Not recommended) Read ASCII-delimited file of numeric data into
+            matrix
+        dlmread(filename, optional_varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dlmread.html'
+
+
+    "fscanf [matlab]":
+        prefix: "fscanf"
+        body: '''[${1:A}, ${2:count}] = fscanf(${1:fileID}, ${2:formatSpec}, ${3:optional_sizeA})'''
+        description: '''[matlab] Read data from instrument, and format as text
+        [A, count] = fscanf(fileID, formatSpec, optional_sizeA)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fscanf.html'
+
+
+    "fopen [matlab]":
+        prefix: "fopen"
+        body: '''${1:fIDs} = fopen(${1:'all'})'''
+        description: '''[matlab] Connect interface object to instrument
+        fIDs = fopen('all')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fopen.html'
+
+
+    "untar [matlab]":
+        prefix: "untar"
+        body: '''untar(${1:tarfilename}, ${2:optional_outputdir})'''
+        description: '''[matlab] Extract contents of tar file
+        untar(tarfilename, optional_outputdir)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/untar.html'
+
+
+    "fprintf [matlab]":
+        prefix: "fprintf"
+        body: '''${1:nbytes} = fprintf(${1:optional_fileID}, ${2:formatSpec}, ${3:A})'''
+        description: '''[matlab] Write text to instrument
+        nbytes = fprintf(optional_fileID, formatSpec, A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fprintf.html'
+
+
+    "fread [matlab]":
+        prefix: "fread"
+        body: '''[${1:A}, ${2:count}] = fread(${1:fileID}, ${2:sizeA}, ${3:precision}, ${4:skip}, ${5:machinefmt})'''
+        description: '''[matlab] Read binary data from instrument
+        [A, count] = fread(fileID, sizeA, precision, skip, machinefmt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fread.html'
+

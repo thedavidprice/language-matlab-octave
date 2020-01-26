@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "date2time [finance]":
+        prefix: "date2time"
+        body: '''[${1:TFactors}, ${2:F}] = date2time(${1:settle}, ${2:maturity}, ${3:compounding}, ${4:basis}, ${5:endMonthRule})'''
+        description: '''[finance] Time and frequency from dates
+        [TFactors, F] = date2time(settle, maturity, compounding, basis, endMonthRule)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/date2time.html'
+

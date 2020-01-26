@@ -1,0 +1,761 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "strings [matlab]":
+        prefix: "strings"
+        body: '''${1:str} = strings(${1:optional_n})'''
+        description: '''[matlab] Create string array with no characters
+        str = strings(optional_n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strings.html'
+
+
+    "int2str [matlab]":
+        prefix: "int2str"
+        body: '''${1:str} = int2str(${1:N})'''
+        description: '''[matlab] Convert integers to characters
+        str = int2str(N)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/int2str.html'
+
+
+    "string.splitlines [matlab]":
+        prefix: "string.splitlines"
+        body: '''${1:newStr} = string.splitlines(${1:str})'''
+        description: '''[matlab] 
+        newStr = string.splitlines(str)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.splitlines.html'
+
+
+    "regexprep [matlab]":
+        prefix: "regexprep"
+        body: '''${1:newStr} = regexprep(${1:str}, ${2:expression}, ${3:replace}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing})'''
+        description: '''[matlab] Replace text using regular expression
+        newStr = regexprep(str, expression, replace, optMatch, optWarnings, optCase, optEmptyMatch, optDotAll, optStringAnchors, optSpacing)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/regexprep.html'
+
+
+    "sprintf [matlab]":
+        prefix: "sprintf"
+        body: '''[${1:str}, ${2:errmsg}] = sprintf(${1:formatSpec}, ${2:A})'''
+        description: '''[matlab] Format data into string or character vector
+        [str, errmsg] = sprintf(formatSpec, A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sprintf.html'
+
+
+    "string.pad [matlab]":
+        prefix: "string.pad"
+        body: '''${1:tf} = string.pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
+        description: '''[matlab] 
+        tf = string.pad(str, optional_width, side, padCharacter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.pad.html'
+
+
+    "native2unicode [matlab]":
+        prefix: "native2unicode"
+        body: '''${1:unicodestr} = native2unicode(${1:bytes}, ${2:optional_encoding})'''
+        description: '''[matlab] Convert numeric bytes to Unicode character representation
+        unicodestr = native2unicode(bytes, optional_encoding)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/native2unicode.html'
+
+
+    "extractBefore [matlab]":
+        prefix: "extractBefore"
+        body: '''${1:newStr} = extractBefore(${1:str}, ${2:matchStr})'''
+        description: '''[matlab] Extract substrings before specified positions
+        newStr = extractBefore(str, matchStr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/extractbefore.html'
+
+
+    "string.insertAfter [matlab]":
+        prefix: "string.insertAfter"
+        body: '''${1:newStr} = string.insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
+        description: '''[matlab] 
+        newStr = string.insertAfter(str, startStr, newText)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.insertAfter.html'
+
+
+    "split [matlab]":
+        prefix: "split"
+        body: '''[${1:newStr}, ${2:matches}] = split(${1:str}, ${2:delimiter}, ${3:dim})'''
+        description: '''[matlab] Split calendar duration into numeric and duration units
+        [newStr, matches] = split(str, delimiter, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarduration.split.html'
+
+
+    "endsWith [matlab]":
+        prefix: "endsWith"
+        body: '''${1:tf} = endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] Determine if strings end with pattern
+        tf = endsWith(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/endswith.html'
+
+
+    "strfind [matlab]":
+        prefix: "strfind"
+        body: '''${1:k} = strfind(${1:text}, ${2:pattern}, 'ForceCellOutput', ${3:value})'''
+        description: '''[matlab] Find strings within other strings
+        k = strfind(text, pattern, 'ForceCellOutput', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strfind.html'
+
+
+    "strncmpi [matlab]":
+        prefix: "strncmpi"
+        body: '''${1:tf} = strncmpi(${1:C}, ${2:C}, ${3:n})'''
+        description: '''[matlab] Compare first n characters of strings
+(case insensitive)
+        tf = strncmpi(C, C, n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strncmpi.html'
+
+
+    "strsplit [matlab]":
+        prefix: "strsplit"
+        body: '''[${1:C}, ${2:matches}] = strsplit(${1:str}, ${2:delimiter}, 'CollapseDelimiters', ${3:value}, 'DelimiterType', ${4:value})'''
+        description: '''[matlab] Split string or character vector at specified delimiter
+        [C, matches] = strsplit(str, delimiter, 'CollapseDelimiters', value, 'DelimiterType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strsplit.html'
+
+
+    "insertBefore [matlab]":
+        prefix: "insertBefore"
+        body: '''${1:newStr} = insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
+        description: '''[matlab] Insert strings before specified substrings
+        newStr = insertBefore(str, endStr, newText)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/insertbefore.html'
+
+
+    "string.replace [matlab]":
+        prefix: "string.replace"
+        body: '''${1:newStr} = string.replace(${1:str}, ${2:old}, ${3:new})'''
+        description: '''[matlab] 
+        newStr = string.replace(str, old, new)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.replace.html'
+
+
+    "strjoin [matlab]":
+        prefix: "strjoin"
+        body: '''${1:str} = strjoin(${1:C}, ${2:optional_delimiter})'''
+        description: '''[matlab] Join strings in array
+        str = strjoin(C, optional_delimiter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strjoin.html'
+
+
+    "pad [matlab]":
+        prefix: "pad"
+        body: '''${1:tf} = pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
+        description: '''[matlab] Add leading or trailing characters to strings
+        tf = pad(str, optional_width, side, padCharacter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pad.html'
+
+
+    "contains [matlab]":
+        prefix: "contains"
+        body: '''${1:tf} = contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] Determine if image contains points in world coordinate system
+        tf = contains(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/imref2d.contains.html'
+
+
+    "regexpi [matlab]":
+        prefix: "regexpi"
+        body: '''[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexpi(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
+        description: '''[matlab] Match regular expression (case insensitive)
+        [out1, out2, out3, out4, out5, out6, out7] = regexpi(str, expression, outkeys, optMatch, optWarnings, optCase, optEmptyMatch, optDotAll, optStringAnchors, optSpacing, optForceCell)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/regexpi.html'
+
+
+    "deblank [matlab]":
+        prefix: "deblank"
+        body: '''${1:newTxt} = deblank(${1:txt})'''
+        description: '''[matlab] Remove trailing whitespace from ends of strings
+        newTxt = deblank(txt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/deblank.html'
+
+
+    "strncmp [matlab]":
+        prefix: "strncmp"
+        body: '''${1:tf} = strncmp(${1:C}, ${2:C}, ${3:n})'''
+        description: '''[matlab] Compare first n characters of strings
+(case sensitive)
+        tf = strncmp(C, C, n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strncmp.html'
+
+
+    "extractAfter [matlab]":
+        prefix: "extractAfter"
+        body: '''${1:newStr} = extractAfter(${1:str}, ${2:matchStr})'''
+        description: '''[matlab] Extract substrings after specified positions
+        newStr = extractAfter(str, matchStr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/extractafter.html'
+
+
+    "reverse [matlab]":
+        prefix: "reverse"
+        body: '''${1:newStr} = reverse(${1:str})'''
+        description: '''[matlab] Reverse order of characters in strings
+        newStr = reverse(str)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/reverse.html'
+
+
+    "str2double [matlab]":
+        prefix: "str2double"
+        body: '''${1:X} = str2double(${1:str})'''
+        description: '''[matlab] Convert strings to double precision values
+        X = str2double(str)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/str2double.html'
+
+
+    "strcmp [matlab]":
+        prefix: "strcmp"
+        body: '''${1:tf} = strcmp(${1:s1}, ${2:s2})'''
+        description: '''[matlab] Compare strings
+        tf = strcmp(s1, s2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strcmp.html'
+
+
+    "splitlines [matlab]":
+        prefix: "splitlines"
+        body: '''${1:newStr} = splitlines(${1:str})'''
+        description: '''[matlab] Split strings at newline characters
+        newStr = splitlines(str)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/splitlines.html'
+
+
+    "mat2str [matlab]":
+        prefix: "mat2str"
+        body: '''${1:str} = mat2str(${1:A}, ${2:optional_n}, ${3:optional_'class'})'''
+        description: '''[matlab] Convert matrix to characters
+        str = mat2str(A, optional_n, optional_'class')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mat2str.html'
+
+
+    "strtrim [matlab]":
+        prefix: "strtrim"
+        body: '''${1:newTxt} = strtrim(${1:txt})'''
+        description: '''[matlab] Remove leading and trailing whitespace from strings
+        newTxt = strtrim(txt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strtrim.html'
+
+
+    "isstring [matlab]":
+        prefix: "isstring"
+        body: '''${1:tf} = isstring(${1:A})'''
+        description: '''[matlab] Determine if input is string array
+        tf = isstring(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isstring.html'
+
+
+    "string.replaceBetween [matlab]":
+        prefix: "string.replaceBetween"
+        body: '''${1:out} = string.replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
+        description: '''[matlab] 
+        out = string.replaceBetween(str, startPosition, endPosition, replaceStr, 'Boundaries', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.replaceBetween.html'
+
+
+    "count [matlab]":
+        prefix: "count"
+        body: '''${1:count} = count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] Count occurrences of pattern in strings
+        count = count(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/count.html'
+
+
+    "bin2dec [matlab]":
+        prefix: "bin2dec"
+        body: '''${1:d} = bin2dec(${1:binarystr})'''
+        description: '''[matlab] Convert text representation of binary number to decimal number
+        d = bin2dec(binarystr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bin2dec.html'
+
+
+    "strip [matlab]":
+        prefix: "strip"
+        body: '''${1:tf} = strip(${1:str}, ${2:side}, ${3:padCharacter})'''
+        description: '''[matlab] Remove leading and trailing characters from stringS
+        tf = strip(str, side, padCharacter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strip.html'
+
+
+    "isstrprop [matlab]":
+        prefix: "isstrprop"
+        body: '''${1:out} = isstrprop(${1:text}, ${2:category}, 'ForceCellOutput', ${3:value})'''
+        description: '''[matlab] Determine which characters in input strings are of specified category
+        out = isstrprop(text, category, 'ForceCellOutput', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isstrprop.html'
+
+
+    "string.eraseBetween [matlab]":
+        prefix: "string.eraseBetween"
+        body: '''${1:count} = string.eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        description: '''[matlab] 
+        count = string.eraseBetween(str, startPosition, endPosition, 'Boundaries', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.eraseBetween.html'
+
+
+    "string.extractBefore [matlab]":
+        prefix: "string.extractBefore"
+        body: '''${1:newStr} = string.extractBefore(${1:str}, ${2:matchStr})'''
+        description: '''[matlab] 
+        newStr = string.extractBefore(str, matchStr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.extractBefore.html'
+
+
+    "strtok [matlab]":
+        prefix: "strtok"
+        body: '''[${1:token}, ${2:remain}] = strtok(${1:str}, ${2:delimiter})'''
+        description: '''[matlab] Selected parts of strings
+        [token, remain] = strtok(str, delimiter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strtok.html'
+
+
+    "base2dec [matlab]":
+        prefix: "base2dec"
+        body: '''${1:d} = base2dec(${1:strn}, ${2:base})'''
+        description: '''[matlab] Convert text representing number in base N to decimal number
+        d = base2dec(strn, base)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/base2dec.html'
+
+
+    "char [matlab]":
+        prefix: "char"
+        body: '''${1:c} = char(${1:A})'''
+        description: '''[matlab] Character array
+        c = char(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/char.html'
+
+
+    "strcat [matlab]":
+        prefix: "strcat"
+        body: '''${1:s} = strcat(${1:s})'''
+        description: '''[matlab] Concatenate strings horizontally
+        s = strcat(s)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strcat.html'
+
+
+    "string.endsWith [matlab]":
+        prefix: "string.endsWith"
+        body: '''${1:tf} = string.endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] 
+        tf = string.endsWith(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.endsWith.html'
+
+
+    "string.matches [matlab]":
+        prefix: "string.matches"
+        body: '''${1:tf} = string.matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] 
+        tf = string.matches(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.matches.html'
+
+
+    "strjust [matlab]":
+        prefix: "strjust"
+        body: '''${1:T} = strjust(${1:S}, ${2:optional_justification})'''
+        description: '''[matlab] Justify strings
+        T = strjust(S, optional_justification)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strjust.html'
+
+
+    "extractBetween [matlab]":
+        prefix: "extractBetween"
+        body: '''${1:out} = extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        description: '''[matlab] Extract substrings between start and end points
+        out = extractBetween(str, startPosition, endPosition, 'Boundaries', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/extractbetween.html'
+
+
+    "replaceBetween [matlab]":
+        prefix: "replaceBetween"
+        body: '''${1:out} = replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
+        description: '''[matlab] Replace substrings between start and end points
+        out = replaceBetween(str, startPosition, endPosition, replaceStr, 'Boundaries', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/replacebetween.html'
+
+
+    "string.contains [matlab]":
+        prefix: "string.contains"
+        body: '''${1:tf} = string.contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] 
+        tf = string.contains(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.contains.html'
+
+
+    "regexp [matlab]":
+        prefix: "regexp"
+        body: '''[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexp(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
+        description: '''[matlab] Match regular expression (case sensitive)
+        [out1, out2, out3, out4, out5, out6, out7] = regexp(str, expression, outkeys, optMatch, optWarnings, optCase, optEmptyMatch, optDotAll, optStringAnchors, optSpacing, optForceCell)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/regexp.html'
+
+
+    "upper [matlab]":
+        prefix: "upper"
+        body: '''${1:newTxt} = upper(${1:txt})'''
+        description: '''[matlab] Convert strings to uppercase
+        newTxt = upper(txt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/upper.html'
+
+
+    "regexptranslate [matlab]":
+        prefix: "regexptranslate"
+        body: '''${1:s2} = regexptranslate(${1:type}, ${2:s1})'''
+        description: '''[matlab] Translate text into regular expression
+        s2 = regexptranslate(type, s1)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/regexptranslate.html'
+
+
+    "compose [matlab]":
+        prefix: "compose"
+        body: '''${1:str} = compose(${1:txt})'''
+        description: '''[matlab] Format data into multiple strings
+        str = compose(txt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/compose.html'
+
+
+    "lower [matlab]":
+        prefix: "lower"
+        body: '''${1:newTxt} = lower(${1:txt})'''
+        description: '''[matlab] Convert strings to lowercase
+        newTxt = lower(txt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lower.html'
+
+
+    "string.insertBefore [matlab]":
+        prefix: "string.insertBefore"
+        body: '''${1:newStr} = string.insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
+        description: '''[matlab] 
+        newStr = string.insertBefore(str, endStr, newText)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.insertBefore.html'
+
+
+    "string.strip [matlab]":
+        prefix: "string.strip"
+        body: '''${1:tf} = string.strip(${1:str}, ${2:side}, ${3:padCharacter})'''
+        description: '''[matlab] 
+        tf = string.strip(str, side, padCharacter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.strip.html'
+
+
+    "cellstr [matlab]":
+        prefix: "cellstr"
+        body: '''${1:c} = cellstr(${1:S})'''
+        description: '''[matlab] Convert to cell array of character vectors
+        c = cellstr(S)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cellstr.html'
+
+
+    "isspace [matlab]":
+        prefix: "isspace"
+        body: '''${1:tf} = isspace(${1:str})'''
+        description: '''[matlab] Determine which characters are space characters
+        tf = isspace(str)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isspace.html'
+
+
+    "blanks [matlab]":
+        prefix: "blanks"
+        body: '''${1:c} = blanks(${1:n})'''
+        description: '''[matlab] Create character array of blanks
+        c = blanks(n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/blanks.html'
+
+
+    "isletter [matlab]":
+        prefix: "isletter"
+        body: '''${1:tf} = isletter(${1:str})'''
+        description: '''[matlab] Determine which characters are letters
+        tf = isletter(str)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isletter.html'
+
+
+    "hex2num [matlab]":
+        prefix: "hex2num"
+        body: '''${1:n} = hex2num(${1:S})'''
+        description: '''[matlab] Convert IEEE hexadecimal format to double-precision number
+        n = hex2num(S)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hex2num.html'
+
+
+    "num2hex [matlab]":
+        prefix: "num2hex"
+        body: '''${1:c} = num2hex(${1:X})'''
+        description: '''[matlab] Convert single- and double-precision numbers to IEEE hexadecimal format
+        c = num2hex(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/num2hex.html'
+
+
+    "str2num [matlab]":
+        prefix: "str2num"
+        body: '''[${1:x}, ${2:status}] = str2num(${1:str})'''
+        description: '''[matlab] Convert character array or string to numeric array
+        [x, status] = str2num(str)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/str2num.html'
+
+
+    "num2str [matlab]":
+        prefix: "num2str"
+        body: '''${1:s} = num2str(${1:A}, ${2:formatSpec})'''
+        description: '''[matlab] Convert numbers to character array
+        s = num2str(A, formatSpec)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/num2str.html'
+
+
+    "string.upper [matlab]":
+        prefix: "string.upper"
+        body: '''${1:newTxt} = string.upper(${1:txt})'''
+        description: '''[matlab] 
+        newTxt = string.upper(txt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.upper.html'
+
+
+    "string.join [matlab]":
+        prefix: "string.join"
+        body: '''${1:newStr} = string.join(${1:str}, ${2:optional_delimiter}, ${3:optional_dim})'''
+        description: '''[matlab] 
+        newStr = string.join(str, optional_delimiter, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.join.html'
+
+
+    "ischar [matlab]":
+        prefix: "ischar"
+        body: '''${1:tf} = ischar(${1:A})'''
+        description: '''[matlab] Determine if input is character array
+        tf = ischar(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ischar.html'
+
+
+    "startsWith [matlab]":
+        prefix: "startsWith"
+        body: '''${1:tf} = startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] Determine if strings start with pattern
+        tf = startsWith(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/startswith.html'
+
+
+    "insertAfter [matlab]":
+        prefix: "insertAfter"
+        body: '''${1:newStr} = insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
+        description: '''[matlab] Insert strings after specified substrings
+        newStr = insertAfter(str, startStr, newText)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/insertafter.html'
+
+
+    "iscellstr [matlab]":
+        prefix: "iscellstr"
+        body: '''${1:tf} = iscellstr(${1:A})'''
+        description: '''[matlab] Determine if input is cell array of character vectors
+        tf = iscellstr(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/iscellstr.html'
+
+
+    "string.split [matlab]":
+        prefix: "string.split"
+        body: '''[${1:newStr}, ${2:matches}] = string.split(${1:str}, ${2:delimiter}, ${3:dim})'''
+        description: '''[matlab] 
+        [newStr, matches] = string.split(str, delimiter, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.split.html'
+
+
+    "string.startsWith [matlab]":
+        prefix: "string.startsWith"
+        body: '''${1:tf} = string.startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] 
+        tf = string.startsWith(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.startsWith.html'
+
+
+    "unicode2native [matlab]":
+        prefix: "unicode2native"
+        body: '''${1:bytes} = unicode2native(${1:unicodestr}, ${2:optional_encoding})'''
+        description: '''[matlab] Convert Unicode character representation to numeric
+bytes
+        bytes = unicode2native(unicodestr, optional_encoding)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unicode2native.html'
+
+
+    "strcmpi [matlab]":
+        prefix: "strcmpi"
+        body: '''${1:tf} = strcmpi(${1:C}, ${2:C})'''
+        description: '''[matlab] Compare strings (case insensitive)
+        tf = strcmpi(C, C)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strcmpi.html'
+
+
+    "sscanf [matlab]":
+        prefix: "sscanf"
+        body: '''[${1:A}, ${2:count}, ${3:errmsg}, ${4:nextindex}] = sscanf(${1:str}, ${2:format}, ${3:optional_sizeA})'''
+        description: '''[matlab] Read formatted data from strings
+        [A, count, errmsg, nextindex] = sscanf(str, format, optional_sizeA)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sscanf.html'
+
+
+    "strrep [matlab]":
+        prefix: "strrep"
+        body: '''${1:modifiedStr} = strrep(${1:origStr}, ${2:oldSubstr}, ${3:newSubstr})'''
+        description: '''[matlab] Find and replace substrings
+        modifiedStr = strrep(origStr, oldSubstr, newSubstr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strrep.html'
+
+
+    "strlength [matlab]":
+        prefix: "strlength"
+        body: '''${1:L} = strlength(${1:str})'''
+        description: '''[matlab] Lengths of strings
+        L = strlength(str)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/strlength.html'
+
+
+    "eraseBetween [matlab]":
+        prefix: "eraseBetween"
+        body: '''${1:count} = eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        description: '''[matlab] Delete substrings between start and end points
+        count = eraseBetween(str, startPosition, endPosition, 'Boundaries', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/erasebetween.html'
+
+
+    "string.count [matlab]":
+        prefix: "string.count"
+        body: '''${1:count} = string.count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] 
+        count = string.count(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.count.html'
+
+
+    "matches [matlab]":
+        prefix: "matches"
+        body: '''${1:tf} = matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''[matlab] Determine if pattern matches strings
+        tf = matches(str, pattern, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matches.html'
+
+
+    "string.reverse [matlab]":
+        prefix: "string.reverse"
+        body: '''${1:newStr} = string.reverse(${1:str})'''
+        description: '''[matlab] 
+        newStr = string.reverse(str)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.reverse.html'
+
+
+    "newline [matlab]":
+        prefix: "newline"
+        body: '''${1:c} = newline()'''
+        description: '''[matlab] Create newline character
+        c = newline()
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/newline.html'
+
+
+    "hex2dec [matlab]":
+        prefix: "hex2dec"
+        body: '''${1:d} = hex2dec(${1:hex_value})'''
+        description: '''[matlab] Convert text representation of hexadecimal number to decimal number
+        d = hex2dec(hex_value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hex2dec.html'
+
+
+    "string.extractAfter [matlab]":
+        prefix: "string.extractAfter"
+        body: '''${1:newStr} = string.extractAfter(${1:str}, ${2:matchStr})'''
+        description: '''[matlab] 
+        newStr = string.extractAfter(str, matchStr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.extractAfter.html'
+
+
+    "string.extractBetween [matlab]":
+        prefix: "string.extractBetween"
+        body: '''${1:out} = string.extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        description: '''[matlab] 
+        out = string.extractBetween(str, startPosition, endPosition, 'Boundaries', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.extractBetween.html'
+
+
+    "string.lower [matlab]":
+        prefix: "string.lower"
+        body: '''${1:newTxt} = string.lower(${1:txt})'''
+        description: '''[matlab] 
+        newTxt = string.lower(txt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.lower.html'
+

@@ -1,0 +1,209 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "eig [matlab]":
+        prefix: "eig"
+        body: '''${1:lambda} = eig(${1:A}, ${2:balanceOption}, ${3:eigvalOption})'''
+        description: '''[matlab] Eigenvalues and eigenvectors
+        lambda = eig(A, balanceOption, eigvalOption)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/eig.html'
+
+
+    "issymmetric [matlab]":
+        prefix: "issymmetric"
+        body: '''${1:tf} = issymmetric(${1:A}, ${2:optional_skew})'''
+        description: '''[matlab] Determine if matrix is symmetric or skew-symmetric
+        tf = issymmetric(A, optional_skew)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/issymmetric.html'
+
+
+    "qz [matlab]":
+        prefix: "qz"
+        body: '''[${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:V}, ${6:W}] = qz(${1:A}, ${2:B}, ${3:optional_complexity})'''
+        description: '''[matlab] QZ factorization for generalized eigenvalues
+        [AA, BB, Q, Z, V, W] = qz(A, B, optional_complexity)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/qz.html'
+
+
+    "lsqminnorm [matlab]":
+        prefix: "lsqminnorm"
+        body: '''lsqminnorm(${1:A}, ${2:b}, ${3:optional_tol}, ${4:optional_rankwarn})'''
+        description: '''[matlab] Minimum norm least-squares solution to linear equation
+        lsqminnorm(A, b, optional_tol, optional_rankwarn)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lsqminnorm.html'
+
+
+    "chol [matlab]":
+        prefix: "chol"
+        body: '''[${1:R}, ${2:p}, ${3:S}] = chol(${1:A}, ${2:type}, ${3:shape})'''
+        description: '''[matlab] Cholesky factorization
+        [R, p, S] = chol(A, type, shape)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/chol.html'
+
+
+    "ishermitian [matlab]":
+        prefix: "ishermitian"
+        body: '''${1:tf} = ishermitian(${1:A}, ${2:optional_skew})'''
+        description: '''[matlab] Determine if matrix is Hermitian or skew-Hermitian
+        tf = ishermitian(A, optional_skew)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ishermitian.html'
+
+
+    "bandwidth [matlab]":
+        prefix: "bandwidth"
+        body: '''[${1:lower}, ${2:upper}] = bandwidth(${1:A}, ${2:optional_type})'''
+        description: '''[matlab] Frequency response bandwidth
+        [lower, upper] = bandwidth(A, optional_type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bandwidth.html'
+
+
+    "gsvd [matlab]":
+        prefix: "gsvd"
+        body: '''${1:s} = gsvd(${1:A}, ${2:B}, ${3:optional_shape})'''
+        description: '''[matlab] Generalized singular value decomposition
+        s = gsvd(A, B, optional_shape)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gsvd.html'
+
+
+    "lu [matlab]":
+        prefix: "lu"
+        body: '''[${1:L}, ${2:U}, ${3:P}, ${4:Q}, ${5:R}] = lu(${1:A}, ${2:optional_threshold}, ${3:optional_shape})'''
+        description: '''[matlab] LU matrix factorization
+        [L, U, P, Q, R] = lu(A, optional_threshold, optional_shape)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lu.html'
+
+
+    "cond [matlab]":
+        prefix: "cond"
+        body: '''${1:cond} = cond(${1:A}, ${2:optional_type})'''
+        description: '''[matlab] Condition number for inversion
+        cond = cond(A, optional_type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cond.html'
+
+
+    "qr [matlab]":
+        prefix: "qr"
+        body: '''[${1:C}, ${2:R}, ${3:E}] = qr(${1:A}, ${2:b}, ${3:optional_shape})'''
+        description: '''[matlab] QR decomposition
+        [C, R, E] = qr(A, b, optional_shape)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/qr.html'
+
+
+    "schur [matlab]":
+        prefix: "schur"
+        body: '''${1:T} = schur(${1:A}, ${2:optional_complexity})'''
+        description: '''[matlab] Schur decomposition
+        T = schur(A, optional_complexity)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/schur.html'
+
+
+    "qrdelete [matlab]":
+        prefix: "qrdelete"
+        body: '''[${1:C}, ${2:R}, ${3:E}] = qrdelete(${1:Q}, ${2:R}, ${3:j}, ${4:optional_shape})'''
+        description: '''[matlab] Remove column or row from QR factorization
+        [C, R, E] = qrdelete(Q, R, j, optional_shape)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/qrdelete.html'
+
+
+    "balance [matlab]":
+        prefix: "balance"
+        body: '''[${1:T}, ${2:B}] = balance(${1:A}, ${2:optional_permFlag})'''
+        description: '''[matlab] Diagonal scaling to improve eigenvalue accuracy
+        [T, B] = balance(A, optional_permFlag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/balance.html'
+
+
+    "svd [matlab]":
+        prefix: "svd"
+        body: '''${1:s} = svd(${1:X}, ${2:optional_shape})'''
+        description: '''[matlab] Singular value decomposition
+        s = svd(X, optional_shape)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/double.svd.html'
+
+
+    "ldl [matlab]":
+        prefix: "ldl"
+        body: '''[${1:L}, ${2:D}, ${3:p}] = ldl(${1:A}, ${2:type}, ${3:shape})'''
+        description: '''[matlab] Block LDL' factorization for Hermitian indefinite matrices
+        [L, D, p] = ldl(A, type, shape)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ldl.html'
+
+
+    "cholupdate [matlab]":
+        prefix: "cholupdate"
+        body: '''[${1:R1}, ${2:p}] = cholupdate(${1:R}, ${2:x}, ${3:optional_type})'''
+        description: '''[matlab] Rank 1 update to Cholesky factorization
+        [R1, p] = cholupdate(R, x, optional_type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cholupdate.html'
+
+
+    "norm [matlab]":
+        prefix: "norm"
+        body: '''${1:norm} = norm(${1:A}, ${2:optional_type})'''
+        description: '''[matlab] Norm of linear model
+        norm = norm(A, optional_type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/norm.html'
+
+
+    "ordqz [matlab]":
+        prefix: "ordqz"
+        body: '''[${1:AAS}, ${2:BBS}, ${3:QS}, ${4:ZS}] = ordqz(${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:select})'''
+        description: '''[matlab] Reorder eigenvalues in QZ factorization
+        [AAS, BBS, QS, ZS] = ordqz(AA, BB, Q, Z, select)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ordqz.html'
+
+
+    "ordschur [matlab]":
+        prefix: "ordschur"
+        body: '''[${1:US}, ${2:TS}] = ordschur(${1:U}, ${2:T}, ${3:select})'''
+        description: '''[matlab] Reorder eigenvalues in Schur factorization
+        [US, TS] = ordschur(U, T, select)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ordschur.html'
+
+
+    "qrinsert [matlab]":
+        prefix: "qrinsert"
+        body: '''[${1:C}, ${2:R}, ${3:E}] = qrinsert(${1:Q}, ${2:R}, ${3:j}, ${4:x}, ${5:optional_shape})'''
+        description: '''[matlab] Insert column or row into QR factorization
+        [C, R, E] = qrinsert(Q, R, j, x, optional_shape)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/qrinsert.html'
+
+
+    "lscov [matlab]":
+        prefix: "lscov"
+        body: '''[${1:x}, ${2:stdx}, ${3:mse}, ${4:S}] = lscov(${1:A}, ${2:b}, ${3:V}, ${4:optional_alg})'''
+        description: '''[matlab] Least-squares solution in presence of known covariance
+        [x, stdx, mse, S] = lscov(A, b, V, optional_alg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lscov.html'
+
+
+    "decomposition [matlab]":
+        prefix: "decomposition"
+        body: '''decomposition(${1:A}, ${2:optional_type}, 'BandDensity', ${3:value}, 'LUPivotTolerance', ${4:value}, 'LDLPivotTolerance', ${5:value}, 'RankTolerance', ${6:value}, 'CheckCondition', ${7:value})'''
+        description: '''[matlab] Matrix decomposition for solving linear systems
+        decomposition(A, optional_type, 'BandDensity', value, 'LUPivotTolerance', value, 'LDLPivotTolerance', value, 'RankTolerance', value, 'CheckCondition', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/decomposition.html'
+

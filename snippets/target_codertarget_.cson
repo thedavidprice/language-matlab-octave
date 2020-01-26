@@ -1,0 +1,21 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "coder.hardware [target]":
+        prefix: "coder.hardware"
+        body: '''coder.hardware(${1:name})'''
+        description: '''[target] Create hardware board configuration object for C/C++ code generation from
+        MATLAB code
+        coder.hardware(name)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/target/ref/coder.hardware.html'
+
+
+    "targetHardware [target]":
+        prefix: "targetHardware"
+        body: '''${1:obj} = targetHardware(${1:hardwareName})'''
+        description: '''[target] 
+        obj = targetHardware(hardwareName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/target/targetHardware.html'
+

@@ -1,0 +1,237 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "dlupdate [nnet]":
+        prefix: "dlupdate"
+        body: '''dlupdate(${1:fun}, ${2:dlnet})'''
+        description: '''[nnet] 
+      Update parameters using custom function
+    
+        dlupdate(fun, dlnet)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/dlupdate.html'
+
+
+    "dlarray.min [nnet]":
+        prefix: "dlarray.min"
+        body: '''dlarray.min(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
+        description: '''[nnet] 
+        dlarray.min(A, [], optional_dim, nanflag, indexflag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.min.html'
+
+
+    "dlarray.mse [nnet]":
+        prefix: "dlarray.mse"
+        body: '''dlarray.mse(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
+        description: '''[nnet] 
+        dlarray.mse(dlX, targets, 'DataFormat', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.mse.html'
+
+
+    "dlarray.dltranspconv [nnet]":
+        prefix: "dlarray.dltranspconv"
+        body: '''dlarray.dltranspconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Cropping', ${7:value})'''
+        description: '''[nnet] 
+        dlarray.dltranspconv(dlX, weights, bias, 'DataFormat', value, 'Stride', value, 'DilationFactor', value, 'Cropping', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.dltranspconv.html'
+
+
+    "dlarray.softmax [nnet]":
+        prefix: "dlarray.softmax"
+        body: '''dlarray.softmax(${1:dlX}, 'DataFormat', ${2:value})'''
+        description: '''[nnet] 
+        dlarray.softmax(dlX, 'DataFormat', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.softmax.html'
+
+
+    "dlarray.finddim [nnet]":
+        prefix: "dlarray.finddim"
+        body: '''dlarray.finddim(${1:x}, ${2:nanflag})'''
+        description: '''[nnet] 
+        dlarray.finddim(x, nanflag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.finddim.html'
+
+
+    "sgdmupdate [nnet]":
+        prefix: "sgdmupdate"
+        body: '''sgdmupdate(${1:params}, ${2:grad}, ${3:vel}, ${4:learnRate}, ${5:momentum})'''
+        description: '''[nnet] 
+      Update parameters using stochastic gradient descent with
+    momentum (SGDM)
+    
+        sgdmupdate(params, grad, vel, learnRate, momentum)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/sgdmupdate.html'
+
+
+    "dlarray.max [nnet]":
+        prefix: "dlarray.max"
+        body: '''dlarray.max(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
+        description: '''[nnet] 
+        dlarray.max(A, [], optional_dim, nanflag, indexflag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.max.html'
+
+
+    "dlarray.maxpool [nnet]":
+        prefix: "dlarray.maxpool"
+        body: '''dlarray.maxpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
+        description: '''[nnet] 
+        dlarray.maxpool(dlX, poolsize, 'DataFormat', value, 'Padding', value, 'Stride', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.maxpool.html'
+
+
+    "dlarray.leakyrelu [nnet]":
+        prefix: "dlarray.leakyrelu"
+        body: '''dlarray.leakyrelu(${1:dlX}, ${2:optional_scaleFactor})'''
+        description: '''[nnet] 
+        dlarray.leakyrelu(dlX, optional_scaleFactor)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.leakyrelu.html'
+
+
+    "dlarray.avgpool [nnet]":
+        prefix: "dlarray.avgpool"
+        body: '''dlarray.avgpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
+        description: '''[nnet] 
+        dlarray.avgpool(dlX, poolsize, 'DataFormat', value, 'Padding', value, 'Stride', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.avgpool.html'
+
+
+    "dlarray.lstm [nnet]":
+        prefix: "dlarray.lstm"
+        body: '''dlarray.lstm(${1:dlX}, ${2:H0}, ${3:C0}, ${4:weights}, ${5:recurrentWeights}, ${6:bias}, 'DataFormat', ${7:value})'''
+        description: '''[nnet] 
+        dlarray.lstm(dlX, H0, C0, weights, recurrentWeights, bias, 'DataFormat', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.lstm.html'
+
+
+    "dlarray.fullyconnect [nnet]":
+        prefix: "dlarray.fullyconnect"
+        body: '''dlarray.fullyconnect(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value})'''
+        description: '''[nnet] 
+        dlarray.fullyconnect(dlX, weights, bias, 'DataFormat', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.fullyconnect.html'
+
+
+    "dlarray.sum [nnet]":
+        prefix: "dlarray.sum"
+        body: '''dlarray.sum(${1:A}, ${2:optional_dim}, ${3:outtype})'''
+        description: '''[nnet] 
+        dlarray.sum(A, optional_dim, outtype)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.sum.html'
+
+
+    "dlarray.batchnorm [nnet]":
+        prefix: "dlarray.batchnorm"
+        body: '''dlarray.batchnorm(${1:dlX}, ${2:offset}, ${3:scaleFactor}, ${4:optional_mu}, ${5:optional_sigma}, 'DataFormat', ${6:value}, 'MeanDecay', ${7:value}, 'VarianceDecay', ${8:value}, 'Epsilon', ${9:value})'''
+        description: '''[nnet] 
+        dlarray.batchnorm(dlX, offset, scaleFactor, optional_mu, optional_sigma, 'DataFormat', value, 'MeanDecay', value, 'VarianceDecay', value, 'Epsilon', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.batchnorm.html'
+
+
+    "dlarray.dlgradient [nnet]":
+        prefix: "dlarray.dlgradient"
+        body: '''dlarray.dlgradient(${1:y}, ${2:x}, 'RetainData', ${3:value})'''
+        description: '''[nnet] 
+        dlarray.dlgradient(y, x, 'RetainData', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.dlgradient.html'
+
+
+    "dlarray.prod [nnet]":
+        prefix: "dlarray.prod"
+        body: '''dlarray.prod(${1:A}, ${2:optional_dim}, ${3:type})'''
+        description: '''[nnet] 
+        dlarray.prod(A, optional_dim, type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.prod.html'
+
+
+    "dlarray.sigmoid [nnet]":
+        prefix: "dlarray.sigmoid"
+        body: '''dlarray.sigmoid(${1:dlX})'''
+        description: '''[nnet] 
+        dlarray.sigmoid(dlX)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.sigmoid.html'
+
+
+    "dlarray.crossentropy [nnet]":
+        prefix: "dlarray.crossentropy"
+        body: '''dlarray.crossentropy(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
+        description: '''[nnet] 
+        dlarray.crossentropy(dlX, targets, 'DataFormat', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.crossentropy.html'
+
+
+    "dlarray.dlconv [nnet]":
+        prefix: "dlarray.dlconv"
+        body: '''dlarray.dlconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Padding', ${7:value})'''
+        description: '''[nnet] 
+        dlarray.dlconv(dlX, weights, bias, 'DataFormat', value, 'Stride', value, 'DilationFactor', value, 'Padding', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.dlconv.html'
+
+
+    "dlarray.maxunpool [nnet]":
+        prefix: "dlarray.maxunpool"
+        body: '''dlarray.maxunpool(${1:dlX}, ${2:indx}, ${3:outputSize}, 'DataFormat', ${4:value})'''
+        description: '''[nnet] 
+        dlarray.maxunpool(dlX, indx, outputSize, 'DataFormat', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.maxunpool.html'
+
+
+    "dlarray.relu [nnet]":
+        prefix: "dlarray.relu"
+        body: '''dlarray.relu(${1:dlX})'''
+        description: '''[nnet] 
+        dlarray.relu(dlX)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.relu.html'
+
+
+    "rmspropupdate [nnet]":
+        prefix: "rmspropupdate"
+        body: '''rmspropupdate(${1:params}, ${2:grad}, ${3:averageSqGrad}, ${4:learnRate}, ${5:sqGradDecay}, ${6:epsilon})'''
+        description: '''[nnet] 
+      Update parameters using root mean squared propagation
+    (RMSProp)
+    
+        rmspropupdate(params, grad, averageSqGrad, learnRate, sqGradDecay, epsilon)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/rmspropupdate.html'
+
+
+    "adamupdate [nnet]":
+        prefix: "adamupdate"
+        body: '''adamupdate(${1:params}, ${2:grad}, ${3:averageGrad}, ${4:averageSqGrad}, ${5:iteration}, ${6:learnRate}, ${7:gradDecay}, ${8:sqGradDecay}, ${9:epsilon})'''
+        description: '''[nnet] 
+      Update parameters using adaptive moment estimation (Adam)
+    
+        adamupdate(params, grad, averageGrad, averageSqGrad, iteration, learnRate, gradDecay, sqGradDecay, epsilon)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/ref/adamupdate.html'
+
+
+    "dlarray.mean [nnet]":
+        prefix: "dlarray.mean"
+        body: '''dlarray.mean(${1:A}, ${2:optional_dim}, ${3:outtype})'''
+        description: '''[nnet] 
+        dlarray.mean(A, optional_dim, outtype)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/nnet/dlarray.mean.html'
+

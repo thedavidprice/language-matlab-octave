@@ -1,0 +1,29 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "coder.dictionary.Entry.set [coder]":
+        prefix: "coder.dictionary.Entry.set"
+        body: '''coder.dictionary.Entry.set(${1:entryObj}, ${2:pName1}, ${3:pValue1})'''
+        description: '''[coder] 
+        coder.dictionary.Entry.set(entryObj, pName1, pValue1)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/coder.dictionary.Entry.set.html'
+
+
+    "coder.Dictionary.getSection [coder]":
+        prefix: "coder.Dictionary.getSection"
+        body: '''${1:outputValue1} = coder.Dictionary.getSection(${1:dictionaryObj}, ${2:sectionName})'''
+        description: '''[coder] 
+        outputValue1 = coder.Dictionary.getSection(dictionaryObj, sectionName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/coder.Dictionary.getSection.html'
+
+
+    "coder.dictionary.Entry.get [coder]":
+        prefix: "coder.dictionary.Entry.get"
+        body: '''${1:outputValue1} = coder.dictionary.Entry.get(${1:entryObj}, ${2:pName1})'''
+        description: '''[coder] 
+        outputValue1 = coder.dictionary.Entry.get(entryObj, pName1)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/coder.dictionary.Entry.get.html'
+

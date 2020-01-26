@@ -1,0 +1,22 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "coder [coder]":
+        prefix: "coder"
+        body: '''coder('-toconfig', ${1:value})'''
+        description: '''[coder] Open MATLAB
+            Coder app
+        coder('-toconfig', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/coder.html'
+
+
+    "codegen [coder]":
+        prefix: "codegen"
+        body: '''codegen(${1:compile_only}, ${2:config_flag}, ${3:debug}, ${4:report}, ${5:launchreport}, '-reportinfo', ${6:value}, ${7:rowmajor}, ${8:preservearraydims}, ${9:file}, '-d', ${10:value}, '-I', ${11:value}, '-globals', ${12:value}, '-o', ${13:value}, '-O', ${14:value}, '-args', ${15:value}, '-config', ${16:value}, ${17:verbose}, ${18:singleC}, '-test', ${19:value}, ${20:jit}, ${21:lang}, ${22:langstd}, '-toproject', ${23:value})'''
+        description: '''[coder] Generate C/C++ code from
+        MATLAB code
+        codegen(compile_only, config_flag, debug, report, launchreport, '-reportinfo', value, rowmajor, preservearraydims, file, '-d', value, '-I', value, '-globals', value, '-o', value, '-O', value, '-args', value, '-config', value, verbose, singleC, '-test', value, jit, lang, langstd, '-toproject', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/codegen.html'
+

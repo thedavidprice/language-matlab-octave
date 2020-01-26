@@ -1,0 +1,12 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "crossReleaseImport [coder]":
+        prefix: "crossReleaseImport"
+        body: '''${1:blockHandle} = crossReleaseImport(${1:buildFolder}, ${2:configset}, 'SimulationMode', ${3:value}, 'DataDictionary', ${4:value}, 'ConfigParams', ${5:value}, 'SFunctionName', ${6:value}, 'OriginalPaths', ${7:value}, 'ReplacementPaths', ${8:value})'''
+        description: '''[coder] Import generated model code from a previous release as
+SIL or PIL blocks
+        blockHandle = crossReleaseImport(buildFolder, configset, 'SimulationMode', value, 'DataDictionary', value, 'ConfigParams', value, 'SFunctionName', value, 'OriginalPaths', value, 'ReplacementPaths', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/crossreleaseimport.html'
+

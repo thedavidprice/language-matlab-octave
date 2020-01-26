@@ -1,0 +1,29 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "Simulink.SimulationInput.setVariable [simulink]":
+        prefix: "Simulink.SimulationInput.setVariable"
+        body: '''Simulink.SimulationInput.setVariable(${1:obj}, ${2:name}, ${3:value}, 'Workspace', ${4:value})'''
+        description: '''[simulink] 
+        Simulink.SimulationInput.setVariable(obj, name, value, 'Workspace', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/Simulink.SimulationInput.setVariable.html'
+
+
+    "Simulink.SimulationInput.applyToModel [simulink]":
+        prefix: "Simulink.SimulationInput.applyToModel"
+        body: '''Simulink.SimulationInput.applyToModel(${1:Object}, 'EnableConfigSetRefUpdate', ${2:value})'''
+        description: '''[simulink] 
+        Simulink.SimulationInput.applyToModel(Object, 'EnableConfigSetRefUpdate', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/Simulink.SimulationInput.applyToModel.html'
+
+
+    "Simulink.SimulationInput [simulink]":
+        prefix: "Simulink.SimulationInput"
+        body: '''Simulink.SimulationInput(${1:model})'''
+        description: '''[simulink] 
+        Simulink.SimulationInput(model)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/Simulink.SimulationInput.html'
+

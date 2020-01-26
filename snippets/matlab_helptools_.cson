@@ -1,0 +1,29 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "docroot [matlab]":
+        prefix: "docroot"
+        body: '''docroot(${1:newRoot})'''
+        description: '''[matlab] 
+        docroot(newRoot)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/docroot.html'
+
+
+    "doc [matlab]":
+        prefix: "doc"
+        body: '''doc(${1:optional_filename})'''
+        description: '''[matlab] Reference page in Help browser
+        doc(optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/doc.html'
+
+
+    "help [matlab]":
+        prefix: "help"
+        body: '''help(${1:optional_filename})'''
+        description: '''[matlab] Help for design method with filter specification
+        help(optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/help.html'
+

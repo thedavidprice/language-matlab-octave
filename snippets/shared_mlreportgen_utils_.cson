@@ -1,0 +1,101 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "mlreportgen.utils.rptviewer.open [shared]":
+        prefix: "mlreportgen.utils.rptviewer.open"
+        body: '''mlreportgen.utils.rptviewer.open(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.rptviewer.open(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.rptviewer.open.html'
+
+
+    "mlreportgen.utils.powerpoint.open [shared]":
+        prefix: "mlreportgen.utils.powerpoint.open"
+        body: '''mlreportgen.utils.powerpoint.open(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.powerpoint.open(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.powerpoint.open.html'
+
+
+    "mlreportgen.utils.word.show [shared]":
+        prefix: "mlreportgen.utils.word.show"
+        body: '''mlreportgen.utils.word.show(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.word.show(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.word.show.html'
+
+
+    "mlreportgen.utils.word.close [shared]":
+        prefix: "mlreportgen.utils.word.close"
+        body: '''mlreportgen.utils.word.close(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.word.close(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.word.close.html'
+
+
+    "mlreportgen.utils.word.load [shared]":
+        prefix: "mlreportgen.utils.word.load"
+        body: '''mlreportgen.utils.word.load(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.word.load(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.word.load.html'
+
+
+    "mlreportgen.utils.powerpoint.close [shared]":
+        prefix: "mlreportgen.utils.powerpoint.close"
+        body: '''mlreportgen.utils.powerpoint.close(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.powerpoint.close(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.powerpoint.close.html'
+
+
+    "mlreportgen.utils.word.hide [shared]":
+        prefix: "mlreportgen.utils.word.hide"
+        body: '''mlreportgen.utils.word.hide(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.word.hide(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.word.hide.html'
+
+
+    "mlreportgen.utils.word.open [shared]":
+        prefix: "mlreportgen.utils.word.open"
+        body: '''mlreportgen.utils.word.open(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.word.open(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.word.open.html'
+
+
+    "mlreportgen.utils.powerpoint.show [shared]":
+        prefix: "mlreportgen.utils.powerpoint.show"
+        body: '''mlreportgen.utils.powerpoint.show(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.powerpoint.show(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.powerpoint.show.html'
+
+
+    "mlreportgen.utils.powerpoint.load [shared]":
+        prefix: "mlreportgen.utils.powerpoint.load"
+        body: '''mlreportgen.utils.powerpoint.load(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.powerpoint.load(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.powerpoint.load.html'
+
+
+    "mlreportgen.utils.powerpoint.hide [shared]":
+        prefix: "mlreportgen.utils.powerpoint.hide"
+        body: '''mlreportgen.utils.powerpoint.hide(${1:file})'''
+        description: '''[shared] 
+        mlreportgen.utils.powerpoint.hide(file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlreportgen.utils.powerpoint.hide.html'
+

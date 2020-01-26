@@ -1,0 +1,101 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "rem [matlab]":
+        prefix: "rem"
+        body: '''${1:r} = rem(${1:a}, ${2:b})'''
+        description: '''[matlab] Remainder after division
+        r = rem(a, b)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rem.html'
+
+
+    "ceil [matlab]":
+        prefix: "ceil"
+        body: '''${1:Y} = ceil(${1:X})'''
+        description: '''[matlab] Round toward positive infinity
+        Y = ceil(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ceil.html'
+
+
+    "fix [matlab]":
+        prefix: "fix"
+        body: '''${1:Y} = fix(${1:X})'''
+        description: '''[matlab] Round toward zero
+        Y = fix(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fix.html'
+
+
+    "real [matlab]":
+        prefix: "real"
+        body: '''${1:X} = real(${1:Z})'''
+        description: '''[matlab] Real part of complex number
+        X = real(Z)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/real.html'
+
+
+    "mod [matlab]":
+        prefix: "mod"
+        body: '''${1:b} = mod(${1:a}, ${2:m})'''
+        description: '''[matlab] Remainder after division (modulo operation)
+        b = mod(a, m)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mod.html'
+
+
+    "round [matlab]":
+        prefix: "round"
+        body: '''${1:Y} = round(${1:X}, ${2:N}, ${3:type})'''
+        description: '''[matlab] Round to nearest decimal or integer
+        Y = round(X, N, type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/round.html'
+
+
+    "conj [matlab]":
+        prefix: "conj"
+        body: '''${1:ZC} = conj(${1:Z})'''
+        description: '''[matlab] Form model with complex conjugate coefficients
+        ZC = conj(Z)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/conj.html'
+
+
+    "abs [matlab]":
+        prefix: "abs"
+        body: '''${1:Y} = abs(${1:X})'''
+        description: '''[matlab] Entrywise magnitude of frequency response
+        Y = abs(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/abs.html'
+
+
+    "floor [matlab]":
+        prefix: "floor"
+        body: '''${1:Y} = floor(${1:X})'''
+        description: '''[matlab] Round toward negative infinity
+        Y = floor(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/floor.html'
+
+
+    "sign [matlab]":
+        prefix: "sign"
+        body: '''${1:y} = sign(${1:x})'''
+        description: '''[matlab] Sign function (signum function)
+        y = sign(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sign.html'
+
+
+    "imag [matlab]":
+        prefix: "imag"
+        body: '''${1:Y} = imag(${1:Z})'''
+        description: '''[matlab] Imaginary part of complex number
+        Y = imag(Z)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/imag.html'
+

@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "buildStandaloneCoderAssumptions [coder]":
+        prefix: "buildStandaloneCoderAssumptions"
+        body: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
+        description: '''[coder] Create application to check code generator assumptions
+        buildStandaloneCoderAssumptions(buildFolder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/buildstandalonecoderassumptions.html'
+

@@ -1,0 +1,164 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "matlab.io.ImportOptions.setvartype [shared]":
+        prefix: "matlab.io.ImportOptions.setvartype"
+        body: '''${1:opts} = matlab.io.ImportOptions.setvartype(${1:opts}, ${2:selection}, ${3:newtype})'''
+        description: '''[shared] 
+        opts = matlab.io.ImportOptions.setvartype(opts, selection, newtype)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.ImportOptions.setvartype.html'
+
+
+    "matlab.io.CategoricalVariableImportOptions [shared]":
+        prefix: "matlab.io.CategoricalVariableImportOptions"
+        body: '''matlab.io.CategoricalVariableImportOptions('Name', ${1:value}, 'Type', ${2:value}, 'TreatAsMissing', ${3:value}, 'FillValue', ${4:value}, 'QuoteRule', ${5:value}, 'Categories', ${6:value}, 'Protected', ${7:value}, 'Ordinal', ${8:value})'''
+        description: '''[shared] 
+        matlab.io.CategoricalVariableImportOptions('Name', value, 'Type', value, 'TreatAsMissing', value, 'FillValue', value, 'QuoteRule', value, 'Categories', value, 'Protected', value, 'Ordinal', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.CategoricalVariableImportOptions.html'
+
+
+    "detectImportOptions [shared]":
+        prefix: "detectImportOptions"
+        body: '''detectImportOptions(${1:filename}, 'FileType', ${2:value}, 'TextType', ${3:value}, 'DatetimeType', ${4:value}, 'DateLocale', ${5:value}, 'Range', ${6:value}, 'ExpectedNumVariables', ${7:value}, 'TreatAsMissing', ${8:value}, 'NumHeaderLines', ${9:value}, 'ReadVariableNames', ${10:value}, 'ReadRowNames', ${11:value}, 'MissingRule', ${12:value}, 'ImportErrorRule', ${13:value}, 'ExtraColumnsRule', ${14:value}, 'Sheet', ${15:value}, 'DataRange', ${16:value}, 'RowNamesRange', ${17:value}, 'VariableNamesRange', ${18:value}, 'VariableUnitsRange', ${19:value}, 'VariableDescriptionsRange', ${20:value}, 'PreserveVariableNames', ${21:value})'''
+        description: '''[shared] Create import options based on file content
+        detectImportOptions(filename, 'FileType', value, 'TextType', value, 'DatetimeType', value, 'DateLocale', value, 'Range', value, 'ExpectedNumVariables', value, 'TreatAsMissing', value, 'NumHeaderLines', value, 'ReadVariableNames', value, 'ReadRowNames', value, 'MissingRule', value, 'ImportErrorRule', value, 'ExtraColumnsRule', value, 'Sheet', value, 'DataRange', value, 'RowNamesRange', value, 'VariableNamesRange', value, 'VariableUnitsRange', value, 'VariableDescriptionsRange', value, 'PreserveVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/detectimportoptions.html'
+
+
+    "matlab.io.text.TextImportOptions.preview [shared]":
+        prefix: "matlab.io.text.TextImportOptions.preview"
+        body: '''${1:data} = matlab.io.text.TextImportOptions.preview(${1:filename}, ${2:opts})'''
+        description: '''[shared] 
+        data = matlab.io.text.TextImportOptions.preview(filename, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.text.TextImportOptions.preview.html'
+
+
+    "matlab.io.DatetimeVariableImportOptions [shared]":
+        prefix: "matlab.io.DatetimeVariableImportOptions"
+        body: '''matlab.io.DatetimeVariableImportOptions('Name', ${1:value}, 'Type', ${2:value}, 'TreatAsMissing', ${3:value}, 'FillValue', ${4:value}, 'QuoteRule', ${5:value}, 'DatetimeFormat', ${6:value}, 'DatetimeLocale', ${7:value}, 'InputFormat', ${8:value})'''
+        description: '''[shared] 
+        matlab.io.DatetimeVariableImportOptions('Name', value, 'Type', value, 'TreatAsMissing', value, 'FillValue', value, 'QuoteRule', value, 'DatetimeFormat', value, 'DatetimeLocale', value, 'InputFormat', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.DatetimeVariableImportOptions.html'
+
+
+    "matlab.io.ImportOptions.setvaropts [shared]":
+        prefix: "matlab.io.ImportOptions.setvaropts"
+        body: '''${1:opts} = matlab.io.ImportOptions.setvaropts(${1:opts}, ${2:selection}, 'QuoteRule', ${3:value}, 'FillValue', ${4:value}, 'TreatAsMissing', ${5:value}, 'WhitespaceRule', ${6:value}, 'ExponentCharacter', ${7:value}, 'DecimalSeparator', ${8:value}, 'ThousandsSeparator', ${9:value}, 'FieldSeparator', ${10:value}, 'DatetimeFormat', ${11:value}, 'DurationFormat', ${12:value}, 'DatetimeLocale', ${13:value}, 'InputFormat', ${14:value}, 'Categories', ${15:value}, 'Protected', ${16:value}, 'Ordinal', ${17:value}, 'Prefixes', ${18:value}, 'Suffixes', ${19:value})'''
+        description: '''[shared] 
+        opts = matlab.io.ImportOptions.setvaropts(opts, selection, 'QuoteRule', value, 'FillValue', value, 'TreatAsMissing', value, 'WhitespaceRule', value, 'ExponentCharacter', value, 'DecimalSeparator', value, 'ThousandsSeparator', value, 'FieldSeparator', value, 'DatetimeFormat', value, 'DurationFormat', value, 'DatetimeLocale', value, 'InputFormat', value, 'Categories', value, 'Protected', value, 'Ordinal', value, 'Prefixes', value, 'Suffixes', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.ImportOptions.setvaropts.html'
+
+
+    "spreadsheetImportOptions [shared]":
+        prefix: "spreadsheetImportOptions"
+        body: '''spreadsheetImportOptions('DataRange', ${1:value}, 'VariableUnitsRange', ${2:value}, 'VariableNamesRange', ${3:value}, 'VariableDescriptionRange', ${4:value}, 'RowNamesRange', ${5:value}, 'Sheet', ${6:value}, 'SelectedVariableNames', ${7:value}, 'VariableNames', ${8:value}, 'VariableOptions', ${9:value}, 'VariableTypes', ${10:value}, 'MissingRule', ${11:value}, 'ImportErrorRule', ${12:value}, 'PreserveVariableNames', ${13:value}, 'NumVariables', ${14:value})'''
+        description: '''[shared] Import options object for Spreadsheets
+        spreadsheetImportOptions('DataRange', value, 'VariableUnitsRange', value, 'VariableNamesRange', value, 'VariableDescriptionRange', value, 'RowNamesRange', value, 'Sheet', value, 'SelectedVariableNames', value, 'VariableNames', value, 'VariableOptions', value, 'VariableTypes', value, 'MissingRule', value, 'ImportErrorRule', value, 'PreserveVariableNames', value, 'NumVariables', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/matlab.io.spreadsheet.spreadsheetimportoptions.html'
+
+
+    "matlab.io.text.FixedWidthImportOptions [shared]":
+        prefix: "matlab.io.text.FixedWidthImportOptions"
+        body: '''matlab.io.text.FixedWidthImportOptions('CommentStyle', ${1:value}, 'DataLines', ${2:value}, 'EmptyLineRule', ${3:value}, 'Encoding', ${4:value}, 'ExtraColumnsRule', ${5:value}, 'ImportErrorRule', ${6:value}, 'LineEnding', ${7:value}, 'MissingRule', ${8:value}, 'PartialFieldRule', ${9:value}, 'RowNamesColumn', ${10:value}, 'SelectedVariableNames', ${11:value}, 'VariableDescriptionsLine', ${12:value}, 'VariableNames', ${13:value}, 'VariableNamesLine', ${14:value}, 'VariableOptions', ${15:value}, 'VariableTypes', ${16:value}, 'VariableUnitsLine', ${17:value}, 'VariableWidths', ${18:value}, 'Whitespace', ${19:value}, 'NumVariables', ${20:value}, 'PreserveVariableNames', ${21:value})'''
+        description: '''[shared] 
+        matlab.io.text.FixedWidthImportOptions('CommentStyle', value, 'DataLines', value, 'EmptyLineRule', value, 'Encoding', value, 'ExtraColumnsRule', value, 'ImportErrorRule', value, 'LineEnding', value, 'MissingRule', value, 'PartialFieldRule', value, 'RowNamesColumn', value, 'SelectedVariableNames', value, 'VariableDescriptionsLine', value, 'VariableNames', value, 'VariableNamesLine', value, 'VariableOptions', value, 'VariableTypes', value, 'VariableUnitsLine', value, 'VariableWidths', value, 'Whitespace', value, 'NumVariables', value, 'PreserveVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.text.FixedWidthImportOptions.html'
+
+
+    "matlab.io.spreadsheet.SpreadsheetImportOptions [shared]":
+        prefix: "matlab.io.spreadsheet.SpreadsheetImportOptions"
+        body: '''matlab.io.spreadsheet.SpreadsheetImportOptions('DataRange', ${1:value}, 'VariableUnitsRange', ${2:value}, 'VariableNamesRange', ${3:value}, 'VariableDescriptionRange', ${4:value}, 'RowNamesRange', ${5:value}, 'Sheet', ${6:value}, 'SelectedVariableNames', ${7:value}, 'VariableNames', ${8:value}, 'VariableOptions', ${9:value}, 'VariableTypes', ${10:value}, 'MissingRule', ${11:value}, 'ImportErrorRule', ${12:value}, 'NumVariables', ${13:value}, 'PreserveVariableNames', ${14:value})'''
+        description: '''[shared] 
+        matlab.io.spreadsheet.SpreadsheetImportOptions('DataRange', value, 'VariableUnitsRange', value, 'VariableNamesRange', value, 'VariableDescriptionRange', value, 'RowNamesRange', value, 'Sheet', value, 'SelectedVariableNames', value, 'VariableNames', value, 'VariableOptions', value, 'VariableTypes', value, 'MissingRule', value, 'ImportErrorRule', value, 'NumVariables', value, 'PreserveVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.spreadsheet.SpreadsheetImportOptions.html'
+
+
+    "fixedWidthImportOptions [shared]":
+        prefix: "fixedWidthImportOptions"
+        body: '''fixedWidthImportOptions('CommentStyle', ${1:value}, 'DataLines', ${2:value}, 'EmptyLineRule', ${3:value}, 'Encoding', ${4:value}, 'ExtraColumnsRule', ${5:value}, 'ImportErrorRule', ${6:value}, 'LineEnding', ${7:value}, 'MissingRule', ${8:value}, 'PartialFieldRule', ${9:value}, 'RowNamesColumn', ${10:value}, 'SelectedVariableNames', ${11:value}, 'VariableDescriptionsLine', ${12:value}, 'VariableNames', ${13:value}, 'VariableNamesLine', ${14:value}, 'VariableOptions', ${15:value}, 'VariableTypes', ${16:value}, 'VariableUnitsLine', ${17:value}, 'VariableWidths', ${18:value}, 'Whitespace', ${19:value}, 'NumVariables', ${20:value}, 'PreserveVariableNames', ${21:value})'''
+        description: '''[shared] Import options object for fixed-width text files
+        fixedWidthImportOptions('CommentStyle', value, 'DataLines', value, 'EmptyLineRule', value, 'Encoding', value, 'ExtraColumnsRule', value, 'ImportErrorRule', value, 'LineEnding', value, 'MissingRule', value, 'PartialFieldRule', value, 'RowNamesColumn', value, 'SelectedVariableNames', value, 'VariableDescriptionsLine', value, 'VariableNames', value, 'VariableNamesLine', value, 'VariableOptions', value, 'VariableTypes', value, 'VariableUnitsLine', value, 'VariableWidths', value, 'Whitespace', value, 'NumVariables', value, 'PreserveVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/matlab.io.text.fixedwidthimportoptions.html'
+
+
+    "matlab.io.spreadsheet.SpreadsheetImportOptions.preview [shared]":
+        prefix: "matlab.io.spreadsheet.SpreadsheetImportOptions.preview"
+        body: '''${1:data} = matlab.io.spreadsheet.SpreadsheetImportOptions.preview(${1:filename}, ${2:opts})'''
+        description: '''[shared] 
+        data = matlab.io.spreadsheet.SpreadsheetImportOptions.preview(filename, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.spreadsheet.SpreadsheetImportOptions.preview.html'
+
+
+    "matlab.io.DurationVariableImportOptions [shared]":
+        prefix: "matlab.io.DurationVariableImportOptions"
+        body: '''matlab.io.DurationVariableImportOptions('Name', ${1:value}, 'TreatAsMissing', ${2:value}, 'FillValue', ${3:value}, 'QuoteRule', ${4:value}, 'DurationFormat', ${5:value}, 'InputFormat', ${6:value}, 'DecimalSeparator', ${7:value}, 'FieldSeparator', ${8:value})'''
+        description: '''[shared] 
+        matlab.io.DurationVariableImportOptions('Name', value, 'TreatAsMissing', value, 'FillValue', value, 'QuoteRule', value, 'DurationFormat', value, 'InputFormat', value, 'DecimalSeparator', value, 'FieldSeparator', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.DurationVariableImportOptions.html'
+
+
+    "matlab.io.ImportOptions.getvaropts [shared]":
+        prefix: "matlab.io.ImportOptions.getvaropts"
+        body: '''${1:opts} = matlab.io.ImportOptions.getvaropts(${1:opts}, ${2:selection})'''
+        description: '''[shared] 
+        opts = matlab.io.ImportOptions.getvaropts(opts, selection)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.ImportOptions.getvaropts.html'
+
+
+    "matlab.io.TextVariableImportOptions [shared]":
+        prefix: "matlab.io.TextVariableImportOptions"
+        body: '''matlab.io.TextVariableImportOptions('Name', ${1:value}, 'Type', ${2:value}, 'TreatAsMissing', ${3:value}, 'FillValue', ${4:value}, 'QuoteRule', ${5:value}, 'WhitespaceRule', ${6:value})'''
+        description: '''[shared] 
+        matlab.io.TextVariableImportOptions('Name', value, 'Type', value, 'TreatAsMissing', value, 'FillValue', value, 'QuoteRule', value, 'WhitespaceRule', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.TextVariableImportOptions.html'
+
+
+    "matlab.io.LogicalVariableImportOptions [shared]":
+        prefix: "matlab.io.LogicalVariableImportOptions"
+        body: '''matlab.io.LogicalVariableImportOptions('Name', ${1:value}, 'Type', ${2:value}, 'TreatAsMissing', ${3:value}, 'FillValue', ${4:value}, 'QuoteRule', ${5:value}, 'TrueSymbols', ${6:value}, 'FalseSymbols', ${7:value}, 'CaseSensitive', ${8:value})'''
+        description: '''[shared] 
+        matlab.io.LogicalVariableImportOptions('Name', value, 'Type', value, 'TreatAsMissing', value, 'FillValue', value, 'QuoteRule', value, 'TrueSymbols', value, 'FalseSymbols', value, 'CaseSensitive', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.LogicalVariableImportOptions.html'
+
+
+    "matlab.io.NumericVariableImportOptions [shared]":
+        prefix: "matlab.io.NumericVariableImportOptions"
+        body: '''matlab.io.NumericVariableImportOptions('Name', ${1:value}, 'Type', ${2:value}, 'TreatAsMissing', ${3:value}, 'FillValue', ${4:value}, 'QuoteRule', ${5:value}, 'ExponentCharacter', ${6:value}, 'DecimalSeparator', ${7:value}, 'ThousandsSeparator', ${8:value})'''
+        description: '''[shared] 
+        matlab.io.NumericVariableImportOptions('Name', value, 'Type', value, 'TreatAsMissing', value, 'FillValue', value, 'QuoteRule', value, 'ExponentCharacter', value, 'DecimalSeparator', value, 'ThousandsSeparator', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.NumericVariableImportOptions.html'
+
+
+    "delimitedTextImportOptions [shared]":
+        prefix: "delimitedTextImportOptions"
+        body: '''delimitedTextImportOptions('CommentStyle', ${1:value}, 'ConsecutiveDelimitersRule', ${2:value}, 'DataLines', ${3:value}, 'Delimiter', ${4:value}, 'EmptyLineRule', ${5:value}, 'Encoding', ${6:value}, 'ExtraColumnsRule', ${7:value}, 'ImportErrorRule', ${8:value}, 'LeadingDelimitersRule', ${9:value}, 'LineEnding', ${10:value}, 'MissingRule', ${11:value}, 'RowNamesColumn', ${12:value}, 'SelectedVariableNames', ${13:value}, 'VariableDescriptionsLine', ${14:value}, 'VariableNames', ${15:value}, 'VariableNamesLine', ${16:value}, 'VariableOptions', ${17:value}, 'VariableTypes', ${18:value}, 'VariableUnitsLine', ${19:value}, 'Whitespace', ${20:value}, 'NumVariables', ${21:value}, 'PreserveVariableNames', ${22:value})'''
+        description: '''[shared] Import options object for delimited text
+        delimitedTextImportOptions('CommentStyle', value, 'ConsecutiveDelimitersRule', value, 'DataLines', value, 'Delimiter', value, 'EmptyLineRule', value, 'Encoding', value, 'ExtraColumnsRule', value, 'ImportErrorRule', value, 'LeadingDelimitersRule', value, 'LineEnding', value, 'MissingRule', value, 'RowNamesColumn', value, 'SelectedVariableNames', value, 'VariableDescriptionsLine', value, 'VariableNames', value, 'VariableNamesLine', value, 'VariableOptions', value, 'VariableTypes', value, 'VariableUnitsLine', value, 'Whitespace', value, 'NumVariables', value, 'PreserveVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/matlab.io.text.delimitedtextimportoptions.html'
+
+
+    "matlab.io.text.DelimitedTextImportOptions [shared]":
+        prefix: "matlab.io.text.DelimitedTextImportOptions"
+        body: '''matlab.io.text.DelimitedTextImportOptions('CommentStyle', ${1:value}, 'ConsecutiveDelimitersRule', ${2:value}, 'DataLines', ${3:value}, 'Delimiter', ${4:value}, 'EmptyLineRule', ${5:value}, 'Encoding', ${6:value}, 'ExtraColumnsRule', ${7:value}, 'ImportErrorRule', ${8:value}, 'LeadingDelimitersRule', ${9:value}, 'LineEnding', ${10:value}, 'MissingRule', ${11:value}, 'RowNamesColumn', ${12:value}, 'SelectedVariableNames', ${13:value}, 'VariableDescriptionsLine', ${14:value}, 'VariableNames', ${15:value}, 'VariableNamesLine', ${16:value}, 'VariableOptions', ${17:value}, 'VariableTypes', ${18:value}, 'VariableUnitsLine', ${19:value}, 'Whitespace', ${20:value}, 'NumVariables', ${21:value}, 'PreserveVariableNames', ${22:value})'''
+        description: '''[shared] 
+        matlab.io.text.DelimitedTextImportOptions('CommentStyle', value, 'ConsecutiveDelimitersRule', value, 'DataLines', value, 'Delimiter', value, 'EmptyLineRule', value, 'Encoding', value, 'ExtraColumnsRule', value, 'ImportErrorRule', value, 'LeadingDelimitersRule', value, 'LineEnding', value, 'MissingRule', value, 'RowNamesColumn', value, 'SelectedVariableNames', value, 'VariableDescriptionsLine', value, 'VariableNames', value, 'VariableNamesLine', value, 'VariableOptions', value, 'VariableTypes', value, 'VariableUnitsLine', value, 'Whitespace', value, 'NumVariables', value, 'PreserveVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlab.io.text.DelimitedTextImportOptions.html'
+

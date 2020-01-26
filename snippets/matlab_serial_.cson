@@ -1,0 +1,174 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "delete [matlab]":
+        prefix: "delete"
+        body: '''delete(${1:obj})'''
+        description: '''[matlab] Remove image acquisition object from memory
+        delete(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/delete.html'
+
+
+    "serialbreak [matlab]":
+        prefix: "serialbreak"
+        body: '''serialbreak(${1:obj}, ${2:optional_time})'''
+        description: '''[matlab] (Not recommended) Send break to device connected to serial port
+        serialbreak(obj, optional_time)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/serialbreak.html'
+
+
+    "fclose [matlab]":
+        prefix: "fclose"
+        body: '''fclose(${1:obj})'''
+        description: '''[matlab] Disconnect interface object from instrument
+        fclose(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fclose.html'
+
+
+    "disp [matlab]":
+        prefix: "disp"
+        body: '''disp(${1:obj})'''
+        description: '''[matlab] Filter properties and values
+        disp(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/disp.html'
+
+
+    "length [matlab]":
+        prefix: "length"
+        body: '''${1:out} = length(${1:obj})'''
+        description: '''[matlab] Number of key-value pairs in the data cache
+        out = length(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/mps_dev_test/length.html'
+
+
+    "readasync [matlab]":
+        prefix: "readasync"
+        body: '''readasync(${1:obj}, ${2:optional_size})'''
+        description: '''[matlab] Read data asynchronously from instrument
+        readasync(obj, optional_size)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/readasync.html'
+
+
+    "fgets [matlab]":
+        prefix: "fgets"
+        body: '''[${1:tline}, ${2:count}, ${3:msg}] = fgets(${1:obj})'''
+        description: '''[matlab] Read line of text from instrument and include terminator
+        [tline, count, msg] = fgets(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fgets.html'
+
+
+    "fscanf [matlab]":
+        prefix: "fscanf"
+        body: '''[${1:A}, ${2:count}, ${3:msg}] = fscanf(${1:obj}, ${2:optional_format}, ${3:optional_size})'''
+        description: '''[matlab] Read data from instrument, and format as text
+        [A, count, msg] = fscanf(obj, optional_format, optional_size)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fscanf.html'
+
+
+    "fgetl [matlab]":
+        prefix: "fgetl"
+        body: '''[${1:tline}, ${2:count}, ${3:msg}] = fgetl(${1:obj})'''
+        description: '''[matlab] Read line of text from instrument and discard terminator
+        [tline, count, msg] = fgetl(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fgetl.html'
+
+
+    "size [matlab]":
+        prefix: "size"
+        body: '''${1:d} = size(${1:obj}, ${2:optional_dim})'''
+        description: '''[matlab] Return size of MetaData object
+        d = size(obj, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.size.html'
+
+
+    "fopen [matlab]":
+        prefix: "fopen"
+        body: '''fopen(${1:obj})'''
+        description: '''[matlab] Connect interface object to instrument
+        fopen(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fopen.html'
+
+
+    "fwrite [matlab]":
+        prefix: "fwrite"
+        body: '''fwrite(${1:obj}, ${2:A}, ${3:optional_precision}, ${4:optional_mode})'''
+        description: '''[matlab] Write binary data to instrument
+        fwrite(obj, A, optional_precision, optional_mode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fwrite.html'
+
+
+    "record [matlab]":
+        prefix: "record"
+        body: '''record(${1:obj}, ${2:optional_switch})'''
+        description: '''[matlab] Record data and event information to file
+        record(obj, optional_switch)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/record.html'
+
+
+    "fprintf [matlab]":
+        prefix: "fprintf"
+        body: '''fprintf(${1:obj}, ${2:optional_format}, ${3:cmd}, ${4:optional_mode})'''
+        description: '''[matlab] Write text to instrument
+        fprintf(obj, optional_format, cmd, optional_mode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fprintf.html'
+
+
+    "seriallist [matlab]":
+        prefix: "seriallist"
+        body: '''seriallist(${1:optional_ports})'''
+        description: '''[matlab] (Not recommended) List of serial ports connected to your system
+        seriallist(optional_ports)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/seriallist.html'
+
+
+    "fread [matlab]":
+        prefix: "fread"
+        body: '''[${1:A}, ${2:count}, ${3:msg}] = fread(${1:obj}, ${2:size}, ${3:optional_precision})'''
+        description: '''[matlab] Read binary data from instrument
+        [A, count, msg] = fread(obj, size, optional_precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/fread.html'
+
+
+    "stopasync [matlab]":
+        prefix: "stopasync"
+        body: '''stopasync(${1:obj})'''
+        description: '''[matlab] Stop asynchronous read and write operations
+        stopasync(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/stopasync.html'
+
+
+    "isvalid [matlab]":
+        prefix: "isvalid"
+        body: '''${1:out} = isvalid(${1:obj})'''
+        description: '''[matlab] Determine whether image acquisition object is associated
+with image acquisition device
+        out = isvalid(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/isvalid.html'
+
+
+    "serial [matlab]":
+        prefix: "serial"
+        body: '''${1:obj} = serial(${1:port}, 'BaudRate', ${2:value}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'DataBits', ${7:value}, 'DataTerminalReady', ${8:value}, 'ErrorFcn', ${9:value}, 'FlowControl', ${10:value}, 'InputBufferSize', ${11:value}, 'Name', ${12:value}, 'ObjectVisibility', ${13:value}, 'OutputBufferSize', ${14:value}, 'OutputEmptyFcn', ${15:value}, 'Parity', ${16:value}, 'PinStatusFcn', ${17:value}, 'Port', ${18:value}, 'ReadAsyncMode', ${19:value}, 'RecordDetail', ${20:value}, 'RecordMode', ${21:value}, 'RecordName', ${22:value}, 'RequestToSend', ${23:value}, 'StopBits', ${24:value}, 'Tag', ${25:value}, 'Terminator', ${26:value}, 'Timeout', ${27:value}, 'TimerFcn', ${28:value}, 'TimerPeriod', ${29:value}, 'UserData', ${30:value})'''
+        description: '''[matlab] (Not recommended) Create serial port object
+        obj = serial(port, 'BaudRate', value, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'DataBits', value, 'DataTerminalReady', value, 'ErrorFcn', value, 'FlowControl', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'Parity', value, 'PinStatusFcn', value, 'Port', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RequestToSend', value, 'StopBits', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/serial.html'
+

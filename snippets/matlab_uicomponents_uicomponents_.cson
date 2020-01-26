@@ -1,0 +1,191 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "uicheckbox [matlab]":
+        prefix: "uicheckbox"
+        body: '''uicheckbox(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create check box component
+        uicheckbox(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uicheckbox.html'
+
+
+    "uilistbox [matlab]":
+        prefix: "uilistbox"
+        body: '''uilistbox(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create list box component
+        uilistbox(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uilistbox.html'
+
+
+    "uiswitch [matlab]":
+        prefix: "uiswitch"
+        body: '''uiswitch(${1:Style}, ${2:properties})'''
+        description: '''[matlab] Create slider switch, rocker switch, or toggle switch component
+        uiswitch(Style, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiswitch.html'
+
+
+    "uihtml [matlab]":
+        prefix: "uihtml"
+        body: '''uihtml(${1:properties})'''
+        description: '''[matlab] Create HTML UI component
+        uihtml(properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uihtml.html'
+
+
+    "uigridlayout [matlab]":
+        prefix: "uigridlayout"
+        body: '''uigridlayout(${1:optional_Parent}, ${2:optional_sz}, ${3:properties})'''
+        description: '''[matlab] Create grid layout manager
+        uigridlayout(optional_Parent, optional_sz, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uigridlayout.html'
+
+
+    "uitreenode [matlab]":
+        prefix: "uitreenode"
+        body: '''uitreenode(${1:Parent}, ${2:sibling}, ${3:optional_location}, ${4:properties})'''
+        description: '''[matlab] Create tree node component
+        uitreenode(Parent, sibling, optional_location, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitreenode.html'
+
+
+    "uispinner [matlab]":
+        prefix: "uispinner"
+        body: '''uispinner(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create spinner component
+        uispinner(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uispinner.html'
+
+
+    "uitree [matlab]":
+        prefix: "uitree"
+        body: '''uitree(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create tree component
+        uitree(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitree.html'
+
+
+    "uilamp [matlab]":
+        prefix: "uilamp"
+        body: '''uilamp(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create lamp component
+        uilamp(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uilamp.html'
+
+
+    "uilabel [matlab]":
+        prefix: "uilabel"
+        body: '''uilabel(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create label component
+        uilabel(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uilabel.html'
+
+
+    "uidatepicker [matlab]":
+        prefix: "uidatepicker"
+        body: '''uidatepicker(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create date picker component
+        uidatepicker(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uidatepicker.html'
+
+
+    "uibutton [matlab]":
+        prefix: "uibutton"
+        body: '''uibutton(${1:Style}, ${2:properties})'''
+        description: '''[matlab] Create push button or state button component
+        uibutton(Style, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uibutton.html'
+
+
+    "uigauge [matlab]":
+        prefix: "uigauge"
+        body: '''uigauge(${1:Style}, ${2:properties})'''
+        description: '''[matlab] Create gauge component
+        uigauge(Style, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uigauge.html'
+
+
+    "uieditfield [matlab]":
+        prefix: "uieditfield"
+        body: '''uieditfield(${1:Style}, ${2:properties})'''
+        description: '''[matlab] Create text or numeric edit field component
+        uieditfield(Style, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uieditfield.html'
+
+
+    "uiknob [matlab]":
+        prefix: "uiknob"
+        body: '''uiknob(${1:Style}, ${2:properties})'''
+        description: '''[matlab] Create knob component
+        uiknob(Style, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiknob.html'
+
+
+    "uidropdown [matlab]":
+        prefix: "uidropdown"
+        body: '''uidropdown(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create drop-down component
+        uidropdown(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uidropdown.html'
+
+
+    "uiimage [matlab]":
+        prefix: "uiimage"
+        body: '''uiimage(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create image component
+        uiimage(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiimage.html'
+
+
+    "uiradiobutton [matlab]":
+        prefix: "uiradiobutton"
+        body: '''uiradiobutton(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create radio button component
+        uiradiobutton(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiradiobutton.html'
+
+
+    "uislider [matlab]":
+        prefix: "uislider"
+        body: '''uislider(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create slider component
+        uislider(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uislider.html'
+
+
+    "uitogglebutton [matlab]":
+        prefix: "uitogglebutton"
+        body: '''uitogglebutton(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create toggle button component
+        uitogglebutton(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitogglebutton.html'
+
+
+    "uitextarea [matlab]":
+        prefix: "uitextarea"
+        body: '''uitextarea(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create text area component
+        uitextarea(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitextarea.html'
+

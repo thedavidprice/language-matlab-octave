@@ -1,0 +1,329 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "etopo [map]":
+        prefix: "etopo"
+        body: '''[${1:Z}, ${2:refvec}] = etopo(${1:optional_filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
+        description: '''[map] Read gridded global relief data (ETOPO products)
+        [Z, refvec] = etopo(optional_filename, samplefactor, latlim, optional_lonlim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/etopo.html'
+
+
+    "makedbfspec [map]":
+        prefix: "makedbfspec"
+        body: '''${1:dbfspec} = makedbfspec(${1:S})'''
+        description: '''[map] DBF specification from geographic data structure
+        dbfspec = makedbfspec(S)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/makedbfspec.html'
+
+
+    "globedems [map]":
+        prefix: "globedems"
+        body: '''${1:tileNames} = globedems(${1:lat}, ${2:lon})'''
+        description: '''[map] GLOBE data file names for latitude-longitude quadrangle
+        tileNames = globedems(lat, lon)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/globedems.html'
+
+
+    "tbase [map]":
+        prefix: "tbase"
+        body: '''[${1:Z}, ${2:refvec}] = tbase(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
+        description: '''[map] Read 5-minute global terrain elevations from TerrainBase
+        [Z, refvec] = tbase(samplefactor, latlim, lonlim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/tbase.html'
+
+
+    "kmlwritepolygon [map]":
+        prefix: "kmlwritepolygon"
+        body: '''kmlwritepolygon(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'LineWidth', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'EdgeColor', ${10:value}, 'EdgeAlpha', ${11:value}, 'Extrude', ${12:value}, 'CutPolygons', ${13:value}, 'PolygonCutMeridian', ${14:value}, 'AltitudeMode', ${15:value}, 'LookAt', ${16:value}, 'Camera', ${17:value})'''
+        description: '''[map] Write geographic polygon to KML file
+        kmlwritepolygon(filename, latitude, longitude, optional_altitude, 'Name', value, 'Description', value, 'LineWidth', value, 'FaceColor', value, 'FaceAlpha', value, 'EdgeColor', value, 'EdgeAlpha', value, 'Extrude', value, 'CutPolygons', value, 'PolygonCutMeridian', value, 'AltitudeMode', value, 'LookAt', value, 'Camera', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/kmlwritepolygon.html'
+
+
+    "shapewrite [map]":
+        prefix: "shapewrite"
+        body: '''shapewrite(${1:S}, ${2:filename}, 'DbfSpec', ${3:value})'''
+        description: '''[map] Write geographic vector data structure to shapefile
+        shapewrite(S, filename, 'DbfSpec', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/shapewrite.html'
+
+
+    "usgsdems [map]":
+        prefix: "usgsdems"
+        body: '''[${1:fname}, ${2:qname}] = usgsdems(${1:latlim}, ${2:lonlim})'''
+        description: '''[map] USGS 1-degree (3-arc-sec) DEM file names for latitude-longitude quadrangle
+        [fname, qname] = usgsdems(latlim, lonlim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/usgsdems.html'
+
+
+    "gtopo30s [map]":
+        prefix: "gtopo30s"
+        body: '''${1:tileNames} = gtopo30s(${1:lat}, ${2:lon})'''
+        description: '''[map] GTOPO30 data file names for latitude-longitude quadrangle
+        tileNames = gtopo30s(lat, lon)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/gtopo30s.html'
+
+
+    "usgsdem [map]":
+        prefix: "usgsdem"
+        body: '''[${1:Z}, ${2:refvec}] = usgsdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim})'''
+        description: '''[map] Read USGS 1-degree (3-arc-second) Digital Elevation Model
+        [Z, refvec] = usgsdem(filename, samplefactor, latlim, lonlim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/usgsdem.html'
+
+
+    "avhrrgoode [map]":
+        prefix: "avhrrgoode"
+        body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrgoode(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:nrows}, ${8:ncols}, ${9:resolution}, ${10:precision})'''
+        description: '''[map] Read AVHRR data product stored in Goode Projection
+        [latgrat, longrat, z] = avhrrgoode(region, filename, scalefactor, latlim, lonlim, gsize, nrows, ncols, resolution, precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/avhrrgoode.html'
+
+
+    "gshhs [map]":
+        prefix: "gshhs"
+        body: '''${1:indexfilename} = gshhs(${1:filename}, ${2:'createindex'})'''
+        description: '''[map] Read Global Self-Consistent Hierarchical High-Resolution
+Geography
+        indexfilename = gshhs(filename, 'createindex')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/gshhs.html'
+
+
+    "vmap0rhead [map]":
+        prefix: "vmap0rhead"
+        body: '''${1:str} = vmap0rhead(${1:file}, ${2:filename}, ${3:optional_fid})'''
+        description: '''[map] Read Vector Map Level 0 file headers
+        str = vmap0rhead(file, filename, optional_fid)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/vmap0rhead.html'
+
+
+    "geotiffread [map]":
+        prefix: "geotiffread"
+        body: '''[${1:A}, ${2:R}] = geotiffread(${1:filename}, ${2:optional_idx})'''
+        description: '''[map] Read GeoTIFF file
+        [A, R] = geotiffread(filename, optional_idx)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/geotiffread.html'
+
+
+    "usgs24kdem [map]":
+        prefix: "usgs24kdem"
+        body: '''[${1:lat}, ${2:lon}, ${3:Z}, ${4:header}, ${5:profile}] = usgs24kdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim}, ${5:optional_gsize})'''
+        description: '''[map] Read USGS 7.5 minute (30 meter or 10 meter) Digital Elevation
+Models
+        [lat, lon, Z, header, profile] = usgs24kdem(filename, samplefactor, latlim, lonlim, optional_gsize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/usgs24kdem.html'
+
+
+    "vmap0read [map]":
+        prefix: "vmap0read"
+        body: '''[${1:struc}, ${2:field}, ${3:varlen}, ${4:description}, ${5:narrativefield}] = vmap0read(${1:file}, ${2:filename}, ${3:recordIDs}, ${4:field}, ${5:varlen})'''
+        description: '''[map] Read Vector Map Level 0 file
+        [struc, field, varlen, description, narrativefield] = vmap0read(file, filename, recordIDs, field, varlen)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/vmap0read.html'
+
+
+    "kmlwritepoint [map]":
+        prefix: "kmlwritepoint"
+        body: '''kmlwritepoint(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Icon', ${7:value}, 'IconScale', ${8:value}, 'Color', ${9:value}, 'Alpha', ${10:value}, 'AltitudeMode', ${11:value}, 'LookAt', ${12:value}, 'Camera', ${13:value})'''
+        description: '''[map]  Write geographic point data to KML file
+        kmlwritepoint(filename, latitude, longitude, optional_altitude, 'Name', value, 'Description', value, 'Icon', value, 'IconScale', value, 'Color', value, 'Alpha', value, 'AltitudeMode', value, 'LookAt', value, 'Camera', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/kmlwritepoint.html'
+
+
+    "dted [map]":
+        prefix: "dted"
+        body: '''[${1:Z}, ${2:refvec}, ${3:UHL}, ${4:DSI}, ${5:ACC}] = dted(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
+        description: '''[map] Read U.S. Department of Defense Digital Terrain Elevation
+Data (DTED)
+        [Z, refvec, UHL, DSI, ACC] = dted(filename, samplefactor, latlim, optional_lonlim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/dted.html'
+
+
+    "dteds [map]":
+        prefix: "dteds"
+        body: '''${1:fname} = dteds(${1:latlim}, ${2:lonlim}, ${3:optional_level})'''
+        description: '''[map] DTED file names for latitude-longitude quadrangle
+        fname = dteds(latlim, lonlim, optional_level)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/dteds.html'
+
+
+    "satbath [map]":
+        prefix: "satbath"
+        body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = satbath(${1:samplefactor}, ${2:latlim}, ${3:lonlim}, ${4:optional_gsize})'''
+        description: '''[map] Read 2-minute terrain/bathymetry from Smith and Sandwell
+        [latgrat, longrat, z] = satbath(samplefactor, latlim, lonlim, optional_gsize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/satbath.html'
+
+
+    "geotiffinfo [map]":
+        prefix: "geotiffinfo"
+        body: '''${1:info} = geotiffinfo(${1:filename})'''
+        description: '''[map] Information about GeoTIFF file
+        info = geotiffinfo(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/geotiffinfo.html'
+
+
+    "vmap0data [map]":
+        prefix: "vmap0data"
+        body: '''${1:S} = vmap0data(${1:optional_devicename}, ${2:library}, ${3:latlim}, ${4:lonlim}, ${5:theme}, ${6:topolevel})'''
+        description: '''[map] Read selected data from Vector Map Level 0
+        S = vmap0data(optional_devicename, library, latlim, lonlim, theme, topolevel)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/vmap0data.html'
+
+
+    "globedem [map]":
+        prefix: "globedem"
+        body: '''[${1:Z}, ${2:refvec}] = globedem(${1:filename}, ${2:scalefactor}, ${3:latlim}, ${4:lonlim})'''
+        description: '''[map] Read Global Land One-km Base Elevation (GLOBE) data
+        [Z, refvec] = globedem(filename, scalefactor, latlim, lonlim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/globedem.html'
+
+
+    "sdtsinfo [map]":
+        prefix: "sdtsinfo"
+        body: '''${1:info} = sdtsinfo(${1:filename})'''
+        description: '''[map] Information about SDTS data set
+        info = sdtsinfo(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/sdtsinfo.html'
+
+
+    "shaperead [map]":
+        prefix: "shaperead"
+        body: '''[${1:S}, ${2:A}] = shaperead(${1:filename}, 'RecordNumbers', ${2:value}, 'BoundingBox', ${3:value}, 'Attributes', ${4:value}, 'Selector', ${5:value}, 'UseGeoCoords', ${6:value})'''
+        description: '''[map] Read vector features and attributes from shapefile
+        [S, A] = shaperead(filename, 'RecordNumbers', value, 'BoundingBox', value, 'Attributes', value, 'Selector', value, 'UseGeoCoords', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/shaperead.html'
+
+
+    "avhrrlambert [map]":
+        prefix: "avhrrlambert"
+        body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrlambert(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:precision})'''
+        description: '''[map] Read AVHRR data product stored in eqaazim projection
+        [latgrat, longrat, z] = avhrrlambert(region, filename, scalefactor, latlim, lonlim, gsize, precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/avhrrlambert.html'
+
+
+    "kmlwrite [map]":
+        prefix: "kmlwrite"
+        body: '''kmlwrite(${1:filename}, ${2:address}, 'Name', ${3:value}, 'Description', ${4:value}, 'Icon', ${5:value}, 'IconScale', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'FaceColor', ${10:value}, 'FaceAlpha', ${11:value}, 'EdgeColor', ${12:value}, 'EdgeAlpha', ${13:value}, 'Extrude', ${14:value}, 'CutPolygons', ${15:value}, 'PolygonCutMeridian', ${16:value}, 'AltitudeMode', ${17:value}, 'LookAt', ${18:value}, 'Camera', ${19:value})'''
+        description: '''[map] Write geographic data to KML file
+        kmlwrite(filename, address, 'Name', value, 'Description', value, 'Icon', value, 'IconScale', value, 'Color', value, 'Alpha', value, 'LineWidth', value, 'FaceColor', value, 'FaceAlpha', value, 'EdgeColor', value, 'EdgeAlpha', value, 'Extrude', value, 'CutPolygons', value, 'PolygonCutMeridian', value, 'AltitudeMode', value, 'LookAt', value, 'Camera', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/kmlwrite.html'
+
+
+    "worldfileread [map]":
+        prefix: "worldfileread"
+        body: '''${1:R} = worldfileread(${1:worldFileName}, ${2:coordinateSystemType}, ${3:rasterSize})'''
+        description: '''[map] Read world file and return referencing object or matrix
+        R = worldfileread(worldFileName, coordinateSystemType, rasterSize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/worldfileread.html'
+
+
+    "getworldfilename [map]":
+        prefix: "getworldfilename"
+        body: '''${1:worldfilename} = getworldfilename(${1:imagefilename})'''
+        description: '''[map] Derive world file name from image file name
+        worldfilename = getworldfilename(imagefilename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/getworldfilename.html'
+
+
+    "worldfilewrite [map]":
+        prefix: "worldfilewrite"
+        body: '''worldfilewrite(${1:R}, ${2:worldFileName})'''
+        description: '''[map] Write world file from referencing object or matrix
+        worldfilewrite(R, worldFileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/worldfilewrite.html'
+
+
+    "makeattribspec [map]":
+        prefix: "makeattribspec"
+        body: '''${1:attribspec} = makeattribspec(${1:S})'''
+        description: '''[map] Attribute specification from geographic data structure
+        attribspec = makeattribspec(S)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/makeattribspec.html'
+
+
+    "gtopo30 [map]":
+        prefix: "gtopo30"
+        body: '''[${1:Z}, ${2:refvec}] = gtopo30(${1:optional_foldername}, ${2:tilename}, ${3:samplefactor}, ${4:latlim}, ${5:lonlim})'''
+        description: '''[map] Read 30-arc-second global digital elevation data (GTOPO30)
+        [Z, refvec] = gtopo30(optional_foldername, tilename, samplefactor, latlim, lonlim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/gtopo30.html'
+
+
+    "shapeinfo [map]":
+        prefix: "shapeinfo"
+        body: '''${1:info} = shapeinfo(${1:filename})'''
+        description: '''[map] Information about shapefile
+        info = shapeinfo(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/shapeinfo.html'
+
+
+    "sdtsdemread [map]":
+        prefix: "sdtsdemread"
+        body: '''[${1:Z}, ${2:R}] = sdtsdemread(${1:filename})'''
+        description: '''[map] Read data from SDTS raster/DEM data set
+        [Z, R] = sdtsdemread(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/sdtsdemread.html'
+
+
+    "kmlwriteline [map]":
+        prefix: "kmlwriteline"
+        body: '''kmlwriteline(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'AltitudeMode', ${10:value}, 'LookAt', ${11:value}, 'Camera', ${12:value})'''
+        description: '''[map] Write geographic line data to KML file
+        kmlwriteline(filename, latitude, longitude, optional_altitude, 'Name', value, 'Description', value, 'Color', value, 'Alpha', value, 'LineWidth', value, 'AltitudeMode', value, 'LookAt', value, 'Camera', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/kmlwriteline.html'
+
+
+    "geotiffwrite [map]":
+        prefix: "geotiffwrite"
+        body: '''geotiffwrite(${1:filename}, ${2:X}, ${3:cmap}, ${4:R}, 'CoordRefSysCode', ${5:value}, 'GeoKeyDirectoryTag', ${6:value}, 'RPCCoefficientTag', ${7:value}, 'TiffType', ${8:value}, 'TiffTags', ${9:value})'''
+        description: '''[map] Write GeoTIFF file
+        geotiffwrite(filename, X, cmap, R, 'CoordRefSysCode', value, 'GeoKeyDirectoryTag', value, 'RPCCoefficientTag', value, 'TiffType', value, 'TiffTags', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/geotiffwrite.html'
+
+
+    "arcgridread [map]":
+        prefix: "arcgridread"
+        body: '''[${1:Z}, ${2:R}] = arcgridread(${1:filename}, ${2:optional_coordinateSystemType})'''
+        description: '''[map] Read gridded data set in ArcGrid ASCII or GridFloat format
+        [Z, R] = arcgridread(filename, optional_coordinateSystemType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/arcgridread.html'
+

@@ -1,0 +1,66 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "busdate [finance]":
+        prefix: "busdate"
+        body: '''${1:Busday} = busdate(${1:date}, ${2:dirFlag}, ${3:Holidays}, ${4:Weekend})'''
+        description: '''[finance] Next or previous business day
+        Busday = busdate(date, dirFlag, Holidays, Weekend)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/busdate.html'
+
+
+    "datemnth [finance]":
+        prefix: "datemnth"
+        body: '''${1:targetDate} = datemnth(${1:startDate}, ${2:numberMonths}, ${3:dayFlag}, ${4:basis}, ${5:endMonthRule})'''
+        description: '''[finance] Date of day in future or past month
+        targetDate = datemnth(startDate, numberMonths, dayFlag, basis, endMonthRule)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/datemnth.html'
+
+
+    "weeknum [finance]":
+        prefix: "weeknum"
+        body: '''${1:result} = weeknum(${1:date}, ${2:beginday}, ${3:european})'''
+        description: '''[finance] Week in year
+        result = weeknum(date, beginday, european)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/weeknum.html'
+
+
+    "cfamounts [finance]":
+        prefix: "cfamounts"
+        body: '''[${1:cflowAmounts}, ${2:cflowDates}, ${3:tFactors}, ${4:cflowFlags}, ${5:cfPrincipal}] = cfamounts(${1:couponRate}, ${2:settle}, ${3:maturity}, 'Period', ${4:value}, 'Basis', ${5:value}, 'EndMonthRule', ${6:value}, 'IssueDate', ${7:value}, 'FirstCouponDate', ${8:value}, 'LastCouponDate', ${9:value}, 'StartDate', ${10:value}, 'Face', ${11:value}, 'AdjustCashFlowsBasis', ${12:value}, 'BusinessDayConvention', ${13:value}, 'CompoundingFrequency', ${14:value}, 'DiscountBasis', ${15:value}, 'Holidays', ${16:value}, 'PrincipalType', ${17:value})'''
+        description: '''[finance] Cash flow and time mapping for bond portfolio
+        [cflowAmounts, cflowDates, tFactors, cflowFlags, cfPrincipal] = cfamounts(couponRate, settle, maturity, 'Period', value, 'Basis', value, 'EndMonthRule', value, 'IssueDate', value, 'FirstCouponDate', value, 'LastCouponDate', value, 'StartDate', value, 'Face', value, 'AdjustCashFlowsBasis', value, 'BusinessDayConvention', value, 'CompoundingFrequency', value, 'DiscountBasis', value, 'Holidays', value, 'PrincipalType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/cfamounts.html'
+
+
+    "cfdates [finance]":
+        prefix: "cfdates"
+        body: '''${1:cflowDates} = cfdates(${1:settle}, ${2:maturity}, ${3:period}, ${4:basis}, ${5:endMonthRule}, ${6:issueDate}, ${7:firstCouponDate}, ${8:lastCouponDate}, ${9:startDate})'''
+        description: '''[finance] Cash flow dates
+for fixed-income security
+        cflowDates = cfdates(settle, maturity, period, basis, endMonthRule, issueDate, firstCouponDate, lastCouponDate, startDate)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/cfdates.html'
+
+
+    "daysadd [finance]":
+        prefix: "daysadd"
+        body: '''${1:newDate} = daysadd(${1:startDate}, ${2:numDays}, ${3:basis})'''
+        description: '''[finance] Date away from starting date for any day-count basis
+        newDate = daysadd(startDate, numDays, basis)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/daysadd.html'
+
+
+    "yearfrac [finance]":
+        prefix: "yearfrac"
+        body: '''${1:YearFraction} = yearfrac(${1:startDate}, ${2:endDate}, ${3:optional_Basis})'''
+        description: '''[finance] Fraction of year between dates
+        YearFraction = yearfrac(startDate, endDate, optional_Basis)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/yearfrac.html'
+

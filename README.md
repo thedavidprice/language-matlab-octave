@@ -1,5 +1,19 @@
 # Atom.io Package for MATLAB and Octave Language Support
 
+# Features:
+- Syntax highlighting using official MATLAB support mathworks/MATLAB-Language-grammar
+- Code snippets and auto-complete using https://github.com/aminya/Matlab-Snippets
+  - A full collection converted from official JSON files
+  - Documentation url in auto-complete (Click more)
+
+Screenshot Example: preview of included file `highlighting-test.m`_
+![language-matlab-octave-highlighting](https://user-images.githubusercontent.com/43882944/61577281-29e12680-aab3-11e9-900d-527a0afa8e37.png)
+
+
+---------------------------------
+
+# More information:
+
 ## Version 1.0.0+ Major Update
 **Breaking change:** as of v1 release August 2019, migrated MATLAB grammar source from TextMate to official MATLAB support mathworks/MATLAB-Language-grammar. This fixed many reported issues and improved MATLAB highlighting to match official [github/linguist](https://github.com/github/linguist) used on Github.com.
 
@@ -15,10 +29,6 @@ https://github.com/mathworks/MATLAB-Language-grammar
 
 #### Commit Hash: MATLAB-Language-grammar used for current grammar version
 https://github.com/mathworks/MATLAB-Language-grammar/tree/5915f67761daa34b5f0fb9daf3d266198219a472
-
-#### Screenshot Example: preview of included file `highlighting-test.m`_
-![language-matlab-octave-highlighting](https://user-images.githubusercontent.com/43882944/61577281-29e12680-aab3-11e9-900d-527a0afa8e37.png)
-
 
 ## Process for Updating MATLAB Grammar
 ### Converting the MathWorks TextMate Grammar

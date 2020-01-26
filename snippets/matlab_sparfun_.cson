@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "svds [matlab]":
+        prefix: "svds"
+        body: '''svds(${1:A}, ${2:k}, ${3:sigma}, 'Tolerance', ${4:value}, 'MaxIterations', ${5:value}, 'SubspaceDimension', ${6:value}, 'LeftStartVector', ${7:value}, 'RightStartVector', ${8:value}, 'FailureTreatment', ${9:value}, 'Display', ${10:value})'''
+        description: '''[matlab] Subset of singular values and vectors
+        svds(A, k, sigma, 'Tolerance', value, 'MaxIterations', value, 'SubspaceDimension', value, 'LeftStartVector', value, 'RightStartVector', value, 'FailureTreatment', value, 'Display', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/svds.html'
+
+
+    "eigs [matlab]":
+        prefix: "eigs"
+        body: '''eigs(${1:A}, ${2:optional_B}, ${3:k}, ${4:sigma}, 'IsFunctionSymmetric', ${5:value}, 'Tolerance', ${6:value}, 'MaxIterations', ${7:value}, 'SubspaceDimension', ${8:value}, 'StartVector', ${9:value}, 'FailureTreatment', ${10:value}, 'Display', ${11:value}, 'IsCholesky', ${12:value}, 'CholeskyPermutation', ${13:value}, 'IsSymmetricDefinite', ${14:value})'''
+        description: '''[matlab] Subset of eigenvalues and eigenvectors
+        eigs(A, optional_B, k, sigma, 'IsFunctionSymmetric', value, 'Tolerance', value, 'MaxIterations', value, 'SubspaceDimension', value, 'StartVector', value, 'FailureTreatment', value, 'Display', value, 'IsCholesky', value, 'CholeskyPermutation', value, 'IsSymmetricDefinite', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/eigs.html'
+
