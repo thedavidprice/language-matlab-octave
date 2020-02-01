@@ -4,118 +4,123 @@ fileTypes: [
 name: "MATLAB"
 patterns: [
   {
-    include: "#classdef"
-  }
-  {
-    include: "#function"
-  }
-  {
-    include: "#blocks"
-  }
-  {
-    include: "#control_statements"
-  }
-  {
-    include: "#global_persistent"
+    comment: "This and #all_after_command_dual are split out so #command_dual can be excluded in things like (), {}, []"
+    include: "#all_before_command_dual"
   }
   {
     include: "#command_dual"
   }
   {
-    include: "#string"
-  }
-  {
-    include: "#line_continuation"
-  }
-  {
-    include: "#comments"
-  }
-  {
-    include: "#transpose"
-  }
-  {
-    include: "#constants"
-  }
-  {
-    include: "#variables"
-  }
-  {
-    include: "#end_in_parens"
-  }
-  {
-    include: "#numbers"
-  }
-  {
-    include: "#operators"
-  }
-  {
-    include: "#keywords"
-  }
-  {
-    include: "#storage"
-  }
-  {
-    include: "#support_library"
+    include: "#all_after_command_dual"
   }
 ]
 repository:
+  all_before_command_dual:
+    patterns: [
+      {
+        include: "#classdef"
+      }
+      {
+        include: "#function"
+      }
+      {
+        include: "#blocks"
+      }
+      {
+        include: "#control_statements"
+      }
+      {
+        include: "#global_persistent"
+      }
+      {
+        include: "#parens"
+      }
+      {
+        include: "#square_brackets"
+      }
+      {
+        include: "#indexing_curly_brackets"
+      }
+      {
+        include: "#curly_brackets"
+      }
+    ]
+  all_after_command_dual:
+    patterns: [
+      {
+        include: "#string"
+      }
+      {
+        include: "#line_continuation"
+      }
+      {
+        include: "#comments"
+      }
+      {
+        include: "#conjugate_transpose"
+      }
+      {
+        include: "#transpose"
+      }
+      {
+        include: "#constants"
+      }
+      {
+        include: "#variables"
+      }
+      {
+        include: "#numbers"
+      }
+      {
+        include: "#operators"
+      }
+      {
+        include: "#keywords"
+      }
+      {
+        include: "#storage"
+      }
+      {
+        include: "#support_library"
+      }
+    ]
   blocks:
     patterns: [
       {
-        begin: "(^\\s*)(for)\\b"
+        begin: "\\s*(?:^|[\\s,;])(for)\\b"
         beginCaptures:
-          "0":
-            name: "meta.for-quantity.matlab"
-          "2":
+          "1":
             name: "keyword.control.for.matlab"
-        end: "^\\s*(end)\\b"
+        end: "\\s*(?:^|[\\s,;])(end)\\b"
         endCaptures:
           "1":
             name: "keyword.control.end.for.matlab"
         name: "meta.for.matlab"
         patterns: [
           {
-            begin: "\\G(?!$)"
-            end: "$\\n?"
-            name: "meta.for-quantity.matlab"
-            patterns: [
-              {
-                include: "$self"
-              }
-            ]
-          }
-          {
             include: "$self"
           }
         ]
       }
       {
-        begin: "(^\\s*)(if)\\b"
+        begin: "\\s*(?:^|[\\s,;])(if)\\b"
         beginCaptures:
-          "0":
-            name: "meta.if-condition.matlab"
-          "2":
+          "1":
             name: "keyword.control.if.matlab"
-        end: "^\\s*(end)\\b"
+        end: "\\s*(?:^|[\\s,;])(end)\\b"
         endCaptures:
           "1":
             name: "keyword.control.end.if.matlab"
-        name: "meta.if.matlab"
-        patterns: [
-          {
-            begin: "\\G(?!$)"
-            end: "$\\n?"
-            name: "meta.if-condition.matlab"
+          "2":
             patterns: [
               {
                 include: "$self"
               }
             ]
-          }
+        name: "meta.if.matlab"
+        patterns: [
           {
             captures:
-              "0":
-                name: "meta.elseif-condition.matlab"
               "2":
                 name: "keyword.control.elseif.matlab"
               "3":
@@ -125,13 +130,11 @@ repository:
                   }
                 ]
             end: "^"
-            match: "(^\\s*)(elseif)\\b(.*)$\\n?"
+            match: "(\\s*)(?:^|[\\s,;])(elseif)\\b(.*)$\\n?"
             name: "meta.elseif.matlab"
           }
           {
             captures:
-              "0":
-                name: "meta.else-condition.matlab"
               "2":
                 name: "keyword.control.else.matlab"
               "3":
@@ -141,7 +144,7 @@ repository:
                   }
                 ]
             end: "^"
-            match: "(^\\s*)(else)\\b(.*)?$\\n?"
+            match: "(\\s*)(?:^|[\\s,;])(else)\\b(.*)?$\\n?"
             name: "meta.else.matlab"
           }
           {
@@ -150,13 +153,11 @@ repository:
         ]
       }
       {
-        begin: "(^\\s*)(parfor)\\b"
+        begin: "\\s*(?:^|[\\s,;])(parfor)\\b"
         beginCaptures:
-          "0":
-            name: "meta.parfor-quantity.matlab"
-          "2":
+          "1":
             name: "keyword.control.for.matlab"
-        end: "^\\s*(end)\\b"
+        end: "\\s*(?:^|[\\s,;])(end)\\b"
         endCaptures:
           "1":
             name: "keyword.control.end.for.matlab"
@@ -178,13 +179,11 @@ repository:
         ]
       }
       {
-        begin: "(^\\s*)(spmd)\\b"
+        begin: "\\s*(?:^|[\\s,;])(spmd)\\b"
         beginCaptures:
-          "0":
-            name: "meta.spmd-statement.matlab"
-          "2":
+          "1":
             name: "keyword.control.spmd.matlab"
-        end: "^\\s*(end)\\b"
+        end: "\\s*(?:^|[\\s,;])(end)\\b"
         endCaptures:
           "1":
             name: "keyword.control.end.spmd.matlab"
@@ -206,32 +205,18 @@ repository:
         ]
       }
       {
-        begin: "(^\\s*)(switch)\\b"
+        begin: "\\s*(?:^|[\\s,;])(switch)\\b"
         beginCaptures:
-          "0":
-            name: "meta.switch-expression.matlab"
-          "2":
+          "1":
             name: "keyword.control.switch.matlab"
-        end: "^\\s*(end)\\b"
+        end: "\\s*(?:^|[\\s,;])(end)\\b"
         endCaptures:
           "1":
             name: "keyword.control.end.switch.matlab"
         name: "meta.switch.matlab"
         patterns: [
           {
-            begin: "\\G(?!$)"
-            end: "$\\n?"
-            name: "meta.switch-expression.matlab"
-            patterns: [
-              {
-                include: "$self"
-              }
-            ]
-          }
-          {
             captures:
-              "0":
-                name: "meta.case-expression.matlab"
               "2":
                 name: "keyword.control.case.matlab"
               "3":
@@ -241,13 +226,11 @@ repository:
                   }
                 ]
             end: "^"
-            match: "(^\\s*)(case)\\b(.*)$\\n?"
+            match: "(\\s*)(?:^|[\\s,;])(case)\\b(.*)$\\n?"
             name: "meta.case.matlab"
           }
           {
             captures:
-              "0":
-                name: "meta.otherwise-expression.matlab"
               "2":
                 name: "keyword.control.otherwise.matlab"
               "3":
@@ -257,7 +240,7 @@ repository:
                   }
                 ]
             end: "^"
-            match: "(^\\s*)(otherwise)\\b(.*)?$\\n?"
+            match: "(\\s*)(?:^|[\\s,;])(otherwise)\\b(.*)?$\\n?"
             name: "meta.otherwise.matlab"
           }
           {
@@ -266,11 +249,11 @@ repository:
         ]
       }
       {
-        begin: "(^\\s*)(try)\\b"
+        begin: "\\s*(?:^|[\\s,;])(try)\\b"
         beginCaptures:
-          "2":
+          "1":
             name: "keyword.control.try.matlab"
-        end: "^\\s*(end)\\b"
+        end: "\\s*(?:^|[\\s,;])(end)\\b"
         endCaptures:
           "1":
             name: "keyword.control.end.try.matlab"
@@ -278,8 +261,6 @@ repository:
         patterns: [
           {
             captures:
-              "0":
-                name: "meta.catch-exception.matlab"
               "2":
                 name: "keyword.control.catch.matlab"
               "3":
@@ -289,7 +270,7 @@ repository:
                   }
                 ]
             end: "^"
-            match: "(^\\s*)(catch)\\b(.*)?$\\n?"
+            match: "(\\s*)(?:^|[\\s,;])(catch)\\b(.*)?$\\n?"
             name: "meta.catch.matlab"
           }
           {
@@ -298,28 +279,16 @@ repository:
         ]
       }
       {
-        begin: "(^\\s*)(while)\\b"
+        begin: "\\s*(?:^|[\\s,;])(while)\\b"
         beginCaptures:
-          "0":
-            name: "meta.while-condition.matlab"
-          "2":
+          "1":
             name: "keyword.control.while.matlab"
-        end: "^\\s*(end)\\b"
+        end: "\\s*(?:^|[\\s,;])(end)\\b"
         endCaptures:
           "1":
             name: "keyword.control.end.while.matlab"
         name: "meta.while.matlab"
         patterns: [
-          {
-            begin: "\\G(?!$)"
-            end: "$\\n?"
-            name: "meta.while-condition.matlab"
-            patterns: [
-              {
-                include: "$self"
-              }
-            ]
-          }
           {
             include: "$self"
           }
@@ -358,7 +327,7 @@ repository:
                   												([^%]*)
                   											)?
                   										)
-                  										\\s*($|(?=(%|...)))
+                  										\\s*($|(?=(%|...)).*)
 
                 '''
                 captures:
@@ -399,9 +368,15 @@ repository:
                         name: "keyword.operator.other.matlab"
                       }
                     ]
+                  "6":
+                    patterns: [
+                      {
+                        include: "$self"
+                      }
+                    ]
               }
             ]
-        end: "^\\s*(end)\\b"
+        end: "\\s*(?:^|[\\s,;])(end)\\b"
         endCaptures:
           "1":
             name: "keyword.control.end.class.matlab"
@@ -411,7 +386,7 @@ repository:
             begin: '''
               (?x)
               									(^\\s*)								# Leading whitespace
-              									(properties)\\b(.*)$
+              									(properties)\\b([^%]*)
               									\\s*
               									(									# Optional attributes
               										\\( [^)]* \\)
@@ -443,7 +418,7 @@ repository:
                     ]
                   }
                 ]
-            end: "^\\s*(end)\\b"
+            end: "\\s*(?:^|[\\s,;])(end)\\b"
             endCaptures:
               "1":
                 name: "keyword.control.end.properties.matlab"
@@ -461,7 +436,7 @@ repository:
             begin: '''
               (?x)
               									(^\\s*)								# Leading whitespace
-              									(methods)\\b(.*)$
+              									(methods)\\b([^%]*)
               									\\s*
               									(									# Optional attributes
               										\\( [^)]* \\)
@@ -493,7 +468,7 @@ repository:
                     ]
                   }
                 ]
-            end: "^\\s*(end)\\b"
+            end: "\\s*(?:^|[\\s,;])(end)\\b"
             endCaptures:
               "1":
                 name: "keyword.control.end.methods.matlab"
@@ -508,7 +483,7 @@ repository:
             begin: '''
               (?x)
               									(^\\s*)								# Leading whitespace
-              									(events)\\b(.*)$
+              									(events)\\b([^%]*)
               									\\s*
               									(									# Optional attributes
               										\\( [^)]* \\)
@@ -540,24 +515,29 @@ repository:
                     ]
                   }
                 ]
-            end: "^\\s*(end)\\b"
+            end: "\\s*(?:^|[\\s,;])(end)\\b"
             endCaptures:
               "1":
                 name: "keyword.control.end.events.matlab"
             name: "meta.events.matlab"
+            patterns: [
+              {
+                include: "$self"
+              }
+            ]
           }
           {
             begin: '''
               (?x)
               									(^\\s*)								# Leading whitespace
-              									(enumeration)\\b(.*)$
+              									(enumeration)\\b([^%]*)
               									\\s*($|(?=%))
 
             '''
             beginCaptures:
               "2":
                 name: "keyword.control.enumeration.matlab"
-            end: "^\\s*(end)\\b"
+            end: "\\s*(?:^|[\\s,;])(end)\\b"
             endCaptures:
               "1":
                 name: "keyword.control.end.enumeration.matlab"
@@ -650,7 +630,7 @@ repository:
     captures:
       "1":
         name: "keyword.control.matlab"
-    match: "^\\s*(break|continue|return)\\b"
+    match: "\\s*(?:^|[\\s,;])(break|continue|return)\\b"
     name: "meta.control.matlab"
   function:
     patterns: [
@@ -689,7 +669,7 @@ repository:
             name: "variable.parameter.output.function.matlab"
           "7":
             name: "entity.name.function.matlab"
-        end: "^\\s*(end)\\b(\\s*\\n)?"
+        end: "\\s*(?:^|[\\s,;])(end)\\b(\\s*\\n)?"
         endCaptures:
           "1":
             name: "keyword.control.end.function.matlab"
@@ -701,6 +681,9 @@ repository:
             name: "meta.arguments.function.matlab"
             patterns: [
               {
+                include: "#line_continuation"
+              }
+              {
                 match: "\\w+"
                 name: "variable.parameter.input.matlab"
               }
@@ -710,7 +693,7 @@ repository:
             begin: '''
               (?x)
               									(^\\s*)								# Leading whitespace
-              									(arguments)\\b(.*)$
+              									(arguments)\\b([^%]*)
               									\\s*
               									(									# Optional attributes
               										\\( [^)]* \\)
@@ -728,7 +711,7 @@ repository:
                     name: "variable.parameter.arguments.matlab"
                   }
                 ]
-            end: "^\\s*(end)\\b"
+            end: "\\s*(?:^|[\\s,;])(end)\\b"
             endCaptures:
               "1":
                 name: "keyword.control.end.arguments.matlab"
@@ -754,6 +737,93 @@ repository:
         name: "keyword.control.globalpersistent.matlab"
     match: "^\\s*(global|persistent)\\b"
     name: "meta.globalpersistent.matlab"
+  parens:
+    begin: "\\("
+    end: "(\\)|(?<!\\.\\.\\.).\\n)"
+    comment: "We don't include $self here to avoid matching command syntax inside (), [], {}"
+    patterns: [
+      {
+        include: "#end_in_parens"
+      }
+      {
+        include: "#all_before_command_dual"
+      }
+      {
+        include: "#all_after_command_dual"
+      }
+      {
+        comment: "These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written"
+        include: "#block_keywords"
+      }
+    ]
+  square_brackets:
+    begin: "\\["
+    end: "\\]"
+    comment: "We don't include $self here to avoid matching command syntax inside (), [], {}"
+    patterns: [
+      {
+        include: "#all_before_command_dual"
+      }
+      {
+        include: "#all_after_command_dual"
+      }
+      {
+        comment: "These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written"
+        include: "#block_keywords"
+      }
+    ]
+  curly_brackets:
+    begin: "\\{"
+    end: "\\}"
+    comment: "We don't include $self here to avoid matching command syntax inside (), [], {}"
+    patterns: [
+      {
+        include: "#end_in_parens"
+      }
+      {
+        include: "#all_before_command_dual"
+      }
+      {
+        include: "#all_after_command_dual"
+      }
+      {
+        include: "#end_in_parens"
+      }
+      {
+        comment: "These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written"
+        include: "#block_keywords"
+      }
+    ]
+  indexing_curly_brackets:
+    Comment: "Match identifier{idx, idx, } and stop at newline without ... This helps with partially written code like x{idx "
+    begin: "([a-zA-Z][a-zA-Z0-9_\\.]*\\s*)\\{"
+    beginCaptures:
+      "1":
+        patterns: [
+          {
+            include: "$self"
+          }
+        ]
+    end: "(\\}|(?<!\\.\\.\\.).\\n)"
+    comment: "We don't include $self here to avoid matching command syntax inside (), [], {}"
+    patterns: [
+      {
+        include: "#end_in_parens"
+      }
+      {
+        include: "#all_before_command_dual"
+      }
+      {
+        include: "#all_after_command_dual"
+      }
+      {
+        include: "#end_in_parens"
+      }
+      {
+        comment: "These block keywords pick up any such missed keywords when the block matching for things like (), if-end, etc. don't work. Useful for when someone has partially written"
+        include: "#block_keywords"
+      }
+    ]
   line_continuation:
     captures:
       "1":
@@ -824,8 +894,11 @@ repository:
         ]
       }
     ]
+  conjugate_transpose:
+    match: "((?<=[^\\s])|(?<=\\])|(?<=\\))|(?<=\\}))'"
+    name: "keyword.operator.transpose.matlab"
   transpose:
-    match: "((\\w+)|(?<=\\])|(?<=\\)))\\.?'"
+    match: "\\.'"
     name: "keyword.operator.transpose.matlab"
   constants:
     comment: "MATLAB Constants"
