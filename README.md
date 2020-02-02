@@ -14,7 +14,7 @@ The syntax highlighting comes from the MathWorks TextMate grammar:
 https://github.com/mathworks/MATLAB-Language-grammar
 
 #### Commit Hash: MATLAB-Language-grammar used for current grammar version
-https://github.com/mathworks/MATLAB-Language-grammar/tree/5915f67761daa34b5f0fb9daf3d266198219a472
+https://github.com/mathworks/MATLAB-Language-grammar/tree/40d9a0cd3b628f80cdcf948bbe1747a527ed5dd5
 
 #### Screenshot Example: preview of included file `highlighting-test.m`_
 ![language-matlab-octave-highlighting](https://user-images.githubusercontent.com/43882944/61577281-29e12680-aab3-11e9-900d-527a0afa8e37.png)
