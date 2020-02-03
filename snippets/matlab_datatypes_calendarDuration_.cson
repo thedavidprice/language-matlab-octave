@@ -3,7 +3,7 @@
 
     "calmonths [matlab]":
         prefix: "calmonths"
-        body: '''${1:M} = calmonths(${1:X})'''
+        body: '''${2:M} = calmonths(${1:X})'''
         description: '''[matlab] Calendar duration in months
         M = calmonths(X)
         '''
@@ -12,7 +12,7 @@
 
     "ismatrix [matlab]":
         prefix: "ismatrix"
-        body: '''${1:TF} = ismatrix(${1:V})'''
+        body: '''${2:TF} = ismatrix(${1:V})'''
         description: '''[matlab] Determine whether input is matrix
         TF = ismatrix(V)
         '''
@@ -21,7 +21,7 @@
 
     "length [matlab]":
         prefix: "length"
-        body: '''${1:L} = length(${1:X})'''
+        body: '''${2:L} = length(${1:X})'''
         description: '''[matlab] Number of key-value pairs in the data cache
         L = length(X)
         '''
@@ -30,7 +30,7 @@
 
     "movmedian [matlab]":
         prefix: "movmedian"
-        body: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving median
         M = movmedian(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -39,7 +39,7 @@
 
     "calendarDuration [matlab]":
         prefix: "calendarDuration"
-        body: '''${1:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
+        body: '''${3:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
         description: '''[matlab] Lengths of time in variable-length calendar units
         D = calendarDuration(YMD, 'Format', value)
         '''
@@ -48,7 +48,7 @@
 
     "split [matlab]":
         prefix: "split"
-        body: '''${1:C} = split(${1:t}, ${2:units})'''
+        body: '''${3:C} = split(${1:t}, ${2:units})'''
         description: '''[matlab] Split calendar duration into numeric and duration units
         C = split(t, units)
         '''
@@ -57,7 +57,7 @@
 
     "issortedrows [matlab]":
         prefix: "issortedrows"
-        body: '''${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        body: '''${5:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Determine if matrix or table rows are sorted
         TF = issortedrows(A, column, direction, 'MissingPlacement', value)
         '''
@@ -66,7 +66,7 @@
 
     "calquarters [matlab]":
         prefix: "calquarters"
-        body: '''${1:Q} = calquarters(${1:X})'''
+        body: '''${2:Q} = calquarters(${1:X})'''
         description: '''[matlab] Calendar duration in quarters
         Q = calquarters(X)
         '''
@@ -75,7 +75,7 @@
 
     "time [matlab]":
         prefix: "time"
-        body: '''${1:t} = time(${1:d})'''
+        body: '''${2:t} = time(${1:d})'''
         description: '''[matlab] Convert time of calendar duration to duration
         t = time(d)
         '''
@@ -84,7 +84,7 @@
 
     "isdst [matlab]":
         prefix: "isdst"
-        body: '''${1:tf} = isdst(${1:t})'''
+        body: '''${2:tf} = isdst(${1:t})'''
         description: '''[matlab] Determine daylight saving time elements
         tf = isdst(t)
         '''
@@ -93,7 +93,7 @@
 
     "isinf [matlab]":
         prefix: "isinf"
-        body: '''${1:TF} = isinf(${1:A})'''
+        body: '''${2:TF} = isinf(${1:A})'''
         description: '''[matlab] Determine which array elements are infinite
         TF = isinf(A)
         '''
@@ -102,7 +102,7 @@
 
     "datenum [matlab]":
         prefix: "datenum"
-        body: '''${1:DateNumber} = datenum(${1:t})'''
+        body: '''${2:DateNumber} = datenum(${1:t})'''
         description: '''[matlab] Convert date and time to serial date number
         DateNumber = datenum(t)
         '''
@@ -111,7 +111,7 @@
 
     "plus [matlab]":
         prefix: "plus"
-        body: '''${1:C} = plus(${1:A}, ${2:B})'''
+        body: '''${3:C} = plus(${1:A}, ${2:B})'''
         description: '''[matlab] Financial time series addition
         C = plus(A, B)
         '''
@@ -120,7 +120,7 @@
 
     "movprod [matlab]":
         prefix: "movprod"
-        body: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving product
         M = movprod(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -129,7 +129,7 @@
 
     "char [matlab]":
         prefix: "char"
-        body: '''${1:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
+        body: '''${4:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
         description: '''[matlab] Character array
         S = char(D, fmt, locale)
         '''
@@ -138,7 +138,7 @@
 
     "cat [matlab]":
         prefix: "cat"
-        body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        body: '''${4:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
         description: '''[matlab] Concatenate geographic or planar vector
         C = cat(dim, A, B)
         '''
@@ -147,7 +147,7 @@
 
     "movmean [matlab]":
         prefix: "movmean"
-        body: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving mean
         M = movmean(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -156,7 +156,7 @@
 
     "caldays [matlab]":
         prefix: "caldays"
-        body: '''${1:D} = caldays(${1:X})'''
+        body: '''${2:D} = caldays(${1:X})'''
         description: '''[matlab] Calendar duration in days
         D = caldays(X)
         '''
@@ -165,7 +165,7 @@
 
     "ctranspose [matlab]":
         prefix: "ctranspose"
-        body: '''${1:B} = ctranspose(${1:A})'''
+        body: '''${2:B} = ctranspose(${1:A})'''
         description: '''[matlab] Conjugate dynamic system model
         B = ctranspose(A)
         '''
@@ -174,7 +174,7 @@
 
     "vertcat [matlab]":
         prefix: "vertcat"
-        body: '''${1:C} = vertcat(${1:A})'''
+        body: '''${2:C} = vertcat(${1:A})'''
         description: '''[matlab] Concatenate arrays vertically
         C = vertcat(A)
         '''
@@ -183,7 +183,7 @@
 
     "calyears [matlab]":
         prefix: "calyears"
-        body: '''${1:Y} = calyears(${1:X})'''
+        body: '''${2:Y} = calyears(${1:X})'''
         description: '''[matlab] Calendar duration in years
         Y = calyears(X)
         '''
@@ -192,7 +192,7 @@
 
     "times [matlab]":
         prefix: "times"
-        body: '''${1:C} = times(${1:A}, ${2:B})'''
+        body: '''${3:C} = times(${1:A}, ${2:B})'''
         description: '''[matlab] Financial time series multiplication
         C = times(A, B)
         '''
@@ -201,7 +201,7 @@
 
     "isrow [matlab]":
         prefix: "isrow"
-        body: '''${1:TF} = isrow(${1:V})'''
+        body: '''${2:TF} = isrow(${1:V})'''
         description: '''[matlab] Determine whether input
 is row vector
         TF = isrow(V)
@@ -211,7 +211,7 @@ is row vector
 
     "movstd [matlab]":
         prefix: "movstd"
-        body: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        body: '''${8:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
         description: '''[matlab] Moving standard deviation
         M = movstd(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -220,7 +220,7 @@ is row vector
 
     "isempty [matlab]":
         prefix: "isempty"
-        body: '''${1:TF} = isempty(${1:A})'''
+        body: '''${2:TF} = isempty(${1:A})'''
         description: '''[matlab] Determine whether MetaData object is empty
         TF = isempty(A)
         '''
@@ -229,7 +229,7 @@ is row vector
 
     "cellstr [matlab]":
         prefix: "cellstr"
-        body: '''${1:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
+        body: '''${4:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
         description: '''[matlab] Convert to cell array of character vectors
         S = cellstr(D, fmt, locale)
         '''
@@ -238,7 +238,7 @@ is row vector
 
     "isvector [matlab]":
         prefix: "isvector"
-        body: '''${1:TF} = isvector(${1:A})'''
+        body: '''${2:TF} = isvector(${1:A})'''
         description: '''[matlab] Determine whether input is vector
         TF = isvector(A)
         '''
@@ -247,7 +247,7 @@ is row vector
 
     "calweeks [matlab]":
         prefix: "calweeks"
-        body: '''${1:W} = calweeks(${1:X})'''
+        body: '''${2:W} = calweeks(${1:X})'''
         description: '''[matlab] Calendar duration in weeks
         W = calweeks(X)
         '''
@@ -256,7 +256,7 @@ is row vector
 
     "minus [matlab]":
         prefix: "minus"
-        body: '''${1:C} = minus(${1:A}, ${2:B})'''
+        body: '''${3:C} = minus(${1:A}, ${2:B})'''
         description: '''[matlab] Financial time series subtraction
         C = minus(A, B)
         '''
@@ -265,7 +265,7 @@ is row vector
 
     "isfinite [matlab]":
         prefix: "isfinite"
-        body: '''${1:TF} = isfinite(${1:A})'''
+        body: '''${2:TF} = isfinite(${1:A})'''
         description: '''[matlab] Determine if model has finite coefficients
         TF = isfinite(A)
         '''
@@ -274,7 +274,7 @@ is row vector
 
     "horzcat [matlab]":
         prefix: "horzcat"
-        body: '''${1:C} = horzcat(${1:A})'''
+        body: '''${2:C} = horzcat(${1:A})'''
         description: '''[matlab] Concatenate arrays horizontally
         C = horzcat(A)
         '''
@@ -283,7 +283,7 @@ is row vector
 
     "isscalar [matlab]":
         prefix: "isscalar"
-        body: '''${1:TF} = isscalar(${1:A})'''
+        body: '''${2:TF} = isscalar(${1:A})'''
         description: '''[matlab] Determine whether input is scalar
         TF = isscalar(A)
         '''
@@ -292,7 +292,7 @@ is row vector
 
     "ndims [matlab]":
         prefix: "ndims"
-        body: '''${1:N} = ndims(${1:X})'''
+        body: '''${2:N} = ndims(${1:X})'''
         description: '''[matlab] Query number of dimensions of dynamic system model or
 model array
         N = ndims(X)
@@ -302,7 +302,7 @@ model array
 
     "movmax [matlab]":
         prefix: "movmax"
-        body: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving maximum
         M = movmax(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -311,7 +311,7 @@ model array
 
     "uminus [matlab]":
         prefix: "uminus"
-        body: '''${1:C} = uminus(${1:A})'''
+        body: '''${2:C} = uminus(${1:A})'''
         description: '''[matlab] Unary minus of financial time series object
         C = uminus(A)
         '''
@@ -320,7 +320,7 @@ model array
 
     "string [matlab]":
         prefix: "string"
-        body: '''${1:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
+        body: '''${4:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
         description: '''[matlab] String array
         str = string(D, fmt, locale)
         '''
@@ -329,7 +329,7 @@ model array
 
     "isequaln [matlab]":
         prefix: "isequaln"
-        body: '''${1:tf} = isequaln(${1:A}, ${2:B})'''
+        body: '''${3:tf} = isequaln(${1:A}, ${2:B})'''
         description: '''[matlab] Determine array equality, treating NaN values as equal
         tf = isequaln(A, B)
         '''
@@ -338,7 +338,7 @@ model array
 
     "transpose [matlab]":
         prefix: "transpose"
-        body: '''${1:B} = transpose(${1:A})'''
+        body: '''${2:B} = transpose(${1:A})'''
         description: '''[matlab] Transpose vector or matrix
         B = transpose(A)
         '''
@@ -347,7 +347,7 @@ model array
 
     "numel [matlab]":
         prefix: "numel"
-        body: '''${1:n} = numel(${1:A})'''
+        body: '''${2:n} = numel(${1:A})'''
         description: '''[matlab] Number of array elements
         n = numel(A)
         '''
@@ -356,7 +356,7 @@ model array
 
     "movsum [matlab]":
         prefix: "movsum"
-        body: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving sum
         M = movsum(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -365,7 +365,7 @@ model array
 
     "mtimes [matlab]":
         prefix: "mtimes"
-        body: '''${1:C} = mtimes(${1:A}, ${2:B})'''
+        body: '''${3:C} = mtimes(${1:A}, ${2:B})'''
         description: '''[matlab] Financial time series matrix multiplication
         C = mtimes(A, B)
         '''
@@ -374,7 +374,7 @@ model array
 
     "iscalendarduration [matlab]":
         prefix: "iscalendarduration"
-        body: '''${1:tf} = iscalendarduration(${1:d})'''
+        body: '''${2:tf} = iscalendarduration(${1:d})'''
         description: '''[matlab] Determine if input is calendar duration array
         tf = iscalendarduration(d)
         '''
@@ -383,7 +383,7 @@ model array
 
     "movmad [matlab]":
         prefix: "movmad"
-        body: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving median absolute deviation
         M = movmad(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -392,7 +392,7 @@ model array
 
     "hms [matlab]":
         prefix: "hms"
-        body: '''[${1:h}, ${2:m}, ${3:s}] = hms(${1:t})'''
+        body: '''[${2:h}, ${3:m}, ${4:s}] = hms(${1:t})'''
         description: '''[matlab] Hour, minute, and second numbers of datetime or duration
         [h, m, s] = hms(t)
         '''
@@ -401,7 +401,7 @@ model array
 
     "iscolumn [matlab]":
         prefix: "iscolumn"
-        body: '''${1:TF} = iscolumn(${1:V})'''
+        body: '''${2:TF} = iscolumn(${1:V})'''
         description: '''[matlab] Determine whether input
 is column vector
         TF = iscolumn(V)
@@ -411,7 +411,7 @@ is column vector
 
     "movmin [matlab]":
         prefix: "movmin"
-        body: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving minimum
         M = movmin(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -420,7 +420,7 @@ is column vector
 
     "isequal [matlab]":
         prefix: "isequal"
-        body: '''${1:tf} = isequal(${1:A}, ${2:B})'''
+        body: '''${3:tf} = isequal(${1:A}, ${2:B})'''
         description: '''[matlab] Multiple object equality
         tf = isequal(A, B)
         '''
@@ -429,7 +429,7 @@ is column vector
 
     "movvar [matlab]":
         prefix: "movvar"
-        body: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        body: '''${8:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
         description: '''[matlab] Moving variance
         M = movvar(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -438,7 +438,7 @@ is column vector
 
     "issorted [matlab]":
         prefix: "issorted"
-        body: '''${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        body: '''${5:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Check whether dates and times are monotonically increasing
         TF = issorted(A, dim, direction, 'MissingPlacement', value)
         '''
@@ -447,7 +447,7 @@ is column vector
 
     "size [matlab]":
         prefix: "size"
-        body: '''${1:szdim} = size(${1:A}, ${2:dim})'''
+        body: '''${3:szdim} = size(${1:A}, ${2:dim})'''
         description: '''[matlab] Return size of MetaData object
         szdim = size(A, dim)
         '''
@@ -456,7 +456,7 @@ is column vector
 
     "reshape [matlab]":
         prefix: "reshape"
-        body: '''${1:B} = reshape(${1:A}, ${2:sz})'''
+        body: '''${3:B} = reshape(${1:A}, ${2:sz})'''
         description: '''[matlab] Change shape of model array
         B = reshape(A, sz)
         '''
@@ -465,7 +465,7 @@ is column vector
 
     "permute [matlab]":
         prefix: "permute"
-        body: '''${1:B} = permute(${1:A}, ${2:order})'''
+        body: '''${3:B} = permute(${1:A}, ${2:order})'''
         description: '''[matlab] Rearrange array dimensions in model arrays
         B = permute(A, order)
         '''

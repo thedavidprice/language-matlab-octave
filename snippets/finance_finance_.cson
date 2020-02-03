@@ -12,7 +12,7 @@
 
     "fwd2zero [finance]":
         prefix: "fwd2zero"
-        body: '''[${1:ZeroRates}, ${2:CurveDates}] = fwd2zero(${1:forwardRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
+        body: '''[${8:ZeroRates}, ${9:CurveDates}] = fwd2zero(${1:forwardRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
         description: '''[finance] Zero curve given forward curve
         [ZeroRates, CurveDates] = fwd2zero(forwardRates, curveDates, settle, 'InputCompounding', value, 'InputBasis', value, 'OutputCompounding', value, 'OutputBasis', value)
         '''
@@ -48,7 +48,7 @@
 
     "displaypoints [finance]":
         prefix: "displaypoints"
-        body: '''[${1:PointsInfo}, ${2:MinScore}, ${3:MaxScore}] = displaypoints(${1:sc}, 'ShowCategoricalMembers', ${2:value})'''
+        body: '''[${3:PointsInfo}, ${4:MinScore}, ${5:MaxScore}] = displaypoints(${1:sc}, 'ShowCategoricalMembers', ${2:value})'''
         description: '''[finance] Return points per predictor per bin
         [PointsInfo, MinScore, MaxScore] = displaypoints(sc, 'ShowCategoricalMembers', value)
         '''
@@ -111,7 +111,7 @@
 
     "predictorinfo [finance]":
         prefix: "predictorinfo"
-        body: '''[${1:T}, ${2:Stats}] = predictorinfo(${1:sc}, ${2:PredictorVar})'''
+        body: '''[${3:T}, ${4:Stats}] = predictorinfo(${1:sc}, ${2:PredictorVar})'''
         description: '''[finance] Summary of credit scorecard predictor properties
         [T, Stats] = predictorinfo(sc, PredictorVar)
         '''
@@ -120,7 +120,7 @@
 
     "transprobgrouptotals [finance]":
         prefix: "transprobgrouptotals"
-        body: '''${1:totalsGrouped} = transprobgrouptotals(${1:totals}, ${2:groupingEdges})'''
+        body: '''${3:totalsGrouped} = transprobgrouptotals(${1:totals}, ${2:groupingEdges})'''
         description: '''[finance] Aggregate credit ratings information into fewer rating
                 categories
         totalsGrouped = transprobgrouptotals(totals, groupingEdges)
@@ -148,7 +148,7 @@
 
     "blsimpv [finance]":
         prefix: "blsimpv"
-        body: '''${1:Volatility} = blsimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Yield', ${7:value}, 'Tolerance', ${8:value}, 'Class', ${9:value}, 'Method', ${10:value})'''
+        body: '''${11:Volatility} = blsimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Yield', ${7:value}, 'Tolerance', ${8:value}, 'Class', ${9:value}, 'Method', ${10:value})'''
         description: '''[finance] Black-Scholes implied volatility
         Volatility = blsimpv(Price, Strike, Rate, Time, Value, 'Limit', value, 'Yield', value, 'Tolerance', value, 'Class', value, 'Method', value)
         '''
@@ -193,7 +193,7 @@
 
     "transprobbytotals [finance]":
         prefix: "transprobbytotals"
-        body: '''[${1:transMat}, ${2:sampleTotals}] = transprobbytotals(${1:totals}, 'snapsPerYear', ${2:value}, 'transInterval', ${3:value})'''
+        body: '''[${4:transMat}, ${5:sampleTotals}] = transprobbytotals(${1:totals}, 'snapsPerYear', ${2:value}, 'transInterval', ${3:value})'''
         description: '''[finance] Estimate transition probabilities using totals structure
                 input
         [transMat, sampleTotals] = transprobbytotals(totals, 'snapsPerYear', value, 'transInterval', value)
@@ -203,7 +203,7 @@
 
     "blkimpv [finance]":
         prefix: "blkimpv"
-        body: '''${1:Volatility} = blkimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Tolerance', ${7:value}, 'Class', ${8:value}, 'Method', ${9:value})'''
+        body: '''${10:Volatility} = blkimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Tolerance', ${7:value}, 'Class', ${8:value}, 'Method', ${9:value})'''
         description: '''[finance] Implied volatility for futures options from Black model 
         Volatility = blkimpv(Price, Strike, Rate, Time, Value, 'Limit', value, 'Tolerance', value, 'Class', value, 'Method', value)
         '''
@@ -221,7 +221,7 @@
 
     "disc2zero [finance]":
         prefix: "disc2zero"
-        body: '''[${1:ZeroRates}, ${2:CurveDates}] = disc2zero(${1:discRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
+        body: '''[${6:ZeroRates}, ${7:CurveDates}] = disc2zero(${1:discRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
         description: '''[finance] Zero curve given discount curve
         [ZeroRates, CurveDates] = disc2zero(discRates, curveDates, settle, 'Compounding', value, 'Basis', value)
         '''
@@ -230,7 +230,7 @@
 
     "transprobfromthresholds [finance]":
         prefix: "transprobfromthresholds"
-        body: '''${1:trans} = transprobfromthresholds(${1:thresh})'''
+        body: '''${2:trans} = transprobfromthresholds(${1:thresh})'''
         description: '''[finance] Convert from credit quality thresholds to transition
                 probabilities
         trans = transprobfromthresholds(thresh)
@@ -240,7 +240,7 @@
 
     "score [finance]":
         prefix: "score"
-        body: '''[${1:Scores}, ${2:Points}] = score(${1:sc}, 'data', ${2:value})'''
+        body: '''[${3:Scores}, ${4:Points}] = score(${1:sc}, 'data', ${2:value})'''
         description: '''[finance] Compute credit scores for given data
         [Scores, Points] = score(sc, 'data', value)
         '''
@@ -259,7 +259,7 @@
 
     "zero2fwd [finance]":
         prefix: "zero2fwd"
-        body: '''[${1:ForwardRates}, ${2:CurveDates}] = zero2fwd(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
+        body: '''[${8:ForwardRates}, ${9:CurveDates}] = zero2fwd(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
         description: '''[finance] Forward curve given zero curve
         [ForwardRates, CurveDates] = zero2fwd(zeroRates, curveDates, settle, 'InputCompounding', value, 'InputBasis', value, 'OutputCompounding', value, 'OutputBasis', value)
         '''
@@ -286,7 +286,7 @@
 
     "compact [finance]":
         prefix: "compact"
-        body: '''${1:ccsc} = compact(${1:sc})'''
+        body: '''${2:ccsc} = compact(${1:sc})'''
         description: '''[finance] Create compact credit scorecard
         ccsc = compact(sc)
         '''
@@ -304,7 +304,7 @@
 
     "autobinning [finance]":
         prefix: "autobinning"
-        body: '''${1:sc} = autobinning(${1:sc}, 'PredictorVar', ${2:value}, 'Algorithm', ${3:value}, 'AlgorithmOptions', ${4:value}, 'Display', ${5:value})'''
+        body: '''${6:sc} = autobinning(${1:sc}, 'PredictorVar', ${2:value}, 'Algorithm', ${3:value}, 'AlgorithmOptions', ${4:value}, 'Display', ${5:value})'''
         description: '''[finance] Perform automatic binning of given predictors
         sc = autobinning(sc, 'PredictorVar', value, 'Algorithm', value, 'AlgorithmOptions', value, 'Display', value)
         '''
@@ -331,7 +331,7 @@
 
     "zero2disc [finance]":
         prefix: "zero2disc"
-        body: '''[${1:DiscRates}, ${2:CurveDates}] = zero2disc(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
+        body: '''[${6:DiscRates}, ${7:CurveDates}] = zero2disc(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
         description: '''[finance] Discount curve given zero curve
         [DiscRates, CurveDates] = zero2disc(zeroRates, curveDates, settle, 'Compounding', value, 'Basis', value)
         '''
@@ -358,7 +358,7 @@
 
     "cdsspread [finance]":
         prefix: "cdsspread"
-        body: '''[${1:Spread}, ${2:PaymentDates}, ${3:PaymentTimes}] = cdsspread(${1:ZeroData}, ${2:ProbData}, ${3:Settle}, ${4:Maturity}, 'RecoveryRate', ${5:value}, 'Period', ${6:value}, 'Basis', ${7:value}, 'BusDayConvention', ${8:value}, 'PayAccruedPremium', ${9:value}, 'TimeStep', ${10:value}, 'ZeroCompounding', ${11:value}, 'ZeroBasis', ${12:value})'''
+        body: '''[${13:Spread}, ${14:PaymentDates}, ${15:PaymentTimes}] = cdsspread(${1:ZeroData}, ${2:ProbData}, ${3:Settle}, ${4:Maturity}, 'RecoveryRate', ${5:value}, 'Period', ${6:value}, 'Basis', ${7:value}, 'BusDayConvention', ${8:value}, 'PayAccruedPremium', ${9:value}, 'TimeStep', ${10:value}, 'ZeroCompounding', ${11:value}, 'ZeroBasis', ${12:value})'''
         description: '''[finance] Determine spread of credit default swap
         [Spread, PaymentDates, PaymentTimes] = cdsspread(ZeroData, ProbData, Settle, Maturity, 'RecoveryRate', value, 'Period', value, 'Basis', value, 'BusDayConvention', value, 'PayAccruedPremium', value, 'TimeStep', value, 'ZeroCompounding', value, 'ZeroBasis', value)
         '''
@@ -376,7 +376,7 @@
 
     "transprobtothresholds [finance]":
         prefix: "transprobtothresholds"
-        body: '''${1:thresh} = transprobtothresholds(${1:trans})'''
+        body: '''${2:thresh} = transprobtothresholds(${1:trans})'''
         description: '''[finance] Convert from transition probabilities to credit quality
                 thresholds
         thresh = transprobtothresholds(trans)
@@ -395,7 +395,7 @@
 
     "transprobprep [finance]":
         prefix: "transprobprep"
-        body: '''${1:prepData} = transprobprep(${1:data}, 'labels', ${2:value})'''
+        body: '''${3:prepData} = transprobprep(${1:data}, 'labels', ${2:value})'''
         description: '''[finance] Preprocess credit ratings data to estimate transition
                 probabilities
         prepData = transprobprep(data, 'labels', value)
@@ -414,7 +414,7 @@
 
     "probdefault [finance]":
         prefix: "probdefault"
-        body: '''${1:pd} = probdefault(${1:sc}, 'data', ${2:value})'''
+        body: '''${3:pd} = probdefault(${1:sc}, 'data', ${2:value})'''
         description: '''[finance] Likelihood of default for given data set
         pd = probdefault(sc, 'data', value)
         '''
@@ -432,7 +432,7 @@
 
     "transprob [finance]":
         prefix: "transprob"
-        body: '''[${1:transMat}, ${2:sampleTotals}, ${3:idTotals}] = transprob(${1:data}, 'labels', ${2:value}, 'excludeLabels', ${3:value}, 'startDate', ${4:value}, 'endDate', ${5:value}, 'algorithm', ${6:value}, 'snapsPerYear', ${7:value}, 'transInterval', ${8:value})'''
+        body: '''[${9:transMat}, ${10:sampleTotals}, ${11:idTotals}] = transprob(${1:data}, 'labels', ${2:value}, 'excludeLabels', ${3:value}, 'startDate', ${4:value}, 'endDate', ${5:value}, 'algorithm', ${6:value}, 'snapsPerYear', ${7:value}, 'transInterval', ${8:value})'''
         description: '''[finance] Estimate transition probabilities from credit ratings data
         [transMat, sampleTotals, idTotals] = transprob(data, 'labels', value, 'excludeLabels', value, 'startDate', value, 'endDate', value, 'algorithm', value, 'snapsPerYear', value, 'transInterval', value)
         '''

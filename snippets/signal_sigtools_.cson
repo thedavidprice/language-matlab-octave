@@ -3,7 +3,7 @@
 
     "wvtool [signal]":
         prefix: "wvtool"
-        body: '''${1:H} = wvtool(${1:WindowVector})'''
+        body: '''${2:H} = wvtool(${1:WindowVector})'''
         description: '''[signal] Open Window Visualization Tool 
         H = wvtool(WindowVector)
         '''
@@ -12,7 +12,7 @@
 
     "fvtool [signal]":
         prefix: "fvtool"
-        body: '''${1:h} = fvtool(${1:d})'''
+        body: '''${2:h} = fvtool(${1:d})'''
         description: '''[signal] Visualize frequency response of digital down converter or digital up converter
             filter cascade
         h = fvtool(d)
@@ -22,7 +22,7 @@
 
     "fmethod.abstractdesign.isfir [signal]":
         prefix: "fmethod.abstractdesign.isfir"
-        body: '''${1:flag} = fmethod.abstractdesign.isfir(${1:d})'''
+        body: '''${2:flag} = fmethod.abstractdesign.isfir(${1:d})'''
         description: '''[signal] 
         flag = fmethod.abstractdesign.isfir(d)
         '''

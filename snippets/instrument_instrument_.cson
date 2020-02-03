@@ -3,7 +3,7 @@
 
     "instrument.interface.modbus.Modbus.writeRead [instrument]":
         prefix: "instrument.interface.modbus.Modbus.writeRead"
-        body: '''${1:data} = instrument.interface.modbus.Modbus.writeRead(${1:obj}, ${2:writeAddress}, ${3:writeData}, ${4:optional_writePrecision}, ${5:readAddress}, ${6:readCount}, ${7:optional_readPrecision}, ${8:optional_serverId})'''
+        body: '''${9:data} = instrument.interface.modbus.Modbus.writeRead(${1:obj}, ${2:writeAddress}, ${3:writeData}, ${4:optional_writePrecision}, ${5:readAddress}, ${6:readCount}, ${7:optional_readPrecision}, ${8:optional_serverId})'''
         description: '''[instrument] 
         data = instrument.interface.modbus.Modbus.writeRead(obj, writeAddress, writeData, optional_writePrecision, readAddress, readCount, optional_readPrecision, optional_serverId)
         '''
@@ -21,7 +21,7 @@
 
     "icdevice [instrument]":
         prefix: "icdevice"
-        body: '''${1:obj} = icdevice(${1:driver}, ${2:hwobj}, 'ConfirmationFcn', ${3:value}, 'Name', ${4:value}, 'ObjectVisibility', ${5:value}, 'Tag', ${6:value}, 'Timeout', ${7:value}, 'UserData', ${8:value})'''
+        body: '''${9:obj} = icdevice(${1:driver}, ${2:hwobj}, 'ConfirmationFcn', ${3:value}, 'Name', ${4:value}, 'ObjectVisibility', ${5:value}, 'Tag', ${6:value}, 'Timeout', ${7:value}, 'UserData', ${8:value})'''
         description: '''[instrument] Create device object
         obj = icdevice(driver, hwobj, 'ConfirmationFcn', value, 'Name', value, 'ObjectVisibility', value, 'Tag', value, 'Timeout', value, 'UserData', value)
         '''
@@ -30,7 +30,7 @@
 
     "tcpip [instrument]":
         prefix: "tcpip"
-        body: '''${1:obj} = tcpip(${1:rhost}, ${2:rport}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'ErrorFcn', ${7:value}, 'InputBufferSize', ${8:value}, 'LocalHost', ${9:value}, 'LocalPort', ${10:value}, 'LocalPortMode', ${11:value}, 'Name', ${12:value}, 'NetworkRole', ${13:value}, 'ObjectVisibility', ${14:value}, 'OutputBufferSize', ${15:value}, 'OutputEmptyFcn', ${16:value}, 'ReadAsyncMode', ${17:value}, 'RecordDetail', ${18:value}, 'RecordMode', ${19:value}, 'RecordName', ${20:value}, 'RemoteHost', ${21:value}, 'RemotePort', ${22:value}, 'Tag', ${23:value}, 'Terminator', ${24:value}, 'Timeout', ${25:value}, 'TimerFcn', ${26:value}, 'TimerPeriod', ${27:value}, 'TransferDelay', ${28:value}, 'UserData', ${29:value})'''
+        body: '''${30:obj} = tcpip(${1:rhost}, ${2:rport}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'ErrorFcn', ${7:value}, 'InputBufferSize', ${8:value}, 'LocalHost', ${9:value}, 'LocalPort', ${10:value}, 'LocalPortMode', ${11:value}, 'Name', ${12:value}, 'NetworkRole', ${13:value}, 'ObjectVisibility', ${14:value}, 'OutputBufferSize', ${15:value}, 'OutputEmptyFcn', ${16:value}, 'ReadAsyncMode', ${17:value}, 'RecordDetail', ${18:value}, 'RecordMode', ${19:value}, 'RecordName', ${20:value}, 'RemoteHost', ${21:value}, 'RemotePort', ${22:value}, 'Tag', ${23:value}, 'Terminator', ${24:value}, 'Timeout', ${25:value}, 'TimerFcn', ${26:value}, 'TimerPeriod', ${27:value}, 'TransferDelay', ${28:value}, 'UserData', ${29:value})'''
         description: '''[instrument] Create TCPIP object
         obj = tcpip(rhost, rport, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'ErrorFcn', value, 'InputBufferSize', value, 'LocalHost', value, 'LocalPort', value, 'LocalPortMode', value, 'Name', value, 'NetworkRole', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RemoteHost', value, 'RemotePort', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'TransferDelay', value, 'UserData', value)
         '''
@@ -48,7 +48,7 @@
 
     "instrfind [instrument]":
         prefix: "instrfind"
-        body: '''${1:out} = instrfind(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
+        body: '''${28:out} = instrfind(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
         description: '''[instrument] Read instrument objects from memory to MATLAB workspace
         out = instrfind(optional_obj, 'BitRate', value, 'BoardIndex', value, 'BoardSerial', value, 'ByteOrder', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'PullupResistors', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RecordStatus', value, 'RemoteAddress', value, 'Status', value, 'Tag', value, 'TargetPower', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'TransferStatus', value, 'Type', value, 'UserData', value, 'ValuesReceived', value, 'ValuesSent', value, 'Vendor', value)
         '''
@@ -66,7 +66,7 @@
 
     "length [instrument]":
         prefix: "length"
-        body: '''${1:out} = length(${1:obj})'''
+        body: '''${2:out} = length(${1:obj})'''
         description: '''[instrument] Number of key-value pairs in the data cache
         out = length(obj)
         '''
@@ -75,7 +75,7 @@
 
     "memread [instrument]":
         prefix: "memread"
-        body: '''${1:out} = memread(${1:obj}, ${2:optional_offset}, ${3:optional_precision}, ${4:optional_adrspace}, ${5:optional_size})'''
+        body: '''${6:out} = memread(${1:obj}, ${2:optional_offset}, ${3:optional_precision}, ${4:optional_adrspace}, ${5:optional_size})'''
         description: '''[instrument] High-level memory read from VXI register
         out = memread(obj, optional_offset, optional_precision, optional_adrspace, optional_size)
         '''
@@ -84,7 +84,7 @@
 
     "instrument.interface.modbus.Modbus.read [instrument]":
         prefix: "instrument.interface.modbus.Modbus.read"
-        body: '''${1:data} = instrument.interface.modbus.Modbus.read(${1:obj}, ${2:target}, ${3:address}, ${4:count}, ${5:optional_serverId}, ${6:optional_precision})'''
+        body: '''${7:data} = instrument.interface.modbus.Modbus.read(${1:obj}, ${2:target}, ${3:address}, ${4:count}, ${5:optional_serverId}, ${6:optional_precision})'''
         description: '''[instrument] 
         data = instrument.interface.modbus.Modbus.read(obj, target, address, count, optional_serverId, optional_precision)
         '''
@@ -93,7 +93,7 @@
 
     "instrhwinfo [instrument]":
         prefix: "instrhwinfo"
-        body: '''${1:out} = instrhwinfo(${1:optional_obj}, ${2:optional_FieldName})'''
+        body: '''${3:out} = instrhwinfo(${1:optional_obj}, ${2:optional_FieldName})'''
         description: '''[instrument] Information about available hardware
         out = instrhwinfo(optional_obj, optional_FieldName)
         '''
@@ -129,7 +129,7 @@
 
     "visa [instrument]":
         prefix: "visa"
-        body: '''${1:obj} = visa(${1:vendor}, ${2:rsrcname}, 'Alias', ${3:value}, 'BaudRate', ${4:value}, 'ByteOrder', ${5:value}, 'BytesAvailableFcn', ${6:value}, 'BytesAvailableFcnCount', ${7:value}, 'BytesAvailableFcnMode', ${8:value}, 'DataBits', ${9:value}, 'DataTerminalReady', ${10:value}, 'ErrorFcn', ${11:value}, 'FlowControl', ${12:value}, 'InputBufferSize', ${13:value}, 'Name', ${14:value}, 'ObjectVisibility', ${15:value}, 'OutputBufferSize', ${16:value}, 'OutputEmptyFcn', ${17:value}, 'Parity', ${18:value}, 'Port', ${19:value}, 'ReadAsyncMode', ${20:value}, 'RecordDetail', ${21:value}, 'RecordMode', ${22:value}, 'RecordName', ${23:value}, 'RequestToSend', ${24:value}, 'RsrcName', ${25:value}, 'StopBits', ${26:value}, 'Tag', ${27:value}, 'Terminator', ${28:value}, 'Timeout', ${29:value}, 'TimerFcn', ${30:value}, 'TimerPeriod', ${31:value}, 'UserData', ${32:value})'''
+        body: '''${33:obj} = visa(${1:vendor}, ${2:rsrcname}, 'Alias', ${3:value}, 'BaudRate', ${4:value}, 'ByteOrder', ${5:value}, 'BytesAvailableFcn', ${6:value}, 'BytesAvailableFcnCount', ${7:value}, 'BytesAvailableFcnMode', ${8:value}, 'DataBits', ${9:value}, 'DataTerminalReady', ${10:value}, 'ErrorFcn', ${11:value}, 'FlowControl', ${12:value}, 'InputBufferSize', ${13:value}, 'Name', ${14:value}, 'ObjectVisibility', ${15:value}, 'OutputBufferSize', ${16:value}, 'OutputEmptyFcn', ${17:value}, 'Parity', ${18:value}, 'Port', ${19:value}, 'ReadAsyncMode', ${20:value}, 'RecordDetail', ${21:value}, 'RecordMode', ${22:value}, 'RecordName', ${23:value}, 'RequestToSend', ${24:value}, 'RsrcName', ${25:value}, 'StopBits', ${26:value}, 'Tag', ${27:value}, 'Terminator', ${28:value}, 'Timeout', ${29:value}, 'TimerFcn', ${30:value}, 'TimerPeriod', ${31:value}, 'UserData', ${32:value})'''
         description: '''[instrument] Create VISA object
         obj = visa(vendor, rsrcname, 'Alias', value, 'BaudRate', value, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'DataBits', value, 'DataTerminalReady', value, 'ErrorFcn', value, 'FlowControl', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'Parity', value, 'Port', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RequestToSend', value, 'RsrcName', value, 'StopBits', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)
         '''
@@ -138,7 +138,7 @@
 
     "instrument.interface.spi.aardvark.Spi.read [instrument]":
         prefix: "instrument.interface.spi.aardvark.Spi.read"
-        body: '''${1:data} = instrument.interface.spi.aardvark.Spi.read(${1:obj}, ${2:size})'''
+        body: '''${3:data} = instrument.interface.spi.aardvark.Spi.read(${1:obj}, ${2:size})'''
         description: '''[instrument] 
         data = instrument.interface.spi.aardvark.Spi.read(obj, size)
         '''
@@ -165,7 +165,7 @@
 
     "instrument.interface.spi.ni845x.Spi.read [instrument]":
         prefix: "instrument.interface.spi.ni845x.Spi.read"
-        body: '''${1:data} = instrument.interface.spi.ni845x.Spi.read(${1:obj}, ${2:size})'''
+        body: '''${3:data} = instrument.interface.spi.ni845x.Spi.read(${1:obj}, ${2:size})'''
         description: '''[instrument] 
         data = instrument.interface.spi.ni845x.Spi.read(obj, size)
         '''
@@ -183,7 +183,7 @@
 
     "Bluetooth [instrument]":
         prefix: "Bluetooth"
-        body: '''${1:B} = Bluetooth(${1:RemoteName/ID}, ${2:Channel}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'ErrorFcn', ${7:value}, 'InputBufferSize', ${8:value}, 'Name', ${9:value}, 'ObjectVisibility', ${10:value}, 'OutputBufferSize', ${11:value}, 'OutputEmptyFcn', ${12:value}, 'ReadAsyncMode', ${13:value}, 'RecordDetail', ${14:value}, 'RecordMode', ${15:value}, 'RecordName', ${16:value}, 'RemoteID', ${17:value}, 'RemoteName', ${18:value}, 'Tag', ${19:value}, 'Terminator', ${20:value}, 'Timeout', ${21:value}, 'TimerFcn', ${22:value}, 'TimerPeriod', ${23:value}, 'UserData', ${24:value})'''
+        body: '''${25:B} = Bluetooth(${1:RemoteName/ID}, ${2:Channel}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'ErrorFcn', ${7:value}, 'InputBufferSize', ${8:value}, 'Name', ${9:value}, 'ObjectVisibility', ${10:value}, 'OutputBufferSize', ${11:value}, 'OutputEmptyFcn', ${12:value}, 'ReadAsyncMode', ${13:value}, 'RecordDetail', ${14:value}, 'RecordMode', ${15:value}, 'RecordName', ${16:value}, 'RemoteID', ${17:value}, 'RemoteName', ${18:value}, 'Tag', ${19:value}, 'Terminator', ${20:value}, 'Timeout', ${21:value}, 'TimerFcn', ${22:value}, 'TimerPeriod', ${23:value}, 'UserData', ${24:value})'''
         description: '''[instrument] 
         B = Bluetooth(RemoteName/ID, Channel, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'ErrorFcn', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RemoteID', value, 'RemoteName', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)
         '''
@@ -201,7 +201,7 @@
 
     "spi [instrument]":
         prefix: "spi"
-        body: '''${1:S} = spi(${1:Vendor}, ${2:BoardIndex}, ${3:Port})'''
+        body: '''${4:S} = spi(${1:Vendor}, ${2:BoardIndex}, ${3:Port})'''
         description: '''[instrument] Create SPI object
         S = spi(Vendor, BoardIndex, Port)
         '''
@@ -210,7 +210,7 @@
 
     "propinfo [instrument]":
         prefix: "propinfo"
-        body: '''${1:out} = propinfo(${1:obj}, ${2:optional_PropertyName})'''
+        body: '''${3:out} = propinfo(${1:obj}, ${2:optional_PropertyName})'''
         description: '''[instrument] Property characteristics for image acquisition objects
         out = propinfo(obj, optional_PropertyName)
         '''
@@ -219,7 +219,7 @@
 
     "selftest [instrument]":
         prefix: "selftest"
-        body: '''${1:out} = selftest(${1:obj})'''
+        body: '''${2:out} = selftest(${1:obj})'''
         description: '''[instrument] Run instrument self-test
         out = selftest(obj)
         '''
@@ -237,7 +237,7 @@
 
     "i2c [instrument]":
         prefix: "i2c"
-        body: '''${1:I} = i2c(${1:Vendor}, ${2:BoardIndex}, ${3:RemoteAddress})'''
+        body: '''${4:I} = i2c(${1:Vendor}, ${2:BoardIndex}, ${3:RemoteAddress})'''
         description: '''[instrument] Create I2C object
         I = i2c(Vendor, BoardIndex, RemoteAddress)
         '''
@@ -255,7 +255,7 @@
 
     "fgetl [instrument]":
         prefix: "fgetl"
-        body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgetl(${1:obj})'''
+        body: '''[${2:tline}, ${3:count}, ${4:msg}, ${5:datagramaddress}, ${6:datagramport}] = fgetl(${1:obj})'''
         description: '''[instrument] Read line of text from instrument and discard terminator
         [tline, count, msg, datagramaddress, datagramport] = fgetl(obj)
         '''
@@ -291,7 +291,7 @@
 
     "spoll [instrument]":
         prefix: "spoll"
-        body: '''[${1:out}, ${2:statusByte}] = spoll(${1:obj}, ${2:optional_val})'''
+        body: '''[${3:out}, ${4:statusByte}] = spoll(${1:obj}, ${2:optional_val})'''
         description: '''[instrument] Perform serial poll on GPIB objects
         [out, statusByte] = spoll(obj, optional_val)
         '''
@@ -336,7 +336,7 @@
 
     "query [instrument]":
         prefix: "query"
-        body: '''[${1:out}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = query(${1:obj}, ${2:cmd}, ${3:optional_wformat}, ${4:optional_rformat})'''
+        body: '''[${5:out}, ${6:count}, ${7:msg}, ${8:datagramaddress}, ${9:datagramport}] = query(${1:obj}, ${2:cmd}, ${3:optional_wformat}, ${4:optional_rformat})'''
         description: '''[instrument] Write text to instrument, and read data from instrument
         [out, count, msg, datagramaddress, datagramport] = query(obj, cmd, optional_wformat, optional_rformat)
         '''
@@ -354,7 +354,7 @@
 
     "instrument.interface.spi.aardvark.Spi.writeAndRead [instrument]":
         prefix: "instrument.interface.spi.aardvark.Spi.writeAndRead"
-        body: '''${1:data} = instrument.interface.spi.aardvark.Spi.writeAndRead(${1:obj}, ${2:dataToWrite})'''
+        body: '''${3:data} = instrument.interface.spi.aardvark.Spi.writeAndRead(${1:obj}, ${2:dataToWrite})'''
         description: '''[instrument] 
         data = instrument.interface.spi.aardvark.Spi.writeAndRead(obj, dataToWrite)
         '''
@@ -363,7 +363,7 @@
 
     "gpib [instrument]":
         prefix: "gpib"
-        body: '''${1:obj} = gpib(${1:vendor}, ${2:boardindex}, ${3:primaryaddress}, 'BoardIndex', ${4:value}, 'ByteOrder', ${5:value}, 'BytesAvailableFcn', ${6:value}, 'BytesAvailableFcnCount', ${7:value}, 'BytesAvailableFcnMode', ${8:value}, 'CompareBits', ${9:value}, 'EOIMode', ${10:value}, 'EOSCharCode', ${11:value}, 'EOSMode', ${12:value}, 'ErrorFcn', ${13:value}, 'InputBufferSize', ${14:value}, 'Name', ${15:value}, 'ObjectVisibility', ${16:value}, 'OutputBufferSize', ${17:value}, 'OutputEmptyFcn', ${18:value}, 'PrimaryAddress', ${19:value}, 'RecordDetail', ${20:value}, 'RecordMode', ${21:value}, 'RecordName', ${22:value}, 'SecondaryAddress', ${23:value}, 'Tag', ${24:value}, 'Timeout', ${25:value}, 'TimerFcn', ${26:value}, 'TimerPeriod', ${27:value}, 'UserData', ${28:value})'''
+        body: '''${29:obj} = gpib(${1:vendor}, ${2:boardindex}, ${3:primaryaddress}, 'BoardIndex', ${4:value}, 'ByteOrder', ${5:value}, 'BytesAvailableFcn', ${6:value}, 'BytesAvailableFcnCount', ${7:value}, 'BytesAvailableFcnMode', ${8:value}, 'CompareBits', ${9:value}, 'EOIMode', ${10:value}, 'EOSCharCode', ${11:value}, 'EOSMode', ${12:value}, 'ErrorFcn', ${13:value}, 'InputBufferSize', ${14:value}, 'Name', ${15:value}, 'ObjectVisibility', ${16:value}, 'OutputBufferSize', ${17:value}, 'OutputEmptyFcn', ${18:value}, 'PrimaryAddress', ${19:value}, 'RecordDetail', ${20:value}, 'RecordMode', ${21:value}, 'RecordName', ${22:value}, 'SecondaryAddress', ${23:value}, 'Tag', ${24:value}, 'Timeout', ${25:value}, 'TimerFcn', ${26:value}, 'TimerPeriod', ${27:value}, 'UserData', ${28:value})'''
         description: '''[instrument] Create GPIB object
         obj = gpib(vendor, boardindex, primaryaddress, 'BoardIndex', value, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'CompareBits', value, 'EOIMode', value, 'EOSCharCode', value, 'EOSMode', value, 'ErrorFcn', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'PrimaryAddress', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'SecondaryAddress', value, 'Tag', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)
         '''
@@ -390,7 +390,7 @@
 
     "instrument.interface.spi.ni845x.Spi.writeAndRead [instrument]":
         prefix: "instrument.interface.spi.ni845x.Spi.writeAndRead"
-        body: '''${1:data} = instrument.interface.spi.ni845x.Spi.writeAndRead(${1:obj}, ${2:dataToWrite})'''
+        body: '''${3:data} = instrument.interface.spi.ni845x.Spi.writeAndRead(${1:obj}, ${2:dataToWrite})'''
         description: '''[instrument] 
         data = instrument.interface.spi.ni845x.Spi.writeAndRead(obj, dataToWrite)
         '''
@@ -408,7 +408,7 @@
 
     "fgets [instrument]":
         prefix: "fgets"
-        body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgets(${1:obj})'''
+        body: '''[${2:tline}, ${3:count}, ${4:msg}, ${5:datagramaddress}, ${6:datagramport}] = fgets(${1:obj})'''
         description: '''[instrument] Read line of text from instrument and include terminator
         [tline, count, msg, datagramaddress, datagramport] = fgets(obj)
         '''
@@ -435,7 +435,7 @@
 
     "isvalid [instrument]":
         prefix: "isvalid"
-        body: '''${1:out} = isvalid(${1:obj})'''
+        body: '''${2:out} = isvalid(${1:obj})'''
         description: '''[instrument] Determine whether image acquisition object is associated
 with image acquisition device
         out = isvalid(obj)
@@ -445,7 +445,7 @@ with image acquisition device
 
     "iviconfigurationstore [instrument]":
         prefix: "iviconfigurationstore"
-        body: '''${1:obj} = iviconfigurationstore(${1:optional_file})'''
+        body: '''${2:obj} = iviconfigurationstore(${1:optional_file})'''
         description: '''[instrument] Create IVI configuration store object
         obj = iviconfigurationstore(optional_file)
         '''
@@ -463,7 +463,7 @@ with image acquisition device
 
     "modbus [instrument]":
         prefix: "modbus"
-        body: '''${1:obj} = modbus(${1:transport}, ${2:DeviceAddress}, ${3:optional_Port}, 'ByteOrder', ${4:value}, 'NumRetries', ${5:value}, 'Timeout', ${6:value}, 'WordOrder', ${7:value})'''
+        body: '''${8:obj} = modbus(${1:transport}, ${2:DeviceAddress}, ${3:optional_Port}, 'ByteOrder', ${4:value}, 'NumRetries', ${5:value}, 'Timeout', ${6:value}, 'WordOrder', ${7:value})'''
         description: '''[instrument] Create MODBUS object
         obj = modbus(transport, DeviceAddress, optional_Port, 'ByteOrder', value, 'NumRetries', value, 'Timeout', value, 'WordOrder', value)
         '''
@@ -472,7 +472,7 @@ with image acquisition device
 
     "invoke [instrument]":
         prefix: "invoke"
-        body: '''${1:out} = invoke(${1:obj}, ${2:name}, ${3:optional_arguments})'''
+        body: '''${4:out} = invoke(${1:obj}, ${2:name}, ${3:optional_arguments})'''
         description: '''[instrument] Execute driver-specific function on device object
         out = invoke(obj, name, optional_arguments)
         '''
@@ -481,7 +481,7 @@ with image acquisition device
 
     "instrhelp [instrument]":
         prefix: "instrhelp"
-        body: '''${1:out} = instrhelp(${1:obj}, ${2:optional_Property/FunctionName})'''
+        body: '''${3:out} = instrhelp(${1:obj}, ${2:optional_Property/FunctionName})'''
         description: '''[instrument] Help for instrument object type, function, or property
         out = instrhelp(obj, optional_Property/FunctionName)
         '''
@@ -508,7 +508,7 @@ with image acquisition device
 
     "fscanf [instrument]":
         prefix: "fscanf"
-        body: '''[${1:A}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fscanf(${1:obj}, ${2:optional_format}, ${3:optional_size})'''
+        body: '''[${4:A}, ${5:count}, ${6:msg}, ${7:datagramaddress}, ${8:datagramport}] = fscanf(${1:obj}, ${2:optional_format}, ${3:optional_size})'''
         description: '''[instrument] Read data from instrument, and format as text
         [A, count, msg, datagramaddress, datagramport] = fscanf(obj, optional_format, optional_size)
         '''
@@ -526,7 +526,7 @@ with image acquisition device
 
     "instrid [instrument]":
         prefix: "instrid"
-        body: '''${1:out} = instrid(${1:optional_cmd})'''
+        body: '''${2:out} = instrid(${1:optional_cmd})'''
         description: '''[instrument] Define and retrieve commands that identify instruments
         out = instrid(optional_cmd)
         '''
@@ -535,7 +535,7 @@ with image acquisition device
 
     "geterror [instrument]":
         prefix: "geterror"
-        body: '''${1:msg} = geterror(${1:obj})'''
+        body: '''${2:msg} = geterror(${1:obj})'''
         description: '''[instrument] Check and return error message from instrument
         msg = geterror(obj)
         '''
@@ -544,7 +544,7 @@ with image acquisition device
 
     "size [instrument]":
         prefix: "size"
-        body: '''${1:m} = size(${1:obj}, ${2:optional_dim})'''
+        body: '''${3:m} = size(${1:obj}, ${2:optional_dim})'''
         description: '''[instrument] Return size of MetaData object
         m = size(obj, optional_dim)
         '''
@@ -562,7 +562,7 @@ with image acquisition device
 
     "udp [instrument]":
         prefix: "udp"
-        body: '''${1:obj} = udp(${1:rhost}, ${2:rport}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'DatagramAddress', ${7:value}, 'DatagramPort', ${8:value}, 'DatagramReceivedFcn', ${9:value}, 'DatagramTerminateMode', ${10:value}, 'EnablePortSharing', ${11:value}, 'ErrorFcn', ${12:value}, 'InputBufferSize', ${13:value}, 'InputDatagramPacketSize', ${14:value}, 'LocalHost', ${15:value}, 'LocalPort', ${16:value}, 'LocalPortMode', ${17:value}, 'Name', ${18:value}, 'ObjectVisibility', ${19:value}, 'OutputBufferSize', ${20:value}, 'OutputDatagramPacketSize', ${21:value}, 'OutputEmptyFcn', ${22:value}, 'ReadAsyncMode', ${23:value}, 'RecordDetail', ${24:value}, 'RecordMode', ${25:value}, 'RecordName', ${26:value}, 'RemoteHost', ${27:value}, 'RemotePort', ${28:value}, 'Tag', ${29:value}, 'Terminator', ${30:value}, 'Timeout', ${31:value}, 'TimerFcn', ${32:value}, 'TimerPeriod', ${33:value}, 'UserData', ${34:value})'''
+        body: '''${35:obj} = udp(${1:rhost}, ${2:rport}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'DatagramAddress', ${7:value}, 'DatagramPort', ${8:value}, 'DatagramReceivedFcn', ${9:value}, 'DatagramTerminateMode', ${10:value}, 'EnablePortSharing', ${11:value}, 'ErrorFcn', ${12:value}, 'InputBufferSize', ${13:value}, 'InputDatagramPacketSize', ${14:value}, 'LocalHost', ${15:value}, 'LocalPort', ${16:value}, 'LocalPortMode', ${17:value}, 'Name', ${18:value}, 'ObjectVisibility', ${19:value}, 'OutputBufferSize', ${20:value}, 'OutputDatagramPacketSize', ${21:value}, 'OutputEmptyFcn', ${22:value}, 'ReadAsyncMode', ${23:value}, 'RecordDetail', ${24:value}, 'RecordMode', ${25:value}, 'RecordName', ${26:value}, 'RemoteHost', ${27:value}, 'RemotePort', ${28:value}, 'Tag', ${29:value}, 'Terminator', ${30:value}, 'Timeout', ${31:value}, 'TimerFcn', ${32:value}, 'TimerPeriod', ${33:value}, 'UserData', ${34:value})'''
         description: '''[instrument] Create UDP object
         obj = udp(rhost, rport, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'DatagramAddress', value, 'DatagramPort', value, 'DatagramReceivedFcn', value, 'DatagramTerminateMode', value, 'EnablePortSharing', value, 'ErrorFcn', value, 'InputBufferSize', value, 'InputDatagramPacketSize', value, 'LocalHost', value, 'LocalPort', value, 'LocalPortMode', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputDatagramPacketSize', value, 'OutputEmptyFcn', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RemoteHost', value, 'RemotePort', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)
         '''
@@ -571,7 +571,7 @@ with image acquisition device
 
     "mempeek [instrument]":
         prefix: "mempeek"
-        body: '''${1:out} = mempeek(${1:obj}, ${2:offset}, ${3:optional_precision})'''
+        body: '''${4:out} = mempeek(${1:obj}, ${2:offset}, ${3:optional_precision})'''
         description: '''[instrument] Low-level memory read from VXI register
         out = mempeek(obj, offset, optional_precision)
         '''
@@ -580,7 +580,7 @@ with image acquisition device
 
     "fread [instrument]":
         prefix: "fread"
-        body: '''[${1:A}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fread(${1:obj}, ${2:size}, ${3:optional_precision})'''
+        body: '''[${4:A}, ${5:count}, ${6:msg}, ${7:datagramaddress}, ${8:datagramport}] = fread(${1:obj}, ${2:size}, ${3:optional_precision})'''
         description: '''[instrument] Read binary data from instrument
         [A, count, msg, datagramaddress, datagramport] = fread(obj, size, optional_precision)
         '''

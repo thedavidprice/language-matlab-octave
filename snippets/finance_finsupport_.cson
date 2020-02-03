@@ -3,7 +3,7 @@
 
     "date2time [finance]":
         prefix: "date2time"
-        body: '''[${1:TFactors}, ${2:F}] = date2time(${1:settle}, ${2:maturity}, ${3:compounding}, ${4:basis}, ${5:endMonthRule})'''
+        body: '''[${6:TFactors}, ${7:F}] = date2time(${1:settle}, ${2:maturity}, ${3:compounding}, ${4:basis}, ${5:endMonthRule})'''
         description: '''[finance] Time and frequency from dates
         [TFactors, F] = date2time(settle, maturity, compounding, basis, endMonthRule)
         '''

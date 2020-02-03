@@ -3,7 +3,7 @@
 
     "colorbar [matlab]":
         prefix: "colorbar"
-        body: '''${1:leg} = colorbar(${1:off})'''
+        body: '''${2:leg} = colorbar(${1:off})'''
         description: '''[matlab] Colorbar showing color scale
         leg = colorbar(off)
         '''
@@ -12,7 +12,7 @@
 
     "annotation [matlab]":
         prefix: "annotation"
-        body: '''${1:anno_obj_handle} = annotation(${1:optional_handle}, ${2:annotation}, ${3:optional_xywh}, ${4:opts})'''
+        body: '''${5:anno_obj_handle} = annotation(${1:optional_handle}, ${2:annotation}, ${3:optional_xywh}, ${4:opts})'''
         description: '''[matlab] Create annotations
         anno_obj_handle = annotation(optional_handle, annotation, optional_xywh, opts)
         '''
@@ -21,7 +21,7 @@
 
     "legend [matlab]":
         prefix: "legend"
-        body: '''${1:leg} = legend(${1:optional_ax}, ${2:flag})'''
+        body: '''${3:leg} = legend(${1:optional_ax}, ${2:flag})'''
         description: '''[matlab] Add legend to axes
         leg = legend(optional_ax, flag)
         '''

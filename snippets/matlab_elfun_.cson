@@ -3,7 +3,7 @@
 
     "rem [matlab]":
         prefix: "rem"
-        body: '''${1:r} = rem(${1:a}, ${2:b})'''
+        body: '''${3:r} = rem(${1:a}, ${2:b})'''
         description: '''[matlab] Remainder after division
         r = rem(a, b)
         '''
@@ -12,7 +12,7 @@
 
     "ceil [matlab]":
         prefix: "ceil"
-        body: '''${1:Y} = ceil(${1:X})'''
+        body: '''${2:Y} = ceil(${1:X})'''
         description: '''[matlab] Round toward positive infinity
         Y = ceil(X)
         '''
@@ -21,7 +21,7 @@
 
     "fix [matlab]":
         prefix: "fix"
-        body: '''${1:Y} = fix(${1:X})'''
+        body: '''${2:Y} = fix(${1:X})'''
         description: '''[matlab] Round toward zero
         Y = fix(X)
         '''
@@ -30,7 +30,7 @@
 
     "real [matlab]":
         prefix: "real"
-        body: '''${1:X} = real(${1:Z})'''
+        body: '''${2:X} = real(${1:Z})'''
         description: '''[matlab] Real part of complex number
         X = real(Z)
         '''
@@ -39,7 +39,7 @@
 
     "mod [matlab]":
         prefix: "mod"
-        body: '''${1:b} = mod(${1:a}, ${2:m})'''
+        body: '''${3:b} = mod(${1:a}, ${2:m})'''
         description: '''[matlab] Remainder after division (modulo operation)
         b = mod(a, m)
         '''
@@ -48,7 +48,7 @@
 
     "round [matlab]":
         prefix: "round"
-        body: '''${1:Y} = round(${1:X}, ${2:N}, ${3:type})'''
+        body: '''${4:Y} = round(${1:X}, ${2:N}, ${3:type})'''
         description: '''[matlab] Round to nearest decimal or integer
         Y = round(X, N, type)
         '''
@@ -57,7 +57,7 @@
 
     "conj [matlab]":
         prefix: "conj"
-        body: '''${1:ZC} = conj(${1:Z})'''
+        body: '''${2:ZC} = conj(${1:Z})'''
         description: '''[matlab] Form model with complex conjugate coefficients
         ZC = conj(Z)
         '''
@@ -66,7 +66,7 @@
 
     "abs [matlab]":
         prefix: "abs"
-        body: '''${1:Y} = abs(${1:X})'''
+        body: '''${2:Y} = abs(${1:X})'''
         description: '''[matlab] Entrywise magnitude of frequency response
         Y = abs(X)
         '''
@@ -75,7 +75,7 @@
 
     "floor [matlab]":
         prefix: "floor"
-        body: '''${1:Y} = floor(${1:X})'''
+        body: '''${2:Y} = floor(${1:X})'''
         description: '''[matlab] Round toward negative infinity
         Y = floor(X)
         '''
@@ -84,7 +84,7 @@
 
     "sign [matlab]":
         prefix: "sign"
-        body: '''${1:y} = sign(${1:x})'''
+        body: '''${2:y} = sign(${1:x})'''
         description: '''[matlab] Sign function (signum function)
         y = sign(x)
         '''
@@ -93,7 +93,7 @@
 
     "imag [matlab]":
         prefix: "imag"
-        body: '''${1:Y} = imag(${1:Z})'''
+        body: '''${2:Y} = imag(${1:Z})'''
         description: '''[matlab] Imaginary part of complex number
         Y = imag(Z)
         '''

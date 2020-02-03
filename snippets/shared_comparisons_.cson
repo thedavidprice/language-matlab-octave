@@ -3,7 +3,7 @@
 
     "comparisons.Comparison.publish [shared]":
         prefix: "comparisons.Comparison.publish"
-        body: '''${1:file} = comparisons.Comparison.publish(${1:comparison}, 'Format', ${2:value}, 'Name', ${3:value}, 'OutputFolder', ${4:value}, ${5:optional_options})'''
+        body: '''${6:file} = comparisons.Comparison.publish(${1:comparison}, 'Format', ${2:value}, 'Name', ${3:value}, 'OutputFolder', ${4:value}, ${5:optional_options})'''
         description: '''[shared] 
         file = comparisons.Comparison.publish(comparison, 'Format', value, 'Name', value, 'OutputFolder', value, optional_options)
         '''

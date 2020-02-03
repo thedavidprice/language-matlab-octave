@@ -12,7 +12,7 @@
 
     "boxLabelDatastore.readall [vision]":
         prefix: "boxLabelDatastore.readall"
-        body: '''${1:data} = boxLabelDatastore.readall(${1:blds})'''
+        body: '''${2:data} = boxLabelDatastore.readall(${1:blds})'''
         description: '''[vision] 
         data = boxLabelDatastore.readall(blds)
         '''
@@ -539,7 +539,7 @@ images
 
     "boxLabelDatastore.countEachLabel [vision]":
         prefix: "boxLabelDatastore.countEachLabel"
-        body: '''${1:TBL} = boxLabelDatastore.countEachLabel(${1:blds})'''
+        body: '''${2:TBL} = boxLabelDatastore.countEachLabel(${1:blds})'''
         description: '''[vision] 
         TBL = boxLabelDatastore.countEachLabel(blds)
         '''
@@ -1099,7 +1099,7 @@ images
 
     "boxLabelDatastore.read [vision]":
         prefix: "boxLabelDatastore.read"
-        body: '''[${1:data}, ${2:info}] = boxLabelDatastore.read(${1:blds})'''
+        body: '''[${2:data}, ${3:info}] = boxLabelDatastore.read(${1:blds})'''
         description: '''[vision] 
         [data, info] = boxLabelDatastore.read(blds)
         '''
@@ -1153,7 +1153,7 @@ images
 
     "boxLabelDatastore [vision]":
         prefix: "boxLabelDatastore"
-        body: '''${1:blds} = boxLabelDatastore(${1:TBL})'''
+        body: '''${2:blds} = boxLabelDatastore(${1:TBL})'''
         description: '''[vision] Datastore for bounding box label data
         blds = boxLabelDatastore(TBL)
         '''
@@ -1180,7 +1180,7 @@ images
 
     "boxLabelDatastore.numpartitions [vision]":
         prefix: "boxLabelDatastore.numpartitions"
-        body: '''${1:N} = boxLabelDatastore.numpartitions(${1:blds}, ${2:optional_pool})'''
+        body: '''${3:N} = boxLabelDatastore.numpartitions(${1:blds}, ${2:optional_pool})'''
         description: '''[vision] 
         N = boxLabelDatastore.numpartitions(blds, optional_pool)
         '''
@@ -1409,7 +1409,7 @@ poses
 
     "boxLabelDatastore.partition [vision]":
         prefix: "boxLabelDatastore.partition"
-        body: '''${1:subds} = boxLabelDatastore.partition(${1:blds}, ${2:N}, ${3:index})'''
+        body: '''${4:subds} = boxLabelDatastore.partition(${1:blds}, ${2:N}, ${3:index})'''
         description: '''[vision] 
         subds = boxLabelDatastore.partition(blds, N, index)
         '''
@@ -1527,7 +1527,7 @@ images
 
     "evaluateSemanticSegmentation [vision]":
         prefix: "evaluateSemanticSegmentation"
-        body: '''${1:metrics} = evaluateSemanticSegmentation(${1:pxdsResults}, ${2:pxdsTruth}, 'Metrics', ${3:value}, 'Verbose', ${4:value})'''
+        body: '''${5:metrics} = evaluateSemanticSegmentation(${1:pxdsResults}, ${2:pxdsTruth}, 'Metrics', ${3:value}, 'Verbose', ${4:value})'''
         description: '''[vision] Evaluate semantic segmentation data set against ground truth
         metrics = evaluateSemanticSegmentation(pxdsResults, pxdsTruth, 'Metrics', value, 'Verbose', value)
         '''
@@ -2078,7 +2078,7 @@ images
 
     "boxLabelDatastore.hasdata [vision]":
         prefix: "boxLabelDatastore.hasdata"
-        body: '''${1:TF} = boxLabelDatastore.hasdata(${1:blds})'''
+        body: '''${2:TF} = boxLabelDatastore.hasdata(${1:blds})'''
         description: '''[vision] 
         TF = boxLabelDatastore.hasdata(blds)
         '''

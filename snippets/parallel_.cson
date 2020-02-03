@@ -3,7 +3,7 @@
 
     "batch [parallel]":
         prefix: "batch"
-        body: '''${1:j} = batch(${1:aScript}, 'AdditionalPaths', ${2:value}, 'AttachedFiles', ${3:value}, 'AutoAddClientPath', ${4:value}, 'AutoAttachFiles', ${5:value}, 'CaptureDiary', ${6:value}, 'CurrentFolder', ${7:value}, 'EnvironmentVariables', ${8:value}, 'Pool', ${9:value}, 'Profile', ${10:value}, 'Workspace', ${11:value})'''
+        body: '''${12:j} = batch(${1:aScript}, 'AdditionalPaths', ${2:value}, 'AttachedFiles', ${3:value}, 'AutoAddClientPath', ${4:value}, 'AutoAttachFiles', ${5:value}, 'CaptureDiary', ${6:value}, 'CurrentFolder', ${7:value}, 'EnvironmentVariables', ${8:value}, 'Pool', ${9:value}, 'Profile', ${10:value}, 'Workspace', ${11:value})'''
         description: '''[parallel] Run MATLAB script or function on worker
         j = batch(aScript, 'AdditionalPaths', value, 'AttachedFiles', value, 'AutoAddClientPath', value, 'AutoAttachFiles', value, 'CaptureDiary', value, 'CurrentFolder', value, 'EnvironmentVariables', value, 'Pool', value, 'Profile', value, 'Workspace', value)
         '''
@@ -12,7 +12,7 @@
 
     "pctconfig [parallel]":
         prefix: "pctconfig"
-        body: '''${1:config} = pctconfig('hostname', ${1:value}, 'portrange', ${2:value})'''
+        body: '''${3:config} = pctconfig('hostname', ${1:value}, 'portrange', ${2:value})'''
         description: '''[parallel] Configure settings for Parallel
             Computing Toolbox client session
         config = pctconfig('hostname', value, 'portrange', value)

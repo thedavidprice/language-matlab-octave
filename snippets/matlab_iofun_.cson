@@ -12,7 +12,7 @@
 
     "matfile [matlab]":
         prefix: "matfile"
-        body: '''${1:m} = matfile(${1:filename}, 'Writable', ${2:value})'''
+        body: '''${3:m} = matfile(${1:filename}, 'Writable', ${2:value})'''
         description: '''[matlab] Access and change variables in MAT-file without loading file into
       memory
         m = matfile(filename, 'Writable', value)
@@ -22,7 +22,7 @@
 
     "xslt [matlab]":
         prefix: "xslt"
-        body: '''${1:result} = xslt(${1:source}, ${2:style}, ${3:dest}, ${4:optional_'-web'})'''
+        body: '''${5:result} = xslt(${1:source}, ${2:style}, ${3:dest}, ${4:optional_'-web'})'''
         description: '''[matlab] Transform XML document using XSLT engine
         result = xslt(source, style, dest, optional_'-web')
         '''
@@ -40,7 +40,7 @@
 
     "timerfind [matlab]":
         prefix: "timerfind"
-        body: '''${1:out} = timerfind(${1:optional_t}, ${2:optional_S}, 'BusyMode', ${3:value}, 'ErrorFcn', ${4:value}, 'ExecutionMode', ${5:value}, 'Name', ${6:value}, 'ObjectVisibility', ${7:value}, 'Period', ${8:value}, 'StartDelay', ${9:value}, 'StartFcn', ${10:value}, 'StopFcn', ${11:value}, 'Tag', ${12:value}, 'TasksToExecute', ${13:value}, 'TimerFcn', ${14:value}, 'UserData', ${15:value})'''
+        body: '''${16:out} = timerfind(${1:optional_t}, ${2:optional_S}, 'BusyMode', ${3:value}, 'ErrorFcn', ${4:value}, 'ExecutionMode', ${5:value}, 'Name', ${6:value}, 'ObjectVisibility', ${7:value}, 'Period', ${8:value}, 'StartDelay', ${9:value}, 'StartFcn', ${10:value}, 'StopFcn', ${11:value}, 'Tag', ${12:value}, 'TasksToExecute', ${13:value}, 'TimerFcn', ${14:value}, 'UserData', ${15:value})'''
         description: '''[matlab] Find timer object
         out = timerfind(optional_t, optional_S, 'BusyMode', value, 'ErrorFcn', value, 'ExecutionMode', value, 'Name', value, 'ObjectVisibility', value, 'Period', value, 'StartDelay', value, 'StartFcn', value, 'StopFcn', value, 'Tag', value, 'TasksToExecute', value, 'TimerFcn', value, 'UserData', value)
         '''
@@ -58,7 +58,7 @@
 
     "textscan [matlab]":
         prefix: "textscan"
-        body: '''[${1:C}, ${2:position}] = textscan(${1:source}, ${2:formatSpec}, ${3:optional_N}, 'CollectOutput', ${4:value}, 'CommentStyle', ${5:value}, 'DateLocale', ${6:value}, 'Delimiter', ${7:value}, 'EmptyValue', ${8:value}, 'EndOfLine', ${9:value}, 'ExpChars', ${10:value}, 'HeaderLines', ${11:value}, 'MultipleDelimsAsOne', ${12:value}, 'ReturnOnError', ${13:value}, 'TreatAsEmpty', ${14:value}, 'Whitespace', ${15:value}, 'TextType', ${16:value})'''
+        body: '''[${17:C}, ${18:position}] = textscan(${1:source}, ${2:formatSpec}, ${3:optional_N}, 'CollectOutput', ${4:value}, 'CommentStyle', ${5:value}, 'DateLocale', ${6:value}, 'Delimiter', ${7:value}, 'EmptyValue', ${8:value}, 'EndOfLine', ${9:value}, 'ExpChars', ${10:value}, 'HeaderLines', ${11:value}, 'MultipleDelimsAsOne', ${12:value}, 'ReturnOnError', ${13:value}, 'TreatAsEmpty', ${14:value}, 'Whitespace', ${15:value}, 'TextType', ${16:value})'''
         description: '''[matlab] Read formatted data from text file or string
         [C, position] = textscan(source, formatSpec, optional_N, 'CollectOutput', value, 'CommentStyle', value, 'DateLocale', value, 'Delimiter', value, 'EmptyValue', value, 'EndOfLine', value, 'ExpChars', value, 'HeaderLines', value, 'MultipleDelimsAsOne', value, 'ReturnOnError', value, 'TreatAsEmpty', value, 'Whitespace', value, 'TextType', value)
         '''
@@ -76,7 +76,7 @@
 
     "timer [matlab]":
         prefix: "timer"
-        body: '''${1:t} = timer('BusyMode', ${1:value}, 'ErrorFcn', ${2:value}, 'ExecutionMode', ${3:value}, 'Name', ${4:value}, 'ObjectVisibility', ${5:value}, 'Period', ${6:value}, 'StartDelay', ${7:value}, 'StartFcn', ${8:value}, 'StopFcn', ${9:value}, 'Tag', ${10:value}, 'TasksToExecute', ${11:value}, 'TimerFcn', ${12:value}, 'UserData', ${13:value})'''
+        body: '''${14:t} = timer('BusyMode', ${1:value}, 'ErrorFcn', ${2:value}, 'ExecutionMode', ${3:value}, 'Name', ${4:value}, 'ObjectVisibility', ${5:value}, 'Period', ${6:value}, 'StartDelay', ${7:value}, 'StartFcn', ${8:value}, 'StopFcn', ${9:value}, 'Tag', ${10:value}, 'TasksToExecute', ${11:value}, 'TimerFcn', ${12:value}, 'UserData', ${13:value})'''
         description: '''[matlab] Create object to schedule execution of MATLAB commands
         t = timer('BusyMode', value, 'ErrorFcn', value, 'ExecutionMode', value, 'Name', value, 'ObjectVisibility', value, 'Period', value, 'StartDelay', value, 'StartFcn', value, 'StopFcn', value, 'Tag', value, 'TasksToExecute', value, 'TimerFcn', value, 'UserData', value)
         '''
@@ -94,7 +94,7 @@
 
     "fileread [matlab]":
         prefix: "fileread"
-        body: '''${1:text} = fileread(${1:filename})'''
+        body: '''${2:text} = fileread(${1:filename})'''
         description: '''[matlab] Read contents of file as text
         text = fileread(filename)
         '''
@@ -103,7 +103,7 @@
 
     "feof [matlab]":
         prefix: "feof"
-        body: '''${1:status} = feof(${1:fileID})'''
+        body: '''${2:status} = feof(${1:fileID})'''
         description: '''[matlab] Test for end of file
         status = feof(fileID)
         '''
@@ -112,7 +112,7 @@
 
     "fseek [matlab]":
         prefix: "fseek"
-        body: '''${1:status} = fseek(${1:fileID}, ${2:offset}, ${3:origin})'''
+        body: '''${4:status} = fseek(${1:fileID}, ${2:offset}, ${3:origin})'''
         description: '''[matlab] Move to specified position in file
         status = fseek(fileID, offset, origin)
         '''
@@ -130,7 +130,7 @@
 
     "xmlwrite [matlab]":
         prefix: "xmlwrite"
-        body: '''${1:chr} = xmlwrite(${1:DOMnode})'''
+        body: '''${2:chr} = xmlwrite(${1:DOMnode})'''
         description: '''[matlab] Write XML Document Object Model node
         chr = xmlwrite(DOMnode)
         '''
@@ -139,7 +139,7 @@
 
     "xlsread [matlab]":
         prefix: "xlsread"
-        body: '''[${1:num}, ${2:txt}, ${3:raw}, ${4:custom}] = xlsread(${1:filename}, ${2:-1})'''
+        body: '''[${3:num}, ${4:txt}, ${5:raw}, ${6:custom}] = xlsread(${1:filename}, ${2:-1})'''
         description: '''[matlab] (Not recommended) Read Microsoft
             Excel spreadsheet file
         [num, txt, raw, custom] = xlsread(filename, -1)
@@ -149,7 +149,7 @@
 
     "fgetl [matlab]":
         prefix: "fgetl"
-        body: '''${1:tline} = fgetl(${1:fileID})'''
+        body: '''${2:tline} = fgetl(${1:fileID})'''
         description: '''[matlab] Read line of text from instrument and discard terminator
         tline = fgetl(fileID)
         '''
@@ -158,7 +158,7 @@
 
     "fwrite [matlab]":
         prefix: "fwrite"
-        body: '''${1:count} = fwrite(${1:fileID}, ${2:A}, ${3:precision}, ${4:skip}, ${5:machinefmt})'''
+        body: '''${6:count} = fwrite(${1:fileID}, ${2:A}, ${3:precision}, ${4:skip}, ${5:machinefmt})'''
         description: '''[matlab] Write binary data to instrument
         count = fwrite(fileID, A, precision, skip, machinefmt)
         '''
@@ -176,7 +176,7 @@
 
     "readmatrix [matlab]":
         prefix: "readmatrix"
-        body: '''${1:A} = readmatrix(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})'''
+        body: '''${5:A} = readmatrix(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})'''
         description: '''[matlab] Read matrix from file
         A = readmatrix(filename, opts, 'Sheet', value, 'UseExcel', value)
         '''
@@ -194,7 +194,7 @@
 
     "importdata [matlab]":
         prefix: "importdata"
-        body: '''[${1:A}, ${2:delimiterOut}, ${3:headerlinesOut}] = importdata(${1:filename}, ${2:delimiterIn}, ${3:optional_headerlinesIn})'''
+        body: '''[${4:A}, ${5:delimiterOut}, ${6:headerlinesOut}] = importdata(${1:filename}, ${2:delimiterIn}, ${3:optional_headerlinesIn})'''
         description: '''[matlab] Load data from file
         [A, delimiterOut, headerlinesOut] = importdata(filename, delimiterIn, optional_headerlinesIn)
         '''
@@ -212,7 +212,7 @@
 
     "readtable [matlab]":
         prefix: "readtable"
-        body: '''${1:T} = readtable(${1:filename}, ${2:opts}, 'ReadVariableNames', ${3:value}, 'ReadRowNames', ${4:value}, 'Sheet', ${5:value}, 'UseExcel', ${6:value})'''
+        body: '''${7:T} = readtable(${1:filename}, ${2:opts}, 'ReadVariableNames', ${3:value}, 'ReadRowNames', ${4:value}, 'Sheet', ${5:value}, 'UseExcel', ${6:value})'''
         description: '''[matlab] Create table from file
         T = readtable(filename, opts, 'ReadVariableNames', value, 'ReadRowNames', value, 'Sheet', value, 'UseExcel', value)
         '''
@@ -221,7 +221,7 @@
 
     "readvars [matlab]":
         prefix: "readvars"
-        body: '''${1:A} = readvars(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})'''
+        body: '''${5:A} = readvars(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})'''
         description: '''[matlab] Read variables from file
         A = readvars(filename, opts, 'Sheet', value, 'UseExcel', value)
         '''
@@ -230,7 +230,7 @@
 
     "fullfile [matlab]":
         prefix: "fullfile"
-        body: '''${1:f} = fullfile(${1:filepart})'''
+        body: '''${2:f} = fullfile(${1:filepart})'''
         description: '''[matlab] Build full file name from parts
         f = fullfile(filepart)
         '''
@@ -239,7 +239,7 @@
 
     "ftell [matlab]":
         prefix: "ftell"
-        body: '''${1:position} = ftell(${1:fileID})'''
+        body: '''${2:position} = ftell(${1:fileID})'''
         description: '''[matlab] Current position
         position = ftell(fileID)
         '''
@@ -266,7 +266,7 @@
 
     "ferror [matlab]":
         prefix: "ferror"
-        body: '''[${1:message}, ${2:errnum}] = ferror(${1:fileID}, ${2:optional_'clear'})'''
+        body: '''[${3:message}, ${4:errnum}] = ferror(${1:fileID}, ${2:optional_'clear'})'''
         description: '''[matlab] File I/O error information
         [message, errnum] = ferror(fileID, optional_'clear')
         '''
@@ -275,7 +275,7 @@
 
     "fgets [matlab]":
         prefix: "fgets"
-        body: '''${1:tline} = fgets(${1:fileID}, ${2:optional_nchar})'''
+        body: '''${3:tline} = fgets(${1:fileID}, ${2:optional_nchar})'''
         description: '''[matlab] Read line of text from instrument and include terminator
         tline = fgets(fileID, optional_nchar)
         '''
@@ -293,7 +293,7 @@
 
     "readcell [matlab]":
         prefix: "readcell"
-        body: '''${1:A} = readcell(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})'''
+        body: '''${5:A} = readcell(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})'''
         description: '''[matlab] Read cell array from file
         A = readcell(filename, opts, 'Sheet', value, 'UseExcel', value)
         '''
@@ -311,7 +311,7 @@
 
     "xlswrite [matlab]":
         prefix: "xlswrite"
-        body: '''[${1:status}, ${2:message}] = xlswrite(${1:filename}, ${2:A}, ${3:optional_sheet}, ${4:optional_xlRange})'''
+        body: '''[${5:status}, ${6:message}] = xlswrite(${1:filename}, ${2:A}, ${3:optional_sheet}, ${4:optional_xlRange})'''
         description: '''[matlab] (Not recommended) Write Microsoft Excel spreadsheet file
         [status, message] = xlswrite(filename, A, optional_sheet, optional_xlRange)
         '''
@@ -320,7 +320,7 @@
 
     "timerfindall [matlab]":
         prefix: "timerfindall"
-        body: '''${1:out} = timerfindall(${1:optional_t}, ${2:optional_S}, 'BusyMode', ${3:value}, 'ErrorFcn', ${4:value}, 'ExecutionMode', ${5:value}, 'Name', ${6:value}, 'ObjectVisibility', ${7:value}, 'Period', ${8:value}, 'StartDelay', ${9:value}, 'StartFcn', ${10:value}, 'StopFcn', ${11:value}, 'Tag', ${12:value}, 'TasksToExecute', ${13:value}, 'TimerFcn', ${14:value}, 'UserData', ${15:value})'''
+        body: '''${16:out} = timerfindall(${1:optional_t}, ${2:optional_S}, 'BusyMode', ${3:value}, 'ErrorFcn', ${4:value}, 'ExecutionMode', ${5:value}, 'Name', ${6:value}, 'ObjectVisibility', ${7:value}, 'Period', ${8:value}, 'StartDelay', ${9:value}, 'StartFcn', ${10:value}, 'StopFcn', ${11:value}, 'Tag', ${12:value}, 'TasksToExecute', ${13:value}, 'TimerFcn', ${14:value}, 'UserData', ${15:value})'''
         description: '''[matlab] Find timer object, regardless of visibility
         out = timerfindall(optional_t, optional_S, 'BusyMode', value, 'ErrorFcn', value, 'ExecutionMode', value, 'Name', value, 'ObjectVisibility', value, 'Period', value, 'StartDelay', value, 'StartFcn', value, 'StopFcn', value, 'Tag', value, 'TasksToExecute', value, 'TimerFcn', value, 'UserData', value)
         '''
@@ -338,7 +338,7 @@
 
     "xlsfinfo [matlab]":
         prefix: "xlsfinfo"
-        body: '''[${1:status}, ${2:sheets}, ${3:xlFormat}] = xlsfinfo(${1:filename})'''
+        body: '''[${2:status}, ${3:sheets}, ${4:xlFormat}] = xlsfinfo(${1:filename})'''
         description: '''[matlab] (Not recommended) Determine if file contains Microsoft
             Excel spreadsheet
         [status, sheets, xlFormat] = xlsfinfo(filename)
@@ -357,7 +357,7 @@
 
     "fclose [matlab]":
         prefix: "fclose"
-        body: '''${1:status} = fclose(${1:'all'})'''
+        body: '''${2:status} = fclose(${1:'all'})'''
         description: '''[matlab] Disconnect interface object from instrument
         status = fclose('all')
         '''
@@ -366,7 +366,7 @@
 
     "readtimetable [matlab]":
         prefix: "readtimetable"
-        body: '''${1:A} = readtimetable(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value}, 'ReadVariableNames', ${5:value}, 'RowTimes', ${6:value}, 'SampleRate', ${7:value}, 'StartTime', ${8:value}, 'TimeStep', ${9:value})'''
+        body: '''${10:A} = readtimetable(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value}, 'ReadVariableNames', ${5:value}, 'RowTimes', ${6:value}, 'SampleRate', ${7:value}, 'StartTime', ${8:value}, 'TimeStep', ${9:value})'''
         description: '''[matlab] Create timetable from file
         A = readtimetable(filename, opts, 'Sheet', value, 'UseExcel', value, 'ReadVariableNames', value, 'RowTimes', value, 'SampleRate', value, 'StartTime', value, 'TimeStep', value)
         '''
@@ -394,7 +394,7 @@
 
     "fscanf [matlab]":
         prefix: "fscanf"
-        body: '''[${1:A}, ${2:count}] = fscanf(${1:fileID}, ${2:formatSpec}, ${3:optional_sizeA})'''
+        body: '''[${4:A}, ${5:count}] = fscanf(${1:fileID}, ${2:formatSpec}, ${3:optional_sizeA})'''
         description: '''[matlab] Read data from instrument, and format as text
         [A, count] = fscanf(fileID, formatSpec, optional_sizeA)
         '''
@@ -403,7 +403,7 @@
 
     "fopen [matlab]":
         prefix: "fopen"
-        body: '''${1:fIDs} = fopen(${1:'all'})'''
+        body: '''${2:fIDs} = fopen(${1:'all'})'''
         description: '''[matlab] Connect interface object to instrument
         fIDs = fopen('all')
         '''
@@ -421,7 +421,7 @@
 
     "fprintf [matlab]":
         prefix: "fprintf"
-        body: '''${1:nbytes} = fprintf(${1:optional_fileID}, ${2:formatSpec}, ${3:A})'''
+        body: '''${4:nbytes} = fprintf(${1:optional_fileID}, ${2:formatSpec}, ${3:A})'''
         description: '''[matlab] Write text to instrument
         nbytes = fprintf(optional_fileID, formatSpec, A)
         '''
@@ -430,7 +430,7 @@
 
     "fread [matlab]":
         prefix: "fread"
-        body: '''[${1:A}, ${2:count}] = fread(${1:fileID}, ${2:sizeA}, ${3:precision}, ${4:skip}, ${5:machinefmt})'''
+        body: '''[${6:A}, ${7:count}] = fread(${1:fileID}, ${2:sizeA}, ${3:precision}, ${4:skip}, ${5:machinefmt})'''
         description: '''[matlab] Read binary data from instrument
         [A, count] = fread(fileID, sizeA, precision, skip, machinefmt)
         '''

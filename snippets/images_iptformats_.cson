@@ -3,7 +3,7 @@
 
     "dicomCollection [images]":
         prefix: "dicomCollection"
-        body: '''${1:collection} = dicomCollection(${1:source}, 'IncludeSubfolders', ${2:value})'''
+        body: '''${3:collection} = dicomCollection(${1:source}, 'IncludeSubfolders', ${2:value})'''
         description: '''[images] Gather details about related series of DICOM files
         collection = dicomCollection(source, 'IncludeSubfolders', value)
         '''
@@ -12,7 +12,7 @@
 
     "camresponse [images]":
         prefix: "camresponse"
-        body: '''${1:crf} = camresponse(${1:filenames}, 'ExposureTimes', ${2:value})'''
+        body: '''${3:crf} = camresponse(${1:filenames}, 'ExposureTimes', ${2:value})'''
         description: '''[images] Estimate camera response function 
         crf = camresponse(filenames, 'ExposureTimes', value)
         '''
@@ -21,7 +21,7 @@
 
     "tonemap [images]":
         prefix: "tonemap"
-        body: '''${1:RGB} = tonemap(${1:HDR}, 'AdjustLightness', ${2:value}, 'AdjustSaturation', ${3:value}, 'NumberOfTiles', ${4:value})'''
+        body: '''${5:RGB} = tonemap(${1:HDR}, 'AdjustLightness', ${2:value}, 'AdjustSaturation', ${3:value}, 'NumberOfTiles', ${4:value})'''
         description: '''[images] Render high dynamic range image for viewing
         RGB = tonemap(HDR, 'AdjustLightness', value, 'AdjustSaturation', value, 'NumberOfTiles', value)
         '''
@@ -30,7 +30,7 @@
 
     "makehdr [images]":
         prefix: "makehdr"
-        body: '''${1:HDR} = makehdr(${1:files}, 'BaseFile', ${2:value}, 'MinimumLimit', ${3:value}, 'MaximumLimit', ${4:value})'''
+        body: '''${5:HDR} = makehdr(${1:files}, 'BaseFile', ${2:value}, 'MinimumLimit', ${3:value}, 'MaximumLimit', ${4:value})'''
         description: '''[images] Create high dynamic range image
         HDR = makehdr(files, 'BaseFile', value, 'MinimumLimit', value, 'MaximumLimit', value)
         '''
@@ -39,7 +39,7 @@
 
     "images.internal.dicom.DICOMFile [images]":
         prefix: "images.internal.dicom.DICOMFile"
-        body: '''${1:obj} = images.internal.dicom.DICOMFile(${1:filename})'''
+        body: '''${2:obj} = images.internal.dicom.DICOMFile(${1:filename})'''
         description: '''[images] 
         obj = images.internal.dicom.DICOMFile(filename)
         '''
@@ -48,7 +48,7 @@
 
     "dicomreadVolume [images]":
         prefix: "dicomreadVolume"
-        body: '''[${1:V}, ${2:spatial}, ${3:dim}] = dicomreadVolume(${1:source}, ${2:RowName}, 'MakeIsotropic', ${3:value})'''
+        body: '''[${4:V}, ${5:spatial}, ${6:dim}] = dicomreadVolume(${1:source}, ${2:RowName}, 'MakeIsotropic', ${3:value})'''
         description: '''[images] Construct 4-D volume from set of DICOM images
         [V, spatial, dim] = dicomreadVolume(source, RowName, 'MakeIsotropic', value)
         '''
@@ -57,7 +57,7 @@
 
     "bigimage [images]":
         prefix: "bigimage"
-        body: '''${1:obj} = bigimage(${1:source}, 'ClassNames', ${2:value}, 'PixelLabelIDs', ${3:value}, 'BlockSize', ${4:value}, 'SpatialReferencing', ${5:value}, 'UnloadedValue', ${6:value})'''
+        body: '''${7:obj} = bigimage(${1:source}, 'ClassNames', ${2:value}, 'PixelLabelIDs', ${3:value}, 'BlockSize', ${4:value}, 'SpatialReferencing', ${5:value}, 'UnloadedValue', ${6:value})'''
         description: '''[images] Out-of-core processing of very large images
         obj = bigimage(source, 'ClassNames', value, 'PixelLabelIDs', value, 'BlockSize', value, 'SpatialReferencing', value, 'UnloadedValue', value)
         '''
@@ -66,7 +66,7 @@
 
     "nitfread [images]":
         prefix: "nitfread"
-        body: '''${1:x} = nitfread(${1:filename}, ${2:optional_idx}, 'PixelRegion', ${3:value})'''
+        body: '''${4:x} = nitfread(${1:filename}, ${2:optional_idx}, 'PixelRegion', ${3:value})'''
         description: '''[images] Read image from NITF file
         x = nitfread(filename, optional_idx, 'PixelRegion', value)
         '''
@@ -75,7 +75,7 @@
 
     "images.dicom.parseDICOMDIR [images]":
         prefix: "images.dicom.parseDICOMDIR"
-        body: '''${1:details} = images.dicom.parseDICOMDIR(${1:filename})'''
+        body: '''${2:details} = images.dicom.parseDICOMDIR(${1:filename})'''
         description: '''[images] Extract metadata from DICOMDIR file
         details = images.dicom.parseDICOMDIR(filename)
         '''
@@ -84,7 +84,7 @@
 
     "bigimageDatastore [images]":
         prefix: "bigimageDatastore"
-        body: '''${1:obj} = bigimageDatastore(${1:BIGIMAGES}, ${2:LEVELS}, 'ReadSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOffsets', ${5:value}, 'Masks', ${6:value}, 'InclusionThreshold', ${7:value}, 'IncompleteBlocks', ${8:value})'''
+        body: '''${9:obj} = bigimageDatastore(${1:BIGIMAGES}, ${2:LEVELS}, 'ReadSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOffsets', ${5:value}, 'Masks', ${6:value}, 'InclusionThreshold', ${7:value}, 'IncompleteBlocks', ${8:value})'''
         description: '''[images] Datastore to manage blocks of big image data
         obj = bigimageDatastore(BIGIMAGES, LEVELS, 'ReadSize', value, 'BlockSize', value, 'BlockOffsets', value, 'Masks', value, 'InclusionThreshold', value, 'IncompleteBlocks', value)
         '''
@@ -93,7 +93,7 @@
 
     "niftiwrite [images]":
         prefix: "niftiwrite"
-        body: '''${1:status} = niftiwrite(${1:V}, ${2:filename}, ${3:optional_info}, 'Combined', ${4:value}, 'Compressed', ${5:value}, 'Endian', ${6:value}, 'Version', ${7:value})'''
+        body: '''${8:status} = niftiwrite(${1:V}, ${2:filename}, ${3:optional_info}, 'Combined', ${4:value}, 'Compressed', ${5:value}, 'Endian', ${6:value}, 'Version', ${7:value})'''
         description: '''[images] Write volume to file using NIfTI format
         status = niftiwrite(V, filename, optional_info, 'Combined', value, 'Compressed', value, 'Endian', value, 'Version', value)
         '''
@@ -102,7 +102,7 @@
 
     "niftiread [images]":
         prefix: "niftiread"
-        body: '''${1:V} = niftiread(${1:hdrfilename}, ${2:imgfilename})'''
+        body: '''${3:V} = niftiread(${1:hdrfilename}, ${2:imgfilename})'''
         description: '''[images] Read NIfTI image
         V = niftiread(hdrfilename, imgfilename)
         '''
@@ -111,7 +111,7 @@
 
     "nitfinfo [images]":
         prefix: "nitfinfo"
-        body: '''${1:metadata} = nitfinfo(${1:filename})'''
+        body: '''${2:metadata} = nitfinfo(${1:filename})'''
         description: '''[images] Read metadata from National Imagery Transmission Format (NITF) file
         metadata = nitfinfo(filename)
         '''
@@ -120,7 +120,7 @@
 
     "niftiinfo [images]":
         prefix: "niftiinfo"
-        body: '''${1:info} = niftiinfo(${1:filename})'''
+        body: '''${2:info} = niftiinfo(${1:filename})'''
         description: '''[images] Read metadata from NIfTI file
         info = niftiinfo(filename)
         '''
@@ -129,7 +129,7 @@
 
     "images.dicom.decodeUID [images]":
         prefix: "images.dicom.decodeUID"
-        body: '''${1:details} = images.dicom.decodeUID(${1:UID})'''
+        body: '''${2:details} = images.dicom.decodeUID(${1:UID})'''
         description: '''[images] Get information about DICOM unique identifier
         details = images.dicom.decodeUID(UID)
         '''

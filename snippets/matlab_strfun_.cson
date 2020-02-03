@@ -3,7 +3,7 @@
 
     "strings [matlab]":
         prefix: "strings"
-        body: '''${1:str} = strings(${1:optional_n})'''
+        body: '''${2:str} = strings(${1:optional_n})'''
         description: '''[matlab] Create string array with no characters
         str = strings(optional_n)
         '''
@@ -12,7 +12,7 @@
 
     "int2str [matlab]":
         prefix: "int2str"
-        body: '''${1:str} = int2str(${1:N})'''
+        body: '''${2:str} = int2str(${1:N})'''
         description: '''[matlab] Convert integers to characters
         str = int2str(N)
         '''
@@ -21,7 +21,7 @@
 
     "string.splitlines [matlab]":
         prefix: "string.splitlines"
-        body: '''${1:newStr} = string.splitlines(${1:str})'''
+        body: '''${2:newStr} = string.splitlines(${1:str})'''
         description: '''[matlab] 
         newStr = string.splitlines(str)
         '''
@@ -30,7 +30,7 @@
 
     "regexprep [matlab]":
         prefix: "regexprep"
-        body: '''${1:newStr} = regexprep(${1:str}, ${2:expression}, ${3:replace}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing})'''
+        body: '''${11:newStr} = regexprep(${1:str}, ${2:expression}, ${3:replace}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing})'''
         description: '''[matlab] Replace text using regular expression
         newStr = regexprep(str, expression, replace, optMatch, optWarnings, optCase, optEmptyMatch, optDotAll, optStringAnchors, optSpacing)
         '''
@@ -39,7 +39,7 @@
 
     "sprintf [matlab]":
         prefix: "sprintf"
-        body: '''[${1:str}, ${2:errmsg}] = sprintf(${1:formatSpec}, ${2:A})'''
+        body: '''[${3:str}, ${4:errmsg}] = sprintf(${1:formatSpec}, ${2:A})'''
         description: '''[matlab] Format data into string or character vector
         [str, errmsg] = sprintf(formatSpec, A)
         '''
@@ -48,7 +48,7 @@
 
     "string.pad [matlab]":
         prefix: "string.pad"
-        body: '''${1:tf} = string.pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
+        body: '''${5:tf} = string.pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
         description: '''[matlab] 
         tf = string.pad(str, optional_width, side, padCharacter)
         '''
@@ -57,7 +57,7 @@
 
     "native2unicode [matlab]":
         prefix: "native2unicode"
-        body: '''${1:unicodestr} = native2unicode(${1:bytes}, ${2:optional_encoding})'''
+        body: '''${3:unicodestr} = native2unicode(${1:bytes}, ${2:optional_encoding})'''
         description: '''[matlab] Convert numeric bytes to Unicode character representation
         unicodestr = native2unicode(bytes, optional_encoding)
         '''
@@ -66,7 +66,7 @@
 
     "extractBefore [matlab]":
         prefix: "extractBefore"
-        body: '''${1:newStr} = extractBefore(${1:str}, ${2:matchStr})'''
+        body: '''${3:newStr} = extractBefore(${1:str}, ${2:matchStr})'''
         description: '''[matlab] Extract substrings before specified positions
         newStr = extractBefore(str, matchStr)
         '''
@@ -75,7 +75,7 @@
 
     "string.insertAfter [matlab]":
         prefix: "string.insertAfter"
-        body: '''${1:newStr} = string.insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
+        body: '''${4:newStr} = string.insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
         description: '''[matlab] 
         newStr = string.insertAfter(str, startStr, newText)
         '''
@@ -84,7 +84,7 @@
 
     "split [matlab]":
         prefix: "split"
-        body: '''[${1:newStr}, ${2:matches}] = split(${1:str}, ${2:delimiter}, ${3:dim})'''
+        body: '''[${4:newStr}, ${5:matches}] = split(${1:str}, ${2:delimiter}, ${3:dim})'''
         description: '''[matlab] Split calendar duration into numeric and duration units
         [newStr, matches] = split(str, delimiter, dim)
         '''
@@ -93,7 +93,7 @@
 
     "endsWith [matlab]":
         prefix: "endsWith"
-        body: '''${1:tf} = endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:tf} = endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] Determine if strings end with pattern
         tf = endsWith(str, pattern, 'IgnoreCase', value)
         '''
@@ -102,7 +102,7 @@
 
     "strfind [matlab]":
         prefix: "strfind"
-        body: '''${1:k} = strfind(${1:text}, ${2:pattern}, 'ForceCellOutput', ${3:value})'''
+        body: '''${4:k} = strfind(${1:text}, ${2:pattern}, 'ForceCellOutput', ${3:value})'''
         description: '''[matlab] Find strings within other strings
         k = strfind(text, pattern, 'ForceCellOutput', value)
         '''
@@ -111,7 +111,7 @@
 
     "strncmpi [matlab]":
         prefix: "strncmpi"
-        body: '''${1:tf} = strncmpi(${1:C}, ${2:C}, ${3:n})'''
+        body: '''${4:tf} = strncmpi(${1:C}, ${2:C}, ${3:n})'''
         description: '''[matlab] Compare first n characters of strings
 (case insensitive)
         tf = strncmpi(C, C, n)
@@ -121,7 +121,7 @@
 
     "strsplit [matlab]":
         prefix: "strsplit"
-        body: '''[${1:C}, ${2:matches}] = strsplit(${1:str}, ${2:delimiter}, 'CollapseDelimiters', ${3:value}, 'DelimiterType', ${4:value})'''
+        body: '''[${5:C}, ${6:matches}] = strsplit(${1:str}, ${2:delimiter}, 'CollapseDelimiters', ${3:value}, 'DelimiterType', ${4:value})'''
         description: '''[matlab] Split string or character vector at specified delimiter
         [C, matches] = strsplit(str, delimiter, 'CollapseDelimiters', value, 'DelimiterType', value)
         '''
@@ -130,7 +130,7 @@
 
     "insertBefore [matlab]":
         prefix: "insertBefore"
-        body: '''${1:newStr} = insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
+        body: '''${4:newStr} = insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
         description: '''[matlab] Insert strings before specified substrings
         newStr = insertBefore(str, endStr, newText)
         '''
@@ -139,7 +139,7 @@
 
     "string.replace [matlab]":
         prefix: "string.replace"
-        body: '''${1:newStr} = string.replace(${1:str}, ${2:old}, ${3:new})'''
+        body: '''${4:newStr} = string.replace(${1:str}, ${2:old}, ${3:new})'''
         description: '''[matlab] 
         newStr = string.replace(str, old, new)
         '''
@@ -148,7 +148,7 @@
 
     "strjoin [matlab]":
         prefix: "strjoin"
-        body: '''${1:str} = strjoin(${1:C}, ${2:optional_delimiter})'''
+        body: '''${3:str} = strjoin(${1:C}, ${2:optional_delimiter})'''
         description: '''[matlab] Join strings in array
         str = strjoin(C, optional_delimiter)
         '''
@@ -157,7 +157,7 @@
 
     "pad [matlab]":
         prefix: "pad"
-        body: '''${1:tf} = pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
+        body: '''${5:tf} = pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
         description: '''[matlab] Add leading or trailing characters to strings
         tf = pad(str, optional_width, side, padCharacter)
         '''
@@ -166,7 +166,7 @@
 
     "contains [matlab]":
         prefix: "contains"
-        body: '''${1:tf} = contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:tf} = contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] Determine if image contains points in world coordinate system
         tf = contains(str, pattern, 'IgnoreCase', value)
         '''
@@ -175,7 +175,7 @@
 
     "regexpi [matlab]":
         prefix: "regexpi"
-        body: '''[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexpi(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
+        body: '''[${12:out1}, ${13:out2}, ${14:out3}, ${15:out4}, ${16:out5}, ${17:out6}, ${18:out7}] = regexpi(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
         description: '''[matlab] Match regular expression (case insensitive)
         [out1, out2, out3, out4, out5, out6, out7] = regexpi(str, expression, outkeys, optMatch, optWarnings, optCase, optEmptyMatch, optDotAll, optStringAnchors, optSpacing, optForceCell)
         '''
@@ -184,7 +184,7 @@
 
     "deblank [matlab]":
         prefix: "deblank"
-        body: '''${1:newTxt} = deblank(${1:txt})'''
+        body: '''${2:newTxt} = deblank(${1:txt})'''
         description: '''[matlab] Remove trailing whitespace from ends of strings
         newTxt = deblank(txt)
         '''
@@ -193,7 +193,7 @@
 
     "strncmp [matlab]":
         prefix: "strncmp"
-        body: '''${1:tf} = strncmp(${1:C}, ${2:C}, ${3:n})'''
+        body: '''${4:tf} = strncmp(${1:C}, ${2:C}, ${3:n})'''
         description: '''[matlab] Compare first n characters of strings
 (case sensitive)
         tf = strncmp(C, C, n)
@@ -203,7 +203,7 @@
 
     "extractAfter [matlab]":
         prefix: "extractAfter"
-        body: '''${1:newStr} = extractAfter(${1:str}, ${2:matchStr})'''
+        body: '''${3:newStr} = extractAfter(${1:str}, ${2:matchStr})'''
         description: '''[matlab] Extract substrings after specified positions
         newStr = extractAfter(str, matchStr)
         '''
@@ -212,7 +212,7 @@
 
     "reverse [matlab]":
         prefix: "reverse"
-        body: '''${1:newStr} = reverse(${1:str})'''
+        body: '''${2:newStr} = reverse(${1:str})'''
         description: '''[matlab] Reverse order of characters in strings
         newStr = reverse(str)
         '''
@@ -221,7 +221,7 @@
 
     "str2double [matlab]":
         prefix: "str2double"
-        body: '''${1:X} = str2double(${1:str})'''
+        body: '''${2:X} = str2double(${1:str})'''
         description: '''[matlab] Convert strings to double precision values
         X = str2double(str)
         '''
@@ -230,7 +230,7 @@
 
     "strcmp [matlab]":
         prefix: "strcmp"
-        body: '''${1:tf} = strcmp(${1:s1}, ${2:s2})'''
+        body: '''${3:tf} = strcmp(${1:s1}, ${2:s2})'''
         description: '''[matlab] Compare strings
         tf = strcmp(s1, s2)
         '''
@@ -239,7 +239,7 @@
 
     "splitlines [matlab]":
         prefix: "splitlines"
-        body: '''${1:newStr} = splitlines(${1:str})'''
+        body: '''${2:newStr} = splitlines(${1:str})'''
         description: '''[matlab] Split strings at newline characters
         newStr = splitlines(str)
         '''
@@ -248,7 +248,7 @@
 
     "mat2str [matlab]":
         prefix: "mat2str"
-        body: '''${1:str} = mat2str(${1:A}, ${2:optional_n}, ${3:optional_'class'})'''
+        body: '''${4:str} = mat2str(${1:A}, ${2:optional_n}, ${3:optional_'class'})'''
         description: '''[matlab] Convert matrix to characters
         str = mat2str(A, optional_n, optional_'class')
         '''
@@ -257,7 +257,7 @@
 
     "strtrim [matlab]":
         prefix: "strtrim"
-        body: '''${1:newTxt} = strtrim(${1:txt})'''
+        body: '''${2:newTxt} = strtrim(${1:txt})'''
         description: '''[matlab] Remove leading and trailing whitespace from strings
         newTxt = strtrim(txt)
         '''
@@ -266,7 +266,7 @@
 
     "isstring [matlab]":
         prefix: "isstring"
-        body: '''${1:tf} = isstring(${1:A})'''
+        body: '''${2:tf} = isstring(${1:A})'''
         description: '''[matlab] Determine if input is string array
         tf = isstring(A)
         '''
@@ -275,7 +275,7 @@
 
     "string.replaceBetween [matlab]":
         prefix: "string.replaceBetween"
-        body: '''${1:out} = string.replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
+        body: '''${6:out} = string.replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
         description: '''[matlab] 
         out = string.replaceBetween(str, startPosition, endPosition, replaceStr, 'Boundaries', value)
         '''
@@ -284,7 +284,7 @@
 
     "count [matlab]":
         prefix: "count"
-        body: '''${1:count} = count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:count} = count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] Count occurrences of pattern in strings
         count = count(str, pattern, 'IgnoreCase', value)
         '''
@@ -293,7 +293,7 @@
 
     "bin2dec [matlab]":
         prefix: "bin2dec"
-        body: '''${1:d} = bin2dec(${1:binarystr})'''
+        body: '''${2:d} = bin2dec(${1:binarystr})'''
         description: '''[matlab] Convert text representation of binary number to decimal number
         d = bin2dec(binarystr)
         '''
@@ -302,7 +302,7 @@
 
     "strip [matlab]":
         prefix: "strip"
-        body: '''${1:tf} = strip(${1:str}, ${2:side}, ${3:padCharacter})'''
+        body: '''${4:tf} = strip(${1:str}, ${2:side}, ${3:padCharacter})'''
         description: '''[matlab] Remove leading and trailing characters from stringS
         tf = strip(str, side, padCharacter)
         '''
@@ -311,7 +311,7 @@
 
     "isstrprop [matlab]":
         prefix: "isstrprop"
-        body: '''${1:out} = isstrprop(${1:text}, ${2:category}, 'ForceCellOutput', ${3:value})'''
+        body: '''${4:out} = isstrprop(${1:text}, ${2:category}, 'ForceCellOutput', ${3:value})'''
         description: '''[matlab] Determine which characters in input strings are of specified category
         out = isstrprop(text, category, 'ForceCellOutput', value)
         '''
@@ -320,7 +320,7 @@
 
     "string.eraseBetween [matlab]":
         prefix: "string.eraseBetween"
-        body: '''${1:count} = string.eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        body: '''${5:count} = string.eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
         description: '''[matlab] 
         count = string.eraseBetween(str, startPosition, endPosition, 'Boundaries', value)
         '''
@@ -329,7 +329,7 @@
 
     "string.extractBefore [matlab]":
         prefix: "string.extractBefore"
-        body: '''${1:newStr} = string.extractBefore(${1:str}, ${2:matchStr})'''
+        body: '''${3:newStr} = string.extractBefore(${1:str}, ${2:matchStr})'''
         description: '''[matlab] 
         newStr = string.extractBefore(str, matchStr)
         '''
@@ -338,7 +338,7 @@
 
     "strtok [matlab]":
         prefix: "strtok"
-        body: '''[${1:token}, ${2:remain}] = strtok(${1:str}, ${2:delimiter})'''
+        body: '''[${3:token}, ${4:remain}] = strtok(${1:str}, ${2:delimiter})'''
         description: '''[matlab] Selected parts of strings
         [token, remain] = strtok(str, delimiter)
         '''
@@ -347,7 +347,7 @@
 
     "base2dec [matlab]":
         prefix: "base2dec"
-        body: '''${1:d} = base2dec(${1:strn}, ${2:base})'''
+        body: '''${3:d} = base2dec(${1:strn}, ${2:base})'''
         description: '''[matlab] Convert text representing number in base N to decimal number
         d = base2dec(strn, base)
         '''
@@ -356,7 +356,7 @@
 
     "char [matlab]":
         prefix: "char"
-        body: '''${1:c} = char(${1:A})'''
+        body: '''${2:c} = char(${1:A})'''
         description: '''[matlab] Character array
         c = char(A)
         '''
@@ -365,7 +365,7 @@
 
     "strcat [matlab]":
         prefix: "strcat"
-        body: '''${1:s} = strcat(${1:s})'''
+        body: '''${2:s} = strcat(${1:s})'''
         description: '''[matlab] Concatenate strings horizontally
         s = strcat(s)
         '''
@@ -374,7 +374,7 @@
 
     "string.endsWith [matlab]":
         prefix: "string.endsWith"
-        body: '''${1:tf} = string.endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:tf} = string.endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] 
         tf = string.endsWith(str, pattern, 'IgnoreCase', value)
         '''
@@ -383,7 +383,7 @@
 
     "string.matches [matlab]":
         prefix: "string.matches"
-        body: '''${1:tf} = string.matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:tf} = string.matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] 
         tf = string.matches(str, pattern, 'IgnoreCase', value)
         '''
@@ -392,7 +392,7 @@
 
     "strjust [matlab]":
         prefix: "strjust"
-        body: '''${1:T} = strjust(${1:S}, ${2:optional_justification})'''
+        body: '''${3:T} = strjust(${1:S}, ${2:optional_justification})'''
         description: '''[matlab] Justify strings
         T = strjust(S, optional_justification)
         '''
@@ -401,7 +401,7 @@
 
     "extractBetween [matlab]":
         prefix: "extractBetween"
-        body: '''${1:out} = extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        body: '''${5:out} = extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
         description: '''[matlab] Extract substrings between start and end points
         out = extractBetween(str, startPosition, endPosition, 'Boundaries', value)
         '''
@@ -410,7 +410,7 @@
 
     "replaceBetween [matlab]":
         prefix: "replaceBetween"
-        body: '''${1:out} = replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
+        body: '''${6:out} = replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
         description: '''[matlab] Replace substrings between start and end points
         out = replaceBetween(str, startPosition, endPosition, replaceStr, 'Boundaries', value)
         '''
@@ -419,7 +419,7 @@
 
     "string.contains [matlab]":
         prefix: "string.contains"
-        body: '''${1:tf} = string.contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:tf} = string.contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] 
         tf = string.contains(str, pattern, 'IgnoreCase', value)
         '''
@@ -428,7 +428,7 @@
 
     "regexp [matlab]":
         prefix: "regexp"
-        body: '''[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexp(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
+        body: '''[${12:out1}, ${13:out2}, ${14:out3}, ${15:out4}, ${16:out5}, ${17:out6}, ${18:out7}] = regexp(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
         description: '''[matlab] Match regular expression (case sensitive)
         [out1, out2, out3, out4, out5, out6, out7] = regexp(str, expression, outkeys, optMatch, optWarnings, optCase, optEmptyMatch, optDotAll, optStringAnchors, optSpacing, optForceCell)
         '''
@@ -437,7 +437,7 @@
 
     "upper [matlab]":
         prefix: "upper"
-        body: '''${1:newTxt} = upper(${1:txt})'''
+        body: '''${2:newTxt} = upper(${1:txt})'''
         description: '''[matlab] Convert strings to uppercase
         newTxt = upper(txt)
         '''
@@ -446,7 +446,7 @@
 
     "regexptranslate [matlab]":
         prefix: "regexptranslate"
-        body: '''${1:s2} = regexptranslate(${1:type}, ${2:s1})'''
+        body: '''${3:s2} = regexptranslate(${1:type}, ${2:s1})'''
         description: '''[matlab] Translate text into regular expression
         s2 = regexptranslate(type, s1)
         '''
@@ -455,7 +455,7 @@
 
     "compose [matlab]":
         prefix: "compose"
-        body: '''${1:str} = compose(${1:txt})'''
+        body: '''${2:str} = compose(${1:txt})'''
         description: '''[matlab] Format data into multiple strings
         str = compose(txt)
         '''
@@ -464,7 +464,7 @@
 
     "lower [matlab]":
         prefix: "lower"
-        body: '''${1:newTxt} = lower(${1:txt})'''
+        body: '''${2:newTxt} = lower(${1:txt})'''
         description: '''[matlab] Convert strings to lowercase
         newTxt = lower(txt)
         '''
@@ -473,7 +473,7 @@
 
     "string.insertBefore [matlab]":
         prefix: "string.insertBefore"
-        body: '''${1:newStr} = string.insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
+        body: '''${4:newStr} = string.insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
         description: '''[matlab] 
         newStr = string.insertBefore(str, endStr, newText)
         '''
@@ -482,7 +482,7 @@
 
     "string.strip [matlab]":
         prefix: "string.strip"
-        body: '''${1:tf} = string.strip(${1:str}, ${2:side}, ${3:padCharacter})'''
+        body: '''${4:tf} = string.strip(${1:str}, ${2:side}, ${3:padCharacter})'''
         description: '''[matlab] 
         tf = string.strip(str, side, padCharacter)
         '''
@@ -491,7 +491,7 @@
 
     "cellstr [matlab]":
         prefix: "cellstr"
-        body: '''${1:c} = cellstr(${1:S})'''
+        body: '''${2:c} = cellstr(${1:S})'''
         description: '''[matlab] Convert to cell array of character vectors
         c = cellstr(S)
         '''
@@ -500,7 +500,7 @@
 
     "isspace [matlab]":
         prefix: "isspace"
-        body: '''${1:tf} = isspace(${1:str})'''
+        body: '''${2:tf} = isspace(${1:str})'''
         description: '''[matlab] Determine which characters are space characters
         tf = isspace(str)
         '''
@@ -509,7 +509,7 @@
 
     "blanks [matlab]":
         prefix: "blanks"
-        body: '''${1:c} = blanks(${1:n})'''
+        body: '''${2:c} = blanks(${1:n})'''
         description: '''[matlab] Create character array of blanks
         c = blanks(n)
         '''
@@ -518,7 +518,7 @@
 
     "isletter [matlab]":
         prefix: "isletter"
-        body: '''${1:tf} = isletter(${1:str})'''
+        body: '''${2:tf} = isletter(${1:str})'''
         description: '''[matlab] Determine which characters are letters
         tf = isletter(str)
         '''
@@ -527,7 +527,7 @@
 
     "hex2num [matlab]":
         prefix: "hex2num"
-        body: '''${1:n} = hex2num(${1:S})'''
+        body: '''${2:n} = hex2num(${1:S})'''
         description: '''[matlab] Convert IEEE hexadecimal format to double-precision number
         n = hex2num(S)
         '''
@@ -536,7 +536,7 @@
 
     "num2hex [matlab]":
         prefix: "num2hex"
-        body: '''${1:c} = num2hex(${1:X})'''
+        body: '''${2:c} = num2hex(${1:X})'''
         description: '''[matlab] Convert single- and double-precision numbers to IEEE hexadecimal format
         c = num2hex(X)
         '''
@@ -545,7 +545,7 @@
 
     "str2num [matlab]":
         prefix: "str2num"
-        body: '''[${1:x}, ${2:status}] = str2num(${1:str})'''
+        body: '''[${2:x}, ${3:status}] = str2num(${1:str})'''
         description: '''[matlab] Convert character array or string to numeric array
         [x, status] = str2num(str)
         '''
@@ -554,7 +554,7 @@
 
     "num2str [matlab]":
         prefix: "num2str"
-        body: '''${1:s} = num2str(${1:A}, ${2:formatSpec})'''
+        body: '''${3:s} = num2str(${1:A}, ${2:formatSpec})'''
         description: '''[matlab] Convert numbers to character array
         s = num2str(A, formatSpec)
         '''
@@ -563,7 +563,7 @@
 
     "string.upper [matlab]":
         prefix: "string.upper"
-        body: '''${1:newTxt} = string.upper(${1:txt})'''
+        body: '''${2:newTxt} = string.upper(${1:txt})'''
         description: '''[matlab] 
         newTxt = string.upper(txt)
         '''
@@ -572,7 +572,7 @@
 
     "string.join [matlab]":
         prefix: "string.join"
-        body: '''${1:newStr} = string.join(${1:str}, ${2:optional_delimiter}, ${3:optional_dim})'''
+        body: '''${4:newStr} = string.join(${1:str}, ${2:optional_delimiter}, ${3:optional_dim})'''
         description: '''[matlab] 
         newStr = string.join(str, optional_delimiter, optional_dim)
         '''
@@ -581,7 +581,7 @@
 
     "ischar [matlab]":
         prefix: "ischar"
-        body: '''${1:tf} = ischar(${1:A})'''
+        body: '''${2:tf} = ischar(${1:A})'''
         description: '''[matlab] Determine if input is character array
         tf = ischar(A)
         '''
@@ -590,7 +590,7 @@
 
     "startsWith [matlab]":
         prefix: "startsWith"
-        body: '''${1:tf} = startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:tf} = startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] Determine if strings start with pattern
         tf = startsWith(str, pattern, 'IgnoreCase', value)
         '''
@@ -599,7 +599,7 @@
 
     "insertAfter [matlab]":
         prefix: "insertAfter"
-        body: '''${1:newStr} = insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
+        body: '''${4:newStr} = insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
         description: '''[matlab] Insert strings after specified substrings
         newStr = insertAfter(str, startStr, newText)
         '''
@@ -608,7 +608,7 @@
 
     "iscellstr [matlab]":
         prefix: "iscellstr"
-        body: '''${1:tf} = iscellstr(${1:A})'''
+        body: '''${2:tf} = iscellstr(${1:A})'''
         description: '''[matlab] Determine if input is cell array of character vectors
         tf = iscellstr(A)
         '''
@@ -617,7 +617,7 @@
 
     "string.split [matlab]":
         prefix: "string.split"
-        body: '''[${1:newStr}, ${2:matches}] = string.split(${1:str}, ${2:delimiter}, ${3:dim})'''
+        body: '''[${4:newStr}, ${5:matches}] = string.split(${1:str}, ${2:delimiter}, ${3:dim})'''
         description: '''[matlab] 
         [newStr, matches] = string.split(str, delimiter, dim)
         '''
@@ -626,7 +626,7 @@
 
     "string.startsWith [matlab]":
         prefix: "string.startsWith"
-        body: '''${1:tf} = string.startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:tf} = string.startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] 
         tf = string.startsWith(str, pattern, 'IgnoreCase', value)
         '''
@@ -635,7 +635,7 @@
 
     "unicode2native [matlab]":
         prefix: "unicode2native"
-        body: '''${1:bytes} = unicode2native(${1:unicodestr}, ${2:optional_encoding})'''
+        body: '''${3:bytes} = unicode2native(${1:unicodestr}, ${2:optional_encoding})'''
         description: '''[matlab] Convert Unicode character representation to numeric
 bytes
         bytes = unicode2native(unicodestr, optional_encoding)
@@ -645,7 +645,7 @@ bytes
 
     "strcmpi [matlab]":
         prefix: "strcmpi"
-        body: '''${1:tf} = strcmpi(${1:C}, ${2:C})'''
+        body: '''${3:tf} = strcmpi(${1:C}, ${2:C})'''
         description: '''[matlab] Compare strings (case insensitive)
         tf = strcmpi(C, C)
         '''
@@ -654,7 +654,7 @@ bytes
 
     "sscanf [matlab]":
         prefix: "sscanf"
-        body: '''[${1:A}, ${2:count}, ${3:errmsg}, ${4:nextindex}] = sscanf(${1:str}, ${2:format}, ${3:optional_sizeA})'''
+        body: '''[${4:A}, ${5:count}, ${6:errmsg}, ${7:nextindex}] = sscanf(${1:str}, ${2:format}, ${3:optional_sizeA})'''
         description: '''[matlab] Read formatted data from strings
         [A, count, errmsg, nextindex] = sscanf(str, format, optional_sizeA)
         '''
@@ -663,7 +663,7 @@ bytes
 
     "strrep [matlab]":
         prefix: "strrep"
-        body: '''${1:modifiedStr} = strrep(${1:origStr}, ${2:oldSubstr}, ${3:newSubstr})'''
+        body: '''${4:modifiedStr} = strrep(${1:origStr}, ${2:oldSubstr}, ${3:newSubstr})'''
         description: '''[matlab] Find and replace substrings
         modifiedStr = strrep(origStr, oldSubstr, newSubstr)
         '''
@@ -672,7 +672,7 @@ bytes
 
     "strlength [matlab]":
         prefix: "strlength"
-        body: '''${1:L} = strlength(${1:str})'''
+        body: '''${2:L} = strlength(${1:str})'''
         description: '''[matlab] Lengths of strings
         L = strlength(str)
         '''
@@ -681,7 +681,7 @@ bytes
 
     "eraseBetween [matlab]":
         prefix: "eraseBetween"
-        body: '''${1:count} = eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        body: '''${5:count} = eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
         description: '''[matlab] Delete substrings between start and end points
         count = eraseBetween(str, startPosition, endPosition, 'Boundaries', value)
         '''
@@ -690,7 +690,7 @@ bytes
 
     "string.count [matlab]":
         prefix: "string.count"
-        body: '''${1:count} = string.count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:count} = string.count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] 
         count = string.count(str, pattern, 'IgnoreCase', value)
         '''
@@ -699,7 +699,7 @@ bytes
 
     "matches [matlab]":
         prefix: "matches"
-        body: '''${1:tf} = matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        body: '''${4:tf} = matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
         description: '''[matlab] Determine if pattern matches strings
         tf = matches(str, pattern, 'IgnoreCase', value)
         '''
@@ -708,7 +708,7 @@ bytes
 
     "string.reverse [matlab]":
         prefix: "string.reverse"
-        body: '''${1:newStr} = string.reverse(${1:str})'''
+        body: '''${2:newStr} = string.reverse(${1:str})'''
         description: '''[matlab] 
         newStr = string.reverse(str)
         '''
@@ -726,7 +726,7 @@ bytes
 
     "hex2dec [matlab]":
         prefix: "hex2dec"
-        body: '''${1:d} = hex2dec(${1:hex_value})'''
+        body: '''${2:d} = hex2dec(${1:hex_value})'''
         description: '''[matlab] Convert text representation of hexadecimal number to decimal number
         d = hex2dec(hex_value)
         '''
@@ -735,7 +735,7 @@ bytes
 
     "string.extractAfter [matlab]":
         prefix: "string.extractAfter"
-        body: '''${1:newStr} = string.extractAfter(${1:str}, ${2:matchStr})'''
+        body: '''${3:newStr} = string.extractAfter(${1:str}, ${2:matchStr})'''
         description: '''[matlab] 
         newStr = string.extractAfter(str, matchStr)
         '''
@@ -744,7 +744,7 @@ bytes
 
     "string.extractBetween [matlab]":
         prefix: "string.extractBetween"
-        body: '''${1:out} = string.extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        body: '''${5:out} = string.extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
         description: '''[matlab] 
         out = string.extractBetween(str, startPosition, endPosition, 'Boundaries', value)
         '''
@@ -753,7 +753,7 @@ bytes
 
     "string.lower [matlab]":
         prefix: "string.lower"
-        body: '''${1:newTxt} = string.lower(${1:txt})'''
+        body: '''${2:newTxt} = string.lower(${1:txt})'''
         description: '''[matlab] 
         newTxt = string.lower(txt)
         '''

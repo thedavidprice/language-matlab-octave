@@ -3,7 +3,7 @@
 
     "target.get [targetdefinition]":
         prefix: "target.get"
-        body: '''${1:targetObjectInstance} = target.get(${1:targetObjectClassString}, ${2:identifier})'''
+        body: '''${3:targetObjectInstance} = target.get(${1:targetObjectClassString}, ${2:identifier})'''
         description: '''[targetdefinition] Retrieve target feature object from MATLAB memory
         targetObjectInstance = target.get(targetObjectClassString, identifier)
         '''
@@ -30,7 +30,7 @@
 
     "target.create [targetdefinition]":
         prefix: "target.create"
-        body: '''${1:targetObjectInstance} = target.create(${1:targetObjectClassString}, 'Copy', ${2:value})'''
+        body: '''${3:targetObjectInstance} = target.create(${1:targetObjectClassString}, 'Copy', ${2:value})'''
         description: '''[targetdefinition] Create target feature object
         targetObjectInstance = target.create(targetObjectClassString, 'Copy', value)
         '''

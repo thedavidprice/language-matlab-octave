@@ -39,7 +39,7 @@
 
     "MException.addCause [matlab]":
         prefix: "MException.addCause"
-        body: '''${1:baseException} = MException.addCause(${1:baseException}, ${2:causeException})'''
+        body: '''${3:baseException} = MException.addCause(${1:baseException}, ${2:causeException})'''
         description: '''[matlab] 
         baseException = MException.addCause(baseException, causeException)
         '''
@@ -85,7 +85,7 @@ profiling report
 
     "MException.getReport [matlab]":
         prefix: "MException.getReport"
-        body: '''${1:msgText} = MException.getReport(${1:exception}, ${2:type}, ${3:'hyperlinks'}, ${4:hlink})'''
+        body: '''${5:msgText} = MException.getReport(${1:exception}, ${2:type}, ${3:'hyperlinks'}, ${4:hlink})'''
         description: '''[matlab] 
         msgText = MException.getReport(exception, type, 'hyperlinks', hlink)
         '''
@@ -94,7 +94,7 @@ profiling report
 
     "mfilename [matlab]":
         prefix: "mfilename"
-        body: '''${1:M} = mfilename(${1:'arg'})'''
+        body: '''${2:M} = mfilename(${1:'arg'})'''
         description: '''[matlab] File name of currently running code
         M = mfilename('arg')
         '''
@@ -103,7 +103,7 @@ profiling report
 
     "matlab.lang.correction.ReplaceIdentifierCorrection [matlab]":
         prefix: "matlab.lang.correction.ReplaceIdentifierCorrection"
-        body: '''${1:RIC} = matlab.lang.correction.ReplaceIdentifierCorrection(${1:identifier}, ${2:replacement})'''
+        body: '''${3:RIC} = matlab.lang.correction.ReplaceIdentifierCorrection(${1:identifier}, ${2:replacement})'''
         description: '''[matlab] Correct error by replacing identifier in function call
         RIC = matlab.lang.correction.ReplaceIdentifierCorrection(identifier, replacement)
         '''
@@ -112,7 +112,7 @@ profiling report
 
     "MException [matlab]":
         prefix: "MException"
-        body: '''${1:ME} = MException(${1:message})'''
+        body: '''${2:ME} = MException(${1:message})'''
         description: '''[matlab] Capture error information
         ME = MException(message)
         '''
@@ -148,7 +148,7 @@ profiling report
 
     "matlab.lang.correction.AppendArgumentsCorrection [matlab]":
         prefix: "matlab.lang.correction.AppendArgumentsCorrection"
-        body: '''${1:AAC} = matlab.lang.correction.AppendArgumentsCorrection(${1:arguments})'''
+        body: '''${2:AAC} = matlab.lang.correction.AppendArgumentsCorrection(${1:arguments})'''
         description: '''[matlab] Correct error by appending missing input arguments
         AAC = matlab.lang.correction.AppendArgumentsCorrection(arguments)
         '''
@@ -194,7 +194,7 @@ profiling report
 
     "matlab.lang.correction.ConvertToFunctionNotationCorrection [matlab]":
         prefix: "matlab.lang.correction.ConvertToFunctionNotationCorrection"
-        body: '''${1:CFNC} = matlab.lang.correction.ConvertToFunctionNotationCorrection(${1:method})'''
+        body: '''${2:CFNC} = matlab.lang.correction.ConvertToFunctionNotationCorrection(${1:method})'''
         description: '''[matlab] Correct error by converting to function notation
         CFNC = matlab.lang.correction.ConvertToFunctionNotationCorrection(method)
         '''
@@ -203,7 +203,7 @@ profiling report
 
     "MException.addCorrection [matlab]":
         prefix: "MException.addCorrection"
-        body: '''${1:baseException} = MException.addCorrection(${1:baseException}, ${2:correction})'''
+        body: '''${3:baseException} = MException.addCorrection(${1:baseException}, ${2:correction})'''
         description: '''[matlab] 
         baseException = MException.addCorrection(baseException, correction)
         '''

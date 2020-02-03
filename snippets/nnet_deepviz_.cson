@@ -3,7 +3,7 @@
 
     "occlusionSensitivity [nnet]":
         prefix: "occlusionSensitivity"
-        body: '''${1:map} = occlusionSensitivity(${1:net}, ${2:X}, ${3:layerName}, ${4:channel}, 'MaskSize', ${5:value}, 'Stride', ${6:value}, 'MaskValue', ${7:value}, 'OutputUpsampling', ${8:value}, 'MaskClipping', ${9:value}, 'ExecutionEnvironment', ${10:value}, 'MiniBatchSize', ${11:value})'''
+        body: '''${12:map} = occlusionSensitivity(${1:net}, ${2:X}, ${3:layerName}, ${4:channel}, 'MaskSize', ${5:value}, 'Stride', ${6:value}, 'MaskValue', ${7:value}, 'OutputUpsampling', ${8:value}, 'MaskClipping', ${9:value}, 'ExecutionEnvironment', ${10:value}, 'MiniBatchSize', ${11:value})'''
         description: '''[nnet] Determine how input data affects output activations by occluding
       input
         map = occlusionSensitivity(net, X, layerName, channel, 'MaskSize', value, 'Stride', value, 'MaskValue', value, 'OutputUpsampling', value, 'MaskClipping', value, 'ExecutionEnvironment', value, 'MiniBatchSize', value)

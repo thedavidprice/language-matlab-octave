@@ -12,7 +12,7 @@
 
     "tcpclient [matlab]":
         prefix: "tcpclient"
-        body: '''${1:t} = tcpclient(${1:Address}, ${2:Port}, 'Timeout', ${3:value}, 'ConnectTimeout', ${4:value})'''
+        body: '''${5:t} = tcpclient(${1:Address}, ${2:Port}, 'Timeout', ${3:value}, 'ConnectTimeout', ${4:value})'''
         description: '''[matlab] Create TCP/IP client object to communicate over TCP/IP
         t = tcpclient(Address, Port, 'Timeout', value, 'ConnectTimeout', value)
         '''
@@ -21,7 +21,7 @@
 
     "read [matlab]":
         prefix: "read"
-        body: '''${1:data} = read(${1:obj}, ${2:size}, ${3:optional_datatype})'''
+        body: '''${4:data} = read(${1:obj}, ${2:size}, ${3:optional_datatype})'''
         description: '''[matlab] Read one or more entries from source file associated with
 BioIndexedFile object
         data = read(obj, size, optional_datatype)

@@ -3,7 +3,7 @@
 
     "matlab.project.Project.addFolderIncludingChildFiles [matlab]":
         prefix: "matlab.project.Project.addFolderIncludingChildFiles"
-        body: '''${1:projectFile} = matlab.project.Project.addFolderIncludingChildFiles(${1:proj}, ${2:folder})'''
+        body: '''${3:projectFile} = matlab.project.Project.addFolderIncludingChildFiles(${1:proj}, ${2:folder})'''
         description: '''[matlab] 
         projectFile = matlab.project.Project.addFolderIncludingChildFiles(proj, folder)
         '''
@@ -21,7 +21,7 @@
 
     "matlab.project.Project.addShutdownFile [matlab]":
         prefix: "matlab.project.Project.addShutdownFile"
-        body: '''${1:shortcut} = matlab.project.Project.addShutdownFile(${1:proj}, ${2:fileName})'''
+        body: '''${3:shortcut} = matlab.project.Project.addShutdownFile(${1:proj}, ${2:fileName})'''
         description: '''[matlab] 
         shortcut = matlab.project.Project.addShutdownFile(proj, fileName)
         '''
@@ -30,7 +30,7 @@
 
     "matlab.project.Project.addStartupFile [matlab]":
         prefix: "matlab.project.Project.addStartupFile"
-        body: '''${1:shortcut} = matlab.project.Project.addStartupFile(${1:proj}, ${2:fileName})'''
+        body: '''${3:shortcut} = matlab.project.Project.addStartupFile(${1:proj}, ${2:fileName})'''
         description: '''[matlab] 
         shortcut = matlab.project.Project.addStartupFile(proj, fileName)
         '''
@@ -66,7 +66,7 @@
 
     "matlab.project.Project.addShortcut [matlab]":
         prefix: "matlab.project.Project.addShortcut"
-        body: '''${1:shortcut} = matlab.project.Project.addShortcut(${1:proj}, ${2:fileName})'''
+        body: '''${3:shortcut} = matlab.project.Project.addShortcut(${1:proj}, ${2:fileName})'''
         description: '''[matlab] 
         shortcut = matlab.project.Project.addShortcut(proj, fileName)
         '''
@@ -75,7 +75,7 @@
 
     "matlab.project.Project.addPath [matlab]":
         prefix: "matlab.project.Project.addPath"
-        body: '''${1:projectPath} = matlab.project.Project.addPath(${1:proj}, ${2:folder})'''
+        body: '''${3:projectPath} = matlab.project.Project.addPath(${1:proj}, ${2:folder})'''
         description: '''[matlab] 
         projectPath = matlab.project.Project.addPath(proj, folder)
         '''
@@ -84,7 +84,7 @@
 
     "matlab.project.Project.addReference [matlab]":
         prefix: "matlab.project.Project.addReference"
-        body: '''${1:projectReference} = matlab.project.Project.addReference(${1:proj}, ${2:folder})'''
+        body: '''${3:projectReference} = matlab.project.Project.addReference(${1:proj}, ${2:folder})'''
         description: '''[matlab] 
         projectReference = matlab.project.Project.addReference(proj, folder)
         '''
@@ -102,7 +102,7 @@
 
     "matlab.project.ProjectFile.findLabel [matlab]":
         prefix: "matlab.project.ProjectFile.findLabel"
-        body: '''${1:labelObject} = matlab.project.ProjectFile.findLabel(${1:file}, ${2:LabelDefinition})'''
+        body: '''${3:labelObject} = matlab.project.ProjectFile.findLabel(${1:file}, ${2:LabelDefinition})'''
         description: '''[matlab] 
         labelObject = matlab.project.ProjectFile.findLabel(file, LabelDefinition)
         '''
@@ -111,7 +111,7 @@
 
     "matlab.project.Category.findLabel [matlab]":
         prefix: "matlab.project.Category.findLabel"
-        body: '''${1:labelObject} = matlab.project.Category.findLabel(${1:category}, ${2:labelName})'''
+        body: '''${3:labelObject} = matlab.project.Category.findLabel(${1:category}, ${2:labelName})'''
         description: '''[matlab] 
         labelObject = matlab.project.Category.findLabel(category, labelName)
         '''
@@ -120,7 +120,7 @@
 
     "matlab.project.ProjectFile.addLabel [matlab]":
         prefix: "matlab.project.ProjectFile.addLabel"
-        body: '''${1:labelObject} = matlab.project.ProjectFile.addLabel(${1:file}, ${2:categoryName}, ${3:label}, ${4:optional_labelData})'''
+        body: '''${5:labelObject} = matlab.project.ProjectFile.addLabel(${1:file}, ${2:categoryName}, ${3:label}, ${4:optional_labelData})'''
         description: '''[matlab] 
         labelObject = matlab.project.ProjectFile.addLabel(file, categoryName, label, optional_labelData)
         '''
@@ -138,7 +138,7 @@
 
     "matlab.project.Project.addFile [matlab]":
         prefix: "matlab.project.Project.addFile"
-        body: '''${1:projectFile} = matlab.project.Project.addFile(${1:proj}, ${2:file})'''
+        body: '''${3:projectFile} = matlab.project.Project.addFile(${1:proj}, ${2:file})'''
         description: '''[matlab] 
         projectFile = matlab.project.Project.addFile(proj, file)
         '''
@@ -147,7 +147,7 @@
 
     "matlab.project.Project.findFile [matlab]":
         prefix: "matlab.project.Project.findFile"
-        body: '''${1:file} = matlab.project.Project.findFile(${1:proj}, ${2:fileName})'''
+        body: '''${3:file} = matlab.project.Project.findFile(${1:proj}, ${2:fileName})'''
         description: '''[matlab] 
         file = matlab.project.Project.findFile(proj, fileName)
         '''
@@ -174,7 +174,7 @@
 
     "matlab.project.Project.findCategory [matlab]":
         prefix: "matlab.project.Project.findCategory"
-        body: '''${1:category} = matlab.project.Project.findCategory(${1:proj}, ${2:categoryName})'''
+        body: '''${3:category} = matlab.project.Project.findCategory(${1:proj}, ${2:categoryName})'''
         description: '''[matlab] 
         category = matlab.project.Project.findCategory(proj, categoryName)
         '''

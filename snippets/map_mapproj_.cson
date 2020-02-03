@@ -3,7 +3,7 @@
 
     "minvtran [map]":
         prefix: "minvtran"
-        body: '''[${1:lat}, ${2:lon}, ${3:alt}] = minvtran(${1:optional_mstruct}, ${2:x}, ${3:y}, ${4:optional_z})'''
+        body: '''[${5:lat}, ${6:lon}, ${7:alt}] = minvtran(${1:optional_mstruct}, ${2:x}, ${3:y}, ${4:optional_z})'''
         description: '''[map] Unproject features from map to geographic coordinates
         [lat, lon, alt] = minvtran(optional_mstruct, x, y, optional_z)
         '''
@@ -12,7 +12,7 @@
 
     "geotiff2mstruct [map]":
         prefix: "geotiff2mstruct"
-        body: '''${1:mstruct} = geotiff2mstruct(${1:proj})'''
+        body: '''${2:mstruct} = geotiff2mstruct(${1:proj})'''
         description: '''[map] Convert GeoTIFF information to map projection structure
         mstruct = geotiff2mstruct(proj)
         '''
@@ -21,7 +21,7 @@
 
     "vinvtran [map]":
         prefix: "vinvtran"
-        body: '''[${1:az}, ${2:len}] = vinvtran(${1:optional_mstruct}, ${2:x}, ${3:y}, ${4:optional_th})'''
+        body: '''[${5:az}, ${6:len}] = vinvtran(${1:optional_mstruct}, ${2:x}, ${3:y}, ${4:optional_th})'''
         description: '''[map] Azimuth on ellipsoid from direction angle in map plane
         [az, len] = vinvtran(optional_mstruct, x, y, optional_th)
         '''
@@ -30,7 +30,7 @@
 
     "projfwd [map]":
         prefix: "projfwd"
-        body: '''[${1:x}, ${2:y}] = projfwd(${1:proj}, ${2:lat}, ${3:lon})'''
+        body: '''[${4:x}, ${5:y}] = projfwd(${1:proj}, ${2:lat}, ${3:lon})'''
         description: '''[map] Forward map projection using PROJ.4 map
 projection library
         [x, y] = projfwd(proj, lat, lon)
@@ -40,7 +40,7 @@ projection library
 
     "utmgeoid [map]":
         prefix: "utmgeoid"
-        body: '''[${1:ellipsoid}, ${2:ellipsoidstr}] = utmgeoid(${1:optional_zone})'''
+        body: '''[${2:ellipsoid}, ${3:ellipsoidstr}] = utmgeoid(${1:optional_zone})'''
         description: '''[map] Select ellipsoids for given UTM zone
         [ellipsoid, ellipsoidstr] = utmgeoid(optional_zone)
         '''
@@ -49,7 +49,7 @@ projection library
 
     "maptrimp [map]":
         prefix: "maptrimp"
-        body: '''[${1:latTrimmed}, ${2:lonTrimmed}] = maptrimp(${1:lat}, ${2:lon}, ${3:latlim}, ${4:lonlim})'''
+        body: '''[${5:latTrimmed}, ${6:lonTrimmed}] = maptrimp(${1:lat}, ${2:lon}, ${3:latlim}, ${4:lonlim})'''
         description: '''[map] Trim polygons to latitude-longitude quadrangle
         [latTrimmed, lonTrimmed] = maptrimp(lat, lon, latlim, lonlim)
         '''
@@ -58,7 +58,7 @@ projection library
 
     "vfwdtran [map]":
         prefix: "vfwdtran"
-        body: '''[${1:th}, ${2:len}] = vfwdtran(${1:optional_mstruct}, ${2:lat}, ${3:lon}, ${4:az})'''
+        body: '''[${5:th}, ${6:len}] = vfwdtran(${1:optional_mstruct}, ${2:lat}, ${3:lon}, ${4:az})'''
         description: '''[map] Direction angle in map plane from azimuth on ellipsoid
         [th, len] = vfwdtran(optional_mstruct, lat, lon, az)
         '''
@@ -67,7 +67,7 @@ projection library
 
     "projinv [map]":
         prefix: "projinv"
-        body: '''[${1:lat}, ${2:lon}] = projinv(${1:proj}, ${2:x}, ${3:y})'''
+        body: '''[${4:lat}, ${5:lon}] = projinv(${1:proj}, ${2:x}, ${3:y})'''
         description: '''[map] Inverse map projection using PROJ.4 map
 projection library
         [lat, lon] = projinv(proj, x, y)
@@ -77,7 +77,7 @@ projection library
 
     "distortcalc [map]":
         prefix: "distortcalc"
-        body: '''[${1:areascale}, ${2:angdef}, ${3:maxscale}, ${4:minscale}, ${5:merscale}, ${6:parscale}] = distortcalc(${1:optional_mstruct}, ${2:lat}, ${3:long})'''
+        body: '''[${4:areascale}, ${5:angdef}, ${6:maxscale}, ${7:minscale}, ${8:merscale}, ${9:parscale}] = distortcalc(${1:optional_mstruct}, ${2:lat}, ${3:long})'''
         description: '''[map] Distortion parameters for map projections
         [areascale, angdef, maxscale, minscale, merscale, parscale] = distortcalc(optional_mstruct, lat, long)
         '''
@@ -86,7 +86,7 @@ projection library
 
     "maptriml [map]":
         prefix: "maptriml"
-        body: '''[${1:lat}, ${2:lon}] = maptriml(${1:lat0}, ${2:lon0}, ${3:latlim}, ${4:lonlim})'''
+        body: '''[${5:lat}, ${6:lon}] = maptriml(${1:lat0}, ${2:lon0}, ${3:latlim}, ${4:lonlim})'''
         description: '''[map] Trim lines to latitude-longitude quadrangle
         [lat, lon] = maptriml(lat0, lon0, latlim, lonlim)
         '''
@@ -95,7 +95,7 @@ projection library
 
     "maps [map]":
         prefix: "maps"
-        body: '''${1:strmat} = maps(${1:str})'''
+        body: '''${2:strmat} = maps(${1:str})'''
         description: '''[map] List available map projections and verify names
         strmat = maps(str)
         '''
@@ -104,7 +104,7 @@ projection library
 
     "utmzone [map]":
         prefix: "utmzone"
-        body: '''${1:zone} = utmzone(${1:lat}, ${2:long})'''
+        body: '''${3:zone} = utmzone(${1:lat}, ${2:long})'''
         description: '''[map] Select UTM zone given latitude and longitude
         zone = utmzone(lat, long)
         '''
@@ -113,7 +113,7 @@ projection library
 
     "projlist [map]":
         prefix: "projlist"
-        body: '''${1:S} = projlist(${1:optional_listmode})'''
+        body: '''${2:S} = projlist(${1:optional_listmode})'''
         description: '''[map] Map projections supported by projfwd and projinv
         S = projlist(optional_listmode)
         '''
@@ -122,7 +122,7 @@ projection library
 
     "mfwdtran [map]":
         prefix: "mfwdtran"
-        body: '''[${1:x}, ${2:y}, ${3:z}] = mfwdtran(${1:optional_mstruct}, ${2:lat}, ${3:lon}, ${4:optional_alt})'''
+        body: '''[${5:x}, ${6:y}, ${7:z}] = mfwdtran(${1:optional_mstruct}, ${2:lat}, ${3:lon}, ${4:optional_alt})'''
         description: '''[map] Project geographic features to map coordinates
         [x, y, z] = mfwdtran(optional_mstruct, lat, lon, optional_alt)
         '''

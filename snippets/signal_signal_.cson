@@ -3,7 +3,7 @@
 
     "settlingtime [signal]":
         prefix: "settlingtime"
-        body: '''[${1:S}, ${2:SLEV}, ${3:SINST}] = settlingtime(${1:X}, ${2:T}, ${3:D}, 'MidPercentReferenceLevel', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})'''
+        body: '''[${7:S}, ${8:SLEV}, ${9:SINST}] = settlingtime(${1:X}, ${2:T}, ${3:D}, 'MidPercentReferenceLevel', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})'''
         description: '''[signal] Settling time for bilevel waveform
         [S, SLEV, SINST] = settlingtime(X, T, D, 'MidPercentReferenceLevel', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -12,7 +12,7 @@
 
     "rssq [signal]":
         prefix: "rssq"
-        body: '''${1:Y} = rssq(${1:X}, ${2:optional_DIM})'''
+        body: '''${3:Y} = rssq(${1:X}, ${2:optional_DIM})'''
         description: '''[signal]  Root-sum-of-squares level
         Y = rssq(X, optional_DIM)
         '''
@@ -21,7 +21,7 @@
 
     "bilinear [signal]":
         prefix: "bilinear"
-        body: '''[${1:Ad}, ${2:Bd}, ${3:Cd}, ${4:Dd}] = bilinear(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:fs}, ${6:optional_fp})'''
+        body: '''[${7:Ad}, ${8:Bd}, ${9:Cd}, ${10:Dd}] = bilinear(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:fs}, ${6:optional_fp})'''
         description: '''[signal] Bilinear transformation method for analog-to-digital filter conversion
         [Ad, Bd, Cd, Dd] = bilinear(A, B, C, D, fs, optional_fp)
         '''
@@ -30,7 +30,7 @@
 
     "residuez [signal]":
         prefix: "residuez"
-        body: '''[${1:b}, ${2:a}] = residuez(${1:r}, ${2:p}, ${3:k})'''
+        body: '''[${4:b}, ${5:a}] = residuez(${1:r}, ${2:p}, ${3:k})'''
         description: '''[signal] Z-transform partial-fraction expansion
         [b, a] = residuez(r, p, k)
         '''
@@ -39,7 +39,7 @@
 
     "sgolay [signal]":
         prefix: "sgolay"
-        body: '''[${1:b}, ${2:g}] = sgolay(${1:order}, ${2:framelen}, ${3:optional_weights})'''
+        body: '''[${4:b}, ${5:g}] = sgolay(${1:order}, ${2:framelen}, ${3:optional_weights})'''
         description: '''[signal] Savitzky-Golay filter design
         [b, g] = sgolay(order, framelen, optional_weights)
         '''
@@ -48,7 +48,7 @@
 
     "modalfrf [signal]":
         prefix: "modalfrf"
-        body: '''[${1:frf}, ${2:f}] = modalfrf(${1:sys}, ${2:f}, 'Sensor', ${3:value})'''
+        body: '''[${4:frf}, ${5:f}] = modalfrf(${1:sys}, ${2:f}, 'Sensor', ${3:value})'''
         description: '''[signal] Frequency-response functions for modal analysis
         [frf, f] = modalfrf(sys, f, 'Sensor', value)
         '''
@@ -57,7 +57,7 @@
 
     "db2mag [signal]":
         prefix: "db2mag"
-        body: '''${1:y} = db2mag(${1:ydb})'''
+        body: '''${2:y} = db2mag(${1:ydb})'''
         description: '''[signal] Convert
 decibels (dB) to magnitude
         y = db2mag(ydb)
@@ -67,7 +67,7 @@ decibels (dB) to magnitude
 
     "meanfreq [signal]":
         prefix: "meanfreq"
-        body: '''[${1:freq}, ${2:power}] = meanfreq(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_freqrange})'''
+        body: '''[${5:freq}, ${6:power}] = meanfreq(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_freqrange})'''
         description: '''[signal] Mean frequency
         [freq, power] = meanfreq(sxx, f, rbw, optional_freqrange)
         '''
@@ -76,7 +76,7 @@ decibels (dB) to magnitude
 
     "rcosdesign [signal]":
         prefix: "rcosdesign"
-        body: '''${1:b} = rcosdesign(${1:beta}, ${2:span}, ${3:sps}, ${4:optional_shape})'''
+        body: '''${5:b} = rcosdesign(${1:beta}, ${2:span}, ${3:sps}, ${4:optional_shape})'''
         description: '''[signal] Raised cosine FIR pulse-shaping filter design
         b = rcosdesign(beta, span, sps, optional_shape)
         '''
@@ -85,7 +85,7 @@ decibels (dB) to magnitude
 
     "bandstop [signal]":
         prefix: "bandstop"
-        body: '''[${1:y}, ${2:d}] = bandstop(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})'''
+        body: '''[${6:y}, ${7:d}] = bandstop(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})'''
         description: '''[signal] Bandstop-filter
             signals
         [y, d] = bandstop(xt, fpass, 'ImpulseResponse', value, 'Steepness', value, 'StopbandAttenuation', value)
@@ -95,7 +95,7 @@ decibels (dB) to magnitude
 
     "cheby2 [signal]":
         prefix: "cheby2"
-        body: '''[${1:A}, ${2:B}, ${3:C}, ${4:D}] = cheby2(${1:n}, ${2:Rs}, ${3:Ws}, ${4:ftype}, ${5:optional_'s'})'''
+        body: '''[${6:A}, ${7:B}, ${8:C}, ${9:D}] = cheby2(${1:n}, ${2:Rs}, ${3:Ws}, ${4:ftype}, ${5:optional_'s'})'''
         description: '''[signal] Chebyshev Type II filter using specification object
         [A, B, C, D] = cheby2(n, Rs, Ws, ftype, optional_'s')
         '''
@@ -104,7 +104,7 @@ decibels (dB) to magnitude
 
     "yulewalk [signal]":
         prefix: "yulewalk"
-        body: '''[${1:b}, ${2:a}] = yulewalk(${1:n}, ${2:f}, ${3:m})'''
+        body: '''[${4:b}, ${5:a}] = yulewalk(${1:n}, ${2:f}, ${3:m})'''
         description: '''[signal] Recursive digital filter design
         [b, a] = yulewalk(n, f, m)
         '''
@@ -113,7 +113,7 @@ decibels (dB) to magnitude
 
     "gmonopuls [signal]":
         prefix: "gmonopuls"
-        body: '''${1:tc} = gmonopuls(${1:'cutoff'}, ${2:fc})'''
+        body: '''${3:tc} = gmonopuls(${1:'cutoff'}, ${2:fc})'''
         description: '''[signal] Gaussian monopulse
         tc = gmonopuls('cutoff', fc)
         '''
@@ -122,7 +122,7 @@ decibels (dB) to magnitude
 
     "nuttallwin [signal]":
         prefix: "nuttallwin"
-        body: '''${1:w} = nuttallwin(${1:N}, ${2:optional_SFLAG})'''
+        body: '''${3:w} = nuttallwin(${1:N}, ${2:optional_SFLAG})'''
         description: '''[signal] Nuttall-defined minimum 4-term Blackman-Harris window 
         w = nuttallwin(N, optional_SFLAG)
         '''
@@ -131,7 +131,7 @@ decibels (dB) to magnitude
 
     "hamming [signal]":
         prefix: "hamming"
-        body: '''${1:w} = hamming(${1:L}, ${2:optional_sflag})'''
+        body: '''${3:w} = hamming(${1:L}, ${2:optional_sflag})'''
         description: '''[signal] Hamming window
         w = hamming(L, optional_sflag)
         '''
@@ -140,7 +140,7 @@ decibels (dB) to magnitude
 
     "cceps [signal]":
         prefix: "cceps"
-        body: '''[${1:xhat}, ${2:nd}, ${3:xhat1}] = cceps(${1:x}, ${2:optional_n})'''
+        body: '''[${3:xhat}, ${4:nd}, ${5:xhat1}] = cceps(${1:x}, ${2:optional_n})'''
         description: '''[signal] Complex cepstral analysis
         [xhat, nd, xhat1] = cceps(x, optional_n)
         '''
@@ -149,7 +149,7 @@ decibels (dB) to magnitude
 
     "dtw [signal]":
         prefix: "dtw"
-        body: '''[${1:dist}, ${2:ix}, ${3:iy}] = dtw(${1:x}, ${2:y}, ${3:optional_maxsamp}, ${4:optional_metric})'''
+        body: '''[${5:dist}, ${6:ix}, ${7:iy}] = dtw(${1:x}, ${2:y}, ${3:optional_maxsamp}, ${4:optional_metric})'''
         description: '''[signal] Distance between signals using dynamic time warping
         [dist, ix, iy] = dtw(x, y, optional_maxsamp, optional_metric)
         '''
@@ -158,7 +158,7 @@ decibels (dB) to magnitude
 
     "cpsd [signal]":
         prefix: "cpsd"
-        body: '''[${1:pxy}, ${2:f}] = cpsd(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_'mimo'}, ${8:optional_freqrange})'''
+        body: '''[${9:pxy}, ${10:f}] = cpsd(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_'mimo'}, ${8:optional_freqrange})'''
         description: '''[signal] Cross power spectral density
         [pxy, f] = cpsd(x, y, window, noverlap, f, fs, optional_'mimo', optional_freqrange)
         '''
@@ -167,7 +167,7 @@ decibels (dB) to magnitude
 
     "rainflow [signal]":
         prefix: "rainflow"
-        body: '''[${1:c}, ${2:rm}, ${3:rmr}, ${4:rmm}, ${5:idx}] = rainflow(${1:xt}, ${2:optional_'ext'})'''
+        body: '''[${3:c}, ${4:rm}, ${5:rmr}, ${6:rmm}, ${7:idx}] = rainflow(${1:xt}, ${2:optional_'ext'})'''
         description: '''[signal] Rainflow counts for fatigue analysis
         [c, rm, rmr, rmm, idx] = rainflow(xt, optional_'ext')
         '''
@@ -176,7 +176,7 @@ decibels (dB) to magnitude
 
     "rc2lar [signal]":
         prefix: "rc2lar"
-        body: '''${1:g} = rc2lar(${1:k})'''
+        body: '''${2:g} = rc2lar(${1:k})'''
         description: '''[signal] Convert reflection coefficients to log area ratio parameters
         g = rc2lar(k)
         '''
@@ -185,7 +185,7 @@ decibels (dB) to magnitude
 
     "ifsst [signal]":
         prefix: "ifsst"
-        body: '''${1:x} = ifsst(${1:s}, ${2:window}, ${3:iridge}, ${4:'NumFrequencyBins'}, ${5:nbins})'''
+        body: '''${6:x} = ifsst(${1:s}, ${2:window}, ${3:iridge}, ${4:'NumFrequencyBins'}, ${5:nbins})'''
         description: '''[signal] Inverse Fourier synchrosqueezed transform
         x = ifsst(s, window, iridge, 'NumFrequencyBins', nbins)
         '''
@@ -194,7 +194,7 @@ decibels (dB) to magnitude
 
     "enbw [signal]":
         prefix: "enbw"
-        body: '''${1:bw} = enbw(${1:window}, ${2:optional_fs})'''
+        body: '''${3:bw} = enbw(${1:window}, ${2:optional_fs})'''
         description: '''[signal] Equivalent noise bandwidth
         bw = enbw(window, optional_fs)
         '''
@@ -203,7 +203,7 @@ decibels (dB) to magnitude
 
     "eqtflength [signal]":
         prefix: "eqtflength"
-        body: '''[${1:b}, ${2:a}, ${3:n}, ${4:m}] = eqtflength(${1:num}, ${2:den})'''
+        body: '''[${3:b}, ${4:a}, ${5:n}, ${6:m}] = eqtflength(${1:num}, ${2:den})'''
         description: '''[signal] Equalize lengths of transfer function's numerator and denominator
         [b, a, n, m] = eqtflength(num, den)
         '''
@@ -212,7 +212,7 @@ decibels (dB) to magnitude
 
     "statelevels [signal]":
         prefix: "statelevels"
-        body: '''[${1:LEVELS}, ${2:HISTOGRAM}, ${3:BINLEVELS}] = statelevels(${1:X}, ${2:NBINS}, ${3:optional_METHOD})'''
+        body: '''[${4:LEVELS}, ${5:HISTOGRAM}, ${6:BINLEVELS}] = statelevels(${1:X}, ${2:NBINS}, ${3:optional_METHOD})'''
         description: '''[signal]  State-level estimation for bilevel waveform with histogram
 method
         [LEVELS, HISTOGRAM, BINLEVELS] = statelevels(X, NBINS, optional_METHOD)
@@ -222,7 +222,7 @@ method
 
     "peak2rms [signal]":
         prefix: "peak2rms"
-        body: '''${1:Y} = peak2rms(${1:X}, ${2:optional_DIM})'''
+        body: '''${3:Y} = peak2rms(${1:X}, ${2:optional_DIM})'''
         description: '''[signal] Peak-magnitude-to-RMS ratio
         Y = peak2rms(X, optional_DIM)
         '''
@@ -231,7 +231,7 @@ method
 
     "filternorm [signal]":
         prefix: "filternorm"
-        body: '''${1:L} = filternorm(${1:b}, ${2:a}, ${3:2}, ${4:optional_tol})'''
+        body: '''${5:L} = filternorm(${1:b}, ${2:a}, ${3:2}, ${4:optional_tol})'''
         description: '''[signal]  2-norm or infinity-norm of digital filter
         L = filternorm(b, a, 2, optional_tol)
         '''
@@ -240,7 +240,7 @@ method
 
     "lar2rc [signal]":
         prefix: "lar2rc"
-        body: '''${1:k} = lar2rc(${1:g})'''
+        body: '''${2:k} = lar2rc(${1:g})'''
         description: '''[signal] Convert log area ratio parameters to reflection coefficients
         k = lar2rc(g)
         '''
@@ -249,7 +249,7 @@ method
 
     "udecode [signal]":
         prefix: "udecode"
-        body: '''${1:y} = udecode(${1:u}, ${2:n}, ${3:v}, ${4:optional_'SaturateMode'})'''
+        body: '''${5:y} = udecode(${1:u}, ${2:n}, ${3:v}, ${4:optional_'SaturateMode'})'''
         description: '''[signal] Decode 2n-level quantized integer
 inputs to floating-point outputs
         y = udecode(u, n, v, optional_'SaturateMode')
@@ -259,7 +259,7 @@ inputs to floating-point outputs
 
     "convmtx [signal]":
         prefix: "convmtx"
-        body: '''${1:A} = convmtx(${1:h}, ${2:n})'''
+        body: '''${3:A} = convmtx(${1:h}, ${2:n})'''
         description: '''[signal] Convolution matrix of Galois field
                vector
         A = convmtx(h, n)
@@ -269,7 +269,7 @@ inputs to floating-point outputs
 
     "orderspectrum [signal]":
         prefix: "orderspectrum"
-        body: '''[${1:spec}, ${2:order}] = orderspectrum(${1:map}, ${2:order})'''
+        body: '''[${3:spec}, ${4:order}] = orderspectrum(${1:map}, ${2:order})'''
         description: '''[signal] Average spectrum versus order for vibration signal
         [spec, order] = orderspectrum(map, order)
         '''
@@ -278,7 +278,7 @@ inputs to floating-point outputs
 
     "ss2sos [signal]":
         prefix: "ss2sos"
-        body: '''[${1:sos}, ${2:g}] = ss2sos(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:iu}, ${6:'order'}, ${7:optional_'scale'})'''
+        body: '''[${8:sos}, ${9:g}] = ss2sos(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:iu}, ${6:'order'}, ${7:optional_'scale'})'''
         description: '''[signal] Convert digital filter state-space parameters to second-order
 sections form
         [sos, g] = ss2sos(A, B, C, D, iu, 'order', optional_'scale')
@@ -288,7 +288,7 @@ sections form
 
     "dct [signal]":
         prefix: "dct"
-        body: '''${1:y} = dct(${1:x}, ${2:n}, ${3:dim}, ${4:optional_'Type'}, ${5:optional_dcttype})'''
+        body: '''${6:y} = dct(${1:x}, ${2:n}, ${3:dim}, ${4:optional_'Type'}, ${5:optional_dcttype})'''
         description: '''[signal] Discrete cosine transform
         y = dct(x, n, dim, optional_'Type', optional_dcttype)
         '''
@@ -297,7 +297,7 @@ sections form
 
     "filtord [signal]":
         prefix: "filtord"
-        body: '''${1:n} = filtord(${1:d})'''
+        body: '''${2:n} = filtord(${1:d})'''
         description: '''[signal] Filter order
         n = filtord(d)
         '''
@@ -306,7 +306,7 @@ sections form
 
     "zp2sos [signal]":
         prefix: "zp2sos"
-        body: '''[${1:sos}, ${2:g}] = zp2sos(${1:z}, ${2:p}, ${3:k}, ${4:'order'}, ${5:'scale'}, ${6:optional_zeroflag})'''
+        body: '''[${7:sos}, ${8:g}] = zp2sos(${1:z}, ${2:p}, ${3:k}, ${4:'order'}, ${5:'scale'}, ${6:optional_zeroflag})'''
         description: '''[signal] Convert zero-pole-gain filter parameters to second-order
 sections form
         [sos, g] = zp2sos(z, p, k, 'order', 'scale', optional_zeroflag)
@@ -316,7 +316,7 @@ sections form
 
     "poly2rc [signal]":
         prefix: "poly2rc"
-        body: '''[${1:k}, ${2:r0}] = poly2rc(${1:a}, ${2:optional_efinal})'''
+        body: '''[${3:k}, ${4:r0}] = poly2rc(${1:a}, ${2:optional_efinal})'''
         description: '''[signal] Convert prediction filter polynomial to reflection coefficients
         [k, r0] = poly2rc(a, optional_efinal)
         '''
@@ -325,7 +325,7 @@ sections form
 
     "lowpass [signal]":
         prefix: "lowpass"
-        body: '''[${1:y}, ${2:d}] = lowpass(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})'''
+        body: '''[${6:y}, ${7:d}] = lowpass(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})'''
         description: '''[signal] Lowpass-filter signals
         [y, d] = lowpass(xt, fpass, 'ImpulseResponse', value, 'Steepness', value, 'StopbandAttenuation', value)
         '''
@@ -334,7 +334,7 @@ sections form
 
     "poctave [signal]":
         prefix: "poctave"
-        body: '''[${1:p}, ${2:cf}] = poctave(${1:pxx}, ${2:fs}, ${3:f}, ${4:'psd'}, 'BandsPerOctave', ${5:value}, 'FilterOrder', ${6:value}, 'FrequencyLimits', ${7:value}, 'Weighting', ${8:value})'''
+        body: '''[${9:p}, ${10:cf}] = poctave(${1:pxx}, ${2:fs}, ${3:f}, ${4:'psd'}, 'BandsPerOctave', ${5:value}, 'FilterOrder', ${6:value}, 'FrequencyLimits', ${7:value}, 'Weighting', ${8:value})'''
         description: '''[signal] Generate octave spectrum
         [p, cf] = poctave(pxx, fs, f, 'psd', 'BandsPerOctave', value, 'FilterOrder', value, 'FrequencyLimits', value, 'Weighting', value)
         '''
@@ -343,7 +343,7 @@ sections form
 
     "fir2 [signal]":
         prefix: "fir2"
-        body: '''${1:b} = fir2(${1:n}, ${2:f}, ${3:m}, ${4:npt}, ${5:lap}, ${6:optional_window})'''
+        body: '''${7:b} = fir2(${1:n}, ${2:f}, ${3:m}, ${4:npt}, ${5:lap}, ${6:optional_window})'''
         description: '''[signal] Frequency sampling-based FIR filter design
         b = fir2(n, f, m, npt, lap, optional_window)
         '''
@@ -352,7 +352,7 @@ sections form
 
     "parzenwin [signal]":
         prefix: "parzenwin"
-        body: '''${1:w} = parzenwin(${1:L})'''
+        body: '''${2:w} = parzenwin(${1:L})'''
         description: '''[signal] Parzen (de la Vallée Poussin) window
         w = parzenwin(L)
         '''
@@ -361,7 +361,7 @@ sections form
 
     "rectpuls [signal]":
         prefix: "rectpuls"
-        body: '''${1:y} = rectpuls(${1:t}, ${2:optional_w})'''
+        body: '''${3:y} = rectpuls(${1:t}, ${2:optional_w})'''
         description: '''[signal] Sampled aperiodic rectangle
         y = rectpuls(t, optional_w)
         '''
@@ -370,7 +370,7 @@ sections form
 
     "rc2is [signal]":
         prefix: "rc2is"
-        body: '''${1:isin} = rc2is(${1:k})'''
+        body: '''${2:isin} = rc2is(${1:k})'''
         description: '''[signal] Convert reflection coefficients to inverse sine parameters
         isin = rc2is(k)
         '''
@@ -379,7 +379,7 @@ sections form
 
     "tachorpm [signal]":
         prefix: "tachorpm"
-        body: '''[${1:rpm}, ${2:t}, ${3:tp}] = tachorpm(${1:x}, ${2:fs}, 'PulsesPerRev', ${3:value}, 'StateLevels', ${4:value}, 'OutputFs', ${5:value}, 'FitType', ${6:value}, 'FitPoints', ${7:value})'''
+        body: '''[${8:rpm}, ${9:t}, ${10:tp}] = tachorpm(${1:x}, ${2:fs}, 'PulsesPerRev', ${3:value}, 'StateLevels', ${4:value}, 'OutputFs', ${5:value}, 'FitType', ${6:value}, 'FitPoints', ${7:value})'''
         description: '''[signal] Extract RPM signal from tachometer pulses
         [rpm, t, tp] = tachorpm(x, fs, 'PulsesPerRev', value, 'StateLevels', value, 'OutputFs', value, 'FitType', value, 'FitPoints', value)
         '''
@@ -388,7 +388,7 @@ sections form
 
     "single [signal]":
         prefix: "single"
-        body: '''${1:f2} = single(${1:f1})'''
+        body: '''${2:f2} = single(${1:f1})'''
         description: '''[signal] Single-precision arrays
         f2 = single(f1)
         '''
@@ -397,7 +397,7 @@ sections form
 
     "pmtm [signal]":
         prefix: "pmtm"
-        body: '''[${1:pxx}, ${2:w}, ${3:pxxc}] = pmtm(${1:x}, ${2:dpss_params}, ${3:optional_method}, ${4:'DropLastTaper'}, ${5:optional_dropflag}, ${6:optional_freqrange}, ${7:'ConfidenceLevel'}, ${8:optional_probability})'''
+        body: '''[${9:pxx}, ${10:w}, ${11:pxxc}] = pmtm(${1:x}, ${2:dpss_params}, ${3:optional_method}, ${4:'DropLastTaper'}, ${5:optional_dropflag}, ${6:optional_freqrange}, ${7:'ConfidenceLevel'}, ${8:optional_probability})'''
         description: '''[signal] Multitaper power spectral density estimate
         [pxx, w, pxxc] = pmtm(x, dpss_params, optional_method, 'DropLastTaper', optional_dropflag, optional_freqrange, 'ConfidenceLevel', optional_probability)
         '''
@@ -406,7 +406,7 @@ sections form
 
     "tsa [signal]":
         prefix: "tsa"
-        body: '''[${1:ta}, ${2:t}, ${3:p}, ${4:rpm}] = tsa(${1:xt}, ${2:tp}, 'Method', ${3:value}, 'NumRotations', ${4:value}, 'PulsesPerRotation', ${5:value}, 'ResampleFactor', ${6:value})'''
+        body: '''[${7:ta}, ${8:t}, ${9:p}, ${10:rpm}] = tsa(${1:xt}, ${2:tp}, 'Method', ${3:value}, 'NumRotations', ${4:value}, 'PulsesPerRotation', ${5:value}, 'ResampleFactor', ${6:value})'''
         description: '''[signal] Time-synchronous signal average
         [ta, t, p, rpm] = tsa(xt, tp, 'Method', value, 'NumRotations', value, 'PulsesPerRotation', value, 'ResampleFactor', value)
         '''
@@ -415,7 +415,7 @@ sections form
 
     "risetime [signal]":
         prefix: "risetime"
-        body: '''[${1:R}, ${2:LT}, ${3:UT}, ${4:LL}, ${5:UL}] = risetime(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})'''
+        body: '''[${6:R}, ${7:LT}, ${8:UT}, ${9:LL}, ${10:UL}] = risetime(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})'''
         description: '''[signal]  Rise time of positive-going bilevel waveform transitions
         [R, LT, UT, LL, UL] = risetime(X, optional_T, 'PercentReferenceLevels', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -424,7 +424,7 @@ sections form
 
     "ac2rc [signal]":
         prefix: "ac2rc"
-        body: '''[${1:k}, ${2:r0}] = ac2rc(${1:r})'''
+        body: '''[${2:k}, ${3:r0}] = ac2rc(${1:r})'''
         description: '''[signal] Convert autocorrelation sequence to reflection coefficients
         [k, r0] = ac2rc(r)
         '''
@@ -433,7 +433,7 @@ sections form
 
     "bandpower [signal]":
         prefix: "bandpower"
-        body: '''${1:p} = bandpower(${1:pxx}, ${2:f}, ${3:optional_freqrange}, ${4:'psd'})'''
+        body: '''${5:p} = bandpower(${1:pxx}, ${2:f}, ${3:optional_freqrange}, ${4:'psd'})'''
         description: '''[signal] Band power
         p = bandpower(pxx, f, optional_freqrange, 'psd')
         '''
@@ -442,7 +442,7 @@ sections form
 
     "shiftdata [signal]":
         prefix: "shiftdata"
-        body: '''[${1:x}, ${2:perm}, ${3:nshifts}] = shiftdata(${1:x}, ${2:dim})'''
+        body: '''[${3:x}, ${4:perm}, ${5:nshifts}] = shiftdata(${1:x}, ${2:dim})'''
         description: '''[signal] Shift data to operate on specified dimension
         [x, perm, nshifts] = shiftdata(x, dim)
         '''
@@ -451,7 +451,7 @@ sections form
 
     "sos2ss [signal]":
         prefix: "sos2ss"
-        body: '''[${1:A}, ${2:B}, ${3:C}, ${4:D}] = sos2ss(${1:sos}, ${2:optional_g})'''
+        body: '''[${3:A}, ${4:B}, ${5:C}, ${6:D}] = sos2ss(${1:sos}, ${2:optional_g})'''
         description: '''[signal] Convert digital filter second-order section parameters
 to state-space form
         [A, B, C, D] = sos2ss(sos, optional_g)
@@ -461,7 +461,7 @@ to state-space form
 
     "isstable [signal]":
         prefix: "isstable"
-        body: '''${1:flag} = isstable(${1:d})'''
+        body: '''${2:flag} = isstable(${1:d})'''
         description: '''[signal] Determine whether system is stable
         flag = isstable(d)
         '''
@@ -470,7 +470,7 @@ to state-space form
 
     "prony [signal]":
         prefix: "prony"
-        body: '''[${1:Num}, ${2:Den}] = prony(${1:impulse_resp}, ${2:num_ord}, ${3:denom_ord})'''
+        body: '''[${4:Num}, ${5:Den}] = prony(${1:impulse_resp}, ${2:num_ord}, ${3:denom_ord})'''
         description: '''[signal]  Prony method for filter design
         [Num, Den] = prony(impulse_resp, num_ord, denom_ord)
         '''
@@ -488,7 +488,7 @@ to state-space form
 
     "gaussdesign [signal]":
         prefix: "gaussdesign"
-        body: '''${1:h} = gaussdesign(${1:bt}, ${2:span}, ${3:sps})'''
+        body: '''${4:h} = gaussdesign(${1:bt}, ${2:span}, ${3:sps})'''
         description: '''[signal] Gaussian FIR pulse-shaping filter design
         h = gaussdesign(bt, span, sps)
         '''
@@ -497,7 +497,7 @@ to state-space form
 
     "thd [signal]":
         prefix: "thd"
-        body: '''[${1:r}, ${2:harmpow}, ${3:harmfreq}] = thd(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_n}, ${5:'power'}, ${6:optional_'aliased'})'''
+        body: '''[${7:r}, ${8:harmpow}, ${9:harmfreq}] = thd(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_n}, ${5:'power'}, ${6:optional_'aliased'})'''
         description: '''[signal] Total harmonic distortion
         [r, harmpow, harmfreq] = thd(sxx, f, rbw, optional_n, 'power', optional_'aliased')
         '''
@@ -506,7 +506,7 @@ to state-space form
 
     "phasedelay [signal]":
         prefix: "phasedelay"
-        body: '''${1:phi} = phasedelay(${1:d}, ${2:optional_f}, ${3:optional_fs})'''
+        body: '''${4:phi} = phasedelay(${1:d}, ${2:optional_f}, ${3:optional_fs})'''
         description: '''[signal] Phase delay response of discrete-time filter System
         object
         phi = phasedelay(d, optional_f, optional_fs)
@@ -516,7 +516,7 @@ to state-space form
 
     "poly2lsf [signal]":
         prefix: "poly2lsf"
-        body: '''${1:lsf} = poly2lsf(${1:a})'''
+        body: '''${2:lsf} = poly2lsf(${1:a})'''
         description: '''[signal] Convert prediction filter coefficients to line spectral frequencies
         lsf = poly2lsf(a)
         '''
@@ -525,7 +525,7 @@ to state-space form
 
     "aryule [signal]":
         prefix: "aryule"
-        body: '''[${1:a}, ${2:e}, ${3:rc}] = aryule(${1:x}, ${2:p})'''
+        body: '''[${3:a}, ${4:e}, ${5:rc}] = aryule(${1:x}, ${2:p})'''
         description: '''[signal] Autoregressive all-pole model parameters — Yule-Walker
 method
         [a, e, rc] = aryule(x, p)
@@ -535,7 +535,7 @@ method
 
     "icceps [signal]":
         prefix: "icceps"
-        body: '''${1:x} = icceps(${1:xhat}, ${2:optional_nd})'''
+        body: '''${3:x} = icceps(${1:xhat}, ${2:optional_nd})'''
         description: '''[signal] Inverse complex cepstrum
         x = icceps(xhat, optional_nd)
         '''
@@ -544,7 +544,7 @@ method
 
     "marcumq [signal]":
         prefix: "marcumq"
-        body: '''${1:Q} = marcumq(${1:a}, ${2:b}, ${3:optional_m})'''
+        body: '''${4:Q} = marcumq(${1:a}, ${2:b}, ${3:optional_m})'''
         description: '''[signal] Generalized Marcum Q function
         Q = marcumq(a, b, optional_m)
         '''
@@ -553,7 +553,7 @@ method
 
     "polystab [signal]":
         prefix: "polystab"
-        body: '''${1:b} = polystab(${1:a})'''
+        body: '''${2:b} = polystab(${1:a})'''
         description: '''[signal] Stabilize polynomial
         b = polystab(a)
         '''
@@ -562,7 +562,7 @@ method
 
     "medfreq [signal]":
         prefix: "medfreq"
-        body: '''[${1:freq}, ${2:power}] = medfreq(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_freqrange})'''
+        body: '''[${5:freq}, ${6:power}] = medfreq(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_freqrange})'''
         description: '''[signal] Median frequency
         [freq, power] = medfreq(sxx, f, rbw, optional_freqrange)
         '''
@@ -571,7 +571,7 @@ method
 
     "stepz [signal]":
         prefix: "stepz"
-        body: '''[${1:h}, ${2:t}] = stepz(${1:d}, ${2:n}, ${3:optional_fs})'''
+        body: '''[${4:h}, ${5:t}] = stepz(${1:d}, ${2:n}, ${3:optional_fs})'''
         description: '''[signal] Step response of discrete-time filter System
         object
         [h, t] = stepz(d, n, optional_fs)
@@ -581,7 +581,7 @@ method
 
     "pburg [signal]":
         prefix: "pburg"
-        body: '''[${1:pxx}, ${2:f}, ${3:pxxc}] = pburg(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})'''
+        body: '''[${8:pxx}, ${9:f}, ${10:pxxc}] = pburg(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})'''
         description: '''[signal] Autoregressive power spectral density estimate —
 Burg’s method
         [pxx, f, pxxc] = pburg(x, order, f, fs, optional_freqrange, 'ConfidenceLevel', optional_probability)
@@ -591,7 +591,7 @@ Burg’s method
 
     "fircls1 [signal]":
         prefix: "fircls1"
-        body: '''${1:b} = fircls1(${1:n}, ${2:wo}, ${3:dp}, ${4:ds}, ${5:wp}, ${6:ws}, ${7:k}, ${8:optional_'high'}, ${9:optional_'design_flag'})'''
+        body: '''${10:b} = fircls1(${1:n}, ${2:wo}, ${3:dp}, ${4:ds}, ${5:wp}, ${6:ws}, ${7:k}, ${8:optional_'high'}, ${9:optional_'design_flag'})'''
         description: '''[signal] Constrained-least-squares linear-phase FIR lowpass and
 highpass filter design
         b = fircls1(n, wo, dp, ds, wp, ws, k, optional_'high', optional_'design_flag')
@@ -601,7 +601,7 @@ highpass filter design
 
     "mscohere [signal]":
         prefix: "mscohere"
-        body: '''[${1:cxy}, ${2:f}] = mscohere(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_'mimo'}, ${8:optional_freqrange})'''
+        body: '''[${9:cxy}, ${10:f}] = mscohere(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_'mimo'}, ${8:optional_freqrange})'''
         description: '''[signal] Magnitude-squared coherence
         [cxy, f] = mscohere(x, y, window, noverlap, f, fs, optional_'mimo', optional_freqrange)
         '''
@@ -610,7 +610,7 @@ highpass filter design
 
     "sawtooth [signal]":
         prefix: "sawtooth"
-        body: '''${1:x} = sawtooth(${1:t}, ${2:optional_xmax})'''
+        body: '''${3:x} = sawtooth(${1:t}, ${2:optional_xmax})'''
         description: '''[signal] Sawtooth or triangle wave
         x = sawtooth(t, optional_xmax)
         '''
@@ -619,7 +619,7 @@ highpass filter design
 
     "hampel [signal]":
         prefix: "hampel"
-        body: '''[${1:y}, ${2:j}, ${3:xmedian}, ${4:xsigma}] = hampel(${1:x}, ${2:k}, ${3:optional_nsigma})'''
+        body: '''[${4:y}, ${5:j}, ${6:xmedian}, ${7:xsigma}] = hampel(${1:x}, ${2:k}, ${3:optional_nsigma})'''
         description: '''[signal] Outlier removal using Hampel identifier
         [y, j, xmedian, xsigma] = hampel(x, k, optional_nsigma)
         '''
@@ -628,7 +628,7 @@ highpass filter design
 
     "db2pow [signal]":
         prefix: "db2pow"
-        body: '''${1:y} = db2pow(${1:ydb})'''
+        body: '''${2:y} = db2pow(${1:ydb})'''
         description: '''[signal] Convert decibels to power
         y = db2pow(ydb)
         '''
@@ -637,7 +637,7 @@ highpass filter design
 
     "alignsignals [signal]":
         prefix: "alignsignals"
-        body: '''[${1:Xa}, ${2:Ya}, ${3:D}] = alignsignals(${1:X}, ${2:Y}, ${3:maxlag}, ${4:optional_'truncate'})'''
+        body: '''[${5:Xa}, ${6:Ya}, ${7:D}] = alignsignals(${1:X}, ${2:Y}, ${3:maxlag}, ${4:optional_'truncate'})'''
         description: '''[signal] Align two signals by delaying earliest signal
         [Xa, Ya, D] = alignsignals(X, Y, maxlag, optional_'truncate')
         '''
@@ -646,7 +646,7 @@ highpass filter design
 
     "fftfilt [signal]":
         prefix: "fftfilt"
-        body: '''${1:y} = fftfilt(${1:gpuArrayb}, ${2:gpuArrayX}, ${3:optional_n})'''
+        body: '''${4:y} = fftfilt(${1:gpuArrayb}, ${2:gpuArrayX}, ${3:optional_n})'''
         description: '''[signal] FFT-based FIR filtering using overlap-add method
         y = fftfilt(gpuArrayb, gpuArrayX, optional_n)
         '''
@@ -655,7 +655,7 @@ highpass filter design
 
     "findchangepts [signal]":
         prefix: "findchangepts"
-        body: '''[${1:ipt}, ${2:residual}] = findchangepts(${1:x}, 'MaxNumChanges', ${2:value}, 'Statistic', ${3:value}, 'MinDistance', ${4:value}, 'MinThreshold', ${5:value})'''
+        body: '''[${6:ipt}, ${7:residual}] = findchangepts(${1:x}, 'MaxNumChanges', ${2:value}, 'Statistic', ${3:value}, 'MinDistance', ${4:value}, 'MinThreshold', ${5:value})'''
         description: '''[signal] Find abrupt changes in signal
         [ipt, residual] = findchangepts(x, 'MaxNumChanges', value, 'Statistic', value, 'MinDistance', value, 'MinThreshold', value)
         '''
@@ -664,7 +664,7 @@ highpass filter design
 
     "besselap [signal]":
         prefix: "besselap"
-        body: '''[${1:z}, ${2:p}, ${3:k}] = besselap(${1:n})'''
+        body: '''[${2:z}, ${3:p}, ${4:k}] = besselap(${1:n})'''
         description: '''[signal]  Bessel analog lowpass filter prototype
         [z, p, k] = besselap(n)
         '''
@@ -673,7 +673,7 @@ highpass filter design
 
     "overshoot [signal]":
         prefix: "overshoot"
-        body: '''[${1:OS}, ${2:OSLEV}, ${3:OSINST}] = overshoot(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'Region', ${4:value}, 'SeekFactor', ${5:value}, 'StateLevels', ${6:value}, 'Tolerance', ${7:value})'''
+        body: '''[${8:OS}, ${9:OSLEV}, ${10:OSINST}] = overshoot(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'Region', ${4:value}, 'SeekFactor', ${5:value}, 'StateLevels', ${6:value}, 'Tolerance', ${7:value})'''
         description: '''[signal]  Overshoot metrics of bilevel waveform transitions
         [OS, OSLEV, OSINST] = overshoot(X, optional_T, 'PercentReferenceLevels', value, 'Region', value, 'SeekFactor', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -682,7 +682,7 @@ highpass filter design
 
     "square [signal]":
         prefix: "square"
-        body: '''${1:x} = square(${1:t}, ${2:optional_duty})'''
+        body: '''${3:x} = square(${1:t}, ${2:optional_duty})'''
         description: '''[signal] Square wave
         x = square(t, optional_duty)
         '''
@@ -691,7 +691,7 @@ highpass filter design
 
     "pyulear [signal]":
         prefix: "pyulear"
-        body: '''[${1:pxx}, ${2:f}, ${3:pxxc}] = pyulear(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})'''
+        body: '''[${8:pxx}, ${9:f}, ${10:pxxc}] = pyulear(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})'''
         description: '''[signal] Autoregressive power spectral density estimate —
 Yule-Walker method
         [pxx, f, pxxc] = pyulear(x, order, f, fs, optional_freqrange, 'ConfidenceLevel', optional_probability)
@@ -701,7 +701,7 @@ Yule-Walker method
 
     "triang [signal]":
         prefix: "triang"
-        body: '''${1:w} = triang(${1:L})'''
+        body: '''${2:w} = triang(${1:L})'''
         description: '''[signal] Triangular window
         w = triang(L)
         '''
@@ -710,7 +710,7 @@ Yule-Walker method
 
     "hann [signal]":
         prefix: "hann"
-        body: '''${1:w} = hann(${1:L}, ${2:optional_sflag})'''
+        body: '''${3:w} = hann(${1:L}, ${2:optional_sflag})'''
         description: '''[signal] Hann (Hanning) window
         w = hann(L, optional_sflag)
         '''
@@ -719,7 +719,7 @@ Yule-Walker method
 
     "kurtogram [signal]":
         prefix: "kurtogram"
-        body: '''[${1:kgram}, ${2:f}, ${3:w}, ${4:fc}, ${5:wc}, ${6:bw}] = kurtogram(${1:xt}, ${2:optional_level})'''
+        body: '''[${3:kgram}, ${4:f}, ${5:w}, ${6:fc}, ${7:wc}, ${8:bw}] = kurtogram(${1:xt}, ${2:optional_level})'''
         description: '''[signal] Visualize spectral kurtosis
         [kgram, f, w, fc, wc, bw] = kurtogram(xt, optional_level)
         '''
@@ -728,7 +728,7 @@ Yule-Walker method
 
     "falltime [signal]":
         prefix: "falltime"
-        body: '''[${1:F}, ${2:LT}, ${3:UT}, ${4:LL}, ${5:UL}] = falltime(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})'''
+        body: '''[${6:F}, ${7:LT}, ${8:UT}, ${9:LL}, ${10:UL}] = falltime(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})'''
         description: '''[signal]  Fall time of negative-going bilevel waveform transitions
         [F, LT, UT, LL, UL] = falltime(X, optional_T, 'PercentReferenceLevels', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -737,7 +737,7 @@ Yule-Walker method
 
     "findsignal [signal]":
         prefix: "findsignal"
-        body: '''[${1:istart}, ${2:istop}, ${3:dist}] = findsignal(${1:data}, ${2:signal}, 'Normalization', ${3:value}, 'NormalizationLength', ${4:value}, 'MaxDistance', ${5:value}, 'MaxNumSegments', ${6:value}, 'TimeAlignment', ${7:value}, 'EDRTolerance', ${8:value}, 'Metric', ${9:value}, 'Annotate', ${10:value})'''
+        body: '''[${11:istart}, ${12:istop}, ${13:dist}] = findsignal(${1:data}, ${2:signal}, 'Normalization', ${3:value}, 'NormalizationLength', ${4:value}, 'MaxDistance', ${5:value}, 'MaxNumSegments', ${6:value}, 'TimeAlignment', ${7:value}, 'EDRTolerance', ${8:value}, 'Metric', ${9:value}, 'Annotate', ${10:value})'''
         description: '''[signal] Find signal location using similarity search
         [istart, istop, dist] = findsignal(data, signal, 'Normalization', value, 'NormalizationLength', value, 'MaxDistance', value, 'MaxNumSegments', value, 'TimeAlignment', value, 'EDRTolerance', value, 'Metric', value, 'Annotate', value)
         '''
@@ -746,7 +746,7 @@ Yule-Walker method
 
     "upfirdn [signal]":
         prefix: "upfirdn"
-        body: '''${1:yout} = upfirdn(${1:xin}, ${2:h}, ${3:p}, ${4:optional_q})'''
+        body: '''${5:yout} = upfirdn(${1:xin}, ${2:h}, ${3:p}, ${4:optional_q})'''
         description: '''[signal] Upsample, apply FIR filter, and downsample
         yout = upfirdn(xin, h, p, optional_q)
         '''
@@ -755,7 +755,7 @@ Yule-Walker method
 
     "fillgaps [signal]":
         prefix: "fillgaps"
-        body: '''${1:y} = fillgaps(${1:x}, ${2:maxlen}, ${3:optional_order})'''
+        body: '''${4:y} = fillgaps(${1:x}, ${2:maxlen}, ${3:optional_order})'''
         description: '''[signal] Fill gaps using autoregressive modeling
         y = fillgaps(x, maxlen, optional_order)
         '''
@@ -764,7 +764,7 @@ Yule-Walker method
 
     "freqz [signal]":
         prefix: "freqz"
-        body: '''${1:h} = freqz(${1:d}, ${2:f}, ${3:fs})'''
+        body: '''${4:h} = freqz(${1:d}, ${2:f}, ${3:fs})'''
         description: '''[signal] Frequency response of filter
         h = freqz(d, f, fs)
         '''
@@ -773,7 +773,7 @@ Yule-Walker method
 
     "fsst [signal]":
         prefix: "fsst"
-        body: '''[${1:s}, ${2:f}, ${3:t}] = fsst(${1:x}, ${2:ts}, ${3:optional_window}, ${4:optional_freqloc})'''
+        body: '''[${5:s}, ${6:f}, ${7:t}] = fsst(${1:x}, ${2:ts}, ${3:optional_window}, ${4:optional_freqloc})'''
         description: '''[signal] Fourier synchrosqueezed transform
         [s, f, t] = fsst(x, ts, optional_window, optional_freqloc)
         '''
@@ -782,7 +782,7 @@ Yule-Walker method
 
     "gausswin [signal]":
         prefix: "gausswin"
-        body: '''${1:w} = gausswin(${1:N}, ${2:optional_Alpha})'''
+        body: '''${3:w} = gausswin(${1:N}, ${2:optional_Alpha})'''
         description: '''[signal] Gaussian window
         w = gausswin(N, optional_Alpha)
         '''
@@ -791,7 +791,7 @@ Yule-Walker method
 
     "fir1 [signal]":
         prefix: "fir1"
-        body: '''${1:b} = fir1(${1:n}, ${2:Wn}, ${3:optional_ftype}, ${4:optional_window}, ${5:optional_scaleopt})'''
+        body: '''${6:b} = fir1(${1:n}, ${2:Wn}, ${3:optional_ftype}, ${4:optional_window}, ${5:optional_scaleopt})'''
         description: '''[signal] Window-based FIR filter design
         b = fir1(n, Wn, optional_ftype, optional_window, optional_scaleopt)
         '''
@@ -800,7 +800,7 @@ Yule-Walker method
 
     "pspectrum [signal]":
         prefix: "pspectrum"
-        body: '''[${1:p}, ${2:f}, ${3:pwr}] = pspectrum(${1:x}, ${2:optional_t}, ${3:optional_type}, 'FrequencyLimits', ${4:value}, 'FrequencyResolution', ${5:value}, 'Leakage', ${6:value}, 'MinThreshold', ${7:value}, 'NumPowerBins', ${8:value}, 'OverlapPercent', ${9:value}, 'Reassign', ${10:value}, 'TimeResolution', ${11:value})'''
+        body: '''[${12:p}, ${13:f}, ${14:pwr}] = pspectrum(${1:x}, ${2:optional_t}, ${3:optional_type}, 'FrequencyLimits', ${4:value}, 'FrequencyResolution', ${5:value}, 'Leakage', ${6:value}, 'MinThreshold', ${7:value}, 'NumPowerBins', ${8:value}, 'OverlapPercent', ${9:value}, 'Reassign', ${10:value}, 'TimeResolution', ${11:value})'''
         description: '''[signal] Analyze signals in the frequency and time-frequency domains
         [p, f, pwr] = pspectrum(x, optional_t, optional_type, 'FrequencyLimits', value, 'FrequencyResolution', value, 'Leakage', value, 'MinThreshold', value, 'NumPowerBins', value, 'OverlapPercent', value, 'Reassign', value, 'TimeResolution', value)
         '''
@@ -809,7 +809,7 @@ Yule-Walker method
 
     "butter [signal]":
         prefix: "butter"
-        body: '''[${1:A}, ${2:B}, ${3:C}, ${4:D}] = butter(${1:n}, ${2:Wn}, ${3:ftype}, ${4:optional_'s'})'''
+        body: '''[${5:A}, ${6:B}, ${7:C}, ${8:D}] = butter(${1:n}, ${2:Wn}, ${3:ftype}, ${4:optional_'s'})'''
         description: '''[signal] Butterworth IIR digital filter design
         [A, B, C, D] = butter(n, Wn, ftype, optional_'s')
         '''
@@ -818,7 +818,7 @@ Yule-Walker method
 
     "dpssdir [signal]":
         prefix: "dpssdir"
-        body: '''${1:index} = dpssdir(${1:nw}, ${2:'nw'})'''
+        body: '''${3:index} = dpssdir(${1:nw}, ${2:'nw'})'''
         description: '''[signal] Discrete prolate spheroidal sequences database directory
         index = dpssdir(nw, 'nw')
         '''
@@ -827,7 +827,7 @@ Yule-Walker method
 
     "tf2latc [signal]":
         prefix: "tf2latc"
-        body: '''${1:k} = tf2latc(${1:b}, ${2:'phase'})'''
+        body: '''${3:k} = tf2latc(${1:b}, ${2:'phase'})'''
         description: '''[signal] Convert transfer function filter parameters to lattice
 filter form
         k = tf2latc(b, 'phase')
@@ -837,7 +837,7 @@ filter form
 
     "blackmanharris [signal]":
         prefix: "blackmanharris"
-        body: '''${1:w} = blackmanharris(${1:N}, ${2:optional_SFLAG})'''
+        body: '''${3:w} = blackmanharris(${1:N}, ${2:optional_SFLAG})'''
         description: '''[signal] Minimum four-term Blackman-Harris window
         w = blackmanharris(N, optional_SFLAG)
         '''
@@ -846,7 +846,7 @@ filter form
 
     "flattopwin [signal]":
         prefix: "flattopwin"
-        body: '''${1:w} = flattopwin(${1:L}, ${2:optional_sflag})'''
+        body: '''${3:w} = flattopwin(${1:L}, ${2:optional_sflag})'''
         description: '''[signal] Flat top weighted window
         w = flattopwin(L, optional_sflag)
         '''
@@ -855,7 +855,7 @@ filter form
 
     "isdouble [signal]":
         prefix: "isdouble"
-        body: '''${1:flag} = isdouble(${1:d})'''
+        body: '''${2:flag} = isdouble(${1:d})'''
         description: '''[signal] Determine if digital filter coefficients are double precision
         flag = isdouble(d)
         '''
@@ -864,7 +864,7 @@ filter form
 
     "pulseperiod [signal]":
         prefix: "pulseperiod"
-        body: '''[${1:P}, ${2:INITCROSS}, ${3:FINALCROSS}, ${4:NEXTCROSS}, ${5:MIDLEV}] = pulseperiod(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'Polarity', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})'''
+        body: '''[${7:P}, ${8:INITCROSS}, ${9:FINALCROSS}, ${10:NEXTCROSS}, ${11:MIDLEV}] = pulseperiod(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'Polarity', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})'''
         description: '''[signal] Period of bilevel pulse
         [P, INITCROSS, FINALCROSS, NEXTCROSS, MIDLEV] = pulseperiod(X, optional_T, 'MidPercentReferenceLevel', value, 'Polarity', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -873,7 +873,7 @@ filter form
 
     "decimate [signal]":
         prefix: "decimate"
-        body: '''${1:y} = decimate(${1:x}, ${2:r}, ${3:n}, ${4:optional_'fir'})'''
+        body: '''${5:y} = decimate(${1:x}, ${2:r}, ${3:n}, ${4:optional_'fir'})'''
         description: '''[signal] Decimation — decrease sample rate by integer factor
         y = decimate(x, r, n, optional_'fir')
         '''
@@ -882,7 +882,7 @@ filter form
 
     "chebwin [signal]":
         prefix: "chebwin"
-        body: '''${1:w} = chebwin(${1:L}, ${2:optional_r})'''
+        body: '''${3:w} = chebwin(${1:L}, ${2:optional_r})'''
         description: '''[signal] Chebyshev window
         w = chebwin(L, optional_r)
         '''
@@ -891,7 +891,7 @@ filter form
 
     "ellipord [signal]":
         prefix: "ellipord"
-        body: '''[${1:n}, ${2:Wp}] = ellipord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})'''
+        body: '''[${6:n}, ${7:Wp}] = ellipord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})'''
         description: '''[signal] Minimum order for elliptic filters
         [n, Wp] = ellipord(Wp, Ws, Rp, Rs, optional_'s')
         '''
@@ -900,7 +900,7 @@ filter form
 
     "buffer [signal]":
         prefix: "buffer"
-        body: '''[${1:y}, ${2:z}, ${3:opt}] = buffer(${1:x}, ${2:n}, ${3:p}, ${4:optional_opt})'''
+        body: '''[${5:y}, ${6:z}, ${7:opt}] = buffer(${1:x}, ${2:n}, ${3:p}, ${4:optional_opt})'''
         description: '''[signal] Buffer signal vector into matrix of data frames
         [y, z, opt] = buffer(x, n, p, optional_opt)
         '''
@@ -909,7 +909,7 @@ filter form
 
     "tukeywin [signal]":
         prefix: "tukeywin"
-        body: '''${1:w} = tukeywin(${1:L}, ${2:optional_r})'''
+        body: '''${3:w} = tukeywin(${1:L}, ${2:optional_r})'''
         description: '''[signal] Tukey (tapered cosine) window
         w = tukeywin(L, optional_r)
         '''
@@ -918,7 +918,7 @@ filter form
 
     "ismaxphase [signal]":
         prefix: "ismaxphase"
-        body: '''${1:flag} = ismaxphase(${1:d}, ${2:optional_tol})'''
+        body: '''${3:flag} = ismaxphase(${1:d}, ${2:optional_tol})'''
         description: '''[signal] Determine whether filter is maximum phase
         flag = ismaxphase(d, optional_tol)
         '''
@@ -927,7 +927,7 @@ filter form
 
     "rectwin [signal]":
         prefix: "rectwin"
-        body: '''${1:w} = rectwin(${1:L})'''
+        body: '''${2:w} = rectwin(${1:L})'''
         description: '''[signal] Rectangular window
         w = rectwin(L)
         '''
@@ -936,7 +936,7 @@ filter form
 
     "envelope [signal]":
         prefix: "envelope"
-        body: '''[${1:yupper}, ${2:ylower}] = envelope(${1:x}, ${2:np}, ${3:'peak'})'''
+        body: '''[${4:yupper}, ${5:ylower}] = envelope(${1:x}, ${2:np}, ${3:'peak'})'''
         description: '''[signal] Signal envelope
         [yupper, ylower] = envelope(x, np, 'peak')
         '''
@@ -945,7 +945,7 @@ filter form
 
     "impz [signal]":
         prefix: "impz"
-        body: '''[${1:h}, ${2:t}] = impz(${1:d}, ${2:n}, ${3:optional_fs})'''
+        body: '''[${4:h}, ${5:t}] = impz(${1:d}, ${2:n}, ${3:optional_fs})'''
         description: '''[signal] Impulse response of discrete-time filter System
         object
         [h, t] = impz(d, n, optional_fs)
@@ -955,7 +955,7 @@ filter form
 
     "sos2zp [signal]":
         prefix: "sos2zp"
-        body: '''[${1:z}, ${2:p}, ${3:k}] = sos2zp(${1:sos}, ${2:optional_g})'''
+        body: '''[${3:z}, ${4:p}, ${5:k}] = sos2zp(${1:sos}, ${2:optional_g})'''
         description: '''[signal] Convert digital filter second-order section parameters
 to zero-pole-gain form
         [z, p, k] = sos2zp(sos, optional_g)
@@ -965,7 +965,7 @@ to zero-pole-gain form
 
     "rpmtrack [signal]":
         prefix: "rpmtrack"
-        body: '''[${1:rpm}, ${2:tout}] = rpmtrack(${1:xt}, ${2:order}, ${3:p}, 'Method', ${4:value}, 'FrequencyResolution', ${5:value}, 'PowerPenalty', ${6:value}, 'FrequencyPenalty', ${7:value}, 'StartTime', ${8:value}, 'EndTime', ${9:value})'''
+        body: '''[${10:rpm}, ${11:tout}] = rpmtrack(${1:xt}, ${2:order}, ${3:p}, 'Method', ${4:value}, 'FrequencyResolution', ${5:value}, 'PowerPenalty', ${6:value}, 'FrequencyPenalty', ${7:value}, 'StartTime', ${8:value}, 'EndTime', ${9:value})'''
         description: '''[signal] Track and extract RPM profile from vibration signal
         [rpm, tout] = rpmtrack(xt, order, p, 'Method', value, 'FrequencyResolution', value, 'PowerPenalty', value, 'FrequencyPenalty', value, 'StartTime', value, 'EndTime', value)
         '''
@@ -974,7 +974,7 @@ to zero-pole-gain form
 
     "cheb2ap [signal]":
         prefix: "cheb2ap"
-        body: '''[${1:z}, ${2:p}, ${3:k}] = cheb2ap(${1:n}, ${2:Rs})'''
+        body: '''[${3:z}, ${4:p}, ${5:k}] = cheb2ap(${1:n}, ${2:Rs})'''
         description: '''[signal] Chebyshev Type II analog lowpass filter prototype
         [z, p, k] = cheb2ap(n, Rs)
         '''
@@ -983,7 +983,7 @@ to zero-pole-gain form
 
     "sinc [signal]":
         prefix: "sinc"
-        body: '''${1:y} = sinc(${1:x})'''
+        body: '''${2:y} = sinc(${1:x})'''
         description: '''[signal] Sinc function
         y = sinc(x)
         '''
@@ -992,7 +992,7 @@ to zero-pole-gain form
 
     "cheb2ord [signal]":
         prefix: "cheb2ord"
-        body: '''[${1:n}, ${2:Ws}] = cheb2ord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})'''
+        body: '''[${6:n}, ${7:Ws}] = cheb2ord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})'''
         description: '''[signal] Chebyshev Type II filter order
         [n, Ws] = cheb2ord(Wp, Ws, Rp, Rs, optional_'s')
         '''
@@ -1001,7 +1001,7 @@ to zero-pole-gain form
 
     "filtfilt [signal]":
         prefix: "filtfilt"
-        body: '''${1:y} = filtfilt(${1:d}, ${2:x})'''
+        body: '''${3:y} = filtfilt(${1:d}, ${2:x})'''
         description: '''[signal] Zero-phase digital filtering
         y = filtfilt(d, x)
         '''
@@ -1010,7 +1010,7 @@ to zero-pole-gain form
 
     "rooteig [signal]":
         prefix: "rooteig"
-        body: '''[${1:f}, ${2:pow}] = rooteig(${1:x}, ${2:p}, ${3:optional_fs}, ${4:optional_'corr'})'''
+        body: '''[${5:f}, ${6:pow}] = rooteig(${1:x}, ${2:p}, ${3:optional_fs}, ${4:optional_'corr'})'''
         description: '''[signal] Frequency and power content using eigenvector method
         [f, pow] = rooteig(x, p, optional_fs, optional_'corr')
         '''
@@ -1019,7 +1019,7 @@ to zero-pole-gain form
 
     "islinphase [signal]":
         prefix: "islinphase"
-        body: '''${1:flag} = islinphase(${1:d}, ${2:optional_tol})'''
+        body: '''${3:flag} = islinphase(${1:d}, ${2:optional_tol})'''
         description: '''[signal] Determine whether filter has linear phase
         flag = islinphase(d, optional_tol)
         '''
@@ -1028,7 +1028,7 @@ to zero-pole-gain form
 
     "peak2peak [signal]":
         prefix: "peak2peak"
-        body: '''${1:Y} = peak2peak(${1:X}, ${2:optional_DIM})'''
+        body: '''${3:Y} = peak2peak(${1:X}, ${2:optional_DIM})'''
         description: '''[signal] Maximum-to-minimum difference
         Y = peak2peak(X, optional_DIM)
         '''
@@ -1037,7 +1037,7 @@ to zero-pole-gain form
 
     "rceps [signal]":
         prefix: "rceps"
-        body: '''[${1:y}, ${2:ym}] = rceps(${1:x})'''
+        body: '''[${2:y}, ${3:ym}] = rceps(${1:x})'''
         description: '''[signal] Real cepstrum and minimum phase reconstruction
         [y, ym] = rceps(x)
         '''
@@ -1046,7 +1046,7 @@ to zero-pole-gain form
 
     "besself [signal]":
         prefix: "besself"
-        body: '''[${1:A}, ${2:B}, ${3:C}, ${4:D}] = besself(${1:n}, ${2:Wo}, ${3:optional_ftype})'''
+        body: '''[${4:A}, ${5:B}, ${6:C}, ${7:D}] = besself(${1:n}, ${2:Wo}, ${3:optional_ftype})'''
         description: '''[signal] Bessel analog filter design
         [A, B, C, D] = besself(n, Wo, optional_ftype)
         '''
@@ -1055,7 +1055,7 @@ to zero-pole-gain form
 
     "rms [signal]":
         prefix: "rms"
-        body: '''${1:y} = rms(${1:x}, ${2:optional_dim})'''
+        body: '''${3:y} = rms(${1:x}, ${2:optional_dim})'''
         description: '''[signal] Root-mean-square level
         y = rms(x, optional_dim)
         '''
@@ -1064,7 +1064,7 @@ to zero-pole-gain form
 
     "powerbw [signal]":
         prefix: "powerbw"
-        body: '''[${1:bw}, ${2:flo}, ${3:fhi}, ${4:power}] = powerbw(${1:sxx}, ${2:f}, ${3:rbw}, ${4:freqrange}, ${5:optional_r})'''
+        body: '''[${6:bw}, ${7:flo}, ${8:fhi}, ${9:power}] = powerbw(${1:sxx}, ${2:f}, ${3:rbw}, ${4:freqrange}, ${5:optional_r})'''
         description: '''[signal] Power bandwidth
         [bw, flo, fhi, power] = powerbw(sxx, f, rbw, freqrange, optional_r)
         '''
@@ -1073,7 +1073,7 @@ to zero-pole-gain form
 
     "highpass [signal]":
         prefix: "highpass"
-        body: '''[${1:y}, ${2:d}] = highpass(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})'''
+        body: '''[${6:y}, ${7:d}] = highpass(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})'''
         description: '''[signal] Highpass-filter signals
         [y, d] = highpass(xt, fpass, 'ImpulseResponse', value, 'Steepness', value, 'StopbandAttenuation', value)
         '''
@@ -1082,7 +1082,7 @@ to zero-pole-gain form
 
     "tfestimate [signal]":
         prefix: "tfestimate"
-        body: '''[${1:txy}, ${2:f}] = tfestimate(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_'mimo'}, ${8:optional_freqrange}, ${9:'Estimator'}, ${10:est})'''
+        body: '''[${11:txy}, ${12:f}] = tfestimate(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_'mimo'}, ${8:optional_freqrange}, ${9:'Estimator'}, ${10:est})'''
         description: '''[signal] Transfer function estimate
         [txy, f] = tfestimate(x, y, window, noverlap, f, fs, optional_'mimo', optional_freqrange, 'Estimator', est)
         '''
@@ -1091,7 +1091,7 @@ to zero-pole-gain form
 
     "dpss [signal]":
         prefix: "dpss"
-        body: '''[${1:dps_seq}, ${2:lambda}] = dpss(${1:seq_length}, ${2:time_halfbandwidth}, ${3:'interp_method'}, ${4:optional_Ni}, ${5:optional_'trace'})'''
+        body: '''[${6:dps_seq}, ${7:lambda}] = dpss(${1:seq_length}, ${2:time_halfbandwidth}, ${3:'interp_method'}, ${4:optional_Ni}, ${5:optional_'trace'})'''
         description: '''[signal] Discrete prolate spheroidal (Slepian) sequences
         [dps_seq, lambda] = dpss(seq_length, time_halfbandwidth, 'interp_method', optional_Ni, optional_'trace')
         '''
@@ -1109,7 +1109,7 @@ to zero-pole-gain form
 
     "freqs [signal]":
         prefix: "freqs"
-        body: '''[${1:h}, ${2:w}] = freqs(${1:b}, ${2:a}, ${3:n})'''
+        body: '''[${4:h}, ${5:w}] = freqs(${1:b}, ${2:a}, ${3:n})'''
         description: '''[signal] Frequency response of analog filters
         [h, w] = freqs(b, a, n)
         '''
@@ -1118,7 +1118,7 @@ to zero-pole-gain form
 
     "gauspuls [signal]":
         prefix: "gauspuls"
-        body: '''${1:tc} = gauspuls(${1:'cutoff'}, ${2:fc}, ${3:bw}, ${4:bwr}, ${5:optional_tpe})'''
+        body: '''${6:tc} = gauspuls(${1:'cutoff'}, ${2:fc}, ${3:bw}, ${4:bwr}, ${5:optional_tpe})'''
         description: '''[signal] Gaussian-modulated sinusoidal RF pulse
         tc = gauspuls('cutoff', fc, bw, bwr, optional_tpe)
         '''
@@ -1127,7 +1127,7 @@ to zero-pole-gain form
 
     "rpmfreqmap [signal]":
         prefix: "rpmfreqmap"
-        body: '''[${1:map}, ${2:freq}, ${3:rpm}, ${4:time}, ${5:res}] = rpmfreqmap(${1:x}, ${2:fs}, ${3:rpm}, ${4:res}, 'Amplitude', ${5:value}, 'OverlapPercent', ${6:value}, 'Scale', ${7:value}, 'Window', ${8:value})'''
+        body: '''[${9:map}, ${10:freq}, ${11:rpm}, ${12:time}, ${13:res}] = rpmfreqmap(${1:x}, ${2:fs}, ${3:rpm}, ${4:res}, 'Amplitude', ${5:value}, 'OverlapPercent', ${6:value}, 'Scale', ${7:value}, 'Window', ${8:value})'''
         description: '''[signal] Frequency-RPM map for order analysis
         [map, freq, rpm, time, res] = rpmfreqmap(x, fs, rpm, res, 'Amplitude', value, 'OverlapPercent', value, 'Scale', value, 'Window', value)
         '''
@@ -1136,7 +1136,7 @@ to zero-pole-gain form
 
     "pcov [signal]":
         prefix: "pcov"
-        body: '''[${1:pxx}, ${2:f}, ${3:pxxc}] = pcov(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})'''
+        body: '''[${8:pxx}, ${9:f}, ${10:pxxc}] = pcov(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})'''
         description: '''[signal] Autoregressive power spectral density estimate —
 covariance method
         [pxx, f, pxxc] = pcov(x, order, f, fs, optional_freqrange, 'ConfidenceLevel', optional_probability)
@@ -1146,7 +1146,7 @@ covariance method
 
     "cfirpm [signal]":
         prefix: "cfirpm"
-        body: '''[${1:b}, ${2:delta}, ${3:opt}] = cfirpm(${1:n}, ${2:f}, ${3:a}, ${4:optional_w}, ${5:optional_'sym'}, ${6:optional_'skip_stage2'}, ${7:optional_'debug'}, ${8:optional_{lgrid}})'''
+        body: '''[${9:b}, ${10:delta}, ${11:opt}] = cfirpm(${1:n}, ${2:f}, ${3:a}, ${4:optional_w}, ${5:optional_'sym'}, ${6:optional_'skip_stage2'}, ${7:optional_'debug'}, ${8:optional_{lgrid}})'''
         description: '''[signal] Complex and nonlinear-phase equiripple FIR filter design
         [b, delta, opt] = cfirpm(n, f, a, optional_w, optional_'sym', optional_'skip_stage2', optional_'debug', optional_{lgrid})
         '''
@@ -1155,7 +1155,7 @@ covariance method
 
     "dpsssave [signal]":
         prefix: "dpsssave"
-        body: '''${1:status} = dpsssave(${1:time_halfbandwidth}, ${2:dps_seq}, ${3:lambda})'''
+        body: '''${4:status} = dpsssave(${1:time_halfbandwidth}, ${2:dps_seq}, ${3:lambda})'''
         description: '''[signal] Discrete prolate spheroidal or Slepian sequence database
         status = dpsssave(time_halfbandwidth, dps_seq, lambda)
         '''
@@ -1164,7 +1164,7 @@ covariance method
 
     "rpmordermap [signal]":
         prefix: "rpmordermap"
-        body: '''[${1:map}, ${2:order}, ${3:rpm}, ${4:time}, ${5:res}] = rpmordermap(${1:x}, ${2:fs}, ${3:rpm}, ${4:res}, 'Amplitude', ${5:value}, 'OverlapPercent', ${6:value}, 'Scale', ${7:value}, 'Window', ${8:value})'''
+        body: '''[${9:map}, ${10:order}, ${11:rpm}, ${12:time}, ${13:res}] = rpmordermap(${1:x}, ${2:fs}, ${3:rpm}, ${4:res}, 'Amplitude', ${5:value}, 'OverlapPercent', ${6:value}, 'Scale', ${7:value}, 'Window', ${8:value})'''
         description: '''[signal] Order-RPM map for order analysis
         [map, order, rpm, time, res] = rpmordermap(x, fs, rpm, res, 'Amplitude', value, 'OverlapPercent', value, 'Scale', value, 'Window', value)
         '''
@@ -1173,7 +1173,7 @@ covariance method
 
     "modulate [signal]":
         prefix: "modulate"
-        body: '''[${1:y}, ${2:t}] = modulate(${1:x}, ${2:fc}, ${3:fs}, ${4:'method'}, ${5:optional_opt})'''
+        body: '''[${6:y}, ${7:t}] = modulate(${1:x}, ${2:fc}, ${3:fs}, ${4:'method'}, ${5:optional_opt})'''
         description: '''[signal] Modulation for communications simulation
         [y, t] = modulate(x, fc, fs, 'method', optional_opt)
         '''
@@ -1182,7 +1182,7 @@ covariance method
 
     "lpc [signal]":
         prefix: "lpc"
-        body: '''[${1:a}, ${2:g}] = lpc(${1:x}, ${2:p})'''
+        body: '''[${3:a}, ${4:g}] = lpc(${1:x}, ${2:p})'''
         description: '''[signal] Linear prediction filter coefficients
         [a, g] = lpc(x, p)
         '''
@@ -1191,7 +1191,7 @@ covariance method
 
     "pmusic [signal]":
         prefix: "pmusic"
-        body: '''[${1:S}, ${2:f}, ${3:v}, ${4:e}] = pmusic(${1:x}, ${2:p}, ${3:nfft}, ${4:fs}, ${5:nwin}, ${6:noverlap}, ${7:optional_'corr'}, ${8:optional_freqrange})'''
+        body: '''[${9:S}, ${10:f}, ${11:v}, ${12:e}] = pmusic(${1:x}, ${2:p}, ${3:nfft}, ${4:fs}, ${5:nwin}, ${6:noverlap}, ${7:optional_'corr'}, ${8:optional_freqrange})'''
         description: '''[signal] Pseudospectrum using MUSIC algorithm
         [S, f, v, e] = pmusic(x, p, nfft, fs, nwin, noverlap, optional_'corr', optional_freqrange)
         '''
@@ -1200,7 +1200,7 @@ covariance method
 
     "pwelch [signal]":
         prefix: "pwelch"
-        body: '''[${1:pxx}, ${2:f}, ${3:pxxc}] = pwelch(${1:x}, ${2:window}, ${3:noverlap}, ${4:f}, ${5:fs}, ${6:optional_freqrange}, ${7:optional_spectrumtype}, ${8:optional_trace}, ${9:'ConfidenceLevel'}, ${10:optional_probability})'''
+        body: '''[${11:pxx}, ${12:f}, ${13:pxxc}] = pwelch(${1:x}, ${2:window}, ${3:noverlap}, ${4:f}, ${5:fs}, ${6:optional_freqrange}, ${7:optional_spectrumtype}, ${8:optional_trace}, ${9:'ConfidenceLevel'}, ${10:optional_probability})'''
         description: '''[signal] Welch’s power spectral density estimate
         [pxx, f, pxxc] = pwelch(x, window, noverlap, f, fs, optional_freqrange, optional_spectrumtype, optional_trace, 'ConfidenceLevel', optional_probability)
         '''
@@ -1209,7 +1209,7 @@ covariance method
 
     "impzlength [signal]":
         prefix: "impzlength"
-        body: '''${1:len} = impzlength(${1:d}, ${2:optional_tol})'''
+        body: '''${3:len} = impzlength(${1:d}, ${2:optional_tol})'''
         description: '''[signal] Impulse response length
         len = impzlength(d, optional_tol)
         '''
@@ -1218,7 +1218,7 @@ covariance method
 
     "diric [signal]":
         prefix: "diric"
-        body: '''${1:y} = diric(${1:x}, ${2:n})'''
+        body: '''${3:y} = diric(${1:x}, ${2:n})'''
         description: '''[signal] Dirichlet or periodic sinc function
         y = diric(x, n)
         '''
@@ -1227,7 +1227,7 @@ covariance method
 
     "lp2bp [signal]":
         prefix: "lp2bp"
-        body: '''[${1:At}, ${2:Bt}, ${3:Ct}, ${4:Dt}] = lp2bp(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo}, ${6:Bw})'''
+        body: '''[${7:At}, ${8:Bt}, ${9:Ct}, ${10:Dt}] = lp2bp(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo}, ${6:Bw})'''
         description: '''[signal] Transform lowpass analog filters to bandpass
         [At, Bt, Ct, Dt] = lp2bp(A, B, C, D, Wo, Bw)
         '''
@@ -1236,7 +1236,7 @@ covariance method
 
     "bitrevorder [signal]":
         prefix: "bitrevorder"
-        body: '''[${1:y}, ${2:i}] = bitrevorder(${1:x})'''
+        body: '''[${2:y}, ${3:i}] = bitrevorder(${1:x})'''
         description: '''[signal] Permute data into bit-reversed order
         [y, i] = bitrevorder(x)
         '''
@@ -1245,7 +1245,7 @@ covariance method
 
     "snr [signal]":
         prefix: "snr"
-        body: '''[${1:r}, ${2:noisepow}] = snr(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_n}, ${5:'power'}, ${6:optional_'aliased'})'''
+        body: '''[${7:r}, ${8:noisepow}] = snr(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_n}, ${5:'power'}, ${6:optional_'aliased'})'''
         description: '''[signal] Signal-to-noise ratio
         [r, noisepow] = snr(sxx, f, rbw, optional_n, 'power', optional_'aliased')
         '''
@@ -1254,7 +1254,7 @@ covariance method
 
     "sgolayfilt [signal]":
         prefix: "sgolayfilt"
-        body: '''${1:y} = sgolayfilt(${1:x}, ${2:order}, ${3:framelen}, ${4:weights}, ${5:optional_dim})'''
+        body: '''${6:y} = sgolayfilt(${1:x}, ${2:order}, ${3:framelen}, ${4:weights}, ${5:optional_dim})'''
         description: '''[signal] Savitzky-Golay filtering
         y = sgolayfilt(x, order, framelen, weights, optional_dim)
         '''
@@ -1263,7 +1263,7 @@ covariance method
 
     "dutycycle [signal]":
         prefix: "dutycycle"
-        body: '''${1:D} = dutycycle(${1:TAU}, ${2:PRF})'''
+        body: '''${3:D} = dutycycle(${1:TAU}, ${2:PRF})'''
         description: '''[signal]  Duty cycle of pulse waveform
         D = dutycycle(TAU, PRF)
         '''
@@ -1272,7 +1272,7 @@ covariance method
 
     "edr [signal]":
         prefix: "edr"
-        body: '''[${1:dist}, ${2:ix}, ${3:iy}] = edr(${1:x}, ${2:y}, ${3:tol}, ${4:optional_maxsamp}, ${5:optional_metric})'''
+        body: '''[${6:dist}, ${7:ix}, ${8:iy}] = edr(${1:x}, ${2:y}, ${3:tol}, ${4:optional_maxsamp}, ${5:optional_metric})'''
         description: '''[signal] Edit distance on real signals
         [dist, ix, iy] = edr(x, y, tol, optional_maxsamp, optional_metric)
         '''
@@ -1281,7 +1281,7 @@ covariance method
 
     "arcov [signal]":
         prefix: "arcov"
-        body: '''[${1:a}, ${2:e}] = arcov(${1:x}, ${2:p})'''
+        body: '''[${3:a}, ${4:e}] = arcov(${1:x}, ${2:p})'''
         description: '''[signal] Autoregressive all-pole model parameters — covariance
 method
         [a, e] = arcov(x, p)
@@ -1291,7 +1291,7 @@ method
 
     "obw [signal]":
         prefix: "obw"
-        body: '''[${1:bw}, ${2:flo}, ${3:fhi}, ${4:power}] = obw(${1:sxx}, ${2:f}, ${3:rbw}, ${4:freqrange}, ${5:optional_p})'''
+        body: '''[${6:bw}, ${7:flo}, ${8:fhi}, ${9:power}] = obw(${1:sxx}, ${2:f}, ${3:rbw}, ${4:freqrange}, ${5:optional_p})'''
         description: '''[signal] Occupied bandwidth
         [bw, flo, fhi, power] = obw(sxx, f, rbw, freqrange, optional_p)
         '''
@@ -1300,7 +1300,7 @@ method
 
     "ac2poly [signal]":
         prefix: "ac2poly"
-        body: '''[${1:a}, ${2:efinal}] = ac2poly(${1:r})'''
+        body: '''[${2:a}, ${3:efinal}] = ac2poly(${1:r})'''
         description: '''[signal] Convert autocorrelation sequence to prediction polynomial
         [a, efinal] = ac2poly(r)
         '''
@@ -1309,7 +1309,7 @@ method
 
     "firpm [signal]":
         prefix: "firpm"
-        body: '''${1:b} = firpm(${1:n}, ${2:f}, ${3:@fresp}, ${4:w}, ${5:optional_'ftype'})'''
+        body: '''${6:b} = firpm(${1:n}, ${2:f}, ${3:@fresp}, ${4:w}, ${5:optional_'ftype'})'''
         description: '''[signal] Parks-McClellan optimal FIR filter design
         b = firpm(n, f, @fresp, w, optional_'ftype')
         '''
@@ -1318,7 +1318,7 @@ method
 
     "instfreq [signal]":
         prefix: "instfreq"
-        body: '''[${1:ifq}, ${2:t}] = instfreq(${1:tfd}, ${2:fd}, ${3:td}, 'FrequencyLimits', ${4:value}, 'Method', ${5:value})'''
+        body: '''[${6:ifq}, ${7:t}] = instfreq(${1:tfd}, ${2:fd}, ${3:td}, 'FrequencyLimits', ${4:value}, 'Method', ${5:value})'''
         description: '''[signal] Estimate instantaneous frequency
         [ifq, t] = instfreq(tfd, fd, td, 'FrequencyLimits', value, 'Method', value)
         '''
@@ -1327,7 +1327,7 @@ method
 
     "cheb1ap [signal]":
         prefix: "cheb1ap"
-        body: '''[${1:z}, ${2:p}, ${3:k}] = cheb1ap(${1:n}, ${2:Rp})'''
+        body: '''[${3:z}, ${4:p}, ${5:k}] = cheb1ap(${1:n}, ${2:Rp})'''
         description: '''[signal] Chebyshev Type I analog lowpass filter prototype
         [z, p, k] = cheb1ap(n, Rp)
         '''
@@ -1336,7 +1336,7 @@ method
 
     "cusum [signal]":
         prefix: "cusum"
-        body: '''[${1:iupper}, ${2:ilower}, ${3:uppersum}, ${4:lowersum}] = cusum(${1:x}, ${2:climit}, ${3:mshift}, ${4:tmean}, ${5:tdev}, ${6:optional_'all'})'''
+        body: '''[${7:iupper}, ${8:ilower}, ${9:uppersum}, ${10:lowersum}] = cusum(${1:x}, ${2:climit}, ${3:mshift}, ${4:tmean}, ${5:tdev}, ${6:optional_'all'})'''
         description: '''[signal] Detect small changes in mean using cumulative sum
         [iupper, ilower, uppersum, lowersum] = cusum(x, climit, mshift, tmean, tdev, optional_'all')
         '''
@@ -1345,7 +1345,7 @@ method
 
     "lsf2poly [signal]":
         prefix: "lsf2poly"
-        body: '''${1:a} = lsf2poly(${1:lsf})'''
+        body: '''${2:a} = lsf2poly(${1:lsf})'''
         description: '''[signal] Convert line spectral frequencies to prediction filter coefficients
         a = lsf2poly(lsf)
         '''
@@ -1354,7 +1354,7 @@ method
 
     "latcfilt [signal]":
         prefix: "latcfilt"
-        body: '''[${1:f}, ${2:g}, ${3:zf}] = latcfilt(${1:k}, ${2:1}, ${3:x}, ${4:'ic'}, ${5:zi}, ${6:optional_dim})'''
+        body: '''[${7:f}, ${8:g}, ${9:zf}] = latcfilt(${1:k}, ${2:1}, ${3:x}, ${4:'ic'}, ${5:zi}, ${6:optional_dim})'''
         description: '''[signal] Lattice and lattice-ladder filter implementation
         [f, g, zf] = latcfilt(k, 1, x, 'ic', zi, optional_dim)
         '''
@@ -1363,7 +1363,7 @@ method
 
     "orderwaveform [signal]":
         prefix: "orderwaveform"
-        body: '''${1:xrec} = orderwaveform(${1:x}, ${2:fs}, ${3:rpm}, ${4:orderlist}, ${5:optional_rpmrefidx}, 'FilterOrder', ${6:value}, 'Bandwidth', ${7:value}, 'Decouple', ${8:value}, 'SegmentLength', ${9:value})'''
+        body: '''${10:xrec} = orderwaveform(${1:x}, ${2:fs}, ${3:rpm}, ${4:orderlist}, ${5:optional_rpmrefidx}, 'FilterOrder', ${6:value}, 'Bandwidth', ${7:value}, 'Decouple', ${8:value}, 'SegmentLength', ${9:value})'''
         description: '''[signal] Extract time-domain order waveforms from vibration signal
         xrec = orderwaveform(x, fs, rpm, orderlist, optional_rpmrefidx, 'FilterOrder', value, 'Bandwidth', value, 'Decouple', value, 'SegmentLength', value)
         '''
@@ -1372,7 +1372,7 @@ method
 
     "latc2tf [signal]":
         prefix: "latc2tf"
-        body: '''[${1:num}, ${2:den}] = latc2tf(${1:k}, ${2:'firoption'})'''
+        body: '''[${3:num}, ${4:den}] = latc2tf(${1:k}, ${2:'firoption'})'''
         description: '''[signal] Convert lattice filter parameters to transfer function
 form
         [num, den] = latc2tf(k, 'firoption')
@@ -1382,7 +1382,7 @@ form
 
     "upsample [signal]":
         prefix: "upsample"
-        body: '''${1:y} = upsample(${1:x}, ${2:n}, ${3:optional_phase})'''
+        body: '''${4:y} = upsample(${1:x}, ${2:n}, ${3:optional_phase})'''
         description: '''[signal] Upsample discrete-time models
         y = upsample(x, n, optional_phase)
         '''
@@ -1391,7 +1391,7 @@ form
 
     "levinson [signal]":
         prefix: "levinson"
-        body: '''[${1:a}, ${2:e}, ${3:k}] = levinson(${1:r}, ${2:n})'''
+        body: '''[${3:a}, ${4:e}, ${5:k}] = levinson(${1:r}, ${2:n})'''
         description: '''[signal] Levinson-Durbin recursion
         [a, e, k] = levinson(r, n)
         '''
@@ -1400,7 +1400,7 @@ form
 
     "pulsesep [signal]":
         prefix: "pulsesep"
-        body: '''[${1:S}, ${2:INITCROSS}, ${3:FINALCROSS}, ${4:NEXTCROSS}, ${5:MIDLEV}] = pulsesep(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'Polarity', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})'''
+        body: '''[${7:S}, ${8:INITCROSS}, ${9:FINALCROSS}, ${10:NEXTCROSS}, ${11:MIDLEV}] = pulsesep(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'Polarity', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})'''
         description: '''[signal] Separation between bilevel waveform pulses
         [S, INITCROSS, FINALCROSS, NEXTCROSS, MIDLEV] = pulsesep(X, optional_T, 'MidPercentReferenceLevel', value, 'Polarity', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -1409,7 +1409,7 @@ form
 
     "buttap [signal]":
         prefix: "buttap"
-        body: '''[${1:z}, ${2:p}, ${3:k}] = buttap(${1:n})'''
+        body: '''[${2:z}, ${3:p}, ${4:k}] = buttap(${1:n})'''
         description: '''[signal] Butterworth filter prototype
         [z, p, k] = buttap(n)
         '''
@@ -1418,7 +1418,7 @@ form
 
     "barthannwin [signal]":
         prefix: "barthannwin"
-        body: '''${1:w} = barthannwin(${1:L})'''
+        body: '''${2:w} = barthannwin(${1:L})'''
         description: '''[signal] Modified Bartlett-Hann window
         w = barthannwin(L)
         '''
@@ -1427,7 +1427,7 @@ form
 
     "zplane [signal]":
         prefix: "zplane"
-        body: '''[${1:vz}, ${2:vp}, ${3:vk}] = zplane(${1:d})'''
+        body: '''[${2:vz}, ${3:vp}, ${4:vk}] = zplane(${1:d})'''
         description: '''[signal] Z-plane zero-pole plot for discrete-time filter System
         object
         [vz, vp, vk] = zplane(d)
@@ -1437,7 +1437,7 @@ form
 
     "isallpass [signal]":
         prefix: "isallpass"
-        body: '''${1:flag} = isallpass(${1:d}, ${2:optional_tol})'''
+        body: '''${3:flag} = isallpass(${1:d}, ${2:optional_tol})'''
         description: '''[signal] Determine whether filter is allpass
         flag = isallpass(d, optional_tol)
         '''
@@ -1446,7 +1446,7 @@ form
 
     "midcross [signal]":
         prefix: "midcross"
-        body: '''[${1:C}, ${2:MIDLEV}] = midcross(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})'''
+        body: '''[${6:C}, ${7:MIDLEV}] = midcross(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})'''
         description: '''[signal] Mid-reference level crossing for bilevel waveform
         [C, MIDLEV] = midcross(X, optional_T, 'MidPercentReferenceLevel', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -1455,7 +1455,7 @@ form
 
     "bandpass [signal]":
         prefix: "bandpass"
-        body: '''[${1:y}, ${2:d}] = bandpass(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})'''
+        body: '''[${6:y}, ${7:d}] = bandpass(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})'''
         description: '''[signal] Bandpass-filter signals
         [y, d] = bandpass(xt, fpass, 'ImpulseResponse', value, 'Steepness', value, 'StopbandAttenuation', value)
         '''
@@ -1464,7 +1464,7 @@ form
 
     "downsample [signal]":
         prefix: "downsample"
-        body: '''${1:y} = downsample(${1:x}, ${2:n}, ${3:optional_phase})'''
+        body: '''${4:y} = downsample(${1:x}, ${2:n}, ${3:optional_phase})'''
         description: '''[signal] Decrease sample rate by integer factor
         y = downsample(x, n, optional_phase)
         '''
@@ -1473,7 +1473,7 @@ form
 
     "interp [signal]":
         prefix: "interp"
-        body: '''[${1:y}, ${2:b}] = interp(${1:x}, ${2:r}, ${3:n}, ${4:optional_alpha})'''
+        body: '''[${5:y}, ${6:b}] = interp(${1:x}, ${2:r}, ${3:n}, ${4:optional_alpha})'''
         description: '''[signal] Interpolate FRD model
         [y, b] = interp(x, r, n, optional_alpha)
         '''
@@ -1482,7 +1482,7 @@ form
 
     "pkurtosis [signal]":
         prefix: "pkurtosis"
-        body: '''[${1:sk}, ${2:f}, ${3:thresh}] = pkurtosis(${1:s}, ${2:sampx}, ${3:f}, ${4:window}, ${5:'ConfidenceLevel'}, ${6:p})'''
+        body: '''[${7:sk}, ${8:f}, ${9:thresh}] = pkurtosis(${1:s}, ${2:sampx}, ${3:f}, ${4:window}, ${5:'ConfidenceLevel'}, ${6:p})'''
         description: '''[signal] Spectral kurtosis from signal or spectrogram
         [sk, f, thresh] = pkurtosis(s, sampx, f, window, 'ConfidenceLevel', p)
         '''
@@ -1491,7 +1491,7 @@ form
 
     "firpmord [signal]":
         prefix: "firpmord"
-        body: '''${1:c} = firpmord(${1:f}, ${2:a}, ${3:dev}, ${4:fs}, ${5:'cell'})'''
+        body: '''${6:c} = firpmord(${1:f}, ${2:a}, ${3:dev}, ${4:fs}, ${5:'cell'})'''
         description: '''[signal] Parks-McClellan optimal FIR filter order estimation
         c = firpmord(f, a, dev, fs, 'cell')
         '''
@@ -1500,7 +1500,7 @@ form
 
     "phasez [signal]":
         prefix: "phasez"
-        body: '''${1:phi} = phasez(${1:d}, ${2:optional_f}, ${3:optional_fs})'''
+        body: '''${4:phi} = phasez(${1:d}, ${2:optional_f}, ${3:optional_fs})'''
         description: '''[signal] Unwrapped phase response for filter
         phi = phasez(d, optional_f, optional_fs)
         '''
@@ -1509,7 +1509,7 @@ form
 
     "resample [signal]":
         prefix: "resample"
-        body: '''[${1:y}, ${2:ty}, ${3:b}] = resample(${1:x}, ${2:tx}, ${3:fs}, ${4:optional_p}, ${5:q}, ${6:optional_method})'''
+        body: '''[${7:y}, ${8:ty}, ${9:b}] = resample(${1:x}, ${2:tx}, ${3:fs}, ${4:optional_p}, ${5:q}, ${6:optional_method})'''
         description: '''[signal] Resample time-domain data by decimation or interpolation
 (requires Signal
             Processing Toolbox software)
@@ -1520,7 +1520,7 @@ form
 
     "rc2poly [signal]":
         prefix: "rc2poly"
-        body: '''[${1:a}, ${2:efinal}] = rc2poly(${1:k}, ${2:optional_r0})'''
+        body: '''[${3:a}, ${4:efinal}] = rc2poly(${1:k}, ${2:optional_r0})'''
         description: '''[signal] Convert reflection coefficients to prediction filter polynomial
         [a, efinal] = rc2poly(k, optional_r0)
         '''
@@ -1529,7 +1529,7 @@ form
 
     "sosfilt [signal]":
         prefix: "sosfilt"
-        body: '''${1:y} = sosfilt(${1:sos}, ${2:x}, ${3:optional_dim})'''
+        body: '''${4:y} = sosfilt(${1:sos}, ${2:x}, ${3:optional_dim})'''
         description: '''[signal] Second-order (biquadratic) IIR digital filtering
         y = sosfilt(sos, x, optional_dim)
         '''
@@ -1538,7 +1538,7 @@ form
 
     "schurrc [signal]":
         prefix: "schurrc"
-        body: '''[${1:k}, ${2:e}] = schurrc(${1:r})'''
+        body: '''[${2:k}, ${3:e}] = schurrc(${1:r})'''
         description: '''[signal] Compute reflection coefficients from autocorrelation sequence
         [k, e] = schurrc(r)
         '''
@@ -1547,7 +1547,7 @@ form
 
     "unshiftdata [signal]":
         prefix: "unshiftdata"
-        body: '''${1:y} = unshiftdata(${1:x}, ${2:perm}, ${3:nshifts})'''
+        body: '''${4:y} = unshiftdata(${1:x}, ${2:perm}, ${3:nshifts})'''
         description: '''[signal] Inverse of shiftdata
         y = unshiftdata(x, perm, nshifts)
         '''
@@ -1556,7 +1556,7 @@ form
 
     "mag2db [signal]":
         prefix: "mag2db"
-        body: '''${1:ydb} = mag2db(${1:y})'''
+        body: '''${2:ydb} = mag2db(${1:y})'''
         description: '''[signal] Convert
 magnitude to decibels (dB)
         ydb = mag2db(y)
@@ -1566,7 +1566,7 @@ magnitude to decibels (dB)
 
     "modalfit [signal]":
         prefix: "modalfit"
-        body: '''[${1:fn}, ${2:dr}, ${3:ms}, ${4:ofrf}] = modalfit(${1:sys}, ${2:f}, ${3:mnum}, 'Feedthrough', ${4:value}, 'FitMethod', ${5:value}, 'FreqRange', ${6:value}, 'PhysFreq', ${7:value}, 'DriveIndex', ${8:value})'''
+        body: '''[${9:fn}, ${10:dr}, ${11:ms}, ${12:ofrf}] = modalfit(${1:sys}, ${2:f}, ${3:mnum}, 'Feedthrough', ${4:value}, 'FitMethod', ${5:value}, 'FreqRange', ${6:value}, 'PhysFreq', ${7:value}, 'DriveIndex', ${8:value})'''
         description: '''[signal] Modal parameters from frequency-response functions
         [fn, dr, ms, ofrf] = modalfit(sys, f, mnum, 'Feedthrough', value, 'FitMethod', value, 'FreqRange', value, 'PhysFreq', value, 'DriveIndex', value)
         '''
@@ -1575,7 +1575,7 @@ magnitude to decibels (dB)
 
     "rc2ac [signal]":
         prefix: "rc2ac"
-        body: '''${1:r} = rc2ac(${1:k}, ${2:r0})'''
+        body: '''${3:r} = rc2ac(${1:k}, ${2:r0})'''
         description: '''[signal] Convert reflection coefficients to autocorrelation sequence
         r = rc2ac(k, r0)
         '''
@@ -1584,7 +1584,7 @@ magnitude to decibels (dB)
 
     "toi [signal]":
         prefix: "toi"
-        body: '''[${1:oip3}, ${2:fundpow}, ${3:fundfreq}, ${4:imodpow}, ${5:imodfreq}] = toi(${1:sxx}, ${2:f}, ${3:rbw}, ${4:'power'})'''
+        body: '''[${5:oip3}, ${6:fundpow}, ${7:fundfreq}, ${8:imodpow}, ${9:imodfreq}] = toi(${1:sxx}, ${2:f}, ${3:rbw}, ${4:'power'})'''
         description: '''[signal] Third-order intercept point
         [oip3, fundpow, fundfreq, imodpow, imodfreq] = toi(sxx, f, rbw, 'power')
         '''
@@ -1593,7 +1593,7 @@ magnitude to decibels (dB)
 
     "db [signal]":
         prefix: "db"
-        body: '''${1:dboutput} = db(${1:x}, ${2:optional_SignalType}, ${3:optional_R})'''
+        body: '''${4:dboutput} = db(${1:x}, ${2:optional_SignalType}, ${3:optional_R})'''
         description: '''[signal] Convert energy or power measurements to decibels
         dboutput = db(x, optional_SignalType, optional_R)
         '''
@@ -1602,7 +1602,7 @@ magnitude to decibels (dB)
 
     "idct [signal]":
         prefix: "idct"
-        body: '''${1:x} = idct(${1:y}, ${2:optional_n}, ${3:optional_dim}, ${4:'Type'}, ${5:dcttype})'''
+        body: '''${6:x} = idct(${1:y}, ${2:optional_n}, ${3:optional_dim}, ${4:'Type'}, ${5:dcttype})'''
         description: '''[signal] Inverse discrete cosine transform
         x = idct(y, optional_n, optional_dim, 'Type', dcttype)
         '''
@@ -1611,7 +1611,7 @@ magnitude to decibels (dB)
 
     "bohmanwin [signal]":
         prefix: "bohmanwin"
-        body: '''${1:w} = bohmanwin(${1:L})'''
+        body: '''${2:w} = bohmanwin(${1:L})'''
         description: '''[signal] Bohman window
         w = bohmanwin(L)
         '''
@@ -1620,7 +1620,7 @@ magnitude to decibels (dB)
 
     "pow2db [signal]":
         prefix: "pow2db"
-        body: '''${1:ydb} = pow2db(${1:y})'''
+        body: '''${2:ydb} = pow2db(${1:y})'''
         description: '''[signal] Convert power to decibels
         ydb = pow2db(y)
         '''
@@ -1629,7 +1629,7 @@ magnitude to decibels (dB)
 
     "kaiser [signal]":
         prefix: "kaiser"
-        body: '''${1:w} = kaiser(${1:L}, ${2:optional_beta})'''
+        body: '''${3:w} = kaiser(${1:L}, ${2:optional_beta})'''
         description: '''[signal] Kaiser window
         w = kaiser(L, optional_beta)
         '''
@@ -1638,7 +1638,7 @@ magnitude to decibels (dB)
 
     "isminphase [signal]":
         prefix: "isminphase"
-        body: '''${1:flag} = isminphase(${1:d}, ${2:optional_tol})'''
+        body: '''${3:flag} = isminphase(${1:d}, ${2:optional_tol})'''
         description: '''[signal] Determine whether filter is minimum phase
         flag = isminphase(d, optional_tol)
         '''
@@ -1647,7 +1647,7 @@ magnitude to decibels (dB)
 
     "vco [signal]":
         prefix: "vco"
-        body: '''${1:c} = vco(${1:x}, ${2:[Fmin Fmax]}, ${3:fs})'''
+        body: '''${4:c} = vco(${1:x}, ${2:[Fmin Fmax]}, ${3:fs})'''
         description: '''[signal] Voltage controlled oscillator
         c = vco(x, [Fmin Fmax], fs)
         '''
@@ -1656,7 +1656,7 @@ magnitude to decibels (dB)
 
     "invfreqs [signal]":
         prefix: "invfreqs"
-        body: '''[${1:b}, ${2:a}] = invfreqs(${1:h}, ${2:w}, ${3:'complex'}, ${4:n}, ${5:m}, ${6:wt}, ${7:iter}, ${8:tol}, ${9:optional_'trace'})'''
+        body: '''[${10:b}, ${11:a}] = invfreqs(${1:h}, ${2:w}, ${3:'complex'}, ${4:n}, ${5:m}, ${6:wt}, ${7:iter}, ${8:tol}, ${9:optional_'trace'})'''
         description: '''[signal] Identify continuous-time filter parameters from frequency
 response data
         [b, a] = invfreqs(h, w, 'complex', n, m, wt, iter, tol, optional_'trace')
@@ -1666,7 +1666,7 @@ response data
 
     "tripuls [signal]":
         prefix: "tripuls"
-        body: '''${1:y} = tripuls(${1:T}, ${2:optional_w}, ${3:optional_s})'''
+        body: '''${4:y} = tripuls(${1:T}, ${2:optional_w}, ${3:optional_s})'''
         description: '''[signal] Sampled aperiodic triangle
         y = tripuls(T, optional_w, optional_s)
         '''
@@ -1675,7 +1675,7 @@ response data
 
     "ordertrack [signal]":
         prefix: "ordertrack"
-        body: '''[${1:mag}, ${2:rpm}, ${3:time}] = ordertrack(${1:map}, ${2:order}, ${3:rpm}, ${4:orderlist})'''
+        body: '''[${5:mag}, ${6:rpm}, ${7:time}] = ordertrack(${1:map}, ${2:order}, ${3:rpm}, ${4:orderlist})'''
         description: '''[signal] Track and extract order magnitudes from vibration signal
         [mag, rpm, time] = ordertrack(map, order, rpm, orderlist)
         '''
@@ -1684,7 +1684,7 @@ response data
 
     "tf2sos [signal]":
         prefix: "tf2sos"
-        body: '''[${1:sos}, ${2:g}] = tf2sos(${1:b}, ${2:a}, ${3:'order'}, ${4:optional_'scale'})'''
+        body: '''[${5:sos}, ${6:g}] = tf2sos(${1:b}, ${2:a}, ${3:'order'}, ${4:optional_'scale'})'''
         description: '''[signal] Convert digital filter transfer function data to second-order
 sections form
         [sos, g] = tf2sos(b, a, 'order', optional_'scale')
@@ -1694,7 +1694,7 @@ sections form
 
     "xspectrogram [signal]":
         prefix: "xspectrogram"
-        body: '''[${1:s}, ${2:f}, ${3:t}, ${4:c}] = xspectrogram(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_freqrange}, ${8:optional_spectrumtype}, ${9:'MinThreshold'}, ${10:thresh}, ${11:optional_freqloc}, 'OutputTimeDimension', ${12:value})'''
+        body: '''[${13:s}, ${14:f}, ${15:t}, ${16:c}] = xspectrogram(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_freqrange}, ${8:optional_spectrumtype}, ${9:'MinThreshold'}, ${10:thresh}, ${11:optional_freqloc}, 'OutputTimeDimension', ${12:value})'''
         description: '''[signal] Cross-spectrogram using short-time Fourier transforms
         [s, f, t, c] = xspectrogram(x, y, window, noverlap, f, fs, optional_freqrange, optional_spectrumtype, 'MinThreshold', thresh, optional_freqloc, 'OutputTimeDimension', value)
         '''
@@ -1703,7 +1703,7 @@ sections form
 
     "issingle [signal]":
         prefix: "issingle"
-        body: '''${1:flag} = issingle(${1:d})'''
+        body: '''${2:flag} = issingle(${1:d})'''
         description: '''[signal] Determine if digital filter coefficients are single precision
         flag = issingle(d)
         '''
@@ -1712,7 +1712,7 @@ sections form
 
     "rootmusic [signal]":
         prefix: "rootmusic"
-        body: '''[${1:f}, ${2:pow}] = rootmusic(${1:x}, ${2:p}, ${3:optional_fs}, ${4:optional_'corr'})'''
+        body: '''[${5:f}, ${6:pow}] = rootmusic(${1:x}, ${2:p}, ${3:optional_fs}, ${4:optional_'corr'})'''
         description: '''[signal] Root MUSIC algorithm
         [f, pow] = rootmusic(x, p, optional_fs, optional_'corr')
         '''
@@ -1721,7 +1721,7 @@ sections form
 
     "cell2sos [signal]":
         prefix: "cell2sos"
-        body: '''${1:m} = cell2sos(${1:c})'''
+        body: '''${2:m} = cell2sos(${1:c})'''
         description: '''[signal] Convert second-order sections cell array to matrix
         m = cell2sos(c)
         '''
@@ -1730,7 +1730,7 @@ sections form
 
     "armcov [signal]":
         prefix: "armcov"
-        body: '''[${1:a}, ${2:e}] = armcov(${1:x}, ${2:p})'''
+        body: '''[${3:a}, ${4:e}] = armcov(${1:x}, ${2:p})'''
         description: '''[signal] Autoregressive all-pole model parameters — modified
 covariance method
         [a, e] = armcov(x, p)
@@ -1740,7 +1740,7 @@ covariance method
 
     "lp2lp [signal]":
         prefix: "lp2lp"
-        body: '''[${1:At}, ${2:Bt}, ${3:Ct}, ${4:Dt}] = lp2lp(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo})'''
+        body: '''[${6:At}, ${7:Bt}, ${8:Ct}, ${9:Dt}] = lp2lp(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo})'''
         description: '''[signal] Change cutoff frequency for lowpass analog filter
         [At, Bt, Ct, Dt] = lp2lp(A, B, C, D, Wo)
         '''
@@ -1749,7 +1749,7 @@ covariance method
 
     "fwht [signal]":
         prefix: "fwht"
-        body: '''${1:y} = fwht(${1:x}, ${2:n}, ${3:optional_ordering})'''
+        body: '''${4:y} = fwht(${1:x}, ${2:n}, ${3:optional_ordering})'''
         description: '''[signal] Fast Walsh-Hadamard transform
         y = fwht(x, n, optional_ordering)
         '''
@@ -1758,7 +1758,7 @@ covariance method
 
     "tfridge [signal]":
         prefix: "tfridge"
-        body: '''[${1:fridge}, ${2:iridge}, ${3:lridge}] = tfridge(${1:tfm}, ${2:f}, ${3:penalty}, ${4:'NumRidges'}, ${5:nr}, ${6:'NumFrequencyBins'}, ${7:nbins})'''
+        body: '''[${8:fridge}, ${9:iridge}, ${10:lridge}] = tfridge(${1:tfm}, ${2:f}, ${3:penalty}, ${4:'NumRidges'}, ${5:nr}, ${6:'NumFrequencyBins'}, ${7:nbins})'''
         description: '''[signal] Time-frequency ridges
         [fridge, iridge, lridge] = tfridge(tfm, f, penalty, 'NumRidges', nr, 'NumFrequencyBins', nbins)
         '''
@@ -1767,7 +1767,7 @@ covariance method
 
     "zerophase [signal]":
         prefix: "zerophase"
-        body: '''[${1:Hr}, ${2:f}] = zerophase(${1:d}, ${2:f}, ${3:optional_fs})'''
+        body: '''[${4:Hr}, ${5:f}] = zerophase(${1:d}, ${2:f}, ${3:optional_fs})'''
         description: '''[signal] Zero-phase response of discrete-time filter System
         object
         [Hr, f] = zerophase(d, f, optional_fs)
@@ -1777,7 +1777,7 @@ covariance method
 
     "taylorwin [signal]":
         prefix: "taylorwin"
-        body: '''${1:w} = taylorwin(${1:n}, ${2:nbar}, ${3:optional_sll})'''
+        body: '''${4:w} = taylorwin(${1:n}, ${2:nbar}, ${3:optional_sll})'''
         description: '''[signal] Taylor window
         w = taylorwin(n, nbar, optional_sll)
         '''
@@ -1786,7 +1786,7 @@ covariance method
 
     "invfreqz [signal]":
         prefix: "invfreqz"
-        body: '''[${1:b}, ${2:a}] = invfreqz(${1:h}, ${2:w}, ${3:'complex'}, ${4:n}, ${5:m}, ${6:wt}, ${7:iter}, ${8:tol}, ${9:optional_'trace'})'''
+        body: '''[${10:b}, ${11:a}] = invfreqz(${1:h}, ${2:w}, ${3:'complex'}, ${4:n}, ${5:m}, ${6:wt}, ${7:iter}, ${8:tol}, ${9:optional_'trace'})'''
         description: '''[signal] Identify discrete-time filter parameters from frequency
 response data
         [b, a] = invfreqz(h, w, 'complex', n, m, wt, iter, tol, optional_'trace')
@@ -1796,7 +1796,7 @@ response data
 
     "double [signal]":
         prefix: "double"
-        body: '''${1:f2} = double(${1:f1})'''
+        body: '''${2:f2} = double(${1:f1})'''
         description: '''[signal] Cast fixed-point filter to use double-precision arithmetic
         f2 = double(f1)
         '''
@@ -1805,7 +1805,7 @@ response data
 
     "sinad [signal]":
         prefix: "sinad"
-        body: '''[${1:r}, ${2:totdistpow}] = sinad(${1:sxx}, ${2:f}, ${3:rbw}, ${4:'power'})'''
+        body: '''[${5:r}, ${6:totdistpow}] = sinad(${1:sxx}, ${2:f}, ${3:rbw}, ${4:'power'})'''
         description: '''[signal] Signal to noise and distortion ratio
         [r, totdistpow] = sinad(sxx, f, rbw, 'power')
         '''
@@ -1814,7 +1814,7 @@ response data
 
     "tf2zpk [signal]":
         prefix: "tf2zpk"
-        body: '''[${1:z}, ${2:p}, ${3:k}] = tf2zpk(${1:b}, ${2:a})'''
+        body: '''[${3:z}, ${4:p}, ${5:k}] = tf2zpk(${1:b}, ${2:a})'''
         description: '''[signal] Convert transfer function filter parameters to zero-pole-gain form
         [z, p, k] = tf2zpk(b, a)
         '''
@@ -1823,7 +1823,7 @@ response data
 
     "fircls [signal]":
         prefix: "fircls"
-        body: '''${1:b} = fircls(${1:n}, ${2:f}, ${3:amp}, ${4:up}, ${5:lo}, ${6:optional_'design_flag'})'''
+        body: '''${7:b} = fircls(${1:n}, ${2:f}, ${3:amp}, ${4:up}, ${5:lo}, ${6:optional_'design_flag'})'''
         description: '''[signal] FIR Constrained Least Squares filter
         b = fircls(n, f, amp, up, lo, optional_'design_flag')
         '''
@@ -1832,7 +1832,7 @@ response data
 
     "goertzel [signal]":
         prefix: "goertzel"
-        body: '''${1:dft_data} = goertzel(${1:data}, ${2:freq_indices}, ${3:optional_dim})'''
+        body: '''${4:dft_data} = goertzel(${1:data}, ${2:freq_indices}, ${3:optional_dim})'''
         description: '''[signal] Discrete Fourier transform with second-order Goertzel
 algorithm
         dft_data = goertzel(data, freq_indices, optional_dim)
@@ -1842,7 +1842,7 @@ algorithm
 
     "seqperiod [signal]":
         prefix: "seqperiod"
-        body: '''[${1:p}, ${2:num}] = seqperiod(${1:x})'''
+        body: '''[${2:p}, ${3:num}] = seqperiod(${1:x})'''
         description: '''[signal] Compute period of sequence
         [p, num] = seqperiod(x)
         '''
@@ -1851,7 +1851,7 @@ algorithm
 
     "czt [signal]":
         prefix: "czt"
-        body: '''${1:y} = czt(${1:x}, ${2:m}, ${3:w}, ${4:a})'''
+        body: '''${5:y} = czt(${1:x}, ${2:m}, ${3:w}, ${4:a})'''
         description: '''[signal] Chirp Z-transform
         y = czt(x, m, w, a)
         '''
@@ -1860,7 +1860,7 @@ algorithm
 
     "cconv [signal]":
         prefix: "cconv"
-        body: '''${1:c} = cconv(${1:gpuArrayA}, ${2:gpuArrayB}, ${3:n})'''
+        body: '''${4:c} = cconv(${1:gpuArrayA}, ${2:gpuArrayB}, ${3:n})'''
         description: '''[signal] Modulo-n circular convolution
         c = cconv(gpuArrayA, gpuArrayB, n)
         '''
@@ -1869,7 +1869,7 @@ algorithm
 
     "info [signal]":
         prefix: "info"
-        body: '''${1:s} = info(${1:d})'''
+        body: '''${2:s} = info(${1:d})'''
         description: '''[signal] Characteristic information about carrier synchronizer
         s = info(d)
         '''
@@ -1878,7 +1878,7 @@ algorithm
 
     "iscola [signal]":
         prefix: "iscola"
-        body: '''[${1:tf}, ${2:m}, ${3:maxDeviation}] = iscola(${1:window}, ${2:noverlap}, ${3:optional_method})'''
+        body: '''[${4:tf}, ${5:m}, ${6:maxDeviation}] = iscola(${1:window}, ${2:noverlap}, ${3:optional_method})'''
         description: '''[signal] Determine whether window-overlap combination is COLA compliant
         [tf, m, maxDeviation] = iscola(window, noverlap, optional_method)
         '''
@@ -1887,7 +1887,7 @@ algorithm
 
     "blackman [signal]":
         prefix: "blackman"
-        body: '''${1:w} = blackman(${1:N}, ${2:optional_SFLAG})'''
+        body: '''${3:w} = blackman(${1:N}, ${2:optional_SFLAG})'''
         description: '''[signal] Blackman window
         w = blackman(N, optional_SFLAG)
         '''
@@ -1896,7 +1896,7 @@ algorithm
 
     "uencode [signal]":
         prefix: "uencode"
-        body: '''${1:y} = uencode(${1:u}, ${2:n}, ${3:v}, ${4:optional_'SignFlag'})'''
+        body: '''${5:y} = uencode(${1:u}, ${2:n}, ${3:v}, ${4:optional_'SignFlag'})'''
         description: '''[signal] Quantize and encode floating-point inputs to integer outputs
         y = uencode(u, n, v, optional_'SignFlag')
         '''
@@ -1905,7 +1905,7 @@ algorithm
 
     "firtype [signal]":
         prefix: "firtype"
-        body: '''${1:t} = firtype(${1:d})'''
+        body: '''${2:t} = firtype(${1:d})'''
         description: '''[signal] Type of linear phase FIR filter
         t = firtype(d)
         '''
@@ -1914,7 +1914,7 @@ algorithm
 
     "stmcb [signal]":
         prefix: "stmcb"
-        body: '''[${1:b}, ${2:a}] = stmcb(${1:y}, ${2:x}, ${3:nb}, ${4:na}, ${5:niter}, ${6:optional_ai})'''
+        body: '''[${7:b}, ${8:a}] = stmcb(${1:y}, ${2:x}, ${3:nb}, ${4:na}, ${5:niter}, ${6:optional_ai})'''
         description: '''[signal] Compute linear model using Steiglitz-McBride iteration
         [b, a] = stmcb(y, x, nb, na, niter, optional_ai)
         '''
@@ -1923,7 +1923,7 @@ algorithm
 
     "cheb1ord [signal]":
         prefix: "cheb1ord"
-        body: '''[${1:n}, ${2:Wp}] = cheb1ord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})'''
+        body: '''[${6:n}, ${7:Wp}] = cheb1ord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})'''
         description: '''[signal] Chebyshev Type I filter order
         [n, Wp] = cheb1ord(Wp, Ws, Rp, Rs, optional_'s')
         '''
@@ -1932,7 +1932,7 @@ algorithm
 
     "dpssload [signal]":
         prefix: "dpssload"
-        body: '''[${1:e}, ${2:v}] = dpssload(${1:n}, ${2:nw})'''
+        body: '''[${3:e}, ${4:v}] = dpssload(${1:n}, ${2:nw})'''
         description: '''[signal] Load discrete prolate spheroidal sequences from database
         [e, v] = dpssload(n, nw)
         '''
@@ -1941,7 +1941,7 @@ algorithm
 
     "cheby1 [signal]":
         prefix: "cheby1"
-        body: '''[${1:A}, ${2:B}, ${3:C}, ${4:D}] = cheby1(${1:n}, ${2:Rp}, ${3:Wp}, ${4:ftype}, ${5:optional_'s'})'''
+        body: '''[${6:A}, ${7:B}, ${8:C}, ${9:D}] = cheby1(${1:n}, ${2:Rp}, ${3:Wp}, ${4:ftype}, ${5:optional_'s'})'''
         description: '''[signal] Chebyshev Type I filter using specification object
         [A, B, C, D] = cheby1(n, Rp, Wp, ftype, optional_'s')
         '''
@@ -1950,7 +1950,7 @@ algorithm
 
     "istft [signal]":
         prefix: "istft"
-        body: '''[${1:X}, ${2:T}] = istft(${1:S}, ${2:optional_Ts}, 'Window', ${3:value}, 'OverlapLength', ${4:value}, 'FFTLength', ${5:value}, 'Method', ${6:value}, 'ConjugateSymmetric', ${7:value}, 'Centered', ${8:value}, 'InputTimeDimension', ${9:value})'''
+        body: '''[${10:X}, ${11:T}] = istft(${1:S}, ${2:optional_Ts}, 'Window', ${3:value}, 'OverlapLength', ${4:value}, 'FFTLength', ${5:value}, 'Method', ${6:value}, 'ConjugateSymmetric', ${7:value}, 'Centered', ${8:value}, 'InputTimeDimension', ${9:value})'''
         description: '''[signal] Inverse short-time Fourier transform
         [X, T] = istft(S, optional_Ts, 'Window', value, 'OverlapLength', value, 'FFTLength', value, 'Method', value, 'ConjugateSymmetric', value, 'Centered', value, 'InputTimeDimension', value)
         '''
@@ -1959,7 +1959,7 @@ algorithm
 
     "firls [signal]":
         prefix: "firls"
-        body: '''${1:b} = firls(${1:n}, ${2:f}, ${3:a}, ${4:optional_'ftype'})'''
+        body: '''${5:b} = firls(${1:n}, ${2:f}, ${3:a}, ${4:optional_'ftype'})'''
         description: '''[signal] Least-square linear-phase FIR filter design
         b = firls(n, f, a, optional_'ftype')
         '''
@@ -1968,7 +1968,7 @@ algorithm
 
     "poly2ac [signal]":
         prefix: "poly2ac"
-        body: '''${1:r} = poly2ac(${1:a}, ${2:efinal})'''
+        body: '''${3:r} = poly2ac(${1:a}, ${2:efinal})'''
         description: '''[signal] Convert prediction filter polynomial to autocorrelation sequence
         r = poly2ac(a, efinal)
         '''
@@ -1977,7 +1977,7 @@ algorithm
 
     "corrmtx [signal]":
         prefix: "corrmtx"
-        body: '''[${1:X}, ${2:R}] = corrmtx(${1:x}, ${2:m}, ${3:optional_method})'''
+        body: '''[${4:X}, ${5:R}] = corrmtx(${1:x}, ${2:m}, ${3:optional_method})'''
         description: '''[signal] Data matrix for autocorrelation matrix estimation
         [X, R] = corrmtx(x, m, optional_method)
         '''
@@ -1986,7 +1986,7 @@ algorithm
 
     "periodogram [signal]":
         prefix: "periodogram"
-        body: '''[${1:rpxx}, ${2:f}, ${3:pxx}, ${4:fc}] = periodogram(${1:x}, ${2:window}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:optional_spectrumtype}, ${7:optional_'reassigned'})'''
+        body: '''[${8:rpxx}, ${9:f}, ${10:pxx}, ${11:fc}] = periodogram(${1:x}, ${2:window}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:optional_spectrumtype}, ${7:optional_'reassigned'})'''
         description: '''[signal] Periodogram power spectral density estimate
         [rpxx, f, pxx, fc] = periodogram(x, window, f, fs, optional_freqrange, optional_spectrumtype, optional_'reassigned')
         '''
@@ -1995,7 +1995,7 @@ algorithm
 
     "kaiserord [signal]":
         prefix: "kaiserord"
-        body: '''${1:c} = kaiserord(${1:f}, ${2:a}, ${3:dev}, ${4:fs}, ${5:'cell'})'''
+        body: '''${6:c} = kaiserord(${1:f}, ${2:a}, ${3:dev}, ${4:fs}, ${5:'cell'})'''
         description: '''[signal] Kaiser window FIR filter design estimation parameters
         c = kaiserord(f, a, dev, fs, 'cell')
         '''
@@ -2004,7 +2004,7 @@ algorithm
 
     "buttord [signal]":
         prefix: "buttord"
-        body: '''[${1:n}, ${2:Wn}] = buttord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})'''
+        body: '''[${6:n}, ${7:Wn}] = buttord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})'''
         description: '''[signal] Butterworth filter order and cutoff frequency
         [n, Wn] = buttord(Wp, Ws, Rp, Rs, optional_'s')
         '''
@@ -2013,7 +2013,7 @@ algorithm
 
     "dftmtx [signal]":
         prefix: "dftmtx"
-        body: '''${1:A} = dftmtx(${1:n})'''
+        body: '''${2:A} = dftmtx(${1:n})'''
         description: '''[signal] Discrete Fourier transform matrix in Galois
             field
         A = dftmtx(n)
@@ -2023,7 +2023,7 @@ algorithm
 
     "lp2bs [signal]":
         prefix: "lp2bs"
-        body: '''[${1:At}, ${2:Bt}, ${3:Ct}, ${4:Dt}] = lp2bs(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo}, ${6:Bw})'''
+        body: '''[${7:At}, ${8:Bt}, ${9:Ct}, ${10:Dt}] = lp2bs(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo}, ${6:Bw})'''
         description: '''[signal] Transform lowpass analog filters to bandstop
         [At, Bt, Ct, Dt] = lp2bs(A, B, C, D, Wo, Bw)
         '''
@@ -2032,7 +2032,7 @@ algorithm
 
     "envspectrum [signal]":
         prefix: "envspectrum"
-        body: '''[${1:es}, ${2:f}, ${3:env}, ${4:t}] = envspectrum(${1:xt}, 'Method', ${2:value}, 'Band', ${3:value}, 'FilterOrder', ${4:value})'''
+        body: '''[${5:es}, ${6:f}, ${7:env}, ${8:t}] = envspectrum(${1:xt}, 'Method', ${2:value}, 'Band', ${3:value}, 'FilterOrder', ${4:value})'''
         description: '''[signal] Envelope spectrum for machinery diagnosis
         [es, f, env, t] = envspectrum(xt, 'Method', value, 'Band', value, 'FilterOrder', value)
         '''
@@ -2041,7 +2041,7 @@ algorithm
 
     "modalsd [signal]":
         prefix: "modalsd"
-        body: '''${1:fn} = modalsd(${1:frf}, ${2:f}, ${3:fs}, 'FitMethod', ${4:value}, 'FreqRange', ${5:value}, 'MaxModes', ${6:value}, 'SCriteria', ${7:value})'''
+        body: '''${8:fn} = modalsd(${1:frf}, ${2:f}, ${3:fs}, 'FitMethod', ${4:value}, 'FreqRange', ${5:value}, 'MaxModes', ${6:value}, 'SCriteria', ${7:value})'''
         description: '''[signal] Generate stabilization diagram for modal analysis
         fn = modalsd(frf, f, fs, 'FitMethod', value, 'FreqRange', value, 'MaxModes', value, 'SCriteria', value)
         '''
@@ -2050,7 +2050,7 @@ algorithm
 
     "stft [signal]":
         prefix: "stft"
-        body: '''[${1:S}, ${2:F}, ${3:T}] = stft(${1:X}, ${2:optional_Ts}, 'Window', ${3:value}, 'OverlapLength', ${4:value}, 'FFTLength', ${5:value}, 'Centered', ${6:value}, 'OutputTimeDimension', ${7:value})'''
+        body: '''[${8:S}, ${9:F}, ${10:T}] = stft(${1:X}, ${2:optional_Ts}, 'Window', ${3:value}, 'OverlapLength', ${4:value}, 'FFTLength', ${5:value}, 'Centered', ${6:value}, 'OutputTimeDimension', ${7:value})'''
         description: '''[signal] Short-time Fourier transform
         [S, F, T] = stft(X, optional_Ts, 'Window', value, 'OverlapLength', value, 'FFTLength', value, 'Centered', value, 'OutputTimeDimension', value)
         '''
@@ -2059,7 +2059,7 @@ algorithm
 
     "filtic [signal]":
         prefix: "filtic"
-        body: '''${1:z} = filtic(${1:b}, ${2:a}, ${3:y}, ${4:optional_x})'''
+        body: '''${5:z} = filtic(${1:b}, ${2:a}, ${3:y}, ${4:optional_x})'''
         description: '''[signal] Initial conditions for transposed direct-form II filter
 implementation
         z = filtic(b, a, y, optional_x)
@@ -2069,7 +2069,7 @@ implementation
 
     "sos2tf [signal]":
         prefix: "sos2tf"
-        body: '''[${1:b}, ${2:a}] = sos2tf(${1:sos}, ${2:optional_g})'''
+        body: '''[${3:b}, ${4:a}] = sos2tf(${1:sos}, ${2:optional_g})'''
         description: '''[signal] Convert digital filter second-order section data to transfer
 function form
         [b, a] = sos2tf(sos, optional_g)
@@ -2079,7 +2079,7 @@ function form
 
     "demod [signal]":
         prefix: "demod"
-        body: '''${1:x} = demod(${1:y}, ${2:fc}, ${3:fs}, ${4:'pwm'}, ${5:'centered'})'''
+        body: '''${6:x} = demod(${1:y}, ${2:fc}, ${3:fs}, ${4:'pwm'}, ${5:'centered'})'''
         description: '''[signal] Demodulation for communications simulation
         x = demod(y, fc, fs, 'pwm', 'centered')
         '''
@@ -2088,7 +2088,7 @@ function form
 
     "rlevinson [signal]":
         prefix: "rlevinson"
-        body: '''[${1:r}, ${2:u}, ${3:k}, ${4:e}] = rlevinson(${1:a}, ${2:efinal})'''
+        body: '''[${3:r}, ${4:u}, ${5:k}, ${6:e}] = rlevinson(${1:a}, ${2:efinal})'''
         description: '''[signal] Reverse Levinson-Durbin recursion
         [r, u, k, e] = rlevinson(a, efinal)
         '''
@@ -2097,7 +2097,7 @@ function form
 
     "xcov [signal]":
         prefix: "xcov"
-        body: '''[${1:c}, ${2:lags}] = xcov(${1:x}, ${2:optional_y}, ${3:optional_maxlag}, ${4:optional_scaleopt})'''
+        body: '''[${5:c}, ${6:lags}] = xcov(${1:x}, ${2:optional_y}, ${3:optional_maxlag}, ${4:optional_scaleopt})'''
         description: '''[signal] Cross-covariance
         [c, lags] = xcov(x, optional_y, optional_maxlag, optional_scaleopt)
         '''
@@ -2106,7 +2106,7 @@ function form
 
     "undershoot [signal]":
         prefix: "undershoot"
-        body: '''[${1:OS}, ${2:OSLEV}, ${3:OSINST}] = undershoot(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'Region', ${4:value}, 'SeekFactor', ${5:value}, 'StateLevels', ${6:value}, 'Tolerance', ${7:value})'''
+        body: '''[${8:OS}, ${9:OSLEV}, ${10:OSINST}] = undershoot(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'Region', ${4:value}, 'SeekFactor', ${5:value}, 'StateLevels', ${6:value}, 'Tolerance', ${7:value})'''
         description: '''[signal]  Undershoot metrics of bilevel waveform transitions
         [OS, OSLEV, OSINST] = undershoot(X, optional_T, 'PercentReferenceLevels', value, 'Region', value, 'SeekFactor', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -2115,7 +2115,7 @@ function form
 
     "sos2cell [signal]":
         prefix: "sos2cell"
-        body: '''${1:c} = sos2cell(${1:m}, ${2:optional_g})'''
+        body: '''${3:c} = sos2cell(${1:m}, ${2:optional_g})'''
         description: '''[signal] Convert second-order sections matrix to cell array
         c = sos2cell(m, optional_g)
         '''
@@ -2124,7 +2124,7 @@ function form
 
     "maxflat [signal]":
         prefix: "maxflat"
-        body: '''${1:b} = maxflat(${1:n}, ${2:'sym'}, ${3:Wn}, ${4:optional_'design_flag'})'''
+        body: '''${5:b} = maxflat(${1:n}, ${2:'sym'}, ${3:Wn}, ${4:optional_'design_flag'})'''
         description: '''[signal] Maxflat FIR filter
         b = maxflat(n, 'sym', Wn, optional_'design_flag')
         '''
@@ -2133,7 +2133,7 @@ function form
 
     "digitrevorder [signal]":
         prefix: "digitrevorder"
-        body: '''[${1:y}, ${2:i}] = digitrevorder(${1:x}, ${2:r})'''
+        body: '''[${3:y}, ${4:i}] = digitrevorder(${1:x}, ${2:r})'''
         description: '''[signal] Permute input into digit-reversed order
         [y, i] = digitrevorder(x, r)
         '''
@@ -2142,7 +2142,7 @@ function form
 
     "polyscale [signal]":
         prefix: "polyscale"
-        body: '''${1:b} = polyscale(${1:a}, ${2:alpha})'''
+        body: '''${3:b} = polyscale(${1:a}, ${2:alpha})'''
         description: '''[signal] Scale roots of polynomial
         b = polyscale(a, alpha)
         '''
@@ -2151,7 +2151,7 @@ function form
 
     "finddelay [signal]":
         prefix: "finddelay"
-        body: '''${1:D} = finddelay(${1:X}, ${2:Y}, ${3:optional_maxlag})'''
+        body: '''${4:D} = finddelay(${1:X}, ${2:Y}, ${3:optional_maxlag})'''
         description: '''[signal] Estimate delay(s) between signals
         D = finddelay(X, Y, optional_maxlag)
         '''
@@ -2169,7 +2169,7 @@ function form
 
     "impinvar [signal]":
         prefix: "impinvar"
-        body: '''[${1:bz}, ${2:az}] = impinvar(${1:b}, ${2:a}, ${3:fs}, ${4:optional_tol})'''
+        body: '''[${5:bz}, ${6:az}] = impinvar(${1:b}, ${2:a}, ${3:fs}, ${4:optional_tol})'''
         description: '''[signal] Impulse invariance method for analog-to-digital filter
 conversion
         [bz, az] = impinvar(b, a, fs, optional_tol)
@@ -2179,7 +2179,7 @@ conversion
 
     "pulstran [signal]":
         prefix: "pulstran"
-        body: '''${1:y} = pulstran(${1:t}, ${2:d}, ${3:p}, ${4:optional_fs})'''
+        body: '''${5:y} = pulstran(${1:t}, ${2:d}, ${3:p}, ${4:optional_fs})'''
         description: '''[signal] Pulse train
         y = pulstran(t, d, p, optional_fs)
         '''
@@ -2188,7 +2188,7 @@ conversion
 
     "ifwht [signal]":
         prefix: "ifwht"
-        body: '''${1:y} = ifwht(${1:x}, ${2:n}, ${3:optional_ordering})'''
+        body: '''${4:y} = ifwht(${1:x}, ${2:n}, ${3:optional_ordering})'''
         description: '''[signal] Inverse Fast Walsh-Hadamard transform
         y = ifwht(x, n, optional_ordering)
         '''
@@ -2197,7 +2197,7 @@ conversion
 
     "is2rc [signal]":
         prefix: "is2rc"
-        body: '''${1:k} = is2rc(${1:isin})'''
+        body: '''${2:k} = is2rc(${1:isin})'''
         description: '''[signal] Convert inverse sine parameters to reflection coefficients
         k = is2rc(isin)
         '''
@@ -2206,7 +2206,7 @@ conversion
 
     "slewrate [signal]":
         prefix: "slewrate"
-        body: '''[${1:S}, ${2:LT}, ${3:UT}, ${4:LL}, ${5:UL}] = slewrate(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})'''
+        body: '''[${6:S}, ${7:LT}, ${8:UT}, ${9:LL}, ${10:UL}] = slewrate(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})'''
         description: '''[signal] Slew rate of bilevel waveform
         [S, LT, UT, LL, UL] = slewrate(X, optional_T, 'PercentReferenceLevels', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -2215,7 +2215,7 @@ conversion
 
     "pentropy [signal]":
         prefix: "pentropy"
-        body: '''[${1:se}, ${2:t}] = pentropy(${1:p}, ${2:fp}, ${3:tp}, 'Instantaneous', ${4:value}, 'Scaled', ${5:value}, 'FrequencyLimits', ${6:value}, 'TimeLimits', ${7:value})'''
+        body: '''[${8:se}, ${9:t}] = pentropy(${1:p}, ${2:fp}, ${3:tp}, 'Instantaneous', ${4:value}, 'Scaled', ${5:value}, 'FrequencyLimits', ${6:value}, 'TimeLimits', ${7:value})'''
         description: '''[signal] Spectral entropy of signal
         [se, t] = pentropy(p, fp, tp, 'Instantaneous', value, 'Scaled', value, 'FrequencyLimits', value, 'TimeLimits', value)
         '''
@@ -2224,7 +2224,7 @@ conversion
 
     "sfdr [signal]":
         prefix: "sfdr"
-        body: '''[${1:r}, ${2:spurpow}, ${3:spurfreq}] = sfdr(${1:sxx}, ${2:f}, ${3:optional_msd}, ${4:'power'})'''
+        body: '''[${5:r}, ${6:spurpow}, ${7:spurfreq}] = sfdr(${1:sxx}, ${2:f}, ${3:optional_msd}, ${4:'power'})'''
         description: '''[signal] Spurious free dynamic range
         [r, spurpow, spurfreq] = sfdr(sxx, f, optional_msd, 'power')
         '''
@@ -2233,7 +2233,7 @@ conversion
 
     "plomb [signal]":
         prefix: "plomb"
-        body: '''[${1:pxx}, ${2:fvec}] = plomb(${1:x}, ${2:fs}, ${3:fvec}, ${4:optional_spectrumtype})'''
+        body: '''[${5:pxx}, ${6:fvec}] = plomb(${1:x}, ${2:fs}, ${3:fvec}, ${4:optional_spectrumtype})'''
         description: '''[signal] Lomb-Scargle periodogram
         [pxx, fvec] = plomb(x, fs, fvec, optional_spectrumtype)
         '''
@@ -2242,7 +2242,7 @@ conversion
 
     "findpeaks [signal]":
         prefix: "findpeaks"
-        body: '''[${1:pks}, ${2:locs}, ${3:w}, ${4:p}] = findpeaks(${1:data}, ${2:Fs}, 'NPeaks', ${3:value}, 'SortStr', ${4:value}, 'MinPeakHeight', ${5:value}, 'MinPeakProminence', ${6:value}, 'Threshold', ${7:value}, 'MinPeakDistance', ${8:value}, 'WidthReference', ${9:value}, 'MinPeakWidth', ${10:value}, 'MaxPeakWidth', ${11:value}, 'Annotate', ${12:value})'''
+        body: '''[${13:pks}, ${14:locs}, ${15:w}, ${16:p}] = findpeaks(${1:data}, ${2:Fs}, 'NPeaks', ${3:value}, 'SortStr', ${4:value}, 'MinPeakHeight', ${5:value}, 'MinPeakProminence', ${6:value}, 'Threshold', ${7:value}, 'MinPeakDistance', ${8:value}, 'WidthReference', ${9:value}, 'MinPeakWidth', ${10:value}, 'MaxPeakWidth', ${11:value}, 'Annotate', ${12:value})'''
         description: '''[signal] Find local maxima
         [pks, locs, w, p] = findpeaks(data, Fs, 'NPeaks', value, 'SortStr', value, 'MinPeakHeight', value, 'MinPeakProminence', value, 'Threshold', value, 'MinPeakDistance', value, 'WidthReference', value, 'MinPeakWidth', value, 'MaxPeakWidth', value, 'Annotate', value)
         '''
@@ -2251,7 +2251,7 @@ conversion
 
     "medfilt1 [signal]":
         prefix: "medfilt1"
-        body: '''${1:y} = medfilt1(${1:x}, ${2:optional_n}, ${3:optional_nanflag}, ${4:optional_padding})'''
+        body: '''${5:y} = medfilt1(${1:x}, ${2:optional_n}, ${3:optional_nanflag}, ${4:optional_padding})'''
         description: '''[signal] 1-D median filtering
         y = medfilt1(x, optional_n, optional_nanflag, optional_padding)
         '''
@@ -2260,7 +2260,7 @@ conversion
 
     "ellip [signal]":
         prefix: "ellip"
-        body: '''[${1:A}, ${2:B}, ${3:C}, ${4:D}] = ellip(${1:n}, ${2:Rp}, ${3:Rs}, ${4:Wp}, ${5:ftype}, ${6:optional_'s'})'''
+        body: '''[${7:A}, ${8:B}, ${9:C}, ${10:D}] = ellip(${1:n}, ${2:Rp}, ${3:Rs}, ${4:Wp}, ${5:ftype}, ${6:optional_'s'})'''
         description: '''[signal] Elliptic filter using specification object
         [A, B, C, D] = ellip(n, Rp, Rs, Wp, ftype, optional_'s')
         '''
@@ -2269,7 +2269,7 @@ conversion
 
     "lp2hp [signal]":
         prefix: "lp2hp"
-        body: '''[${1:At}, ${2:Bt}, ${3:Ct}, ${4:Dt}] = lp2hp(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo})'''
+        body: '''[${6:At}, ${7:Bt}, ${8:Ct}, ${9:Dt}] = lp2hp(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo})'''
         description: '''[signal] Transform lowpass analog filters to highpass
         [At, Bt, Ct, Dt] = lp2hp(A, B, C, D, Wo)
         '''
@@ -2278,7 +2278,7 @@ conversion
 
     "pulsewidth [signal]":
         prefix: "pulsewidth"
-        body: '''[${1:W}, ${2:INITCROSS}, ${3:FINALCROSS}, ${4:MIDLEV}] = pulsewidth(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'Polarity', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})'''
+        body: '''[${7:W}, ${8:INITCROSS}, ${9:FINALCROSS}, ${10:MIDLEV}] = pulsewidth(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'Polarity', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})'''
         description: '''[signal] Bilevel waveform pulse width
         [W, INITCROSS, FINALCROSS, MIDLEV] = pulsewidth(X, optional_T, 'MidPercentReferenceLevel', value, 'Polarity', value, 'StateLevels', value, 'Tolerance', value)
         '''
@@ -2287,7 +2287,7 @@ conversion
 
     "peig [signal]":
         prefix: "peig"
-        body: '''[${1:S}, ${2:f}, ${3:v}, ${4:e}] = peig(${1:x}, ${2:p}, ${3:nfft}, ${4:fs}, ${5:nwin}, ${6:noverlap}, ${7:optional_'corr'}, ${8:optional_freqrange})'''
+        body: '''[${9:S}, ${10:f}, ${11:v}, ${12:e}] = peig(${1:x}, ${2:p}, ${3:nfft}, ${4:fs}, ${5:nwin}, ${6:noverlap}, ${7:optional_'corr'}, ${8:optional_freqrange})'''
         description: '''[signal] Pseudospectrum using eigenvector method
         [S, f, v, e] = peig(x, p, nfft, fs, nwin, noverlap, optional_'corr', optional_freqrange)
         '''
@@ -2296,7 +2296,7 @@ conversion
 
     "grpdelay [signal]":
         prefix: "grpdelay"
-        body: '''${1:gd} = grpdelay(${1:d}, ${2:f}, ${3:optional_fs})'''
+        body: '''${4:gd} = grpdelay(${1:d}, ${2:f}, ${3:optional_fs})'''
         description: '''[signal] Group delay response of discrete-time filter System
         object
         gd = grpdelay(d, f, optional_fs)
@@ -2306,7 +2306,7 @@ conversion
 
     "pmcov [signal]":
         prefix: "pmcov"
-        body: '''[${1:pxx}, ${2:f}, ${3:pxxc}] = pmcov(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})'''
+        body: '''[${8:pxx}, ${9:f}, ${10:pxxc}] = pmcov(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})'''
         description: '''[signal] Autoregressive power spectral density estimate —
 modified covariance method
         [pxx, f, pxxc] = pmcov(x, order, f, fs, optional_freqrange, 'ConfidenceLevel', optional_probability)
@@ -2316,7 +2316,7 @@ modified covariance method
 
     "spectrogram [signal]":
         prefix: "spectrogram"
-        body: '''[${1:s}, ${2:f}, ${3:t}, ${4:ps}, ${5:fc}, ${6:tc}] = spectrogram(${1:x}, ${2:window}, ${3:noverlap}, ${4:f}, ${5:fs}, ${6:'reassigned'}, ${7:optional_freqrange}, ${8:optional_spectrumtype}, ${9:'MinThreshold'}, ${10:thresh}, ${11:optional_freqloc}, 'OutputTimeDimension', ${12:value})'''
+        body: '''[${13:s}, ${14:f}, ${15:t}, ${16:ps}, ${17:fc}, ${18:tc}] = spectrogram(${1:x}, ${2:window}, ${3:noverlap}, ${4:f}, ${5:fs}, ${6:'reassigned'}, ${7:optional_freqrange}, ${8:optional_spectrumtype}, ${9:'MinThreshold'}, ${10:thresh}, ${11:optional_freqloc}, 'OutputTimeDimension', ${12:value})'''
         description: '''[signal] Spectrogram using short-time Fourier transform
         [s, f, t, ps, fc, tc] = spectrogram(x, window, noverlap, f, fs, 'reassigned', optional_freqrange, optional_spectrumtype, 'MinThreshold', thresh, optional_freqloc, 'OutputTimeDimension', value)
         '''
@@ -2325,7 +2325,7 @@ modified covariance method
 
     "xcorr2 [signal]":
         prefix: "xcorr2"
-        body: '''${1:c} = xcorr2(${1:a}, ${2:optional_b})'''
+        body: '''${3:c} = xcorr2(${1:a}, ${2:optional_b})'''
         description: '''[signal] 2-D cross-correlation
         c = xcorr2(a, optional_b)
         '''
@@ -2334,7 +2334,7 @@ modified covariance method
 
     "arburg [signal]":
         prefix: "arburg"
-        body: '''[${1:a}, ${2:e}, ${3:rc}] = arburg(${1:x}, ${2:p})'''
+        body: '''[${3:a}, ${4:e}, ${5:rc}] = arburg(${1:x}, ${2:p})'''
         description: '''[signal] Autoregressive all-pole model parameters — Burg’s
 method
         [a, e, rc] = arburg(x, p)
@@ -2344,7 +2344,7 @@ method
 
     "intfilt [signal]":
         prefix: "intfilt"
-        body: '''${1:b} = intfilt(${1:l}, ${2:n}, ${3:'Lagrange'})'''
+        body: '''${4:b} = intfilt(${1:l}, ${2:n}, ${3:'Lagrange'})'''
         description: '''[signal] Interpolation FIR filter design
         b = intfilt(l, n, 'Lagrange')
         '''

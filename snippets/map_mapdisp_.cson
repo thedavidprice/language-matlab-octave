@@ -3,7 +3,7 @@
 
     "lightm [map]":
         prefix: "lightm"
-        body: '''${1:h} = lightm(${1:lat}, ${2:lon}, ${3:optional_alt}, ${4:opts})'''
+        body: '''${5:h} = lightm(${1:lat}, ${2:lon}, ${3:optional_alt}, ${4:opts})'''
         description: '''[map] Project light objects on map axes
         h = lightm(lat, lon, optional_alt, opts)
         '''
@@ -12,7 +12,7 @@
 
     "maptool [map]":
         prefix: "maptool"
-        body: '''${1:h} = maptool(${1:optional_ProjectionFile}, 'MapProjection', ${2:value}, 'AngleUnits', ${3:value}, 'Aspect', ${4:value}, 'FalseEasting', ${5:value}, 'FalseNorthing', ${6:value}, 'Geoid', ${7:value}, 'MapLatLimit', ${8:value}, 'MapLonLimit', ${9:value}, 'MapParallels', ${10:value}, 'Origin', ${11:value}, 'ScaleFactor', ${12:value}, 'Zone', ${13:value}, 'Frame', ${14:value}, 'FFill', ${15:value}, 'FEdgeColor', ${16:value}, 'FFaceColor', ${17:value}, 'FLatLimit', ${18:value}, 'FLineWidth', ${19:value}, 'FLonLimit', ${20:value}, 'Grid', ${21:value}, 'GAltitude', ${22:value}, 'GColor', ${23:value}, 'GLineStyle', ${24:value}, 'GLineWidth', ${25:value}, 'MLineException', ${26:value}, 'MLineFill', ${27:value}, 'MLineLimit', ${28:value}, 'MLineLocation', ${29:value}, 'PLineException', ${30:value}, 'PLineFill', ${31:value}, 'PLineLimit', ${32:value}, 'PLineLocation', ${33:value}, 'FontColor', ${34:value}, 'FontAngle', ${35:value}, 'FontName', ${36:value}, 'FontSize', ${37:value}, 'FontUnits', ${38:value}, 'FontWeight', ${39:value}, 'LabelFormat', ${40:value}, 'LabelRotation', ${41:value}, 'LabelUnits', ${42:value}, 'MeridianLabel', ${43:value}, 'MLabelLocation', ${44:value}, 'MLabelParallel', ${45:value}, 'MLabelRound', ${46:value}, 'ParallelLabel', ${47:value}, 'PLabelLocation', ${48:value}, 'PLabelMeridian', ${49:value}, 'PLabelRound', ${50:value})'''
+        body: '''${51:h} = maptool(${1:optional_ProjectionFile}, 'MapProjection', ${2:value}, 'AngleUnits', ${3:value}, 'Aspect', ${4:value}, 'FalseEasting', ${5:value}, 'FalseNorthing', ${6:value}, 'Geoid', ${7:value}, 'MapLatLimit', ${8:value}, 'MapLonLimit', ${9:value}, 'MapParallels', ${10:value}, 'Origin', ${11:value}, 'ScaleFactor', ${12:value}, 'Zone', ${13:value}, 'Frame', ${14:value}, 'FFill', ${15:value}, 'FEdgeColor', ${16:value}, 'FFaceColor', ${17:value}, 'FLatLimit', ${18:value}, 'FLineWidth', ${19:value}, 'FLonLimit', ${20:value}, 'Grid', ${21:value}, 'GAltitude', ${22:value}, 'GColor', ${23:value}, 'GLineStyle', ${24:value}, 'GLineWidth', ${25:value}, 'MLineException', ${26:value}, 'MLineFill', ${27:value}, 'MLineLimit', ${28:value}, 'MLineLocation', ${29:value}, 'PLineException', ${30:value}, 'PLineFill', ${31:value}, 'PLineLimit', ${32:value}, 'PLineLocation', ${33:value}, 'FontColor', ${34:value}, 'FontAngle', ${35:value}, 'FontName', ${36:value}, 'FontSize', ${37:value}, 'FontUnits', ${38:value}, 'FontWeight', ${39:value}, 'LabelFormat', ${40:value}, 'LabelRotation', ${41:value}, 'LabelUnits', ${42:value}, 'MeridianLabel', ${43:value}, 'MLabelLocation', ${44:value}, 'MLabelParallel', ${45:value}, 'MLabelRound', ${46:value}, 'ParallelLabel', ${47:value}, 'PLabelLocation', ${48:value}, 'PLabelMeridian', ${49:value}, 'PLabelRound', ${50:value})'''
         description: '''[map] Add menu-activated tools to map figure
         h = maptool(optional_ProjectionFile, 'MapProjection', value, 'AngleUnits', value, 'Aspect', value, 'FalseEasting', value, 'FalseNorthing', value, 'Geoid', value, 'MapLatLimit', value, 'MapLonLimit', value, 'MapParallels', value, 'Origin', value, 'ScaleFactor', value, 'Zone', value, 'Frame', value, 'FFill', value, 'FEdgeColor', value, 'FFaceColor', value, 'FLatLimit', value, 'FLineWidth', value, 'FLonLimit', value, 'Grid', value, 'GAltitude', value, 'GColor', value, 'GLineStyle', value, 'GLineWidth', value, 'MLineException', value, 'MLineFill', value, 'MLineLimit', value, 'MLineLocation', value, 'PLineException', value, 'PLineFill', value, 'PLineLimit', value, 'PLineLocation', value, 'FontColor', value, 'FontAngle', value, 'FontName', value, 'FontSize', value, 'FontUnits', value, 'FontWeight', value, 'LabelFormat', value, 'LabelRotation', value, 'LabelUnits', value, 'MeridianLabel', value, 'MLabelLocation', value, 'MLabelParallel', value, 'MLabelRound', value, 'ParallelLabel', value, 'PLabelLocation', value, 'PLabelMeridian', value, 'PLabelRound', value)
         '''
@@ -21,7 +21,7 @@
 
     "ismap [map]":
         prefix: "ismap"
-        body: '''[${1:mflag}, ${2:msg}] = ismap(${1:optional_hndl})'''
+        body: '''[${2:mflag}, ${3:msg}] = ismap(${1:optional_hndl})'''
         description: '''[map] True for axes with map projection
         [mflag, msg] = ismap(optional_hndl)
         '''
@@ -30,7 +30,7 @@
 
     "fill3m [map]":
         prefix: "fill3m"
-        body: '''${1:h} = fill3m(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_cdata}, ${5:opts})'''
+        body: '''${6:h} = fill3m(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_cdata}, ${5:opts})'''
         description: '''[map] Project filled 3-D patch objects on map axes
         h = fill3m(lat, lon, z, optional_cdata, opts)
         '''
@@ -49,7 +49,7 @@ object
 
     "symbolm [map]":
         prefix: "symbolm"
-        body: '''${1:h} = symbolm(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_MarkerType}, ${5:opts})'''
+        body: '''${6:h} = symbolm(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_MarkerType}, ${5:opts})'''
         description: '''[map] Project point markers with variable size
         h = symbolm(lat, lon, z, optional_MarkerType, opts)
         '''
@@ -58,7 +58,7 @@ object
 
     "inputm [map]":
         prefix: "inputm"
-        body: '''[${1:lat}, ${2:lon}, ${3:button}] = inputm(${1:n}, ${2:optional_h})'''
+        body: '''[${3:lat}, ${4:lon}, ${5:button}] = inputm(${1:n}, ${2:optional_h})'''
         description: '''[map] Latitudes and longitudes of mouse-click locations
         [lat, lon, button] = inputm(n, optional_h)
         '''
@@ -67,7 +67,7 @@ object
 
     "quiver3m [map]":
         prefix: "quiver3m"
-        body: '''${1:h} = quiver3m(${1:lat}, ${2:lon}, ${3:alt}, ${4:u}, ${5:v}, ${6:w}, ${7:optional_linestyle}, ${8:optional_scale}, ${9:filled})'''
+        body: '''${10:h} = quiver3m(${1:lat}, ${2:lon}, ${3:alt}, ${4:u}, ${5:v}, ${6:w}, ${7:optional_linestyle}, ${8:optional_scale}, ${9:filled})'''
         description: '''[map] Project 3-D quiver plot on map axes
         h = quiver3m(lat, lon, alt, u, v, w, optional_linestyle, optional_scale, filled)
         '''
@@ -85,7 +85,7 @@ object
 
     "pcolorm [map]":
         prefix: "pcolorm"
-        body: '''${1:h} = pcolorm(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:opts})'''
+        body: '''${5:h} = pcolorm(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:opts})'''
         description: '''[map] Project regular data grid on map axes in z = 0 plane
         h = pcolorm(latlim, lonlim, Z, opts)
         '''
@@ -94,7 +94,7 @@ object
 
     "clegendm [map]":
         prefix: "clegendm"
-        body: '''${1:h} = clegendm(${1:cs}, ${2:h}, ${3:optional_loc}, ${4:optional_unitstr}, ${5:optional_labels})'''
+        body: '''${6:h} = clegendm(${1:cs}, ${2:h}, ${3:optional_loc}, ${4:optional_unitstr}, ${5:optional_labels})'''
         description: '''[map] Add legend labels to map contour display
         h = clegendm(cs, h, optional_loc, optional_unitstr, optional_labels)
         '''
@@ -121,7 +121,7 @@ object
 
     "gcm [map]":
         prefix: "gcm"
-        body: '''${1:mstruct} = gcm(${1:optional_hndl})'''
+        body: '''${2:mstruct} = gcm(${1:optional_hndl})'''
         description: '''[map] Current map projection structure
         mstruct = gcm(optional_hndl)
         '''
@@ -130,7 +130,7 @@ object
 
     "clabelm [map]":
         prefix: "clabelm"
-        body: '''${1:text_handles} = clabelm(${1:C}, ${2:optional_h}, ${3:optional_manual})'''
+        body: '''${4:text_handles} = clabelm(${1:C}, ${2:optional_h}, ${3:optional_manual})'''
         description: '''[map] Add contour labels to map contour display
         text_handles = clabelm(C, optional_h, optional_manual)
         '''
@@ -139,7 +139,7 @@ object
 
     "tissot [map]":
         prefix: "tissot"
-        body: '''${1:h} = tissot(${1:spec}, ${2:opts})'''
+        body: '''${3:h} = tissot(${1:spec}, ${2:opts})'''
         description: '''[map] Project Tissot indicatrices on map axes
         h = tissot(spec, opts)
         '''
@@ -167,7 +167,7 @@ raster format
 
     "namem [map]":
         prefix: "namem"
-        body: '''${1:obj_names} = namem(${1:optional_h})'''
+        body: '''${2:obj_names} = namem(${1:optional_h})'''
         description: '''[map] Names of graphics objects
         obj_names = namem(optional_h)
         '''
@@ -185,7 +185,7 @@ raster format
 
     "contourm [map]":
         prefix: "contourm"
-        body: '''[${1:C}, ${2:h}] = contourm(${1:Z}, ${2:R}, ${3:optional_n}, ${4:optional_LineSpec}, 'Fill', ${5:value}, 'LabelSpacing', ${6:value}, 'LevelList', ${7:value}, 'LevelStep', ${8:value}, 'LineColor', ${9:value}, 'LineStyle', ${10:value}, 'LineWidth', ${11:value}, 'ShowText', ${12:value})'''
+        body: '''[${13:C}, ${14:h}] = contourm(${1:Z}, ${2:R}, ${3:optional_n}, ${4:optional_LineSpec}, 'Fill', ${5:value}, 'LabelSpacing', ${6:value}, 'LevelList', ${7:value}, 'LevelStep', ${8:value}, 'LineColor', ${9:value}, 'LineStyle', ${10:value}, 'LineWidth', ${11:value}, 'ShowText', ${12:value})'''
         description: '''[map] Project 2-D contour plot of map data
         [C, h] = contourm(Z, R, optional_n, optional_LineSpec, 'Fill', value, 'LabelSpacing', value, 'LevelList', value, 'LevelStep', value, 'LineColor', value, 'LineStyle', value, 'LineWidth', value, 'ShowText', value)
         '''
@@ -203,7 +203,7 @@ raster format
 
     "patchm [map]":
         prefix: "patchm"
-        body: '''${1:h} = patchm(${1:lat}, ${2:lon}, ${3:optional_z}, ${4:optional_cdata}, ${5:opts})'''
+        body: '''${6:h} = patchm(${1:lat}, ${2:lon}, ${3:optional_z}, ${4:optional_cdata}, ${5:opts})'''
         description: '''[map] Project patch objects on map axes
         h = patchm(lat, lon, optional_z, optional_cdata, opts)
         '''
@@ -212,7 +212,7 @@ raster format
 
     "scaleruler [map]":
         prefix: "scaleruler"
-        body: '''${1:h} = scaleruler('Azimuth', ${1:value}, 'Color', ${2:value}, 'FontAngle', ${3:value}, 'FontName', ${4:value}, 'FontSize', ${5:value}, 'FontUnits', ${6:value}, 'FontWeight', ${7:value}, 'Label', ${8:value}, 'Lat', ${9:value}, 'Long', ${10:value}, 'LineWidth', ${11:value}, 'MajorTick', ${12:value}, 'MajorTickLabel', ${13:value}, 'MajorTickLength', ${14:value}, 'MinorTick', ${15:value}, 'MinorTickLabel', ${16:value}, 'MinorTickLength', ${17:value}, 'Radius', ${18:value}, 'RulerStyle', ${19:value}, 'TickDir', ${20:value}, 'TickMode', ${21:value}, 'Units', ${22:value}, 'XLoc', ${23:value}, 'YLoc', ${24:value})'''
+        body: '''${25:h} = scaleruler('Azimuth', ${1:value}, 'Color', ${2:value}, 'FontAngle', ${3:value}, 'FontName', ${4:value}, 'FontSize', ${5:value}, 'FontUnits', ${6:value}, 'FontWeight', ${7:value}, 'Label', ${8:value}, 'Lat', ${9:value}, 'Long', ${10:value}, 'LineWidth', ${11:value}, 'MajorTick', ${12:value}, 'MajorTickLabel', ${13:value}, 'MajorTickLength', ${14:value}, 'MinorTick', ${15:value}, 'MinorTickLabel', ${16:value}, 'MinorTickLength', ${17:value}, 'Radius', ${18:value}, 'RulerStyle', ${19:value}, 'TickDir', ${20:value}, 'TickMode', ${21:value}, 'Units', ${22:value}, 'XLoc', ${23:value}, 'YLoc', ${24:value})'''
         description: '''[map] Add or modify graphic scale on map axes
         h = scaleruler('Azimuth', value, 'Color', value, 'FontAngle', value, 'FontName', value, 'FontSize', value, 'FontUnits', value, 'FontWeight', value, 'Label', value, 'Lat', value, 'Long', value, 'LineWidth', value, 'MajorTick', value, 'MajorTickLabel', value, 'MajorTickLength', value, 'MinorTick', value, 'MinorTickLabel', value, 'MinorTickLength', value, 'Radius', value, 'RulerStyle', value, 'TickDir', value, 'TickMode', value, 'Units', value, 'XLoc', value, 'YLoc', value)
         '''
@@ -221,7 +221,7 @@ raster format
 
     "usamap [map]":
         prefix: "usamap"
-        body: '''${1:h} = usamap(${1:state})'''
+        body: '''${2:h} = usamap(${1:state})'''
         description: '''[map] Construct map axes for United States of America
         h = usamap(state)
         '''
@@ -239,7 +239,7 @@ raster format
 
     "worldmap [map]":
         prefix: "worldmap"
-        body: '''${1:h} = worldmap(${1:region})'''
+        body: '''${2:h} = worldmap(${1:region})'''
         description: '''[map] Construct map axes for given region of world
         h = worldmap(region)
         '''
@@ -248,7 +248,7 @@ raster format
 
     "polcmap [map]":
         prefix: "polcmap"
-        body: '''${1:cmap} = polcmap(${1:ncolors}, ${2:huelimits}, ${3:saturationlimits}, ${4:optional_valuelimits})'''
+        body: '''${5:cmap} = polcmap(${1:ncolors}, ${2:huelimits}, ${3:saturationlimits}, ${4:optional_valuelimits})'''
         description: '''[map]  Create colormap appropriate to political regions
         cmap = polcmap(ncolors, huelimits, saturationlimits, optional_valuelimits)
         '''
@@ -257,7 +257,7 @@ raster format
 
     "gcpmap [map]":
         prefix: "gcpmap"
-        body: '''${1:pt} = gcpmap(${1:optional_hndl})'''
+        body: '''${2:pt} = gcpmap(${1:optional_hndl})'''
         description: '''[map] Current mouse point from map axes
         pt = gcpmap(optional_hndl)
         '''
@@ -266,7 +266,7 @@ raster format
 
     "quiverm [map]":
         prefix: "quiverm"
-        body: '''${1:h} = quiverm(${1:lat}, ${2:lon}, ${3:deltalat}, ${4:deltalon}, ${5:optional_linestyle}, ${6:optional_scale}, ${7:filled})'''
+        body: '''${8:h} = quiverm(${1:lat}, ${2:lon}, ${3:deltalat}, ${4:deltalon}, ${5:optional_linestyle}, ${6:optional_scale}, ${7:filled})'''
         description: '''[map] Project 2-D quiver plot on map axes
         h = quiverm(lat, lon, deltalat, deltalon, optional_linestyle, optional_scale, filled)
         '''
@@ -275,7 +275,7 @@ raster format
 
     "contourcbar [map]":
         prefix: "contourcbar"
-        body: '''${1:H} = contourcbar(${1:off})'''
+        body: '''${2:H} = contourcbar(${1:off})'''
         description: '''[map] Color bar for filled contour map display 
         H = contourcbar(off)
         '''
@@ -293,7 +293,7 @@ raster format
 
     "scatterm [map]":
         prefix: "scatterm"
-        body: '''${1:h} = scatterm(${1:optional_ax}, ${2:lat}, ${3:lon}, ${4:optional_s}, ${5:optional_c}, ${6:filled}, ${7:m})'''
+        body: '''${8:h} = scatterm(${1:optional_ax}, ${2:lat}, ${3:lon}, ${4:optional_s}, ${5:optional_c}, ${6:filled}, ${7:m})'''
         description: '''[map] Project point markers with variable color and area
         h = scatterm(optional_ax, lat, lon, optional_s, optional_c, filled, m)
         '''
@@ -302,7 +302,7 @@ raster format
 
     "plot3m [map]":
         prefix: "plot3m"
-        body: '''${1:h} = plot3m(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_linespec}, ${5:opts})'''
+        body: '''${6:h} = plot3m(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_linespec}, ${5:opts})'''
         description: '''[map] Project 3-D lines and points on map axes
         h = plot3m(lat, lon, z, optional_linespec, opts)
         '''
@@ -311,7 +311,7 @@ raster format
 
     "mdistort [map]":
         prefix: "mdistort"
-        body: '''${1:h} = mdistort(${1:parameter})'''
+        body: '''${2:h} = mdistort(${1:parameter})'''
         description: '''[map] Display contours of constant map distortion
         h = mdistort(parameter)
         '''
@@ -320,7 +320,7 @@ raster format
 
     "stem3m [map]":
         prefix: "stem3m"
-        body: '''${1:h} = stem3m(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_LineType}, ${5:opts})'''
+        body: '''${6:h} = stem3m(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_LineType}, ${5:opts})'''
         description: '''[map] Project stem plot on map axes
         h = stem3m(lat, lon, z, optional_LineType, opts)
         '''
@@ -329,7 +329,7 @@ raster format
 
     "scircleg [map]":
         prefix: "scircleg"
-        body: '''${1:h} = scircleg(${1:optional_track}, ${2:ncirc}, ${3:optional_npts}, ${4:optional_linestyle}, ${5:opts})'''
+        body: '''${6:h} = scircleg(${1:optional_track}, ${2:ncirc}, ${3:optional_npts}, ${4:optional_linestyle}, ${5:opts})'''
         description: '''[map] Small circle defined via mouse input
         h = scircleg(optional_track, ncirc, optional_npts, optional_linestyle, opts)
         '''
@@ -356,7 +356,7 @@ raster format
 
     "linem [map]":
         prefix: "linem"
-        body: '''${1:h} = linem(${1:lat}, ${2:lon}, ${3:optional_z}, ${4:optional_linetype}, ${5:opts})'''
+        body: '''${6:h} = linem(${1:lat}, ${2:lon}, ${3:optional_z}, ${4:optional_linetype}, ${5:opts})'''
         description: '''[map] Project line object on map axes
         h = linem(lat, lon, optional_z, optional_linetype, opts)
         '''
@@ -365,7 +365,7 @@ raster format
 
     "camupm [map]":
         prefix: "camupm"
-        body: '''[${1:x}, ${2:y}, ${3:z}] = camupm(${1:lat}, ${2:long})'''
+        body: '''[${3:x}, ${4:y}, ${5:z}] = camupm(${1:lat}, ${2:long})'''
         description: '''[map] Set camera up vector using geographic coordinates
         [x, y, z] = camupm(lat, long)
         '''
@@ -374,7 +374,7 @@ raster format
 
     "shaderel [map]":
         prefix: "shaderel"
-        body: '''[${1:cindx}, ${2:cimap}, ${3:clim}] = shaderel(${1:X}, ${2:Y}, ${3:Z}, ${4:cmap}, ${5:[azim elev]}, ${6:cmapl}, ${7:optional_clim})'''
+        body: '''[${8:cindx}, ${9:cimap}, ${10:clim}] = shaderel(${1:X}, ${2:Y}, ${3:Z}, ${4:cmap}, ${5:[azim elev]}, ${6:cmapl}, ${7:optional_clim})'''
         description: '''[map] Construct cdata and colormap for shaded
 relief
         [cindx, cimap, clim] = shaderel(X, Y, Z, cmap, [azim elev], cmapl, optional_clim)
@@ -393,7 +393,7 @@ relief
 
     "meshm [map]":
         prefix: "meshm"
-        body: '''${1:H} = meshm(${1:Z}, ${2:R}, ${3:optional_gratsize}, ${4:optional_alt}, ${5:opts})'''
+        body: '''${6:H} = meshm(${1:Z}, ${2:R}, ${3:optional_gratsize}, ${4:optional_alt}, ${5:opts})'''
         description: '''[map] Project regular data grid on map axes
         H = meshm(Z, R, optional_gratsize, optional_alt, opts)
         '''
@@ -411,7 +411,7 @@ relief
 
     "camtargm [map]":
         prefix: "camtargm"
-        body: '''[${1:x}, ${2:y}, ${3:z}] = camtargm(${1:lat}, ${2:long}, ${3:alt})'''
+        body: '''[${4:x}, ${5:y}, ${6:z}] = camtargm(${1:lat}, ${2:long}, ${3:alt})'''
         description: '''[map] Set camera target using geographic coordinates
         [x, y, z] = camtargm(lat, long, alt)
         '''
@@ -420,7 +420,7 @@ relief
 
     "fillm [map]":
         prefix: "fillm"
-        body: '''${1:h} = fillm(${1:lat}, ${2:lon}, ${3:optional_cdata}, ${4:opts})'''
+        body: '''${5:h} = fillm(${1:lat}, ${2:lon}, ${3:optional_cdata}, ${4:opts})'''
         description: '''[map] Project filled 2-D patch objects on map axes
         h = fillm(lat, lon, optional_cdata, opts)
         '''
@@ -429,7 +429,7 @@ relief
 
     "surfm [map]":
         prefix: "surfm"
-        body: '''${1:h} = surfm(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:optional_alt}, ${5:opts})'''
+        body: '''${6:h} = surfm(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:optional_alt}, ${5:opts})'''
         description: '''[map] Project geolocated data grid on map axes
         h = surfm(latlim, lonlim, Z, optional_alt, opts)
         '''
@@ -447,7 +447,7 @@ relief
 
     "contourcmap [map]":
         prefix: "contourcmap"
-        body: '''${1:h} = contourcmap(${1:cmapstr}, ${2:optional_cdelta}, 'Location', ${3:value}, 'Colorbar', ${4:value}, 'ColorAlignment', ${5:value}, 'SourceObject', ${6:value}, 'TitleString', ${7:value}, 'XLabelString', ${8:value}, 'YLabelString', ${9:value}, 'ZLabelString', ${10:value})'''
+        body: '''${11:h} = contourcmap(${1:cmapstr}, ${2:optional_cdelta}, 'Location', ${3:value}, 'Colorbar', ${4:value}, 'ColorAlignment', ${5:value}, 'SourceObject', ${6:value}, 'TitleString', ${7:value}, 'XLabelString', ${8:value}, 'YLabelString', ${9:value}, 'ZLabelString', ${10:value})'''
         description: '''[map] Contour colormap and colorbar for current axes
         h = contourcmap(cmapstr, optional_cdelta, 'Location', value, 'Colorbar', value, 'ColorAlignment', value, 'SourceObject', value, 'TitleString', value, 'XLabelString', value, 'YLabelString', value, 'ZLabelString', value)
         '''
@@ -456,7 +456,7 @@ relief
 
     "contour3m [map]":
         prefix: "contour3m"
-        body: '''[${1:C}, ${2:h}] = contour3m(${1:Z}, ${2:R}, ${3:optional_n}, ${4:optional_LineSpec}, 'Fill', ${5:value}, 'LabelSpacing', ${6:value}, 'LevelList', ${7:value}, 'LevelStep', ${8:value}, 'LineColor', ${9:value}, 'LineStyle', ${10:value}, 'LineWidth', ${11:value}, 'ShowText', ${12:value})'''
+        body: '''[${13:C}, ${14:h}] = contour3m(${1:Z}, ${2:R}, ${3:optional_n}, ${4:optional_LineSpec}, 'Fill', ${5:value}, 'LabelSpacing', ${6:value}, 'LevelList', ${7:value}, 'LevelStep', ${8:value}, 'LineColor', ${9:value}, 'LineStyle', ${10:value}, 'LineWidth', ${11:value}, 'ShowText', ${12:value})'''
         description: '''[map] Project 3-D contour plot of map data
         [C, h] = contour3m(Z, R, optional_n, optional_LineSpec, 'Fill', value, 'LabelSpacing', value, 'LevelList', value, 'LevelStep', value, 'LineColor', value, 'LineStyle', value, 'LineWidth', value, 'ShowText', value)
         '''
@@ -474,7 +474,7 @@ relief
 
     "defaultm [map]":
         prefix: "defaultm"
-        body: '''${1:mstruct} = defaultm(${1:mstruct})'''
+        body: '''${2:mstruct} = defaultm(${1:mstruct})'''
         description: '''[map] Initialize or reset map projection structure
         mstruct = defaultm(mstruct)
         '''
@@ -483,7 +483,7 @@ relief
 
     "trackg [map]":
         prefix: "trackg"
-        body: '''${1:h} = trackg(${1:optional_track}, ${2:ntrax}, ${3:optional_npts}, ${4:optional_linestyle}, ${5:opts})'''
+        body: '''${6:h} = trackg(${1:optional_track}, ${2:ntrax}, ${3:optional_npts}, ${4:optional_linestyle}, ${5:opts})'''
         description: '''[map] Great circle or rhumb line defined via mouse input
         h = trackg(optional_track, ntrax, optional_npts, optional_linestyle, opts)
         '''
@@ -510,7 +510,7 @@ relief
 
     "grid2image [map]":
         prefix: "grid2image"
-        body: '''${1:h} = grid2image(${1:Z}, ${2:R}, ${3:opts})'''
+        body: '''${4:h} = grid2image(${1:Z}, ${2:R}, ${3:opts})'''
         description: '''[map] Display regular data grid as image
         h = grid2image(Z, R, opts)
         '''
@@ -519,7 +519,7 @@ relief
 
     "handlem [map]":
         prefix: "handlem"
-        body: '''${1:h} = handlem(${1:object}, ${2:axesh}, ${3:optional_searchmethod})'''
+        body: '''${4:h} = handlem(${1:object}, ${2:axesh}, ${3:optional_searchmethod})'''
         description: '''[map] Handles of displayed map objects
         h = handlem(object, axesh, optional_searchmethod)
         '''
@@ -528,7 +528,7 @@ relief
 
     "camposm [map]":
         prefix: "camposm"
-        body: '''[${1:x}, ${2:y}, ${3:z}] = camposm(${1:lat}, ${2:long}, ${3:alt})'''
+        body: '''[${4:x}, ${5:y}, ${6:z}] = camposm(${1:lat}, ${2:long}, ${3:alt})'''
         description: '''[map] Set camera position using geographic coordinates
         [x, y, z] = camposm(lat, long, alt)
         '''
@@ -537,7 +537,7 @@ relief
 
     "patchesm [map]":
         prefix: "patchesm"
-        body: '''${1:h} = patchesm(${1:lat}, ${2:lon}, ${3:optional_z}, ${4:optional_cdata}, ${5:opts})'''
+        body: '''${6:h} = patchesm(${1:lat}, ${2:lon}, ${3:optional_z}, ${4:optional_cdata}, ${5:opts})'''
         description: '''[map] Project patches on map axes as individual objects
         h = patchesm(lat, lon, optional_z, optional_cdata, opts)
         '''
@@ -546,7 +546,7 @@ relief
 
     "gtextm [map]":
         prefix: "gtextm"
-        body: '''${1:h} = gtextm(${1:string}, ${2:opts})'''
+        body: '''${3:h} = gtextm(${1:string}, ${2:opts})'''
         description: '''[map] Place text on map using mouse
         h = gtextm(string, opts)
         '''
@@ -555,7 +555,7 @@ relief
 
     "surfacem [map]":
         prefix: "surfacem"
-        body: '''${1:h} = surfacem(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:optional_alt}, ${5:opts})'''
+        body: '''${6:h} = surfacem(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:optional_alt}, ${5:opts})'''
         description: '''[map] Project and add geolocated data grid to current map axes
         h = surfacem(latlim, lonlim, Z, optional_alt, opts)
         '''
@@ -564,7 +564,7 @@ relief
 
     "demcmap [map]":
         prefix: "demcmap"
-        body: '''[${1:cmap}, ${2:climits}] = demcmap(${1:literal}, ${2:Z}, ${3:deltaz}, ${4:cmapsea}, ${5:optional_cmapland})'''
+        body: '''[${6:cmap}, ${7:climits}] = demcmap(${1:literal}, ${2:Z}, ${3:deltaz}, ${4:cmapsea}, ${5:optional_cmapland})'''
         description: '''[map] Colormaps appropriate to terrain elevation data
         [cmap, climits] = demcmap(literal, Z, deltaz, cmapsea, optional_cmapland)
         '''
@@ -573,7 +573,7 @@ relief
 
     "contourfm [map]":
         prefix: "contourfm"
-        body: '''[${1:C}, ${2:h}] = contourfm(${1:Z}, ${2:R}, ${3:optional_n}, ${4:optional_LineSpec}, 'LabelSpacing', ${5:value}, 'LevelList', ${6:value}, 'LevelStep', ${7:value}, 'LineStyle', ${8:value}, 'LineWidth', ${9:value}, 'ShowText', ${10:value})'''
+        body: '''[${11:C}, ${12:h}] = contourfm(${1:Z}, ${2:R}, ${3:optional_n}, ${4:optional_LineSpec}, 'LabelSpacing', ${5:value}, 'LevelList', ${6:value}, 'LevelStep', ${7:value}, 'LineStyle', ${8:value}, 'LineWidth', ${9:value}, 'ShowText', ${10:value})'''
         description: '''[map] Project filled 2-D contour plot of map data
         [C, h] = contourfm(Z, R, optional_n, optional_LineSpec, 'LabelSpacing', value, 'LevelList', value, 'LevelStep', value, 'LineStyle', value, 'LineWidth', value, 'ShowText', value)
         '''
@@ -582,7 +582,7 @@ relief
 
     "surflm [map]":
         prefix: "surflm"
-        body: '''${1:h} = surflm(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:s}, ${5:optional_k})'''
+        body: '''${6:h} = surflm(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:s}, ${5:optional_k})'''
         description: '''[map] 3-D shaded surface with lighting on map axes
         h = surflm(latlim, lonlim, Z, s, optional_k)
         '''
@@ -591,7 +591,7 @@ relief
 
     "surflsrm [map]":
         prefix: "surflsrm"
-        body: '''${1:h} = surflsrm(${1:lat}, ${2:long}, ${3:Z}, ${4:[azim elev]}, ${5:cmap}, ${6:optional_clim})'''
+        body: '''${7:h} = surflsrm(${1:lat}, ${2:long}, ${3:Z}, ${4:[azim elev]}, ${5:cmap}, ${6:optional_clim})'''
         description: '''[map] 3-D lighted shaded relief of geolocated data grid
         h = surflsrm(lat, long, Z, [azim elev], cmap, optional_clim)
         '''
@@ -600,7 +600,7 @@ relief
 
     "rotatem [map]":
         prefix: "rotatem"
-        body: '''[${1:lat1}, ${2:lon1}] = rotatem(${1:lat}, ${2:lon}, ${3:origin}, ${4:transform}, ${5:optional_units})'''
+        body: '''[${6:lat1}, ${7:lon1}] = rotatem(${1:lat}, ${2:lon}, ${3:origin}, ${4:transform}, ${5:optional_units})'''
         description: '''[map] Transform vector map data to new origin and orientation
         [lat1, lon1] = rotatem(lat, lon, origin, transform, optional_units)
         '''
@@ -609,7 +609,7 @@ relief
 
     "meshlsrm [map]":
         prefix: "meshlsrm"
-        body: '''${1:h} = meshlsrm(${1:Z}, ${2:R}, ${3:[azim elev]}, ${4:cmap}, ${5:optional_clim})'''
+        body: '''${6:h} = meshlsrm(${1:Z}, ${2:R}, ${3:[azim elev]}, ${4:cmap}, ${5:optional_clim})'''
         description: '''[map] 3-D lighted shaded relief of regular data grid
         h = meshlsrm(Z, R, [azim elev], cmap, optional_clim)
         '''
@@ -618,7 +618,7 @@ relief
 
     "gridm [map]":
         prefix: "gridm"
-        body: '''${1:h} = gridm(${1:linespec}, 'Grid', ${2:value}, 'GAltitude', ${3:value}, 'GColor', ${4:value}, 'GLineStyle', ${5:value}, 'GLineWidth', ${6:value})'''
+        body: '''${7:h} = gridm(${1:linespec}, 'Grid', ${2:value}, 'GAltitude', ${3:value}, 'GColor', ${4:value}, 'GLineStyle', ${5:value}, 'GLineWidth', ${6:value})'''
         description: '''[map] Toggle and control display of graticule lines
         h = gridm(linespec, 'Grid', value, 'GAltitude', value, 'GColor', value, 'GLineStyle', value, 'GLineWidth', value)
         '''
@@ -627,7 +627,7 @@ relief
 
     "plotm [map]":
         prefix: "plotm"
-        body: '''${1:h} = plotm(${1:[lat lon]}, ${2:optional_linetype}, ${3:opts})'''
+        body: '''${4:h} = plotm(${1:[lat lon]}, ${2:optional_linetype}, ${3:opts})'''
         description: '''[map] Project 2-D lines and points on map axes
         h = plotm([lat lon], optional_linetype, opts)
         '''
@@ -654,7 +654,7 @@ relief
 
     "clipdata [map]":
         prefix: "clipdata"
-        body: '''[${1:lat}, ${2:long}, ${3:splitpts}] = clipdata(${1:lat}, ${2:long}, ${3:object})'''
+        body: '''[${4:lat}, ${5:long}, ${6:splitpts}] = clipdata(${1:lat}, ${2:long}, ${3:object})'''
         description: '''[map] Clip data at +/-pi in longitude, +/-pi in
 latitude
         [lat, long, splitpts] = clipdata(lat, long, object)

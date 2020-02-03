@@ -39,7 +39,7 @@
 
     "length [matlab]":
         prefix: "length"
-        body: '''${1:out} = length(${1:obj})'''
+        body: '''${2:out} = length(${1:obj})'''
         description: '''[matlab] Number of key-value pairs in the data cache
         out = length(obj)
         '''
@@ -57,7 +57,7 @@
 
     "fgets [matlab]":
         prefix: "fgets"
-        body: '''[${1:tline}, ${2:count}, ${3:msg}] = fgets(${1:obj})'''
+        body: '''[${2:tline}, ${3:count}, ${4:msg}] = fgets(${1:obj})'''
         description: '''[matlab] Read line of text from instrument and include terminator
         [tline, count, msg] = fgets(obj)
         '''
@@ -66,7 +66,7 @@
 
     "fscanf [matlab]":
         prefix: "fscanf"
-        body: '''[${1:A}, ${2:count}, ${3:msg}] = fscanf(${1:obj}, ${2:optional_format}, ${3:optional_size})'''
+        body: '''[${4:A}, ${5:count}, ${6:msg}] = fscanf(${1:obj}, ${2:optional_format}, ${3:optional_size})'''
         description: '''[matlab] Read data from instrument, and format as text
         [A, count, msg] = fscanf(obj, optional_format, optional_size)
         '''
@@ -75,7 +75,7 @@
 
     "fgetl [matlab]":
         prefix: "fgetl"
-        body: '''[${1:tline}, ${2:count}, ${3:msg}] = fgetl(${1:obj})'''
+        body: '''[${2:tline}, ${3:count}, ${4:msg}] = fgetl(${1:obj})'''
         description: '''[matlab] Read line of text from instrument and discard terminator
         [tline, count, msg] = fgetl(obj)
         '''
@@ -84,7 +84,7 @@
 
     "size [matlab]":
         prefix: "size"
-        body: '''${1:d} = size(${1:obj}, ${2:optional_dim})'''
+        body: '''${3:d} = size(${1:obj}, ${2:optional_dim})'''
         description: '''[matlab] Return size of MetaData object
         d = size(obj, optional_dim)
         '''
@@ -138,7 +138,7 @@
 
     "fread [matlab]":
         prefix: "fread"
-        body: '''[${1:A}, ${2:count}, ${3:msg}] = fread(${1:obj}, ${2:size}, ${3:optional_precision})'''
+        body: '''[${4:A}, ${5:count}, ${6:msg}] = fread(${1:obj}, ${2:size}, ${3:optional_precision})'''
         description: '''[matlab] Read binary data from instrument
         [A, count, msg] = fread(obj, size, optional_precision)
         '''
@@ -156,7 +156,7 @@
 
     "isvalid [matlab]":
         prefix: "isvalid"
-        body: '''${1:out} = isvalid(${1:obj})'''
+        body: '''${2:out} = isvalid(${1:obj})'''
         description: '''[matlab] Determine whether image acquisition object is associated
 with image acquisition device
         out = isvalid(obj)
@@ -166,7 +166,7 @@ with image acquisition device
 
     "serial [matlab]":
         prefix: "serial"
-        body: '''${1:obj} = serial(${1:port}, 'BaudRate', ${2:value}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'DataBits', ${7:value}, 'DataTerminalReady', ${8:value}, 'ErrorFcn', ${9:value}, 'FlowControl', ${10:value}, 'InputBufferSize', ${11:value}, 'Name', ${12:value}, 'ObjectVisibility', ${13:value}, 'OutputBufferSize', ${14:value}, 'OutputEmptyFcn', ${15:value}, 'Parity', ${16:value}, 'PinStatusFcn', ${17:value}, 'Port', ${18:value}, 'ReadAsyncMode', ${19:value}, 'RecordDetail', ${20:value}, 'RecordMode', ${21:value}, 'RecordName', ${22:value}, 'RequestToSend', ${23:value}, 'StopBits', ${24:value}, 'Tag', ${25:value}, 'Terminator', ${26:value}, 'Timeout', ${27:value}, 'TimerFcn', ${28:value}, 'TimerPeriod', ${29:value}, 'UserData', ${30:value})'''
+        body: '''${31:obj} = serial(${1:port}, 'BaudRate', ${2:value}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'DataBits', ${7:value}, 'DataTerminalReady', ${8:value}, 'ErrorFcn', ${9:value}, 'FlowControl', ${10:value}, 'InputBufferSize', ${11:value}, 'Name', ${12:value}, 'ObjectVisibility', ${13:value}, 'OutputBufferSize', ${14:value}, 'OutputEmptyFcn', ${15:value}, 'Parity', ${16:value}, 'PinStatusFcn', ${17:value}, 'Port', ${18:value}, 'ReadAsyncMode', ${19:value}, 'RecordDetail', ${20:value}, 'RecordMode', ${21:value}, 'RecordName', ${22:value}, 'RequestToSend', ${23:value}, 'StopBits', ${24:value}, 'Tag', ${25:value}, 'Terminator', ${26:value}, 'Timeout', ${27:value}, 'TimerFcn', ${28:value}, 'TimerPeriod', ${29:value}, 'UserData', ${30:value})'''
         description: '''[matlab] (Not recommended) Create serial port object
         obj = serial(port, 'BaudRate', value, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'DataBits', value, 'DataTerminalReady', value, 'ErrorFcn', value, 'FlowControl', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'Parity', value, 'PinStatusFcn', value, 'Port', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RequestToSend', value, 'StopBits', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)
         '''

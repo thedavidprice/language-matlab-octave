@@ -3,7 +3,7 @@
 
     "rectangle [matlab]":
         prefix: "rectangle"
-        body: '''${1:h} = rectangle(${1:optional_ax}, ${2:opts})'''
+        body: '''${3:h} = rectangle(${1:optional_ax}, ${2:opts})'''
         description: '''[matlab] Create rectangle with sharp or curved corners
         h = rectangle(optional_ax, opts)
         '''
@@ -21,7 +21,7 @@
 
     "surface [matlab]":
         prefix: "surface"
-        body: '''${1:h} = surface(${1:optional_ax}, ${2:optional_x}, ${3:optional_y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
+        body: '''${7:h} = surface(${1:optional_ax}, ${2:optional_x}, ${3:optional_y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
         description: '''[matlab] Primitive surface plot
         h = surface(optional_ax, optional_x, optional_y, z, optional_c, opts)
         '''
@@ -30,7 +30,7 @@
 
     "text [matlab]":
         prefix: "text"
-        body: '''${1:h} = text(${1:optional_ax}, ${2:opts})'''
+        body: '''${3:h} = text(${1:optional_ax}, ${2:opts})'''
         description: '''[matlab] Add text descriptions to data points
         h = text(optional_ax, opts)
         '''

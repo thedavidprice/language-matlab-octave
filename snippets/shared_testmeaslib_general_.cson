@@ -12,7 +12,7 @@
 
     "matlabshared.asyncio.buffer.DataPump [shared]":
         prefix: "matlabshared.asyncio.buffer.DataPump"
-        body: '''${1:dataPump} = matlabshared.asyncio.buffer.DataPump(${1:buffer}, ${2:dataSink}, ${3:outputCount}, ${4:outputPeriod})'''
+        body: '''${5:dataPump} = matlabshared.asyncio.buffer.DataPump(${1:buffer}, ${2:dataSink}, ${3:outputCount}, ${4:outputPeriod})'''
         description: '''[shared] 
         dataPump = matlabshared.asyncio.buffer.DataPump(buffer, dataSink, outputCount, outputPeriod)
         '''
@@ -21,7 +21,7 @@
 
     "matlabshared.asyncio.buffer.Buffer [shared]":
         prefix: "matlabshared.asyncio.buffer.Buffer"
-        body: '''${1:buffer} = matlabshared.asyncio.buffer.Buffer(${1:bufferSize})'''
+        body: '''${2:buffer} = matlabshared.asyncio.buffer.Buffer(${1:bufferSize})'''
         description: '''[shared] 
         buffer = matlabshared.asyncio.buffer.Buffer(bufferSize)
         '''

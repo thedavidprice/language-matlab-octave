@@ -12,7 +12,7 @@
 
     "coder.Dictionary.getSection [coder]":
         prefix: "coder.Dictionary.getSection"
-        body: '''${1:outputValue1} = coder.Dictionary.getSection(${1:dictionaryObj}, ${2:sectionName})'''
+        body: '''${3:outputValue1} = coder.Dictionary.getSection(${1:dictionaryObj}, ${2:sectionName})'''
         description: '''[coder] 
         outputValue1 = coder.Dictionary.getSection(dictionaryObj, sectionName)
         '''
@@ -21,7 +21,7 @@
 
     "coder.dictionary.Entry.get [coder]":
         prefix: "coder.dictionary.Entry.get"
-        body: '''${1:outputValue1} = coder.dictionary.Entry.get(${1:entryObj}, ${2:pName1})'''
+        body: '''${3:outputValue1} = coder.dictionary.Entry.get(${1:entryObj}, ${2:pName1})'''
         description: '''[coder] 
         outputValue1 = coder.dictionary.Entry.get(entryObj, pName1)
         '''

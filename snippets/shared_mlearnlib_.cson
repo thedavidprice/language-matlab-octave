@@ -12,7 +12,7 @@
 
     "confusionchart [shared]":
         prefix: "confusionchart"
-        body: '''${1:c} = confusionchart(${1:optional_parent}, ${2:trueLabels}, ${3:predictedLabels}, 'RowSummary', ${4:value}, 'ColumnSummary', ${5:value}, 'Normalization', ${6:value}, ${7:opts})'''
+        body: '''${8:c} = confusionchart(${1:optional_parent}, ${2:trueLabels}, ${3:predictedLabels}, 'RowSummary', ${4:value}, 'ColumnSummary', ${5:value}, 'Normalization', ${6:value}, ${7:opts})'''
         description: '''[shared] Create confusion matrix chart for classification problem
         c = confusionchart(optional_parent, trueLabels, predictedLabels, 'RowSummary', value, 'ColumnSummary', value, 'Normalization', value, opts)
         '''

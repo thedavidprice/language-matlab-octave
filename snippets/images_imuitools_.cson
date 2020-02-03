@@ -3,7 +3,7 @@
 
     "drawline [images]":
         prefix: "drawline"
-        body: '''${1:h} = drawline(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
+        body: '''${19:h} = drawline(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
         description: '''[images] Create customizable linear ROI
         h = drawline(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -12,7 +12,7 @@
 
     "drawpoint [images]":
         prefix: "drawpoint"
-        body: '''${1:h} = drawpoint(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
+        body: '''${19:h} = drawpoint(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
         description: '''[images] Create customizable point ROI
         h = drawpoint(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -21,7 +21,7 @@
 
     "images.roi.Freehand [images]":
         prefix: "images.roi.Freehand"
-        body: '''${1:h} = images.roi.Freehand(${1:optional_AX}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Multiclick', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})'''
+        body: '''${25:h} = images.roi.Freehand(${1:optional_AX}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Multiclick', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})'''
         description: '''[images] 
         h = images.roi.Freehand(optional_AX, 'Closed', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Multiclick', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'Smoothing', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value, 'Waypoints', value)
         '''
@@ -30,7 +30,7 @@
 
     "images.roi.AssistedFreehand [images]":
         prefix: "images.roi.AssistedFreehand"
-        body: '''${1:h} = images.roi.AssistedFreehand(${1:optional_hImage}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'Image', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})'''
+        body: '''${25:h} = images.roi.AssistedFreehand(${1:optional_hImage}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'Image', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})'''
         description: '''[images] 
         h = images.roi.AssistedFreehand(optional_hImage, 'Closed', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'HandleVisibility', value, 'Image', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'Smoothing', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value, 'Waypoints', value)
         '''
@@ -39,7 +39,7 @@
 
     "montage [images]":
         prefix: "montage"
-        body: '''${1:h} = montage(${1:I}, ${2:optional_MAP}, 'Size', ${3:value}, 'Parent', ${4:value}, 'Indices', ${5:value}, 'ThumbnailSize', ${6:value}, 'BorderSize', ${7:value}, 'BackgroundColor', ${8:value}, 'DisplayRange', ${9:value})'''
+        body: '''${10:h} = montage(${1:I}, ${2:optional_MAP}, 'Size', ${3:value}, 'Parent', ${4:value}, 'Indices', ${5:value}, 'ThumbnailSize', ${6:value}, 'BorderSize', ${7:value}, 'BackgroundColor', ${8:value}, 'DisplayRange', ${9:value})'''
         description: '''[images] Display multiple image frames as rectangular montage
         h = montage(I, optional_MAP, 'Size', value, 'Parent', value, 'Indices', value, 'ThumbnailSize', value, 'BorderSize', value, 'BackgroundColor', value, 'DisplayRange', value)
         '''
@@ -48,7 +48,7 @@
 
     "images.roi.Polygon [images]":
         prefix: "images.roi.Polygon"
-        body: '''${1:h} = images.roi.Polygon(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'FaceAlpha', ${5:value}, 'FaceSelectable', ${6:value}, 'HandleVisibility', ${7:value}, 'InteractionsAllowed', ${8:value}, 'Label', ${9:value}, 'LabelVisible', ${10:value}, 'LineWidth', ${11:value}, 'Parent', ${12:value}, 'Position', ${13:value}, 'Selected', ${14:value}, 'SelectedColor', ${15:value}, 'StripeColor', ${16:value}, 'Tag', ${17:value}, 'UIContextMenu', ${18:value}, 'UserData', ${19:value}, 'Visible', ${20:value})'''
+        body: '''${21:h} = images.roi.Polygon(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'FaceAlpha', ${5:value}, 'FaceSelectable', ${6:value}, 'HandleVisibility', ${7:value}, 'InteractionsAllowed', ${8:value}, 'Label', ${9:value}, 'LabelVisible', ${10:value}, 'LineWidth', ${11:value}, 'Parent', ${12:value}, 'Position', ${13:value}, 'Selected', ${14:value}, 'SelectedColor', ${15:value}, 'StripeColor', ${16:value}, 'Tag', ${17:value}, 'UIContextMenu', ${18:value}, 'UserData', ${19:value}, 'Visible', ${20:value})'''
         description: '''[images] 
         h = images.roi.Polygon(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -57,7 +57,7 @@
 
     "drawrectangle [images]":
         prefix: "drawrectangle"
-        body: '''${1:h} = drawrectangle(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'FixedAspectRatio', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'Selected', ${18:value}, 'SelectedColor', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})'''
+        body: '''${25:h} = drawrectangle(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'FixedAspectRatio', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'Selected', ${18:value}, 'SelectedColor', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})'''
         description: '''[images] Create customizable rectangular ROI
         h = drawrectangle(optional_AX, 'AspectRatio', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'FixedAspectRatio', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Rotatable', value, 'RotationAngle', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -66,7 +66,7 @@
 
     "images.roi.Polyline [images]":
         prefix: "images.roi.Polyline"
-        body: '''${1:h} = images.roi.Polyline(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
+        body: '''${19:h} = images.roi.Polyline(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
         description: '''[images] 
         h = images.roi.Polyline(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -75,7 +75,7 @@
 
     "reducepoly [images]":
         prefix: "reducepoly"
-        body: '''${1:posreduced} = reducepoly(${1:pos}, ${2:optional_epsilon})'''
+        body: '''${3:posreduced} = reducepoly(${1:pos}, ${2:optional_epsilon})'''
         description: '''[images] Reduce density of points in ROI
         posreduced = reducepoly(pos, optional_epsilon)
         '''
@@ -102,7 +102,7 @@
 
     "drawpolyline [images]":
         prefix: "drawpolyline"
-        body: '''${1:h} = drawpolyline(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
+        body: '''${19:h} = drawpolyline(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
         description: '''[images] Create customizable polyline ROI
         h = drawpolyline(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -111,7 +111,7 @@
 
     "drawassisted [images]":
         prefix: "drawassisted"
-        body: '''${1:h} = drawassisted(${1:optional_hImage}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'Image', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})'''
+        body: '''${25:h} = drawassisted(${1:optional_hImage}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'Image', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})'''
         description: '''[images] Create freehand ROI on image with assistance from image edges
         h = drawassisted(optional_hImage, 'Closed', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'HandleVisibility', value, 'Image', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'Smoothing', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value, 'Waypoints', value)
         '''
@@ -120,7 +120,7 @@
 
     "drawcuboid [images]":
         prefix: "drawcuboid"
-        body: '''${1:h} = drawcuboid(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'EdgeAlpha', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceAlphaOnHover', ${7:value}, 'FaceColorOnHover', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'ScrollWheelDuringDraw', ${18:value}, 'Selected', ${19:value}, 'SelectedColor', ${20:value}, 'StripeColor', ${21:value}, 'Tag', ${22:value}, 'UIContextMenu', ${23:value}, 'UserData', ${24:value}, 'Visible', ${25:value})'''
+        body: '''${26:h} = drawcuboid(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'EdgeAlpha', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceAlphaOnHover', ${7:value}, 'FaceColorOnHover', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'ScrollWheelDuringDraw', ${18:value}, 'Selected', ${19:value}, 'SelectedColor', ${20:value}, 'StripeColor', ${21:value}, 'Tag', ${22:value}, 'UIContextMenu', ${23:value}, 'UserData', ${24:value}, 'Visible', ${25:value})'''
         description: '''[images] Create customizable cuboidal ROI
         h = drawcuboid(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'EdgeAlpha', value, 'FaceAlpha', value, 'FaceAlphaOnHover', value, 'FaceColorOnHover', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Rotatable', value, 'RotationAngle', value, 'ScrollWheelDuringDraw', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -129,7 +129,7 @@
 
     "images.roi.Circle [images]":
         prefix: "images.roi.Circle"
-        body: '''${1:h} = images.roi.Circle(${1:optional_AX}, 'Center', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Parent', ${13:value}, 'Radius', ${14:value}, 'Selected', ${15:value}, 'SelectedColor', ${16:value}, 'StripeColor', ${17:value}, 'Tag', ${18:value}, 'UIContextMenu', ${19:value}, 'UserData', ${20:value}, 'Visible', ${21:value})'''
+        body: '''${22:h} = images.roi.Circle(${1:optional_AX}, 'Center', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Parent', ${13:value}, 'Radius', ${14:value}, 'Selected', ${15:value}, 'SelectedColor', ${16:value}, 'StripeColor', ${17:value}, 'Tag', ${18:value}, 'UIContextMenu', ${19:value}, 'UserData', ${20:value}, 'Visible', ${21:value})'''
         description: '''[images] 
         h = images.roi.Circle(optional_AX, 'Center', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Radius', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -138,7 +138,7 @@
 
     "labelvolshow [images]":
         prefix: "labelvolshow"
-        body: '''${1:h} = labelvolshow(${1:L}, ${2:optional_V}, ${3:optional_CONFIG}, 'Parent', ${4:value}, 'BackgroundColor', ${5:value}, 'CameraPosition', ${6:value}, 'CameraUpVector', ${7:value}, 'CameraTarget', ${8:value}, 'ShowIntensityVolume', ${9:value}, 'LabelColor', ${10:value}, 'LabelOpacity', ${11:value}, 'LabelVisibility', ${12:value}, 'VolumeOpacity', ${13:value}, 'VolumeThreshold', ${14:value}, 'ScaleFactors', ${15:value}, 'InteractionsEnabled', ${16:value})'''
+        body: '''${17:h} = labelvolshow(${1:L}, ${2:optional_V}, ${3:optional_CONFIG}, 'Parent', ${4:value}, 'BackgroundColor', ${5:value}, 'CameraPosition', ${6:value}, 'CameraUpVector', ${7:value}, 'CameraTarget', ${8:value}, 'ShowIntensityVolume', ${9:value}, 'LabelColor', ${10:value}, 'LabelOpacity', ${11:value}, 'LabelVisibility', ${12:value}, 'VolumeOpacity', ${13:value}, 'VolumeThreshold', ${14:value}, 'ScaleFactors', ${15:value}, 'InteractionsEnabled', ${16:value})'''
         description: '''[images] Display labeled volume
         h = labelvolshow(L, optional_V, optional_CONFIG, 'Parent', value, 'BackgroundColor', value, 'CameraPosition', value, 'CameraUpVector', value, 'CameraTarget', value, 'ShowIntensityVolume', value, 'LabelColor', value, 'LabelOpacity', value, 'LabelVisibility', value, 'VolumeOpacity', value, 'VolumeThreshold', value, 'ScaleFactors', value, 'InteractionsEnabled', value)
         '''
@@ -165,7 +165,7 @@
 
     "colorcloud [images]":
         prefix: "colorcloud"
-        body: '''${1:hPanel} = colorcloud(${1:RGB}, ${2:optional_colorspace}, 'BackgroundColor', ${3:value}, 'OrientationAxesColor', ${4:value}, 'Parent', ${5:value}, 'WireFrameColor', ${6:value})'''
+        body: '''${7:hPanel} = colorcloud(${1:RGB}, ${2:optional_colorspace}, 'BackgroundColor', ${3:value}, 'OrientationAxesColor', ${4:value}, 'Parent', ${5:value}, 'WireFrameColor', ${6:value})'''
         description: '''[images] Display 3-D color gamut as point cloud in specified color
 space
         hPanel = colorcloud(RGB, optional_colorspace, 'BackgroundColor', value, 'OrientationAxesColor', value, 'Parent', value, 'WireFrameColor', value)
@@ -184,7 +184,7 @@ space
 
     "drawpolygon [images]":
         prefix: "drawpolygon"
-        body: '''${1:h} = drawpolygon(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'FaceAlpha', ${5:value}, 'FaceSelectable', ${6:value}, 'HandleVisibility', ${7:value}, 'InteractionsAllowed', ${8:value}, 'Label', ${9:value}, 'LabelVisible', ${10:value}, 'LineWidth', ${11:value}, 'Parent', ${12:value}, 'Position', ${13:value}, 'Selected', ${14:value}, 'SelectedColor', ${15:value}, 'StripeColor', ${16:value}, 'Tag', ${17:value}, 'UIContextMenu', ${18:value}, 'UserData', ${19:value}, 'Visible', ${20:value})'''
+        body: '''${21:h} = drawpolygon(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'FaceAlpha', ${5:value}, 'FaceSelectable', ${6:value}, 'HandleVisibility', ${7:value}, 'InteractionsAllowed', ${8:value}, 'Label', ${9:value}, 'LabelVisible', ${10:value}, 'LineWidth', ${11:value}, 'Parent', ${12:value}, 'Position', ${13:value}, 'Selected', ${14:value}, 'SelectedColor', ${15:value}, 'StripeColor', ${16:value}, 'Tag', ${17:value}, 'UIContextMenu', ${18:value}, 'UserData', ${19:value}, 'Visible', ${20:value})'''
         description: '''[images] Create customizable polygonal ROI
         h = drawpolygon(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -202,7 +202,7 @@ space
 
     "drawcircle [images]":
         prefix: "drawcircle"
-        body: '''${1:h} = drawcircle(${1:optional_AX}, 'Center', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Parent', ${13:value}, 'Radius', ${14:value}, 'Selected', ${15:value}, 'SelectedColor', ${16:value}, 'StripeColor', ${17:value}, 'Tag', ${18:value}, 'UIContextMenu', ${19:value}, 'UserData', ${20:value}, 'Visible', ${21:value})'''
+        body: '''${22:h} = drawcircle(${1:optional_AX}, 'Center', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Parent', ${13:value}, 'Radius', ${14:value}, 'Selected', ${15:value}, 'SelectedColor', ${16:value}, 'StripeColor', ${17:value}, 'Tag', ${18:value}, 'UIContextMenu', ${19:value}, 'UserData', ${20:value}, 'Visible', ${21:value})'''
         description: '''[images] Create customizable circular ROI 
         h = drawcircle(optional_AX, 'Center', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Radius', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -211,7 +211,7 @@ space
 
     "sliceViewer [images]":
         prefix: "sliceViewer"
-        body: '''${1:h} = sliceViewer(${1:S}, 'Parent', ${2:value}, 'Colormap', ${3:value}, 'SliceNumber', ${4:value}, 'DisplayRange', ${5:value}, 'ScaleFactors', ${6:value}, 'SliceDirection', ${7:value}, 'DisplayRangeInteraction', ${8:value})'''
+        body: '''${9:h} = sliceViewer(${1:S}, 'Parent', ${2:value}, 'Colormap', ${3:value}, 'SliceNumber', ${4:value}, 'DisplayRange', ${5:value}, 'ScaleFactors', ${6:value}, 'SliceDirection', ${7:value}, 'DisplayRangeInteraction', ${8:value})'''
         description: '''[images] Browse image slices
         h = sliceViewer(S, 'Parent', value, 'Colormap', value, 'SliceNumber', value, 'DisplayRange', value, 'ScaleFactors', value, 'SliceDirection', value, 'DisplayRangeInteraction', value)
         '''
@@ -220,7 +220,7 @@ space
 
     "images.roi.Cuboid [images]":
         prefix: "images.roi.Cuboid"
-        body: '''${1:h} = images.roi.Cuboid(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'EdgeAlpha', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceAlphaOnHover', ${7:value}, 'FaceColorOnHover', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'ScrollWheelDuringDraw', ${18:value}, 'Selected', ${19:value}, 'SelectedColor', ${20:value}, 'StripeColor', ${21:value}, 'Tag', ${22:value}, 'UIContextMenu', ${23:value}, 'UserData', ${24:value}, 'Visible', ${25:value})'''
+        body: '''${26:h} = images.roi.Cuboid(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'EdgeAlpha', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceAlphaOnHover', ${7:value}, 'FaceColorOnHover', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'ScrollWheelDuringDraw', ${18:value}, 'Selected', ${19:value}, 'SelectedColor', ${20:value}, 'StripeColor', ${21:value}, 'Tag', ${22:value}, 'UIContextMenu', ${23:value}, 'UserData', ${24:value}, 'Visible', ${25:value})'''
         description: '''[images] 
         h = images.roi.Cuboid(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'EdgeAlpha', value, 'FaceAlpha', value, 'FaceAlphaOnHover', value, 'FaceColorOnHover', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Rotatable', value, 'RotationAngle', value, 'ScrollWheelDuringDraw', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -229,7 +229,7 @@ space
 
     "images.roi.Line [images]":
         prefix: "images.roi.Line"
-        body: '''${1:h} = images.roi.Line(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
+        body: '''${19:h} = images.roi.Line(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
         description: '''[images] 
         h = images.roi.Line(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -238,7 +238,7 @@ space
 
     "orthosliceViewer [images]":
         prefix: "orthosliceViewer"
-        body: '''${1:h} = orthosliceViewer(${1:S}, 'Parent', ${2:value}, 'Colormap', ${3:value}, 'SliceNumbers', ${4:value}, 'DisplayRange', ${5:value}, 'ScaleFactors', ${6:value}, 'CrosshairLineWidth', ${7:value}, 'CrosshairColor', ${8:value}, 'CrosshairStripeColor', ${9:value}, 'CrosshairEnable', ${10:value}, 'DisplayRangeInteraction', ${11:value})'''
+        body: '''${12:h} = orthosliceViewer(${1:S}, 'Parent', ${2:value}, 'Colormap', ${3:value}, 'SliceNumbers', ${4:value}, 'DisplayRange', ${5:value}, 'ScaleFactors', ${6:value}, 'CrosshairLineWidth', ${7:value}, 'CrosshairColor', ${8:value}, 'CrosshairStripeColor', ${9:value}, 'CrosshairEnable', ${10:value}, 'DisplayRangeInteraction', ${11:value})'''
         description: '''[images] Browse orthogonal slices in grayscale or RGB volume
         h = orthosliceViewer(S, 'Parent', value, 'Colormap', value, 'SliceNumbers', value, 'DisplayRange', value, 'ScaleFactors', value, 'CrosshairLineWidth', value, 'CrosshairColor', value, 'CrosshairStripeColor', value, 'CrosshairEnable', value, 'DisplayRangeInteraction', value)
         '''
@@ -247,7 +247,7 @@ space
 
     "images.roi.Point [images]":
         prefix: "images.roi.Point"
-        body: '''${1:h} = images.roi.Point(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
+        body: '''${19:h} = images.roi.Point(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
         description: '''[images] 
         h = images.roi.Point(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -256,7 +256,7 @@ space
 
     "images.roi.Rectangle [images]":
         prefix: "images.roi.Rectangle"
-        body: '''${1:h} = images.roi.Rectangle(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'FixedAspectRatio', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'Selected', ${18:value}, 'SelectedColor', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})'''
+        body: '''${25:h} = images.roi.Rectangle(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'FixedAspectRatio', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'Selected', ${18:value}, 'SelectedColor', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})'''
         description: '''[images] 
         h = images.roi.Rectangle(optional_AX, 'AspectRatio', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'FixedAspectRatio', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Rotatable', value, 'RotationAngle', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -265,7 +265,7 @@ space
 
     "drawcrosshair [images]":
         prefix: "drawcrosshair"
-        body: '''${1:h} = drawcrosshair(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
+        body: '''${19:h} = drawcrosshair(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
         description: '''[images] Create customizable crosshair ROI
         h = drawcrosshair(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -274,7 +274,7 @@ space
 
     "volshow [images]":
         prefix: "volshow"
-        body: '''${1:h} = volshow(${1:V}, ${2:optional_CONFIG}, 'Parent', ${3:value}, 'Colormap', ${4:value}, 'Alphamap', ${5:value}, 'BackgroundColor', ${6:value}, 'CameraPosition', ${7:value}, 'CameraUpVector', ${8:value}, 'CameraTarget', ${9:value}, 'Renderer', ${10:value}, 'IsosurfaceColor', ${11:value}, 'Isovalue', ${12:value}, 'Lighting', ${13:value}, 'ScaleFactors', ${14:value}, 'InteractionsEnabled', ${15:value})'''
+        body: '''${16:h} = volshow(${1:V}, ${2:optional_CONFIG}, 'Parent', ${3:value}, 'Colormap', ${4:value}, 'Alphamap', ${5:value}, 'BackgroundColor', ${6:value}, 'CameraPosition', ${7:value}, 'CameraUpVector', ${8:value}, 'CameraTarget', ${9:value}, 'Renderer', ${10:value}, 'IsosurfaceColor', ${11:value}, 'Isovalue', ${12:value}, 'Lighting', ${13:value}, 'ScaleFactors', ${14:value}, 'InteractionsEnabled', ${15:value})'''
         description: '''[images] Display volume
         h = volshow(V, optional_CONFIG, 'Parent', value, 'Colormap', value, 'Alphamap', value, 'BackgroundColor', value, 'CameraPosition', value, 'CameraUpVector', value, 'CameraTarget', value, 'Renderer', value, 'IsosurfaceColor', value, 'Isovalue', value, 'Lighting', value, 'ScaleFactors', value, 'InteractionsEnabled', value)
         '''
@@ -283,7 +283,7 @@ space
 
     "drawellipse [images]":
         prefix: "drawellipse"
-        body: '''${1:h} = drawellipse(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Center', ${3:value}, 'Color', ${4:value}, 'Deletable', ${5:value}, 'DrawingArea', ${6:value}, 'FaceAlpha', ${7:value}, 'FaceSelectable', ${8:value}, 'FixedAspectRatio', ${9:value}, 'HandleVisibility', ${10:value}, 'InteractionsAllowed', ${11:value}, 'Label', ${12:value}, 'LabelVisible', ${13:value}, 'LineWidth', ${14:value}, 'Parent', ${15:value}, 'RotationAngle', ${16:value}, 'Selected', ${17:value}, 'SelectedColor', ${18:value}, 'SemiAxes', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})'''
+        body: '''${25:h} = drawellipse(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Center', ${3:value}, 'Color', ${4:value}, 'Deletable', ${5:value}, 'DrawingArea', ${6:value}, 'FaceAlpha', ${7:value}, 'FaceSelectable', ${8:value}, 'FixedAspectRatio', ${9:value}, 'HandleVisibility', ${10:value}, 'InteractionsAllowed', ${11:value}, 'Label', ${12:value}, 'LabelVisible', ${13:value}, 'LineWidth', ${14:value}, 'Parent', ${15:value}, 'RotationAngle', ${16:value}, 'Selected', ${17:value}, 'SelectedColor', ${18:value}, 'SemiAxes', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})'''
         description: '''[images] Create customizable elliptical ROI
         h = drawellipse(optional_AX, 'AspectRatio', value, 'Center', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'FixedAspectRatio', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'RotationAngle', value, 'Selected', value, 'SelectedColor', value, 'SemiAxes', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -292,7 +292,7 @@ space
 
     "drawfreehand [images]":
         prefix: "drawfreehand"
-        body: '''${1:h} = drawfreehand(${1:optional_AX}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Multiclick', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})'''
+        body: '''${25:h} = drawfreehand(${1:optional_AX}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Multiclick', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})'''
         description: '''[images] Create customizable freehand ROI
         h = drawfreehand(optional_AX, 'Closed', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Multiclick', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'Smoothing', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value, 'Waypoints', value)
         '''
@@ -301,7 +301,7 @@ space
 
     "images.roi.Ellipse [images]":
         prefix: "images.roi.Ellipse"
-        body: '''${1:h} = images.roi.Ellipse(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Center', ${3:value}, 'Color', ${4:value}, 'Deletable', ${5:value}, 'DrawingArea', ${6:value}, 'FaceAlpha', ${7:value}, 'FaceSelectable', ${8:value}, 'FixedAspectRatio', ${9:value}, 'HandleVisibility', ${10:value}, 'InteractionsAllowed', ${11:value}, 'Label', ${12:value}, 'LabelVisible', ${13:value}, 'LineWidth', ${14:value}, 'Parent', ${15:value}, 'RotationAngle', ${16:value}, 'Selected', ${17:value}, 'SelectedColor', ${18:value}, 'SemiAxes', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})'''
+        body: '''${25:h} = images.roi.Ellipse(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Center', ${3:value}, 'Color', ${4:value}, 'Deletable', ${5:value}, 'DrawingArea', ${6:value}, 'FaceAlpha', ${7:value}, 'FaceSelectable', ${8:value}, 'FixedAspectRatio', ${9:value}, 'HandleVisibility', ${10:value}, 'InteractionsAllowed', ${11:value}, 'Label', ${12:value}, 'LabelVisible', ${13:value}, 'LineWidth', ${14:value}, 'Parent', ${15:value}, 'RotationAngle', ${16:value}, 'Selected', ${17:value}, 'SelectedColor', ${18:value}, 'SemiAxes', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})'''
         description: '''[images] 
         h = images.roi.Ellipse(optional_AX, 'AspectRatio', value, 'Center', value, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'FaceAlpha', value, 'FaceSelectable', value, 'FixedAspectRatio', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'RotationAngle', value, 'Selected', value, 'SelectedColor', value, 'SemiAxes', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''
@@ -310,7 +310,7 @@ space
 
     "images.roi.Crosshair [images]":
         prefix: "images.roi.Crosshair"
-        body: '''${1:h} = images.roi.Crosshair(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
+        body: '''${19:h} = images.roi.Crosshair(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})'''
         description: '''[images] 
         h = images.roi.Crosshair(optional_AX, 'Color', value, 'Deletable', value, 'DrawingArea', value, 'HandleVisibility', value, 'InteractionsAllowed', value, 'Label', value, 'LabelVisible', value, 'LineWidth', value, 'Parent', value, 'Position', value, 'Selected', value, 'SelectedColor', value, 'StripeColor', value, 'Tag', value, 'UIContextMenu', value, 'UserData', value, 'Visible', value)
         '''

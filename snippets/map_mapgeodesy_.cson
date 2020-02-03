@@ -3,7 +3,7 @@
 
     "ned2aer [map]":
         prefix: "ned2aer"
-        body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = ned2aer(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:angleUnit})'''
+        body: '''[${5:az}, ${6:elev}, ${7:slantRange}] = ned2aer(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:angleUnit})'''
         description: '''[map] Transform local north-east-down coordinates to local spherical
         [az, elev, slantRange] = ned2aer(xNorth, yEast, zDown, angleUnit)
         '''
@@ -12,7 +12,7 @@
 
     "n2ecc [map]":
         prefix: "n2ecc"
-        body: '''${1:ecc} = n2ecc(${1:n})'''
+        body: '''${2:ecc} = n2ecc(${1:n})'''
         description: '''[map] Eccentricity of ellipse from third flattening
         ecc = n2ecc(n)
         '''
@@ -21,7 +21,7 @@
 
     "map.geodesy.ConformalLatitudeConverter.inverse [map]":
         prefix: "map.geodesy.ConformalLatitudeConverter.inverse"
-        body: '''${1:phi} = map.geodesy.ConformalLatitudeConverter.inverse(${1:converter}, ${2:chi}, ${3:angleUnit})'''
+        body: '''${4:phi} = map.geodesy.ConformalLatitudeConverter.inverse(${1:converter}, ${2:chi}, ${3:angleUnit})'''
         description: '''[map] 
         phi = map.geodesy.ConformalLatitudeConverter.inverse(converter, chi, angleUnit)
         '''
@@ -30,7 +30,7 @@
 
     "map.geodesy.RectifyingLatitudeConverter.forward [map]":
         prefix: "map.geodesy.RectifyingLatitudeConverter.forward"
-        body: '''${1:mu} = map.geodesy.RectifyingLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+        body: '''${4:mu} = map.geodesy.RectifyingLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
         description: '''[map] 
         mu = map.geodesy.RectifyingLatitudeConverter.forward(converter, phi, angleUnit)
         '''
@@ -39,7 +39,7 @@
 
     "map.geodesy.RectifyingLatitudeConverter [map]":
         prefix: "map.geodesy.RectifyingLatitudeConverter"
-        body: '''${1:converter} = map.geodesy.RectifyingLatitudeConverter(${1:spheroid})'''
+        body: '''${2:converter} = map.geodesy.RectifyingLatitudeConverter(${1:spheroid})'''
         description: '''[map] 
         converter = map.geodesy.RectifyingLatitudeConverter(spheroid)
         '''
@@ -48,7 +48,7 @@
 
     "lookAtSpheroid [map]":
         prefix: "lookAtSpheroid"
-        body: '''[${1:lat}, ${2:lon}, ${3:slantrange}] = lookAtSpheroid(${1:lat0}, ${2:lon0}, ${3:h0}, ${4:az}, ${5:tilt}, ${6:spheroid})'''
+        body: '''[${7:lat}, ${8:lon}, ${9:slantrange}] = lookAtSpheroid(${1:lat0}, ${2:lon0}, ${3:h0}, ${4:az}, ${5:tilt}, ${6:spheroid})'''
         description: '''[map] Line of sight intersection with oblate spheroid
         [lat, lon, slantrange] = lookAtSpheroid(lat0, lon0, h0, az, tilt, spheroid)
         '''
@@ -57,7 +57,7 @@
 
     "rcurve [map]":
         prefix: "rcurve"
-        body: '''${1:r} = rcurve(${1:optional_radius}, ${2:ellipsoid}, ${3:lat}, ${4:optional_angleunits})'''
+        body: '''${5:r} = rcurve(${1:optional_radius}, ${2:ellipsoid}, ${3:lat}, ${4:optional_angleunits})'''
         description: '''[map] Ellipsoidal radii of curvature
         r = rcurve(optional_radius, ellipsoid, lat, optional_angleunits)
         '''
@@ -66,7 +66,7 @@
 
     "map.geodesy.IsometricLatitudeConverter.forward [map]":
         prefix: "map.geodesy.IsometricLatitudeConverter.forward"
-        body: '''${1:psi} = map.geodesy.IsometricLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+        body: '''${4:psi} = map.geodesy.IsometricLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
         description: '''[map] 
         psi = map.geodesy.IsometricLatitudeConverter.forward(converter, phi, angleUnit)
         '''
@@ -75,7 +75,7 @@
 
     "egm96geoid [map]":
         prefix: "egm96geoid"
-        body: '''[${1:N}, ${2:refvec}] = egm96geoid(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
+        body: '''[${4:N}, ${5:refvec}] = egm96geoid(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
         description: '''[map] Geoid height from Earth Gravitational Model 1996 (EGM96)
         [N, refvec] = egm96geoid(samplefactor, latlim, lonlim)
         '''
@@ -84,7 +84,7 @@
 
     "geodeticLatitudeFromGeocentric [map]":
         prefix: "geodeticLatitudeFromGeocentric"
-        body: '''${1:phi} = geodeticLatitudeFromGeocentric(${1:psi}, ${2:F}, ${3:angleUnit})'''
+        body: '''${4:phi} = geodeticLatitudeFromGeocentric(${1:psi}, ${2:F}, ${3:angleUnit})'''
         description: '''[map] Convert geocentric to geodetic latitude
         phi = geodeticLatitudeFromGeocentric(psi, F, angleUnit)
         '''
@@ -93,7 +93,7 @@
 
     "map.geodesy.ConformalLatitudeConverter.forward [map]":
         prefix: "map.geodesy.ConformalLatitudeConverter.forward"
-        body: '''${1:chi} = map.geodesy.ConformalLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+        body: '''${4:chi} = map.geodesy.ConformalLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
         description: '''[map] 
         chi = map.geodesy.ConformalLatitudeConverter.forward(converter, phi, angleUnit)
         '''
@@ -102,7 +102,7 @@
 
     "aer2enu [map]":
         prefix: "aer2enu"
-        body: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = aer2enu(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
+        body: '''[${5:xEast}, ${6:yNorth}, ${7:zUp}] = aer2enu(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
         description: '''[map] Transform local spherical coordinates to local east-north-up
         [xEast, yNorth, zUp] = aer2enu(az, elev, slantRange, angleUnit)
         '''
@@ -111,7 +111,7 @@
 
     "majaxis [map]":
         prefix: "majaxis"
-        body: '''${1:a} = majaxis(${1:semiminor}, ${2:e})'''
+        body: '''${3:a} = majaxis(${1:semiminor}, ${2:e})'''
         description: '''[map] Semimajor axis of ellipse
         a = majaxis(semiminor, e)
         '''
@@ -120,7 +120,7 @@
 
     "parametricLatitude [map]":
         prefix: "parametricLatitude"
-        body: '''${1:beta} = parametricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
+        body: '''${4:beta} = parametricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
         description: '''[map] Convert geodetic to parametric latitude
         beta = parametricLatitude(phi, F, angleUnit)
         '''
@@ -129,7 +129,7 @@
 
     "antipode [map]":
         prefix: "antipode"
-        body: '''[${1:newlat}, ${2:newlon}] = antipode(${1:lat}, ${2:lon}, ${3:optional_angleunits})'''
+        body: '''[${4:newlat}, ${5:newlon}] = antipode(${1:lat}, ${2:lon}, ${3:optional_angleunits})'''
         description: '''[map] Point on opposite side of globe
         [newlat, newlon] = antipode(lat, lon, optional_angleunits)
         '''
@@ -138,7 +138,7 @@
 
     "map.geodesy.IsometricLatitudeConverter [map]":
         prefix: "map.geodesy.IsometricLatitudeConverter"
-        body: '''${1:converter} = map.geodesy.IsometricLatitudeConverter(${1:spheroid})'''
+        body: '''${2:converter} = map.geodesy.IsometricLatitudeConverter(${1:spheroid})'''
         description: '''[map] 
         converter = map.geodesy.IsometricLatitudeConverter(spheroid)
         '''
@@ -147,7 +147,7 @@
 
     "map.geodesy.IsometricLatitudeConverter.inverse [map]":
         prefix: "map.geodesy.IsometricLatitudeConverter.inverse"
-        body: '''${1:phi} = map.geodesy.IsometricLatitudeConverter.inverse(${1:converter}, ${2:psi}, ${3:angleUnit})'''
+        body: '''${4:phi} = map.geodesy.IsometricLatitudeConverter.inverse(${1:converter}, ${2:psi}, ${3:angleUnit})'''
         description: '''[map] 
         phi = map.geodesy.IsometricLatitudeConverter.inverse(converter, psi, angleUnit)
         '''
@@ -156,7 +156,7 @@
 
     "map.geodesy.AuthalicLatitudeConverter.forward [map]":
         prefix: "map.geodesy.AuthalicLatitudeConverter.forward"
-        body: '''${1:beta} = map.geodesy.AuthalicLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+        body: '''${4:beta} = map.geodesy.AuthalicLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
         description: '''[map] 
         beta = map.geodesy.AuthalicLatitudeConverter.forward(converter, phi, angleUnit)
         '''
@@ -165,7 +165,7 @@
 
     "map.geodesy.RectifyingLatitudeConverter.inverse [map]":
         prefix: "map.geodesy.RectifyingLatitudeConverter.inverse"
-        body: '''${1:phi} = map.geodesy.RectifyingLatitudeConverter.inverse(${1:converter}, ${2:mu}, ${3:angleUnit})'''
+        body: '''${4:phi} = map.geodesy.RectifyingLatitudeConverter.inverse(${1:converter}, ${2:mu}, ${3:angleUnit})'''
         description: '''[map] 
         phi = map.geodesy.RectifyingLatitudeConverter.inverse(converter, mu, angleUnit)
         '''
@@ -174,7 +174,7 @@
 
     "referenceEllipsoid [map]":
         prefix: "referenceEllipsoid"
-        body: '''${1:E} = referenceEllipsoid(${1:name}, ${2:optional_lengthUnit})'''
+        body: '''${3:E} = referenceEllipsoid(${1:name}, ${2:optional_lengthUnit})'''
         description: '''[map] 
         E = referenceEllipsoid(name, optional_lengthUnit)
         '''
@@ -183,7 +183,7 @@
 
     "rsphere [map]":
         prefix: "rsphere"
-        body: '''${1:r} = rsphere(${1:typeOfRadius}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:ellipsoid}, ${7:optional_angleUnits})'''
+        body: '''${8:r} = rsphere(${1:typeOfRadius}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:ellipsoid}, ${7:optional_angleUnits})'''
         description: '''[map] Radii of auxiliary spheres
         r = rsphere(typeOfRadius, lat1, lon1, lat2, lon2, ellipsoid, optional_angleUnits)
         '''
@@ -192,7 +192,7 @@
 
     "wgs84Ellipsoid [map]":
         prefix: "wgs84Ellipsoid"
-        body: '''${1:E} = wgs84Ellipsoid(${1:lengthUnit})'''
+        body: '''${2:E} = wgs84Ellipsoid(${1:lengthUnit})'''
         description: '''[map] Reference ellipsoid for World Geodetic System 1984
         E = wgs84Ellipsoid(lengthUnit)
         '''
@@ -201,7 +201,7 @@
 
     "axes2ecc [map]":
         prefix: "axes2ecc"
-        body: '''${1:ecc} = axes2ecc(${1:semimajor}, ${2:semiminor})'''
+        body: '''${3:ecc} = axes2ecc(${1:semimajor}, ${2:semiminor})'''
         description: '''[map] Eccentricity of ellipse from axes lengths
         ecc = axes2ecc(semimajor, semiminor)
         '''
@@ -210,7 +210,7 @@
 
     "map.geodesy.AuthalicLatitudeConverter.inverse [map]":
         prefix: "map.geodesy.AuthalicLatitudeConverter.inverse"
-        body: '''${1:phi} = map.geodesy.AuthalicLatitudeConverter.inverse(${1:converter}, ${2:beta}, ${3:angleUnit})'''
+        body: '''${4:phi} = map.geodesy.AuthalicLatitudeConverter.inverse(${1:converter}, ${2:beta}, ${3:angleUnit})'''
         description: '''[map] 
         phi = map.geodesy.AuthalicLatitudeConverter.inverse(converter, beta, angleUnit)
         '''
@@ -219,7 +219,7 @@
 
     "map.geodesy.AuthalicLatitudeConverter [map]":
         prefix: "map.geodesy.AuthalicLatitudeConverter"
-        body: '''${1:converter} = map.geodesy.AuthalicLatitudeConverter(${1:spheroid})'''
+        body: '''${2:converter} = map.geodesy.AuthalicLatitudeConverter(${1:spheroid})'''
         description: '''[map] 
         converter = map.geodesy.AuthalicLatitudeConverter(spheroid)
         '''
@@ -228,7 +228,7 @@
 
     "map.geodesy.ConformalLatitudeConverter [map]":
         prefix: "map.geodesy.ConformalLatitudeConverter"
-        body: '''${1:converter} = map.geodesy.ConformalLatitudeConverter(${1:spheroid})'''
+        body: '''${2:converter} = map.geodesy.ConformalLatitudeConverter(${1:spheroid})'''
         description: '''[map] 
         converter = map.geodesy.ConformalLatitudeConverter(spheroid)
         '''
@@ -237,7 +237,7 @@
 
     "meridianfwd [map]":
         prefix: "meridianfwd"
-        body: '''${1:phi2} = meridianfwd(${1:phi1}, ${2:s}, ${3:optional_ellipsoid})'''
+        body: '''${4:phi2} = meridianfwd(${1:phi1}, ${2:s}, ${3:optional_ellipsoid})'''
         description: '''[map] Reckon position along meridian
         phi2 = meridianfwd(phi1, s, optional_ellipsoid)
         '''
@@ -246,7 +246,7 @@
 
     "meridianarc [map]":
         prefix: "meridianarc"
-        body: '''${1:s} = meridianarc(${1:phi1}, ${2:phi2}, ${3:optional_ellipsoid})'''
+        body: '''${4:s} = meridianarc(${1:phi1}, ${2:phi2}, ${3:optional_ellipsoid})'''
         description: '''[map] Ellipsoidal distance along meridian
         s = meridianarc(phi1, phi2, optional_ellipsoid)
         '''
@@ -255,7 +255,7 @@
 
     "geodeticLatitudeFromParametric [map]":
         prefix: "geodeticLatitudeFromParametric"
-        body: '''${1:phi} = geodeticLatitudeFromParametric(${1:beta}, ${2:F}, ${3:angleUnit})'''
+        body: '''${4:phi} = geodeticLatitudeFromParametric(${1:beta}, ${2:F}, ${3:angleUnit})'''
         description: '''[map] Convert parametric to geodetic latitude
         phi = geodeticLatitudeFromParametric(beta, F, angleUnit)
         '''
@@ -264,7 +264,7 @@
 
     "minaxis [map]":
         prefix: "minaxis"
-        body: '''${1:b} = minaxis(${1:semimajor}, ${2:e})'''
+        body: '''${3:b} = minaxis(${1:semimajor}, ${2:e})'''
         description: '''[map] Semiminor axis of ellipse
         b = minaxis(semimajor, e)
         '''
@@ -273,7 +273,7 @@
 
     "ecc2n [map]":
         prefix: "ecc2n"
-        body: '''${1:n} = ecc2n(${1:ecc})'''
+        body: '''${2:n} = ecc2n(${1:ecc})'''
         description: '''[map] Third flattening of ellipse from eccentricity
         n = ecc2n(ecc)
         '''
@@ -282,7 +282,7 @@
 
     "referenceSphere [map]":
         prefix: "referenceSphere"
-        body: '''${1:S} = referenceSphere(${1:name}, ${2:optional_lengthUnit})'''
+        body: '''${3:S} = referenceSphere(${1:name}, ${2:optional_lengthUnit})'''
         description: '''[map] 
         S = referenceSphere(name, optional_lengthUnit)
         '''
@@ -291,7 +291,7 @@
 
     "ecc2flat [map]":
         prefix: "ecc2flat"
-        body: '''${1:f} = ecc2flat(${1:ecc})'''
+        body: '''${2:f} = ecc2flat(${1:ecc})'''
         description: '''[map] Flattening of ellipse from eccentricity
         f = ecc2flat(ecc)
         '''
@@ -300,7 +300,7 @@
 
     "departure [map]":
         prefix: "departure"
-        body: '''${1:dist} = departure(${1:long1}, ${2:long2}, ${3:lat}, ${4:optional_ellipsoid}, ${5:optional_units})'''
+        body: '''${6:dist} = departure(${1:long1}, ${2:long2}, ${3:lat}, ${4:optional_ellipsoid}, ${5:optional_units})'''
         description: '''[map] Departure of longitudes at specified latitudes
         dist = departure(long1, long2, lat, optional_ellipsoid, optional_units)
         '''
@@ -309,7 +309,7 @@
 
     "geocentricLatitude [map]":
         prefix: "geocentricLatitude"
-        body: '''${1:psi} = geocentricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
+        body: '''${4:psi} = geocentricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
         description: '''[map] Convert geodetic to geocentric latitude
         psi = geocentricLatitude(phi, F, angleUnit)
         '''
@@ -318,7 +318,7 @@
 
     "flat2ecc [map]":
         prefix: "flat2ecc"
-        body: '''${1:ecc} = flat2ecc(${1:f})'''
+        body: '''${2:ecc} = flat2ecc(${1:f})'''
         description: '''[map] Eccentricity of ellipse from flattening
         ecc = flat2ecc(f)
         '''

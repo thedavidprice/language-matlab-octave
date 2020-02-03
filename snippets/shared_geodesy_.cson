@@ -3,7 +3,7 @@
 
     "enu2ecef [shared]":
         prefix: "enu2ecef"
-        body: '''[${1:X}, ${2:Y}, ${3:Z}] = enu2ecef(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:X}, ${10:Y}, ${11:Z}] = enu2ecef(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform local east-north-up coordinates to geocentric Earth-centered
             Earth-fixed
         [X, Y, Z] = enu2ecef(xEast, yNorth, zUp, lat0, lon0, h0, spheroid, angleUnit)
@@ -13,7 +13,7 @@
 
     "ecef2enuv [shared]":
         prefix: "ecef2enuv"
-        body: '''[${1:uEast}, ${2:vNorth}, ${3:wUp}] = ecef2enuv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+        body: '''[${7:uEast}, ${8:vNorth}, ${9:wUp}] = ecef2enuv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
         description: '''[shared] Rotate geocentric Earth-centered Earth-fixed vector to local east-north-up
         [uEast, vNorth, wUp] = ecef2enuv(U, V, W, lat0, lon0, angleUnit)
         '''
@@ -22,7 +22,7 @@
 
     "ecefOffset [shared]":
         prefix: "ecefOffset"
-        body: '''[${1:deltaX}, ${2:deltaY}, ${3:deltaZ}] = ecefOffset(${1:spheroid}, ${2:lat1}, ${3:lon1}, ${4:h1}, ${5:lat2}, ${6:lon2}, ${7:h2}, ${8:angleUnit})'''
+        body: '''[${9:deltaX}, ${10:deltaY}, ${11:deltaZ}] = ecefOffset(${1:spheroid}, ${2:lat1}, ${3:lon1}, ${4:h1}, ${5:lat2}, ${6:lon2}, ${7:h2}, ${8:angleUnit})'''
         description: '''[shared] Cartesian ECEF offset between geodetic coordinates
         [deltaX, deltaY, deltaZ] = ecefOffset(spheroid, lat1, lon1, h1, lat2, lon2, h2, angleUnit)
         '''
@@ -31,7 +31,7 @@
 
     "aer2geodetic [shared]":
         prefix: "aer2geodetic"
-        body: '''[${1:lat}, ${2:lon}, ${3:h}] = aer2geodetic(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:lat}, ${10:lon}, ${11:h}] = aer2geodetic(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform local spherical coordinates to geodetic
         [lat, lon, h] = aer2geodetic(az, elev, slantRange, lat0, lon0, h0, spheroid, angleUnit)
         '''
@@ -40,7 +40,7 @@
 
     "ned2ecef [shared]":
         prefix: "ned2ecef"
-        body: '''[${1:X}, ${2:Y}, ${3:Z}] = ned2ecef(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:X}, ${10:Y}, ${11:Z}] = ned2ecef(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform local north-east-down coordinates to geocentric Earth-centered
                         Earth-fixed
         [X, Y, Z] = ned2ecef(xNorth, yEast, zDown, lat0, lon0, h0, spheroid, angleUnit)
@@ -50,7 +50,7 @@
 
     "geodetic2ned [shared]":
         prefix: "geodetic2ned"
-        body: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = geodetic2ned(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:xNorth}, ${10:yEast}, ${11:zDown}] = geodetic2ned(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform geodetic coordinates to local north-east-down
         [xNorth, yEast, zDown] = geodetic2ned(lat, lon, h, lat0, lon0, h0, spheroid, angleUnit)
         '''
@@ -59,7 +59,7 @@
 
     "enu2ecefv [shared]":
         prefix: "enu2ecefv"
-        body: '''[${1:U}, ${2:V}, ${3:W}] = enu2ecefv(${1:uEast}, ${2:vNorth}, ${3:wUp}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+        body: '''[${7:U}, ${8:V}, ${9:W}] = enu2ecefv(${1:uEast}, ${2:vNorth}, ${3:wUp}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
         description: '''[shared] Rotate local east-north-up vector to geocentric Earth-centered Earth-fixed
         [U, V, W] = enu2ecefv(uEast, vNorth, wUp, lat0, lon0, angleUnit)
         '''
@@ -68,7 +68,7 @@
 
     "ecef2enu [shared]":
         prefix: "ecef2enu"
-        body: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = ecef2enu(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:xEast}, ${10:yNorth}, ${11:zUp}] = ecef2enu(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform geocentric Earth-centered Earth-fixed coordinates to local
             east-north-up
         [xEast, yNorth, zUp] = ecef2enu(X, Y, Z, lat0, lon0, h0, spheroid, angleUnit)
@@ -78,7 +78,7 @@
 
     "aer2ned [shared]":
         prefix: "aer2ned"
-        body: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = aer2ned(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
+        body: '''[${5:xNorth}, ${6:yEast}, ${7:zDown}] = aer2ned(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
         description: '''[shared] Transform local spherical coordinates to local north-east-down
         [xNorth, yEast, zDown] = aer2ned(az, elev, slantRange, angleUnit)
         '''
@@ -87,7 +87,7 @@
 
     "geodetic2enu [shared]":
         prefix: "geodetic2enu"
-        body: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = geodetic2enu(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:xEast}, ${10:yNorth}, ${11:zUp}] = geodetic2enu(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform geodetic coordinates to local east-north-up
         [xEast, yNorth, zUp] = geodetic2enu(lat, lon, h, lat0, lon0, h0, spheroid, angleUnit)
         '''
@@ -96,7 +96,7 @@
 
     "map.geodesy.isDegree [shared]":
         prefix: "map.geodesy.isDegree"
-        body: '''${1:tf} = map.geodesy.isDegree(${1:angleUnit})'''
+        body: '''${2:tf} = map.geodesy.isDegree(${1:angleUnit})'''
         description: '''[shared]  True if input matches 'degree' and false if
                 'radian'
         tf = map.geodesy.isDegree(angleUnit)
@@ -106,7 +106,7 @@
 
     "geodetic2aer [shared]":
         prefix: "geodetic2aer"
-        body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = geodetic2aer(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:az}, ${10:elev}, ${11:slantRange}] = geodetic2aer(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform geodetic coordinates to local spherical
         [az, elev, slantRange] = geodetic2aer(lat, lon, h, lat0, lon0, h0, spheroid, angleUnit)
         '''
@@ -115,7 +115,7 @@
 
     "ecef2aer [shared]":
         prefix: "ecef2aer"
-        body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = ecef2aer(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:az}, ${10:elev}, ${11:slantRange}] = ecef2aer(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform geocentric Earth-centered Earth-fixed coordinates to local
             spherical
         [az, elev, slantRange] = ecef2aer(X, Y, Z, lat0, lon0, h0, spheroid, angleUnit)
@@ -125,7 +125,7 @@
 
     "enu2geodetic [shared]":
         prefix: "enu2geodetic"
-        body: '''[${1:lat}, ${2:lon}, ${3:h}] = enu2geodetic(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:lat}, ${10:lon}, ${11:h}] = enu2geodetic(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform local east-north-up coordinates to geodetic
         [lat, lon, h] = enu2geodetic(xEast, yNorth, zUp, lat0, lon0, h0, spheroid, angleUnit)
         '''
@@ -134,7 +134,7 @@
 
     "ecef2geodetic [shared]":
         prefix: "ecef2geodetic"
-        body: '''[${1:lat}, ${2:lon}, ${3:alt}] = ecef2geodetic(${1:spheroid}, ${2:x}, ${3:y}, ${4:z}, ${5:angleUnit})'''
+        body: '''[${6:lat}, ${7:lon}, ${8:alt}] = ecef2geodetic(${1:spheroid}, ${2:x}, ${3:y}, ${4:z}, ${5:angleUnit})'''
         description: '''[shared] Transform geocentric Earth-centered Earth-fixed coordinates to geodetic
         [lat, lon, alt] = ecef2geodetic(spheroid, x, y, z, angleUnit)
         '''
@@ -143,7 +143,7 @@
 
     "ned2ecefv [shared]":
         prefix: "ned2ecefv"
-        body: '''[${1:U}, ${2:V}, ${3:W}] = ned2ecefv(${1:uNorth}, ${2:vEast}, ${3:wDown}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+        body: '''[${7:U}, ${8:V}, ${9:W}] = ned2ecefv(${1:uNorth}, ${2:vEast}, ${3:wDown}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
         description: '''[shared] Rotate local north-east-down vector to geocentric Earth-centered
                         Earth-fixed
         [U, V, W] = ned2ecefv(uNorth, vEast, wDown, lat0, lon0, angleUnit)
@@ -153,7 +153,7 @@
 
     "ecef2nedv [shared]":
         prefix: "ecef2nedv"
-        body: '''[${1:uNorth}, ${2:vEast}, ${3:wDown}] = ecef2nedv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+        body: '''[${7:uNorth}, ${8:vEast}, ${9:wDown}] = ecef2nedv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
         description: '''[shared] Rotate geocentric Earth-centered Earth-fixed vector to local
             north-east-down
         [uNorth, vEast, wDown] = ecef2nedv(U, V, W, lat0, lon0, angleUnit)
@@ -163,7 +163,7 @@
 
     "enu2aer [shared]":
         prefix: "enu2aer"
-        body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = enu2aer(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:angleUnit})'''
+        body: '''[${5:az}, ${6:elev}, ${7:slantRange}] = enu2aer(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:angleUnit})'''
         description: '''[shared] Transform local east-north-up coordinates to local spherical
         [az, elev, slantRange] = enu2aer(xEast, yNorth, zUp, angleUnit)
         '''
@@ -172,7 +172,7 @@
 
     "ecef2ned [shared]":
         prefix: "ecef2ned"
-        body: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = ecef2ned(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:xNorth}, ${10:yEast}, ${11:zDown}] = ecef2ned(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform geocentric Earth-centered Earth-fixed coordinates to local
             north-east-down
         [xNorth, yEast, zDown] = ecef2ned(X, Y, Z, lat0, lon0, h0, spheroid, angleUnit)
@@ -182,7 +182,7 @@
 
     "aer2ecef [shared]":
         prefix: "aer2ecef"
-        body: '''[${1:X}, ${2:Y}, ${3:Z}] = aer2ecef(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:X}, ${10:Y}, ${11:Z}] = aer2ecef(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform local spherical coordinates to geocentric Earth-centered
             Earth-fixed
         [X, Y, Z] = aer2ecef(az, elev, slantRange, lat0, lon0, h0, spheroid, angleUnit)
@@ -192,7 +192,7 @@
 
     "geodetic2ecef [shared]":
         prefix: "geodetic2ecef"
-        body: '''[${1:x}, ${2:y}, ${3:z}] = geodetic2ecef(${1:spheroid}, ${2:lat}, ${3:lon}, ${4:h}, ${5:angleUnit})'''
+        body: '''[${6:x}, ${7:y}, ${8:z}] = geodetic2ecef(${1:spheroid}, ${2:lat}, ${3:lon}, ${4:h}, ${5:angleUnit})'''
         description: '''[shared] Transform geodetic coordinates to geocentric Earth-centered Earth-fixed
         [x, y, z] = geodetic2ecef(spheroid, lat, lon, h, angleUnit)
         '''
@@ -201,7 +201,7 @@
 
     "ned2geodetic [shared]":
         prefix: "ned2geodetic"
-        body: '''[${1:lat}, ${2:lon}, ${3:h}] = ned2geodetic(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+        body: '''[${9:lat}, ${10:lon}, ${11:h}] = ned2geodetic(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[shared] Transform local north-east-down coordinates to geodetic
         [lat, lon, h] = ned2geodetic(xNorth, yEast, zDown, lat0, lon0, h0, spheroid, angleUnit)
         '''

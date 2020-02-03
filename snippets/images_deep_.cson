@@ -3,7 +3,7 @@
 
     "denoisingImageDatastore [images]":
         prefix: "denoisingImageDatastore"
-        body: '''${1:source} = denoisingImageDatastore(${1:imds}, 'PatchesPerImage', ${2:value}, 'PatchSize', ${3:value}, 'GaussianNoiseLevel', ${4:value}, 'BackgroundExecution', ${5:value}, 'ChannelFormat', ${6:value})'''
+        body: '''${7:source} = denoisingImageDatastore(${1:imds}, 'PatchesPerImage', ${2:value}, 'PatchSize', ${3:value}, 'GaussianNoiseLevel', ${4:value}, 'BackgroundExecution', ${5:value}, 'ChannelFormat', ${6:value})'''
         description: '''[images] Denoising image datastore
         source = denoisingImageDatastore(imds, 'PatchesPerImage', value, 'PatchSize', value, 'GaussianNoiseLevel', value, 'BackgroundExecution', value, 'ChannelFormat', value)
         '''
@@ -12,7 +12,7 @@
 
     "denoiseImage [images]":
         prefix: "denoiseImage"
-        body: '''${1:I} = denoiseImage(${1:A}, ${2:net})'''
+        body: '''${3:I} = denoiseImage(${1:A}, ${2:net})'''
         description: '''[images] Denoise image using deep neural network
         I = denoiseImage(A, net)
         '''
@@ -21,7 +21,7 @@
 
     "denoisingNetwork [images]":
         prefix: "denoisingNetwork"
-        body: '''${1:net} = denoisingNetwork(${1:ModelName})'''
+        body: '''${2:net} = denoisingNetwork(${1:ModelName})'''
         description: '''[images] Get image denoising network
         net = denoisingNetwork(ModelName)
         '''
@@ -30,7 +30,7 @@
 
     "randomPatchExtractionDatastore [images]":
         prefix: "randomPatchExtractionDatastore"
-        body: '''${1:source} = randomPatchExtractionDatastore(${1:imds1}, ${2:imds2}, ${3:patchSize}, 'PatchesPerImage', ${4:value}, 'DispatchInBackground', ${5:value}, 'DataAugmentation', ${6:value})'''
+        body: '''${7:source} = randomPatchExtractionDatastore(${1:imds1}, ${2:imds2}, ${3:patchSize}, 'PatchesPerImage', ${4:value}, 'DispatchInBackground', ${5:value}, 'DataAugmentation', ${6:value})'''
         description: '''[images] Datastore for extracting random 2-D or 3-D random patches from images or pixel label
       images
         source = randomPatchExtractionDatastore(imds1, imds2, patchSize, 'PatchesPerImage', value, 'DispatchInBackground', value, 'DataAugmentation', value)
@@ -40,7 +40,7 @@
 
     "dnCNNLayers [images]":
         prefix: "dnCNNLayers"
-        body: '''${1:layers} = dnCNNLayers('NetworkDepth', ${1:value})'''
+        body: '''${2:layers} = dnCNNLayers('NetworkDepth', ${1:value})'''
         description: '''[images] Get denoising convolutional neural network layers
         layers = dnCNNLayers('NetworkDepth', value)
         '''

@@ -3,7 +3,7 @@
 
     "matlab.tall.movingWindow [matlab]":
         prefix: "matlab.tall.movingWindow"
-        body: '''${1:tA} = matlab.tall.movingWindow(${1:fcn}, ${2:window}, ${3:tX}, 'Stride', ${4:value}, 'EndPoints', ${5:value}, 'OutputsLike', ${6:value})'''
+        body: '''${7:tA} = matlab.tall.movingWindow(${1:fcn}, ${2:window}, ${3:tX}, 'Stride', ${4:value}, 'EndPoints', ${5:value}, 'OutputsLike', ${6:value})'''
         description: '''[matlab] Apply moving window function to blocks of data
         tA = matlab.tall.movingWindow(fcn, window, tX, 'Stride', value, 'EndPoints', value, 'OutputsLike', value)
         '''
@@ -12,7 +12,7 @@
 
     "matlab.tall.blockMovingWindow [matlab]":
         prefix: "matlab.tall.blockMovingWindow"
-        body: '''${1:tA} = matlab.tall.blockMovingWindow(${1:windowFcn}, ${2:blockFcn}, ${3:window}, ${4:tX}, 'Stride', ${5:value}, 'EndPoints', ${6:value}, 'OutputsLike', ${7:value})'''
+        body: '''${8:tA} = matlab.tall.blockMovingWindow(${1:windowFcn}, ${2:blockFcn}, ${3:window}, ${4:tX}, 'Stride', ${5:value}, 'EndPoints', ${6:value}, 'OutputsLike', ${7:value})'''
         description: '''[matlab] Apply moving window function and block reduction to padded blocks of
       data
         tA = matlab.tall.blockMovingWindow(windowFcn, blockFcn, window, tX, 'Stride', value, 'EndPoints', value, 'OutputsLike', value)
@@ -22,7 +22,7 @@
 
     "matlab.tall.transform [matlab]":
         prefix: "matlab.tall.transform"
-        body: '''${1:tA} = matlab.tall.transform(${1:fcn}, ${2:tX}, 'OutputsLike', ${3:value})'''
+        body: '''${4:tA} = matlab.tall.transform(${1:fcn}, ${2:tX}, 'OutputsLike', ${3:value})'''
         description: '''[matlab] Transform array by applying function handle to blocks of data
         tA = matlab.tall.transform(fcn, tX, 'OutputsLike', value)
         '''
@@ -40,7 +40,7 @@
 
     "matlab.tall.reduce [matlab]":
         prefix: "matlab.tall.reduce"
-        body: '''${1:tA} = matlab.tall.reduce(${1:fcn}, ${2:reducefcn}, ${3:tX}, 'OutputsLike', ${4:value})'''
+        body: '''${5:tA} = matlab.tall.reduce(${1:fcn}, ${2:reducefcn}, ${3:tX}, 'OutputsLike', ${4:value})'''
         description: '''[matlab] Reduce arrays by applying reduction algorithm to blocks of data
         tA = matlab.tall.reduce(fcn, reducefcn, tX, 'OutputsLike', value)
         '''

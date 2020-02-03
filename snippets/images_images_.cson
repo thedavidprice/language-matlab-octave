@@ -3,7 +3,7 @@
 
     "brisqueModel [images]":
         prefix: "brisqueModel"
-        body: '''${1:Model} = brisqueModel(${1:Alpha}, ${2:Bias}, ${3:SupportVectors}, ${4:Scale})'''
+        body: '''${5:Model} = brisqueModel(${1:Alpha}, ${2:Bias}, ${3:SupportVectors}, ${4:Scale})'''
         description: '''[images] Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) model
         Model = brisqueModel(Alpha, Bias, SupportVectors, Scale)
         '''
@@ -12,7 +12,7 @@
 
     "imsegkmeans [images]":
         prefix: "imsegkmeans"
-        body: '''[${1:L}, ${2:C}] = imsegkmeans(${1:I}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
+        body: '''[${7:L}, ${8:C}] = imsegkmeans(${1:I}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
         description: '''[images] K-means clustering based image segmentation
         [L, C] = imsegkmeans(I, k, 'NormalizeInput', value, 'NumAttempts', value, 'MaxIterations', value, 'Threshold', value)
         '''
@@ -21,7 +21,7 @@
 
     "dice [images]":
         prefix: "dice"
-        body: '''${1:SIMILARITY} = dice(${1:BW1}, ${2:BW2})'''
+        body: '''${3:SIMILARITY} = dice(${1:BW1}, ${2:BW2})'''
         description: '''[images] Sørensen-Dice similarity coefficient for image segmentation
         SIMILARITY = dice(BW1, BW2)
         '''
@@ -30,7 +30,7 @@
 
     "lazysnapping [images]":
         prefix: "lazysnapping"
-        body: '''${1:BW} = lazysnapping(${1:A}, ${2:L}, ${3:FOREMASK}, ${4:BACKMASK}, 'Connectivity', ${5:value}, 'EdgeWeightScaleFactor', ${6:value})'''
+        body: '''${7:BW} = lazysnapping(${1:A}, ${2:L}, ${3:FOREMASK}, ${4:BACKMASK}, 'Connectivity', ${5:value}, 'EdgeWeightScaleFactor', ${6:value})'''
         description: '''[images] Segment image into foreground and background using graph-based
 segmentation
         BW = lazysnapping(A, L, FOREMASK, BACKMASK, 'Connectivity', value, 'EdgeWeightScaleFactor', value)
@@ -49,7 +49,7 @@ segmentation
 
     "imdiffusefilt [images]":
         prefix: "imdiffusefilt"
-        body: '''${1:B} = imdiffusefilt(${1:A}, 'GradientThreshold', ${2:value}, 'NumberOfIterations', ${3:value}, 'Connectivity', ${4:value}, 'ConductionMethod', ${5:value})'''
+        body: '''${6:B} = imdiffusefilt(${1:A}, 'GradientThreshold', ${2:value}, 'NumberOfIterations', ${3:value}, 'Connectivity', ${4:value}, 'ConductionMethod', ${5:value})'''
         description: '''[images] Anisotropic diffusion filtering of images
         B = imdiffusefilt(A, 'GradientThreshold', value, 'NumberOfIterations', value, 'Connectivity', value, 'ConductionMethod', value)
         '''
@@ -58,7 +58,7 @@ segmentation
 
     "grabcut [images]":
         prefix: "grabcut"
-        body: '''${1:BW} = grabcut(${1:A}, ${2:L}, ${3:ROI}, ${4:optional_FOREMASK}, ${5:optional_BACKMASK}, 'Connectivity', ${6:value}, 'MaximumIterations', ${7:value})'''
+        body: '''${8:BW} = grabcut(${1:A}, ${2:L}, ${3:ROI}, ${4:optional_FOREMASK}, ${5:optional_BACKMASK}, 'Connectivity', ${6:value}, 'MaximumIterations', ${7:value})'''
         description: '''[images] Segment image into foreground and background using iterative graph-based
             segmentation
         BW = grabcut(A, L, ROI, optional_FOREMASK, optional_BACKMASK, 'Connectivity', value, 'MaximumIterations', value)
@@ -68,7 +68,7 @@ segmentation
 
     "gradientweight [images]":
         prefix: "gradientweight"
-        body: '''${1:W} = gradientweight(${1:I}, ${2:optional_sigma}, 'RolloffFactor', ${3:value}, 'WeightCutoff', ${4:value})'''
+        body: '''${5:W} = gradientweight(${1:I}, ${2:optional_sigma}, 'RolloffFactor', ${3:value}, 'WeightCutoff', ${4:value})'''
         description: '''[images] Calculate weights for image pixels based on image gradient
         W = gradientweight(I, optional_sigma, 'RolloffFactor', value, 'WeightCutoff', value)
         '''
@@ -77,7 +77,7 @@ segmentation
 
     "imcrop [images]":
         prefix: "imcrop"
-        body: '''${1:BW} = imcrop(${1:I}, ${2:optional_RECT})'''
+        body: '''${3:BW} = imcrop(${1:I}, ${2:optional_RECT})'''
         description: '''[images] Crop image
         BW = imcrop(I, optional_RECT)
         '''
@@ -86,7 +86,7 @@ segmentation
 
     "imnlmfilt [images]":
         prefix: "imnlmfilt"
-        body: '''[${1:B}, ${2:DegreeOfSmoothing}] = imnlmfilt(${1:A}, 'ComparisonWindowSize', ${2:value}, 'DegreeOfSmoothing', ${3:value}, 'SearchWindowSize', ${4:value})'''
+        body: '''[${5:B}, ${6:DegreeOfSmoothing}] = imnlmfilt(${1:A}, 'ComparisonWindowSize', ${2:value}, 'DegreeOfSmoothing', ${3:value}, 'SearchWindowSize', ${4:value})'''
         description: '''[images] Non-local means filtering of image
         [B, DegreeOfSmoothing] = imnlmfilt(A, 'ComparisonWindowSize', value, 'DegreeOfSmoothing', value, 'SearchWindowSize', value)
         '''
@@ -95,7 +95,7 @@ segmentation
 
     "blendexposure [images]":
         prefix: "blendexposure"
-        body: '''${1:E} = blendexposure(${1:I1}, ${2:I2}, 'Contrast', ${3:value}, 'Saturation', ${4:value}, 'WellExposedness', ${5:value}, 'ReduceStrongLight', ${6:value})'''
+        body: '''${7:E} = blendexposure(${1:I1}, ${2:I2}, 'Contrast', ${3:value}, 'Saturation', ${4:value}, 'WellExposedness', ${5:value}, 'ReduceStrongLight', ${6:value})'''
         description: '''[images] Create well-exposed image from images with different exposures
         E = blendexposure(I1, I2, 'Contrast', value, 'Saturation', value, 'WellExposedness', value, 'ReduceStrongLight', value)
         '''
@@ -104,7 +104,7 @@ segmentation
 
     "bwselect3 [images]":
         prefix: "bwselect3"
-        body: '''${1:J} = bwselect3(${1:X}, ${2:Y}, ${3:Z}, ${4:V}, ${5:Xi}, ${6:Yi}, ${7:Zi}, ${8:optional_N})'''
+        body: '''${9:J} = bwselect3(${1:X}, ${2:Y}, ${3:Z}, ${4:V}, ${5:Xi}, ${6:Yi}, ${7:Zi}, ${8:optional_N})'''
         description: '''[images] Select objects in binary image
         J = bwselect3(X, Y, Z, V, Xi, Yi, Zi, optional_N)
         '''
@@ -113,7 +113,7 @@ segmentation
 
     "esfrChart [images]":
         prefix: "esfrChart"
-        body: '''${1:CHART} = esfrChart(${1:A}, 'RegistrationPoints', ${2:value})'''
+        body: '''${3:CHART} = esfrChart(${1:A}, 'RegistrationPoints', ${2:value})'''
         description: '''[images] Imatest® edge spatial frequency response (eSFR) test
             chart
         CHART = esfrChart(A, 'RegistrationPoints', value)
@@ -123,7 +123,7 @@ segmentation
 
     "imflatfield [images]":
         prefix: "imflatfield"
-        body: '''${1:B} = imflatfield(${1:A}, ${2:Sigma}, ${3:optional_Mask}, 'FilterSize', ${4:value})'''
+        body: '''${5:B} = imflatfield(${1:A}, ${2:Sigma}, ${3:optional_Mask}, 'FilterSize', ${4:value})'''
         description: '''[images] 2-D image flat-field correction
         B = imflatfield(A, Sigma, optional_Mask, 'FilterSize', value)
         '''
@@ -141,7 +141,7 @@ segmentation
 
     "imbinarize [images]":
         prefix: "imbinarize"
-        body: '''${1:BW} = imbinarize(${1:I}, ${2:Method}, 'Sensitivity', ${3:value}, 'ForegroundPolarity', ${4:value})'''
+        body: '''${5:BW} = imbinarize(${1:I}, ${2:Method}, 'Sensitivity', ${3:value}, 'ForegroundPolarity', ${4:value})'''
         description: '''[images] Binarize 2-D grayscale image or 3-D volume by thresholding
         BW = imbinarize(I, Method, 'Sensitivity', value, 'ForegroundPolarity', value)
         '''
@@ -150,7 +150,7 @@ segmentation
 
     "measureColor [images]":
         prefix: "measureColor"
-        body: '''[${1:colorTable}, ${2:colorCorrectionMatrix}] = measureColor(${1:CHART})'''
+        body: '''[${2:colorTable}, ${3:colorCorrectionMatrix}] = measureColor(${1:CHART})'''
         description: '''[images] Measure color reproduction using Imatest® eSFR
             chart
         [colorTable, colorCorrectionMatrix] = measureColor(CHART)
@@ -160,7 +160,7 @@ segmentation
 
     "bfscore [images]":
         prefix: "bfscore"
-        body: '''[${1:SCORE}, ${2:PRECISION}, ${3:RECALL}] = bfscore(${1:PREDICTION}, ${2:GROUNDTRUTH}, ${3:optional_THRESHOLD})'''
+        body: '''[${4:SCORE}, ${5:PRECISION}, ${6:RECALL}] = bfscore(${1:PREDICTION}, ${2:GROUNDTRUTH}, ${3:optional_THRESHOLD})'''
         description: '''[images] Contour matching score for image segmentation
         [SCORE, PRECISION, RECALL] = bfscore(PREDICTION, GROUNDTRUTH, optional_THRESHOLD)
         '''
@@ -169,7 +169,7 @@ segmentation
 
     "imregmtb [images]":
         prefix: "imregmtb"
-        body: '''[${1:R1}, ${2:shifts}] = imregmtb(${1:M1}, ${2:M2})'''
+        body: '''[${3:R1}, ${4:shifts}] = imregmtb(${1:M1}, ${2:M2})'''
         description: '''[images] Register 2-D images using median threshold bitmaps
         [R1, shifts] = imregmtb(M1, M2)
         '''
@@ -178,7 +178,7 @@ segmentation
 
     "fspecial3 [images]":
         prefix: "fspecial3"
-        body: '''${1:H} = fspecial3(${1:TYPE}, ${2:optional_direction})'''
+        body: '''${3:H} = fspecial3(${1:TYPE}, ${2:optional_direction})'''
         description: '''[images] Create predefined 3-D filter
         H = fspecial3(TYPE, optional_direction)
         '''
@@ -196,7 +196,7 @@ segmentation
 
     "inpaintExemplar [images]":
         prefix: "inpaintExemplar"
-        body: '''${1:J} = inpaintExemplar(${1:I}, ${2:mask}, 'FillOrder', ${3:value}, 'PatchSize', ${4:value})'''
+        body: '''${5:J} = inpaintExemplar(${1:I}, ${2:mask}, 'FillOrder', ${3:value}, 'PatchSize', ${4:value})'''
         description: '''[images] Restore specific image regions using exemplar-based image inpainting
         J = inpaintExemplar(I, mask, 'FillOrder', value, 'PatchSize', value)
         '''
@@ -205,7 +205,7 @@ segmentation
 
     "bwferet [images]":
         prefix: "bwferet"
-        body: '''[${1:Out}, ${2:L}] = bwferet(${1:BW}, ${2:optional_Properties})'''
+        body: '''[${3:Out}, ${4:L}] = bwferet(${1:BW}, ${2:optional_Properties})'''
         description: '''[images] Measure Feret properties
         [Out, L] = bwferet(BW, optional_Properties)
         '''
@@ -214,7 +214,7 @@ segmentation
 
     "regionprops3 [images]":
         prefix: "regionprops3"
-        body: '''${1:stats} = regionprops3(${1:BW}, ${2:V}, ${3:optional_Properties})'''
+        body: '''${4:stats} = regionprops3(${1:BW}, ${2:V}, ${3:optional_Properties})'''
         description: '''[images] Measure properties of 3-D volumetric image regions
         stats = regionprops3(BW, V, optional_Properties)
         '''
@@ -223,7 +223,7 @@ segmentation
 
     "bwdist [images]":
         prefix: "bwdist"
-        body: '''[${1:D}, ${2:IDX}] = bwdist(${1:BW}, ${2:optional_METHOD})'''
+        body: '''[${3:D}, ${4:IDX}] = bwdist(${1:BW}, ${2:optional_METHOD})'''
         description: '''[images] Distance transform of binary image
         [D, IDX] = bwdist(BW, optional_METHOD)
         '''
@@ -241,7 +241,7 @@ segmentation
 
     "regionprops [images]":
         prefix: "regionprops"
-        body: '''${1:Out} = regionprops(${1:optional_Option}, ${2:BW}, ${3:optional_Properties})'''
+        body: '''${4:Out} = regionprops(${1:optional_Option}, ${2:BW}, ${3:optional_Properties})'''
         description: '''[images] Measure properties of image regions
         Out = regionprops(optional_Option, BW, optional_Properties)
         '''
@@ -250,7 +250,7 @@ segmentation
 
     "measureNoise [images]":
         prefix: "measureNoise"
-        body: '''${1:noiseTable} = measureNoise(${1:CHART})'''
+        body: '''${2:noiseTable} = measureNoise(${1:CHART})'''
         description: '''[images] Measure noise using Imatest® eSFR chart
         noiseTable = measureNoise(CHART)
         '''
@@ -259,7 +259,7 @@ segmentation
 
     "measureIlluminant [images]":
         prefix: "measureIlluminant"
-        body: '''${1:illum} = measureIlluminant(${1:CHART})'''
+        body: '''${2:illum} = measureIlluminant(${1:CHART})'''
         description: '''[images] Measure scene illuminant using Imatest® eSFR
             chart
         illum = measureIlluminant(CHART)
@@ -269,7 +269,7 @@ segmentation
 
     "imrotate3 [images]":
         prefix: "imrotate3"
-        body: '''${1:B} = imrotate3(${1:V}, ${2:Angle}, ${3:W}, ${4:optional_Method}, ${5:optional_BBOX}, 'FillValues', ${6:value})'''
+        body: '''${7:B} = imrotate3(${1:V}, ${2:Angle}, ${3:W}, ${4:optional_Method}, ${5:optional_BBOX}, 'FillValues', ${6:value})'''
         description: '''[images] Rotate 3-D volumetric grayscale image
         B = imrotate3(V, Angle, W, optional_Method, optional_BBOX, 'FillValues', value)
         '''
@@ -278,7 +278,7 @@ segmentation
 
     "localcontrast [images]":
         prefix: "localcontrast"
-        body: '''${1:B} = localcontrast(${1:A}, ${2:edgeThreshold}, ${3:optional_amount})'''
+        body: '''${4:B} = localcontrast(${1:A}, ${2:edgeThreshold}, ${3:optional_amount})'''
         description: '''[images] Edge-aware local contrast manipulation of images
         B = localcontrast(A, edgeThreshold, optional_amount)
         '''
@@ -287,7 +287,7 @@ segmentation
 
     "niqe [images]":
         prefix: "niqe"
-        body: '''${1:Score} = niqe(${1:A}, ${2:optional_Model})'''
+        body: '''${3:Score} = niqe(${1:A}, ${2:optional_Model})'''
         description: '''[images] Naturalness Image Quality Evaluator (NIQE) no-reference image quality
             score
         Score = niqe(A, optional_Model)
@@ -297,7 +297,7 @@ segmentation
 
     "superpixels3 [images]":
         prefix: "superpixels3"
-        body: '''[${1:L}, ${2:NumLabels}] = superpixels3(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'Method', ${4:value}, 'NumIterations', ${5:value})'''
+        body: '''[${6:L}, ${7:NumLabels}] = superpixels3(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'Method', ${4:value}, 'NumIterations', ${5:value})'''
         description: '''[images] 3-D superpixel oversegmentation of 3-D image
         [L, NumLabels] = superpixels3(A, N, 'Compactness', value, 'Method', value, 'NumIterations', value)
         '''
@@ -306,7 +306,7 @@ segmentation
 
     "imreducehaze [images]":
         prefix: "imreducehaze"
-        body: '''[${1:D}, ${2:T}, ${3:L}] = imreducehaze(${1:X}, ${2:optional_amount}, 'Method', ${3:value}, 'AtmosphericLight', ${4:value}, 'ContrastEnhancement', ${5:value}, 'BoostAmount', ${6:value})'''
+        body: '''[${7:D}, ${8:T}, ${9:L}] = imreducehaze(${1:X}, ${2:optional_amount}, 'Method', ${3:value}, 'AtmosphericLight', ${4:value}, 'ContrastEnhancement', ${5:value}, 'BoostAmount', ${6:value})'''
         description: '''[images] Reduce atmospheric haze
         [D, T, L] = imreducehaze(X, optional_amount, 'Method', value, 'AtmosphericLight', value, 'ContrastEnhancement', value, 'BoostAmount', value)
         '''
@@ -315,7 +315,7 @@ segmentation
 
     "measureSharpness [images]":
         prefix: "measureSharpness"
-        body: '''[${1:sharpnessTable}, ${2:aggregateSharpnessTable}] = measureSharpness(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value}, 'PercentResponse', ${4:value})'''
+        body: '''[${5:sharpnessTable}, ${6:aggregateSharpnessTable}] = measureSharpness(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value}, 'PercentResponse', ${4:value})'''
         description: '''[images] Measure spatial frequency response using Imatest®
             eSFR chart
         [sharpnessTable, aggregateSharpnessTable] = measureSharpness(CHART, 'ROIIndex', value, 'ROIOrientation', value, 'PercentResponse', value)
@@ -325,7 +325,7 @@ segmentation
 
     "labeloverlay [images]":
         prefix: "labeloverlay"
-        body: '''${1:B} = labeloverlay(${1:A}, ${2:L}, 'Colormap', ${3:value}, 'IncludedLabels', ${4:value}, 'Transparency', ${5:value})'''
+        body: '''${6:B} = labeloverlay(${1:A}, ${2:L}, 'Colormap', ${3:value}, 'IncludedLabels', ${4:value}, 'Transparency', ${5:value})'''
         description: '''[images] Overlay label matrix regions on 2-D image
         B = labeloverlay(A, L, 'Colormap', value, 'IncludedLabels', value, 'Transparency', value)
         '''
@@ -334,7 +334,7 @@ segmentation
 
     "bwmorph3 [images]":
         prefix: "bwmorph3"
-        body: '''${1:J} = bwmorph3(${1:V}, ${2:Operation})'''
+        body: '''${3:J} = bwmorph3(${1:V}, ${2:Operation})'''
         description: '''[images] Morphological operations on binary volume
         J = bwmorph3(V, Operation)
         '''
@@ -352,7 +352,7 @@ segmentation
 
     "measureChromaticAberration [images]":
         prefix: "measureChromaticAberration"
-        body: '''${1:aberrationTable} = measureChromaticAberration(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value})'''
+        body: '''${4:aberrationTable} = measureChromaticAberration(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value})'''
         description: '''[images] Measure chromatic aberration at slanted edges using
                 Imatest® eSFR chart
         aberrationTable = measureChromaticAberration(CHART, 'ROIIndex', value, 'ROIOrientation', value)
@@ -371,7 +371,7 @@ segmentation
 
     "graydiffweight [images]":
         prefix: "graydiffweight"
-        body: '''${1:W} = graydiffweight(${1:I}, ${2:refGrayVal}, ${3:optional_MASK}, ${4:optional_C}, 'RolloffFactor', ${5:value}, 'GrayDifferenceCutoff', ${6:value})'''
+        body: '''${7:W} = graydiffweight(${1:I}, ${2:refGrayVal}, ${3:optional_MASK}, ${4:optional_C}, 'RolloffFactor', ${5:value}, 'GrayDifferenceCutoff', ${6:value})'''
         description: '''[images] Calculate weights for image pixels based on grayscale
 intensity difference
         W = graydiffweight(I, refGrayVal, optional_MASK, optional_C, 'RolloffFactor', value, 'GrayDifferenceCutoff', value)
@@ -381,7 +381,7 @@ intensity difference
 
     "imlocalbrighten [images]":
         prefix: "imlocalbrighten"
-        body: '''[${1:B}, ${2:D}] = imlocalbrighten(${1:A}, ${2:optional_amount}, 'AlphaBlend', ${3:value})'''
+        body: '''[${4:B}, ${5:D}] = imlocalbrighten(${1:A}, ${2:optional_amount}, 'AlphaBlend', ${3:value})'''
         description: '''[images] Brighten low-light image
         [B, D] = imlocalbrighten(A, optional_amount, 'AlphaBlend', value)
         '''
@@ -390,7 +390,7 @@ intensity difference
 
     "imrotate [images]":
         prefix: "imrotate"
-        body: '''${1:B} = imrotate(${1:A}, ${2:Angle}, ${3:optional_Method}, ${4:optional_BBOX})'''
+        body: '''${5:B} = imrotate(${1:A}, ${2:Angle}, ${3:optional_Method}, ${4:optional_BBOX})'''
         description: '''[images] Rotate image
         B = imrotate(A, Angle, optional_Method, optional_BBOX)
         '''
@@ -399,7 +399,7 @@ intensity difference
 
     "inpaintCoherent [images]":
         prefix: "inpaintCoherent"
-        body: '''${1:J} = inpaintCoherent(${1:I}, ${2:mask}, 'SmoothingFactor', ${3:value}, 'Radius', ${4:value})'''
+        body: '''${5:J} = inpaintCoherent(${1:I}, ${2:mask}, 'SmoothingFactor', ${3:value}, 'Radius', ${4:value})'''
         description: '''[images] Restore specific image regions using coherence transport based image
       inpainting
         J = inpaintCoherent(I, mask, 'SmoothingFactor', value, 'Radius', value)
@@ -409,7 +409,7 @@ intensity difference
 
     "locallapfilt [images]":
         prefix: "locallapfilt"
-        body: '''${1:B} = locallapfilt(${1:A}, ${2:sigma}, ${3:alpha}, ${4:optional_beta}, 'ColorMode', ${5:value}, 'NumIntensityLevels', ${6:value})'''
+        body: '''${7:B} = locallapfilt(${1:A}, ${2:sigma}, ${3:alpha}, ${4:optional_beta}, 'ColorMode', ${5:value}, 'NumIntensityLevels', ${6:value})'''
         description: '''[images] Fast local Laplacian filtering of images
         B = locallapfilt(A, sigma, alpha, optional_beta, 'ColorMode', value, 'NumIntensityLevels', value)
         '''
@@ -418,7 +418,7 @@ intensity difference
 
     "tonemapfarbman [images]":
         prefix: "tonemapfarbman"
-        body: '''${1:LDR} = tonemapfarbman(${1:HDR}, 'RangeCompression', ${2:value}, 'Saturation', ${3:value}, 'Exposure', ${4:value}, 'NumberOfScales', ${5:value}, 'Weights', ${6:value})'''
+        body: '''${7:LDR} = tonemapfarbman(${1:HDR}, 'RangeCompression', ${2:value}, 'Saturation', ${3:value}, 'Exposure', ${4:value}, 'NumberOfScales', ${5:value}, 'Weights', ${6:value})'''
         description: '''[images] Convert HDR image to LDR using edge-preserving multiscale
       decompositions
         LDR = tonemapfarbman(HDR, 'RangeCompression', value, 'Saturation', value, 'Exposure', value, 'NumberOfScales', value, 'Weights', value)
@@ -428,7 +428,7 @@ intensity difference
 
     "imbilatfilt [images]":
         prefix: "imbilatfilt"
-        body: '''${1:B} = imbilatfilt(${1:A}, ${2:optional_DegreeOfSmoothing}, ${3:optional_SpatialSigma}, 'NeighborhoodSize', ${4:value}, 'Padding', ${5:value})'''
+        body: '''${6:B} = imbilatfilt(${1:A}, ${2:optional_DegreeOfSmoothing}, ${3:optional_SpatialSigma}, 'NeighborhoodSize', ${4:value}, 'Padding', ${5:value})'''
         description: '''[images] Bilateral filtering of images with Gaussian kernels
         B = imbilatfilt(A, optional_DegreeOfSmoothing, optional_SpatialSigma, 'NeighborhoodSize', value, 'Padding', value)
         '''
@@ -437,7 +437,7 @@ intensity difference
 
     "fitniqe [images]":
         prefix: "fitniqe"
-        body: '''${1:Model} = fitniqe(${1:IMDS}, 'BlockSize', ${2:value}, 'SharpnessThreshold', ${3:value})'''
+        body: '''${4:Model} = fitniqe(${1:IMDS}, 'BlockSize', ${2:value}, 'SharpnessThreshold', ${3:value})'''
         description: '''[images] Fit custom model for NIQE image quality score
         Model = fitniqe(IMDS, 'BlockSize', value, 'SharpnessThreshold', value)
         '''
@@ -446,7 +446,7 @@ intensity difference
 
     "imcrop3 [images]":
         prefix: "imcrop3"
-        body: '''${1:VOUT} = imcrop3(${1:V}, ${2:Cuboid})'''
+        body: '''${3:VOUT} = imcrop3(${1:V}, ${2:Cuboid})'''
         description: '''[images] Crop 3-D image
         VOUT = imcrop3(V, Cuboid)
         '''
@@ -455,7 +455,7 @@ intensity difference
 
     "imsegkmeans3 [images]":
         prefix: "imsegkmeans3"
-        body: '''[${1:L}, ${2:C}] = imsegkmeans3(${1:V}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
+        body: '''[${7:L}, ${8:C}] = imsegkmeans3(${1:V}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
         description: '''[images] K-means clustering based volume segmentation
         [L, C] = imsegkmeans3(V, k, 'NormalizeInput', value, 'NumAttempts', value, 'MaxIterations', value, 'Threshold', value)
         '''
@@ -464,7 +464,7 @@ intensity difference
 
     "localtonemap [images]":
         prefix: "localtonemap"
-        body: '''${1:RGB} = localtonemap(${1:HDR}, 'RangeCompression', ${2:value}, 'EnhanceContrast', ${3:value})'''
+        body: '''${4:RGB} = localtonemap(${1:HDR}, 'RangeCompression', ${2:value}, 'EnhanceContrast', ${3:value})'''
         description: '''[images] Render HDR image for viewing while enhancing local contrast
         RGB = localtonemap(HDR, 'RangeCompression', value, 'EnhanceContrast', value)
         '''
@@ -473,7 +473,7 @@ intensity difference
 
     "burstinterpolant [images]":
         prefix: "burstinterpolant"
-        body: '''${1:E} = burstinterpolant(${1:imds}, ${2:tforms}, ${3:arg})'''
+        body: '''${4:E} = burstinterpolant(${1:imds}, ${2:tforms}, ${3:arg})'''
         description: '''[images] Create high-resolution image from set of low-resolution burst mode
       images
         E = burstinterpolant(imds, tforms, arg)
@@ -483,7 +483,7 @@ intensity difference
 
     "piqe [images]":
         prefix: "piqe"
-        body: '''[${1:Score}, ${2:ActivityMask}, ${3:NoticeableArtifactsMask}, ${4:NoiseMask}] = piqe(${1:A})'''
+        body: '''[${2:Score}, ${3:ActivityMask}, ${4:NoticeableArtifactsMask}, ${5:NoiseMask}] = piqe(${1:A})'''
         description: '''[images] Perception based Image Quality Evaluator (PIQE) no-reference image quality
       score
         [Score, ActivityMask, NoticeableArtifactsMask, NoiseMask] = piqe(A)
@@ -493,7 +493,7 @@ intensity difference
 
     "imdiffuseest [images]":
         prefix: "imdiffuseest"
-        body: '''[${1:gradientThreshold}, ${2:numberOfIterations}] = imdiffuseest(${1:A}, 'Connectivity', ${2:value}, 'ConductionMethod', ${3:value})'''
+        body: '''[${4:gradientThreshold}, ${5:numberOfIterations}] = imdiffuseest(${1:A}, 'Connectivity', ${2:value}, 'ConductionMethod', ${3:value})'''
         description: '''[images] Estimate parameters for anisotropic diffusion filtering
         [gradientThreshold, numberOfIterations] = imdiffuseest(A, 'Connectivity', value, 'ConductionMethod', value)
         '''
@@ -511,7 +511,7 @@ intensity difference
 
     "imsegfmm [images]":
         prefix: "imsegfmm"
-        body: '''${1:BW} = imsegfmm(${1:W}, ${2:MASK}, ${3:THRESH}, ${4:optional_C}, ${5:optional_R}, ${6:optional_P})'''
+        body: '''${7:BW} = imsegfmm(${1:W}, ${2:MASK}, ${3:THRESH}, ${4:optional_C}, ${5:optional_R}, ${6:optional_P})'''
         description: '''[images] Binary image segmentation using Fast Marching Method
         BW = imsegfmm(W, MASK, THRESH, optional_C, optional_R, optional_P)
         '''
@@ -520,7 +520,7 @@ intensity difference
 
     "fitbrisque [images]":
         prefix: "fitbrisque"
-        body: '''${1:Model} = fitbrisque(${1:IMDS}, ${2:OpinionScore})'''
+        body: '''${3:Model} = fitbrisque(${1:IMDS}, ${2:OpinionScore})'''
         description: '''[images] Fit custom model for BRISQUE image quality score
         Model = fitbrisque(IMDS, OpinionScore)
         '''
@@ -529,7 +529,7 @@ intensity difference
 
     "adaptthresh [images]":
         prefix: "adaptthresh"
-        body: '''${1:T} = adaptthresh(${1:I}, ${2:optional_Sensitivity}, 'NeighborhoodSize', ${3:value}, 'ForegroundPolarity', ${4:value}, 'Statistic', ${5:value})'''
+        body: '''${6:T} = adaptthresh(${1:I}, ${2:optional_Sensitivity}, 'NeighborhoodSize', ${3:value}, 'ForegroundPolarity', ${4:value}, 'Statistic', ${5:value})'''
         description: '''[images] Adaptive image threshold using local first-order statistics
         T = adaptthresh(I, optional_Sensitivity, 'NeighborhoodSize', value, 'ForegroundPolarity', value, 'Statistic', value)
         '''
@@ -538,7 +538,7 @@ intensity difference
 
     "brisque [images]":
         prefix: "brisque"
-        body: '''${1:Score} = brisque(${1:A}, ${2:optional_Model})'''
+        body: '''${3:Score} = brisque(${1:A}, ${2:optional_Model})'''
         description: '''[images] Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) no-reference image
             quality score
         Score = brisque(A, optional_Model)
@@ -548,7 +548,7 @@ intensity difference
 
     "edge3 [images]":
         prefix: "edge3"
-        body: '''${1:BW} = edge3(${1:V}, ${2:Method}, ${3:THRESH}, ${4:optional_edgeThinning})'''
+        body: '''${5:BW} = edge3(${1:V}, ${2:Method}, ${3:THRESH}, ${4:optional_edgeThinning})'''
         description: '''[images] Find edges in 3-D intensity volume
         BW = edge3(V, Method, THRESH, optional_edgeThinning)
         '''
@@ -557,7 +557,7 @@ intensity difference
 
     "images.geotrans.Warper [images]":
         prefix: "images.geotrans.Warper"
-        body: '''${1:warper} = images.geotrans.Warper(${1:tform}, ${2:inputSize}, ${3:optional_outputRef}, 'Interpolation', ${4:value}, 'FillValue', ${5:value})'''
+        body: '''${6:warper} = images.geotrans.Warper(${1:tform}, ${2:inputSize}, ${3:optional_outputRef}, 'Interpolation', ${4:value}, 'FillValue', ${5:value})'''
         description: '''[images] 
         warper = images.geotrans.Warper(tform, inputSize, optional_outputRef, 'Interpolation', value, 'FillValue', value)
         '''
@@ -566,7 +566,7 @@ intensity difference
 
     "imadjustn [images]":
         prefix: "imadjustn"
-        body: '''${1:J} = imadjustn(${1:V}, ${2:optional_LowHighIn}, ${3:optional_LowHighOut}, ${4:optional_gamma})'''
+        body: '''${5:J} = imadjustn(${1:V}, ${2:optional_LowHighIn}, ${3:optional_LowHighOut}, ${4:optional_gamma})'''
         description: '''[images] Adjust intensity values in N-D volumetric image
         J = imadjustn(V, optional_LowHighIn, optional_LowHighOut, optional_gamma)
         '''
@@ -575,7 +575,7 @@ intensity difference
 
     "jaccard [images]":
         prefix: "jaccard"
-        body: '''${1:SIMILARITY} = jaccard(${1:BW1}, ${2:BW2})'''
+        body: '''${3:SIMILARITY} = jaccard(${1:BW1}, ${2:BW2})'''
         description: '''[images] Jaccard similarity coefficient for image segmentation
         SIMILARITY = jaccard(BW1, BW2)
         '''
@@ -584,7 +584,7 @@ intensity difference
 
     "superpixels [images]":
         prefix: "superpixels"
-        body: '''[${1:L}, ${2:NumLabels}] = superpixels(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'IsInputLab', ${4:value}, 'Method', ${5:value}, 'NumIterations', ${6:value})'''
+        body: '''[${7:L}, ${8:NumLabels}] = superpixels(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'IsInputLab', ${4:value}, 'Method', ${5:value}, 'NumIterations', ${6:value})'''
         description: '''[images] 2-D superpixel oversegmentation of images
         [L, NumLabels] = superpixels(A, N, 'Compactness', value, 'IsInputLab', value, 'Method', value, 'NumIterations', value)
         '''
@@ -593,7 +593,7 @@ intensity difference
 
     "niqeModel [images]":
         prefix: "niqeModel"
-        body: '''${1:Model} = niqeModel(${1:Mean}, ${2:Covariance}, ${3:BlockSize}, ${4:SharpnessThreshold})'''
+        body: '''${5:Model} = niqeModel(${1:Mean}, ${2:Covariance}, ${3:BlockSize}, ${4:SharpnessThreshold})'''
         description: '''[images] Naturalness Image Quality Evaluator (NIQE) model
         Model = niqeModel(Mean, Covariance, BlockSize, SharpnessThreshold)
         '''
@@ -602,7 +602,7 @@ intensity difference
 
     "activecontour [images]":
         prefix: "activecontour"
-        body: '''${1:BW} = activecontour(${1:A}, ${2:MASK}, ${3:optional_n}, ${4:optional_method}, 'SmoothFactor', ${5:value}, 'ContractionBias', ${6:value})'''
+        body: '''${7:BW} = activecontour(${1:A}, ${2:MASK}, ${3:optional_n}, ${4:optional_method}, 'SmoothFactor', ${5:value}, 'ContractionBias', ${6:value})'''
         description: '''[images]  Segment image into foreground and background using active contours
             (snakes)
         BW = activecontour(A, MASK, optional_n, optional_method, 'SmoothFactor', value, 'ContractionBias', value)
@@ -612,7 +612,7 @@ intensity difference
 
     "imfindcircles [images]":
         prefix: "imfindcircles"
-        body: '''[${1:Centers}, ${2:Radii}, ${3:Metric}] = imfindcircles(${1:A}, ${2:Radius range}, 'ObjectPolarity', ${3:value}, 'Method', ${4:value}, 'Sensitivity', ${5:value}, 'EdgeThreshold', ${6:value})'''
+        body: '''[${7:Centers}, ${8:Radii}, ${9:Metric}] = imfindcircles(${1:A}, ${2:Radius range}, 'ObjectPolarity', ${3:value}, 'Method', ${4:value}, 'Sensitivity', ${5:value}, 'EdgeThreshold', ${6:value})'''
         description: '''[images] Find circles using circular Hough transform
         [Centers, Radii, Metric] = imfindcircles(A, Radius range, 'ObjectPolarity', value, 'Method', value, 'Sensitivity', value, 'EdgeThreshold', value)
         '''
@@ -621,7 +621,7 @@ intensity difference
 
     "imhistmatch [images]":
         prefix: "imhistmatch"
-        body: '''[${1:B}, ${2:hgram}] = imhistmatch(${1:A}, ${2:REF}, ${3:optional_NBINS}, 'Method', ${4:value})'''
+        body: '''[${5:B}, ${6:hgram}] = imhistmatch(${1:A}, ${2:REF}, ${3:optional_NBINS}, 'Method', ${4:value})'''
         description: '''[images] Adjust histogram of 2-D image to match histogram of reference
 image 
         [B, hgram] = imhistmatch(A, REF, optional_NBINS, 'Method', value)
@@ -631,7 +631,7 @@ image
 
     "imresize3 [images]":
         prefix: "imresize3"
-        body: '''${1:B} = imresize3(${1:V}, ${2:Scale}, 'Method', ${3:value}, 'AntiAliasing', ${4:value}, 'OutputSize', ${5:value})'''
+        body: '''${6:B} = imresize3(${1:V}, ${2:Scale}, 'Method', ${3:value}, 'AntiAliasing', ${4:value}, 'OutputSize', ${5:value})'''
         description: '''[images] Resize 3-D volumetric intensity image
         B = imresize3(V, Scale, 'Method', value, 'AntiAliasing', value, 'OutputSize', value)
         '''
@@ -649,7 +649,7 @@ image
 
     "fibermetric [images]":
         prefix: "fibermetric"
-        body: '''${1:B} = fibermetric(${1:A}, ${2:optional_thickness}, 'ObjectPolarity', ${3:value}, 'StructureSensitivity', ${4:value})'''
+        body: '''${5:B} = fibermetric(${1:A}, ${2:optional_thickness}, 'ObjectPolarity', ${3:value}, 'StructureSensitivity', ${4:value})'''
         description: '''[images] Enhance elongated or tubular structures in image
         B = fibermetric(A, optional_thickness, 'ObjectPolarity', value, 'StructureSensitivity', value)
         '''

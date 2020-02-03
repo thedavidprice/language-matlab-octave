@@ -3,7 +3,7 @@
 
     "semilogy [matlab]":
         prefix: "semilogy"
-        body: '''${1:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        body: '''${5:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
         description: '''[matlab] Semilogarithmic plot
         h = semilogy(optional_ax, Y, optional_LineSpec, opts)
         '''
@@ -12,7 +12,7 @@
 
     "loglog [matlab]":
         prefix: "loglog"
-        body: '''${1:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        body: '''${5:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
         description: '''[matlab] Log-log scale plot
         h = loglog(optional_ax, Y, optional_LineSpec, opts)
         '''
@@ -21,7 +21,7 @@
 
     "axis [matlab]":
         prefix: "axis"
-        body: '''${1:limits} = axis(${1:optional_ax})'''
+        body: '''${2:limits} = axis(${1:optional_ax})'''
         description: '''[matlab] Set axis limits and aspect ratios
         limits = axis(optional_ax)
         '''
@@ -39,7 +39,7 @@
 
     "plot [matlab]":
         prefix: "plot"
-        body: '''${1:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        body: '''${5:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
         description: '''[matlab] Plot cfit or sfit object
         h = plot(optional_ax, Y, optional_LineSpec, opts)
         '''
@@ -57,7 +57,7 @@
 
     "semilogx [matlab]":
         prefix: "semilogx"
-        body: '''${1:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        body: '''${5:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
         description: '''[matlab] Semilogarithmic plot
         h = semilogx(optional_ax, Y, optional_LineSpec, opts)
         '''
@@ -66,7 +66,7 @@
 
     "title [matlab]":
         prefix: "title"
-        body: '''${1:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
+        body: '''${4:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
         description: '''[matlab] Add title
         h = title(target, txt, opts)
         '''
@@ -75,7 +75,7 @@
 
     "xlabel [matlab]":
         prefix: "xlabel"
-        body: '''${1:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        body: '''${4:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
         description: '''[matlab] Label  x-axis
         h = xlabel(optional_target, txt, opts)
         '''
@@ -84,7 +84,7 @@
 
     "ylabel [matlab]":
         prefix: "ylabel"
-        body: '''${1:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        body: '''${4:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
         description: '''[matlab] Label  y-axis
         h = ylabel(optional_target, txt, opts)
         '''

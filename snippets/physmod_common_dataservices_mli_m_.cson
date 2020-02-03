@@ -3,7 +3,7 @@
 
     "simscape.op.OperatingPoint.set [physmod]":
         prefix: "simscape.op.OperatingPoint.set"
-        body: '''${1:op} = simscape.op.OperatingPoint.set(${1:T}, ${2:path})'''
+        body: '''${3:op} = simscape.op.OperatingPoint.set(${1:T}, ${2:path})'''
         description: '''[physmod] 
         op = simscape.op.OperatingPoint.set(T, path)
         '''
@@ -12,7 +12,7 @@
 
     "simscape.op.OperatingPoint.get [physmod]":
         prefix: "simscape.op.OperatingPoint.get"
-        body: '''${1:child} = simscape.op.OperatingPoint.get(${1:T}, ${2:path})'''
+        body: '''${3:child} = simscape.op.OperatingPoint.get(${1:T}, ${2:path})'''
         description: '''[physmod] 
         child = simscape.op.OperatingPoint.get(T, path)
         '''
@@ -21,7 +21,7 @@
 
     "simscape.op.OperatingPoint.hasPath [physmod]":
         prefix: "simscape.op.OperatingPoint.hasPath"
-        body: '''${1:f} = simscape.op.OperatingPoint.hasPath(${1:T}, ${2:path})'''
+        body: '''${3:f} = simscape.op.OperatingPoint.hasPath(${1:T}, ${2:path})'''
         description: '''[physmod] 
         f = simscape.op.OperatingPoint.hasPath(T, path)
         '''
@@ -30,7 +30,7 @@
 
     "simscape.op.OperatingPoint.remove [physmod]":
         prefix: "simscape.op.OperatingPoint.remove"
-        body: '''${1:op} = simscape.op.OperatingPoint.remove(${1:T}, ${2:path})'''
+        body: '''${3:op} = simscape.op.OperatingPoint.remove(${1:T}, ${2:path})'''
         description: '''[physmod] 
         op = simscape.op.OperatingPoint.remove(T, path)
         '''
@@ -57,7 +57,7 @@
 
     "simscape.op.OperatingPoint.move [physmod]":
         prefix: "simscape.op.OperatingPoint.move"
-        body: '''${1:op} = simscape.op.OperatingPoint.move(${1:T}, ${2:path1}, ${3:path2})'''
+        body: '''${4:op} = simscape.op.OperatingPoint.move(${1:T}, ${2:path1}, ${3:path2})'''
         description: '''[physmod] 
         op = simscape.op.OperatingPoint.move(T, path1, path2)
         '''

@@ -12,7 +12,7 @@
 
     "fanimator [symbolic]":
         prefix: "fanimator"
-        body: '''${1:A} = fanimator(${1:ax}, ${2:funcHandle}, ${3:optional_funcHandleArg}, 'AnimationRange', ${4:value}, 'FrameRate', ${5:value})'''
+        body: '''${6:A} = fanimator(${1:ax}, ${2:funcHandle}, ${3:optional_funcHandleArg}, 'AnimationRange', ${4:value}, 'FrameRate', ${5:value})'''
         description: '''[symbolic] Create stop-motion animation object
         A = fanimator(ax, funcHandle, optional_funcHandleArg, 'AnimationRange', value, 'FrameRate', value)
         '''
@@ -39,7 +39,7 @@
 
     "animationToFrame [symbolic]":
         prefix: "animationToFrame"
-        body: '''${1:frames} = animationToFrame(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value})'''
+        body: '''${5:frames} = animationToFrame(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value})'''
         description: '''[symbolic] Return structure of frames from animation objects
         frames = animationToFrame(fig, 'AnimationRange', value, 'Backwards', value, 'FrameRate', value)
         '''

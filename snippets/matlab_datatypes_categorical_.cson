@@ -3,7 +3,7 @@
 
     "uint16 [matlab]":
         prefix: "uint16"
-        body: '''${1:y} = uint16(${1:x})'''
+        body: '''${2:y} = uint16(${1:x})'''
         description: '''[matlab] 16-bit unsigned integer arrays
         y = uint16(x)
         '''
@@ -12,7 +12,7 @@
 
     "ge [matlab]":
         prefix: "ge"
-        body: '''${1:tf} = ge(${1:A}, ${2:B})'''
+        body: '''${3:tf} = ge(${1:A}, ${2:B})'''
         description: '''[matlab] Greater than or equal relation for handles
         tf = ge(A, B)
         '''
@@ -21,7 +21,7 @@
 
     "uint8 [matlab]":
         prefix: "uint8"
-        body: '''${1:y} = uint8(${1:x})'''
+        body: '''${2:y} = uint8(${1:x})'''
         description: '''[matlab] 8-bit unsigned integer arrays
         y = uint8(x)
         '''
@@ -30,7 +30,7 @@
 
     "ismatrix [matlab]":
         prefix: "ismatrix"
-        body: '''${1:TF} = ismatrix(${1:V})'''
+        body: '''${2:TF} = ismatrix(${1:V})'''
         description: '''[matlab] Determine whether input is matrix
         TF = ismatrix(V)
         '''
@@ -39,7 +39,7 @@
 
     "length [matlab]":
         prefix: "length"
-        body: '''${1:L} = length(${1:X})'''
+        body: '''${2:L} = length(${1:X})'''
         description: '''[matlab] Number of key-value pairs in the data cache
         L = length(X)
         '''
@@ -48,7 +48,7 @@
 
     "maxk [matlab]":
         prefix: "maxk"
-        body: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:dim})'''
+        body: '''[${4:B}, ${5:I}] = maxk(${1:A}, ${2:k}, ${3:dim})'''
         description: '''[matlab] Find k largest elements of array
         [B, I] = maxk(A, k, dim)
         '''
@@ -57,7 +57,7 @@
 
     "countcats [matlab]":
         prefix: "countcats"
-        body: '''${1:B} = countcats(${1:A}, ${2:dim})'''
+        body: '''${3:B} = countcats(${1:A}, ${2:dim})'''
         description: '''[matlab] Count occurrences of categorical array elements by category
         B = countcats(A, dim)
         '''
@@ -66,7 +66,7 @@
 
     "uint32 [matlab]":
         prefix: "uint32"
-        body: '''${1:y} = uint32(${1:x})'''
+        body: '''${2:y} = uint32(${1:x})'''
         description: '''[matlab] 32-bit unsigned integer arrays
         y = uint32(x)
         '''
@@ -75,7 +75,7 @@
 
     "union [matlab]":
         prefix: "union"
-        body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        body: '''[${5:C}, ${6:ia}, ${7:ib}] = union(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
         description: '''[matlab] Union of polyshape objects
         [C, ia, ib] = union(A, B, 'rows', setOrder)
         '''
@@ -84,7 +84,7 @@
 
     "issortedrows [matlab]":
         prefix: "issortedrows"
-        body: '''${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        body: '''${5:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Determine if matrix or table rows are sorted
         TF = issortedrows(A, column, direction, 'MissingPlacement', value)
         '''
@@ -93,7 +93,7 @@
 
     "iscategorical [matlab]":
         prefix: "iscategorical"
-        body: '''${1:tf} = iscategorical(${1:A})'''
+        body: '''${2:tf} = iscategorical(${1:A})'''
         description: '''[matlab] Determine whether input is categorical array
         tf = iscategorical(A)
         '''
@@ -102,7 +102,7 @@
 
     "reordercats [matlab]":
         prefix: "reordercats"
-        body: '''${1:B} = reordercats(${1:A}, ${2:neworder})'''
+        body: '''${3:B} = reordercats(${1:A}, ${2:neworder})'''
         description: '''[matlab] Reorder categories in categorical array
         B = reordercats(A, neworder)
         '''
@@ -111,7 +111,7 @@
 
     "setxor [matlab]":
         prefix: "setxor"
-        body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        body: '''[${5:C}, ${6:ia}, ${7:ib}] = setxor(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
         description: '''[matlab] Set exclusive OR of two arrays
         [C, ia, ib] = setxor(A, B, 'rows', setOrder)
         '''
@@ -120,7 +120,7 @@
 
     "setcats [matlab]":
         prefix: "setcats"
-        body: '''${1:B} = setcats(${1:A}, ${2:newcats})'''
+        body: '''${3:B} = setcats(${1:A}, ${2:newcats})'''
         description: '''[matlab] Set categories in categorical array
         B = setcats(A, newcats)
         '''
@@ -129,7 +129,7 @@
 
     "uint64 [matlab]":
         prefix: "uint64"
-        body: '''${1:y} = uint64(${1:x})'''
+        body: '''${2:y} = uint64(${1:x})'''
         description: '''[matlab] 64-bit unsigned integer arrays
         y = uint64(x)
         '''
@@ -138,7 +138,7 @@
 
     "eq [matlab]":
         prefix: "eq"
-        body: '''${1:tf} = eq(${1:A}, ${2:B})'''
+        body: '''${3:tf} = eq(${1:A}, ${2:B})'''
         description: '''[matlab] Determine equality
         tf = eq(A, B)
         '''
@@ -147,7 +147,7 @@
 
     "intersect [matlab]":
         prefix: "intersect"
-        body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        body: '''[${5:C}, ${6:ia}, ${7:ib}] = intersect(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
         description: '''[matlab] Intersection of polyshape objects
         [C, ia, ib] = intersect(A, B, 'rows', setOrder)
         '''
@@ -156,7 +156,7 @@
 
     "int16 [matlab]":
         prefix: "int16"
-        body: '''${1:y} = int16(${1:x})'''
+        body: '''${2:y} = int16(${1:x})'''
         description: '''[matlab] 16-bit signed integer arrays
         y = int16(x)
         '''
@@ -165,7 +165,7 @@
 
     "max [matlab]":
         prefix: "max"
-        body: '''${1:C} = max(${1:A}, ${2:B}, ${3:nanflag})'''
+        body: '''${4:C} = max(${1:A}, ${2:B}, ${3:nanflag})'''
         description: '''[matlab] Maximum value
         C = max(A, B, nanflag)
         '''
@@ -174,7 +174,7 @@
 
     "addcats [matlab]":
         prefix: "addcats"
-        body: '''${1:B} = addcats(${1:A}, ${2:newcats}, 'Before', ${3:value}, 'After', ${4:value})'''
+        body: '''${5:B} = addcats(${1:A}, ${2:newcats}, 'Before', ${3:value}, 'After', ${4:value})'''
         description: '''[matlab] Add categories to categorical array
         B = addcats(A, newcats, 'Before', value, 'After', value)
         '''
@@ -183,7 +183,7 @@
 
     "char [matlab]":
         prefix: "char"
-        body: '''${1:S} = char(${1:A})'''
+        body: '''${2:S} = char(${1:A})'''
         description: '''[matlab] Character array
         S = char(A)
         '''
@@ -192,7 +192,7 @@
 
     "cat [matlab]":
         prefix: "cat"
-        body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        body: '''${4:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
         description: '''[matlab] Concatenate geographic or planar vector
         C = cat(dim, A, B)
         '''
@@ -201,7 +201,7 @@
 
     "sort [matlab]":
         prefix: "sort"
-        body: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        body: '''[${5:B}, ${6:I}] = sort(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Sort array elements
         [B, I] = sort(A, dim, direction, 'MissingPlacement', value)
         '''
@@ -210,7 +210,7 @@
 
     "sortrows [matlab]":
         prefix: "sortrows"
-        body: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        body: '''[${5:B}, ${6:Index}] = sortrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Sort rows of matrix or table
         [B, Index] = sortrows(A, column, direction, 'MissingPlacement', value)
         '''
@@ -219,7 +219,7 @@
 
     "categories [matlab]":
         prefix: "categories"
-        body: '''${1:C} = categories(${1:A})'''
+        body: '''${2:C} = categories(${1:A})'''
         description: '''[matlab] Categories of categorical array
         C = categories(A)
         '''
@@ -228,7 +228,7 @@
 
     "topkrows [matlab]":
         prefix: "topkrows"
-        body: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:column}, ${4:direction})'''
+        body: '''[${5:B}, ${6:Index}] = topkrows(${1:A}, ${2:k}, ${3:column}, ${4:direction})'''
         description: '''[matlab] Top rows in sorted order
         [B, Index] = topkrows(A, k, column, direction)
         '''
@@ -237,7 +237,7 @@
 
     "removecats [matlab]":
         prefix: "removecats"
-        body: '''${1:B} = removecats(${1:A}, ${2:oldcats})'''
+        body: '''${3:B} = removecats(${1:A}, ${2:oldcats})'''
         description: '''[matlab] Remove categories from categorical array
         B = removecats(A, oldcats)
         '''
@@ -246,7 +246,7 @@
 
     "ismember [matlab]":
         prefix: "ismember"
-        body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:'rows'})'''
+        body: '''[${4:Lia}, ${5:Locb}] = ismember(${1:A}, ${2:B}, ${3:'rows'})'''
         description: '''[matlab] Array elements that are members of set array
         [Lia, Locb] = ismember(A, B, 'rows')
         '''
@@ -255,7 +255,7 @@
 
     "ctranspose [matlab]":
         prefix: "ctranspose"
-        body: '''${1:B} = ctranspose(${1:A})'''
+        body: '''${2:B} = ctranspose(${1:A})'''
         description: '''[matlab] Conjugate dynamic system model
         B = ctranspose(A)
         '''
@@ -264,7 +264,7 @@
 
     "mode [matlab]":
         prefix: "mode"
-        body: '''[${1:M}, ${2:F}, ${3:C}] = mode(${1:A}, ${2:dim})'''
+        body: '''[${3:M}, ${4:F}, ${5:C}] = mode(${1:A}, ${2:dim})'''
         description: '''[matlab] Most frequent values in array
         [M, F, C] = mode(A, dim)
         '''
@@ -273,7 +273,7 @@
 
     "vertcat [matlab]":
         prefix: "vertcat"
-        body: '''${1:C} = vertcat(${1:A})'''
+        body: '''${2:C} = vertcat(${1:A})'''
         description: '''[matlab] Concatenate arrays vertically
         C = vertcat(A)
         '''
@@ -282,7 +282,7 @@
 
     "times [matlab]":
         prefix: "times"
-        body: '''${1:C} = times(${1:A}, ${2:B})'''
+        body: '''${3:C} = times(${1:A}, ${2:B})'''
         description: '''[matlab] Financial time series multiplication
         C = times(A, B)
         '''
@@ -291,7 +291,7 @@
 
     "isprotected [matlab]":
         prefix: "isprotected"
-        body: '''${1:tf} = isprotected(${1:A})'''
+        body: '''${2:tf} = isprotected(${1:A})'''
         description: '''[matlab] Determine whether categories of categorical array are
 protected
         tf = isprotected(A)
@@ -301,7 +301,7 @@ protected
 
     "isrow [matlab]":
         prefix: "isrow"
-        body: '''${1:TF} = isrow(${1:V})'''
+        body: '''${2:TF} = isrow(${1:V})'''
         description: '''[matlab] Determine whether input
 is row vector
         TF = isrow(V)
@@ -311,7 +311,7 @@ is row vector
 
     "int64 [matlab]":
         prefix: "int64"
-        body: '''${1:y} = int64(${1:x})'''
+        body: '''${2:y} = int64(${1:x})'''
         description: '''[matlab] 64-bit signed integer arrays
         y = int64(x)
         '''
@@ -320,7 +320,7 @@ is row vector
 
     "isempty [matlab]":
         prefix: "isempty"
-        body: '''${1:TF} = isempty(${1:A})'''
+        body: '''${2:TF} = isempty(${1:A})'''
         description: '''[matlab] Determine whether MetaData object is empty
         TF = isempty(A)
         '''
@@ -329,7 +329,7 @@ is row vector
 
     "setdiff [matlab]":
         prefix: "setdiff"
-        body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        body: '''[${5:C}, ${6:ia}] = setdiff(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
         description: '''[matlab] Set difference of two arrays
         [C, ia] = setdiff(A, B, 'rows', setOrder)
         '''
@@ -338,7 +338,7 @@ is row vector
 
     "histcounts [matlab]":
         prefix: "histcounts"
-        body: '''[${1:N}, ${2:categories}] = histcounts(${1:C}, ${2:Categories}, 'Normalization', ${3:value})'''
+        body: '''[${4:N}, ${5:categories}] = histcounts(${1:C}, ${2:Categories}, 'Normalization', ${3:value})'''
         description: '''[matlab] Histogram bin counts
         [N, categories] = histcounts(C, Categories, 'Normalization', value)
         '''
@@ -347,7 +347,7 @@ is row vector
 
     "cellstr [matlab]":
         prefix: "cellstr"
-        body: '''${1:C} = cellstr(${1:S})'''
+        body: '''${2:C} = cellstr(${1:S})'''
         description: '''[matlab] Convert to cell array of character vectors
         C = cellstr(S)
         '''
@@ -356,7 +356,7 @@ is row vector
 
     "unique [matlab]":
         prefix: "unique"
-        body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:'rows'}, ${3:setOrder})'''
+        body: '''[${4:C}, ${5:ia}, ${6:ic}] = unique(${1:A}, ${2:'rows'}, ${3:setOrder})'''
         description: '''[matlab] Unique values in array
         [C, ia, ic] = unique(A, 'rows', setOrder)
         '''
@@ -365,7 +365,7 @@ is row vector
 
     "isvector [matlab]":
         prefix: "isvector"
-        body: '''${1:TF} = isvector(${1:A})'''
+        body: '''${2:TF} = isvector(${1:A})'''
         description: '''[matlab] Determine whether input is vector
         TF = isvector(A)
         '''
@@ -374,7 +374,7 @@ is row vector
 
     "single [matlab]":
         prefix: "single"
-        body: '''${1:y} = single(${1:x})'''
+        body: '''${2:y} = single(${1:x})'''
         description: '''[matlab] Single-precision arrays
         y = single(x)
         '''
@@ -383,7 +383,7 @@ is row vector
 
     "le [matlab]":
         prefix: "le"
-        body: '''${1:tf} = le(${1:A}, ${2:B})'''
+        body: '''${3:tf} = le(${1:A}, ${2:B})'''
         description: '''[matlab] Less than or equal relation for handles
         tf = le(A, B)
         '''
@@ -392,7 +392,7 @@ is row vector
 
     "median [matlab]":
         prefix: "median"
-        body: '''${1:M} = median(${1:A}, ${2:dim}, ${3:nanflag})'''
+        body: '''${4:M} = median(${1:A}, ${2:dim}, ${3:nanflag})'''
         description: '''[matlab] Median value of array
         M = median(A, dim, nanflag)
         '''
@@ -401,7 +401,7 @@ is row vector
 
     "horzcat [matlab]":
         prefix: "horzcat"
-        body: '''${1:C} = horzcat(${1:A})'''
+        body: '''${2:C} = horzcat(${1:A})'''
         description: '''[matlab] Concatenate arrays horizontally
         C = horzcat(A)
         '''
@@ -410,7 +410,7 @@ is row vector
 
     "isscalar [matlab]":
         prefix: "isscalar"
-        body: '''${1:TF} = isscalar(${1:A})'''
+        body: '''${2:TF} = isscalar(${1:A})'''
         description: '''[matlab] Determine whether input is scalar
         TF = isscalar(A)
         '''
@@ -419,7 +419,7 @@ is row vector
 
     "mergecats [matlab]":
         prefix: "mergecats"
-        body: '''${1:B} = mergecats(${1:A}, ${2:oldcats}, ${3:newcats})'''
+        body: '''${4:B} = mergecats(${1:A}, ${2:oldcats}, ${3:newcats})'''
         description: '''[matlab] Merge categories in categorical array
         B = mergecats(A, oldcats, newcats)
         '''
@@ -428,7 +428,7 @@ is row vector
 
     "string [matlab]":
         prefix: "string"
-        body: '''${1:str} = string(${1:A})'''
+        body: '''${2:str} = string(${1:A})'''
         description: '''[matlab] String array
         str = string(A)
         '''
@@ -437,7 +437,7 @@ is row vector
 
     "isequaln [matlab]":
         prefix: "isequaln"
-        body: '''${1:tf} = isequaln(${1:A}, ${2:B})'''
+        body: '''${3:tf} = isequaln(${1:A}, ${2:B})'''
         description: '''[matlab] Determine array equality, treating NaN values as equal
         tf = isequaln(A, B)
         '''
@@ -446,7 +446,7 @@ is row vector
 
     "transpose [matlab]":
         prefix: "transpose"
-        body: '''${1:B} = transpose(${1:A})'''
+        body: '''${2:B} = transpose(${1:A})'''
         description: '''[matlab] Transpose vector or matrix
         B = transpose(A)
         '''
@@ -455,7 +455,7 @@ is row vector
 
     "numel [matlab]":
         prefix: "numel"
-        body: '''${1:n} = numel(${1:A})'''
+        body: '''${2:n} = numel(${1:A})'''
         description: '''[matlab] Number of array elements
         n = numel(A)
         '''
@@ -464,7 +464,7 @@ is row vector
 
     "lt [matlab]":
         prefix: "lt"
-        body: '''${1:tf} = lt(${1:A}, ${2:B})'''
+        body: '''${3:tf} = lt(${1:A}, ${2:B})'''
         description: '''[matlab] Less than relation for handles
         tf = lt(A, B)
         '''
@@ -473,7 +473,7 @@ is row vector
 
     "int8 [matlab]":
         prefix: "int8"
-        body: '''${1:y} = int8(${1:x})'''
+        body: '''${2:y} = int8(${1:x})'''
         description: '''[matlab] 8-bit signed integer arrays
         y = int8(x)
         '''
@@ -482,7 +482,7 @@ is row vector
 
     "min [matlab]":
         prefix: "min"
-        body: '''${1:C} = min(${1:A}, ${2:B}, ${3:nanflag})'''
+        body: '''${4:C} = min(${1:A}, ${2:B}, ${3:nanflag})'''
         description: '''[matlab] Minimum value
         C = min(A, B, nanflag)
         '''
@@ -491,7 +491,7 @@ is row vector
 
     "mink [matlab]":
         prefix: "mink"
-        body: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:dim})'''
+        body: '''[${4:B}, ${5:I}] = mink(${1:A}, ${2:k}, ${3:dim})'''
         description: '''[matlab] Find k smallest elements of array
         [B, I] = mink(A, k, dim)
         '''
@@ -500,7 +500,7 @@ is row vector
 
     "int32 [matlab]":
         prefix: "int32"
-        body: '''${1:y} = int32(${1:x})'''
+        body: '''${2:y} = int32(${1:x})'''
         description: '''[matlab] 32-bit signed integer arrays
         y = int32(x)
         '''
@@ -509,7 +509,7 @@ is row vector
 
     "isordinal [matlab]":
         prefix: "isordinal"
-        body: '''${1:tf} = isordinal(${1:A})'''
+        body: '''${2:tf} = isordinal(${1:A})'''
         description: '''[matlab] Determine whether input is ordinal categorical array
         tf = isordinal(A)
         '''
@@ -518,7 +518,7 @@ is row vector
 
     "iscolumn [matlab]":
         prefix: "iscolumn"
-        body: '''${1:TF} = iscolumn(${1:V})'''
+        body: '''${2:TF} = iscolumn(${1:V})'''
         description: '''[matlab] Determine whether input
 is column vector
         TF = iscolumn(V)
@@ -537,7 +537,7 @@ is column vector
 
     "iscategory [matlab]":
         prefix: "iscategory"
-        body: '''${1:tf} = iscategory(${1:A}, ${2:catnames})'''
+        body: '''${3:tf} = iscategory(${1:A}, ${2:catnames})'''
         description: '''[matlab] Test for categorical array categories
         tf = iscategory(A, catnames)
         '''
@@ -546,7 +546,7 @@ is column vector
 
     "isequal [matlab]":
         prefix: "isequal"
-        body: '''${1:tf} = isequal(${1:A}, ${2:B})'''
+        body: '''${3:tf} = isequal(${1:A}, ${2:B})'''
         description: '''[matlab] Multiple object equality
         tf = isequal(A, B)
         '''
@@ -555,7 +555,7 @@ is column vector
 
     "issorted [matlab]":
         prefix: "issorted"
-        body: '''${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        body: '''${5:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Check whether dates and times are monotonically increasing
         TF = issorted(A, dim, direction, 'MissingPlacement', value)
         '''
@@ -564,7 +564,7 @@ is column vector
 
     "categorical [matlab]":
         prefix: "categorical"
-        body: '''${1:C} = categorical(${1:A}, ${2:valueset}, ${3:catnames}, 'Protected', ${4:value}, 'Ordinal', ${5:value})'''
+        body: '''${6:C} = categorical(${1:A}, ${2:valueset}, ${3:catnames}, 'Protected', ${4:value}, 'Ordinal', ${5:value})'''
         description: '''[matlab] Array that contains values assigned to categories
         C = categorical(A, valueset, catnames, 'Protected', value, 'Ordinal', value)
         '''
@@ -573,7 +573,7 @@ is column vector
 
     "gt [matlab]":
         prefix: "gt"
-        body: '''${1:tf} = gt(${1:A}, ${2:B})'''
+        body: '''${3:tf} = gt(${1:A}, ${2:B})'''
         description: '''[matlab] Greater than relation for handles
         tf = gt(A, B)
         '''
@@ -582,7 +582,7 @@ is column vector
 
     "ne [matlab]":
         prefix: "ne"
-        body: '''${1:tf} = ne(${1:A}, ${2:B})'''
+        body: '''${3:tf} = ne(${1:A}, ${2:B})'''
         description: '''[matlab] Not equal relation for handles
         tf = ne(A, B)
         '''
@@ -591,7 +591,7 @@ is column vector
 
     "double [matlab]":
         prefix: "double"
-        body: '''${1:y} = double(${1:x})'''
+        body: '''${2:y} = double(${1:x})'''
         description: '''[matlab] Cast fixed-point filter to use double-precision arithmetic
         y = double(x)
         '''
@@ -600,7 +600,7 @@ is column vector
 
     "isundefined [matlab]":
         prefix: "isundefined"
-        body: '''${1:tf} = isundefined(${1:A})'''
+        body: '''${2:tf} = isundefined(${1:A})'''
         description: '''[matlab] Find undefined elements in categorical array
         tf = isundefined(A)
         '''
@@ -609,7 +609,7 @@ is column vector
 
     "permute [matlab]":
         prefix: "permute"
-        body: '''${1:B} = permute(${1:A}, ${2:order})'''
+        body: '''${3:B} = permute(${1:A}, ${2:order})'''
         description: '''[matlab] Rearrange array dimensions in model arrays
         B = permute(A, order)
         '''
@@ -618,7 +618,7 @@ is column vector
 
     "renamecats [matlab]":
         prefix: "renamecats"
-        body: '''${1:B} = renamecats(${1:A}, ${2:oldnames}, ${3:newnames})'''
+        body: '''${4:B} = renamecats(${1:A}, ${2:oldnames}, ${3:newnames})'''
         description: '''[matlab] Rename categories in categorical array
         B = renamecats(A, oldnames, newnames)
         '''

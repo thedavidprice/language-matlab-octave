@@ -12,7 +12,7 @@
 
     "publish [matlab]":
         prefix: "publish"
-        body: '''${1:my_doc} = publish(${1:file}, ${2:optional_format})'''
+        body: '''${3:my_doc} = publish(${1:file}, ${2:optional_format})'''
         description: '''[matlab] Generate view of MATLAB file in specified format
         my_doc = publish(file, optional_format)
         '''
@@ -102,7 +102,7 @@
 
     "dbstatus [matlab]":
         prefix: "dbstatus"
-        body: '''${1:s} = dbstatus(${1:optional_filespec}, ${2:'-completenames'})'''
+        body: '''${3:s} = dbstatus(${1:optional_filespec}, ${2:'-completenames'})'''
         description: '''[matlab] List all breakpoints
         s = dbstatus(optional_filespec, '-completenames')
         '''
@@ -111,7 +111,7 @@
 
     "dbstack [matlab]":
         prefix: "dbstack"
-        body: '''[${1:st}, ${2:i}] = dbstack(${1:optional_nframes}, ${2:'-completenames'})'''
+        body: '''[${3:st}, ${4:i}] = dbstack(${1:optional_nframes}, ${2:'-completenames'})'''
         description: '''[matlab] Function call stack
         [st, i] = dbstack(optional_nframes, '-completenames')
         '''

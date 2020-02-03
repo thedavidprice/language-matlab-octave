@@ -3,7 +3,7 @@
 
     "matlab.io.datastore.DsFileReader.read [matlab]":
         prefix: "matlab.io.datastore.DsFileReader.read"
-        body: '''[${1:A}, ${2:count}] = matlab.io.datastore.DsFileReader.read(${1:fr}, ${2:size}, 'SizeMethod', ${3:value}, 'OutputType', ${4:value})'''
+        body: '''[${5:A}, ${6:count}] = matlab.io.datastore.DsFileReader.read(${1:fr}, ${2:size}, 'SizeMethod', ${3:value}, 'OutputType', ${4:value})'''
         description: '''[matlab] 
         [A, count] = matlab.io.datastore.DsFileReader.read(fr, size, 'SizeMethod', value, 'OutputType', value)
         '''
@@ -12,7 +12,7 @@
 
     "matlab.io.datastore.DsFileSet [matlab]":
         prefix: "matlab.io.datastore.DsFileSet"
-        body: '''${1:fs} = matlab.io.datastore.DsFileSet(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'FileSplitSize', ${5:value})'''
+        body: '''${6:fs} = matlab.io.datastore.DsFileSet(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'FileSplitSize', ${5:value})'''
         description: '''[matlab] 
         fs = matlab.io.datastore.DsFileSet(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'FileSplitSize', value)
         '''
@@ -21,7 +21,7 @@
 
     "fileDatastore [matlab]":
         prefix: "fileDatastore"
-        body: '''${1:ds} = fileDatastore(${1:location}, 'UniformRead', ${2:value}, 'IncludeSubfolders', ${3:value}, 'FileExtensions', ${4:value}, 'AlternateFileSystemRoots', ${5:value}, 'ReadFcn', ${6:value}, 'PreviewFcn', ${7:value}, 'ReadMode', ${8:value}, 'BlockSize', ${9:value})'''
+        body: '''${10:ds} = fileDatastore(${1:location}, 'UniformRead', ${2:value}, 'IncludeSubfolders', ${3:value}, 'FileExtensions', ${4:value}, 'AlternateFileSystemRoots', ${5:value}, 'ReadFcn', ${6:value}, 'PreviewFcn', ${7:value}, 'ReadMode', ${8:value}, 'BlockSize', ${9:value})'''
         description: '''[matlab] Datastore with custom file reader
         ds = fileDatastore(location, 'UniformRead', value, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'ReadFcn', value, 'PreviewFcn', value, 'ReadMode', value, 'BlockSize', value)
         '''
@@ -30,7 +30,7 @@
 
     "spreadsheetDatastore [matlab]":
         prefix: "spreadsheetDatastore"
-        body: '''${1:ds} = spreadsheetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'Sheets', ${5:value}, 'Range', ${6:value}, 'ReadSize', ${7:value}, 'NumHeaderLines', ${8:value}, 'ReadVariableNames', ${9:value}, 'TextType', ${10:value}, 'VariableNames', ${11:value}, 'VariableTypes', ${12:value}, 'SelectedVariableNames', ${13:value}, 'SelectedVariableTypes', ${14:value}, 'PreserveVariableNames', ${15:value})'''
+        body: '''${16:ds} = spreadsheetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'Sheets', ${5:value}, 'Range', ${6:value}, 'ReadSize', ${7:value}, 'NumHeaderLines', ${8:value}, 'ReadVariableNames', ${9:value}, 'TextType', ${10:value}, 'VariableNames', ${11:value}, 'VariableTypes', ${12:value}, 'SelectedVariableNames', ${13:value}, 'SelectedVariableTypes', ${14:value}, 'PreserveVariableNames', ${15:value})'''
         description: '''[matlab] Datastore for spreadsheet files
         ds = spreadsheetDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'Sheets', value, 'Range', value, 'ReadSize', value, 'NumHeaderLines', value, 'ReadVariableNames', value, 'TextType', value, 'VariableNames', value, 'VariableTypes', value, 'SelectedVariableNames', value, 'SelectedVariableTypes', value, 'PreserveVariableNames', value)
         '''
@@ -48,7 +48,7 @@
 
     "matlab.io.datastore.DsFileSet.hasfile [matlab]":
         prefix: "matlab.io.datastore.DsFileSet.hasfile"
-        body: '''${1:tf} = matlab.io.datastore.DsFileSet.hasfile(${1:fs})'''
+        body: '''${2:tf} = matlab.io.datastore.DsFileSet.hasfile(${1:fs})'''
         description: '''[matlab] 
         tf = matlab.io.datastore.DsFileSet.hasfile(fs)
         '''
@@ -57,7 +57,7 @@
 
     "imageDatastore [matlab]":
         prefix: "imageDatastore"
-        body: '''${1:ds} = imageDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'ReadFcn', ${5:value}, 'ReadSize', ${6:value}, 'LabelSource', ${7:value}, 'Labels', ${8:value})'''
+        body: '''${9:ds} = imageDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'ReadFcn', ${5:value}, 'ReadSize', ${6:value}, 'LabelSource', ${7:value}, 'Labels', ${8:value})'''
         description: '''[matlab] Datastore for image data
         ds = imageDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'ReadFcn', value, 'ReadSize', value, 'LabelSource', value, 'Labels', value)
         '''
@@ -66,7 +66,7 @@
 
     "tabularTextDatastore [matlab]":
         prefix: "tabularTextDatastore"
-        body: '''${1:ds} = tabularTextDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'FileEncoding', ${5:value}, 'Delimiter', ${6:value}, 'RowDelimiter', ${7:value}, 'TreatAsMissing', ${8:value}, 'MissingValue', ${9:value}, 'ReadSize', ${10:value}, 'NumHeaderLines', ${11:value}, 'ReadVariableNames', ${12:value}, 'VariableNames', ${13:value}, 'TextscanFormats', ${14:value}, 'TextType', ${15:value}, 'DatetimeType', ${16:value}, 'SelectedVariableNames', ${17:value}, 'SelectedFormats', ${18:value}, 'DurationType', ${19:value}, 'DatetimeLocale', ${20:value}, 'CommentStyle', ${21:value}, 'PreserveVariableNames', ${22:value})'''
+        body: '''${23:ds} = tabularTextDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'FileEncoding', ${5:value}, 'Delimiter', ${6:value}, 'RowDelimiter', ${7:value}, 'TreatAsMissing', ${8:value}, 'MissingValue', ${9:value}, 'ReadSize', ${10:value}, 'NumHeaderLines', ${11:value}, 'ReadVariableNames', ${12:value}, 'VariableNames', ${13:value}, 'TextscanFormats', ${14:value}, 'TextType', ${15:value}, 'DatetimeType', ${16:value}, 'SelectedVariableNames', ${17:value}, 'SelectedFormats', ${18:value}, 'DurationType', ${19:value}, 'DatetimeLocale', ${20:value}, 'CommentStyle', ${21:value}, 'PreserveVariableNames', ${22:value})'''
         description: '''[matlab] Datastore for tabular text files
         ds = tabularTextDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'FileEncoding', value, 'Delimiter', value, 'RowDelimiter', value, 'TreatAsMissing', value, 'MissingValue', value, 'ReadSize', value, 'NumHeaderLines', value, 'ReadVariableNames', value, 'VariableNames', value, 'TextscanFormats', value, 'TextType', value, 'DatetimeType', value, 'SelectedVariableNames', value, 'SelectedFormats', value, 'DurationType', value, 'DatetimeLocale', value, 'CommentStyle', value, 'PreserveVariableNames', value)
         '''
@@ -75,7 +75,7 @@
 
     "matlab.io.datastore.Datastore.combine [matlab]":
         prefix: "matlab.io.datastore.Datastore.combine"
-        body: '''${1:ds} = matlab.io.datastore.Datastore.combine(${1:ds})'''
+        body: '''${2:ds} = matlab.io.datastore.Datastore.combine(${1:ds})'''
         description: '''[matlab] 
         ds = matlab.io.datastore.Datastore.combine(ds)
         '''
@@ -84,7 +84,7 @@
 
     "matlab.io.datastore.FileDatastore [matlab]":
         prefix: "matlab.io.datastore.FileDatastore"
-        body: '''${1:ds} = matlab.io.datastore.FileDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'ReadFcn', ${5:value}, 'PreviewFcn', ${6:value}, 'ReadMode', ${7:value}, 'BlockSize', ${8:value})'''
+        body: '''${9:ds} = matlab.io.datastore.FileDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'ReadFcn', ${5:value}, 'PreviewFcn', ${6:value}, 'ReadMode', ${7:value}, 'BlockSize', ${8:value})'''
         description: '''[matlab] 
         ds = matlab.io.datastore.FileDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'ReadFcn', value, 'PreviewFcn', value, 'ReadMode', value, 'BlockSize', value)
         '''
@@ -93,7 +93,7 @@
 
     "matlab.io.datastore.DsFileReader.seek [matlab]":
         prefix: "matlab.io.datastore.DsFileReader.seek"
-        body: '''${1:numbytes} = matlab.io.datastore.DsFileReader.seek(${1:fr}, ${2:bytes}, 'RespectTextEncoding', ${3:value}, 'Origin', ${4:value})'''
+        body: '''${5:numbytes} = matlab.io.datastore.DsFileReader.seek(${1:fr}, ${2:bytes}, 'RespectTextEncoding', ${3:value}, 'Origin', ${4:value})'''
         description: '''[matlab] 
         numbytes = matlab.io.datastore.DsFileReader.seek(fr, bytes, 'RespectTextEncoding', value, 'Origin', value)
         '''
@@ -102,7 +102,7 @@
 
     "datastore [matlab]":
         prefix: "datastore"
-        body: '''${1:ds} = datastore(${1:location}, 'Type', ${2:value}, 'IncludeSubfolders', ${3:value}, 'FileExtensions', ${4:value}, 'AlternateFileSystemRoots', ${5:value}, 'VariableNames', ${6:value}, 'SelectedVariableNames', ${7:value}, 'ReadSize', ${8:value}, 'OutputType', ${9:value}, 'RowTimes', ${10:value}, 'PreserveVariableNames', ${11:value})'''
+        body: '''${12:ds} = datastore(${1:location}, 'Type', ${2:value}, 'IncludeSubfolders', ${3:value}, 'FileExtensions', ${4:value}, 'AlternateFileSystemRoots', ${5:value}, 'VariableNames', ${6:value}, 'SelectedVariableNames', ${7:value}, 'ReadSize', ${8:value}, 'OutputType', ${9:value}, 'RowTimes', ${10:value}, 'PreserveVariableNames', ${11:value})'''
         description: '''[matlab] Create datastore for large collections of data
         ds = datastore(location, 'Type', value, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'VariableNames', value, 'SelectedVariableNames', value, 'ReadSize', value, 'OutputType', value, 'RowTimes', value, 'PreserveVariableNames', value)
         '''
@@ -111,7 +111,7 @@
 
     "matlab.io.datastore.KeyValueDatastore [matlab]":
         prefix: "matlab.io.datastore.KeyValueDatastore"
-        body: '''${1:ds} = matlab.io.datastore.KeyValueDatastore(${1:location}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value}, 'FileType', ${4:value}, 'IncludeSubfolders', ${5:value})'''
+        body: '''${6:ds} = matlab.io.datastore.KeyValueDatastore(${1:location}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value}, 'FileType', ${4:value}, 'IncludeSubfolders', ${5:value})'''
         description: '''[matlab] 
         ds = matlab.io.datastore.KeyValueDatastore(location, 'ReadSize', value, 'AlternateFileSystemRoots', value, 'FileType', value, 'IncludeSubfolders', value)
         '''
@@ -120,7 +120,7 @@
 
     "matlab.io.datastore.TabularTextDatastore [matlab]":
         prefix: "matlab.io.datastore.TabularTextDatastore"
-        body: '''${1:ds} = matlab.io.datastore.TabularTextDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'FileEncoding', ${5:value}, 'Delimiter', ${6:value}, 'RowDelimiter', ${7:value}, 'TreatAsMissing', ${8:value}, 'MissingValue', ${9:value}, 'ReadSize', ${10:value}, 'NumHeaderLines', ${11:value}, 'ReadVariableNames', ${12:value}, 'VariableNames', ${13:value}, 'TextscanFormats', ${14:value}, 'TextType', ${15:value}, 'DatetimeType', ${16:value}, 'SelectedVariableNames', ${17:value}, 'SelectedFormats', ${18:value}, 'DurationType', ${19:value}, 'DatetimeLocale', ${20:value}, 'CommentStyle', ${21:value}, 'PreserveVariableNames', ${22:value})'''
+        body: '''${23:ds} = matlab.io.datastore.TabularTextDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'FileEncoding', ${5:value}, 'Delimiter', ${6:value}, 'RowDelimiter', ${7:value}, 'TreatAsMissing', ${8:value}, 'MissingValue', ${9:value}, 'ReadSize', ${10:value}, 'NumHeaderLines', ${11:value}, 'ReadVariableNames', ${12:value}, 'VariableNames', ${13:value}, 'TextscanFormats', ${14:value}, 'TextType', ${15:value}, 'DatetimeType', ${16:value}, 'SelectedVariableNames', ${17:value}, 'SelectedFormats', ${18:value}, 'DurationType', ${19:value}, 'DatetimeLocale', ${20:value}, 'CommentStyle', ${21:value}, 'PreserveVariableNames', ${22:value})'''
         description: '''[matlab] 
         ds = matlab.io.datastore.TabularTextDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'FileEncoding', value, 'Delimiter', value, 'RowDelimiter', value, 'TreatAsMissing', value, 'MissingValue', value, 'ReadSize', value, 'NumHeaderLines', value, 'ReadVariableNames', value, 'VariableNames', value, 'TextscanFormats', value, 'TextType', value, 'DatetimeType', value, 'SelectedVariableNames', value, 'SelectedFormats', value, 'DurationType', value, 'DatetimeLocale', value, 'CommentStyle', value, 'PreserveVariableNames', value)
         '''
@@ -129,7 +129,7 @@
 
     "matlab.io.datastore.DsFileSet.nextfile [matlab]":
         prefix: "matlab.io.datastore.DsFileSet.nextfile"
-        body: '''${1:filename} = matlab.io.datastore.DsFileSet.nextfile(${1:fs})'''
+        body: '''${2:filename} = matlab.io.datastore.DsFileSet.nextfile(${1:fs})'''
         description: '''[matlab] 
         filename = matlab.io.datastore.DsFileSet.nextfile(fs)
         '''
@@ -138,7 +138,7 @@
 
     "matlab.io.datastore.DsFileSet.resolve [matlab]":
         prefix: "matlab.io.datastore.DsFileSet.resolve"
-        body: '''${1:files} = matlab.io.datastore.DsFileSet.resolve(${1:fs})'''
+        body: '''${2:files} = matlab.io.datastore.DsFileSet.resolve(${1:fs})'''
         description: '''[matlab] 
         files = matlab.io.datastore.DsFileSet.resolve(fs)
         '''
@@ -147,7 +147,7 @@
 
     "matlab.io.datastore.DsFileSet.partition [matlab]":
         prefix: "matlab.io.datastore.DsFileSet.partition"
-        body: '''${1:subfs} = matlab.io.datastore.DsFileSet.partition(${1:fs}, ${2:N}, ${3:ii})'''
+        body: '''${4:subfs} = matlab.io.datastore.DsFileSet.partition(${1:fs}, ${2:N}, ${3:ii})'''
         description: '''[matlab] 
         subfs = matlab.io.datastore.DsFileSet.partition(fs, N, ii)
         '''
@@ -156,7 +156,7 @@
 
     "matlab.io.datastore.Datastore.transform [matlab]":
         prefix: "matlab.io.datastore.Datastore.transform"
-        body: '''${1:ds} = matlab.io.datastore.Datastore.transform(${1:ds}, ${2:transformFcn}, 'IncludeInfo', ${3:value})'''
+        body: '''${4:ds} = matlab.io.datastore.Datastore.transform(${1:ds}, ${2:transformFcn}, 'IncludeInfo', ${3:value})'''
         description: '''[matlab] 
         ds = matlab.io.datastore.Datastore.transform(ds, transformFcn, 'IncludeInfo', value)
         '''
@@ -165,7 +165,7 @@
 
     "matlab.io.datastore.DsFileReader.hasdata [matlab]":
         prefix: "matlab.io.datastore.DsFileReader.hasdata"
-        body: '''${1:status} = matlab.io.datastore.DsFileReader.hasdata(${1:fr})'''
+        body: '''${2:status} = matlab.io.datastore.DsFileReader.hasdata(${1:fr})'''
         description: '''[matlab] 
         status = matlab.io.datastore.DsFileReader.hasdata(fr)
         '''
@@ -174,7 +174,7 @@
 
     "matlab.io.datastore.DsFileReader [matlab]":
         prefix: "matlab.io.datastore.DsFileReader"
-        body: '''${1:fr} = matlab.io.datastore.DsFileReader(${1:filename}, 'TextEncoding', ${2:value})'''
+        body: '''${3:fr} = matlab.io.datastore.DsFileReader(${1:filename}, 'TextEncoding', ${2:value})'''
         description: '''[matlab] 
         fr = matlab.io.datastore.DsFileReader(filename, 'TextEncoding', value)
         '''
@@ -183,7 +183,7 @@
 
     "matlab.io.datastore.ImageDatastore [matlab]":
         prefix: "matlab.io.datastore.ImageDatastore"
-        body: '''${1:ds} = matlab.io.datastore.ImageDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'ReadFcn', ${5:value}, 'ReadSize', ${6:value}, 'LabelSource', ${7:value}, 'Labels', ${8:value})'''
+        body: '''${9:ds} = matlab.io.datastore.ImageDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'ReadFcn', ${5:value}, 'ReadSize', ${6:value}, 'LabelSource', ${7:value}, 'Labels', ${8:value})'''
         description: '''[matlab] 
         ds = matlab.io.datastore.ImageDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'ReadFcn', value, 'ReadSize', value, 'LabelSource', value, 'Labels', value)
         '''
@@ -192,7 +192,7 @@
 
     "matlab.io.datastore.TallDatastore [matlab]":
         prefix: "matlab.io.datastore.TallDatastore"
-        body: '''${1:ds} = matlab.io.datastore.TallDatastore(${1:location}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value}, 'FileType', ${4:value}, 'IncludeSubfolders', ${5:value})'''
+        body: '''${6:ds} = matlab.io.datastore.TallDatastore(${1:location}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value}, 'FileType', ${4:value}, 'IncludeSubfolders', ${5:value})'''
         description: '''[matlab] 
         ds = matlab.io.datastore.TallDatastore(location, 'ReadSize', value, 'AlternateFileSystemRoots', value, 'FileType', value, 'IncludeSubfolders', value)
         '''
@@ -201,7 +201,7 @@
 
     "matlab.io.datastore.SpreadsheetDatastore [matlab]":
         prefix: "matlab.io.datastore.SpreadsheetDatastore"
-        body: '''${1:ds} = matlab.io.datastore.SpreadsheetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'Sheets', ${5:value}, 'Range', ${6:value}, 'ReadSize', ${7:value}, 'NumHeaderLines', ${8:value}, 'ReadVariableNames', ${9:value}, 'TextType', ${10:value}, 'VariableNames', ${11:value}, 'VariableTypes', ${12:value}, 'SelectedVariableNames', ${13:value}, 'SelectedVariableTypes', ${14:value}, 'PreserveVariableNames', ${15:value})'''
+        body: '''${16:ds} = matlab.io.datastore.SpreadsheetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'Sheets', ${5:value}, 'Range', ${6:value}, 'ReadSize', ${7:value}, 'NumHeaderLines', ${8:value}, 'ReadVariableNames', ${9:value}, 'TextType', ${10:value}, 'VariableNames', ${11:value}, 'VariableTypes', ${12:value}, 'SelectedVariableNames', ${13:value}, 'SelectedVariableTypes', ${14:value}, 'PreserveVariableNames', ${15:value})'''
         description: '''[matlab] 
         ds = matlab.io.datastore.SpreadsheetDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'Sheets', value, 'Range', value, 'ReadSize', value, 'NumHeaderLines', value, 'ReadVariableNames', value, 'TextType', value, 'VariableNames', value, 'VariableTypes', value, 'SelectedVariableNames', value, 'SelectedVariableTypes', value, 'PreserveVariableNames', value)
         '''

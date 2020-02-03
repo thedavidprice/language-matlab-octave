@@ -21,7 +21,7 @@
 
     "slproject.ProjectManager.addReference [simulink]":
         prefix: "slproject.ProjectManager.addReference"
-        body: '''${1:projectReference} = slproject.ProjectManager.addReference(${1:proj}, ${2:folder})'''
+        body: '''${3:projectReference} = slproject.ProjectManager.addReference(${1:proj}, ${2:folder})'''
         description: '''[simulink] 
         projectReference = slproject.ProjectManager.addReference(proj, folder)
         '''
@@ -30,7 +30,7 @@
 
     "slproject.loadProject [simulink]":
         prefix: "slproject.loadProject"
-        body: '''${1:proj} = slproject.loadProject(${1:projectPath})'''
+        body: '''${2:proj} = slproject.loadProject(${1:projectPath})'''
         description: '''[simulink] (Not recommended) Load project
         proj = slproject.loadProject(projectPath)
         '''
@@ -57,7 +57,7 @@
 
     "slproject.ProjectManager.addFile [simulink]":
         prefix: "slproject.ProjectManager.addFile"
-        body: '''${1:projectFile} = slproject.ProjectManager.addFile(${1:proj}, ${2:file})'''
+        body: '''${3:projectFile} = slproject.ProjectManager.addFile(${1:proj}, ${2:file})'''
         description: '''[simulink] 
         projectFile = slproject.ProjectManager.addFile(proj, file)
         '''
@@ -66,7 +66,7 @@
 
     "slproject.ProjectManager.addPath [simulink]":
         prefix: "slproject.ProjectManager.addPath"
-        body: '''${1:projectPath} = slproject.ProjectManager.addPath(${1:proj}, ${2:folder})'''
+        body: '''${3:projectPath} = slproject.ProjectManager.addPath(${1:proj}, ${2:folder})'''
         description: '''[simulink] 
         projectPath = slproject.ProjectManager.addPath(proj, folder)
         '''
@@ -75,7 +75,7 @@
 
     "slproject.ProjectManager.findCategory [simulink]":
         prefix: "slproject.ProjectManager.findCategory"
-        body: '''${1:category} = slproject.ProjectManager.findCategory(${1:proj}, ${2:categoryName})'''
+        body: '''${3:category} = slproject.ProjectManager.findCategory(${1:proj}, ${2:categoryName})'''
         description: '''[simulink] 
         category = slproject.ProjectManager.findCategory(proj, categoryName)
         '''
@@ -93,7 +93,7 @@
 
     "slproject.ProjectManager.findFile [simulink]":
         prefix: "slproject.ProjectManager.findFile"
-        body: '''${1:file} = slproject.ProjectManager.findFile(${1:proj}, ${2:fileName})'''
+        body: '''${3:file} = slproject.ProjectManager.findFile(${1:proj}, ${2:fileName})'''
         description: '''[simulink] 
         file = slproject.ProjectManager.findFile(proj, fileName)
         '''
@@ -111,7 +111,7 @@
 
     "slproject.ProjectManager.addShortcut [simulink]":
         prefix: "slproject.ProjectManager.addShortcut"
-        body: '''${1:shortcut} = slproject.ProjectManager.addShortcut(${1:proj}, ${2:fileName})'''
+        body: '''${3:shortcut} = slproject.ProjectManager.addShortcut(${1:proj}, ${2:fileName})'''
         description: '''[simulink] 
         shortcut = slproject.ProjectManager.addShortcut(proj, fileName)
         '''
@@ -120,7 +120,7 @@
 
     "slproject.ProjectFile.addLabel [simulink]":
         prefix: "slproject.ProjectFile.addLabel"
-        body: '''${1:labelObject} = slproject.ProjectFile.addLabel(${1:file}, ${2:categoryName}, ${3:label}, ${4:optional_labelData})'''
+        body: '''${5:labelObject} = slproject.ProjectFile.addLabel(${1:file}, ${2:categoryName}, ${3:label}, ${4:optional_labelData})'''
         description: '''[simulink] 
         labelObject = slproject.ProjectFile.addLabel(file, categoryName, label, optional_labelData)
         '''
@@ -129,7 +129,7 @@
 
     "simulinkproject [simulink]":
         prefix: "simulinkproject"
-        body: '''${1:proj} = simulinkproject(${1:projectPath})'''
+        body: '''${2:proj} = simulinkproject(${1:projectPath})'''
         description: '''[simulink] (Not recommended) Open project and get project object
         proj = simulinkproject(projectPath)
         '''
@@ -147,7 +147,7 @@
 
     "slproject.ProjectManager.addFolderIncludingChildFiles [simulink]":
         prefix: "slproject.ProjectManager.addFolderIncludingChildFiles"
-        body: '''${1:projectFile} = slproject.ProjectManager.addFolderIncludingChildFiles(${1:proj}, ${2:folder})'''
+        body: '''${3:projectFile} = slproject.ProjectManager.addFolderIncludingChildFiles(${1:proj}, ${2:folder})'''
         description: '''[simulink] 
         projectFile = slproject.ProjectManager.addFolderIncludingChildFiles(proj, folder)
         '''
@@ -156,7 +156,7 @@
 
     "slproject.ProjectManager.addStartupFile [simulink]":
         prefix: "slproject.ProjectManager.addStartupFile"
-        body: '''${1:shortcut} = slproject.ProjectManager.addStartupFile(${1:proj}, ${2:fileName})'''
+        body: '''${3:shortcut} = slproject.ProjectManager.addStartupFile(${1:proj}, ${2:fileName})'''
         description: '''[simulink] 
         shortcut = slproject.ProjectManager.addStartupFile(proj, fileName)
         '''
@@ -165,7 +165,7 @@
 
     "slproject.ProjectFile.findLabel [simulink]":
         prefix: "slproject.ProjectFile.findLabel"
-        body: '''${1:labelObject} = slproject.ProjectFile.findLabel(${1:category}, ${2:labelName})'''
+        body: '''${3:labelObject} = slproject.ProjectFile.findLabel(${1:category}, ${2:labelName})'''
         description: '''[simulink] 
         labelObject = slproject.ProjectFile.findLabel(category, labelName)
         '''
@@ -183,7 +183,7 @@
 
     "slproject.create [simulink]":
         prefix: "slproject.create"
-        body: '''${1:proj} = slproject.create(${1:projectPath})'''
+        body: '''${2:proj} = slproject.create(${1:projectPath})'''
         description: '''[simulink] (Not recommended) Create blank project
         proj = slproject.create(projectPath)
         '''
@@ -192,7 +192,7 @@
 
     "slproject.ProjectManager.addShutdownFile [simulink]":
         prefix: "slproject.ProjectManager.addShutdownFile"
-        body: '''${1:shortcut} = slproject.ProjectManager.addShutdownFile(${1:proj}, ${2:fileName})'''
+        body: '''${3:shortcut} = slproject.ProjectManager.addShutdownFile(${1:proj}, ${2:fileName})'''
         description: '''[simulink] 
         shortcut = slproject.ProjectManager.addShutdownFile(proj, fileName)
         '''

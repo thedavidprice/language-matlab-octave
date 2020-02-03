@@ -12,7 +12,7 @@
 
     "clibgen.LibraryDefinition.addProperty [matlab]":
         prefix: "clibgen.LibraryDefinition.addProperty"
-        body: '''${1:PropertyDefinition} = clibgen.LibraryDefinition.addProperty(${1:ClassDefinition}, ${2:CPPName}, ${3:MATLABType}, 'Description', ${4:value})'''
+        body: '''${5:PropertyDefinition} = clibgen.LibraryDefinition.addProperty(${1:ClassDefinition}, ${2:CPPName}, ${3:MATLABType}, 'Description', ${4:value})'''
         description: '''[matlab] 
         PropertyDefinition = clibgen.LibraryDefinition.addProperty(ClassDefinition, CPPName, MATLABType, 'Description', value)
         '''
@@ -30,7 +30,7 @@
 
     "clibgen.LibraryDefinition.addMethod [matlab]":
         prefix: "clibgen.LibraryDefinition.addMethod"
-        body: '''${1:MethodDefinition} = clibgen.LibraryDefinition.addMethod(${1:ClassDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
+        body: '''${5:MethodDefinition} = clibgen.LibraryDefinition.addMethod(${1:ClassDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
         description: '''[matlab] 
         MethodDefinition = clibgen.LibraryDefinition.addMethod(ClassDefinition, CPPName, 'MATLABName', value, 'Description', value)
         '''
@@ -66,7 +66,7 @@
 
     "clibgen.LibraryDefinition.addFunction [matlab]":
         prefix: "clibgen.LibraryDefinition.addFunction"
-        body: '''${1:FunctionDefinition} = clibgen.LibraryDefinition.addFunction(${1:LibraryDefinition}, ${2:CPPSignature}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
+        body: '''${5:FunctionDefinition} = clibgen.LibraryDefinition.addFunction(${1:LibraryDefinition}, ${2:CPPSignature}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
         description: '''[matlab] 
         FunctionDefinition = clibgen.LibraryDefinition.addFunction(LibraryDefinition, CPPSignature, 'MATLABName', value, 'Description', value)
         '''
@@ -75,7 +75,7 @@
 
     "clibgen.LibraryDefinition [matlab]":
         prefix: "clibgen.LibraryDefinition"
-        body: '''${1:LibraryDefinition} = clibgen.LibraryDefinition(${1:DataFile})'''
+        body: '''${2:LibraryDefinition} = clibgen.LibraryDefinition(${1:DataFile})'''
         description: '''[matlab] 
         LibraryDefinition = clibgen.LibraryDefinition(DataFile)
         '''
@@ -84,7 +84,7 @@
 
     "clibgen.LibraryDefinition.addConstructor [matlab]":
         prefix: "clibgen.LibraryDefinition.addConstructor"
-        body: '''${1:ConstructorDefinition} = clibgen.LibraryDefinition.addConstructor(${1:ClassDefinition}, ${2:CPPName}, 'Description', ${3:value})'''
+        body: '''${4:ConstructorDefinition} = clibgen.LibraryDefinition.addConstructor(${1:ClassDefinition}, ${2:CPPName}, 'Description', ${3:value})'''
         description: '''[matlab] 
         ConstructorDefinition = clibgen.LibraryDefinition.addConstructor(ClassDefinition, CPPName, 'Description', value)
         '''
@@ -120,7 +120,7 @@
 
     "clibgen.LibraryDefinition.addEnumeration [matlab]":
         prefix: "clibgen.LibraryDefinition.addEnumeration"
-        body: '''${1:EnumDefinition} = clibgen.LibraryDefinition.addEnumeration(${1:LibraryDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Enumerants}, 'MATLABName', ${5:value}, 'Description', ${6:value})'''
+        body: '''${7:EnumDefinition} = clibgen.LibraryDefinition.addEnumeration(${1:LibraryDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Enumerants}, 'MATLABName', ${5:value}, 'Description', ${6:value})'''
         description: '''[matlab] 
         EnumDefinition = clibgen.LibraryDefinition.addEnumeration(LibraryDefinition, CPPName, MATLABType, Enumerants, 'MATLABName', value, 'Description', value)
         '''
@@ -165,7 +165,7 @@
 
     "clibgen.LibraryDefinition.addClass [matlab]":
         prefix: "clibgen.LibraryDefinition.addClass"
-        body: '''${1:ClassDefinition} = clibgen.LibraryDefinition.addClass(${1:LibraryDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
+        body: '''${5:ClassDefinition} = clibgen.LibraryDefinition.addClass(${1:LibraryDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
         description: '''[matlab] 
         ClassDefinition = clibgen.LibraryDefinition.addClass(LibraryDefinition, CPPName, 'MATLABName', value, 'Description', value)
         '''

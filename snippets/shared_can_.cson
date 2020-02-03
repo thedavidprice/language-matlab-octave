@@ -3,7 +3,7 @@
 
     "canDatabase [shared]":
         prefix: "canDatabase"
-        body: '''${1:obj} = canDatabase(${1:File})'''
+        body: '''${2:obj} = canDatabase(${1:File})'''
         description: '''[shared] 
         obj = canDatabase(File)
         '''

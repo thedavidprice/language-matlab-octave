@@ -3,7 +3,7 @@
 
     "getselectedsource [imaq]":
         prefix: "getselectedsource"
-        body: '''${1:out} = getselectedsource(${1:obj})'''
+        body: '''${2:out} = getselectedsource(${1:obj})'''
         description: '''[imaq] Return currently selected video source object
         out = getselectedsource(obj)
         '''
@@ -12,7 +12,7 @@
 
     "triggerinfo [imaq]":
         prefix: "triggerinfo"
-        body: '''${1:out} = triggerinfo(${1:obj}, ${2:optional_type})'''
+        body: '''${3:out} = triggerinfo(${1:obj}, ${2:optional_type})'''
         description: '''[imaq] Provide information about available trigger configurations
         out = triggerinfo(obj, optional_type)
         '''
@@ -49,7 +49,7 @@ image frames
 
     "commands [imaq]":
         prefix: "commands"
-        body: '''${1:out} = commands(${1:gigeCamera})'''
+        body: '''${2:out} = commands(${1:gigeCamera})'''
         description: '''[imaq] List of commands available for GigE Vision camera
         out = commands(gigeCamera)
         '''
@@ -58,7 +58,7 @@ image frames
 
     "imaqhelp [imaq]":
         prefix: "imaqhelp"
-        body: '''${1:out} = imaqhelp(${1:optional_obj}, ${2:optional_name})'''
+        body: '''${3:out} = imaqhelp(${1:optional_obj}, ${2:optional_name})'''
         description: '''[imaq] Image acquisition object function and property help
         out = imaqhelp(optional_obj, optional_name)
         '''
@@ -67,7 +67,7 @@ image frames
 
     "propinfo [imaq]":
         prefix: "propinfo"
-        body: '''${1:out} = propinfo(${1:obj}, ${2:optional_propName})'''
+        body: '''${3:out} = propinfo(${1:obj}, ${2:optional_propName})'''
         description: '''[imaq] Property characteristics for image acquisition objects
         out = propinfo(obj, optional_propName)
         '''
@@ -94,7 +94,7 @@ image frames
 
     "videoinput [imaq]":
         prefix: "videoinput"
-        body: '''${1:obj} = videoinput(${1:adaptorName}, ${2:deviceID}, ${3:format}, 'BayerSensorAlignment', ${4:value}, 'Disklogger', ${5:value}, 'FramesAcquiredFcnCount', ${6:value}, 'FrameGrabInterval', ${7:value}, 'FramesPerTrigger', ${8:value}, 'LoggingMode', ${9:value}, 'Name', ${10:value}, 'ReturnedColorSpace', ${11:value}, 'ROIPosition', ${12:value}, 'SelectedSourceName', ${13:value}, 'Tag', ${14:value}, 'Timeout', ${15:value}, 'TimerPeriod', ${16:value}, 'TriggerFrameDelay', ${17:value}, 'TriggerRepeat', ${18:value})'''
+        body: '''${19:obj} = videoinput(${1:adaptorName}, ${2:deviceID}, ${3:format}, 'BayerSensorAlignment', ${4:value}, 'Disklogger', ${5:value}, 'FramesAcquiredFcnCount', ${6:value}, 'FrameGrabInterval', ${7:value}, 'FramesPerTrigger', ${8:value}, 'LoggingMode', ${9:value}, 'Name', ${10:value}, 'ReturnedColorSpace', ${11:value}, 'ROIPosition', ${12:value}, 'SelectedSourceName', ${13:value}, 'Tag', ${14:value}, 'Timeout', ${15:value}, 'TimerPeriod', ${16:value}, 'TriggerFrameDelay', ${17:value}, 'TriggerRepeat', ${18:value})'''
         description: '''[imaq] Create video input object
         obj = videoinput(adaptorName, deviceID, format, 'BayerSensorAlignment', value, 'Disklogger', value, 'FramesAcquiredFcnCount', value, 'FrameGrabInterval', value, 'FramesPerTrigger', value, 'LoggingMode', value, 'Name', value, 'ReturnedColorSpace', value, 'ROIPosition', value, 'SelectedSourceName', value, 'Tag', value, 'Timeout', value, 'TimerPeriod', value, 'TriggerFrameDelay', value, 'TriggerRepeat', value)
         '''
@@ -130,7 +130,7 @@ image frames
 
     "islogging [imaq]":
         prefix: "islogging"
-        body: '''${1:out} = islogging(${1:obj})'''
+        body: '''${2:out} = islogging(${1:obj})'''
         description: '''[imaq] Determine whether video input object is logging
         out = islogging(obj)
         '''
@@ -148,7 +148,7 @@ image frames
 
     "isrunning [imaq]":
         prefix: "isrunning"
-        body: '''${1:out} = isrunning(${1:obj})'''
+        body: '''${2:out} = isrunning(${1:obj})'''
         description: '''[imaq] Determine whether video input object is running
         out = isrunning(obj)
         '''
@@ -166,7 +166,7 @@ image frames
 
     "triggerconfig [imaq]":
         prefix: "triggerconfig"
-        body: '''${1:out} = triggerconfig(${1:obj}, ${2:optional_type}, ${3:optional_condition})'''
+        body: '''${4:out} = triggerconfig(${1:obj}, ${2:optional_type}, ${3:optional_condition})'''
         description: '''[imaq] Configure video input object trigger properties
         out = triggerconfig(obj, optional_type, optional_condition)
         '''
@@ -175,7 +175,7 @@ image frames
 
     "imaqhwinfo [imaq]":
         prefix: "imaqhwinfo"
-        body: '''${1:out} = imaqhwinfo(${1:optional_obj}, ${2:optional_field})'''
+        body: '''${3:out} = imaqhwinfo(${1:optional_obj}, ${2:optional_field})'''
         description: '''[imaq] Information about available image acquisition hardware
         out = imaqhwinfo(optional_obj, optional_field)
         '''
@@ -193,7 +193,7 @@ image frames
 
     "preview [imaq]":
         prefix: "preview"
-        body: '''${1:out} = preview(${1:obj}, ${2:optional_himage})'''
+        body: '''${3:out} = preview(${1:obj}, ${2:optional_himage})'''
         description: '''[imaq] Preview of live video data
         out = preview(obj, optional_himage)
         '''

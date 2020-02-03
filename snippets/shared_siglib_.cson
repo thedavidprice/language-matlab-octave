@@ -3,7 +3,7 @@
 
     "chirp [shared]":
         prefix: "chirp"
-        body: '''${1:y} = chirp(${1:t}, ${2:f0}, ${3:t1}, ${4:f1}, ${5:method}, ${6:phi}, ${7:optional_shape})'''
+        body: '''${8:y} = chirp(${1:t}, ${2:f0}, ${3:t1}, ${4:f1}, ${5:method}, ${6:phi}, ${7:optional_shape})'''
         description: '''[shared] Swept-frequency cosine
         y = chirp(t, f0, t1, f1, method, phi, optional_shape)
         '''
@@ -12,7 +12,7 @@
 
     "ellipap [shared]":
         prefix: "ellipap"
-        body: '''[${1:z}, ${2:p}, ${3:k}] = ellipap(${1:n}, ${2:Rp}, ${3:Rs})'''
+        body: '''[${4:z}, ${5:p}, ${6:k}] = ellipap(${1:n}, ${2:Rp}, ${3:Rs})'''
         description: '''[shared] Elliptic analog lowpass filter prototype
         [z, p, k] = ellipap(n, Rp, Rs)
         '''

@@ -12,7 +12,7 @@
 
     "ble [shared]":
         prefix: "ble"
-        body: '''${1:b} = ble(${1:input})'''
+        body: '''${2:b} = ble(${1:input})'''
         description: '''[shared] Connect to Bluetooth Low Energy peripheral device
         b = ble(input)
         '''
@@ -30,7 +30,7 @@
 
     "ble.characteristic [shared]":
         prefix: "ble.characteristic"
-        body: '''${1:c} = ble.characteristic(${1:obj}, ${2:sid}, ${3:cid})'''
+        body: '''${4:c} = ble.characteristic(${1:obj}, ${2:sid}, ${3:cid})'''
         description: '''[shared] 
         c = ble.characteristic(obj, sid, cid)
         '''
@@ -48,7 +48,7 @@
 
     "matlabshared.blelib.Characteristic.descriptor [shared]":
         prefix: "matlabshared.blelib.Characteristic.descriptor"
-        body: '''${1:d} = matlabshared.blelib.Characteristic.descriptor(${1:obj}, ${2:did})'''
+        body: '''${3:d} = matlabshared.blelib.Characteristic.descriptor(${1:obj}, ${2:did})'''
         description: '''[shared] 
         d = matlabshared.blelib.Characteristic.descriptor(obj, did)
         '''
@@ -57,7 +57,7 @@
 
     "matlabshared.blelib.Characteristic.read [shared]":
         prefix: "matlabshared.blelib.Characteristic.read"
-        body: '''[${1:value}, ${2:timestamp}] = matlabshared.blelib.Characteristic.read(${1:obj}, ${2:mode})'''
+        body: '''[${3:value}, ${4:timestamp}] = matlabshared.blelib.Characteristic.read(${1:obj}, ${2:mode})'''
         description: '''[shared] 
         [value, timestamp] = matlabshared.blelib.Characteristic.read(obj, mode)
         '''
@@ -66,7 +66,7 @@
 
     "blelist [shared]":
         prefix: "blelist"
-        body: '''${1:list} = blelist('Name', ${1:value}, 'Timeout', ${2:value}, 'Services', ${3:value})'''
+        body: '''${4:list} = blelist('Name', ${1:value}, 'Timeout', ${2:value}, 'Services', ${3:value})'''
         description: '''[shared] Scan nearby Bluetooth Low Energy peripheral devices
         list = blelist('Name', value, 'Timeout', value, 'Services', value)
         '''

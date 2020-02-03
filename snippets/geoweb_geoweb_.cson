@@ -3,7 +3,7 @@
 
     "WebMapServer.getCapabilities [geoweb]":
         prefix: "WebMapServer.getCapabilities"
-        body: '''${1:capabilities} = WebMapServer.getCapabilities(${1:server})'''
+        body: '''${2:capabilities} = WebMapServer.getCapabilities(${1:server})'''
         description: '''[geoweb] 
         capabilities = WebMapServer.getCapabilities(server)
         '''
@@ -12,7 +12,7 @@
 
     "WMSLayer.refine [geoweb]":
         prefix: "WMSLayer.refine"
-        body: '''${1:refined} = WMSLayer.refine(${1:layers}, ${2:querystr}, 'IgnoreCase', ${3:value}, 'MatchType', ${4:value}, 'SearchFields', ${5:value})'''
+        body: '''${6:refined} = WMSLayer.refine(${1:layers}, ${2:querystr}, 'IgnoreCase', ${3:value}, 'MatchType', ${4:value}, 'SearchFields', ${5:value})'''
         description: '''[geoweb] 
         refined = WMSLayer.refine(layers, querystr, 'IgnoreCase', value, 'MatchType', value, 'SearchFields', value)
         '''
@@ -21,7 +21,7 @@
 
     "gpxread [geoweb]":
         prefix: "gpxread"
-        body: '''${1:P} = gpxread(${1:filename}, 'FeatureType', ${2:value}, 'Index', ${3:value})'''
+        body: '''${4:P} = gpxread(${1:filename}, 'FeatureType', ${2:value}, 'Index', ${3:value})'''
         description: '''[geoweb] Read GPX file
         P = gpxread(filename, 'FeatureType', value, 'Index', value)
         '''
@@ -57,7 +57,7 @@
 
     "WMSCapabilities [geoweb]":
         prefix: "WMSCapabilities"
-        body: '''${1:capabilities} = WMSCapabilities(${1:serverURL}, ${2:capabilitiesResponse})'''
+        body: '''${3:capabilities} = WMSCapabilities(${1:serverURL}, ${2:capabilitiesResponse})'''
         description: '''[geoweb] 
         capabilities = WMSCapabilities(serverURL, capabilitiesResponse)
         '''
@@ -75,7 +75,7 @@
 
     "WMSLayer.serverTitles [geoweb]":
         prefix: "WMSLayer.serverTitles"
-        body: '''${1:titles} = WMSLayer.serverTitles(${1:layers})'''
+        body: '''${2:titles} = WMSLayer.serverTitles(${1:layers})'''
         description: '''[geoweb] 
         titles = WMSLayer.serverTitles(layers)
         '''
@@ -84,7 +84,7 @@
 
     "WMSLayer.servers [geoweb]":
         prefix: "WMSLayer.servers"
-        body: '''${1:serverURLs} = WMSLayer.servers(${1:layers})'''
+        body: '''${2:serverURLs} = WMSLayer.servers(${1:layers})'''
         description: '''[geoweb] 
         serverURLs = WMSLayer.servers(layers)
         '''
@@ -93,7 +93,7 @@
 
     "wmpolygon [geoweb]":
         prefix: "wmpolygon"
-        body: '''${1:h} = wmpolygon(${1:optional_wm}, ${2:P}, 'Autofit', ${3:value}, 'Description', ${4:value}, 'OverlayName', ${5:value}, 'FeatureName', ${6:value}, 'LineWidth', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'EdgeColor', ${10:value}, 'EdgeAlpha', ${11:value})'''
+        body: '''${12:h} = wmpolygon(${1:optional_wm}, ${2:P}, 'Autofit', ${3:value}, 'Description', ${4:value}, 'OverlayName', ${5:value}, 'FeatureName', ${6:value}, 'LineWidth', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'EdgeColor', ${10:value}, 'EdgeAlpha', ${11:value})'''
         description: '''[geoweb] Display geographic polygon on web map 
         h = wmpolygon(optional_wm, P, 'Autofit', value, 'Description', value, 'OverlayName', value, 'FeatureName', value, 'LineWidth', value, 'FaceColor', value, 'FaceAlpha', value, 'EdgeColor', value, 'EdgeAlpha', value)
         '''
@@ -102,7 +102,7 @@
 
     "wmline [geoweb]":
         prefix: "wmline"
-        body: '''${1:h} = wmline(${1:optional_wm}, ${2:P}, 'Autofit', ${3:value}, 'Description', ${4:value}, 'OverlayName', ${5:value}, 'FeatureName', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'Alpha', ${9:value})'''
+        body: '''${10:h} = wmline(${1:optional_wm}, ${2:P}, 'Autofit', ${3:value}, 'Description', ${4:value}, 'OverlayName', ${5:value}, 'FeatureName', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'Alpha', ${9:value})'''
         description: '''[geoweb]  Display geographic line on web map 
         h = wmline(optional_wm, P, 'Autofit', value, 'Description', value, 'OverlayName', value, 'FeatureName', value, 'LineWidth', value, 'Color', value, 'Alpha', value)
         '''
@@ -111,7 +111,7 @@
 
     "wmsfind [geoweb]":
         prefix: "wmsfind"
-        body: '''${1:layers} = wmsfind(${1:querystr}, 'IgnoreCase', ${2:value}, 'Latlim', ${3:value}, 'Lonlim', ${4:value}, 'MatchType', ${5:value}, 'SearchFields', ${6:value}, 'Version', ${7:value})'''
+        body: '''${8:layers} = wmsfind(${1:querystr}, 'IgnoreCase', ${2:value}, 'Latlim', ${3:value}, 'Lonlim', ${4:value}, 'MatchType', ${5:value}, 'SearchFields', ${6:value}, 'Version', ${7:value})'''
         description: '''[geoweb] Search local database for Web map servers and layers
         layers = wmsfind(querystr, 'IgnoreCase', value, 'Latlim', value, 'Lonlim', value, 'MatchType', value, 'SearchFields', value, 'Version', value)
         '''
@@ -120,7 +120,7 @@
 
     "WMSLayer.refineLimits [geoweb]":
         prefix: "WMSLayer.refineLimits"
-        body: '''${1:refined} = WMSLayer.refineLimits(${1:layers}, 'Latlim', ${2:value}, 'Lonlim', ${3:value})'''
+        body: '''${4:refined} = WMSLayer.refineLimits(${1:layers}, 'Latlim', ${2:value}, 'Lonlim', ${3:value})'''
         description: '''[geoweb] 
         refined = WMSLayer.refineLimits(layers, 'Latlim', value, 'Lonlim', value)
         '''
@@ -129,7 +129,7 @@
 
     "wmmarker [geoweb]":
         prefix: "wmmarker"
-        body: '''${1:h} = wmmarker(${1:optional_wm}, ${2:P}, 'Autofit', ${3:value}, 'Description', ${4:value}, 'OverlayName', ${5:value}, 'FeatureName', ${6:value}, 'Icon', ${7:value}, 'IconScale', ${8:value}, 'Color', ${9:value}, 'Alpha', ${10:value})'''
+        body: '''${11:h} = wmmarker(${1:optional_wm}, ${2:P}, 'Autofit', ${3:value}, 'Description', ${4:value}, 'OverlayName', ${5:value}, 'FeatureName', ${6:value}, 'Icon', ${7:value}, 'IconScale', ${8:value}, 'Color', ${9:value}, 'Alpha', ${10:value})'''
         description: '''[geoweb]  Display geographic marker on web map
         h = wmmarker(optional_wm, P, 'Autofit', value, 'Description', value, 'OverlayName', value, 'FeatureName', value, 'Icon', value, 'IconScale', value, 'Color', value, 'Alpha', value)
         '''
@@ -138,7 +138,7 @@
 
     "WebMapServer.getMap [geoweb]":
         prefix: "WebMapServer.getMap"
-        body: '''${1:A} = WebMapServer.getMap(${1:server}, ${2:mapRequestURL})'''
+        body: '''${3:A} = WebMapServer.getMap(${1:server}, ${2:mapRequestURL})'''
         description: '''[geoweb] 
         A = WebMapServer.getMap(server, mapRequestURL)
         '''
@@ -156,7 +156,7 @@
 
     "wmzoom [geoweb]":
         prefix: "wmzoom"
-        body: '''${1:zoomLevelOut} = wmzoom(${1:optional_wm}, ${2:optional_zoomLevel})'''
+        body: '''${3:zoomLevelOut} = wmzoom(${1:optional_wm}, ${2:optional_zoomLevel})'''
         description: '''[geoweb] Set or obtain zoom level of web map
         zoomLevelOut = wmzoom(optional_wm, optional_zoomLevel)
         '''
@@ -165,7 +165,7 @@
 
     "wmlimits [geoweb]":
         prefix: "wmlimits"
-        body: '''[${1:latlim}, ${2:lonlim}] = wmlimits(${1:optional_wm}, ${2:latitudeLimits}, ${3:longitudeLimits})'''
+        body: '''[${4:latlim}, ${5:lonlim}] = wmlimits(${1:optional_wm}, ${2:latitudeLimits}, ${3:longitudeLimits})'''
         description: '''[geoweb]  Set or obtain web map limits
         [latlim, lonlim] = wmlimits(optional_wm, latitudeLimits, longitudeLimits)
         '''
@@ -174,7 +174,7 @@
 
     "wmsinfo [geoweb]":
         prefix: "wmsinfo"
-        body: '''[${1:capabilities}, ${2:infoRequestURL}] = wmsinfo(${1:serverURL}, 'TimeoutInSeconds', ${2:value})'''
+        body: '''[${3:capabilities}, ${4:infoRequestURL}] = wmsinfo(${1:serverURL}, 'TimeoutInSeconds', ${2:value})'''
         description: '''[geoweb] Information about WMS server from capabilities document
         [capabilities, infoRequestURL] = wmsinfo(serverURL, 'TimeoutInSeconds', value)
         '''
@@ -183,7 +183,7 @@
 
     "WebMapServer [geoweb]":
         prefix: "WebMapServer"
-        body: '''${1:server} = WebMapServer(${1:serverURL})'''
+        body: '''${2:server} = WebMapServer(${1:serverURL})'''
         description: '''[geoweb] 
         server = WebMapServer(serverURL)
         '''
@@ -192,7 +192,7 @@
 
     "WMSLayer [geoweb]":
         prefix: "WMSLayer"
-        body: '''${1:layers} = WMSLayer('ServerTitle', ${1:value}, 'ServerURL', ${2:value}, 'LayerTitle', ${3:value}, 'LayerName', ${4:value}, 'Latlim', ${5:value}, 'Lonlim', ${6:value}, 'Abstract', ${7:value}, 'CoordRefSysCodes', ${8:value}, 'Details', ${9:value})'''
+        body: '''${10:layers} = WMSLayer('ServerTitle', ${1:value}, 'ServerURL', ${2:value}, 'LayerTitle', ${3:value}, 'LayerName', ${4:value}, 'Latlim', ${5:value}, 'Lonlim', ${6:value}, 'Abstract', ${7:value}, 'CoordRefSysCodes', ${8:value}, 'Details', ${9:value})'''
         description: '''[geoweb] 
         layers = WMSLayer('ServerTitle', value, 'ServerURL', value, 'LayerTitle', value, 'LayerName', value, 'Latlim', value, 'Lonlim', value, 'Abstract', value, 'CoordRefSysCodes', value, 'Details', value)
         '''
@@ -201,7 +201,7 @@
 
     "WMSMapRequest.boundImageSize [geoweb]":
         prefix: "WMSMapRequest.boundImageSize"
-        body: '''${1:mapBound} = WMSMapRequest.boundImageSize(${1:mapRequest}, ${2:imageLength})'''
+        body: '''${3:mapBound} = WMSMapRequest.boundImageSize(${1:mapRequest}, ${2:imageLength})'''
         description: '''[geoweb] 
         mapBound = WMSMapRequest.boundImageSize(mapRequest, imageLength)
         '''
@@ -210,7 +210,7 @@
 
     "wmcenter [geoweb]":
         prefix: "wmcenter"
-        body: '''[${1:lat}, ${2:lon}] = wmcenter(${1:optional_wm}, ${2:centerLatitude}, ${3:centerLongitude}, ${4:optional_zoomLevel})'''
+        body: '''[${5:lat}, ${6:lon}] = wmcenter(${1:optional_wm}, ${2:centerLatitude}, ${3:centerLongitude}, ${4:optional_zoomLevel})'''
         description: '''[geoweb] Set or obtain web map center point
         [lat, lon] = wmcenter(optional_wm, centerLatitude, centerLongitude, optional_zoomLevel)
         '''
@@ -219,7 +219,7 @@
 
     "WebMapServer.updateLayers [geoweb]":
         prefix: "WebMapServer.updateLayers"
-        body: '''[${1:updatedLayer}, ${2:index}] = WebMapServer.updateLayers(${1:server}, ${2:layer})'''
+        body: '''[${3:updatedLayer}, ${4:index}] = WebMapServer.updateLayers(${1:server}, ${2:layer})'''
         description: '''[geoweb] 
         [updatedLayer, index] = WebMapServer.updateLayers(server, layer)
         '''
@@ -228,7 +228,7 @@
 
     "wmsread [geoweb]":
         prefix: "wmsread"
-        body: '''[${1:A}, ${2:R}, ${3:mapRequestURL}] = wmsread(${1:layer}, 'latlim', ${2:value}, 'lonlim', ${3:value}, 'ImageHeight', ${4:value}, 'ImageWidth', ${5:value}, 'CellSize', ${6:value}, 'RelTolCellSize', ${7:value}, 'ImageFormat', ${8:value}, 'StyleName', ${9:value}, 'Transparent', ${10:value}, 'BackgroundColor', ${11:value}, 'Elevation', ${12:value}, 'Time', ${13:value}, 'SampleDimension', ${14:value}, 'TimeoutInSeconds', ${15:value})'''
+        body: '''[${16:A}, ${17:R}, ${18:mapRequestURL}] = wmsread(${1:layer}, 'latlim', ${2:value}, 'lonlim', ${3:value}, 'ImageHeight', ${4:value}, 'ImageWidth', ${5:value}, 'CellSize', ${6:value}, 'RelTolCellSize', ${7:value}, 'ImageFormat', ${8:value}, 'StyleName', ${9:value}, 'Transparent', ${10:value}, 'BackgroundColor', ${11:value}, 'Elevation', ${12:value}, 'Time', ${13:value}, 'SampleDimension', ${14:value}, 'TimeoutInSeconds', ${15:value})'''
         description: '''[geoweb] Retrieve WMS map from server
         [A, R, mapRequestURL] = wmsread(layer, 'latlim', value, 'lonlim', value, 'ImageHeight', value, 'ImageWidth', value, 'CellSize', value, 'RelTolCellSize', value, 'ImageFormat', value, 'StyleName', value, 'Transparent', value, 'BackgroundColor', value, 'Elevation', value, 'Time', value, 'SampleDimension', value, 'TimeoutInSeconds', value)
         '''
@@ -237,7 +237,7 @@
 
     "WMSMapRequest [geoweb]":
         prefix: "WMSMapRequest"
-        body: '''${1:mapRequest} = WMSMapRequest(${1:layer}, ${2:optional_server})'''
+        body: '''${3:mapRequest} = WMSMapRequest(${1:layer}, ${2:optional_server})'''
         description: '''[geoweb] 
         mapRequest = WMSMapRequest(layer, optional_server)
         '''
@@ -246,7 +246,7 @@
 
     "wmsupdate [geoweb]":
         prefix: "wmsupdate"
-        body: '''[${1:updatedLayers}, ${2:index}] = wmsupdate(${1:layers}, 'TimeoutInSeconds', ${2:value}, 'AllowMultipleServers', ${3:value})'''
+        body: '''[${4:updatedLayers}, ${5:index}] = wmsupdate(${1:layers}, 'TimeoutInSeconds', ${2:value}, 'AllowMultipleServers', ${3:value})'''
         description: '''[geoweb] Synchronize WMSLayer object with server
         [updatedLayers, index] = wmsupdate(layers, 'TimeoutInSeconds', value, 'AllowMultipleServers', value)
         '''

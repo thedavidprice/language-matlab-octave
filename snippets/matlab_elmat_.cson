@@ -3,7 +3,7 @@
 
     "true [matlab]":
         prefix: "true"
-        body: '''${1:T} = true(${1:sz}, ${2:'like'}, ${3:p})'''
+        body: '''${4:T} = true(${1:sz}, ${2:'like'}, ${3:p})'''
         description: '''[matlab] Logical 1 (true)
         T = true(sz, 'like', p)
         '''
@@ -39,7 +39,7 @@
 
     "numel [matlab]":
         prefix: "numel"
-        body: '''${1:n} = numel(${1:A})'''
+        body: '''${2:n} = numel(${1:A})'''
         description: '''[matlab] Number of array elements
         n = numel(A)
         '''
@@ -48,7 +48,7 @@
 
     "linspace [matlab]":
         prefix: "linspace"
-        body: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:optional_n})'''
+        body: '''${4:y} = linspace(${1:x1}, ${2:x2}, ${3:optional_n})'''
         description: '''[matlab] Generate linearly spaced vector
         y = linspace(x1, x2, optional_n)
         '''
@@ -57,7 +57,7 @@
 
     "length [matlab]":
         prefix: "length"
-        body: '''${1:L} = length(${1:X})'''
+        body: '''${2:L} = length(${1:X})'''
         description: '''[matlab] Number of key-value pairs in the data cache
         L = length(X)
         '''
@@ -75,7 +75,7 @@
 
     "false [matlab]":
         prefix: "false"
-        body: '''${1:F} = false(${1:sz}, ${2:'like'}, ${3:p})'''
+        body: '''${4:F} = false(${1:sz}, ${2:'like'}, ${3:p})'''
         description: '''[matlab] Logical 0 (false)
         F = false(sz, 'like', p)
         '''
@@ -93,7 +93,7 @@
 
     "isempty [matlab]":
         prefix: "isempty"
-        body: '''${1:TF} = isempty(${1:A})'''
+        body: '''${2:TF} = isempty(${1:A})'''
         description: '''[matlab] Determine whether MetaData object is empty
         TF = isempty(A)
         '''
@@ -102,7 +102,7 @@
 
     "nan [matlab]":
         prefix: "nan"
-        body: '''${1:N} = nan(${1:sz}, ${2:optional_classname})'''
+        body: '''${3:N} = nan(${1:sz}, ${2:optional_classname})'''
         description: '''[matlab] 
         N = nan(sz, optional_classname)
         '''
@@ -120,7 +120,7 @@
 
     "inf [matlab]":
         prefix: "inf"
-        body: '''${1:I} = inf(${1:sz}, ${2:optional_classname})'''
+        body: '''${3:I} = inf(${1:sz}, ${2:optional_classname})'''
         description: '''[matlab] 
         I = inf(sz, optional_classname)
         '''
@@ -156,7 +156,7 @@
 
     "Inf [matlab]":
         prefix: "Inf"
-        body: '''${1:I} = Inf(${1:sz}, ${2:optional_classname})'''
+        body: '''${3:I} = Inf(${1:sz}, ${2:optional_classname})'''
         description: '''[matlab] Create array of all Inf values
         I = Inf(sz, optional_classname)
         '''
@@ -165,7 +165,7 @@
 
     "ones [matlab]":
         prefix: "ones"
-        body: '''${1:X} = ones(${1:sz}, ${2:optional_classname})'''
+        body: '''${3:X} = ones(${1:sz}, ${2:optional_classname})'''
         description: '''[matlab] Create array of all ones
         X = ones(sz, optional_classname)
         '''
@@ -174,7 +174,7 @@
 
     "zeros [matlab]":
         prefix: "zeros"
-        body: '''${1:X} = zeros(${1:sz}, ${2:optional_classname})'''
+        body: '''${3:X} = zeros(${1:sz}, ${2:optional_classname})'''
         description: '''[matlab] Create array of all zeros
         X = zeros(sz, optional_classname)
         '''
@@ -237,7 +237,7 @@
 
     "eye [matlab]":
         prefix: "eye"
-        body: '''${1:N} = eye(${1:optional_n}, ${2:m}, ${3:optional_classname})'''
+        body: '''${4:N} = eye(${1:optional_n}, ${2:m}, ${3:optional_classname})'''
         description: '''[matlab] Identity matrix
         N = eye(optional_n, m, optional_classname)
         '''
@@ -246,7 +246,7 @@
 
     "cat [matlab]":
         prefix: "cat"
-        body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        body: '''${4:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
         description: '''[matlab] Concatenate geographic or planar vector
         C = cat(dim, A, B)
         '''
@@ -282,7 +282,7 @@
 
     "NaN [matlab]":
         prefix: "NaN"
-        body: '''${1:N} = NaN(${1:sz}, ${2:optional_classname})'''
+        body: '''${3:N} = NaN(${1:sz}, ${2:optional_classname})'''
         description: '''[matlab] Create array of all NaN values
         N = NaN(sz, optional_classname)
         '''

@@ -3,7 +3,7 @@
 
     "quad2d [matlab]":
         prefix: "quad2d"
-        body: '''[${1:q}, ${2:errbnd}] = quad2d(${1:fun}, ${2:a}, ${3:b}, ${4:c}, ${5:d}, 'AbsTol', ${6:value}, 'RelTol', ${7:value}, 'MaxFunEvals', ${8:value}, 'FailurePlot', ${9:value}, 'Singular', ${10:value})'''
+        body: '''[${11:q}, ${12:errbnd}] = quad2d(${1:fun}, ${2:a}, ${3:b}, ${4:c}, ${5:d}, 'AbsTol', ${6:value}, 'RelTol', ${7:value}, 'MaxFunEvals', ${8:value}, 'FailurePlot', ${9:value}, 'Singular', ${10:value})'''
         description: '''[matlab] Numerically integrate sfit object
         [q, errbnd] = quad2d(fun, a, b, c, d, 'AbsTol', value, 'RelTol', value, 'MaxFunEvals', value, 'FailurePlot', value, 'Singular', value)
         '''
@@ -12,7 +12,7 @@
 
     "integral3 [matlab]":
         prefix: "integral3"
-        body: '''${1:q} = integral3(${1:fun}, ${2:xmin}, ${3:xmax}, ${4:ymin}, ${5:ymax}, ${6:zmin}, ${7:zmax}, 'AbsTol', ${8:value}, 'RelTol', ${9:value}, 'Method', ${10:value})'''
+        body: '''${11:q} = integral3(${1:fun}, ${2:xmin}, ${3:xmax}, ${4:ymin}, ${5:ymax}, ${6:zmin}, ${7:zmax}, 'AbsTol', ${8:value}, 'RelTol', ${9:value}, 'Method', ${10:value})'''
         description: '''[matlab] Numerically evaluate triple integral
         q = integral3(fun, xmin, xmax, ymin, ymax, zmin, zmax, 'AbsTol', value, 'RelTol', value, 'Method', value)
         '''
@@ -30,7 +30,7 @@
 
     "odeset [matlab]":
         prefix: "odeset"
-        body: '''${1:options} = odeset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'NormControl', ${4:value}, 'Refine', ${5:value}, 'OutputFcn', ${6:value}, 'OutputSel', ${7:value}, 'Stats', ${8:value}, 'Jacobian', ${9:value}, 'JPattern', ${10:value}, 'Vectorized', ${11:value}, 'Events', ${12:value}, 'Mass', ${13:value}, 'MStateDependence', ${14:value}, 'MassSingular', ${15:value}, 'MvPattern', ${16:value}, 'InitialSlope', ${17:value}, 'InitialStep', ${18:value}, 'MaxStep', ${19:value}, 'NonNegative', ${20:value}, 'BDF', ${21:value}, 'MaxOrder', ${22:value})'''
+        body: '''${23:options} = odeset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'NormControl', ${4:value}, 'Refine', ${5:value}, 'OutputFcn', ${6:value}, 'OutputSel', ${7:value}, 'Stats', ${8:value}, 'Jacobian', ${9:value}, 'JPattern', ${10:value}, 'Vectorized', ${11:value}, 'Events', ${12:value}, 'Mass', ${13:value}, 'MStateDependence', ${14:value}, 'MassSingular', ${15:value}, 'MvPattern', ${16:value}, 'InitialSlope', ${17:value}, 'InitialStep', ${18:value}, 'MaxStep', ${19:value}, 'NonNegative', ${20:value}, 'BDF', ${21:value}, 'MaxOrder', ${22:value})'''
         description: '''[matlab] Create or modify options structure for ODE and PDE solvers
         options = odeset(optional_oldopts, 'RelTol', value, 'AbsTol', value, 'NormControl', value, 'Refine', value, 'OutputFcn', value, 'OutputSel', value, 'Stats', value, 'Jacobian', value, 'JPattern', value, 'Vectorized', value, 'Events', value, 'Mass', value, 'MStateDependence', value, 'MassSingular', value, 'MvPattern', value, 'InitialSlope', value, 'InitialStep', value, 'MaxStep', value, 'NonNegative', value, 'BDF', value, 'MaxOrder', value)
         '''
@@ -49,7 +49,7 @@ structure
 
     "quadgk [matlab]":
         prefix: "quadgk"
-        body: '''[${1:q}, ${2:errbnd}] = quadgk(${1:fun}, ${2:a}, ${3:b}, 'AbsTol', ${4:value}, 'RelTol', ${5:value}, 'Waypoints', ${6:value}, 'MaxIntervalCount', ${7:value})'''
+        body: '''[${8:q}, ${9:errbnd}] = quadgk(${1:fun}, ${2:a}, ${3:b}, 'AbsTol', ${4:value}, 'RelTol', ${5:value}, 'Waypoints', ${6:value}, 'MaxIntervalCount', ${7:value})'''
         description: '''[matlab] Numerically evaluate integral — Gauss-Kronrod quadrature
         [q, errbnd] = quadgk(fun, a, b, 'AbsTol', value, 'RelTol', value, 'Waypoints', value, 'MaxIntervalCount', value)
         '''
@@ -67,7 +67,7 @@ structure
 
     "integral [matlab]":
         prefix: "integral"
-        body: '''${1:q} = integral(${1:fun}, ${2:xmin}, ${3:xmax}, 'AbsTol', ${4:value}, 'RelTol', ${5:value}, 'ArrayValued', ${6:value}, 'Waypoints', ${7:value})'''
+        body: '''${8:q} = integral(${1:fun}, ${2:xmin}, ${3:xmax}, 'AbsTol', ${4:value}, 'RelTol', ${5:value}, 'ArrayValued', ${6:value}, 'Waypoints', ${7:value})'''
         description: '''[matlab] Numerical integration
         q = integral(fun, xmin, xmax, 'AbsTol', value, 'RelTol', value, 'ArrayValued', value, 'Waypoints', value)
         '''
@@ -86,7 +86,7 @@ bvpset
 
     "ddeset [matlab]":
         prefix: "ddeset"
-        body: '''${1:options} = ddeset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'NormControl', ${4:value}, 'OutputFcn', ${5:value}, 'OutputSel', ${6:value}, 'Refine', ${7:value}, 'Stats', ${8:value}, 'InitialStep', ${9:value}, 'MaxStep', ${10:value}, 'Events', ${11:value}, 'Jumps', ${12:value}, 'InitialY', ${13:value})'''
+        body: '''${14:options} = ddeset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'NormControl', ${4:value}, 'OutputFcn', ${5:value}, 'OutputSel', ${6:value}, 'Refine', ${7:value}, 'Stats', ${8:value}, 'InitialStep', ${9:value}, 'MaxStep', ${10:value}, 'Events', ${11:value}, 'Jumps', ${12:value}, 'InitialY', ${13:value})'''
         description: '''[matlab] Create or alter delay differential equations options structure
         options = ddeset(optional_oldopts, 'RelTol', value, 'AbsTol', value, 'NormControl', value, 'OutputFcn', value, 'OutputSel', value, 'Refine', value, 'Stats', value, 'InitialStep', value, 'MaxStep', value, 'Events', value, 'Jumps', value, 'InitialY', value)
         '''
@@ -104,7 +104,7 @@ bvpset
 
     "integral2 [matlab]":
         prefix: "integral2"
-        body: '''${1:q} = integral2(${1:fun}, ${2:xmin}, ${3:xmax}, ${4:ymin}, ${5:ymax}, 'AbsTol', ${6:value}, 'RelTol', ${7:value}, 'Method', ${8:value})'''
+        body: '''${9:q} = integral2(${1:fun}, ${2:xmin}, ${3:xmax}, ${4:ymin}, ${5:ymax}, 'AbsTol', ${6:value}, 'RelTol', ${7:value}, 'Method', ${8:value})'''
         description: '''[matlab] Numerically evaluate double integral
         q = integral2(fun, xmin, xmax, ymin, ymax, 'AbsTol', value, 'RelTol', value, 'Method', value)
         '''

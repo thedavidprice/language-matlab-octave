@@ -3,7 +3,7 @@
 
     "parforOptions [parallel]":
         prefix: "parforOptions"
-        body: '''${1:opts} = parforOptions(${1:exec}, 'RangePartitionMethod', ${2:value}, 'SubrangeSize', ${3:value}, 'AutoAddClientPath', ${4:value}, 'AdditionalPaths', ${5:value}, 'AutoAttachFiles', ${6:value}, 'AttachedFiles', ${7:value}, 'MaxNumWorkers', ${8:value})'''
+        body: '''${9:opts} = parforOptions(${1:exec}, 'RangePartitionMethod', ${2:value}, 'SubrangeSize', ${3:value}, 'AutoAddClientPath', ${4:value}, 'AdditionalPaths', ${5:value}, 'AutoAttachFiles', ${6:value}, 'AttachedFiles', ${7:value}, 'MaxNumWorkers', ${8:value})'''
         description: '''[parallel] Options for parfor, such as partitioning iterations
         opts = parforOptions(exec, 'RangePartitionMethod', value, 'SubrangeSize', value, 'AutoAddClientPath', value, 'AdditionalPaths', value, 'AutoAttachFiles', value, 'AttachedFiles', value, 'MaxNumWorkers', value)
         '''
@@ -12,7 +12,7 @@
 
     "parallel.Job.recreate [parallel]":
         prefix: "parallel.Job.recreate"
-        body: '''${1:newjob} = parallel.Job.recreate(${1:oldjob}, 'TaskID', ${2:value}, 'TaskState', ${3:value})'''
+        body: '''${4:newjob} = parallel.Job.recreate(${1:oldjob}, 'TaskID', ${2:value}, 'TaskState', ${3:value})'''
         description: '''[parallel] 
         newjob = parallel.Job.recreate(oldjob, 'TaskID', value, 'TaskState', value)
         '''
@@ -21,7 +21,7 @@
 
     "parallel.Cluster.findJob [parallel]":
         prefix: "parallel.Cluster.findJob"
-        body: '''${1:jobs} = parallel.Cluster.findJob(${1:c}, 'AdditionalPaths', ${2:value}, 'AttachedFiles', ${3:value}, 'AuthorizedUsers', ${4:value}, 'AutoAddClientPath', ${5:value}, 'AutoAttachFiles', ${6:value}, 'CreateDateTime', ${7:value}, 'EnvironmentVariables', ${8:value}, 'FinishDateTime', ${9:value}, 'FinishedFcn', ${10:value}, 'ID', ${11:value}, 'JobData', ${12:value}, 'Name', ${13:value}, 'NumThreads', ${14:value}, 'NumWorkersRange', ${15:value}, 'Parent', ${16:value}, 'QueuedFcn', ${17:value}, 'RestartWorker', ${18:value}, 'RunningFcn', ${19:value}, 'StartDateTime', ${20:value}, 'State', ${21:value}, 'SubmitDateTime', ${22:value}, 'Tag', ${23:value}, 'Tasks', ${24:value}, 'Timeout', ${25:value}, 'Type', ${26:value}, 'UserData', ${27:value}, 'Username', ${28:value})'''
+        body: '''${29:jobs} = parallel.Cluster.findJob(${1:c}, 'AdditionalPaths', ${2:value}, 'AttachedFiles', ${3:value}, 'AuthorizedUsers', ${4:value}, 'AutoAddClientPath', ${5:value}, 'AutoAttachFiles', ${6:value}, 'CreateDateTime', ${7:value}, 'EnvironmentVariables', ${8:value}, 'FinishDateTime', ${9:value}, 'FinishedFcn', ${10:value}, 'ID', ${11:value}, 'JobData', ${12:value}, 'Name', ${13:value}, 'NumThreads', ${14:value}, 'NumWorkersRange', ${15:value}, 'Parent', ${16:value}, 'QueuedFcn', ${17:value}, 'RestartWorker', ${18:value}, 'RunningFcn', ${19:value}, 'StartDateTime', ${20:value}, 'State', ${21:value}, 'SubmitDateTime', ${22:value}, 'Tag', ${23:value}, 'Tasks', ${24:value}, 'Timeout', ${25:value}, 'Type', ${26:value}, 'UserData', ${27:value}, 'Username', ${28:value})'''
         description: '''[parallel] 
         jobs = parallel.Cluster.findJob(c, 'AdditionalPaths', value, 'AttachedFiles', value, 'AuthorizedUsers', value, 'AutoAddClientPath', value, 'AutoAttachFiles', value, 'CreateDateTime', value, 'EnvironmentVariables', value, 'FinishDateTime', value, 'FinishedFcn', value, 'ID', value, 'JobData', value, 'Name', value, 'NumThreads', value, 'NumWorkersRange', value, 'Parent', value, 'QueuedFcn', value, 'RestartWorker', value, 'RunningFcn', value, 'StartDateTime', value, 'State', value, 'SubmitDateTime', value, 'Tag', value, 'Tasks', value, 'Timeout', value, 'Type', value, 'UserData', value, 'Username', value)
         '''
@@ -30,7 +30,7 @@
 
     "parcluster [parallel]":
         prefix: "parcluster"
-        body: '''${1:c} = parcluster(${1:optional_profile})'''
+        body: '''${2:c} = parcluster(${1:optional_profile})'''
         description: '''[parallel] Create cluster object
         c = parcluster(optional_profile)
         '''
@@ -39,7 +39,7 @@
 
     "parallel.importProfile [parallel]":
         prefix: "parallel.importProfile"
-        body: '''${1:prof} = parallel.importProfile(${1:filename})'''
+        body: '''${2:prof} = parallel.importProfile(${1:filename})'''
         description: '''[parallel] Import cluster profiles from file
         prof = parallel.importProfile(filename)
         '''
@@ -48,7 +48,7 @@
 
     "parallel.Job.createTask [parallel]":
         prefix: "parallel.Job.createTask"
-        body: '''${1:t} = parallel.Job.createTask(${1:j}, ${2:F}, ${3:N}, ${4:{inputargs}}, 'CaptureDiary', ${5:value}, 'FinishedFcn', ${6:value}, 'MaximumRetries', ${7:value}, 'Name', ${8:value}, 'Profile', ${9:value}, 'RunningFcn', ${10:value}, 'Timeout', ${11:value}, 'UserData', ${12:value})'''
+        body: '''${13:t} = parallel.Job.createTask(${1:j}, ${2:F}, ${3:N}, ${4:{inputargs}}, 'CaptureDiary', ${5:value}, 'FinishedFcn', ${6:value}, 'MaximumRetries', ${7:value}, 'Name', ${8:value}, 'Profile', ${9:value}, 'RunningFcn', ${10:value}, 'Timeout', ${11:value}, 'UserData', ${12:value})'''
         description: '''[parallel] 
         t = parallel.Job.createTask(j, F, N, {inputargs}, 'CaptureDiary', value, 'FinishedFcn', value, 'MaximumRetries', value, 'Name', value, 'Profile', value, 'RunningFcn', value, 'Timeout', value, 'UserData', value)
         '''
@@ -57,7 +57,7 @@
 
     "parpool [parallel]":
         prefix: "parpool"
-        body: '''${1:poolobj} = parpool(${1:optional_profilename}, ${2:optional_poolsize}, 'AttachedFiles', ${3:value}, 'AutoAddClientPath', ${4:value}, 'EnvironmentVariables', ${5:value}, 'IdleTimeout', ${6:value}, 'SpmdEnabled', ${7:value})'''
+        body: '''${8:poolobj} = parpool(${1:optional_profilename}, ${2:optional_poolsize}, 'AttachedFiles', ${3:value}, 'AutoAddClientPath', ${4:value}, 'EnvironmentVariables', ${5:value}, 'IdleTimeout', ${6:value}, 'SpmdEnabled', ${7:value})'''
         description: '''[parallel] Create parallel pool on cluster
         poolobj = parpool(optional_profilename, optional_poolsize, 'AttachedFiles', value, 'AutoAddClientPath', value, 'EnvironmentVariables', value, 'IdleTimeout', value, 'SpmdEnabled', value)
         '''
@@ -66,7 +66,7 @@
 
     "parallel.Future.fetchOutputs [parallel]":
         prefix: "parallel.Future.fetchOutputs"
-        body: '''${1:B} = parallel.Future.fetchOutputs(${1:F}, 'UniformOutput', ${2:value})'''
+        body: '''${3:B} = parallel.Future.fetchOutputs(${1:F}, 'UniformOutput', ${2:value})'''
         description: '''[parallel] 
         B = parallel.Future.fetchOutputs(F, 'UniformOutput', value)
         '''
@@ -84,7 +84,7 @@
 
     "parallel.Job.load [parallel]":
         prefix: "parallel.Job.load"
-        body: '''${1:S} = parallel.Job.load(${1:job}, ${2:optional_X})'''
+        body: '''${3:S} = parallel.Job.load(${1:job}, ${2:optional_X})'''
         description: '''[parallel] 
         S = parallel.Job.load(job, optional_X)
         '''
@@ -93,7 +93,7 @@
 
     "parallel.Future.wait [parallel]":
         prefix: "parallel.Future.wait"
-        body: '''${1:ok} = parallel.Future.wait(${1:F}, ${2:state}, ${3:optional_timeout})'''
+        body: '''${4:ok} = parallel.Future.wait(${1:F}, ${2:state}, ${3:optional_timeout})'''
         description: '''[parallel] 
         ok = parallel.Future.wait(F, state, optional_timeout)
         '''
@@ -102,7 +102,7 @@
 
     "parallel.Cluster.parpool [parallel]":
         prefix: "parallel.Cluster.parpool"
-        body: '''${1:poolobj} = parallel.Cluster.parpool(${1:cluster}, ${2:optional_poolsize}, 'AttachedFiles', ${3:value}, 'AutoAddClientPath', ${4:value}, 'EnvironmentVariables', ${5:value}, 'IdleTimeout', ${6:value}, 'SpmdEnabled', ${7:value})'''
+        body: '''${8:poolobj} = parallel.Cluster.parpool(${1:cluster}, ${2:optional_poolsize}, 'AttachedFiles', ${3:value}, 'AutoAddClientPath', ${4:value}, 'EnvironmentVariables', ${5:value}, 'IdleTimeout', ${6:value}, 'SpmdEnabled', ${7:value})'''
         description: '''[parallel] 
         poolobj = parallel.Cluster.parpool(cluster, optional_poolsize, 'AttachedFiles', value, 'AutoAddClientPath', value, 'EnvironmentVariables', value, 'IdleTimeout', value, 'SpmdEnabled', value)
         '''
@@ -120,7 +120,7 @@
 
     "parallel.Task.wait [parallel]":
         prefix: "parallel.Task.wait"
-        body: '''${1:ok} = parallel.Task.wait(${1:t}, ${2:state}, ${3:optional_timeout})'''
+        body: '''${4:ok} = parallel.Task.wait(${1:t}, ${2:state}, ${3:optional_timeout})'''
         description: '''[parallel] 
         ok = parallel.Task.wait(t, state, optional_timeout)
         '''
@@ -129,7 +129,7 @@
 
     "parallel.Cluster.createJob [parallel]":
         prefix: "parallel.Cluster.createJob"
-        body: '''${1:job} = parallel.Cluster.createJob(${1:cluster}, 'AdditionalPaths', ${2:value}, 'AttachedFiles', ${3:value}, 'AuthorizedUsers', ${4:value}, 'AutoAddClientPath', ${5:value}, 'AutoAttachFiles', ${6:value}, 'EnvironmentVariables', ${7:value}, 'FinishedFcn', ${8:value}, 'JobData', ${9:value}, 'Name', ${10:value}, 'NumWorkersRange', ${11:value}, 'Profile', ${12:value}, 'QueuedFcn', ${13:value}, 'RestartWorker', ${14:value}, 'RunningFcn', ${15:value}, 'Tag', ${16:value}, 'Timeout', ${17:value}, 'UserData', ${18:value})'''
+        body: '''${19:job} = parallel.Cluster.createJob(${1:cluster}, 'AdditionalPaths', ${2:value}, 'AttachedFiles', ${3:value}, 'AuthorizedUsers', ${4:value}, 'AutoAddClientPath', ${5:value}, 'AutoAttachFiles', ${6:value}, 'EnvironmentVariables', ${7:value}, 'FinishedFcn', ${8:value}, 'JobData', ${9:value}, 'Name', ${10:value}, 'NumWorkersRange', ${11:value}, 'Profile', ${12:value}, 'QueuedFcn', ${13:value}, 'RestartWorker', ${14:value}, 'RunningFcn', ${15:value}, 'Tag', ${16:value}, 'Timeout', ${17:value}, 'UserData', ${18:value})'''
         description: '''[parallel] 
         job = parallel.Cluster.createJob(cluster, 'AdditionalPaths', value, 'AttachedFiles', value, 'AuthorizedUsers', value, 'AutoAddClientPath', value, 'AutoAttachFiles', value, 'EnvironmentVariables', value, 'FinishedFcn', value, 'JobData', value, 'Name', value, 'NumWorkersRange', value, 'Profile', value, 'QueuedFcn', value, 'RestartWorker', value, 'RunningFcn', value, 'Tag', value, 'Timeout', value, 'UserData', value)
         '''
@@ -138,7 +138,7 @@
 
     "parallel.Job.findTask [parallel]":
         prefix: "parallel.Job.findTask"
-        body: '''${1:tasks} = parallel.Job.findTask(${1:j}, 'CaptureDiary', ${2:value}, 'CreateDateTime', ${3:value}, 'Diary', ${4:value}, 'Error', ${5:value}, 'ErrorIdentifier', ${6:value}, 'ErrorMessage', ${7:value}, 'FailureInfo', ${8:value}, 'FinishDateTime', ${9:value}, 'FinishedFcn', ${10:value}, 'Function', ${11:value}, 'ID', ${12:value}, 'InputArguments', ${13:value}, 'MaximumRetries', ${14:value}, 'Name', ${15:value}, 'NumFailures', ${16:value}, 'NumOutputArguments', ${17:value}, 'OutputArguments', ${18:value}, 'Parent', ${19:value}, 'RunningFcn', ${20:value}, 'StartDateTime', ${21:value}, 'State', ${22:value}, 'Timeout', ${23:value}, 'UserData', ${24:value}, 'Warnings', ${25:value}, 'Worker', ${26:value})'''
+        body: '''${27:tasks} = parallel.Job.findTask(${1:j}, 'CaptureDiary', ${2:value}, 'CreateDateTime', ${3:value}, 'Diary', ${4:value}, 'Error', ${5:value}, 'ErrorIdentifier', ${6:value}, 'ErrorMessage', ${7:value}, 'FailureInfo', ${8:value}, 'FinishDateTime', ${9:value}, 'FinishedFcn', ${10:value}, 'Function', ${11:value}, 'ID', ${12:value}, 'InputArguments', ${13:value}, 'MaximumRetries', ${14:value}, 'Name', ${15:value}, 'NumFailures', ${16:value}, 'NumOutputArguments', ${17:value}, 'OutputArguments', ${18:value}, 'Parent', ${19:value}, 'RunningFcn', ${20:value}, 'StartDateTime', ${21:value}, 'State', ${22:value}, 'Timeout', ${23:value}, 'UserData', ${24:value}, 'Warnings', ${25:value}, 'Worker', ${26:value})'''
         description: '''[parallel] 
         tasks = parallel.Job.findTask(j, 'CaptureDiary', value, 'CreateDateTime', value, 'Diary', value, 'Error', value, 'ErrorIdentifier', value, 'ErrorMessage', value, 'FailureInfo', value, 'FinishDateTime', value, 'FinishedFcn', value, 'Function', value, 'ID', value, 'InputArguments', value, 'MaximumRetries', value, 'Name', value, 'NumFailures', value, 'NumOutputArguments', value, 'OutputArguments', value, 'Parent', value, 'RunningFcn', value, 'StartDateTime', value, 'State', value, 'Timeout', value, 'UserData', value, 'Warnings', value, 'Worker', value)
         '''
@@ -147,7 +147,7 @@
 
     "parallel.Future.afterEach [parallel]":
         prefix: "parallel.Future.afterEach"
-        body: '''${1:f2} = parallel.Future.afterEach(${1:F}, ${2:fcn}, ${3:nout}, 'PassFuture', ${4:value})'''
+        body: '''${5:f2} = parallel.Future.afterEach(${1:F}, ${2:fcn}, ${3:nout}, 'PassFuture', ${4:value})'''
         description: '''[parallel] 
         f2 = parallel.Future.afterEach(F, fcn, nout, 'PassFuture', value)
         '''
@@ -165,7 +165,7 @@
 
     "parallel.Cluster.createCommunicatingJob [parallel]":
         prefix: "parallel.Cluster.createCommunicatingJob"
-        body: '''${1:job} = parallel.Cluster.createCommunicatingJob(${1:cluster}, 'AdditionalPaths', ${2:value}, 'AttachedFiles', ${3:value}, 'AutoAddClientPath', ${4:value}, 'AuthorizedUsers', ${5:value}, 'AutoAttachFiles', ${6:value}, 'EnvironmentVariables', ${7:value}, 'FinishedFcn', ${8:value}, 'JobData', ${9:value}, 'Name', ${10:value}, 'NumWorkersRange', ${11:value}, 'Profile', ${12:value}, 'QueuedFcn', ${13:value}, 'RestartWorker', ${14:value}, 'RunningFcn', ${15:value}, 'Tag', ${16:value}, 'Timeout', ${17:value}, 'Type', ${18:value}, 'UserData', ${19:value})'''
+        body: '''${20:job} = parallel.Cluster.createCommunicatingJob(${1:cluster}, 'AdditionalPaths', ${2:value}, 'AttachedFiles', ${3:value}, 'AutoAddClientPath', ${4:value}, 'AuthorizedUsers', ${5:value}, 'AutoAttachFiles', ${6:value}, 'EnvironmentVariables', ${7:value}, 'FinishedFcn', ${8:value}, 'JobData', ${9:value}, 'Name', ${10:value}, 'NumWorkersRange', ${11:value}, 'Profile', ${12:value}, 'QueuedFcn', ${13:value}, 'RestartWorker', ${14:value}, 'RunningFcn', ${15:value}, 'Tag', ${16:value}, 'Timeout', ${17:value}, 'Type', ${18:value}, 'UserData', ${19:value})'''
         description: '''[parallel] 
         job = parallel.Cluster.createCommunicatingJob(cluster, 'AdditionalPaths', value, 'AttachedFiles', value, 'AutoAddClientPath', value, 'AuthorizedUsers', value, 'AutoAttachFiles', value, 'EnvironmentVariables', value, 'FinishedFcn', value, 'JobData', value, 'Name', value, 'NumWorkersRange', value, 'Profile', value, 'QueuedFcn', value, 'RestartWorker', value, 'RunningFcn', value, 'Tag', value, 'Timeout', value, 'Type', value, 'UserData', value)
         '''
@@ -183,7 +183,7 @@
 
     "parallel.Cluster.batch [parallel]":
         prefix: "parallel.Cluster.batch"
-        body: '''${1:j} = parallel.Cluster.batch(${1:myCluster}, ${2:aScript}, 'AdditionalPaths', ${3:value}, 'AttachedFiles', ${4:value}, 'AutoAddClientPath', ${5:value}, 'AutoAttachFiles', ${6:value}, 'CaptureDiary', ${7:value}, 'CurrentFolder', ${8:value}, 'EnvironmentVariables', ${9:value}, 'Pool', ${10:value}, 'Profile', ${11:value}, 'Workspace', ${12:value})'''
+        body: '''${13:j} = parallel.Cluster.batch(${1:myCluster}, ${2:aScript}, 'AdditionalPaths', ${3:value}, 'AttachedFiles', ${4:value}, 'AutoAddClientPath', ${5:value}, 'AutoAttachFiles', ${6:value}, 'CaptureDiary', ${7:value}, 'CurrentFolder', ${8:value}, 'EnvironmentVariables', ${9:value}, 'Pool', ${10:value}, 'Profile', ${11:value}, 'Workspace', ${12:value})'''
         description: '''[parallel] 
         j = parallel.Cluster.batch(myCluster, aScript, 'AdditionalPaths', value, 'AttachedFiles', value, 'AutoAddClientPath', value, 'AutoAttachFiles', value, 'CaptureDiary', value, 'CurrentFolder', value, 'EnvironmentVariables', value, 'Pool', value, 'Profile', value, 'Workspace', value)
         '''
@@ -192,7 +192,7 @@
 
     "parallel.FevalFuture.fetchNext [parallel]":
         prefix: "parallel.FevalFuture.fetchNext"
-        body: '''[${1:idx}, ${2:B}] = parallel.FevalFuture.fetchNext(${1:F}, ${2:optional_timeout})'''
+        body: '''[${3:idx}, ${4:B}] = parallel.FevalFuture.fetchNext(${1:F}, ${2:optional_timeout})'''
         description: '''[parallel] 
         [idx, B] = parallel.FevalFuture.fetchNext(F, optional_timeout)
         '''
@@ -201,7 +201,7 @@
 
     "parallel.Job.wait [parallel]":
         prefix: "parallel.Job.wait"
-        body: '''${1:ok} = parallel.Job.wait(${1:j}, ${2:state}, ${3:optional_timeout})'''
+        body: '''${4:ok} = parallel.Job.wait(${1:j}, ${2:state}, ${3:optional_timeout})'''
         description: '''[parallel] 
         ok = parallel.Job.wait(j, state, optional_timeout)
         '''
@@ -228,7 +228,7 @@
 
     "parallel.defaultClusterProfile [parallel]":
         prefix: "parallel.defaultClusterProfile"
-        body: '''${1:oldprofile} = parallel.defaultClusterProfile(${1:optional_newprofile})'''
+        body: '''${2:oldprofile} = parallel.defaultClusterProfile(${1:optional_newprofile})'''
         description: '''[parallel] Examine or set default cluster profile
         oldprofile = parallel.defaultClusterProfile(optional_newprofile)
         '''
@@ -237,7 +237,7 @@
 
     "parfevalOnAll [parallel]":
         prefix: "parfevalOnAll"
-        body: '''${1:F} = parfevalOnAll(${1:optional_P}, ${2:fcn}, ${3:numout}, ${4:optional_in})'''
+        body: '''${5:F} = parfevalOnAll(${1:optional_P}, ${2:fcn}, ${3:numout}, ${4:optional_in})'''
         description: '''[parallel] Execute function asynchronously on all workers in parallel pool
         F = parfevalOnAll(optional_P, fcn, numout, optional_in)
         '''
@@ -246,7 +246,7 @@
 
     "parallel.Future.afterAll [parallel]":
         prefix: "parallel.Future.afterAll"
-        body: '''${1:f2} = parallel.Future.afterAll(${1:F}, ${2:fcn}, ${3:nout}, 'PassFuture', ${4:value})'''
+        body: '''${5:f2} = parallel.Future.afterAll(${1:F}, ${2:fcn}, ${3:nout}, 'PassFuture', ${4:value})'''
         description: '''[parallel] 
         f2 = parallel.Future.afterAll(F, fcn, nout, 'PassFuture', value)
         '''
@@ -255,7 +255,7 @@
 
     "parfeval [parallel]":
         prefix: "parfeval"
-        body: '''${1:F} = parfeval(${1:optional_P}, ${2:fcn}, ${3:numout}, ${4:optional_in})'''
+        body: '''${5:F} = parfeval(${1:optional_P}, ${2:fcn}, ${3:numout}, ${4:optional_in})'''
         description: '''[parallel] Execute function asynchronously on parallel pool worker
         F = parfeval(optional_P, fcn, numout, optional_in)
         '''
@@ -264,7 +264,7 @@
 
     "gcp [parallel]":
         prefix: "gcp"
-        body: '''${1:p} = gcp(${1:optional_'nocreate'})'''
+        body: '''${2:p} = gcp(${1:optional_'nocreate'})'''
         description: '''[parallel] Get current parallel pool
         p = gcp(optional_'nocreate')
         '''

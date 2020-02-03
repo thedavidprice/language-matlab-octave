@@ -30,7 +30,7 @@
 
     "find_mdlrefs [simulink]":
         prefix: "find_mdlrefs"
-        body: '''[${1:refModels}, ${2:modelBlocks}] = find_mdlrefs(${1:filename}, 'AllLevels', ${2:value}, 'IncludeProtectedModels', ${3:value}, 'Variants', ${4:value}, 'IncludeCommented', ${5:value}, 'KeepModelsLoaded', ${6:value})'''
+        body: '''[${7:refModels}, ${8:modelBlocks}] = find_mdlrefs(${1:filename}, 'AllLevels', ${2:value}, 'IncludeProtectedModels', ${3:value}, 'Variants', ${4:value}, 'IncludeCommented', ${5:value}, 'KeepModelsLoaded', ${6:value})'''
         description: '''[simulink] Find Model blocks and referenced models at all levels or at top level only
         [refModels, modelBlocks] = find_mdlrefs(filename, 'AllLevels', value, 'IncludeProtectedModels', value, 'Variants', value, 'IncludeCommented', value, 'KeepModelsLoaded', value)
         '''
@@ -75,7 +75,7 @@
 
     "Simulink.findBlocksOfType [simulink]":
         prefix: "Simulink.findBlocksOfType"
-        body: '''${1:blockHandles} = Simulink.findBlocksOfType(${1:modelname}, ${2:BlockType}, ${3:FindOptions})'''
+        body: '''${4:blockHandles} = Simulink.findBlocksOfType(${1:modelname}, ${2:BlockType}, ${3:FindOptions})'''
         description: '''[simulink] Find specified type of block in Simulink models
         blockHandles = Simulink.findBlocksOfType(modelname, BlockType, FindOptions)
         '''
@@ -84,7 +84,7 @@
 
     "Simulink.FindOptions [simulink]":
         prefix: "Simulink.FindOptions"
-        body: '''${1:FindOptions} = Simulink.FindOptions('RegExp', ${1:value}, 'CaseSensitive', ${2:value}, 'FollowLinks', ${3:value}, 'LookUnderMasks', ${4:value}, 'IncludeCommented', ${5:value}, 'SearchDepth', ${6:value}, 'Variants', ${7:value}, 'LoadFullyIfNeeded', ${8:value})'''
+        body: '''${9:FindOptions} = Simulink.FindOptions('RegExp', ${1:value}, 'CaseSensitive', ${2:value}, 'FollowLinks', ${3:value}, 'LookUnderMasks', ${4:value}, 'IncludeCommented', ${5:value}, 'SearchDepth', ${6:value}, 'Variants', ${7:value}, 'LoadFullyIfNeeded', ${8:value})'''
         description: '''[simulink] 
         FindOptions = Simulink.FindOptions('RegExp', value, 'CaseSensitive', value, 'FollowLinks', value, 'LookUnderMasks', value, 'IncludeCommented', value, 'SearchDepth', value, 'Variants', value, 'LoadFullyIfNeeded', value)
         '''
@@ -102,7 +102,7 @@
 
     "Simulink.allBlockDiagrams [simulink]":
         prefix: "Simulink.allBlockDiagrams"
-        body: '''${1:blockDiagramHandles} = Simulink.allBlockDiagrams(${1:optional_blockDiagramType})'''
+        body: '''${2:blockDiagramHandles} = Simulink.allBlockDiagrams(${1:optional_blockDiagramType})'''
         description: '''[simulink] Find loaded Simulink models and libraries
         blockDiagramHandles = Simulink.allBlockDiagrams(optional_blockDiagramType)
         '''
@@ -129,7 +129,7 @@
 
     "Simulink.findBlocks [simulink]":
         prefix: "Simulink.findBlocks"
-        body: '''${1:blockHandles} = Simulink.findBlocks(${1:modelname}, ${2:FindOptions})'''
+        body: '''${3:blockHandles} = Simulink.findBlocks(${1:modelname}, ${2:FindOptions})'''
         description: '''[simulink] Find blocks in Simulink models
         blockHandles = Simulink.findBlocks(modelname, FindOptions)
         '''
@@ -157,7 +157,7 @@ property
 
     "Simulink.SubSystem.convertToModelReference [simulink]":
         prefix: "Simulink.SubSystem.convertToModelReference"
-        body: '''[${1:success}, ${2:mdlRefBlkHs}] = Simulink.SubSystem.convertToModelReference(${1:subsys}, ${2:mdlRef}, 'AutoFix', ${3:value}, 'Force', ${4:value}, 'CheckSimulationResults', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'DataFileName', ${8:value}, 'ReplaceSubsystem', ${9:value}, 'CreateWrapperSubsystem', ${10:value}, 'SimulationModes', ${11:value}, 'BuildTarget', ${12:value})'''
+        body: '''[${13:success}, ${14:mdlRefBlkHs}] = Simulink.SubSystem.convertToModelReference(${1:subsys}, ${2:mdlRef}, 'AutoFix', ${3:value}, 'Force', ${4:value}, 'CheckSimulationResults', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'DataFileName', ${8:value}, 'ReplaceSubsystem', ${9:value}, 'CreateWrapperSubsystem', ${10:value}, 'SimulationModes', ${11:value}, 'BuildTarget', ${12:value})'''
         description: '''[simulink] Convert subsystem to model reference
         [success, mdlRefBlkHs] = Simulink.SubSystem.convertToModelReference(subsys, mdlRef, 'AutoFix', value, 'Force', value, 'CheckSimulationResults', value, 'AbsoluteTolerance', value, 'RelativeTolerance', value, 'DataFileName', value, 'ReplaceSubsystem', value, 'CreateWrapperSubsystem', value, 'SimulationModes', value, 'BuildTarget', value)
         '''

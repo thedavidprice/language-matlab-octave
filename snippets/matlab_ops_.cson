@@ -12,7 +12,7 @@
 
     "setxor [matlab]":
         prefix: "setxor"
-        body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+        body: '''[${4:C}, ${5:ia}, ${6:ib}] = setxor(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[matlab] Set exclusive OR of two arrays
         [C, ia, ib] = setxor(A, B, optional_'rows')
         '''
@@ -21,7 +21,7 @@
 
     "ismember [matlab]":
         prefix: "ismember"
-        body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+        body: '''[${4:Lia}, ${5:Locb}] = ismember(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[matlab] Array elements that are members of set array
         [Lia, Locb] = ismember(A, B, optional_'rows')
         '''
@@ -39,7 +39,7 @@
 
     "vertcat [matlab]":
         prefix: "vertcat"
-        body: '''${1:C} = vertcat(${1:A})'''
+        body: '''${2:C} = vertcat(${1:A})'''
         description: '''[matlab] Concatenate arrays vertically
         C = vertcat(A)
         '''
@@ -57,7 +57,7 @@
 
     "subsref [matlab]":
         prefix: "subsref"
-        body: '''${1:B} = subsref(${1:A}, ${2:S})'''
+        body: '''${3:B} = subsref(${1:A}, ${2:S})'''
         description: '''[matlab] Subscripted reference 
         B = subsref(A, S)
         '''
@@ -75,7 +75,7 @@
 
     "intersect [matlab]":
         prefix: "intersect"
-        body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+        body: '''[${4:C}, ${5:ia}, ${6:ib}] = intersect(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[matlab] Intersection of polyshape objects
         [C, ia, ib] = intersect(A, B, optional_'rows')
         '''
@@ -102,7 +102,7 @@
 
     "setdiff [matlab]":
         prefix: "setdiff"
-        body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+        body: '''[${4:C}, ${5:ia}] = setdiff(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[matlab] Set difference of two arrays
         [C, ia] = setdiff(A, B, optional_'rows')
         '''
@@ -111,7 +111,7 @@
 
     "subsasgn [matlab]":
         prefix: "subsasgn"
-        body: '''${1:A} = subsasgn(${1:A}, ${2:S}, ${3:B})'''
+        body: '''${4:A} = subsasgn(${1:A}, ${2:S}, ${3:B})'''
         description: '''[matlab] Content assignment 
         A = subsasgn(A, S, B)
         '''
@@ -120,7 +120,7 @@
 
     "unique [matlab]":
         prefix: "unique"
-        body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:optional_'rows'}, ${3:optional_occurrence})'''
+        body: '''[${4:C}, ${5:ia}, ${6:ic}] = unique(${1:A}, ${2:optional_'rows'}, ${3:optional_occurrence})'''
         description: '''[matlab] Unique values in array
         [C, ia, ic] = unique(A, optional_'rows', optional_occurrence)
         '''
@@ -138,7 +138,7 @@
 
     "ismembertol [matlab]":
         prefix: "ismembertol"
-        body: '''[${1:LIA}, ${2:L}] = ismembertol(${1:A}, ${2:B}, ${3:optional_tol}, 'OutputAllIndices', ${4:value}, 'ByRows', ${5:value}, 'DataScale', ${6:value})'''
+        body: '''[${7:LIA}, ${8:L}] = ismembertol(${1:A}, ${2:B}, ${3:optional_tol}, 'OutputAllIndices', ${4:value}, 'ByRows', ${5:value}, 'DataScale', ${6:value})'''
         description: '''[matlab] Members of set within tolerance
         [LIA, L] = ismembertol(A, B, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)
         '''
@@ -147,7 +147,7 @@
 
     "union [matlab]":
         prefix: "union"
-        body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+        body: '''[${4:C}, ${5:ia}, ${6:ib}] = union(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[matlab] Union of polyshape objects
         [C, ia, ib] = union(A, B, optional_'rows')
         '''
@@ -183,7 +183,7 @@
 
     "uniquetol [matlab]":
         prefix: "uniquetol"
-        body: '''[${1:C}, ${2:IA}, ${3:IC}] = uniquetol(${1:A}, ${2:optional_tol}, 'OutputAllIndices', ${3:value}, 'ByRows', ${4:value}, 'DataScale', ${5:value})'''
+        body: '''[${6:C}, ${7:IA}, ${8:IC}] = uniquetol(${1:A}, ${2:optional_tol}, 'OutputAllIndices', ${3:value}, 'ByRows', ${4:value}, 'DataScale', ${5:value})'''
         description: '''[matlab] Unique values within tolerance
         [C, IA, IC] = uniquetol(A, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)
         '''
@@ -192,7 +192,7 @@
 
     "horzcat [matlab]":
         prefix: "horzcat"
-        body: '''${1:C} = horzcat(${1:A})'''
+        body: '''${2:C} = horzcat(${1:A})'''
         description: '''[matlab] Concatenate arrays horizontally
         C = horzcat(A)
         '''

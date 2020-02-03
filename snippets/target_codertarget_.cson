@@ -13,7 +13,7 @@
 
     "targetHardware [target]":
         prefix: "targetHardware"
-        body: '''${1:obj} = targetHardware(${1:hardwareName})'''
+        body: '''${2:obj} = targetHardware(${1:hardwareName})'''
         description: '''[target] 
         obj = targetHardware(hardwareName)
         '''

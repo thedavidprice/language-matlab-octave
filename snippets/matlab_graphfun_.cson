@@ -12,7 +12,7 @@
 
     "digraph.conncomp [matlab]":
         prefix: "digraph.conncomp"
-        body: '''[${1:bins}, ${2:binSize}] = digraph.conncomp(${1:G}, 'OutputForm', ${2:value}, 'Type', ${3:value})'''
+        body: '''[${4:bins}, ${5:binSize}] = digraph.conncomp(${1:G}, 'OutputForm', ${2:value}, 'Type', ${3:value})'''
         description: '''[matlab] 
         [bins, binSize] = digraph.conncomp(G, 'OutputForm', value, 'Type', value)
         '''
@@ -21,7 +21,7 @@
 
     "digraph.isisomorphic [matlab]":
         prefix: "digraph.isisomorphic"
-        body: '''${1:isiso} = digraph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+        body: '''${5:isiso} = digraph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
         description: '''[matlab] 
         isiso = digraph.isisomorphic(G, G2, 'NodeVariables', value, 'EdgeVariables', value)
         '''
@@ -30,7 +30,7 @@
 
     "digraph.toposort [matlab]":
         prefix: "digraph.toposort"
-        body: '''[${1:pred}, ${2:t}] = digraph.toposort(${1:G}, 'Order', ${2:value})'''
+        body: '''[${3:pred}, ${4:t}] = digraph.toposort(${1:G}, 'Order', ${2:value})'''
         description: '''[matlab] 
         [pred, t] = digraph.toposort(G, 'Order', value)
         '''
@@ -66,7 +66,7 @@
 
     "graph.bfsearch [matlab]":
         prefix: "graph.bfsearch"
-        body: '''${1:t} = graph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+        body: '''${5:t} = graph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
         description: '''[matlab] 
         t = graph.bfsearch(G, s, optional_events, 'Restart', value)
         '''
@@ -75,7 +75,7 @@
 
     "graph.shortestpath [matlab]":
         prefix: "graph.shortestpath"
-        body: '''[${1:path}, ${2:d}] = graph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
+        body: '''[${5:path}, ${6:d}] = graph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
         description: '''[matlab] 
         [path, d] = graph.shortestpath(G, s, t, 'Method', value)
         '''
@@ -84,7 +84,7 @@
 
     "graph.isisomorphic [matlab]":
         prefix: "graph.isisomorphic"
-        body: '''${1:isiso} = graph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+        body: '''${5:isiso} = graph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
         description: '''[matlab] 
         isiso = graph.isisomorphic(G, G2, 'NodeVariables', value, 'EdgeVariables', value)
         '''
@@ -93,7 +93,7 @@
 
     "graph.dfsearch [matlab]":
         prefix: "graph.dfsearch"
-        body: '''${1:t} = graph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+        body: '''${5:t} = graph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
         description: '''[matlab] 
         t = graph.dfsearch(G, s, optional_events, 'Restart', value)
         '''
@@ -102,7 +102,7 @@
 
     "digraph.isomorphism [matlab]":
         prefix: "digraph.isomorphism"
-        body: '''${1:p} = digraph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+        body: '''${5:p} = digraph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
         description: '''[matlab] 
         p = digraph.isomorphism(G, G2, 'NodeVariables', value, 'EdgeVariables', value)
         '''
@@ -111,7 +111,7 @@
 
     "graph.distances [matlab]":
         prefix: "graph.distances"
-        body: '''${1:d} = graph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
+        body: '''${5:d} = graph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
         description: '''[matlab] 
         d = graph.distances(G, optional_s, optional_t, 'Method', value)
         '''
@@ -147,7 +147,7 @@
 
     "graph [matlab]":
         prefix: "graph"
-        body: '''${1:g} = graph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
+        body: '''${4:g} = graph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
         description: '''[matlab] Graph with undirected edges
         g = graph(EdgeTable, optional_NodeTable, omit)
         '''
@@ -165,7 +165,7 @@
 
     "digraph.centrality [matlab]":
         prefix: "digraph.centrality"
-        body: '''${1:c} = digraph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
+        body: '''${7:c} = digraph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
         description: '''[matlab] 
         c = digraph.centrality(G, type, 'Importance', value, 'FollowProbability', value, 'Tolerance', value, 'MaxIterations', value)
         '''
@@ -174,7 +174,7 @@
 
     "graph.nearest [matlab]":
         prefix: "graph.nearest"
-        body: '''[${1:nodes}, ${2:d}] = graph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value})'''
+        body: '''[${5:nodes}, ${6:d}] = graph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value})'''
         description: '''[matlab] 
         [nodes, d] = graph.nearest(G, s, d, 'Method', value)
         '''
@@ -192,7 +192,7 @@
 
     "digraph.bfsearch [matlab]":
         prefix: "digraph.bfsearch"
-        body: '''${1:t} = digraph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+        body: '''${5:t} = digraph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
         description: '''[matlab] 
         t = digraph.bfsearch(G, s, optional_events, 'Restart', value)
         '''
@@ -219,7 +219,7 @@
 
     "plot [matlab]":
         prefix: "plot"
-        body: '''${1:h} = plot(${1:optional_ax}, ${2:G}, 'Layout', ${3:value}, ${4:options})'''
+        body: '''${5:h} = plot(${1:optional_ax}, ${2:G}, 'Layout', ${3:value}, ${4:options})'''
         description: '''[matlab] Plot cfit or sfit object
         h = plot(optional_ax, G, 'Layout', value, options)
         '''
@@ -228,7 +228,7 @@
 
     "graph.adjacency [matlab]":
         prefix: "graph.adjacency"
-        body: '''${1:A} = graph.adjacency(${1:G}, ${2:optional_weight})'''
+        body: '''${3:A} = graph.adjacency(${1:G}, ${2:optional_weight})'''
         description: '''[matlab] 
         A = graph.adjacency(G, optional_weight)
         '''
@@ -237,7 +237,7 @@
 
     "graph.isomorphism [matlab]":
         prefix: "graph.isomorphism"
-        body: '''${1:p} = graph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+        body: '''${5:p} = graph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
         description: '''[matlab] 
         p = graph.isomorphism(G, G2, 'NodeVariables', value, 'EdgeVariables', value)
         '''
@@ -246,7 +246,7 @@
 
     "digraph.shortestpathtree [matlab]":
         prefix: "digraph.shortestpathtree"
-        body: '''[${1:tree}, ${2:d}] = digraph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
+        body: '''[${6:tree}, ${7:d}] = digraph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
         description: '''[matlab] 
         [tree, d] = digraph.shortestpathtree(G, s, optional_t, 'Method', value, 'OutputForm', value)
         '''
@@ -264,7 +264,7 @@
 
     "digraph.nearest [matlab]":
         prefix: "digraph.nearest"
-        body: '''[${1:nodes}, ${2:d}] = digraph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value}, 'Direction', ${5:value})'''
+        body: '''[${6:nodes}, ${7:d}] = digraph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value}, 'Direction', ${5:value})'''
         description: '''[matlab] 
         [nodes, d] = digraph.nearest(G, s, d, 'Method', value, 'Direction', value)
         '''
@@ -273,7 +273,7 @@
 
     "graph.simplify [matlab]":
         prefix: "graph.simplify"
-        body: '''[${1:gsimple}, ${2:edgeind}, ${3:edgecount}] = graph.simplify(${1:G}, ${2:optional_selfLoops})'''
+        body: '''[${3:gsimple}, ${4:edgeind}, ${5:edgecount}] = graph.simplify(${1:G}, ${2:optional_selfLoops})'''
         description: '''[matlab] 
         [gsimple, edgeind, edgecount] = graph.simplify(G, optional_selfLoops)
         '''
@@ -282,7 +282,7 @@
 
     "digraph.shortestpath [matlab]":
         prefix: "digraph.shortestpath"
-        body: '''[${1:path}, ${2:d}] = digraph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
+        body: '''[${5:path}, ${6:d}] = digraph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
         description: '''[matlab] 
         [path, d] = digraph.shortestpath(G, s, t, 'Method', value)
         '''
@@ -336,7 +336,7 @@
 
     "graph.maxflow [matlab]":
         prefix: "graph.maxflow"
-        body: '''[${1:mf}, ${2:gf}, ${3:cs}, ${4:ct}] = graph.maxflow(${1:G}, ${2:source}, ${3:target})'''
+        body: '''[${4:mf}, ${5:gf}, ${6:cs}, ${7:ct}] = graph.maxflow(${1:G}, ${2:source}, ${3:target})'''
         description: '''[matlab] 
         [mf, gf, cs, ct] = graph.maxflow(G, source, target)
         '''
@@ -345,7 +345,7 @@
 
     "graph.minspantree [matlab]":
         prefix: "graph.minspantree"
-        body: '''[${1:t}, ${2:pred}] = graph.minspantree(${1:G}, 'Method', ${2:value}, 'Type', ${3:value}, 'Root', ${4:value})'''
+        body: '''[${5:t}, ${6:pred}] = graph.minspantree(${1:G}, 'Method', ${2:value}, 'Type', ${3:value}, 'Root', ${4:value})'''
         description: '''[matlab] 
         [t, pred] = graph.minspantree(G, 'Method', value, 'Type', value, 'Root', value)
         '''
@@ -381,7 +381,7 @@
 
     "graph.centrality [matlab]":
         prefix: "graph.centrality"
-        body: '''${1:c} = graph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
+        body: '''${7:c} = graph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
         description: '''[matlab] 
         c = graph.centrality(G, type, 'Importance', value, 'FollowProbability', value, 'Tolerance', value, 'MaxIterations', value)
         '''
@@ -390,7 +390,7 @@
 
     "digraph.distances [matlab]":
         prefix: "digraph.distances"
-        body: '''${1:d} = digraph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
+        body: '''${5:d} = digraph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
         description: '''[matlab] 
         d = digraph.distances(G, optional_s, optional_t, 'Method', value)
         '''
@@ -399,7 +399,7 @@
 
     "graph.shortestpathtree [matlab]":
         prefix: "graph.shortestpathtree"
-        body: '''[${1:tree}, ${2:d}] = graph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
+        body: '''[${6:tree}, ${7:d}] = graph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
         description: '''[matlab] 
         [tree, d] = graph.shortestpathtree(G, s, optional_t, 'Method', value, 'OutputForm', value)
         '''
@@ -408,7 +408,7 @@
 
     "digraph.adjacency [matlab]":
         prefix: "digraph.adjacency"
-        body: '''${1:A} = digraph.adjacency(${1:G}, ${2:optional_weight})'''
+        body: '''${3:A} = digraph.adjacency(${1:G}, ${2:optional_weight})'''
         description: '''[matlab] 
         A = digraph.adjacency(G, optional_weight)
         '''
@@ -417,7 +417,7 @@
 
     "digraph.simplify [matlab]":
         prefix: "digraph.simplify"
-        body: '''[${1:gsimple}, ${2:edgeind}, ${3:edgecount}] = digraph.simplify(${1:G}, ${2:optional_selfLoops})'''
+        body: '''[${3:gsimple}, ${4:edgeind}, ${5:edgecount}] = digraph.simplify(${1:G}, ${2:optional_selfLoops})'''
         description: '''[matlab] 
         [gsimple, edgeind, edgecount] = digraph.simplify(G, optional_selfLoops)
         '''
@@ -426,7 +426,7 @@
 
     "digraph.dfsearch [matlab]":
         prefix: "digraph.dfsearch"
-        body: '''${1:t} = digraph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+        body: '''${5:t} = digraph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
         description: '''[matlab] 
         t = digraph.dfsearch(G, s, optional_events, 'Restart', value)
         '''
@@ -444,7 +444,7 @@
 
     "graph.biconncomp [matlab]":
         prefix: "graph.biconncomp"
-        body: '''[${1:edgebins}, ${2:cutvert}] = graph.biconncomp(${1:G}, 'OutputForm', ${2:value})'''
+        body: '''[${3:edgebins}, ${4:cutvert}] = graph.biconncomp(${1:G}, 'OutputForm', ${2:value})'''
         description: '''[matlab] 
         [edgebins, cutvert] = graph.biconncomp(G, 'OutputForm', value)
         '''
@@ -453,7 +453,7 @@
 
     "graph.conncomp [matlab]":
         prefix: "graph.conncomp"
-        body: '''[${1:bins}, ${2:binSize}] = graph.conncomp(${1:G}, 'OutputForm', ${2:value})'''
+        body: '''[${3:bins}, ${4:binSize}] = graph.conncomp(${1:G}, 'OutputForm', ${2:value})'''
         description: '''[matlab] 
         [bins, binSize] = graph.conncomp(G, 'OutputForm', value)
         '''
@@ -489,7 +489,7 @@
 
     "digraph [matlab]":
         prefix: "digraph"
-        body: '''${1:g} = digraph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
+        body: '''${4:g} = digraph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
         description: '''[matlab] Graph with directed edges
         g = digraph(EdgeTable, optional_NodeTable, omit)
         '''

@@ -3,7 +3,7 @@
 
     "etopo [map]":
         prefix: "etopo"
-        body: '''[${1:Z}, ${2:refvec}] = etopo(${1:optional_filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
+        body: '''[${5:Z}, ${6:refvec}] = etopo(${1:optional_filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
         description: '''[map] Read gridded global relief data (ETOPO products)
         [Z, refvec] = etopo(optional_filename, samplefactor, latlim, optional_lonlim)
         '''
@@ -12,7 +12,7 @@
 
     "makedbfspec [map]":
         prefix: "makedbfspec"
-        body: '''${1:dbfspec} = makedbfspec(${1:S})'''
+        body: '''${2:dbfspec} = makedbfspec(${1:S})'''
         description: '''[map] DBF specification from geographic data structure
         dbfspec = makedbfspec(S)
         '''
@@ -21,7 +21,7 @@
 
     "globedems [map]":
         prefix: "globedems"
-        body: '''${1:tileNames} = globedems(${1:lat}, ${2:lon})'''
+        body: '''${3:tileNames} = globedems(${1:lat}, ${2:lon})'''
         description: '''[map] GLOBE data file names for latitude-longitude quadrangle
         tileNames = globedems(lat, lon)
         '''
@@ -30,7 +30,7 @@
 
     "tbase [map]":
         prefix: "tbase"
-        body: '''[${1:Z}, ${2:refvec}] = tbase(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
+        body: '''[${4:Z}, ${5:refvec}] = tbase(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
         description: '''[map] Read 5-minute global terrain elevations from TerrainBase
         [Z, refvec] = tbase(samplefactor, latlim, lonlim)
         '''
@@ -57,7 +57,7 @@
 
     "usgsdems [map]":
         prefix: "usgsdems"
-        body: '''[${1:fname}, ${2:qname}] = usgsdems(${1:latlim}, ${2:lonlim})'''
+        body: '''[${3:fname}, ${4:qname}] = usgsdems(${1:latlim}, ${2:lonlim})'''
         description: '''[map] USGS 1-degree (3-arc-sec) DEM file names for latitude-longitude quadrangle
         [fname, qname] = usgsdems(latlim, lonlim)
         '''
@@ -66,7 +66,7 @@
 
     "gtopo30s [map]":
         prefix: "gtopo30s"
-        body: '''${1:tileNames} = gtopo30s(${1:lat}, ${2:lon})'''
+        body: '''${3:tileNames} = gtopo30s(${1:lat}, ${2:lon})'''
         description: '''[map] GTOPO30 data file names for latitude-longitude quadrangle
         tileNames = gtopo30s(lat, lon)
         '''
@@ -75,7 +75,7 @@
 
     "usgsdem [map]":
         prefix: "usgsdem"
-        body: '''[${1:Z}, ${2:refvec}] = usgsdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim})'''
+        body: '''[${5:Z}, ${6:refvec}] = usgsdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim})'''
         description: '''[map] Read USGS 1-degree (3-arc-second) Digital Elevation Model
         [Z, refvec] = usgsdem(filename, samplefactor, latlim, lonlim)
         '''
@@ -84,7 +84,7 @@
 
     "avhrrgoode [map]":
         prefix: "avhrrgoode"
-        body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrgoode(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:nrows}, ${8:ncols}, ${9:resolution}, ${10:precision})'''
+        body: '''[${11:latgrat}, ${12:longrat}, ${13:z}] = avhrrgoode(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:nrows}, ${8:ncols}, ${9:resolution}, ${10:precision})'''
         description: '''[map] Read AVHRR data product stored in Goode Projection
         [latgrat, longrat, z] = avhrrgoode(region, filename, scalefactor, latlim, lonlim, gsize, nrows, ncols, resolution, precision)
         '''
@@ -93,7 +93,7 @@
 
     "gshhs [map]":
         prefix: "gshhs"
-        body: '''${1:indexfilename} = gshhs(${1:filename}, ${2:'createindex'})'''
+        body: '''${3:indexfilename} = gshhs(${1:filename}, ${2:'createindex'})'''
         description: '''[map] Read Global Self-Consistent Hierarchical High-Resolution
 Geography
         indexfilename = gshhs(filename, 'createindex')
@@ -103,7 +103,7 @@ Geography
 
     "vmap0rhead [map]":
         prefix: "vmap0rhead"
-        body: '''${1:str} = vmap0rhead(${1:file}, ${2:filename}, ${3:optional_fid})'''
+        body: '''${4:str} = vmap0rhead(${1:file}, ${2:filename}, ${3:optional_fid})'''
         description: '''[map] Read Vector Map Level 0 file headers
         str = vmap0rhead(file, filename, optional_fid)
         '''
@@ -112,7 +112,7 @@ Geography
 
     "geotiffread [map]":
         prefix: "geotiffread"
-        body: '''[${1:A}, ${2:R}] = geotiffread(${1:filename}, ${2:optional_idx})'''
+        body: '''[${3:A}, ${4:R}] = geotiffread(${1:filename}, ${2:optional_idx})'''
         description: '''[map] Read GeoTIFF file
         [A, R] = geotiffread(filename, optional_idx)
         '''
@@ -121,7 +121,7 @@ Geography
 
     "usgs24kdem [map]":
         prefix: "usgs24kdem"
-        body: '''[${1:lat}, ${2:lon}, ${3:Z}, ${4:header}, ${5:profile}] = usgs24kdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim}, ${5:optional_gsize})'''
+        body: '''[${6:lat}, ${7:lon}, ${8:Z}, ${9:header}, ${10:profile}] = usgs24kdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim}, ${5:optional_gsize})'''
         description: '''[map] Read USGS 7.5 minute (30 meter or 10 meter) Digital Elevation
 Models
         [lat, lon, Z, header, profile] = usgs24kdem(filename, samplefactor, latlim, lonlim, optional_gsize)
@@ -131,7 +131,7 @@ Models
 
     "vmap0read [map]":
         prefix: "vmap0read"
-        body: '''[${1:struc}, ${2:field}, ${3:varlen}, ${4:description}, ${5:narrativefield}] = vmap0read(${1:file}, ${2:filename}, ${3:recordIDs}, ${4:field}, ${5:varlen})'''
+        body: '''[${6:struc}, ${7:field}, ${8:varlen}, ${9:description}, ${10:narrativefield}] = vmap0read(${1:file}, ${2:filename}, ${3:recordIDs}, ${4:field}, ${5:varlen})'''
         description: '''[map] Read Vector Map Level 0 file
         [struc, field, varlen, description, narrativefield] = vmap0read(file, filename, recordIDs, field, varlen)
         '''
@@ -149,7 +149,7 @@ Models
 
     "dted [map]":
         prefix: "dted"
-        body: '''[${1:Z}, ${2:refvec}, ${3:UHL}, ${4:DSI}, ${5:ACC}] = dted(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
+        body: '''[${5:Z}, ${6:refvec}, ${7:UHL}, ${8:DSI}, ${9:ACC}] = dted(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
         description: '''[map] Read U.S. Department of Defense Digital Terrain Elevation
 Data (DTED)
         [Z, refvec, UHL, DSI, ACC] = dted(filename, samplefactor, latlim, optional_lonlim)
@@ -159,7 +159,7 @@ Data (DTED)
 
     "dteds [map]":
         prefix: "dteds"
-        body: '''${1:fname} = dteds(${1:latlim}, ${2:lonlim}, ${3:optional_level})'''
+        body: '''${4:fname} = dteds(${1:latlim}, ${2:lonlim}, ${3:optional_level})'''
         description: '''[map] DTED file names for latitude-longitude quadrangle
         fname = dteds(latlim, lonlim, optional_level)
         '''
@@ -168,7 +168,7 @@ Data (DTED)
 
     "satbath [map]":
         prefix: "satbath"
-        body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = satbath(${1:samplefactor}, ${2:latlim}, ${3:lonlim}, ${4:optional_gsize})'''
+        body: '''[${5:latgrat}, ${6:longrat}, ${7:z}] = satbath(${1:samplefactor}, ${2:latlim}, ${3:lonlim}, ${4:optional_gsize})'''
         description: '''[map] Read 2-minute terrain/bathymetry from Smith and Sandwell
         [latgrat, longrat, z] = satbath(samplefactor, latlim, lonlim, optional_gsize)
         '''
@@ -177,7 +177,7 @@ Data (DTED)
 
     "geotiffinfo [map]":
         prefix: "geotiffinfo"
-        body: '''${1:info} = geotiffinfo(${1:filename})'''
+        body: '''${2:info} = geotiffinfo(${1:filename})'''
         description: '''[map] Information about GeoTIFF file
         info = geotiffinfo(filename)
         '''
@@ -186,7 +186,7 @@ Data (DTED)
 
     "vmap0data [map]":
         prefix: "vmap0data"
-        body: '''${1:S} = vmap0data(${1:optional_devicename}, ${2:library}, ${3:latlim}, ${4:lonlim}, ${5:theme}, ${6:topolevel})'''
+        body: '''${7:S} = vmap0data(${1:optional_devicename}, ${2:library}, ${3:latlim}, ${4:lonlim}, ${5:theme}, ${6:topolevel})'''
         description: '''[map] Read selected data from Vector Map Level 0
         S = vmap0data(optional_devicename, library, latlim, lonlim, theme, topolevel)
         '''
@@ -195,7 +195,7 @@ Data (DTED)
 
     "globedem [map]":
         prefix: "globedem"
-        body: '''[${1:Z}, ${2:refvec}] = globedem(${1:filename}, ${2:scalefactor}, ${3:latlim}, ${4:lonlim})'''
+        body: '''[${5:Z}, ${6:refvec}] = globedem(${1:filename}, ${2:scalefactor}, ${3:latlim}, ${4:lonlim})'''
         description: '''[map] Read Global Land One-km Base Elevation (GLOBE) data
         [Z, refvec] = globedem(filename, scalefactor, latlim, lonlim)
         '''
@@ -204,7 +204,7 @@ Data (DTED)
 
     "sdtsinfo [map]":
         prefix: "sdtsinfo"
-        body: '''${1:info} = sdtsinfo(${1:filename})'''
+        body: '''${2:info} = sdtsinfo(${1:filename})'''
         description: '''[map] Information about SDTS data set
         info = sdtsinfo(filename)
         '''
@@ -213,7 +213,7 @@ Data (DTED)
 
     "shaperead [map]":
         prefix: "shaperead"
-        body: '''[${1:S}, ${2:A}] = shaperead(${1:filename}, 'RecordNumbers', ${2:value}, 'BoundingBox', ${3:value}, 'Attributes', ${4:value}, 'Selector', ${5:value}, 'UseGeoCoords', ${6:value})'''
+        body: '''[${7:S}, ${8:A}] = shaperead(${1:filename}, 'RecordNumbers', ${2:value}, 'BoundingBox', ${3:value}, 'Attributes', ${4:value}, 'Selector', ${5:value}, 'UseGeoCoords', ${6:value})'''
         description: '''[map] Read vector features and attributes from shapefile
         [S, A] = shaperead(filename, 'RecordNumbers', value, 'BoundingBox', value, 'Attributes', value, 'Selector', value, 'UseGeoCoords', value)
         '''
@@ -222,7 +222,7 @@ Data (DTED)
 
     "avhrrlambert [map]":
         prefix: "avhrrlambert"
-        body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrlambert(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:precision})'''
+        body: '''[${8:latgrat}, ${9:longrat}, ${10:z}] = avhrrlambert(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:precision})'''
         description: '''[map] Read AVHRR data product stored in eqaazim projection
         [latgrat, longrat, z] = avhrrlambert(region, filename, scalefactor, latlim, lonlim, gsize, precision)
         '''
@@ -240,7 +240,7 @@ Data (DTED)
 
     "worldfileread [map]":
         prefix: "worldfileread"
-        body: '''${1:R} = worldfileread(${1:worldFileName}, ${2:coordinateSystemType}, ${3:rasterSize})'''
+        body: '''${4:R} = worldfileread(${1:worldFileName}, ${2:coordinateSystemType}, ${3:rasterSize})'''
         description: '''[map] Read world file and return referencing object or matrix
         R = worldfileread(worldFileName, coordinateSystemType, rasterSize)
         '''
@@ -249,7 +249,7 @@ Data (DTED)
 
     "getworldfilename [map]":
         prefix: "getworldfilename"
-        body: '''${1:worldfilename} = getworldfilename(${1:imagefilename})'''
+        body: '''${2:worldfilename} = getworldfilename(${1:imagefilename})'''
         description: '''[map] Derive world file name from image file name
         worldfilename = getworldfilename(imagefilename)
         '''
@@ -267,7 +267,7 @@ Data (DTED)
 
     "makeattribspec [map]":
         prefix: "makeattribspec"
-        body: '''${1:attribspec} = makeattribspec(${1:S})'''
+        body: '''${2:attribspec} = makeattribspec(${1:S})'''
         description: '''[map] Attribute specification from geographic data structure
         attribspec = makeattribspec(S)
         '''
@@ -276,7 +276,7 @@ Data (DTED)
 
     "gtopo30 [map]":
         prefix: "gtopo30"
-        body: '''[${1:Z}, ${2:refvec}] = gtopo30(${1:optional_foldername}, ${2:tilename}, ${3:samplefactor}, ${4:latlim}, ${5:lonlim})'''
+        body: '''[${6:Z}, ${7:refvec}] = gtopo30(${1:optional_foldername}, ${2:tilename}, ${3:samplefactor}, ${4:latlim}, ${5:lonlim})'''
         description: '''[map] Read 30-arc-second global digital elevation data (GTOPO30)
         [Z, refvec] = gtopo30(optional_foldername, tilename, samplefactor, latlim, lonlim)
         '''
@@ -285,7 +285,7 @@ Data (DTED)
 
     "shapeinfo [map]":
         prefix: "shapeinfo"
-        body: '''${1:info} = shapeinfo(${1:filename})'''
+        body: '''${2:info} = shapeinfo(${1:filename})'''
         description: '''[map] Information about shapefile
         info = shapeinfo(filename)
         '''
@@ -294,7 +294,7 @@ Data (DTED)
 
     "sdtsdemread [map]":
         prefix: "sdtsdemread"
-        body: '''[${1:Z}, ${2:R}] = sdtsdemread(${1:filename})'''
+        body: '''[${2:Z}, ${3:R}] = sdtsdemread(${1:filename})'''
         description: '''[map] Read data from SDTS raster/DEM data set
         [Z, R] = sdtsdemread(filename)
         '''
@@ -321,7 +321,7 @@ Data (DTED)
 
     "arcgridread [map]":
         prefix: "arcgridread"
-        body: '''[${1:Z}, ${2:R}] = arcgridread(${1:filename}, ${2:optional_coordinateSystemType})'''
+        body: '''[${3:Z}, ${4:R}] = arcgridread(${1:filename}, ${2:optional_coordinateSystemType})'''
         description: '''[map] Read gridded data set in ArcGrid ASCII or GridFloat format
         [Z, R] = arcgridread(filename, optional_coordinateSystemType)
         '''

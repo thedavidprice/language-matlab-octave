@@ -3,7 +3,7 @@
 
     "degrees2dm [map]":
         prefix: "degrees2dm"
-        body: '''${1:DM} = degrees2dm(${1:angleInDegrees})'''
+        body: '''${2:DM} = degrees2dm(${1:angleInDegrees})'''
         description: '''[map]  Convert degrees to degrees-minutes
         DM = degrees2dm(angleInDegrees)
         '''
@@ -12,7 +12,7 @@
 
     "km2sm [map]":
         prefix: "km2sm"
-        body: '''${1:sm} = km2sm(${1:km})'''
+        body: '''${2:sm} = km2sm(${1:km})'''
         description: '''[map] Convert kilometers to statute miles
         sm = km2sm(km)
         '''
@@ -21,7 +21,7 @@
 
     "geopeaks [map]":
         prefix: "geopeaks"
-        body: '''${1:Z} = geopeaks(${1:lat}, ${2:lon}, ${3:optional_spheroid})'''
+        body: '''${4:Z} = geopeaks(${1:lat}, ${2:lon}, ${3:optional_spheroid})'''
         description: '''[map] Generate synthetic data set on sphere
         Z = geopeaks(lat, lon, optional_spheroid)
         '''
@@ -30,7 +30,7 @@
 
     "maprefcells [map]":
         prefix: "maprefcells"
-        body: '''${1:R} = maprefcells(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:cellExtentInWorldX}, ${4:cellExtentInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+        body: '''${7:R} = maprefcells(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:cellExtentInWorldX}, ${4:cellExtentInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
         description: '''[map] Reference raster cells to map coordinates
         R = maprefcells(xWorldLimits, yWorldLimits, cellExtentInWorldX, cellExtentInWorldY, 'ColumnsStartFrom', value, 'RowsStartFrom', value)
         '''
@@ -39,7 +39,7 @@
 
     "polyjoin [map]":
         prefix: "polyjoin"
-        body: '''[${1:lat}, ${2:lon}] = polyjoin(${1:latcells}, ${2:loncells})'''
+        body: '''[${3:lat}, ${4:lon}] = polyjoin(${1:latcells}, ${2:loncells})'''
         description: '''[map] Convert line or polygon parts from cell arrays to vector
 form
         [lat, lon] = polyjoin(latcells, loncells)
@@ -49,7 +49,7 @@ form
 
     "newpole [map]":
         prefix: "newpole"
-        body: '''${1:origin} = newpole(${1:polelat}, ${2:polelon}, ${3:optional_units})'''
+        body: '''${4:origin} = newpole(${1:polelat}, ${2:polelon}, ${3:optional_units})'''
         description: '''[map] Origin vector to place specific point at pole
         origin = newpole(polelat, polelon, optional_units)
         '''
@@ -58,7 +58,7 @@ form
 
     "rad2sm [map]":
         prefix: "rad2sm"
-        body: '''${1:sm} = rad2sm(${1:rad}, ${2:optional_sphere})'''
+        body: '''${3:sm} = rad2sm(${1:rad}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from radians to statute miles
         sm = rad2sm(rad, optional_sphere)
         '''
@@ -67,7 +67,7 @@ form
 
     "scxsc [map]":
         prefix: "scxsc"
-        body: '''[${1:newlat}, ${2:newlon}] = scxsc(${1:lat1}, ${2:lon1}, ${3:range1}, ${4:lat2}, ${5:lon2}, ${6:range2}, ${7:units})'''
+        body: '''[${8:newlat}, ${9:newlon}] = scxsc(${1:lat1}, ${2:lon1}, ${3:range1}, ${4:lat2}, ${5:lon2}, ${6:range2}, ${7:units})'''
         description: '''[map] Intersection points for pairs of small circles
         [newlat, newlon] = scxsc(lat1, lon1, range1, lat2, lon2, range2, units)
         '''
@@ -76,7 +76,7 @@ form
 
     "rad2km [map]":
         prefix: "rad2km"
-        body: '''${1:km} = rad2km(${1:rad}, ${2:optional_sphere})'''
+        body: '''${3:km} = rad2km(${1:rad}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from radians to kilometers
         km = rad2km(rad, optional_sphere)
         '''
@@ -85,7 +85,7 @@ form
 
     "map.rasterref.GeographicRasterReference.intrinsicToGeographic [map]":
         prefix: "map.rasterref.GeographicRasterReference.intrinsicToGeographic"
-        body: '''[${1:lat}, ${2:lon}] = map.rasterref.GeographicRasterReference.intrinsicToGeographic(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
+        body: '''[${4:lat}, ${5:lon}] = map.rasterref.GeographicRasterReference.intrinsicToGeographic(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
         description: '''[map] 
         [lat, lon] = map.rasterref.GeographicRasterReference.intrinsicToGeographic(R, xIntrinsic, yIntrinsic)
         '''
@@ -94,7 +94,7 @@ form
 
     "ltln2val [map]":
         prefix: "ltln2val"
-        body: '''${1:val} = ltln2val(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:method})'''
+        body: '''${6:val} = ltln2val(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:method})'''
         description: '''[map] Extract data grid values for specified locations
         val = ltln2val(Z, R, lat, lon, method)
         '''
@@ -103,7 +103,7 @@ form
 
     "km2deg [map]":
         prefix: "km2deg"
-        body: '''${1:deg} = km2deg(${1:km}, ${2:optional_sphere})'''
+        body: '''${3:deg} = km2deg(${1:km}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from kilometers to degrees
         deg = km2deg(km, optional_sphere)
         '''
@@ -112,7 +112,7 @@ form
 
     "dm2degrees [map]":
         prefix: "dm2degrees"
-        body: '''${1:angleInDegrees} = dm2degrees(${1:DM})'''
+        body: '''${2:angleInDegrees} = dm2degrees(${1:DM})'''
         description: '''[map]  Convert degrees-minutes to degrees
         angleInDegrees = dm2degrees(DM)
         '''
@@ -121,7 +121,7 @@ form
 
     "refmatToGeoRasterReference [map]":
         prefix: "refmatToGeoRasterReference"
-        body: '''${1:R} = refmatToGeoRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
+        body: '''${7:R} = refmatToGeoRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
         description: '''[map] Referencing matrix to geographic raster reference object
         R = refmatToGeoRasterReference(refmat, rasterSize, optional_rasterInterpretation, funcName, varName, argIndex)
         '''
@@ -130,7 +130,7 @@ form
 
     "map.rasterref.GeographicRasterReference.longitudeToIntrinsicX [map]":
         prefix: "map.rasterref.GeographicRasterReference.longitudeToIntrinsicX"
-        body: '''${1:xIntrinsic} = map.rasterref.GeographicRasterReference.longitudeToIntrinsicX(${1:R}, ${2:lon})'''
+        body: '''${3:xIntrinsic} = map.rasterref.GeographicRasterReference.longitudeToIntrinsicX(${1:R}, ${2:lon})'''
         description: '''[map] 
         xIntrinsic = map.rasterref.GeographicRasterReference.longitudeToIntrinsicX(R, lon)
         '''
@@ -139,7 +139,7 @@ form
 
     "str2angle [map]":
         prefix: "str2angle"
-        body: '''${1:angles} = str2angle(${1:strings})'''
+        body: '''${2:angles} = str2angle(${1:strings})'''
         description: '''[map] Convert text to angles in degrees
         angles = str2angle(strings)
         '''
@@ -148,7 +148,7 @@ form
 
     "maprasterref [map]":
         prefix: "maprasterref"
-        body: '''${1:R} = maprasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'XLimWorld', ${8:value}, 'YLimWorld', ${9:value})'''
+        body: '''${10:R} = maprasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'XLimWorld', ${8:value}, 'YLimWorld', ${9:value})'''
         description: '''[map] Construct map raster reference object
         R = maprasterref(W, rasterSize, rasterInterpretation, 'RasterSize', value, 'RasterInterpretation', value, 'ColumnsStartFrom', value, 'RowsStartFrom', value, 'XLimWorld', value, 'YLimWorld', value)
         '''
@@ -157,7 +157,7 @@ form
 
     "worldFileMatrixToRefmat [map]":
         prefix: "worldFileMatrixToRefmat"
-        body: '''${1:refmat} = worldFileMatrixToRefmat(${1:W})'''
+        body: '''${2:refmat} = worldFileMatrixToRefmat(${1:W})'''
         description: '''[map] Convert world file matrix to referencing matrix
         refmat = worldFileMatrixToRefmat(W)
         '''
@@ -166,7 +166,7 @@ form
 
     "mapshape [map]":
         prefix: "mapshape"
-        body: '''${1:p} = mapshape(${1:optional_structArray})'''
+        body: '''${2:p} = mapshape(${1:optional_structArray})'''
         description: '''[map] 
         p = mapshape(optional_structArray)
         '''
@@ -175,7 +175,7 @@ form
 
     "closePolygonParts [map]":
         prefix: "closePolygonParts"
-        body: '''[${1:xdata}, ${2:ydata}] = closePolygonParts(${1:xdata}, ${2:ydata})'''
+        body: '''[${3:xdata}, ${4:ydata}] = closePolygonParts(${1:xdata}, ${2:ydata})'''
         description: '''[map] Close all rings in multipart polygon
         [xdata, ydata] = closePolygonParts(xdata, ydata)
         '''
@@ -184,7 +184,7 @@ form
 
     "map.rasterref.GeographicRasterReference.geographicToDiscrete [map]":
         prefix: "map.rasterref.GeographicRasterReference.geographicToDiscrete"
-        body: '''[${1:I}, ${2:J}] = map.rasterref.GeographicRasterReference.geographicToDiscrete(${1:R}, ${2:lat}, ${3:lon})'''
+        body: '''[${4:I}, ${5:J}] = map.rasterref.GeographicRasterReference.geographicToDiscrete(${1:R}, ${2:lat}, ${3:lon})'''
         description: '''[map] 
         [I, J] = map.rasterref.GeographicRasterReference.geographicToDiscrete(R, lat, lon)
         '''
@@ -193,7 +193,7 @@ form
 
     "nm2deg [map]":
         prefix: "nm2deg"
-        body: '''${1:deg} = nm2deg(${1:nm}, ${2:optional_sphere})'''
+        body: '''${3:deg} = nm2deg(${1:nm}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from nautical miles to degrees
         deg = nm2deg(nm, optional_sphere)
         '''
@@ -202,7 +202,7 @@ form
 
     "geoshape [map]":
         prefix: "geoshape"
-        body: '''${1:p} = geoshape(${1:optional_structArray})'''
+        body: '''${2:p} = geoshape(${1:optional_structArray})'''
         description: '''[map] 
         p = geoshape(optional_structArray)
         '''
@@ -211,7 +211,7 @@ form
 
     "linecirc [map]":
         prefix: "linecirc"
-        body: '''[${1:xout}, ${2:yout}] = linecirc(${1:slope}, ${2:intercpt}, ${3:centerx}, ${4:centery}, ${5:radius})'''
+        body: '''[${6:xout}, ${7:yout}] = linecirc(${1:slope}, ${2:intercpt}, ${3:centerx}, ${4:centery}, ${5:radius})'''
         description: '''[map] Intersections of circles and lines in Cartesian plane
         [xout, yout] = linecirc(slope, intercpt, centerx, centery, radius)
         '''
@@ -220,7 +220,7 @@ form
 
     "geoquadline [map]":
         prefix: "geoquadline"
-        body: '''[${1:latlim}, ${2:lonlim}] = geoquadline(${1:lat}, ${2:lon})'''
+        body: '''[${3:latlim}, ${4:lonlim}] = geoquadline(${1:lat}, ${2:lon})'''
         description: '''[map] Geographic quadrangle bounding multi-part line
         [latlim, lonlim] = geoquadline(lat, lon)
         '''
@@ -229,7 +229,7 @@ form
 
     "map.rasterref.MapRasterReference.sizesMatch [map]":
         prefix: "map.rasterref.MapRasterReference.sizesMatch"
-        body: '''${1:tf} = map.rasterref.MapRasterReference.sizesMatch(${1:R}, ${2:A})'''
+        body: '''${3:tf} = map.rasterref.MapRasterReference.sizesMatch(${1:R}, ${2:A})'''
         description: '''[map] 
         tf = map.rasterref.MapRasterReference.sizesMatch(R, A)
         '''
@@ -238,7 +238,7 @@ form
 
     "putpole [map]":
         prefix: "putpole"
-        body: '''${1:origin} = putpole(${1:pole}, ${2:optional_units})'''
+        body: '''${3:origin} = putpole(${1:pole}, ${2:optional_units})'''
         description: '''[map] Origin vector to place north pole at specified point
         origin = putpole(pole, optional_units)
         '''
@@ -247,7 +247,7 @@ form
 
     "sm2rad [map]":
         prefix: "sm2rad"
-        body: '''${1:rad} = sm2rad(${1:sm}, ${2:optional_sphere})'''
+        body: '''${3:rad} = sm2rad(${1:sm}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from statute miles to radians
         rad = sm2rad(sm, optional_sphere)
         '''
@@ -256,7 +256,7 @@ form
 
     "map.internal.DynamicVector.rmfield [map]":
         prefix: "map.internal.DynamicVector.rmfield"
-        body: '''${1:P} = map.internal.DynamicVector.rmfield(${1:P}, ${2:fields})'''
+        body: '''${3:P} = map.internal.DynamicVector.rmfield(${1:P}, ${2:fields})'''
         description: '''[map] 
         P = map.internal.DynamicVector.rmfield(P, fields)
         '''
@@ -265,7 +265,7 @@ form
 
     "flatearthpoly [map]":
         prefix: "flatearthpoly"
-        body: '''[${1:latf}, ${2:lonf}] = flatearthpoly(${1:lat}, ${2:lon}, ${3:optional_longitudeOrigin})'''
+        body: '''[${4:latf}, ${5:lonf}] = flatearthpoly(${1:lat}, ${2:lon}, ${3:optional_longitudeOrigin})'''
         description: '''[map] Insert points along date line to pole
         [latf, lonf] = flatearthpoly(lat, lon, optional_longitudeOrigin)
         '''
@@ -274,7 +274,7 @@ form
 
     "removeExtraNanSeparators [map]":
         prefix: "removeExtraNanSeparators"
-        body: '''[${1:xdata}, ${2:ydata}, ${3:zdata}] = removeExtraNanSeparators(${1:xdata}, ${2:ydata}, ${3:zdata})'''
+        body: '''[${4:xdata}, ${5:ydata}, ${6:zdata}] = removeExtraNanSeparators(${1:xdata}, ${2:ydata}, ${3:zdata})'''
         description: '''[map] Clean up NaN separators in polygons
 and lines
         [xdata, ydata, zdata] = removeExtraNanSeparators(xdata, ydata, zdata)
@@ -284,7 +284,7 @@ and lines
 
     "georefpostings [map]":
         prefix: "georefpostings"
-        body: '''${1:R} = georefpostings(${1:latlim}, ${2:lonlim}, ${3:sampleSpacingInLatitude}, ${4:sampleSpacingInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+        body: '''${7:R} = georefpostings(${1:latlim}, ${2:lonlim}, ${3:sampleSpacingInLatitude}, ${4:sampleSpacingInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
         description: '''[map] Reference raster postings to geographic coordinates
         R = georefpostings(latlim, lonlim, sampleSpacingInLatitude, sampleSpacingInLongitude, 'ColumnsStartFrom', value, 'RowsStartFrom', value)
         '''
@@ -293,7 +293,7 @@ and lines
 
     "map.rasterref.MapRasterReference.intrinsicToWorld [map]":
         prefix: "map.rasterref.MapRasterReference.intrinsicToWorld"
-        body: '''[${1:xWorld}, ${2:yWorld}] = map.rasterref.MapRasterReference.intrinsicToWorld(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
+        body: '''[${4:xWorld}, ${5:yWorld}] = map.rasterref.MapRasterReference.intrinsicToWorld(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
         description: '''[map] 
         [xWorld, yWorld] = map.rasterref.MapRasterReference.intrinsicToWorld(R, xIntrinsic, yIntrinsic)
         '''
@@ -302,7 +302,7 @@ and lines
 
     "track2 [map]":
         prefix: "track2"
-        body: '''[${1:lat}, ${2:lon}] = track2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
+        body: '''[${9:lat}, ${10:lon}] = track2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
         description: '''[map] Geographic tracks from starting and ending points
         [lat, lon] = track2(optional_track, lat1, lon1, lat2, lon2, optional_ellipsoid, units, npts)
         '''
@@ -311,7 +311,7 @@ and lines
 
     "viewshed [map]":
         prefix: "viewshed"
-        body: '''[${1:vis}, ${2:R}] = viewshed(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:observerAltitude}, ${6:targetAltitude}, ${7:observerAltitudeOption}, ${8:targetAltitudeOption}, ${9:actualRadius}, ${10:effectiveRadius})'''
+        body: '''[${11:vis}, ${12:R}] = viewshed(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:observerAltitude}, ${6:targetAltitude}, ${7:observerAltitudeOption}, ${8:targetAltitudeOption}, ${9:actualRadius}, ${10:effectiveRadius})'''
         description: '''[map] Areas visible from point on terrain elevation grid
         [vis, R] = viewshed(Z, R, lat1, lon1, observerAltitude, targetAltitude, observerAltitudeOption, targetAltitudeOption, actualRadius, effectiveRadius)
         '''
@@ -320,7 +320,7 @@ and lines
 
     "map.rasterref.GeographicRasterReference.intrinsicYToLatitude [map]":
         prefix: "map.rasterref.GeographicRasterReference.intrinsicYToLatitude"
-        body: '''${1:lat} = map.rasterref.GeographicRasterReference.intrinsicYToLatitude(${1:R}, ${2:yIntrinsic})'''
+        body: '''${3:lat} = map.rasterref.GeographicRasterReference.intrinsicYToLatitude(${1:R}, ${2:yIntrinsic})'''
         description: '''[map] 
         lat = map.rasterref.GeographicRasterReference.intrinsicYToLatitude(R, yIntrinsic)
         '''
@@ -329,7 +329,7 @@ and lines
 
     "georefcells [map]":
         prefix: "georefcells"
-        body: '''${1:R} = georefcells(${1:latlim}, ${2:lonlim}, ${3:cellExtentInLatitude}, ${4:cellExtentInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+        body: '''${7:R} = georefcells(${1:latlim}, ${2:lonlim}, ${3:cellExtentInLatitude}, ${4:cellExtentInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
         description: '''[map] Reference raster cells to geographic coordinates
         R = georefcells(latlim, lonlim, cellExtentInLatitude, cellExtentInLongitude, 'ColumnsStartFrom', value, 'RowsStartFrom', value)
         '''
@@ -338,7 +338,7 @@ and lines
 
     "polyxpoly [map]":
         prefix: "polyxpoly"
-        body: '''[${1:xi}, ${2:yi}, ${3:ii}] = polyxpoly(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:optional_'unique'})'''
+        body: '''[${6:xi}, ${7:yi}, ${8:ii}] = polyxpoly(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:optional_'unique'})'''
         description: '''[map] Intersection points for lines or polygon edges
         [xi, yi, ii] = polyxpoly(x1, y1, x2, y2, optional_'unique')
         '''
@@ -347,7 +347,7 @@ and lines
 
     "poly2ccw [map]":
         prefix: "poly2ccw"
-        body: '''[${1:x2}, ${2:y2}] = poly2ccw(${1:x1}, ${2:y1})'''
+        body: '''[${3:x2}, ${4:y2}] = poly2ccw(${1:x1}, ${2:y1})'''
         description: '''[map] Convert polygon contour to counterclockwise vertex ordering
         [x2, y2] = poly2ccw(x1, y1)
         '''
@@ -356,7 +356,7 @@ and lines
 
     "map.internal.DynamicVector.rmprop [map]":
         prefix: "map.internal.DynamicVector.rmprop"
-        body: '''${1:PF} = map.internal.DynamicVector.rmprop(${1:P}, ${2:propnames})'''
+        body: '''${3:PF} = map.internal.DynamicVector.rmprop(${1:P}, ${2:propnames})'''
         description: '''[map] 
         PF = map.internal.DynamicVector.rmprop(P, propnames)
         '''
@@ -365,7 +365,7 @@ and lines
 
     "scircle2 [map]":
         prefix: "scircle2"
-        body: '''[${1:lat}, ${2:lon}] = scircle2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
+        body: '''[${9:lat}, ${10:lon}] = scircle2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
         description: '''[map] Small circles from center and perimeter
         [lat, lon] = scircle2(optional_track, lat1, lon1, lat2, lon2, optional_ellipsoid, units, npts)
         '''
@@ -374,7 +374,7 @@ and lines
 
     "map.rasterref.MapRasterReference.firstCornerY [map]":
         prefix: "map.rasterref.MapRasterReference.firstCornerY"
-        body: '''${1:y} = map.rasterref.MapRasterReference.firstCornerY(${1:R})'''
+        body: '''${2:y} = map.rasterref.MapRasterReference.firstCornerY(${1:R})'''
         description: '''[map] 
         y = map.rasterref.MapRasterReference.firstCornerY(R)
         '''
@@ -383,7 +383,7 @@ and lines
 
     "distance [map]":
         prefix: "distance"
-        body: '''[${1:arclen}, ${2:az}] = distance(${1:optional_track}, ${2:pt1}, ${3:pt2}, ${4:optional_ellipsoid}, ${5:optional_units})'''
+        body: '''[${6:arclen}, ${7:az}] = distance(${1:optional_track}, ${2:pt1}, ${3:pt2}, ${4:optional_ellipsoid}, ${5:optional_units})'''
         description: '''[map] Distance between sites
         [arclen, az] = distance(optional_track, pt1, pt2, optional_ellipsoid, optional_units)
         '''
@@ -392,7 +392,7 @@ and lines
 
     "refmatToWorldFileMatrix [map]":
         prefix: "refmatToWorldFileMatrix"
-        body: '''${1:W} = refmatToWorldFileMatrix(${1:refmat})'''
+        body: '''${2:W} = refmatToWorldFileMatrix(${1:refmat})'''
         description: '''[map] Convert referencing matrix to world file matrix
         W = refmatToWorldFileMatrix(refmat)
         '''
@@ -401,7 +401,7 @@ and lines
 
     "intersectgeoquad [map]":
         prefix: "intersectgeoquad"
-        body: '''[${1:latlim}, ${2:lonlim}] = intersectgeoquad(${1:latlim1}, ${2:lonlim1}, ${3:latlim2}, ${4:lonlim2})'''
+        body: '''[${5:latlim}, ${6:lonlim}] = intersectgeoquad(${1:latlim1}, ${2:lonlim1}, ${3:latlim2}, ${4:lonlim2})'''
         description: '''[map] Intersection of two latitude-longitude quadrangles
         [latlim, lonlim] = intersectgeoquad(latlim1, lonlim1, latlim2, lonlim2)
         '''
@@ -410,7 +410,7 @@ and lines
 
     "mapoutline [map]":
         prefix: "mapoutline"
-        body: '''[${1:lat}, ${2:lon}] = mapoutline(${1:R}, ${2:sizea}, ${3:optional_'close'})'''
+        body: '''[${4:lat}, ${5:lon}] = mapoutline(${1:R}, ${2:sizea}, ${3:optional_'close'})'''
         description: '''[map] Compute outline of georeferenced image or data grid
         [lat, lon] = mapoutline(R, sizea, optional_'close')
         '''
@@ -419,7 +419,7 @@ and lines
 
     "reckon [map]":
         prefix: "reckon"
-        body: '''[${1:latout}, ${2:lonout}] = reckon(${1:optional_track}, ${2:lat}, ${3:lon}, ${4:arclen}, ${5:az}, ${6:optional_ellipsoid}, ${7:optional_units})'''
+        body: '''[${8:latout}, ${9:lonout}] = reckon(${1:optional_track}, ${2:lat}, ${3:lon}, ${4:arclen}, ${5:az}, ${6:optional_ellipsoid}, ${7:optional_units})'''
         description: '''[map] Point at specified azimuth, range on sphere or ellipsoid
         [latout, lonout] = reckon(optional_track, lat, lon, arclen, az, optional_ellipsoid, optional_units)
         '''
@@ -428,7 +428,7 @@ and lines
 
     "map.rasterref.GeographicRasterReference.sizesMatch [map]":
         prefix: "map.rasterref.GeographicRasterReference.sizesMatch"
-        body: '''${1:tf} = map.rasterref.GeographicRasterReference.sizesMatch(${1:R}, ${2:A})'''
+        body: '''${3:tf} = map.rasterref.GeographicRasterReference.sizesMatch(${1:R}, ${2:A})'''
         description: '''[map] 
         tf = map.rasterref.GeographicRasterReference.sizesMatch(R, A)
         '''
@@ -437,7 +437,7 @@ and lines
 
     "vec2mtx [map]":
         prefix: "vec2mtx"
-        body: '''[${1:Z}, ${2:R}] = vec2mtx(${1:lat}, ${2:lon}, ${3:Z1}, ${4:R1}, ${5:optional_'filled'})'''
+        body: '''[${6:Z}, ${7:R}] = vec2mtx(${1:lat}, ${2:lon}, ${3:Z1}, ${4:R1}, ${5:optional_'filled'})'''
         description: '''[map] Convert latitude-longitude vectors to regular data grid
         [Z, R] = vec2mtx(lat, lon, Z1, R1, optional_'filled')
         '''
@@ -446,7 +446,7 @@ and lines
 
     "km2rad [map]":
         prefix: "km2rad"
-        body: '''${1:rad} = km2rad(${1:km}, ${2:optional_sphere})'''
+        body: '''${3:rad} = km2rad(${1:km}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from kilometers to radians
         rad = km2rad(km, optional_sphere)
         '''
@@ -455,7 +455,7 @@ and lines
 
     "isShapeMultipart [map]":
         prefix: "isShapeMultipart"
-        body: '''${1:tf} = isShapeMultipart(${1:xdata}, ${2:ydata})'''
+        body: '''${3:tf} = isShapeMultipart(${1:xdata}, ${2:ydata})'''
         description: '''[map] True if polygon or line has multiple parts
         tf = isShapeMultipart(xdata, ydata)
         '''
@@ -464,7 +464,7 @@ and lines
 
     "dms2degrees [map]":
         prefix: "dms2degrees"
-        body: '''${1:angleInDegrees} = dms2degrees(${1:DMS})'''
+        body: '''${2:angleInDegrees} = dms2degrees(${1:DMS})'''
         description: '''[map]  Convert degrees-minutes-seconds to degrees
         angleInDegrees = dms2degrees(DMS)
         '''
@@ -473,7 +473,7 @@ and lines
 
     "sm2deg [map]":
         prefix: "sm2deg"
-        body: '''${1:deg} = sm2deg(${1:sm}, ${2:optional_sphere})'''
+        body: '''${3:deg} = sm2deg(${1:sm}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from statute miles to degrees
         deg = sm2deg(sm, optional_sphere)
         '''
@@ -482,7 +482,7 @@ and lines
 
     "limitm [map]":
         prefix: "limitm"
-        body: '''[${1:latlim}, ${2:lonlim}] = limitm(${1:Z}, ${2:R})'''
+        body: '''[${3:latlim}, ${4:lonlim}] = limitm(${1:Z}, ${2:R})'''
         description: '''[map] Determine latitude and longitude limits of regular data
 grid
         [latlim, lonlim] = limitm(Z, R)
@@ -492,7 +492,7 @@ grid
 
     "extractfield [map]":
         prefix: "extractfield"
-        body: '''${1:a} = extractfield(${1:s}, ${2:name})'''
+        body: '''${3:a} = extractfield(${1:s}, ${2:name})'''
         description: '''[map] Field values from structure array
         a = extractfield(s, name)
         '''
@@ -501,7 +501,7 @@ grid
 
     "interpm [map]":
         prefix: "interpm"
-        body: '''[${1:latout}, ${2:lonout}] = interpm(${1:lat}, ${2:lon}, ${3:maxdiff}, ${4:method}, ${5:optional_units})'''
+        body: '''[${6:latout}, ${7:lonout}] = interpm(${1:lat}, ${2:lon}, ${3:maxdiff}, ${4:method}, ${5:optional_units})'''
         description: '''[map] Densify latitude-longitude sampling in lines or polygons
         [latout, lonout] = interpm(lat, lon, maxdiff, method, optional_units)
         '''
@@ -510,7 +510,7 @@ grid
 
     "areaquad [map]":
         prefix: "areaquad"
-        body: '''${1:area} = areaquad(${1:lat1}, ${2:lon1}, ${3:lat2}, ${4:lon2}, ${5:ellipsoid}, ${6:optional_units})'''
+        body: '''${7:area} = areaquad(${1:lat1}, ${2:lon1}, ${3:lat2}, ${4:lon2}, ${5:ellipsoid}, ${6:optional_units})'''
         description: '''[map] Surface area of latitude-longitude quadrangle
         area = areaquad(lat1, lon1, lat2, lon2, ellipsoid, optional_units)
         '''
@@ -519,7 +519,7 @@ grid
 
     "org2pol [map]":
         prefix: "org2pol"
-        body: '''${1:pole} = org2pol(${1:origin}, ${2:optional_units})'''
+        body: '''${3:pole} = org2pol(${1:origin}, ${2:optional_units})'''
         description: '''[map] Location of north pole in rotated map
         pole = org2pol(origin, optional_units)
         '''
@@ -528,7 +528,7 @@ grid
 
     "polybool [map]":
         prefix: "polybool"
-        body: '''[${1:x}, ${2:y}] = polybool(${1:flag}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2})'''
+        body: '''[${6:x}, ${7:y}] = polybool(${1:flag}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2})'''
         description: '''[map] Set operations on polygonal regions
         [x, y] = polybool(flag, x1, y1, x2, y2)
         '''
@@ -537,7 +537,7 @@ grid
 
     "deg2nm [map]":
         prefix: "deg2nm"
-        body: '''${1:nm} = deg2nm(${1:deg}, ${2:optional_sphere})'''
+        body: '''${3:nm} = deg2nm(${1:deg}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from degrees to nautical miles
         nm = deg2nm(deg, optional_sphere)
         '''
@@ -546,7 +546,7 @@ grid
 
     "scircle1 [map]":
         prefix: "scircle1"
-        body: '''[${1:lat}, ${2:lon}] = scircle1(${1:optional_track}, ${2:lat0}, ${3:lon0}, ${4:rad}, ${5:optional_az}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
+        body: '''[${9:lat}, ${10:lon}] = scircle1(${1:optional_track}, ${2:lat0}, ${3:lon0}, ${4:rad}, ${5:optional_az}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
         description: '''[map] Small circles from center, range, and azimuth
         [lat, lon] = scircle1(optional_track, lat0, lon0, rad, optional_az, optional_ellipsoid, units, npts)
         '''
@@ -555,7 +555,7 @@ grid
 
     "geocontourxy [map]":
         prefix: "geocontourxy"
-        body: '''[${1:contourLines}, ${2:contourPolygons}] = geocontourxy(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, 'LevelList', ${7:value}, 'XYRotation', ${8:value}, 'Spheroid', ${9:value})'''
+        body: '''[${10:contourLines}, ${11:contourPolygons}] = geocontourxy(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, 'LevelList', ${7:value}, 'XYRotation', ${8:value}, 'Spheroid', ${9:value})'''
         description: '''[map] Contour grid in local system with latitude-longitude results
         [contourLines, contourPolygons] = geocontourxy(X, Y, Z, lat0, lon0, h0, 'LevelList', value, 'XYRotation', value, 'Spheroid', value)
         '''
@@ -564,7 +564,7 @@ grid
 
     "track1 [map]":
         prefix: "track1"
-        body: '''[${1:lat}, ${2:lon}] = track1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:az}, ${5:optional_arclen}, ${6:optional_ellipsoid}, ${7:angleunits}, ${8:npts})'''
+        body: '''[${9:lat}, ${10:lon}] = track1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:az}, ${5:optional_arclen}, ${6:optional_ellipsoid}, ${7:angleunits}, ${8:npts})'''
         description: '''[map] Geographic tracks from starting point, azimuth, and range
         [lat, lon] = track1(optional_trackstr, lat0, lon0, az, optional_arclen, optional_ellipsoid, angleunits, npts)
         '''
@@ -573,7 +573,7 @@ grid
 
     "geointerp [map]":
         prefix: "geointerp"
-        body: '''${1:Vq} = geointerp(${1:V}, ${2:R}, ${3:latq}, ${4:lonq}, ${5:method})'''
+        body: '''${6:Vq} = geointerp(${1:V}, ${2:R}, ${3:latq}, ${4:lonq}, ${5:method})'''
         description: '''[map] Geographic raster interpolation
         Vq = geointerp(V, R, latq, lonq, method)
         '''
@@ -582,7 +582,7 @@ grid
 
     "mappoint [map]":
         prefix: "mappoint"
-        body: '''${1:p} = mappoint(${1:optional_structArray})'''
+        body: '''${2:p} = mappoint(${1:optional_structArray})'''
         description: '''[map] 
         p = mappoint(optional_structArray)
         '''
@@ -591,7 +591,7 @@ grid
 
     "map.rasterref.MapRasterReference.worldToDiscrete [map]":
         prefix: "map.rasterref.MapRasterReference.worldToDiscrete"
-        body: '''[${1:I}, ${2:J}] = map.rasterref.MapRasterReference.worldToDiscrete(${1:R}, ${2:xWorld}, ${3:yWorld})'''
+        body: '''[${4:I}, ${5:J}] = map.rasterref.MapRasterReference.worldToDiscrete(${1:R}, ${2:xWorld}, ${3:yWorld})'''
         description: '''[map] 
         [I, J] = map.rasterref.MapRasterReference.worldToDiscrete(R, xWorld, yWorld)
         '''
@@ -600,7 +600,7 @@ grid
 
     "gcxgc [map]":
         prefix: "gcxgc"
-        body: '''[${1:newlat}, ${2:newlon}] = gcxgc(${1:gclat}, ${2:gclon}, ${3:gcaz}, ${4:sclat}, ${5:sclon}, ${6:scrange}, ${7:optional_units})'''
+        body: '''[${8:newlat}, ${9:newlon}] = gcxgc(${1:gclat}, ${2:gclon}, ${3:gcaz}, ${4:sclat}, ${5:sclon}, ${6:scrange}, ${7:optional_units})'''
         description: '''[map] Intersection points for pairs of great circles
         [newlat, newlon] = gcxgc(gclat, gclon, gcaz, sclat, sclon, scrange, optional_units)
         '''
@@ -609,7 +609,7 @@ grid
 
     "mapshow [map]":
         prefix: "mapshow"
-        body: '''${1:h} = mapshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
+        body: '''${4:h} = mapshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
         description: '''[map] Display map data without projection
         h = mapshow(optional_ax, filename, opts)
         '''
@@ -618,7 +618,7 @@ grid
 
     "rhxrh [map]":
         prefix: "rhxrh"
-        body: '''[${1:newlat}, ${2:newlon}] = rhxrh(${1:lat1}, ${2:lon1}, ${3:az1}, ${4:lat2}, ${5:lon2}, ${6:az2}, ${7:optional_units})'''
+        body: '''[${8:newlat}, ${9:newlon}] = rhxrh(${1:lat1}, ${2:lon1}, ${3:az1}, ${4:lat2}, ${5:lon2}, ${6:az2}, ${7:optional_units})'''
         description: '''[map] Intersection points for pairs of rhumb lines
         [newlat, newlon] = rhxrh(lat1, lon1, az1, lat2, lon2, az2, optional_units)
         '''
@@ -627,7 +627,7 @@ grid
 
     "unwrapMultipart [map]":
         prefix: "unwrapMultipart"
-        body: '''${1:unwrapped} = unwrapMultipart(${1:p}, ${2:optional_angleUnit})'''
+        body: '''${3:unwrapped} = unwrapMultipart(${1:p}, ${2:optional_angleUnit})'''
         description: '''[map] Unwrap vector of angles with NaN-delimited parts
         unwrapped = unwrapMultipart(p, optional_angleUnit)
         '''
@@ -636,7 +636,7 @@ grid
 
     "maptrims [map]":
         prefix: "maptrims"
-        body: '''[${1:Z_trimmed}, ${2:R_trimmed}] = maptrims(${1:Z}, ${2:R}, ${3:latlim}, ${4:lonlim}, ${5:optional_cellDensity})'''
+        body: '''[${6:Z_trimmed}, ${7:R_trimmed}] = maptrims(${1:Z}, ${2:R}, ${3:latlim}, ${4:lonlim}, ${5:optional_cellDensity})'''
         description: '''[map] Trim regular data grid to latitude-longitude quadrangle
         [Z_trimmed, R_trimmed] = maptrims(Z, R, latlim, lonlim, optional_cellDensity)
         '''
@@ -645,7 +645,7 @@ grid
 
     "refmatToMapRasterReference [map]":
         prefix: "refmatToMapRasterReference"
-        body: '''${1:R} = refmatToMapRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
+        body: '''${7:R} = refmatToMapRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
         description: '''[map] Referencing matrix to map raster reference object
         R = refmatToMapRasterReference(refmat, rasterSize, optional_rasterInterpretation, funcName, varName, argIndex)
         '''
@@ -654,7 +654,7 @@ grid
 
     "areamat [map]":
         prefix: "areamat"
-        body: '''[${1:A}, ${2:cellarea}] = areamat(${1:BW}, ${2:R}, ${3:optional_ellipsoid})'''
+        body: '''[${4:A}, ${5:cellarea}] = areamat(${1:BW}, ${2:R}, ${3:optional_ellipsoid})'''
         description: '''[map] Surface area covered by nonzero values in binary data
 grid
         [A, cellarea] = areamat(BW, R, optional_ellipsoid)
@@ -664,7 +664,7 @@ grid
 
     "geoquadpt [map]":
         prefix: "geoquadpt"
-        body: '''[${1:latlim}, ${2:lonlim}] = geoquadpt(${1:lat}, ${2:lon})'''
+        body: '''[${3:latlim}, ${4:lonlim}] = geoquadpt(${1:lat}, ${2:lon})'''
         description: '''[map] Geographic quadrangle bounding scattered points
         [latlim, lonlim] = geoquadpt(lat, lon)
         '''
@@ -673,7 +673,7 @@ grid
 
     "geopoint [map]":
         prefix: "geopoint"
-        body: '''${1:p} = geopoint(${1:optional_structArray})'''
+        body: '''${2:p} = geopoint(${1:optional_structArray})'''
         description: '''[map] 
         p = geopoint(optional_structArray)
         '''
@@ -682,7 +682,7 @@ grid
 
     "mapprofile [map]":
         prefix: "mapprofile"
-        body: '''[${1:zi}, ${2:ri}, ${3:lat}, ${4:lon}] = mapprofile(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:ellipsoid}, ${6:'trackmethod'}, ${7:'interpmethod'})'''
+        body: '''[${8:zi}, ${9:ri}, ${10:lat}, ${11:lon}] = mapprofile(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:ellipsoid}, ${6:'trackmethod'}, ${7:'interpmethod'})'''
         description: '''[map] Interpolate between waypoints on regular data grid
         [zi, ri, lat, lon] = mapprofile(Z, R, lat, lon, ellipsoid, 'trackmethod', 'interpmethod')
         '''
@@ -691,7 +691,7 @@ grid
 
     "poly2fv [map]":
         prefix: "poly2fv"
-        body: '''[${1:F}, ${2:V}] = poly2fv(${1:x}, ${2:y})'''
+        body: '''[${3:F}, ${4:V}] = poly2fv(${1:x}, ${2:y})'''
         description: '''[map] Convert polygonal region to patch faces and vertices
         [F, V] = poly2fv(x, y)
         '''
@@ -700,7 +700,7 @@ grid
 
     "deg2km [map]":
         prefix: "deg2km"
-        body: '''${1:km} = deg2km(${1:deg}, ${2:optional_sphere})'''
+        body: '''${3:km} = deg2km(${1:deg}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from degrees to kilometers
         km = deg2km(deg, optional_sphere)
         '''
@@ -709,7 +709,7 @@ grid
 
     "ingeoquad [map]":
         prefix: "ingeoquad"
-        body: '''${1:tf} = ingeoquad(${1:lat}, ${2:lon}, ${3:latlim}, ${4:lonlim})'''
+        body: '''${5:tf} = ingeoquad(${1:lat}, ${2:lon}, ${3:latlim}, ${4:lonlim})'''
         description: '''[map] True for points inside or on lat-lon quadrangle
         tf = ingeoquad(lat, lon, latlim, lonlim)
         '''
@@ -718,7 +718,7 @@ grid
 
     "gc2sc [map]":
         prefix: "gc2sc"
-        body: '''[${1:lat}, ${2:lon}, ${3:radius}] = gc2sc(${1:lat0}, ${2:lon0}, ${3:az}, ${4:optional_angleunits})'''
+        body: '''[${5:lat}, ${6:lon}, ${7:radius}] = gc2sc(${1:lat0}, ${2:lon0}, ${3:az}, ${4:optional_angleunits})'''
         description: '''[map] Center and radius of great circle
         [lat, lon, radius] = gc2sc(lat0, lon0, az, optional_angleunits)
         '''
@@ -727,7 +727,7 @@ grid
 
     "km2nm [map]":
         prefix: "km2nm"
-        body: '''${1:nm} = km2nm(${1:km})'''
+        body: '''${2:nm} = km2nm(${1:km})'''
         description: '''[map] Convert kilometers to nautical miles
         nm = km2nm(km)
         '''
@@ -736,7 +736,7 @@ grid
 
     "makesymbolspec [map]":
         prefix: "makesymbolspec"
-        body: '''${1:symbolspec} = makesymbolspec(${1:geometry}, ${2:rule})'''
+        body: '''${3:symbolspec} = makesymbolspec(${1:geometry}, ${2:rule})'''
         description: '''[map] Construct vector layer symbolization specification 
         symbolspec = makesymbolspec(geometry, rule)
         '''
@@ -745,7 +745,7 @@ grid
 
     "poly2cw [map]":
         prefix: "poly2cw"
-        body: '''[${1:x2}, ${2:y2}] = poly2cw(${1:x1}, ${2:y1})'''
+        body: '''[${3:x2}, ${4:y2}] = poly2cw(${1:x1}, ${2:y1})'''
         description: '''[map] Convert polygon contour to clockwise vertex ordering
         [x2, y2] = poly2cw(x1, y1)
         '''
@@ -754,7 +754,7 @@ grid
 
     "polysplit [map]":
         prefix: "polysplit"
-        body: '''[${1:latcells}, ${2:loncells}] = polysplit(${1:lat}, ${2:lon})'''
+        body: '''[${3:latcells}, ${4:loncells}] = polysplit(${1:lat}, ${2:lon})'''
         description: '''[map] Convert line or polygon parts from vector form to cell
 arrays
         [latcells, loncells] = polysplit(lat, lon)
@@ -764,7 +764,7 @@ arrays
 
     "ispolycw [map]":
         prefix: "ispolycw"
-        body: '''${1:tf} = ispolycw(${1:x}, ${2:y})'''
+        body: '''${3:tf} = ispolycw(${1:x}, ${2:y})'''
         description: '''[map] True if polygon vertices are in clockwise order
         tf = ispolycw(x, y)
         '''
@@ -773,7 +773,7 @@ arrays
 
     "georasterref [map]":
         prefix: "georasterref"
-        body: '''${1:R} = georasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'LatitudeLimits', ${8:value}, 'LongitudeLimits', ${9:value})'''
+        body: '''${10:R} = georasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'LatitudeLimits', ${8:value}, 'LongitudeLimits', ${9:value})'''
         description: '''[map] Construct geographic raster reference object
         R = georasterref(W, rasterSize, rasterInterpretation, 'RasterSize', value, 'RasterInterpretation', value, 'ColumnsStartFrom', value, 'RowsStartFrom', value, 'LatitudeLimits', value, 'LongitudeLimits', value)
         '''
@@ -782,7 +782,7 @@ arrays
 
     "intrplon [map]":
         prefix: "intrplon"
-        body: '''${1:newlon} = intrplon(${1:lat}, ${2:lon}, ${3:newlat}, ${4:method}, ${5:optional_units})'''
+        body: '''${6:newlon} = intrplon(${1:lat}, ${2:lon}, ${3:newlat}, ${4:method}, ${5:optional_units})'''
         description: '''[map] Interpolate longitude at given latitude
         newlon = intrplon(lat, lon, newlat, method, optional_units)
         '''
@@ -791,7 +791,7 @@ arrays
 
     "geoshow [map]":
         prefix: "geoshow"
-        body: '''${1:h} = geoshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
+        body: '''${4:h} = geoshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
         description: '''[map] Display map latitude and longitude data
         h = geoshow(optional_ax, filename, opts)
         '''
@@ -800,7 +800,7 @@ arrays
 
     "mapresize [map]":
         prefix: "mapresize"
-        body: '''[${1:B}, ${2:RB}] = mapresize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
+        body: '''[${6:B}, ${7:RB}] = mapresize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
         description: '''[map] Resize projected raster
         [B, RB] = mapresize(A, RA, scale, method, 'Antialiasing', value)
         '''
@@ -809,7 +809,7 @@ arrays
 
     "outlinegeoquad [map]":
         prefix: "outlinegeoquad"
-        body: '''[${1:lat}, ${2:lon}] = outlinegeoquad(${1:latlim}, ${2:lonlim}, ${3:dlat}, ${4:dlon})'''
+        body: '''[${5:lat}, ${6:lon}] = outlinegeoquad(${1:latlim}, ${2:lonlim}, ${3:dlat}, ${4:dlon})'''
         description: '''[map] Polygon outlining geographic quadrangle
         [lat, lon] = outlinegeoquad(latlim, lonlim, dlat, dlon)
         '''
@@ -818,7 +818,7 @@ arrays
 
     "refvecToGeoRasterReference [map]":
         prefix: "refvecToGeoRasterReference"
-        body: '''${1:R} = refvecToGeoRasterReference(${1:refvec}, ${2:rasterSize}, ${3:funcName}, ${4:varName}, ${5:argIndex})'''
+        body: '''${6:R} = refvecToGeoRasterReference(${1:refvec}, ${2:rasterSize}, ${3:funcName}, ${4:varName}, ${5:argIndex})'''
         description: '''[map] Referencing vector to geographic raster reference object
         R = refvecToGeoRasterReference(refvec, rasterSize, funcName, varName, argIndex)
         '''
@@ -827,7 +827,7 @@ arrays
 
     "reducem [map]":
         prefix: "reducem"
-        body: '''[${1:latout}, ${2:lonout}, ${3:cerr}, ${4:tol}] = reducem(${1:latin}, ${2:lonin}, ${3:tol})'''
+        body: '''[${4:latout}, ${5:lonout}, ${6:cerr}, ${7:tol}] = reducem(${1:latin}, ${2:lonin}, ${3:tol})'''
         description: '''[map] Reduce density of points in vector data
         [latout, lonout, cerr, tol] = reducem(latin, lonin, tol)
         '''
@@ -836,7 +836,7 @@ arrays
 
     "resizem [map]":
         prefix: "resizem"
-        body: '''[${1:Z}, ${2:R}] = resizem(${1:Z1}, ${2:[numrows numcolumns]}, ${3:optional_R1}, ${4:method})'''
+        body: '''[${5:Z}, ${6:R}] = resizem(${1:Z1}, ${2:[numrows numcolumns]}, ${3:optional_R1}, ${4:method})'''
         description: '''[map] Resize regular data grid
         [Z, R] = resizem(Z1, [numrows numcolumns], optional_R1, method)
         '''
@@ -845,7 +845,7 @@ arrays
 
     "map.rasterref.GeographicRasterReference.latitudeToIntrinsicY [map]":
         prefix: "map.rasterref.GeographicRasterReference.latitudeToIntrinsicY"
-        body: '''${1:yIntrinsic} = map.rasterref.GeographicRasterReference.latitudeToIntrinsicY(${1:R}, ${2:lat})'''
+        body: '''${3:yIntrinsic} = map.rasterref.GeographicRasterReference.latitudeToIntrinsicY(${1:R}, ${2:lat})'''
         description: '''[map] 
         yIntrinsic = map.rasterref.GeographicRasterReference.latitudeToIntrinsicY(R, lat)
         '''
@@ -854,7 +854,7 @@ arrays
 
     "deg2sm [map]":
         prefix: "deg2sm"
-        body: '''${1:sm} = deg2sm(${1:deg}, ${2:optional_sphere})'''
+        body: '''${3:sm} = deg2sm(${1:deg}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from degrees to statute miles
         sm = deg2sm(deg, optional_sphere)
         '''
@@ -863,7 +863,7 @@ arrays
 
     "map.rasterref.MapRasterReference.firstCornerX [map]":
         prefix: "map.rasterref.MapRasterReference.firstCornerX"
-        body: '''${1:x} = map.rasterref.MapRasterReference.firstCornerX(${1:R})'''
+        body: '''${2:x} = map.rasterref.MapRasterReference.firstCornerX(${1:R})'''
         description: '''[map] 
         x = map.rasterref.MapRasterReference.firstCornerX(R)
         '''
@@ -872,7 +872,7 @@ arrays
 
     "map.rasterref.MapRasterReference.worldToIntrinsic [map]":
         prefix: "map.rasterref.MapRasterReference.worldToIntrinsic"
-        body: '''[${1:xIntrinsic}, ${2:yIntrinsic}] = map.rasterref.MapRasterReference.worldToIntrinsic(${1:R}, ${2:xWorld}, ${3:yWorld})'''
+        body: '''[${4:xIntrinsic}, ${5:yIntrinsic}] = map.rasterref.MapRasterReference.worldToIntrinsic(${1:R}, ${2:xWorld}, ${3:yWorld})'''
         description: '''[map] 
         [xIntrinsic, yIntrinsic] = map.rasterref.MapRasterReference.worldToIntrinsic(R, xWorld, yWorld)
         '''
@@ -881,7 +881,7 @@ arrays
 
     "map.rasterref.MapRasterReference.contains [map]":
         prefix: "map.rasterref.MapRasterReference.contains"
-        body: '''${1:tf} = map.rasterref.MapRasterReference.contains(${1:R}, ${2:xWorld}, ${3:yWorld})'''
+        body: '''${4:tf} = map.rasterref.MapRasterReference.contains(${1:R}, ${2:xWorld}, ${3:yWorld})'''
         description: '''[map] 
         tf = map.rasterref.MapRasterReference.contains(R, xWorld, yWorld)
         '''
@@ -890,7 +890,7 @@ arrays
 
     "bufferm [map]":
         prefix: "bufferm"
-        body: '''[${1:latb}, ${2:lonb}] = bufferm(${1:lat}, ${2:lon}, ${3:dist}, ${4:direction}, ${5:npts})'''
+        body: '''[${6:latb}, ${7:lonb}] = bufferm(${1:lat}, ${2:lon}, ${3:dist}, ${4:direction}, ${5:npts})'''
         description: '''[map] Buffer zones for latitude-longitude polygons
         [latb, lonb] = bufferm(lat, lon, dist, direction, npts)
         '''
@@ -899,7 +899,7 @@ arrays
 
     "makerefmat [map]":
         prefix: "makerefmat"
-        body: '''${1:R} = makerefmat(${1:x11}, ${2:y11}, ${3:dx}, ${4:dy})'''
+        body: '''${5:R} = makerefmat(${1:x11}, ${2:y11}, ${3:dx}, ${4:dy})'''
         description: '''[map] Construct affine spatial-referencing matrix
         R = makerefmat(x11, y11, dx, dy)
         '''
@@ -908,7 +908,7 @@ arrays
 
     "bufgeoquad [map]":
         prefix: "bufgeoquad"
-        body: '''[${1:latlim}, ${2:lonlim}] = bufgeoquad(${1:latlim}, ${2:lonlim}, ${3:buflat}, ${4:buflon})'''
+        body: '''[${5:latlim}, ${6:lonlim}] = bufgeoquad(${1:latlim}, ${2:lonlim}, ${3:buflat}, ${4:buflon})'''
         description: '''[map] Expand limits of geographic quadrangle
         [latlim, lonlim] = bufgeoquad(latlim, lonlim, buflat, buflon)
         '''
@@ -917,7 +917,7 @@ arrays
 
     "angl2str [map]":
         prefix: "angl2str"
-        body: '''${1:str} = angl2str(${1:angle}, ${2:signcode}, ${3:units}, ${4:n})'''
+        body: '''${5:str} = angl2str(${1:angle}, ${2:signcode}, ${3:units}, ${4:n})'''
         description: '''[map] Convert angles to character array
         str = angl2str(angle, signcode, units, n)
         '''
@@ -926,7 +926,7 @@ arrays
 
     "degrees2dms [map]":
         prefix: "degrees2dms"
-        body: '''${1:DMS} = degrees2dms(${1:angleInDegrees})'''
+        body: '''${2:DMS} = degrees2dms(${1:angleInDegrees})'''
         description: '''[map]  Convert degrees to degrees-minutes-seconds
         DMS = degrees2dms(angleInDegrees)
         '''
@@ -935,7 +935,7 @@ arrays
 
     "mapinterp [map]":
         prefix: "mapinterp"
-        body: '''${1:Vq} = mapinterp(${1:V}, ${2:R}, ${3:xq}, ${4:yq}, ${5:method})'''
+        body: '''${6:Vq} = mapinterp(${1:V}, ${2:R}, ${3:xq}, ${4:yq}, ${5:method})'''
         description: '''[map] Map raster interpolation
         Vq = mapinterp(V, R, xq, yq, method)
         '''
@@ -944,7 +944,7 @@ arrays
 
     "maprefpostings [map]":
         prefix: "maprefpostings"
-        body: '''${1:R} = maprefpostings(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:sampleSpacingInWorldX}, ${4:sampleSpacingInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+        body: '''${7:R} = maprefpostings(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:sampleSpacingInWorldX}, ${4:sampleSpacingInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
         description: '''[map] Reference raster postings to map coordinates
         R = maprefpostings(xWorldLimits, yWorldLimits, sampleSpacingInWorldX, sampleSpacingInWorldY, 'ColumnsStartFrom', value, 'RowsStartFrom', value)
         '''
@@ -953,7 +953,7 @@ arrays
 
     "georesize [map]":
         prefix: "georesize"
-        body: '''[${1:B}, ${2:RB}] = georesize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
+        body: '''[${6:B}, ${7:RB}] = georesize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
         description: '''[map] Resize geographic raster
         [B, RB] = georesize(A, RA, scale, method, 'Antialiasing', value)
         '''
@@ -962,7 +962,7 @@ arrays
 
     "sm2km [map]":
         prefix: "sm2km"
-        body: '''${1:km} = sm2km(${1:sm})'''
+        body: '''${2:km} = sm2km(${1:sm})'''
         description: '''[map] Convert statute miles to kilometers
         km = sm2km(sm)
         '''
@@ -971,7 +971,7 @@ arrays
 
     "intrplat [map]":
         prefix: "intrplat"
-        body: '''${1:newlat} = intrplat(${1:long}, ${2:lat}, ${3:newlong}, ${4:method}, ${5:optional_units})'''
+        body: '''${6:newlat} = intrplat(${1:long}, ${2:lat}, ${3:newlong}, ${4:method}, ${5:optional_units})'''
         description: '''[map] Interpolate latitude at given longitude
         newlat = intrplat(long, lat, newlong, method, optional_units)
         '''
@@ -980,7 +980,7 @@ arrays
 
     "map.rasterref.GeographicRasterReference.contains [map]":
         prefix: "map.rasterref.GeographicRasterReference.contains"
-        body: '''${1:tf} = map.rasterref.GeographicRasterReference.contains(${1:R}, ${2:lat}, ${3:lon})'''
+        body: '''${4:tf} = map.rasterref.GeographicRasterReference.contains(${1:R}, ${2:lat}, ${3:lon})'''
         description: '''[map] 
         tf = map.rasterref.GeographicRasterReference.contains(R, lat, lon)
         '''
@@ -989,7 +989,7 @@ arrays
 
     "areaint [map]":
         prefix: "areaint"
-        body: '''${1:area} = areaint(${1:lat}, ${2:lon}, ${3:optional_ellipsoid}, ${4:optional_units})'''
+        body: '''${5:area} = areaint(${1:lat}, ${2:lon}, ${3:optional_ellipsoid}, ${4:optional_units})'''
         description: '''[map] Surface area of polygon on sphere or ellipsoid
         area = areaint(lat, lon, optional_ellipsoid, optional_units)
         '''
@@ -998,7 +998,7 @@ arrays
 
     "map.rasterref.GeographicRasterReference.intrinsicXToLongitude [map]":
         prefix: "map.rasterref.GeographicRasterReference.intrinsicXToLongitude"
-        body: '''${1:lon} = map.rasterref.GeographicRasterReference.intrinsicXToLongitude(${1:R}, ${2:xIntrinsic})'''
+        body: '''${3:lon} = map.rasterref.GeographicRasterReference.intrinsicXToLongitude(${1:R}, ${2:xIntrinsic})'''
         description: '''[map] 
         lon = map.rasterref.GeographicRasterReference.intrinsicXToLongitude(R, xIntrinsic)
         '''
@@ -1007,7 +1007,7 @@ arrays
 
     "nm2km [map]":
         prefix: "nm2km"
-        body: '''${1:km} = nm2km(${1:nm})'''
+        body: '''${2:km} = nm2km(${1:nm})'''
         description: '''[map] Convert nautical miles to kilometers
         km = nm2km(nm)
         '''
@@ -1016,7 +1016,7 @@ arrays
 
     "azimuth [map]":
         prefix: "azimuth"
-        body: '''${1:az} = azimuth(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:optional_units})'''
+        body: '''${8:az} = azimuth(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:optional_units})'''
         description: '''[map] Azimuth between points on sphere or ellipsoid
         az = azimuth(optional_track, lat1, lon1, lat2, lon2, optional_ellipsoid, optional_units)
         '''
@@ -1025,7 +1025,7 @@ arrays
 
     "nm2sm [map]":
         prefix: "nm2sm"
-        body: '''${1:sm} = nm2sm(${1:nm})'''
+        body: '''${2:sm} = nm2sm(${1:nm})'''
         description: '''[map] Convert nautical to statute miles
         sm = nm2sm(nm)
         '''
@@ -1034,7 +1034,7 @@ arrays
 
     "nm2rad [map]":
         prefix: "nm2rad"
-        body: '''${1:rad} = nm2rad(${1:nm}, ${2:optional_sphere})'''
+        body: '''${3:rad} = nm2rad(${1:nm}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from nautical miles to radians
         rad = nm2rad(nm, optional_sphere)
         '''
@@ -1043,7 +1043,7 @@ arrays
 
     "polymerge [map]":
         prefix: "polymerge"
-        body: '''[${1:latMerged}, ${2:lonMerged}] = polymerge(${1:lat}, ${2:lon}, ${3:tol}, ${4:optional_outputFormat})'''
+        body: '''[${5:latMerged}, ${6:lonMerged}] = polymerge(${1:lat}, ${2:lon}, ${3:tol}, ${4:optional_outputFormat})'''
         description: '''[map] Merge line segments with matching endpoints
         [latMerged, lonMerged] = polymerge(lat, lon, tol, optional_outputFormat)
         '''
@@ -1052,7 +1052,7 @@ arrays
 
     "map.rasterref.GeographicRasterReference.geographicToIntrinsic [map]":
         prefix: "map.rasterref.GeographicRasterReference.geographicToIntrinsic"
-        body: '''[${1:xIntrinsic}, ${2:yIntrinsic}] = map.rasterref.GeographicRasterReference.geographicToIntrinsic(${1:R}, ${2:lat}, ${3:lon})'''
+        body: '''[${4:xIntrinsic}, ${5:yIntrinsic}] = map.rasterref.GeographicRasterReference.geographicToIntrinsic(${1:R}, ${2:lat}, ${3:lon})'''
         description: '''[map] 
         [xIntrinsic, yIntrinsic] = map.rasterref.GeographicRasterReference.geographicToIntrinsic(R, lat, lon)
         '''
@@ -1061,7 +1061,7 @@ arrays
 
     "geoloc2grid [map]":
         prefix: "geoloc2grid"
-        body: '''[${1:Z}, ${2:refvec}] = geoloc2grid(${1:lat}, ${2:lon}, ${3:A}, ${4:cellsize})'''
+        body: '''[${5:Z}, ${6:refvec}] = geoloc2grid(${1:lat}, ${2:lon}, ${3:A}, ${4:cellsize})'''
         description: '''[map] Convert geolocated data array to regular data grid
         [Z, refvec] = geoloc2grid(lat, lon, A, cellsize)
         '''
@@ -1070,7 +1070,7 @@ arrays
 
     "ellipse1 [map]":
         prefix: "ellipse1"
-        body: '''[${1:lat}, ${2:lon}] = ellipse1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:ellipse}, ${5:optional_offset}, ${6:optional_az}, ${7:optional_ellipsoid}, ${8:angleUnit}, ${9:npts})'''
+        body: '''[${10:lat}, ${11:lon}] = ellipse1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:ellipse}, ${5:optional_offset}, ${6:optional_az}, ${7:optional_ellipsoid}, ${8:angleUnit}, ${9:npts})'''
         description: '''[map] Geographic ellipse from center, semimajor axes, eccentricity,
 and azimuth
         [lat, lon] = ellipse1(optional_trackstr, lat0, lon0, ellipse, optional_offset, optional_az, optional_ellipsoid, angleUnit, npts)
@@ -1080,7 +1080,7 @@ and azimuth
 
     "gradientm [map]":
         prefix: "gradientm"
-        body: '''[${1:ASPECT}, ${2:SLOPE}, ${3:gradN}, ${4:gradE}] = gradientm(${1:lat}, ${2:lon}, ${3:Z}, ${4:optional_ellipsoid}, ${5:optional_units})'''
+        body: '''[${6:ASPECT}, ${7:SLOPE}, ${8:gradN}, ${9:gradE}] = gradientm(${1:lat}, ${2:lon}, ${3:Z}, ${4:optional_ellipsoid}, ${5:optional_units})'''
         description: '''[map] Calculate gradient, slope, and aspect of data grid
         [ASPECT, SLOPE, gradN, gradE] = gradientm(lat, lon, Z, optional_ellipsoid, optional_units)
         '''
@@ -1089,7 +1089,7 @@ and azimuth
 
     "imbedm [map]":
         prefix: "imbedm"
-        body: '''[${1:Z}, ${2:indxPointOutsideGrid}] = imbedm(${1:lat}, ${2:lon}, ${3:value}, ${4:Z}, ${5:R}, ${6:optional_units})'''
+        body: '''[${7:Z}, ${8:indxPointOutsideGrid}] = imbedm(${1:lat}, ${2:lon}, ${3:value}, ${4:Z}, ${5:R}, ${6:optional_units})'''
         description: '''[map] Encode data points into regular data grid
         [Z, indxPointOutsideGrid] = imbedm(lat, lon, value, Z, R, optional_units)
         '''
@@ -1098,7 +1098,7 @@ and azimuth
 
     "sm2nm [map]":
         prefix: "sm2nm"
-        body: '''${1:nm} = sm2nm(${1:sm})'''
+        body: '''${2:nm} = sm2nm(${1:sm})'''
         description: '''[map] Convert statute to nautical miles
         nm = sm2nm(sm)
         '''
@@ -1107,7 +1107,7 @@ and azimuth
 
     "los2 [map]":
         prefix: "los2"
-        body: '''[${1:vis}, ${2:visprofile}, ${3:dist}, ${4:H}, ${5:lattrk}, ${6:lontrk}] = los2(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:lat2}, ${6:lon2}, ${7:alt1}, ${8:alt2}, ${9:alt1opt}, ${10:alt2opt}, ${11:actualradius}, ${12:effectiveradius})'''
+        body: '''[${13:vis}, ${14:visprofile}, ${15:dist}, ${16:H}, ${17:lattrk}, ${18:lontrk}] = los2(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:lat2}, ${6:lon2}, ${7:alt1}, ${8:alt2}, ${9:alt1opt}, ${10:alt2opt}, ${11:actualradius}, ${12:effectiveradius})'''
         description: '''[map] Line-of-sight visibility between two points in terrain
         [vis, visprofile, dist, H, lattrk, lontrk] = los2(Z, R, lat1, lon1, lat2, lon2, alt1, alt2, alt1opt, alt2opt, actualradius, effectiveradius)
         '''
@@ -1116,7 +1116,7 @@ and azimuth
 
     "rad2nm [map]":
         prefix: "rad2nm"
-        body: '''${1:nm} = rad2nm(${1:rad}, ${2:optional_sphere})'''
+        body: '''${3:nm} = rad2nm(${1:rad}, ${2:optional_sphere})'''
         description: '''[map] Convert spherical distance from radians to nautical miles
         nm = rad2nm(rad, optional_sphere)
         '''

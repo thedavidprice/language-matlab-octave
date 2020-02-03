@@ -30,7 +30,7 @@
 
     "zlabel [matlab]":
         prefix: "zlabel"
-        body: '''${1:h} = zlabel(${1:optional_ax}, ${2:str}, ${3:opts})'''
+        body: '''${4:h} = zlabel(${1:optional_ax}, ${2:str}, ${3:opts})'''
         description: '''[matlab] Label  z-axis
         h = zlabel(optional_ax, str, opts)
         '''
@@ -39,7 +39,7 @@
 
     "caxis [matlab]":
         prefix: "caxis"
-        body: '''${1:limits} = caxis(${1:optional_ax})'''
+        body: '''${2:limits} = caxis(${1:optional_ax})'''
         description: '''[matlab] Set colormap limits
         limits = caxis(optional_ax)
         '''
@@ -48,7 +48,7 @@
 
     "surf [matlab]":
         prefix: "surf"
-        body: '''${1:h} = surf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
+        body: '''${7:h} = surf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
         description: '''[matlab] Surface plot
         h = surf(optional_ax, x, y, z, optional_c, opts)
         '''
@@ -57,7 +57,7 @@
 
     "colormap [matlab]":
         prefix: "colormap"
-        body: '''${1:cmap} = colormap(${1:optional_ax}, ${2:map})'''
+        body: '''${3:cmap} = colormap(${1:optional_ax}, ${2:map})'''
         description: '''[matlab] View and set current colormap
         cmap = colormap(optional_ax, map)
         '''

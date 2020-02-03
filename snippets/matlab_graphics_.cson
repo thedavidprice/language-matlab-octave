@@ -21,7 +21,7 @@
 
     "tiledlayout [matlab]":
         prefix: "tiledlayout"
-        body: '''${1:Layout} = tiledlayout(${1:optional_parent}, ${2:m}, ${3:n}, ${4:Options})'''
+        body: '''${5:Layout} = tiledlayout(${1:optional_parent}, ${2:m}, ${3:n}, ${4:Options})'''
         description: '''[matlab] Create tiled chart layout
         Layout = tiledlayout(optional_parent, m, n, Options)
         '''
@@ -57,7 +57,7 @@
 
     "nexttile [matlab]":
         prefix: "nexttile"
-        body: '''${1:ax} = nexttile(${1:optional_layout}, ${2:optional_tilenumber}, ${3:optional_tilespan})'''
+        body: '''${4:ax} = nexttile(${1:optional_layout}, ${2:optional_tilenumber}, ${3:optional_tilespan})'''
         description: '''[matlab] Create axes in tiled chart layout
         ax = nexttile(optional_layout, optional_tilenumber, optional_tilespan)
         '''
@@ -66,7 +66,7 @@
 
     "close [matlab]":
         prefix: "close"
-        body: '''${1:status} = close(${1:optional_option})'''
+        body: '''${2:status} = close(${1:optional_option})'''
         description: '''[matlab] Close map viewer window
         status = close(optional_option)
         '''

@@ -12,7 +12,7 @@
 
     "axes [matlab]":
         prefix: "axes"
-        body: '''${1:h} = axes(${1:optional_parent}, ${2:properties})'''
+        body: '''${3:h} = axes(${1:optional_parent}, ${2:properties})'''
         description: '''[matlab] Create Cartesian axes
         h = axes(optional_parent, properties)
         '''

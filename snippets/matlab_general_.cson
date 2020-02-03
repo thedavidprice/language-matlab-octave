@@ -12,7 +12,7 @@
 
     "mkdir [matlab]":
         prefix: "mkdir"
-        body: '''[${1:status}, ${2:message}, ${3:messageId}] = mkdir(${1:parentFolder}, ${2:folderName})'''
+        body: '''[${3:status}, ${4:message}, ${5:messageId}] = mkdir(${1:parentFolder}, ${2:folderName})'''
         description: '''[matlab] Make new folder
         [status, message, messageId] = mkdir(parentFolder, folderName)
         '''
@@ -39,7 +39,7 @@
 
     "fileattrib [matlab]":
         prefix: "fileattrib"
-        body: '''[${1:status}, ${2:message}, ${3:messageId}] = fileattrib(${1:name}, ${2:attribs}, ${3:users})'''
+        body: '''[${4:status}, ${5:message}, ${6:messageId}] = fileattrib(${1:name}, ${2:attribs}, ${3:users})'''
         description: '''[matlab] Set or get attributes of file or folder
         [status, message, messageId] = fileattrib(name, attribs, users)
         '''
@@ -66,7 +66,7 @@
 
     "dos [matlab]":
         prefix: "dos"
-        body: '''[${1:status}, ${2:data}] = dos(${1:command}, ${2:'-echo'})'''
+        body: '''[${3:status}, ${4:data}] = dos(${1:command}, ${2:'-echo'})'''
         description: '''[matlab] Execute DOS command and return output
         [status, data] = dos(command, '-echo')
         '''
@@ -75,7 +75,7 @@
 
     "beep [matlab]":
         prefix: "beep"
-        body: '''${1:state} = beep(${1:flag})'''
+        body: '''${2:state} = beep(${1:flag})'''
         description: '''[matlab] Produce operating system beep sound
         state = beep(flag)
         '''
@@ -102,7 +102,7 @@
 
     "mex.getCompilerConfigurations [matlab]":
         prefix: "mex.getCompilerConfigurations"
-        body: '''${1:cc} = mex.getCompilerConfigurations(${1:lang}, ${2:list})'''
+        body: '''${3:cc} = mex.getCompilerConfigurations(${1:lang}, ${2:list})'''
         description: '''[matlab] 
         cc = mex.getCompilerConfigurations(lang, list)
         '''
@@ -120,7 +120,7 @@
 
     "cd [matlab]":
         prefix: "cd"
-        body: '''${1:oldFolder} = cd(${1:optional_newFolder})'''
+        body: '''${2:oldFolder} = cd(${1:optional_newFolder})'''
         description: '''[matlab] Change current folder
         oldFolder = cd(optional_newFolder)
         '''
@@ -129,7 +129,7 @@
 
     "system [matlab]":
         prefix: "system"
-        body: '''[${1:status}, ${2:data}] = system(${1:command}, ${2:'-echo'})'''
+        body: '''[${3:status}, ${4:data}] = system(${1:command}, ${2:'-echo'})'''
         description: '''[matlab] Execute operating system command and return output
         [status, data] = system(command, '-echo')
         '''
@@ -183,7 +183,7 @@
 
     "addpath [matlab]":
         prefix: "addpath"
-        body: '''${1:oldpath} = addpath(${1:folderName}, ${2:optional_position}, ${3:optional_'-frozen'})'''
+        body: '''${4:oldpath} = addpath(${1:folderName}, ${2:optional_position}, ${3:optional_'-frozen'})'''
         description: '''[matlab] Add folders to search path
         oldpath = addpath(folderName, optional_position, optional_'-frozen')
         '''
@@ -192,7 +192,7 @@
 
     "open [matlab]":
         prefix: "open"
-        body: '''${1:output} = open(${1:name})'''
+        body: '''${2:output} = open(${1:name})'''
         description: '''[matlab] Open file in appropriate application
         output = open(name)
         '''
@@ -201,7 +201,7 @@
 
     "movefile [matlab]":
         prefix: "movefile"
-        body: '''[${1:status}, ${2:message}, ${3:messageId}] = movefile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
+        body: '''[${4:status}, ${5:message}, ${6:messageId}] = movefile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
         description: '''[matlab] Move or rename file or folder
         [status, message, messageId] = movefile(source, destination, optional_'f')
         '''
@@ -210,7 +210,7 @@
 
     "isfolder [matlab]":
         prefix: "isfolder"
-        body: '''${1:TF} = isfolder(${1:path})'''
+        body: '''${2:TF} = isfolder(${1:path})'''
         description: '''[matlab] Determine if input is folder
         TF = isfolder(path)
         '''
@@ -219,7 +219,7 @@
 
     "unix [matlab]":
         prefix: "unix"
-        body: '''[${1:status}, ${2:data}] = unix(${1:command}, ${2:'-echo'})'''
+        body: '''[${3:status}, ${4:data}] = unix(${1:command}, ${2:'-echo'})'''
         description: '''[matlab] Execute UNIX command and return output
         [status, data] = unix(command, '-echo')
         '''
@@ -228,7 +228,7 @@
 
     "rmdir [matlab]":
         prefix: "rmdir"
-        body: '''[${1:status}, ${2:message}, ${3:messageId}] = rmdir(${1:folderName}, ${2:optional_'s'})'''
+        body: '''[${3:status}, ${4:message}, ${5:messageId}] = rmdir(${1:folderName}, ${2:optional_'s'})'''
         description: '''[matlab] Remove folder
         [status, message, messageId] = rmdir(folderName, optional_'s')
         '''
@@ -264,7 +264,7 @@
 
     "ls [matlab]":
         prefix: "ls"
-        body: '''${1:list} = ls(${1:optional_flags}, ${2:optional_filename})'''
+        body: '''${3:list} = ls(${1:optional_flags}, ${2:optional_filename})'''
         description: '''[matlab] List folder contents
         list = ls(optional_flags, optional_filename)
         '''
@@ -273,7 +273,7 @@
 
     "isfile [matlab]":
         prefix: "isfile"
-        body: '''${1:TF} = isfile(${1:path})'''
+        body: '''${2:TF} = isfile(${1:path})'''
         description: '''[matlab] Determine if input is file
         TF = isfile(path)
         '''
@@ -282,7 +282,7 @@
 
     "dir [matlab]":
         prefix: "dir"
-        body: '''${1:listing} = dir(${1:optional_filename})'''
+        body: '''${2:listing} = dir(${1:optional_filename})'''
         description: '''[matlab] List folder contents
         listing = dir(optional_filename)
         '''
@@ -309,7 +309,7 @@
 
     "copyfile [matlab]":
         prefix: "copyfile"
-        body: '''[${1:status}, ${2:message}, ${3:messageId}] = copyfile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
+        body: '''[${4:status}, ${5:message}, ${6:messageId}] = copyfile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
         description: '''[matlab] Copy file or folder
         [status, message, messageId] = copyfile(source, destination, optional_'f')
         '''
@@ -318,7 +318,7 @@
 
     "getenv [matlab]":
         prefix: "getenv"
-        body: '''${1:value} = getenv(${1:name})'''
+        body: '''${2:value} = getenv(${1:name})'''
         description: '''[matlab] Environment variable
         value = getenv(name)
         '''
@@ -363,7 +363,7 @@
 
     "load [matlab]":
         prefix: "load"
-        body: '''${1:S} = load(${1:filename}, ${2:'-ascii'})'''
+        body: '''${3:S} = load(${1:filename}, ${2:'-ascii'})'''
         description: '''[matlab] Load image acquisition object into MATLAB workspace
         S = load(filename, '-ascii')
         '''

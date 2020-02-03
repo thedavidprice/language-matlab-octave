@@ -3,7 +3,7 @@
 
     "symunit [symbolic]":
         prefix: "symunit"
-        body: '''${1:unit} = symunit(${1:optional_unit})'''
+        body: '''${2:unit} = symunit(${1:optional_unit})'''
         description: '''[symbolic] Units of measurement
         unit = symunit(optional_unit)
         '''
@@ -12,7 +12,7 @@
 
     "symReadSSCVariables [symbolic]":
         prefix: "symReadSSCVariables"
-        body: '''[${1:names}, ${2:values}, ${3:units}] = symReadSSCVariables(${1:componentName}, 'ReturnFunctions', ${2:value})'''
+        body: '''[${3:names}, ${4:values}, ${5:units}] = symReadSSCVariables(${1:componentName}, 'ReturnFunctions', ${2:value})'''
         description: '''[symbolic] Load variables from Simscape component
         [names, values, units] = symReadSSCVariables(componentName, 'ReturnFunctions', value)
         '''
@@ -21,7 +21,7 @@
 
     "simplify [symbolic]":
         prefix: "simplify"
-        body: '''${1:expr} = simplify(${1:S}, 'Criterion', ${2:value}, 'IgnoreAnalyticConstraints', ${3:value}, 'Seconds', ${4:value}, 'Steps', ${5:value}, 'All', ${6:value})'''
+        body: '''${7:expr} = simplify(${1:S}, 'Criterion', ${2:value}, 'IgnoreAnalyticConstraints', ${3:value}, 'Seconds', ${4:value}, 'Steps', ${5:value}, 'All', ${6:value})'''
         description: '''[symbolic] Simplify polyshape boundaries
         expr = simplify(S, 'Criterion', value, 'IgnoreAnalyticConstraints', value, 'Seconds', value, 'Steps', value, 'All', value)
         '''
@@ -39,7 +39,7 @@
 
     "isSymType [symbolic]":
         prefix: "isSymType"
-        body: '''${1:result} = isSymType(${1:ex}, ${2:t})'''
+        body: '''${3:result} = isSymType(${1:ex}, ${2:t})'''
         description: '''[symbolic] Determine whether symbolic object is specific type
         result = isSymType(ex, t)
         '''
@@ -48,7 +48,7 @@
 
     "acosh [symbolic]":
         prefix: "acosh"
-        body: '''${1:Y} = acosh(${1:X})'''
+        body: '''${2:Y} = acosh(${1:X})'''
         description: '''[symbolic] Inverse hyperbolic cosine
         Y = acosh(X)
         '''
@@ -57,7 +57,7 @@
 
     "solve [symbolic]":
         prefix: "solve"
-        body: '''[${1:y1}, ${2:y2}] = solve(${1:eqn}, ${2:var}, 'ReturnConditions', ${3:value}, 'IgnoreAnalyticConstraints', ${4:value}, 'IgnoreProperties', ${5:value}, 'MaxDegree', ${6:value}, 'PrincipalValue', ${7:value}, 'Real', ${8:value})'''
+        body: '''[${9:y1}, ${10:y2}] = solve(${1:eqn}, ${2:var}, 'ReturnConditions', ${3:value}, 'IgnoreAnalyticConstraints', ${4:value}, 'IgnoreProperties', ${5:value}, 'MaxDegree', ${6:value}, 'PrincipalValue', ${7:value}, 'Real', ${8:value})'''
         description: '''[symbolic] Solve optimization problem or equation problem
         [y1, y2] = solve(eqn, var, 'ReturnConditions', value, 'IgnoreAnalyticConstraints', value, 'IgnoreProperties', value, 'MaxDegree', value, 'PrincipalValue', value, 'Real', value)
         '''
@@ -66,7 +66,7 @@
 
     "symWriteSSC [symbolic]":
         prefix: "symWriteSSC"
-        body: '''[${1:names}, ${2:values}, ${3:units}] = symWriteSSC(${1:newComponentName}, ${2:templateComponentName}, ${3:eqns}, 'H1Header', ${4:value}, 'HelpText', ${5:value})'''
+        body: '''[${6:names}, ${7:values}, ${8:units}] = symWriteSSC(${1:newComponentName}, ${2:templateComponentName}, ${3:eqns}, 'H1Header', ${4:value}, 'HelpText', ${5:value})'''
         description: '''[symbolic] Create new Simscape component
         [names, values, units] = symWriteSSC(newComponentName, templateComponentName, eqns, 'H1Header', value, 'HelpText', value)
         '''
@@ -75,7 +75,7 @@
 
     "jacobiCN [symbolic]":
         prefix: "jacobiCN"
-        body: '''${1:result} = jacobiCN(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiCN(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi CN elliptic function
         result = jacobiCN(u, m)
         '''
@@ -93,7 +93,7 @@
 
     "jacobiZeta [symbolic]":
         prefix: "jacobiZeta"
-        body: '''${1:result} = jacobiZeta(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiZeta(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi zeta function
         result = jacobiZeta(u, m)
         '''
@@ -102,7 +102,7 @@
 
     "odeToVectorField [symbolic]":
         prefix: "odeToVectorField"
-        body: '''[${1:V}, ${2:Y}] = odeToVectorField(${1:eqn})'''
+        body: '''[${2:V}, ${3:Y}] = odeToVectorField(${1:eqn})'''
         description: '''[symbolic] Reduce order of differential equations to first-order
         [V, Y] = odeToVectorField(eqn)
         '''
@@ -111,7 +111,7 @@
 
     "dsolve [symbolic]":
         prefix: "dsolve"
-        body: '''${1:S} = dsolve(${1:eqns}, ${2:optional_conds}, 'IgnoreAnalyticConstraints', ${3:value}, 'MaxDegree', ${4:value})'''
+        body: '''${5:S} = dsolve(${1:eqns}, ${2:optional_conds}, 'IgnoreAnalyticConstraints', ${3:value}, 'MaxDegree', ${4:value})'''
         description: '''[symbolic] Solve system of differential equations
         S = dsolve(eqns, optional_conds, 'IgnoreAnalyticConstraints', value, 'MaxDegree', value)
         '''
@@ -120,7 +120,7 @@
 
     "symReadSSCParameters [symbolic]":
         prefix: "symReadSSCParameters"
-        body: '''[${1:names}, ${2:values}, ${3:units}] = symReadSSCParameters(${1:componentName})'''
+        body: '''[${2:names}, ${3:values}, ${4:units}] = symReadSSCParameters(${1:componentName})'''
         description: '''[symbolic] Load parameters from Simscape component
         [names, values, units] = symReadSSCParameters(componentName)
         '''
@@ -129,7 +129,7 @@
 
     "symType [symbolic]":
         prefix: "symType"
-        body: '''${1:t} = symType(${1:ex})'''
+        body: '''${2:t} = symType(${1:ex})'''
         description: '''[symbolic] Determine type of symbolic object
         t = symType(ex)
         '''
@@ -138,7 +138,7 @@
 
     "jacobiDS [symbolic]":
         prefix: "jacobiDS"
-        body: '''${1:result} = jacobiDS(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiDS(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi DS elliptic function
         result = jacobiDS(u, m)
         '''
@@ -147,7 +147,7 @@
 
     "factor [symbolic]":
         prefix: "factor"
-        body: '''${1:expr} = factor(${1:S}, ${2:optional_Vars}, 'FactorMode', ${3:value})'''
+        body: '''${4:expr} = factor(${1:S}, ${2:optional_Vars}, 'FactorMode', ${3:value})'''
         description: '''[symbolic] Prime factors
         expr = factor(S, optional_Vars, 'FactorMode', value)
         '''
@@ -156,7 +156,7 @@
 
     "digits [symbolic]":
         prefix: "digits"
-        body: '''${1:d1} = digits(${1:optional_d})'''
+        body: '''${2:d1} = digits(${1:optional_d})'''
         description: '''[symbolic] Change variable precision used
         d1 = digits(optional_d)
         '''
@@ -165,7 +165,7 @@
 
     "ifourier [symbolic]":
         prefix: "ifourier"
-        body: '''${1:result} = ifourier(${1:F}, ${2:w}, ${3:optional_x})'''
+        body: '''${4:result} = ifourier(${1:F}, ${2:w}, ${3:optional_x})'''
         description: '''[symbolic] Inverse Fourier transform
         result = ifourier(F, w, optional_x)
         '''
@@ -174,7 +174,7 @@
 
     "simplifyFraction [symbolic]":
         prefix: "simplifyFraction"
-        body: '''${1:expr} = simplifyFraction(${1:expr}, 'Expand', ${2:value})'''
+        body: '''${3:expr} = simplifyFraction(${1:expr}, 'Expand', ${2:value})'''
         description: '''[symbolic] Simplify symbolic rational expressions
         expr = simplifyFraction(expr, 'Expand', value)
         '''
@@ -183,7 +183,7 @@
 
     "jacobiCS [symbolic]":
         prefix: "jacobiCS"
-        body: '''${1:result} = jacobiCS(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiCS(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi CS elliptic function
         result = jacobiCS(u, m)
         '''
@@ -192,7 +192,7 @@
 
     "jacobiSN [symbolic]":
         prefix: "jacobiSN"
-        body: '''${1:result} = jacobiSN(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiSN(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi SN elliptic function
         result = jacobiSN(u, m)
         '''
@@ -201,7 +201,7 @@
 
     "jacobiDC [symbolic]":
         prefix: "jacobiDC"
-        body: '''${1:result} = jacobiDC(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiDC(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi DC elliptic function
         result = jacobiDC(u, m)
         '''
@@ -210,7 +210,7 @@
 
     "chol [symbolic]":
         prefix: "chol"
-        body: '''[${1:R}, ${2:p}, ${3:s}] = chol(${1:A}, ${2:optional_flag})'''
+        body: '''[${3:R}, ${4:p}, ${5:s}] = chol(${1:A}, ${2:optional_flag})'''
         description: '''[symbolic] Cholesky factorization
         [R, p, s] = chol(A, optional_flag)
         '''
@@ -219,7 +219,7 @@
 
     "harmonic [symbolic]":
         prefix: "harmonic"
-        body: '''${1:result} = harmonic(${1:x})'''
+        body: '''${2:result} = harmonic(${1:x})'''
         description: '''[symbolic] Harmonic function (harmonic number)
         result = harmonic(x)
         '''
@@ -228,7 +228,7 @@
 
     "symFunType [symbolic]":
         prefix: "symFunType"
-        body: '''${1:t} = symFunType(${1:ex})'''
+        body: '''${2:t} = symFunType(${1:ex})'''
         description: '''[symbolic] Determine functional type of symbolic object
         t = symFunType(ex)
         '''
@@ -237,7 +237,7 @@
 
     "unitInfo [symbolic]":
         prefix: "unitInfo"
-        body: '''${1:unitsOrDimensions} = unitInfo(${1:optional_unit})'''
+        body: '''${2:unitsOrDimensions} = unitInfo(${1:optional_unit})'''
         description: '''[symbolic] Information on units of measurement
         unitsOrDimensions = unitInfo(optional_unit)
         '''
@@ -246,7 +246,7 @@
 
     "jacobiAM [symbolic]":
         prefix: "jacobiAM"
-        body: '''${1:result} = jacobiAM(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiAM(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi amplitude function
         result = jacobiAM(u, m)
         '''
@@ -255,7 +255,7 @@
 
     "findSymType [symbolic]":
         prefix: "findSymType"
-        body: '''${1:result} = findSymType(${1:ex}, ${2:t})'''
+        body: '''${3:result} = findSymType(${1:ex}, ${2:t})'''
         description: '''[symbolic] Find symbolic subobjects of specific type
         result = findSymType(ex, t)
         '''
@@ -264,7 +264,7 @@
 
     "jacobiNC [symbolic]":
         prefix: "jacobiNC"
-        body: '''${1:result} = jacobiNC(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiNC(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi NC elliptic function
         result = jacobiNC(u, m)
         '''
@@ -273,7 +273,7 @@
 
     "hasSymType [symbolic]":
         prefix: "hasSymType"
-        body: '''${1:result} = hasSymType(${1:ex}, ${2:t})'''
+        body: '''${3:result} = hasSymType(${1:ex}, ${2:t})'''
         description: '''[symbolic] Determine whether symbolic object contains specific type
         result = hasSymType(ex, t)
         '''
@@ -282,7 +282,7 @@
 
     "bernstein [symbolic]":
         prefix: "bernstein"
-        body: '''${1:b} = bernstein(${1:g}, ${2:var}, ${3:n}, ${4:t})'''
+        body: '''${5:b} = bernstein(${1:g}, ${2:var}, ${3:n}, ${4:t})'''
         description: '''[symbolic] Bernstein polynomials
         b = bernstein(g, var, n, t)
         '''
@@ -291,7 +291,7 @@
 
     "jacobiNS [symbolic]":
         prefix: "jacobiNS"
-        body: '''${1:result} = jacobiNS(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiNS(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi NS elliptic function
         result = jacobiNS(u, m)
         '''
@@ -300,7 +300,7 @@
 
     "mathml [symbolic]":
         prefix: "mathml"
-        body: '''${1:code} = mathml(${1:expr}, 'DisplayInline', ${2:value}, 'Tooltips', ${3:value})'''
+        body: '''${4:code} = mathml(${1:expr}, 'DisplayInline', ${2:value}, 'Tooltips', ${3:value})'''
         description: '''[symbolic] Generate MathML from symbolic expression
         code = mathml(expr, 'DisplayInline', value, 'Tooltips', value)
         '''
@@ -327,7 +327,7 @@
 
     "rewrite [symbolic]":
         prefix: "rewrite"
-        body: '''${1:expr} = rewrite(${1:expr}, ${2:target})'''
+        body: '''${3:expr} = rewrite(${1:expr}, ${2:target})'''
         description: '''[symbolic] Rewrite expression in terms of another function
         expr = rewrite(expr, target)
         '''
@@ -336,7 +336,7 @@
 
     "unitConvert [symbolic]":
         prefix: "unitConvert"
-        body: '''${1:expr} = unitConvert(${1:expr}, ${2:target})'''
+        body: '''${3:expr} = unitConvert(${1:expr}, ${2:target})'''
         description: '''[symbolic] Convert units to other units of measurement
         expr = unitConvert(expr, target)
         '''
@@ -345,7 +345,7 @@
 
     "jacobiND [symbolic]":
         prefix: "jacobiND"
-        body: '''${1:result} = jacobiND(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiND(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi ND elliptic function
         result = jacobiND(u, m)
         '''
@@ -364,7 +364,7 @@ or function
 
     "cell2sym [symbolic]":
         prefix: "cell2sym"
-        body: '''${1:S} = cell2sym(${1:C}, ${2:optional_flag})'''
+        body: '''${3:S} = cell2sym(${1:C}, ${2:optional_flag})'''
         description: '''[symbolic] Convert cell array to symbolic array
         S = cell2sym(C, optional_flag)
         '''
@@ -382,7 +382,7 @@ or function
 
     "expand [symbolic]":
         prefix: "expand"
-        body: '''${1:expr} = expand(${1:S}, 'ArithmeticOnly', ${2:value}, 'IgnoreAnalyticConstraints', ${3:value})'''
+        body: '''${4:expr} = expand(${1:S}, 'ArithmeticOnly', ${2:value}, 'IgnoreAnalyticConstraints', ${3:value})'''
         description: '''[symbolic] Expand tree node
         expr = expand(S, 'ArithmeticOnly', value, 'IgnoreAnalyticConstraints', value)
         '''
@@ -391,7 +391,7 @@ or function
 
     "heaviside [symbolic]":
         prefix: "heaviside"
-        body: '''${1:result} = heaviside(${1:n})'''
+        body: '''${2:result} = heaviside(${1:n})'''
         description: '''[symbolic] Heaviside step function
         result = heaviside(n)
         '''
@@ -400,7 +400,7 @@ or function
 
     "bernsteinMatrix [symbolic]":
         prefix: "bernsteinMatrix"
-        body: '''${1:B} = bernsteinMatrix(${1:n}, ${2:t})'''
+        body: '''${3:B} = bernsteinMatrix(${1:n}, ${2:t})'''
         description: '''[symbolic] Bernstein matrix
         B = bernsteinMatrix(n, t)
         '''
@@ -409,7 +409,7 @@ or function
 
     "decic [symbolic]":
         prefix: "decic"
-        body: '''[${1:y}, ${2:yp0}] = decic(${1:eqs}, ${2:vars}, ${3:constr}, ${4:t0}, ${5:y0_est}, ${6:fixedVars}, ${7:yp0_est}, ${8:optional_options})'''
+        body: '''[${9:y}, ${10:yp0}] = decic(${1:eqs}, ${2:vars}, ${3:constr}, ${4:t0}, ${5:y0_est}, ${6:fixedVars}, ${7:yp0_est}, ${8:optional_options})'''
         description: '''[symbolic] Compute consistent initial conditions for ode15i
         [y, yp0] = decic(eqs, vars, constr, t0, y0_est, fixedVars, yp0_est, optional_options)
         '''
@@ -418,7 +418,7 @@ or function
 
     "mapSymType [symbolic]":
         prefix: "mapSymType"
-        body: '''${1:result} = mapSymType(${1:ex}, ${2:t}, ${3:fun})'''
+        body: '''${4:result} = mapSymType(${1:ex}, ${2:t}, ${3:fun})'''
         description: '''[symbolic] Apply function to symbolic subobjects of specific type
         result = mapSymType(ex, t, fun)
         '''
@@ -427,7 +427,7 @@ or function
 
     "jacobiSD [symbolic]":
         prefix: "jacobiSD"
-        body: '''${1:result} = jacobiSD(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiSD(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi SD elliptic function
         result = jacobiSD(u, m)
         '''
@@ -436,7 +436,7 @@ or function
 
     "isAlways [symbolic]":
         prefix: "isAlways"
-        body: '''${1:expr} = isAlways(${1:cond}, 'Unknown', ${2:value})'''
+        body: '''${3:expr} = isAlways(${1:cond}, 'Unknown', ${2:value})'''
         description: '''[symbolic] Check whether equation or inequality holds for all values
 of its variables
         expr = isAlways(cond, 'Unknown', value)
@@ -446,7 +446,7 @@ of its variables
 
     "partfrac [symbolic]":
         prefix: "partfrac"
-        body: '''${1:expr} = partfrac(${1:expr}, ${2:optional_expr}, 'FactorMode', ${3:value})'''
+        body: '''${4:expr} = partfrac(${1:expr}, ${2:optional_expr}, 'FactorMode', ${3:value})'''
         description: '''[symbolic] Partial fraction decomposition
         expr = partfrac(expr, optional_expr, 'FactorMode', value)
         '''
@@ -455,7 +455,7 @@ of its variables
 
     "unitConversionFactor [symbolic]":
         prefix: "unitConversionFactor"
-        body: '''${1:C} = unitConversionFactor(${1:unit1}, ${2:unit2}, 'Force', ${3:value})'''
+        body: '''${4:C} = unitConversionFactor(${1:unit1}, ${2:unit2}, 'Force', ${3:value})'''
         description: '''[symbolic] Conversion factor between units
         C = unitConversionFactor(unit1, unit2, 'Force', value)
         '''
@@ -464,7 +464,7 @@ of its variables
 
     "combine [symbolic]":
         prefix: "combine"
-        body: '''${1:expr} = combine(${1:S}, ${2:optional_T}, 'IgnoreAnalyticConstraints', ${3:value})'''
+        body: '''${4:expr} = combine(${1:S}, ${2:optional_T}, 'IgnoreAnalyticConstraints', ${3:value})'''
         description: '''[symbolic] Combine two MIAME objects
         expr = combine(S, optional_T, 'IgnoreAnalyticConstraints', value)
         '''
@@ -473,7 +473,7 @@ of its variables
 
     "jacobiSC [symbolic]":
         prefix: "jacobiSC"
-        body: '''${1:result} = jacobiSC(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiSC(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi SC elliptic function
         result = jacobiSC(u, m)
         '''
@@ -482,7 +482,7 @@ of its variables
 
     "jacobiDN [symbolic]":
         prefix: "jacobiDN"
-        body: '''${1:result} = jacobiDN(${1:u}, ${2:m})'''
+        body: '''${3:result} = jacobiDN(${1:u}, ${2:m})'''
         description: '''[symbolic] Jacobi DN elliptic function
         result = jacobiDN(u, m)
         '''

@@ -30,7 +30,7 @@
 
     "binblockread [shared]":
         prefix: "binblockread"
-        body: '''[${1:A}, ${2:count}, ${3:msg}] = binblockread(${1:obj}, ${2:optional_precision})'''
+        body: '''[${3:A}, ${4:count}, ${5:msg}] = binblockread(${1:obj}, ${2:optional_precision})'''
         description: '''[shared] Read binblock data from instrument
         [A, count, msg] = binblockread(obj, optional_precision)
         '''
@@ -75,7 +75,7 @@
 
     "fgets [shared]":
         prefix: "fgets"
-        body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgets(${1:obj})'''
+        body: '''[${2:tline}, ${3:count}, ${4:msg}, ${5:datagramaddress}, ${6:datagramport}] = fgets(${1:obj})'''
         description: '''[shared] Read line of text from instrument and include terminator
         [tline, count, msg, datagramaddress, datagramport] = fgets(obj)
         '''
@@ -84,7 +84,7 @@
 
     "instrfindall [shared]":
         prefix: "instrfindall"
-        body: '''${1:out} = instrfindall(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
+        body: '''${28:out} = instrfindall(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
         description: '''[shared] Find visible and hidden instrument objects
         out = instrfindall(optional_obj, 'BitRate', value, 'BoardIndex', value, 'BoardSerial', value, 'ByteOrder', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'PullupResistors', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RecordStatus', value, 'RemoteAddress', value, 'Status', value, 'Tag', value, 'TargetPower', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'TransferStatus', value, 'Type', value, 'UserData', value, 'ValuesReceived', value, 'ValuesSent', value, 'Vendor', value)
         '''
@@ -93,7 +93,7 @@
 
     "fgetl [shared]":
         prefix: "fgetl"
-        body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgetl(${1:obj})'''
+        body: '''[${2:tline}, ${3:count}, ${4:msg}, ${5:datagramaddress}, ${6:datagramport}] = fgetl(${1:obj})'''
         description: '''[shared] Read line of text from instrument and discard terminator
         [tline, count, msg, datagramaddress, datagramport] = fgetl(obj)
         '''
@@ -111,7 +111,7 @@
 
     "scanstr [shared]":
         prefix: "scanstr"
-        body: '''[${1:A}, ${2:count}, ${3:msg}] = scanstr(${1:obj}, ${2:optional_delimiter}, ${3:optional_format})'''
+        body: '''[${4:A}, ${5:count}, ${6:msg}] = scanstr(${1:obj}, ${2:optional_delimiter}, ${3:optional_format})'''
         description: '''[shared] Read data from instrument, format as text, and parse
         [A, count, msg] = scanstr(obj, optional_delimiter, optional_format)
         '''

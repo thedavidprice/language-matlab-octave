@@ -30,7 +30,7 @@
 
     "optimeq [optim]":
         prefix: "optimeq"
-        body: '''${1:eqs} = optimeq(${1:n})'''
+        body: '''${2:eqs} = optimeq(${1:n})'''
         description: '''[optim] Create empty optimization equality array
         eqs = optimeq(n)
         '''
@@ -39,7 +39,7 @@
 
     "optimineq [optim]":
         prefix: "optimineq"
-        body: '''${1:ineq} = optimineq(${1:n})'''
+        body: '''${2:ineq} = optimineq(${1:n})'''
         description: '''[optim] Create empty optimization inequality array
         ineq = optimineq(n)
         '''
@@ -93,7 +93,7 @@
 
     "optimproblem [optim]":
         prefix: "optimproblem"
-        body: '''${1:prob} = optimproblem('Constraints', ${1:value}, 'Description', ${2:value}, 'Objective', ${3:value}, 'ObjectiveSense', ${4:value})'''
+        body: '''${5:prob} = optimproblem('Constraints', ${1:value}, 'Description', ${2:value}, 'Objective', ${3:value}, 'ObjectiveSense', ${4:value})'''
         description: '''[optim] Create optimization problem
         prob = optimproblem('Constraints', value, 'Description', value, 'Objective', value, 'ObjectiveSense', value)
         '''
@@ -102,7 +102,7 @@
 
     "optimvar [optim]":
         prefix: "optimvar"
-        body: '''${1:x} = optimvar(${1:Name}, ${2:optional_n}, 'Type', ${3:value}, 'LowerBound', ${4:value}, 'UpperBound', ${5:value})'''
+        body: '''${6:x} = optimvar(${1:Name}, ${2:optional_n}, 'Type', ${3:value}, 'LowerBound', ${4:value}, 'UpperBound', ${5:value})'''
         description: '''[optim] Create optimization variables
         x = optimvar(Name, optional_n, 'Type', value, 'LowerBound', value, 'UpperBound', value)
         '''
@@ -201,7 +201,7 @@
 
     "optimconstr [optim]":
         prefix: "optimconstr"
-        body: '''${1:constr} = optimconstr(${1:n})'''
+        body: '''${2:constr} = optimconstr(${1:n})'''
         description: '''[optim] Create empty optimization constraint array
         constr = optimconstr(n)
         '''
@@ -228,7 +228,7 @@
 
     "fcn2optimexpr [optim]":
         prefix: "fcn2optimexpr"
-        body: '''${1:constr} = fcn2optimexpr(${1:fun}, ${2:optional_Xin}, 'ReuseEvaluation', ${3:value}, 'OutputSize', ${4:value})'''
+        body: '''${5:constr} = fcn2optimexpr(${1:fun}, ${2:optional_Xin}, 'ReuseEvaluation', ${3:value}, 'OutputSize', ${4:value})'''
         description: '''[optim] Convert function to optimization expression
         constr = fcn2optimexpr(fun, optional_Xin, 'ReuseEvaluation', value, 'OutputSize', value)
         '''
@@ -273,7 +273,7 @@
 
     "optimexpr [optim]":
         prefix: "optimexpr"
-        body: '''${1:expr} = optimexpr(${1:n})'''
+        body: '''${2:expr} = optimexpr(${1:n})'''
         description: '''[optim] Create empty optimization expression array
         expr = optimexpr(n)
         '''
@@ -327,7 +327,7 @@
 
     "eqnproblem [optim]":
         prefix: "eqnproblem"
-        body: '''${1:prob} = eqnproblem('Description', ${1:value}, 'Equations', ${2:value})'''
+        body: '''${3:prob} = eqnproblem('Description', ${1:value}, 'Equations', ${2:value})'''
         description: '''[optim] Create equation problem
         prob = eqnproblem('Description', value, 'Equations', value)
         '''

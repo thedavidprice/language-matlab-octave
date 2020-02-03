@@ -3,7 +3,7 @@
 
     "geoscatter [matlab]":
         prefix: "geoscatter"
-        body: '''${1:S} = geoscatter(${1:optional_gx}, ${2:lat}, ${3:lon}, ${4:optional_A}, ${5:optional_C}, ${6:'filled'}, ${7:M}, 'LatitudeData', ${8:value}, 'LongitudeData', ${9:value}, 'LatitudeDataSource', ${10:value}, 'LongitudeDataSource', ${11:value}, ${12:options})'''
+        body: '''${13:S} = geoscatter(${1:optional_gx}, ${2:lat}, ${3:lon}, ${4:optional_A}, ${5:optional_C}, ${6:'filled'}, ${7:M}, 'LatitudeData', ${8:value}, 'LongitudeData', ${9:value}, 'LatitudeDataSource', ${10:value}, 'LongitudeDataSource', ${11:value}, ${12:options})'''
         description: '''[matlab] Scatter chart in geographic coordinates
         S = geoscatter(optional_gx, lat, lon, optional_A, optional_C, 'filled', M, 'LatitudeData', value, 'LongitudeData', value, 'LatitudeDataSource', value, 'LongitudeDataSource', value, options)
         '''
@@ -12,7 +12,7 @@
 
     "geolimits [matlab]":
         prefix: "geolimits"
-        body: '''[${1:latlim}, ${2:lonlim}] = geolimits(${1:optional_gx}, ${2:optional_mode})'''
+        body: '''[${3:latlim}, ${4:lonlim}] = geolimits(${1:optional_gx}, ${2:optional_mode})'''
         description: '''[matlab] Set or query geographic limits
         [latlim, lonlim] = geolimits(optional_gx, optional_mode)
         '''
@@ -21,7 +21,7 @@
 
     "geodensityplot [matlab]":
         prefix: "geodensityplot"
-        body: '''${1:dp} = geodensityplot(${1:optional_gx}, ${2:lat}, ${3:lon}, ${4:optional_weights}, 'LatitudeData', ${5:value}, 'LongitudeData', ${6:value}, 'LatitudeDataSource', ${7:value}, 'LongitudeDataSource', ${8:value}, 'FaceAlpha', ${9:value}, ${10:options})'''
+        body: '''${11:dp} = geodensityplot(${1:optional_gx}, ${2:lat}, ${3:lon}, ${4:optional_weights}, 'LatitudeData', ${5:value}, 'LongitudeData', ${6:value}, 'LatitudeDataSource', ${7:value}, 'LongitudeDataSource', ${8:value}, 'FaceAlpha', ${9:value}, ${10:options})'''
         description: '''[matlab] Geographic density plot
         dp = geodensityplot(optional_gx, lat, lon, optional_weights, 'LatitudeData', value, 'LongitudeData', value, 'LatitudeDataSource', value, 'LongitudeDataSource', value, 'FaceAlpha', value, options)
         '''
@@ -30,7 +30,7 @@
 
     "geotickformat [matlab]":
         prefix: "geotickformat"
-        body: '''${1:tickLabelFormat} = geotickformat(${1:optional_gx}, ${2:fmt})'''
+        body: '''${3:tickLabelFormat} = geotickformat(${1:optional_gx}, ${2:fmt})'''
         description: '''[matlab] Set or query geographic tick label format
         tickLabelFormat = geotickformat(optional_gx, fmt)
         '''
@@ -39,7 +39,7 @@
 
     "geoaxes [matlab]":
         prefix: "geoaxes"
-        body: '''${1:gx} = geoaxes(${1:optional_parent}, 'Basemap', ${2:value}, 'TickLabelFormat', ${3:value}, ${4:options})'''
+        body: '''${5:gx} = geoaxes(${1:optional_parent}, 'Basemap', ${2:value}, 'TickLabelFormat', ${3:value}, ${4:options})'''
         description: '''[matlab] Create geographic axes
         gx = geoaxes(optional_parent, 'Basemap', value, 'TickLabelFormat', value, options)
         '''
@@ -48,7 +48,7 @@
 
     "geobasemap [matlab]":
         prefix: "geobasemap"
-        body: '''${1:basemap} = geobasemap(${1:optional_gx}, ${2:basemap})'''
+        body: '''${3:basemap} = geobasemap(${1:optional_gx}, ${2:basemap})'''
         description: '''[matlab] Set or query basemap
         basemap = geobasemap(optional_gx, basemap)
         '''
@@ -57,7 +57,7 @@
 
     "geobubble [matlab]":
         prefix: "geobubble"
-        body: '''${1:gb} = geobubble(${1:optional_parent}, ${2:lat}, ${3:lon}, ${4:optional_sizedata}, ${5:optional_colordata}, 'LatitudeData', ${6:value}, 'LongitudeData', ${7:value}, 'SizeData', ${8:value}, 'ColorData', ${9:value}, 'MapCenter', ${10:value}, 'ZoomLevel', ${11:value}, 'MapLayout', ${12:value}, 'GridVisible', ${13:value}, 'ScalebarVisible', ${14:value}, 'Basemap', ${15:value}, 'SizeLimits', ${16:value}, 'BubbleWidthRange', ${17:value}, 'BubbleColorList', ${18:value}, 'Title', ${19:value}, 'LegendVisible', ${20:value}, 'SizeLegendTitle', ${21:value}, 'ColorLegendTitle', ${22:value}, 'Parent', ${23:value}, 'Visible', ${24:value}, 'FontName', ${25:value}, 'FontSize', ${26:value}, 'HandleVisibility', ${27:value}, 'Units', ${28:value}, 'OuterPosition', ${29:value})'''
+        body: '''${30:gb} = geobubble(${1:optional_parent}, ${2:lat}, ${3:lon}, ${4:optional_sizedata}, ${5:optional_colordata}, 'LatitudeData', ${6:value}, 'LongitudeData', ${7:value}, 'SizeData', ${8:value}, 'ColorData', ${9:value}, 'MapCenter', ${10:value}, 'ZoomLevel', ${11:value}, 'MapLayout', ${12:value}, 'GridVisible', ${13:value}, 'ScalebarVisible', ${14:value}, 'Basemap', ${15:value}, 'SizeLimits', ${16:value}, 'BubbleWidthRange', ${17:value}, 'BubbleColorList', ${18:value}, 'Title', ${19:value}, 'LegendVisible', ${20:value}, 'SizeLegendTitle', ${21:value}, 'ColorLegendTitle', ${22:value}, 'Parent', ${23:value}, 'Visible', ${24:value}, 'FontName', ${25:value}, 'FontSize', ${26:value}, 'HandleVisibility', ${27:value}, 'Units', ${28:value}, 'OuterPosition', ${29:value})'''
         description: '''[matlab] Visualize data values at specific geographic locations 
         gb = geobubble(optional_parent, lat, lon, optional_sizedata, optional_colordata, 'LatitudeData', value, 'LongitudeData', value, 'SizeData', value, 'ColorData', value, 'MapCenter', value, 'ZoomLevel', value, 'MapLayout', value, 'GridVisible', value, 'ScalebarVisible', value, 'Basemap', value, 'SizeLimits', value, 'BubbleWidthRange', value, 'BubbleColorList', value, 'Title', value, 'LegendVisible', value, 'SizeLegendTitle', value, 'ColorLegendTitle', value, 'Parent', value, 'Visible', value, 'FontName', value, 'FontSize', value, 'HandleVisibility', value, 'Units', value, 'OuterPosition', value)
         '''

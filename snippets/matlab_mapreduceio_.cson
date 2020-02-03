@@ -3,7 +3,7 @@
 
     "mapreducer [matlab]":
         prefix: "mapreducer"
-        body: '''${1:mr} = mapreducer(${1:optional_mr}, 'ObjectVisibility', ${2:value})'''
+        body: '''${3:mr} = mapreducer(${1:optional_mr}, 'ObjectVisibility', ${2:value})'''
         description: '''[matlab] Define execution environment for mapreduce or tall arrays
         mr = mapreducer(optional_mr, 'ObjectVisibility', value)
         '''
@@ -12,7 +12,7 @@
 
     "gcmr [matlab]":
         prefix: "gcmr"
-        body: '''${1:mr} = gcmr(${1:optional_'nocreate'})'''
+        body: '''${2:mr} = gcmr(${1:optional_'nocreate'})'''
         description: '''[matlab] Get current mapreducer configuration
         mr = gcmr(optional_'nocreate')
         '''
@@ -21,7 +21,7 @@
 
     "mapreduce [matlab]":
         prefix: "mapreduce"
-        body: '''${1:outds} = mapreduce(${1:ds}, ${2:mapfun}, ${3:reducefun}, ${4:optional_mr}, 'OutputType', ${5:value}, 'OutputFolder', ${6:value}, 'Display', ${7:value})'''
+        body: '''${8:outds} = mapreduce(${1:ds}, ${2:mapfun}, ${3:reducefun}, ${4:optional_mr}, 'OutputType', ${5:value}, 'OutputFolder', ${6:value}, 'Display', ${7:value})'''
         description: '''[matlab] Programming technique for analyzing data sets that do
 not fit in memory
         outds = mapreduce(ds, mapfun, reducefun, optional_mr, 'OutputType', value, 'OutputFolder', value, 'Display', value)

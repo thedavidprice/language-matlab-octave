@@ -3,7 +3,7 @@
 
     "designMultistageDecimator [dsp]":
         prefix: "designMultistageDecimator"
-        body: '''${1:C} = designMultistageDecimator(${1:M}, ${2:Fs}, ${3:TW}, ${4:Astop}, 'NumStages', ${5:value}, 'MinTotalCoeffs', ${6:value}, 'CostMethod', ${7:value}, 'CostTolerance', ${8:value})'''
+        body: '''${9:C} = designMultistageDecimator(${1:M}, ${2:Fs}, ${3:TW}, ${4:Astop}, 'NumStages', ${5:value}, 'MinTotalCoeffs', ${6:value}, 'CostMethod', ${7:value}, 'CostTolerance', ${8:value})'''
         description: '''[dsp] Multistage decimator design
         C = designMultistageDecimator(M, Fs, TW, Astop, 'NumStages', value, 'MinTotalCoeffs', value, 'CostMethod', value, 'CostTolerance', value)
         '''
@@ -12,7 +12,7 @@
 
     "designMultistageInterpolator [dsp]":
         prefix: "designMultistageInterpolator"
-        body: '''${1:C} = designMultistageInterpolator(${1:L}, ${2:Fs}, ${3:TW}, ${4:Astop}, 'NumStages', ${5:value}, 'MinTotalCoeffs', ${6:value}, 'CostMethod', ${7:value}, 'CostTolerance', ${8:value})'''
+        body: '''${9:C} = designMultistageInterpolator(${1:L}, ${2:Fs}, ${3:TW}, ${4:Astop}, 'NumStages', ${5:value}, 'MinTotalCoeffs', ${6:value}, 'CostMethod', ${7:value}, 'CostTolerance', ${8:value})'''
         description: '''[dsp] Multistage interpolator design
         C = designMultistageInterpolator(L, Fs, TW, Astop, 'NumStages', value, 'MinTotalCoeffs', value, 'CostMethod', value, 'CostTolerance', value)
         '''

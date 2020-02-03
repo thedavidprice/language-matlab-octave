@@ -12,7 +12,7 @@
 
     "findgroups [matlab]":
         prefix: "findgroups"
-        body: '''[${1:G}, ${2:TID}] = findgroups(${1:T})'''
+        body: '''[${2:G}, ${3:TID}] = findgroups(${1:T})'''
         description: '''[matlab] Find groups and return group numbers
         [G, TID] = findgroups(T)
         '''
@@ -76,7 +76,7 @@
 
     "maxk [matlab]":
         prefix: "maxk"
-        body: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
+        body: '''[${5:B}, ${6:I}] = maxk(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
         description: '''[matlab] Find k largest elements of array
         [B, I] = maxk(A, k, optional_dim, 'ComparisonMethod', value)
         '''
@@ -85,7 +85,7 @@
 
     "movmedian [matlab]":
         prefix: "movmedian"
-        body: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmedian(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving median
         M = movmedian(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -103,7 +103,7 @@
 
     "mean [matlab]":
         prefix: "mean"
-        body: '''${1:M} = mean(${1:A}, ${2:optional_dim}, ${3:outtype}, ${4:nanflag})'''
+        body: '''${5:M} = mean(${1:A}, ${2:optional_dim}, ${3:outtype}, ${4:nanflag})'''
         description: '''[matlab] Arithmetic average
         M = mean(A, optional_dim, outtype, nanflag)
         '''
@@ -121,7 +121,7 @@
 
     "normalize [matlab]":
         prefix: "normalize"
-        body: '''${1:N} = normalize(${1:A}, ${2:optional_method}, 'DataVariables', ${3:value})'''
+        body: '''${4:N} = normalize(${1:A}, ${2:optional_method}, 'DataVariables', ${3:value})'''
         description: '''[matlab] Normalize filter numerator or feed-forward coefficients
         N = normalize(A, optional_method, 'DataVariables', value)
         '''
@@ -157,7 +157,7 @@
 
     "hist [matlab]":
         prefix: "hist"
-        body: '''[${1:counts}, ${2:centers}] = hist(${1:ax}, ${2:x}, ${3:xbins})'''
+        body: '''[${4:counts}, ${5:centers}] = hist(${1:ax}, ${2:x}, ${3:xbins})'''
         description: '''[matlab] Histogram for financial times series object
         [counts, centers] = hist(ax, x, xbins)
         '''
@@ -175,7 +175,7 @@
 
     "issortedrows [matlab]":
         prefix: "issortedrows"
-        body: '''${1:TF} = issortedrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        body: '''${5:TF} = issortedrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Determine if matrix or table rows are sorted
         TF = issortedrows(A, optional_column, optional_direction, 'MissingPlacement', value)
         '''
@@ -238,7 +238,7 @@
 
     "var [matlab]":
         prefix: "var"
-        body: '''${1:V} = var(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
+        body: '''${5:V} = var(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
         description: '''[matlab] Variance
         V = var(A, w, optional_dim, nanflag)
         '''
@@ -283,7 +283,7 @@
 
     "movprod [matlab]":
         prefix: "movprod"
-        body: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movprod(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving product
         M = movprod(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -301,7 +301,7 @@
 
     "sort [matlab]":
         prefix: "sort"
-        body: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        body: '''[${5:B}, ${6:I}] = sort(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Sort array elements
         [B, I] = sort(A, optional_dim, optional_direction, 'MissingPlacement', value)
         '''
@@ -310,7 +310,7 @@
 
     "movmean [matlab]":
         prefix: "movmean"
-        body: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmean(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving mean
         M = movmean(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -319,7 +319,7 @@
 
     "sortrows [matlab]":
         prefix: "sortrows"
-        body: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        body: '''[${5:B}, ${6:Index}] = sortrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Sort rows of matrix or table
         [B, Index] = sortrows(A, optional_column, optional_direction, 'MissingPlacement', value)
         '''
@@ -337,7 +337,7 @@
 
     "topkrows [matlab]":
         prefix: "topkrows"
-        body: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:optional_column}, ${4:optional_direction}, 'ComparisonMethod', ${5:value})'''
+        body: '''[${6:B}, ${7:Index}] = topkrows(${1:A}, ${2:k}, ${3:optional_column}, ${4:optional_direction}, 'ComparisonMethod', ${5:value})'''
         description: '''[matlab] Top rows in sorted order
         [B, Index] = topkrows(A, k, optional_column, optional_direction, 'ComparisonMethod', value)
         '''
@@ -373,7 +373,7 @@
 
     "movstd [matlab]":
         prefix: "movstd"
-        body: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        body: '''${8:M} = movstd(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
         description: '''[matlab] Moving standard deviation
         M = movstd(A, k, optional_w, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -382,7 +382,7 @@
 
     "std [matlab]":
         prefix: "std"
-        body: '''${1:S} = std(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
+        body: '''${5:S} = std(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
         description: '''[matlab] Standard deviation
         S = std(A, w, optional_dim, nanflag)
         '''
@@ -400,7 +400,7 @@
 
     "histcounts [matlab]":
         prefix: "histcounts"
-        body: '''[${1:N}, ${2:edges}, ${3:bin}] = histcounts(${1:X}, ${2:optional_edges}, 'BinWidth', ${3:value}, 'BinLimits', ${4:value}, 'Normalization', ${5:value}, 'BinMethod', ${6:value})'''
+        body: '''[${7:N}, ${8:edges}, ${9:bin}] = histcounts(${1:X}, ${2:optional_edges}, 'BinWidth', ${3:value}, 'BinLimits', ${4:value}, 'Normalization', ${5:value}, 'BinMethod', ${6:value})'''
         description: '''[matlab] Histogram bin counts
         [N, edges, bin] = histcounts(X, optional_edges, 'BinWidth', value, 'BinLimits', value, 'Normalization', value, 'BinMethod', value)
         '''
@@ -418,7 +418,7 @@
 
     "median [matlab]":
         prefix: "median"
-        body: '''${1:M} = median(${1:A}, ${2:optional_dim}, ${3:nanflag})'''
+        body: '''${4:M} = median(${1:A}, ${2:optional_dim}, ${3:nanflag})'''
         description: '''[matlab] Median value of array
         M = median(A, optional_dim, nanflag)
         '''
@@ -454,7 +454,7 @@
 
     "movmax [matlab]":
         prefix: "movmax"
-        body: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmax(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving maximum
         M = movmax(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -482,7 +482,7 @@
 
     "movsum [matlab]":
         prefix: "movsum"
-        body: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movsum(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving sum
         M = movsum(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -518,7 +518,7 @@
 
     "mink [matlab]":
         prefix: "mink"
-        body: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
+        body: '''[${5:B}, ${6:I}] = mink(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
         description: '''[matlab] Find k smallest elements of array
         [B, I] = mink(A, k, optional_dim, 'ComparisonMethod', value)
         '''
@@ -527,7 +527,7 @@
 
     "rescale [matlab]":
         prefix: "rescale"
-        body: '''${1:R} = rescale(${1:A}, 'InputMin', ${2:value}, 'InputMax', ${3:value})'''
+        body: '''${4:R} = rescale(${1:A}, 'InputMin', ${2:value}, 'InputMax', ${3:value})'''
         description: '''[matlab] Scale range of array elements
         R = rescale(A, 'InputMin', value, 'InputMax', value)
         '''
@@ -536,7 +536,7 @@
 
     "movmad [matlab]":
         prefix: "movmad"
-        body: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmad(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving median absolute deviation
         M = movmad(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -554,7 +554,7 @@
 
     "movmin [matlab]":
         prefix: "movmin"
-        body: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        body: '''${7:M} = movmin(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
         description: '''[matlab] Moving minimum
         M = movmin(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -563,7 +563,7 @@
 
     "issorted [matlab]":
         prefix: "issorted"
-        body: '''${1:TF} = issorted(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        body: '''${5:TF} = issorted(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
         description: '''[matlab] Check whether dates and times are monotonically increasing
         TF = issorted(A, optional_dim, optional_direction, 'MissingPlacement', value)
         '''
@@ -572,7 +572,7 @@
 
     "movvar [matlab]":
         prefix: "movvar"
-        body: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        body: '''${8:M} = movvar(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
         description: '''[matlab] Moving variance
         M = movvar(A, k, optional_w, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)
         '''
@@ -608,7 +608,7 @@
 
     "splitapply [matlab]":
         prefix: "splitapply"
-        body: '''${1:Y} = splitapply(${1:func}, ${2:T}, ${3:G})'''
+        body: '''${4:Y} = splitapply(${1:func}, ${2:T}, ${3:G})'''
         description: '''[matlab] Split data into groups and apply function
         Y = splitapply(func, T, G)
         '''
@@ -617,7 +617,7 @@
 
     "histcounts2 [matlab]":
         prefix: "histcounts2"
-        body: '''[${1:N}, ${2:xedges}, ${3:yedges}, ${4:binx}, ${5:biny}] = histcounts2(${1:X}, ${2:Y}, ${3:Xedges}, ${4:Yedges}, 'BinWidth', ${5:value}, 'XBinLimits', ${6:value}, 'YBinLimits', ${7:value}, 'Normalization', ${8:value}, 'BinMethod', ${9:value})'''
+        body: '''[${10:N}, ${11:xedges}, ${12:yedges}, ${13:binx}, ${14:biny}] = histcounts2(${1:X}, ${2:Y}, ${3:Xedges}, ${4:Yedges}, 'BinWidth', ${5:value}, 'XBinLimits', ${6:value}, 'YBinLimits', ${7:value}, 'Normalization', ${8:value}, 'BinMethod', ${9:value})'''
         description: '''[matlab] Bivariate histogram bin counts
         [N, xedges, yedges, binx, biny] = histcounts2(X, Y, Xedges, Yedges, 'BinWidth', value, 'XBinLimits', value, 'YBinLimits', value, 'Normalization', value, 'BinMethod', value)
         '''

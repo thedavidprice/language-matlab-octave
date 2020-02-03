@@ -3,7 +3,7 @@
 
     "sheetnames [shared]":
         prefix: "sheetnames"
-        body: '''${1:sn} = sheetnames(${1:filename})'''
+        body: '''${2:sn} = sheetnames(${1:filename})'''
         description: '''[shared] Query sheet names from datastore
         sn = sheetnames(filename)
         '''

@@ -12,7 +12,7 @@
 
     "xwvd [shared]":
         prefix: "xwvd"
-        body: '''[${1:d}, ${2:f}, ${3:t}] = xwvd(${1:x}, ${2:y}, ${3:optional_ts}, ${4:'smoothedPseudo'}, ${5:'NumFrequencyPoints'}, ${6:nf}, ${7:'MinThreshold'}, ${8:optional_thresh})'''
+        body: '''[${9:d}, ${10:f}, ${11:t}] = xwvd(${1:x}, ${2:y}, ${3:optional_ts}, ${4:'smoothedPseudo'}, ${5:'NumFrequencyPoints'}, ${6:nf}, ${7:'MinThreshold'}, ${8:optional_thresh})'''
         description: '''[shared] Cross Wigner-Ville distribution and cross smoothed pseudo Wigner-Ville
       distribution
         [d, f, t] = xwvd(x, y, optional_ts, 'smoothedPseudo', 'NumFrequencyPoints', nf, 'MinThreshold', optional_thresh)
@@ -22,7 +22,7 @@
 
     "hilbert [shared]":
         prefix: "hilbert"
-        body: '''${1:x} = hilbert(${1:xr}, ${2:optional_n})'''
+        body: '''${3:x} = hilbert(${1:xr}, ${2:optional_n})'''
         description: '''[shared] Discrete-time analytic signal using Hilbert transform
         x = hilbert(xr, optional_n)
         '''
@@ -31,7 +31,7 @@
 
     "hht [shared]":
         prefix: "hht"
-        body: '''[${1:hs}, ${2:f}, ${3:t}, ${4:imfinsf}, ${5:imfinse}] = hht(${1:imf}, ${2:fs}, ${3:optional_freqlocation})'''
+        body: '''[${4:hs}, ${5:f}, ${6:t}, ${7:imfinsf}, ${8:imfinse}] = hht(${1:imf}, ${2:fs}, ${3:optional_freqlocation})'''
         description: '''[shared] Hilbert-Huang transform
         [hs, f, t, imfinsf, imfinse] = hht(imf, fs, optional_freqlocation)
         '''
@@ -40,7 +40,7 @@
 
     "wvd [shared]":
         prefix: "wvd"
-        body: '''[${1:d}, ${2:f}, ${3:t}] = wvd(${1:x}, ${2:optional_ts}, ${3:'MinThreshold'}, ${4:optional_thresh})'''
+        body: '''[${5:d}, ${6:f}, ${7:t}] = wvd(${1:x}, ${2:optional_ts}, ${3:'MinThreshold'}, ${4:optional_thresh})'''
         description: '''[shared] Wigner-Ville distribution and smoothed pseudo Wigner-Ville distribution
         [d, f, t] = wvd(x, optional_ts, 'MinThreshold', optional_thresh)
         '''
@@ -58,7 +58,7 @@
 
     "emd [shared]":
         prefix: "emd"
-        body: '''[${1:imf}, ${2:residual}, ${3:info}] = emd(${1:X}, 'SiftRelativeTolerance', ${2:value}, 'SiftMaxIterations', ${3:value}, 'MaxNumIMF', ${4:value}, 'MaxNumExtrema', ${5:value}, 'MaxEnergyRatio', ${6:value}, 'Interpolation', ${7:value}, 'Display', ${8:value})'''
+        body: '''[${9:imf}, ${10:residual}, ${11:info}] = emd(${1:X}, 'SiftRelativeTolerance', ${2:value}, 'SiftMaxIterations', ${3:value}, 'MaxNumIMF', ${4:value}, 'MaxNumExtrema', ${5:value}, 'MaxEnergyRatio', ${6:value}, 'Interpolation', ${7:value}, 'Display', ${8:value})'''
         description: '''[shared] Empirical mode decomposition
         [imf, residual, info] = emd(X, 'SiftRelativeTolerance', value, 'SiftMaxIterations', value, 'MaxNumIMF', value, 'MaxNumExtrema', value, 'MaxEnergyRatio', value, 'Interpolation', value, 'Display', value)
         '''

@@ -3,7 +3,7 @@
 
     "rgb2lin [images]":
         prefix: "rgb2lin"
-        body: '''${1:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        body: '''${4:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
         description: '''[images] Linearize gamma-corrected RGB values
         B = rgb2lin(A, 'ColorSpace', value, 'OutputType', value)
         '''
@@ -12,7 +12,7 @@
 
     "colorangle [images]":
         prefix: "colorangle"
-        body: '''${1:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
+        body: '''${3:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
         description: '''[images] Angle between two RGB vectors
         angle = colorangle(RGB1, RGB2)
         '''
@@ -21,7 +21,7 @@
 
     "lin2rgb [images]":
         prefix: "lin2rgb"
-        body: '''${1:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        body: '''${4:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
         description: '''[images] Apply gamma correction to linear RGB values
         B = lin2rgb(A, 'ColorSpace', value, 'OutputType', value)
         '''
@@ -30,7 +30,7 @@
 
     "chromadapt [images]":
         prefix: "chromadapt"
-        body: '''${1:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
+        body: '''${5:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
         description: '''[images] Adjust color balance of RGB image with chromatic adaptation
         B = chromadapt(A, illuminant, 'ColorSpace', value, 'Method', value)
         '''
@@ -39,7 +39,7 @@
 
     "illumpca [images]":
         prefix: "illumpca"
-        body: '''${1:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
+        body: '''${4:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
         description: '''[images] Estimate illuminant using principal component analysis (PCA)
         illuminant = illumpca(A, optional_percentage, 'Mask', value)
         '''
@@ -48,7 +48,7 @@
 
     "illumgray [images]":
         prefix: "illumgray"
-        body: '''${1:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
+        body: '''${5:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
         description: '''[images] Estimate illuminant using gray world algorithm
         illuminant = illumgray(A, optional_percentiles, 'Mask', value, 'Norm', value)
         '''
@@ -57,7 +57,7 @@
 
     "illumwhite [images]":
         prefix: "illumwhite"
-        body: '''${1:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
+        body: '''${4:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
         description: '''[images] Estimate illuminant using White Patch Retinex algorithm
         illuminant = illumwhite(A, optional_topPercentile, 'Mask', value)
         '''

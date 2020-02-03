@@ -3,7 +3,7 @@
 
     "parquetread [matlab]":
         prefix: "parquetread"
-        body: '''${1:T} = parquetread(${1:filename}, 'SelectedVariableNames', ${2:value}, 'PreserveVariableNames', ${3:value}, 'OutputType', ${4:value})'''
+        body: '''${5:T} = parquetread(${1:filename}, 'SelectedVariableNames', ${2:value}, 'PreserveVariableNames', ${3:value}, 'OutputType', ${4:value})'''
         description: '''[matlab] Read columnar data from a Parquet file
         T = parquetread(filename, 'SelectedVariableNames', value, 'PreserveVariableNames', value, 'OutputType', value)
         '''
@@ -21,7 +21,7 @@
 
     "parquetinfo [matlab]":
         prefix: "parquetinfo"
-        body: '''${1:P} = parquetinfo(${1:filename})'''
+        body: '''${2:P} = parquetinfo(${1:filename})'''
         description: '''[matlab] Get information about Parquet file
         P = parquetinfo(filename)
         '''

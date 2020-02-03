@@ -3,7 +3,7 @@
 
     "internal.Serialport.writeread [matlab]":
         prefix: "internal.Serialport.writeread"
-        body: '''${1:response} = internal.Serialport.writeread(${1:obj}, ${2:command})'''
+        body: '''${3:response} = internal.Serialport.writeread(${1:obj}, ${2:command})'''
         description: '''[matlab] 
         response = internal.Serialport.writeread(obj, command)
         '''
@@ -21,7 +21,7 @@
 
     "internal.Serialport.readline [matlab]":
         prefix: "internal.Serialport.readline"
-        body: '''${1:data} = internal.Serialport.readline(${1:obj})'''
+        body: '''${2:data} = internal.Serialport.readline(${1:obj})'''
         description: '''[matlab] 
         data = internal.Serialport.readline(obj)
         '''
@@ -30,7 +30,7 @@
 
     "internal.Serialport.readbinblock [matlab]":
         prefix: "internal.Serialport.readbinblock"
-        body: '''${1:data} = internal.Serialport.readbinblock(${1:obj}, ${2:optional_precision})'''
+        body: '''${3:data} = internal.Serialport.readbinblock(${1:obj}, ${2:optional_precision})'''
         description: '''[matlab] 
         data = internal.Serialport.readbinblock(obj, optional_precision)
         '''
@@ -57,7 +57,7 @@
 
     "internal.Serialport.getpinstatus [matlab]":
         prefix: "internal.Serialport.getpinstatus"
-        body: '''${1:status} = internal.Serialport.getpinstatus(${1:obj})'''
+        body: '''${2:status} = internal.Serialport.getpinstatus(${1:obj})'''
         description: '''[matlab] 
         status = internal.Serialport.getpinstatus(obj)
         '''
@@ -75,7 +75,7 @@
 
     "internal.Serialport.read [matlab]":
         prefix: "internal.Serialport.read"
-        body: '''${1:data} = internal.Serialport.read(${1:obj}, ${2:count}, ${3:precision})'''
+        body: '''${4:data} = internal.Serialport.read(${1:obj}, ${2:count}, ${3:precision})'''
         description: '''[matlab] 
         data = internal.Serialport.read(obj, count, precision)
         '''
@@ -93,7 +93,7 @@
 
     "serialport [matlab]":
         prefix: "serialport"
-        body: '''${1:obj} = serialport(${1:Port}, ${2:BaudRate}, 'ByteOrder', ${3:value}, 'DataBits', ${4:value}, 'FlowControl', ${5:value}, 'Parity', ${6:value}, 'StopBits', ${7:value}, 'Timeout', ${8:value})'''
+        body: '''${9:obj} = serialport(${1:Port}, ${2:BaudRate}, 'ByteOrder', ${3:value}, 'DataBits', ${4:value}, 'FlowControl', ${5:value}, 'Parity', ${6:value}, 'StopBits', ${7:value}, 'Timeout', ${8:value})'''
         description: '''[matlab] Connection to serial port
         obj = serialport(Port, BaudRate, 'ByteOrder', value, 'DataBits', value, 'FlowControl', value, 'Parity', value, 'StopBits', value, 'Timeout', value)
         '''

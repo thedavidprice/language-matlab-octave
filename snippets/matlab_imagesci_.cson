@@ -30,7 +30,7 @@
 
     "cdfread [matlab]":
         prefix: "cdfread"
-        body: '''[${1:data}, ${2:info}] = cdfread(${1:filename}, 'Records', ${2:value}, 'Variables', ${3:value}, 'Slices', ${4:value}, 'ConvertEpochToDatenum', ${5:value}, 'CombineRecords', ${6:value})'''
+        body: '''[${7:data}, ${8:info}] = cdfread(${1:filename}, 'Records', ${2:value}, 'Variables', ${3:value}, 'Slices', ${4:value}, 'ConvertEpochToDatenum', ${5:value}, 'CombineRecords', ${6:value})'''
         description: '''[matlab] Read data from Common Data Format (CDF) file
         [data, info] = cdfread(filename, 'Records', value, 'Variables', value, 'Slices', value, 'ConvertEpochToDatenum', value, 'CombineRecords', value)
         '''
@@ -48,7 +48,7 @@
 
     "h5readatt [matlab]":
         prefix: "h5readatt"
-        body: '''${1:attval} = h5readatt(${1:filename}, ${2:location}, ${3:attr})'''
+        body: '''${4:attval} = h5readatt(${1:filename}, ${2:location}, ${3:attr})'''
         description: '''[matlab] Read attribute from HDF5 file
         attval = h5readatt(filename, location, attr)
         '''
@@ -156,7 +156,7 @@
 
     "h5read [matlab]":
         prefix: "h5read"
-        body: '''${1:info} = h5read(${1:filename}, ${2:datasetname}, ${3:start}, ${4:count}, ${5:stride})'''
+        body: '''${6:info} = h5read(${1:filename}, ${2:datasetname}, ${3:start}, ${4:count}, ${5:stride})'''
         description: '''[matlab] Read data from HDF5 data set
         info = h5read(filename, datasetname, start, count, stride)
         '''
@@ -211,7 +211,7 @@ from NetCDF data source
 
     "hdfinfo [matlab]":
         prefix: "hdfinfo"
-        body: '''${1:info} = hdfinfo(${1:filename}, ${2:optional_'HDF'})'''
+        body: '''${3:info} = hdfinfo(${1:filename}, ${2:optional_'HDF'})'''
         description: '''[matlab] Information about HDF4 or HDF-EOS file
         info = hdfinfo(filename, optional_'HDF')
         '''
@@ -356,7 +356,7 @@ NetCDF data source
 
     "hdftool [matlab]":
         prefix: "hdftool"
-        body: '''${1:h} = hdftool(${1:filename})'''
+        body: '''${2:h} = hdftool(${1:filename})'''
         description: '''[matlab] (Not recommended) Browse and import data from HDF4 or HDF-EOS files
         h = hdftool(filename)
         '''
@@ -383,7 +383,7 @@ NetCDF data source
 
     "fitsread [matlab]":
         prefix: "fitsread"
-        body: '''${1:data} = fitsread(${1:filename}, ${2:optional_'raw'}, ${3:optional_extname}, ${4:optional_index}, 'Info', ${5:value}, 'PixelRegion', ${6:value}, 'TableColumns', ${7:value}, 'TableRows', ${8:value})'''
+        body: '''${9:data} = fitsread(${1:filename}, ${2:optional_'raw'}, ${3:optional_extname}, ${4:optional_index}, 'Info', ${5:value}, 'PixelRegion', ${6:value}, 'TableColumns', ${7:value}, 'TableRows', ${8:value})'''
         description: '''[matlab] Read data from FITS file
         data = fitsread(filename, optional_'raw', optional_extname, optional_index, 'Info', value, 'PixelRegion', value, 'TableColumns', value, 'TableRows', value)
         '''
@@ -455,7 +455,7 @@ NetCDF data source
 
     "cdfinfo [matlab]":
         prefix: "cdfinfo"
-        body: '''${1:info} = cdfinfo(${1:filename})'''
+        body: '''${2:info} = cdfinfo(${1:filename})'''
         description: '''[matlab] Information about Common Data Format (CDF) file
         info = cdfinfo(filename)
         '''
@@ -464,7 +464,7 @@ NetCDF data source
 
     "fitsinfo [matlab]":
         prefix: "fitsinfo"
-        body: '''${1:info} = fitsinfo(${1:filename})'''
+        body: '''${2:info} = fitsinfo(${1:filename})'''
         description: '''[matlab] Information about FITS file
         info = fitsinfo(filename)
         '''
@@ -509,7 +509,7 @@ NetCDF data source
 
     "h5info [matlab]":
         prefix: "h5info"
-        body: '''${1:info} = h5info(${1:filename}, ${2:location}, 'TextEncoding', ${3:value})'''
+        body: '''${4:info} = h5info(${1:filename}, ${2:location}, 'TextEncoding', ${3:value})'''
         description: '''[matlab] Return information about HDF5 file
         info = h5info(filename, location, 'TextEncoding', value)
         '''

@@ -3,7 +3,7 @@
 
     "matlab.io.ImportOptions.setvartype [shared]":
         prefix: "matlab.io.ImportOptions.setvartype"
-        body: '''${1:opts} = matlab.io.ImportOptions.setvartype(${1:opts}, ${2:selection}, ${3:newtype})'''
+        body: '''${4:opts} = matlab.io.ImportOptions.setvartype(${1:opts}, ${2:selection}, ${3:newtype})'''
         description: '''[shared] 
         opts = matlab.io.ImportOptions.setvartype(opts, selection, newtype)
         '''
@@ -30,7 +30,7 @@
 
     "matlab.io.text.TextImportOptions.preview [shared]":
         prefix: "matlab.io.text.TextImportOptions.preview"
-        body: '''${1:data} = matlab.io.text.TextImportOptions.preview(${1:filename}, ${2:opts})'''
+        body: '''${3:data} = matlab.io.text.TextImportOptions.preview(${1:filename}, ${2:opts})'''
         description: '''[shared] 
         data = matlab.io.text.TextImportOptions.preview(filename, opts)
         '''
@@ -48,7 +48,7 @@
 
     "matlab.io.ImportOptions.setvaropts [shared]":
         prefix: "matlab.io.ImportOptions.setvaropts"
-        body: '''${1:opts} = matlab.io.ImportOptions.setvaropts(${1:opts}, ${2:selection}, 'QuoteRule', ${3:value}, 'FillValue', ${4:value}, 'TreatAsMissing', ${5:value}, 'WhitespaceRule', ${6:value}, 'ExponentCharacter', ${7:value}, 'DecimalSeparator', ${8:value}, 'ThousandsSeparator', ${9:value}, 'FieldSeparator', ${10:value}, 'DatetimeFormat', ${11:value}, 'DurationFormat', ${12:value}, 'DatetimeLocale', ${13:value}, 'InputFormat', ${14:value}, 'Categories', ${15:value}, 'Protected', ${16:value}, 'Ordinal', ${17:value}, 'Prefixes', ${18:value}, 'Suffixes', ${19:value})'''
+        body: '''${20:opts} = matlab.io.ImportOptions.setvaropts(${1:opts}, ${2:selection}, 'QuoteRule', ${3:value}, 'FillValue', ${4:value}, 'TreatAsMissing', ${5:value}, 'WhitespaceRule', ${6:value}, 'ExponentCharacter', ${7:value}, 'DecimalSeparator', ${8:value}, 'ThousandsSeparator', ${9:value}, 'FieldSeparator', ${10:value}, 'DatetimeFormat', ${11:value}, 'DurationFormat', ${12:value}, 'DatetimeLocale', ${13:value}, 'InputFormat', ${14:value}, 'Categories', ${15:value}, 'Protected', ${16:value}, 'Ordinal', ${17:value}, 'Prefixes', ${18:value}, 'Suffixes', ${19:value})'''
         description: '''[shared] 
         opts = matlab.io.ImportOptions.setvaropts(opts, selection, 'QuoteRule', value, 'FillValue', value, 'TreatAsMissing', value, 'WhitespaceRule', value, 'ExponentCharacter', value, 'DecimalSeparator', value, 'ThousandsSeparator', value, 'FieldSeparator', value, 'DatetimeFormat', value, 'DurationFormat', value, 'DatetimeLocale', value, 'InputFormat', value, 'Categories', value, 'Protected', value, 'Ordinal', value, 'Prefixes', value, 'Suffixes', value)
         '''
@@ -93,7 +93,7 @@
 
     "matlab.io.spreadsheet.SpreadsheetImportOptions.preview [shared]":
         prefix: "matlab.io.spreadsheet.SpreadsheetImportOptions.preview"
-        body: '''${1:data} = matlab.io.spreadsheet.SpreadsheetImportOptions.preview(${1:filename}, ${2:opts})'''
+        body: '''${3:data} = matlab.io.spreadsheet.SpreadsheetImportOptions.preview(${1:filename}, ${2:opts})'''
         description: '''[shared] 
         data = matlab.io.spreadsheet.SpreadsheetImportOptions.preview(filename, opts)
         '''
@@ -111,7 +111,7 @@
 
     "matlab.io.ImportOptions.getvaropts [shared]":
         prefix: "matlab.io.ImportOptions.getvaropts"
-        body: '''${1:opts} = matlab.io.ImportOptions.getvaropts(${1:opts}, ${2:selection})'''
+        body: '''${3:opts} = matlab.io.ImportOptions.getvaropts(${1:opts}, ${2:selection})'''
         description: '''[shared] 
         opts = matlab.io.ImportOptions.getvaropts(opts, selection)
         '''
