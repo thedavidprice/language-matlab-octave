@@ -1,0 +1,31 @@
+fileTypes: [
+  'm'
+]
+keyEquivalent: '^~M'
+name: 'Read-write operations with variables (MATLAB)'
+scopeName: 'readwrite.matlab.injection'
+injectionSelector: 'source.matlab -comment -function-call -support -string -interpolation'
+uuid: '057DFD42-9A62-4AA3-822C-A00A6609EC9E'
+patterns: [
+  {
+    include: '#readwrite_operations'
+  }
+]
+repository:
+  readwrite_operations:
+    patterns: [
+      {
+        include: '#property'
+      }
+      {
+        include: '#readwrite_variable'
+      }
+    ]
+  property:
+    comment: 'Class property or enumeration member access'
+    name: 'variable.other.property.matlab'
+    match: '(?<=\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:\\(|\\{|\\.\\())'
+  readwrite_variable:
+    comment: 'Top-level workspace variable highlighting'
+    name: 'variable.other.readwrite.matlab'
+    match: '(?<![a-zA-Z0-9_]|\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|\\(|\\{|\\.\\()'
