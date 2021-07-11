@@ -3,7 +3,6 @@ fileTypes: [
 ]
 keyEquivalent: '^~M'
 name: 'Argument validation functions (MATLAB)'
-scopeName: 'validation.matlab.injection'
 injectionSelector: 'source.matlab meta.class.matlab meta.arguments.matlab meta.block.validation.matlab'
 uuid: '6C8870EF-521E-4C7C-B19E-B20FDC9A5E84'
 patterns: [

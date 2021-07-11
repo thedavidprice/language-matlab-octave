@@ -3,7 +3,6 @@ fileTypes: [
 ]
 keyEquivalent: '^~M'
 name: 'Package functions (MATLAB)'
-scopeName: 'package.matlab.injection'
 injectionSelector: 'source.matlab -comment -string -interpolation -assignment'
 uuid: '449661EB-D2A8-40B8-8B58-93669F69F4B7'
 patterns: [

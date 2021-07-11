@@ -3,7 +3,6 @@ fileTypes: [
 ]
 keyEquivalent: '^~M'
 name: 'Read-write operations with variables (MATLAB)'
-scopeName: 'readwrite.matlab.injection'
 injectionSelector: 'source.matlab -comment -function-call -support -string -interpolation'
 uuid: '057DFD42-9A62-4AA3-822C-A00A6609EC9E'
 patterns: [

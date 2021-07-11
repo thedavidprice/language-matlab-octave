@@ -3,7 +3,6 @@ fileTypes: [
 ]
 keyEquivalent: '^~M'
 name: 'Overload method definition (MATLAB)'
-scopeName: 'overload.matlab.injection'
 injectionSelector: 'source.matlab meta.class.matlab meta.methods.matlab meta.function.definition.matlab'
 uuid: 'FDE5FBC3-BA16-4FF8-9225-8B27B29F5BCF'
 patterns: [
