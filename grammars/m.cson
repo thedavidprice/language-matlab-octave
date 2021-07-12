@@ -18,7 +18,7 @@ patterns: [
   }
 ]
 injections: {
-  'source.matlab -comment -string -interpolation':
+  'source.matlab - (comment, string, interpolation, comment *, string *, interpolation *)':
     patterns: [
       {
         include: '#keywords'
@@ -54,7 +54,7 @@ injections: {
         include: '#overload_definition'
       }
     ]
-  'source.matlab -comment -string -interpolation -assignment':
+  'source.matlab - (comment, string, interpolation, assignment, comment *, string *, interpolation *, assignment *)':
     patterns: [
       {
         include: '#package_builtin_functions'
@@ -78,7 +78,7 @@ injections: {
         include: '#package_word_operators'
       }
     ]
-  'source.matlab -comment -function-call -support -string -interpolation':
+  'source.matlab - (comment, function-call, support, string, interpolation, comment *, function-call *, support *, string *, interpolation *)':
     patterns: [
       {
         include: '#readwrite_operations'
@@ -1686,7 +1686,7 @@ repository:
       {
         comment: 'Removed or pre-R2021a functionality'
         name: 'invalid.deprecated.matlab'
-        match: '(?<!\\.|\\w)(?:actxcontrol|actxcontrollist|actxcontrolselect|addParamValue|baryToCart|callSoapService|cartToBary|checkin|checkout|circumcenters|cmopts|codeCompatibilityReport|createClassFromWsdl|createCopy|createSoapMessage|csvread|csvwrite|customverctrl|dblquad|depdir|dlmread|dlmread|dlmwrite|edgeAttachments|edges|enableNETfromNetworkDrive|ezsurf|ezsurfc|faceNormals|featureEdges|findstr|flipdim|fopen|freeBoundary|guide|hdf5info|hdf5write|hdftool|hgsetget|hist|histc|hostid|inOutStatus|incenters|inferiorto|inline|instrcallback|instrfind|instrfindall|intwarning|isEdge|isInputSizeLockedImpl|isfullfile|isstr|lasterror|menu|nargchk|nearestNeighbor|neighbors|neighbors|notebook|opengl(?=\\s*(?:\\(\\s*["\'])?(?:data|info))|parseSoapResponse|plotyy|pointLocation|polar|quad|quadl|quadl|quadv|rmdir|rmmissing|rmoutliers|rose|serial|serial|serialbreak|seriallist|setstr|shiftdim|str2mat|strmatch|strvcat|superiorto|supportPackageInstaller|triplequad|TriRep|TriScatteredInterp|undocheckout|urlread|urlwrite|vectorize|verctrl|vertexAttachments|voronoiDiagram|whatsnew|xlsfinfo|xlsread|xlswrite)\\b|(?<=[a-zA-Z0-9_]\\.)(?:ActivePositionProperty|BaudRate|BreakInterruptFcn|ByteOrder|BytesAvailable|BytesAvailableFcn|BytesAvailableFcnCount|BytesAvailableFcnMode|BytesToOutput|Callback|DataBits|DataTerminalReady|ErrorFcn|FlowControl|InputBufferSize|Name|ObjectVisibility|OutputBufferSize|OutputEmptyFcn|Parity|PinStatus|PinStatusFcn|Port|Position|ReadAsyncMode|RecordDetail|RecordMode|RecordName|RecordStatus|RequestToSend|Status|StopBits|Tag|Terminator|Timeout|TimerFcn|TimerPeriod|TransferStatus|Type|UIContextMenu|UserData|ValuesReceived|ValuesSent|Visible)\\b|(?:(?<=NET\\.)convertArray|(?<=matlab\\.io.datastore\\.)HadoopFileBased|(?<=matlab\\.system\\.)StringSet|(?<=matlab\\.system\\.mixin\\.)(?:CustomIcon|Nondirect|Propagates|SampleTime)|(?<=matlab\\.unittest\\.plugins\\.)FailureDiagnosticsPlugin|(?<=matlabshared\\.supportpkg\\.)checkForUpdate)\\b|(?<=[\'"])(?:peer|SamplingRate)(?=[\'"])'
+        match: '(?<!\\.|\\w)(?:actxcontrol|actxcontrollist|actxcontrolselect|addParamValue|baryToCart|callSoapService|cartToBary|checkin|checkout|circumcenters|cmopts|codeCompatibilityReport|createClassFromWsdl|createCopy|createSoapMessage|csvread|csvwrite|customverctrl|dblquad|depdir|dlmread|dlmread|dlmwrite|edgeAttachments|edges|enableNETfromNetworkDrive|ezsurf|ezsurfc|faceNormals|featureEdges|findstr|flipdim|fopen|freeBoundary|guide|hdf5info|hdf5write|hdftool|hgsetget|hist|histc|hostid|inOutStatus|incenters|inferiorto|inline|instrcallback|instrfind|instrfindall|intwarning|isEdge|isInputSizeLockedImpl|isfullfile|isstr|lasterror|menu|nargchk|nearestNeighbor|neighbors|neighbors|notebook|opengl(?=\\s*(?:\\(\\s*["\'])?(?:data|info))|parseSoapResponse|plotyy|pointLocation|polar|quad|quadl|quadl|quadv|rmdir|rmmissing|rmoutliers|rose|serial|serial|serialbreak|seriallist|setstr|shiftdim|str2mat|strmatch|strvcat|superiorto|supportPackageInstaller|triplequad|TriRep|TriScatteredInterp|undocheckout|urlread|urlwrite|vectorize|verctrl|vertexAttachments|voronoiDiagram|whatsnew|xlsfinfo|xlsread|xlswrite)\\b|(?<=[a-zA-Z0-9_]\\.)(?:ActivePositionProperty|BaudRate|BreakInterruptFcn|ByteOrder|BytesAvailable|BytesAvailableFcn|BytesAvailableFcnCount|BytesAvailableFcnMode|BytesToOutput|Callback|DataBits|DataTerminalReady|ErrorFcn|FlowControl|InputBufferSize|Name|ObjectVisibility|OutputBufferSize|OutputEmptyFcn|Parity|PinStatus|PinStatusFcn|Port|Position|ReadAsyncMode|RecordDetail|RecordMode|RecordName|RecordStatus|RequestToSend|Status|StopBits|Tag|Terminator|Timeout|TimerFcn|TimerPeriod|TransferStatus|Type|UIContextMenu|UserData|ValuesReceived|ValuesSent)\\b|(?:(?<=NET\\.)convertArray|(?<=matlab\\.io.datastore\\.)HadoopFileBased|(?<=matlab\\.system\\.)StringSet|(?<=matlab\\.system\\.mixin\\.)(?:CustomIcon|Nondirect|Propagates|SampleTime)|(?<=matlab\\.unittest\\.plugins\\.)FailureDiagnosticsPlugin|(?<=matlabshared\\.supportpkg\\.)checkForUpdate)\\b|(?<=[\'"])(?:peer|SamplingRate)(?=[\'"])'
       }
     ]
   constructs:
