@@ -1,0 +1,139 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "MultiStart.run [globaloptim]":
+        prefix: "MultiStart.run"
+        body: '''MultiStart.run(${1:problem}, ${2:optional_numstartpts})'''
+        description: '''[globaloptim] 
+        MultiStart.run(problem, optional_numstartpts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/MultiStart.run.html'
+
+
+    "gamultiobj [globaloptim]":
+        prefix: "gamultiobj"
+        body: '''gamultiobj(${1:fun}, ${2:nvars}, ${3:Aineq}, ${4:bineq}, ${5:Aeq}, ${6:beq}, ${7:lb}, ${8:ub}, ${9:nonlcon}, ${10:options})'''
+        description: '''[globaloptim] Find Pareto front of multiple fitness functions using
+genetic algorithm
+        gamultiobj(fun, nvars, Aineq, bineq, Aeq, beq, lb, ub, nonlcon, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/gamultiobj.html'
+
+
+    "surrogateopt [globaloptim]":
+        prefix: "surrogateopt"
+        body: '''surrogateopt(${1:filename}, ${2:options})'''
+        description: '''[globaloptim] Surrogate optimization for global minimization of time-consuming objective
+            functions
+        surrogateopt(filename, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/surrogateopt.html'
+
+
+    "particleswarm [globaloptim]":
+        prefix: "particleswarm"
+        body: '''particleswarm(${1:fun}, ${2:nvars}, ${3:lb}, ${4:ub}, ${5:options})'''
+        description: '''[globaloptim] Particle swarm optimization
+        particleswarm(fun, nvars, lb, ub, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/particleswarm.html'
+
+
+    "CustomStartPointSet [globaloptim]":
+        prefix: "CustomStartPointSet"
+        body: '''CustomStartPointSet(${1:ptsmatrix})'''
+        description: '''[globaloptim] 
+        CustomStartPointSet(ptsmatrix)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/CustomStartPointSet.html'
+
+
+    "patternsearch [globaloptim]":
+        prefix: "patternsearch"
+        body: '''patternsearch(${1:fun}, ${2:x0}, ${3:Aineq}, ${4:bineq}, ${5:Aeq}, ${6:beq}, ${7:lb}, ${8:ub}, ${9:nonlcon}, ${10:options})'''
+        description: '''[globaloptim] Find minimum of function using pattern search
+        patternsearch(fun, x0, Aineq, bineq, Aeq, beq, lb, ub, nonlcon, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/patternsearch.html'
+
+
+    "simulannealbnd [globaloptim]":
+        prefix: "simulannealbnd"
+        body: '''simulannealbnd(${1:fun}, ${2:x0}, ${3:lb}, ${4:ub}, ${5:options})'''
+        description: '''[globaloptim] Find minimum of function using simulated annealing algorithm
+        simulannealbnd(fun, x0, lb, ub, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/simulannealbnd.html'
+
+
+    "GlobalSearch [globaloptim]":
+        prefix: "GlobalSearch"
+        body: '''GlobalSearch(${1:optional_oldSolver}, 'BasinRadiusFactor', ${2:value}, 'Display', ${3:value}, 'DistanceThresholdFactor', ${4:value}, 'FunctionTolerance', ${5:value}, 'MaxTime', ${6:value}, 'MaxWaitCycle', ${7:value}, 'NumStageOnePoints', ${8:value}, 'OutputFcn', ${9:value}, 'PenaltyThresholdFactor', ${10:value}, 'PlotFcn', ${11:value}, 'StartPointsToRun', ${12:value}, 'XTolerance', ${13:value})'''
+        description: '''[globaloptim] 
+        GlobalSearch(optional_oldSolver, 'BasinRadiusFactor', value, 'Display', value, 'DistanceThresholdFactor', value, 'FunctionTolerance', value, 'MaxTime', value, 'MaxWaitCycle', value, 'NumStageOnePoints', value, 'OutputFcn', value, 'PenaltyThresholdFactor', value, 'PlotFcn', value, 'StartPointsToRun', value, 'XTolerance', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/GlobalSearch.html'
+
+
+    "paretosearch [globaloptim]":
+        prefix: "paretosearch"
+        body: '''paretosearch(${1:fun}, ${2:nvars}, ${3:Aineq}, ${4:bineq}, ${5:Aeq}, ${6:beq}, ${7:lb}, ${8:ub}, ${9:nonlcon}, ${10:options})'''
+        description: '''[globaloptim] Find points in Pareto set
+        paretosearch(fun, nvars, Aineq, bineq, Aeq, beq, lb, ub, nonlcon, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/paretosearch.html'
+
+
+    "RandomStartPointSet.list [globaloptim]":
+        prefix: "RandomStartPointSet.list"
+        body: '''RandomStartPointSet.list(${1:rs}, ${2:problem})'''
+        description: '''[globaloptim] 
+        RandomStartPointSet.list(rs, problem)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/RandomStartPointSet.list.html'
+
+
+    "ga [globaloptim]":
+        prefix: "ga"
+        body: '''ga(${1:fun}, ${2:nvars}, ${3:Aineq}, ${4:bineq}, ${5:Aeq}, ${6:beq}, ${7:lb}, ${8:ub}, ${9:nonlcon}, ${10:intcon})'''
+        description: '''[globaloptim] Find minimum of function using genetic algorithm
+        ga(fun, nvars, Aineq, bineq, Aeq, beq, lb, ub, nonlcon, intcon)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ga.html'
+
+
+    "MultiStart [globaloptim]":
+        prefix: "MultiStart"
+        body: '''MultiStart(${1:optional_oldSolver}, 'Display', ${2:value}, 'FunctionTolerance', ${3:value}, 'MaxTime', ${4:value}, 'OutputFcn', ${5:value}, 'PlotFcn', ${6:value}, 'StartPointsToRun', ${7:value}, 'UseParallel', ${8:value}, 'XTolerance', ${9:value})'''
+        description: '''[globaloptim] 
+        MultiStart(optional_oldSolver, 'Display', value, 'FunctionTolerance', value, 'MaxTime', value, 'OutputFcn', value, 'PlotFcn', value, 'StartPointsToRun', value, 'UseParallel', value, 'XTolerance', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/MultiStart.html'
+
+
+    "CustomStartPointSet.list [globaloptim]":
+        prefix: "CustomStartPointSet.list"
+        body: '''CustomStartPointSet.list(${1:cs})'''
+        description: '''[globaloptim] 
+        CustomStartPointSet.list(cs)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/CustomStartPointSet.list.html'
+
+
+    "RandomStartPointSet [globaloptim]":
+        prefix: "RandomStartPointSet"
+        body: '''RandomStartPointSet(${1:optional_oldrs}, 'ArtificialBound', ${2:value}, 'NumStartPoints', ${3:value})'''
+        description: '''[globaloptim] 
+        RandomStartPointSet(optional_oldrs, 'ArtificialBound', value, 'NumStartPoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/RandomStartPointSet.html'
+
+
+    "GlobalSearch.run [globaloptim]":
+        prefix: "GlobalSearch.run"
+        body: '''GlobalSearch.run(${1:problem})'''
+        description: '''[globaloptim] 
+        GlobalSearch.run(problem)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/GlobalSearch.run.html'
+

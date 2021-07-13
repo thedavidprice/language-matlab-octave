@@ -1,0 +1,755 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "mat2cell [matlab]":
+        prefix: "mat2cell"
+        body: '''${3:C} = mat2cell(${1:A}, ${2:rowDist})'''
+        description: '''[matlab] Convert array to cell array whose cells contain subarrays
+        C = mat2cell(A, rowDist)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mat2cell.html'
+
+
+    "table2cell [matlab]":
+        prefix: "table2cell"
+        body: '''${2:C} = table2cell(${1:T})'''
+        description: '''[matlab] Convert table to cell array
+        C = table2cell(T)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table2cell.html'
+
+
+    "addprop [matlab]":
+        prefix: "addprop"
+        body: '''${4:T} = addprop(${1:T}, ${2:pname}, ${3:pname})'''
+        description: '''[matlab] Add custom properties to table or timetable
+        T = addprop(T, pname, pname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/addprop.html'
+
+
+    "rows2vars [matlab]":
+        prefix: "rows2vars"
+        body: '''${4:T2} = rows2vars(${1:T1}, 'VariableNamesSource', ${2:value}, 'DataVariables', ${3:value})'''
+        description: '''[matlab] Reorient table or timetable so that rows become variables
+        T2 = rows2vars(T1, 'VariableNamesSource', value, 'DataVariables', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rows2vars.html'
+
+
+    "istable [matlab]":
+        prefix: "istable"
+        body: '''${2:tf} = istable(${1:A})'''
+        description: '''[matlab] Determine whether input is table
+        tf = istable(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/istable.html'
+
+
+    "rowfun [matlab]":
+        prefix: "rowfun"
+        body: '''${11:B} = rowfun(${1:func}, ${2:A}, 'OutputFormat', ${3:value}, 'InputVariables', ${4:value}, 'GroupingVariables', ${5:value}, 'SeparateInputs', ${6:value}, 'ExtractCellContents', ${7:value}, 'OutputVariableNames', ${8:value}, 'NumOutputs', ${9:value}, 'ErrorHandler', ${10:value})'''
+        description: '''[matlab] Apply function to table or timetable rows
+        B = rowfun(func, A, 'OutputFormat', value, 'InputVariables', value, 'GroupingVariables', value, 'SeparateInputs', value, 'ExtractCellContents', value, 'OutputVariableNames', value, 'NumOutputs', value, 'ErrorHandler', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/rowfun.html'
+
+
+    "array2table [matlab]":
+        prefix: "array2table"
+        body: '''${4:T} = array2table(${1:A}, 'RowNames', ${2:value}, 'VariableNames', ${3:value})'''
+        description: '''[matlab] Convert homogeneous array to table
+        T = array2table(A, 'RowNames', value, 'VariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/array2table.html'
+
+
+    "head [matlab]":
+        prefix: "head"
+        body: '''${3:B} = head(${1:A}, ${2:k})'''
+        description: '''[matlab] Get top rows of table, timetable, or tall array
+        B = head(A, k)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/head.html'
+
+
+    "retime [matlab]":
+        prefix: "retime"
+        body: '''${3:TT2} = retime(${1:TT1}, ${2:newTimeStep})'''
+        description: '''[matlab] Resample or aggregate data in timetable, and resolve duplicate or irregular
+            times
+        TT2 = retime(TT1, newTimeStep)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/timetable.retime.html'
+
+
+    "union [matlab]":
+        prefix: "union"
+        body: '''[${4:C}, ${5:ia}, ${6:ib}] = union(${1:A}, ${2:B}, ${3:setOrder})'''
+        description: '''[matlab] Union of polyshape objects
+        [C, ia, ib] = union(A, B, setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.union.html'
+
+
+    "struct2table [matlab]":
+        prefix: "struct2table"
+        body: '''${4:T} = struct2table(${1:s}, 'RowNames', ${2:value}, 'AsArray', ${3:value})'''
+        description: '''[matlab] Convert structure array to table
+        T = struct2table(s, 'RowNames', value, 'AsArray', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/struct2table.html'
+
+
+    "issortedrows [matlab]":
+        prefix: "issortedrows"
+        body: '''${6:TF} = issortedrows(${1:tblA}, ${2:vars}, ${3:direction}, 'MissingPlacement', ${4:value}, 'ComparisonMethod', ${5:value})'''
+        description: '''[matlab] Determine if matrix or table rows are sorted
+        TF = issortedrows(tblA, vars, direction, 'MissingPlacement', value, 'ComparisonMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/issortedrows.html'
+
+
+    "orderfields [matlab]":
+        prefix: "orderfields"
+        body: '''[${3:s}, ${4:perm}] = orderfields(${1:s1 }, ${2:perm})'''
+        description: '''[matlab] Order fields of structure array
+        [s, perm] = orderfields(s1 , perm)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/orderfields.html'
+
+
+    "double._parenReference [matlab]":
+        prefix: "double._parenReference"
+        body: '''double._parenReference(${1:d}, ${2:index})'''
+        description: '''[matlab] 
+        double._parenReference(d, index)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/double._parenReference.html'
+
+
+    "outerjoin [matlab]":
+        prefix: "outerjoin"
+        body: '''[${8:T}, ${9:ileft}, ${10:iright}] = outerjoin(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value}, 'MergeKeys', ${6:value}, 'Type', ${7:value})'''
+        description: '''[matlab] Outer join between two tables or timetables
+        [T, ileft, iright] = outerjoin(Tleft, Tright, 'Keys', value, 'LeftVariables', value, 'RightVariables', value, 'MergeKeys', value, 'Type', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/outerjoin.html'
+
+
+    "cell [matlab]":
+        prefix: "cell"
+        body: '''${2:D} = cell(${1:obj})'''
+        description: '''[matlab] Cell array
+        D = cell(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cell.html'
+
+
+    "tail [matlab]":
+        prefix: "tail"
+        body: '''${3:B} = tail(${1:A}, ${2:k})'''
+        description: '''[matlab] Get bottom rows of table, timetable, or tall array
+        B = tail(A, k)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tail.html'
+
+
+    "mergevars [matlab]":
+        prefix: "mergevars"
+        body: '''${5:T} = mergevars(${1:T}, ${2:vars}, 'NewVariableName', ${3:value}, 'MergeAsTable', ${4:value})'''
+        description: '''[matlab] Combine table or timetable variables into multicolumn variable
+        T = mergevars(T, vars, 'NewVariableName', value, 'MergeAsTable', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table.mergevars.html'
+
+
+    "setxor [matlab]":
+        prefix: "setxor"
+        body: '''[${4:C}, ${5:ia}, ${6:ib}] = setxor(${1:A}, ${2:B}, ${3:setOrder})'''
+        description: '''[matlab] Set exclusive OR of two arrays
+        [C, ia, ib] = setxor(A, B, setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setxor.html'
+
+
+    "tabular._parenAssign [matlab]":
+        prefix: "tabular._parenAssign"
+        body: '''tabular._parenAssign(${1:T}, ${2:rows}, ${3:vars})'''
+        description: '''[matlab] 
+        tabular._parenAssign(T, rows, vars)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tabular._parenAssign.html'
+
+
+    "lag [matlab]":
+        prefix: "lag"
+        body: '''${3:TT2} = lag(${1:TT1}, ${2:dt})'''
+        description: '''[matlab] Time-shift data in timetable
+        TT2 = lag(TT1, dt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/timetable.lag.html'
+
+
+    "namedargs2cell [matlab]":
+        prefix: "namedargs2cell"
+        body: '''${2:c} = namedargs2cell(${1:s})'''
+        description: '''[matlab] Convert structure containing name-value pairs to cell array
+        c = namedargs2cell(s)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/namedargs2cell.html'
+
+
+    "inner2outer [matlab]":
+        prefix: "inner2outer"
+        body: '''${2:T1} = inner2outer(${1:T})'''
+        description: '''[matlab] Invert nested table-in-table hierarchy in tables or timetables
+        T1 = inner2outer(T)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table.inner2outer.html'
+
+
+    "timerange [matlab]":
+        prefix: "timerange"
+        body: '''${3:S} = timerange(${1:timePeriod}, ${2:unitOfTime})'''
+        description: '''[matlab] Time range for timetable row subscripting
+        S = timerange(timePeriod, unitOfTime)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/timerange.html'
+
+
+    "height [matlab]":
+        prefix: "height"
+        body: '''${2:H} = height(${1:T})'''
+        description: '''[matlab] Number of table rows
+        H = height(T)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/height.html'
+
+
+    "timetable [matlab]":
+        prefix: "timetable"
+        body: '''${8:TT} = timetable(${1:'Size'}, ${2:sz}, ${3:'VariableTypes'}, ${4:varTypes}, ${5:'RowTimes'}, ${6:rowTimes}, 'VariableNames', ${7:value})'''
+        description: '''[matlab] Timetable array with time-stamped rows and variables of different
+            types
+        TT = timetable('Size', sz, 'VariableTypes', varTypes, 'RowTimes', rowTimes, 'VariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/timetable.html'
+
+
+    "intersect [matlab]":
+        prefix: "intersect"
+        body: '''[${4:C}, ${5:ia}, ${6:ib}] = intersect(${1:A}, ${2:B}, ${3:setOrder})'''
+        description: '''[matlab] Intersection of polyshape objects
+        [C, ia, ib] = intersect(A, B, setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.intersect.html'
+
+
+    "saveobj [matlab]":
+        prefix: "saveobj"
+        body: '''${2:b} = saveobj(${1:a})'''
+        description: '''[matlab] Modify save process for object
+        b = saveobj(a)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/saveobj.html'
+
+
+    "istimetable [matlab]":
+        prefix: "istimetable"
+        body: '''${2:tf} = istimetable(${1:A})'''
+        description: '''[matlab] Determine if input is timetable
+        tf = istimetable(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/istimetable.html'
+
+
+    "cell2table [matlab]":
+        prefix: "cell2table"
+        body: '''${4:T} = cell2table(${1:C}, 'RowNames', ${2:value}, 'VariableNames', ${3:value})'''
+        description: '''[matlab] Convert cell array to table
+        T = cell2table(C, 'RowNames', value, 'VariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cell2table.html'
+
+
+    "movevars [matlab]":
+        prefix: "movevars"
+        body: '''${4:T} = movevars(${1:T}, ${2:vars}, 'Before', ${3:value})'''
+        description: '''[matlab] Move variables in table or timetable
+        T = movevars(T, vars, 'Before', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table.movevars.html'
+
+
+    "isregular [matlab]":
+        prefix: "isregular"
+        body: '''[${3:TF}, ${4:dt}] = isregular(${1:TT}, ${2:unit})'''
+        description: '''[matlab] Determine whether times in timetable are regular
+        [TF, dt] = isregular(TT, unit)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/timetable.isregular.html'
+
+
+    "width [matlab]":
+        prefix: "width"
+        body: '''${2:W} = width(${1:T})'''
+        description: '''[matlab] Number of table variables
+        W = width(T)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/width.html'
+
+
+    "join [matlab]":
+        prefix: "join"
+        body: '''[${7:T}, ${8:iright}] = join(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value}, 'KeepOneCopy', ${6:value})'''
+        description: '''[matlab] Combine two tables or timetables by rows using key variables
+        [T, iright] = join(Tleft, Tright, 'Keys', value, 'LeftVariables', value, 'RightVariables', value, 'KeepOneCopy', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table.join.html'
+
+
+    "cat [matlab]":
+        prefix: "cat"
+        body: '''${4:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        description: '''[matlab] Concatenate geographic or planar vector
+        C = cat(dim, A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/geopoint.cat.html'
+
+
+    "double._parenAssign [matlab]":
+        prefix: "double._parenAssign"
+        body: '''double._parenAssign(${1:d}, ${2:index})'''
+        description: '''[matlab] 
+        double._parenAssign(d, index)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/double._parenAssign.html'
+
+
+    "isfield [matlab]":
+        prefix: "isfield"
+        body: '''${3:tf} = isfield(${1:S}, ${2:C})'''
+        description: '''[matlab] Check whether character vector is field name
+        tf = isfield(S, C)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/isfield.html'
+
+
+    "table2struct [matlab]":
+        prefix: "table2struct"
+        body: '''${3:S} = table2struct(${1:T}, 'ToScalar', ${2:value})'''
+        description: '''[matlab] Convert table to structure array
+        S = table2struct(T, 'ToScalar', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table2struct.html'
+
+
+    "table2timetable [matlab]":
+        prefix: "table2timetable"
+        body: '''${3:TT} = table2timetable(${1:T}, 'RowTimes', ${2:value})'''
+        description: '''[matlab] Convert table to timetable
+        TT = table2timetable(T, 'RowTimes', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/table2timetable.html'
+
+
+    "sortrows [matlab]":
+        prefix: "sortrows"
+        body: '''[${6:tblB}, ${7:index}] = sortrows(${1:tblA}, ${2:vars}, ${3:direction}, 'MissingPlacement', ${4:value}, 'ComparisonMethod', ${5:value})'''
+        description: '''[matlab] Sort rows of matrix or table
+        [tblB, index] = sortrows(tblA, vars, direction, 'MissingPlacement', value, 'ComparisonMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/double.sortrows.html'
+
+
+    "vartype [matlab]":
+        prefix: "vartype"
+        body: '''${2:S} = vartype(${1:type})'''
+        description: '''[matlab] Subscript into table or timetable by variable type
+        S = vartype(type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/vartype.html'
+
+
+    "topkrows [matlab]":
+        prefix: "topkrows"
+        body: '''[${6:tblB}, ${7:index}] = topkrows(${1:tblA}, ${2:k}, ${3:vars}, ${4:direction}, 'ComparisonMethod', ${5:value})'''
+        description: '''[matlab] Top rows in sorted order
+        [tblB, index] = topkrows(tblA, k, vars, direction, 'ComparisonMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/topkrows.html'
+
+
+    "struct2cell [matlab]":
+        prefix: "struct2cell"
+        body: '''${2:c} = struct2cell(${1:s})'''
+        description: '''[matlab] Convert structure to cell array
+        c = struct2cell(s)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/struct2cell.html'
+
+
+    "cell2struct [matlab]":
+        prefix: "cell2struct"
+        body: '''${4:structArray} = cell2struct(${1:cellArray}, ${2:fields}, ${3:dim})'''
+        description: '''[matlab] Convert cell array to structure array
+        structArray = cell2struct(cellArray, fields, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cell2struct.html'
+
+
+    "ismember [matlab]":
+        prefix: "ismember"
+        body: '''[${3:Lia}, ${4:Locb}] = ismember(${1:A}, ${2:B})'''
+        description: '''[matlab] Array elements that are members of set array
+        [Lia, Locb] = ismember(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismember.html'
+
+
+    "vertcat [matlab]":
+        prefix: "vertcat"
+        body: '''${2:C} = vertcat(${1:A})'''
+        description: '''[matlab] Concatenate arrays vertically
+        C = vertcat(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/vertcat.html'
+
+
+    "withtol [matlab]":
+        prefix: "withtol"
+        body: '''${3:S} = withtol(${1:rowTimes}, ${2:tol})'''
+        description: '''[matlab] Time tolerance for timetable row subscripting
+        S = withtol(rowTimes, tol)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/withtol.html'
+
+
+    "varfun [matlab]":
+        prefix: "varfun"
+        body: '''${7:B} = varfun(${1:func}, ${2:A}, 'OutputFormat', ${3:value}, 'InputVariables', ${4:value}, 'GroupingVariables', ${5:value}, 'ErrorHandler', ${6:value})'''
+        description: '''[matlab] Apply function to table or timetable variables
+        B = varfun(func, A, 'OutputFormat', value, 'InputVariables', value, 'GroupingVariables', value, 'ErrorHandler', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/varfun.html'
+
+
+    "array2timetable [matlab]":
+        prefix: "array2timetable"
+        body: '''${4:TT} = array2timetable(${1:X}, 'RowTimes', ${2:value}, 'VariableNames', ${3:value})'''
+        description: '''[matlab] Convert homogeneous array to timetable
+        TT = array2timetable(X, 'RowTimes', value, 'VariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/array2timetable.html'
+
+
+    "tabular._curlyBraceReference [matlab]":
+        prefix: "tabular._curlyBraceReference"
+        body: '''tabular._curlyBraceReference(${1:T}, ${2:rows}, ${3:vars})'''
+        description: '''[matlab] 
+        tabular._curlyBraceReference(T, rows, vars)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tabular._curlyBraceReference.html'
+
+
+    "convertvars [matlab]":
+        prefix: "convertvars"
+        body: '''${4:T} = convertvars(${1:T}, ${2:vars}, ${3:type})'''
+        description: '''[matlab] Convert table or timetable variables to specified data type
+        T = convertvars(T, vars, type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/convertvars.html'
+
+
+    "arrayfun [matlab]":
+        prefix: "arrayfun"
+        body: '''${5:B} = arrayfun(${1:func}, ${2:A}, 'UniformOutput', ${3:value}, 'ErrorHandler', ${4:value})'''
+        description: '''[matlab] Apply function to each element of array
+        B = arrayfun(func, A, 'UniformOutput', value, 'ErrorHandler', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/arrayfun.html'
+
+
+    "num2cell [matlab]":
+        prefix: "num2cell"
+        body: '''${3:C} = num2cell(${1:A}, ${2:dim})'''
+        description: '''[matlab] Convert array to cell array with consistently sized cells
+        C = num2cell(A, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/num2cell.html'
+
+
+    "isempty [matlab]":
+        prefix: "isempty"
+        body: '''${2:TF} = isempty(${1:A})'''
+        description: '''[matlab] Determine whether MetaData object is empty
+        TF = isempty(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.isempty.html'
+
+
+    "setdiff [matlab]":
+        prefix: "setdiff"
+        body: '''[${4:C}, ${5:ia}] = setdiff(${1:A}, ${2:B}, ${3:setOrder})'''
+        description: '''[matlab] Set difference of two arrays
+        [C, ia] = setdiff(A, B, setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setdiff.html'
+
+
+    "table [matlab]":
+        prefix: "table"
+        body: '''${7:T} = table(${1:'Size'}, ${2:sz}, ${3:'VariableTypes'}, ${4:varTypes}, 'RowNames', ${5:value}, 'VariableNames', ${6:value})'''
+        description: '''[matlab] Table array with named variables that can contain different types
+        T = table('Size', sz, 'VariableTypes', varTypes, 'RowNames', value, 'VariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table.html'
+
+
+    "rmprop [matlab]":
+        prefix: "rmprop"
+        body: '''${3:T} = rmprop(${1:T}, ${2:pname})'''
+        description: '''[matlab] Remove property from geographic or planar vector
+        T = rmprop(T, pname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/geopoint.rmprop.html'
+
+
+    "setfield [matlab]":
+        prefix: "setfield"
+        body: '''${6:s} = setfield(${1:s}, ${2:{sIndx1,...,sIndxM}}, ${3:field}, ${4:{fIndx1,...,fIndxN}}, ${5:value})'''
+        description: '''[matlab] Set content of specific field 
+        s = setfield(s, {sIndx1,...,sIndxM}, field, {fIndx1,...,fIndxN}, value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/setfield.html'
+
+
+    "unique [matlab]":
+        prefix: "unique"
+        body: '''[${3:C}, ${4:ia}, ${5:ic}] = unique(${1:A}, ${2:setOrder})'''
+        description: '''[matlab] Unique values in array
+        [C, ia, ic] = unique(A, setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unique.html'
+
+
+    "unstack [matlab]":
+        prefix: "unstack"
+        body: '''[${8:U}, ${9:is}] = unstack(${1:S}, ${2:vars}, ${3:ivar}, 'GroupingVariables', ${4:value}, 'ConstantVariables', ${5:value}, 'NewDataVariableNames', ${6:value}, 'AggregationFunction', ${7:value})'''
+        description: '''[matlab] Unstack data from single variable into multiple variables
+        [U, is] = unstack(S, vars, ivar, 'GroupingVariables', value, 'ConstantVariables', value, 'NewDataVariableNames', value, 'AggregationFunction', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unstack.html'
+
+
+    "horzcat [matlab]":
+        prefix: "horzcat"
+        body: '''${2:C} = horzcat(${1:A})'''
+        description: '''[matlab] Concatenate arrays horizontally
+        C = horzcat(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/horzcat.html'
+
+
+    "addvars [matlab]":
+        prefix: "addvars"
+        body: '''${5:T} = addvars(${1:T}, ${2:var}, 'Before', ${3:value}, 'NewVariableNames', ${4:value})'''
+        description: '''[matlab] Add variables to table or timetable
+        T = addvars(T, var, 'Before', value, 'NewVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table.addvars.html'
+
+
+    "ndims [matlab]":
+        prefix: "ndims"
+        body: '''${2:N} = ndims(${1:A})'''
+        description: '''[matlab] Query number of dimensions of dynamic system model or
+model array
+        N = ndims(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ndims.html'
+
+
+    "cellplot [matlab]":
+        prefix: "cellplot"
+        body: '''${3:handles} = cellplot(${1:c}, ${2:legend})'''
+        description: '''[matlab] Graphically display structure of cell array
+        handles = cellplot(c, legend)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cellplot.html'
+
+
+    "numel [matlab]":
+        prefix: "numel"
+        body: '''${2:n} = numel(${1:A})'''
+        description: '''[matlab] Number of array elements
+        n = numel(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/numel.html'
+
+
+    "timetable2table [matlab]":
+        prefix: "timetable2table"
+        body: '''${3:TT} = timetable2table(${1:T}, 'ConvertRowTimes', ${2:value})'''
+        description: '''[matlab] Convert timetable to table
+        TT = timetable2table(T, 'ConvertRowTimes', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/timetable2table.html'
+
+
+    "getfield [matlab]":
+        prefix: "getfield"
+        body: '''${5:value} = getfield(${1:s}, ${2:{sIndx1,...,sIndxM}}, ${3:field}, ${4:{fIndx1,...,fIndxN}})'''
+        description: '''[matlab] Content of specific field
+        value = getfield(s, {sIndx1,...,sIndxM}, field, {fIndx1,...,fIndxN})
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/getfield.html'
+
+
+    "stack [matlab]":
+        prefix: "stack"
+        body: '''[${6:S}, ${7:iu}] = stack(${1:U}, ${2:vars}, 'ConstantVariables', ${3:value}, 'NewDataVariableName', ${4:value}, 'IndexVariableName', ${5:value})'''
+        description: '''[matlab] Build model array by stacking models or model arrays along
+array dimensions
+        [S, iu] = stack(U, vars, 'ConstantVariables', value, 'NewDataVariableName', value, 'IndexVariableName', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stack.html'
+
+
+    "rmfield [matlab]":
+        prefix: "rmfield"
+        body: '''${3:s} = rmfield(${1:s}, ${2:field})'''
+        description: '''[matlab] Remove data series
+        s = rmfield(s, field)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/rmfield.html'
+
+
+    "removevars [matlab]":
+        prefix: "removevars"
+        body: '''${3:T} = removevars(${1:T}, ${2:vars})'''
+        description: '''[matlab] Delete variables from table or timetable
+        T = removevars(T, vars)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table.removevars.html'
+
+
+    "splitvars [matlab]":
+        prefix: "splitvars"
+        body: '''${4:T} = splitvars(${1:T}, ${2:vars}, 'NewVariableNames', ${3:value})'''
+        description: '''[matlab] Split multicolumn variables in table or timetable
+        T = splitvars(T, vars, 'NewVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table.splitvars.html'
+
+
+    "summary [matlab]":
+        prefix: "summary"
+        body: '''${2:s} = summary(${1:T})'''
+        description: '''[matlab] Print summary of table, timetable, or categorical array
+        s = summary(T)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/table.summary.html'
+
+
+    "table2array [matlab]":
+        prefix: "table2array"
+        body: '''${2:A} = table2array(${1:T})'''
+        description: '''[matlab] Convert table to homogeneous array
+        A = table2array(T)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/table2array.html'
+
+
+    "synchronize [matlab]":
+        prefix: "synchronize"
+        body: '''${2:TT2} = synchronize(${1:TT1})'''
+        description: '''[matlab] Synchronize timetables to common time vector, and resample or aggregate data
+            from input timetables
+        TT2 = synchronize(TT1)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/timetable.synchronize.html'
+
+
+    "structfun [matlab]":
+        prefix: "structfun"
+        body: '''${5:B} = structfun(${1:func}, ${2:A}, 'UniformOutput', ${3:value}, 'ErrorHandler', ${4:value})'''
+        description: '''[matlab] Apply function to each field of scalar structure
+        B = structfun(func, A, 'UniformOutput', value, 'ErrorHandler', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/structfun.html'
+
+
+    "tabular._curlyBraceAssign [matlab]":
+        prefix: "tabular._curlyBraceAssign"
+        body: '''tabular._curlyBraceAssign(${1:T}, ${2:rows}, ${3:vars})'''
+        description: '''[matlab] 
+        tabular._curlyBraceAssign(T, rows, vars)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tabular._curlyBraceAssign.html'
+
+
+    "issorted [matlab]":
+        prefix: "issorted"
+        body: '''${2:TF} = issorted(${1:TT})'''
+        description: '''[matlab] Check whether dates and times are monotonically increasing
+        TF = issorted(TT)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/issorted.html'
+
+
+    "loadobj [matlab]":
+        prefix: "loadobj"
+        body: '''${2:b} = loadobj(${1:a})'''
+        description: '''[matlab] Customize load process for objects
+        b = loadobj(a)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/loadobj.html'
+
+
+    "innerjoin [matlab]":
+        prefix: "innerjoin"
+        body: '''[${6:T}, ${7:ileft}, ${8:iright}] = innerjoin(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value})'''
+        description: '''[matlab] Inner join between two tables or timetables
+        [T, ileft, iright] = innerjoin(Tleft, Tright, 'Keys', value, 'LeftVariables', value, 'RightVariables', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/innerjoin.html'
+
+
+    "cell2mat [matlab]":
+        prefix: "cell2mat"
+        body: '''${2:A} = cell2mat(${1:C})'''
+        description: '''[matlab] Convert cell array to ordinary array of the underlying
+data type
+        A = cell2mat(C)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cell2mat.html'
+
+
+    "cellfun [matlab]":
+        prefix: "cellfun"
+        body: '''${3:A} = cellfun(${1:func}, ${2:C})'''
+        description: '''[matlab] Apply function to each cell in cell array
+        A = cellfun(func, C)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cellfun.html'
+
+
+    "tabular._parenReference [matlab]":
+        prefix: "tabular._parenReference"
+        body: '''tabular._parenReference(${1:T}, ${2:rows}, ${3:vars})'''
+        description: '''[matlab] 
+        tabular._parenReference(T, rows, vars)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tabular._parenReference.html'
+
+
+    "double [matlab]":
+        prefix: "double"
+        body: '''${2:y} = double(${1:x})'''
+        description: '''[matlab] Cast fixed-point filter to use double-precision arithmetic
+        y = double(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/double.html'
+

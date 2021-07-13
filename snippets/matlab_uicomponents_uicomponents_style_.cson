@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "uistyle [matlab]":
+        prefix: "uistyle"
+        body: '''uistyle(${1:properties})'''
+        description: '''[matlab] Create style for table UI component
+        uistyle(properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uistyle.html'
+

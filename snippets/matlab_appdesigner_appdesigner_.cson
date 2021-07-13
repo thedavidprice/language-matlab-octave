@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "appdesigner [matlab]":
+        prefix: "appdesigner"
+        body: '''appdesigner(${1:filename})'''
+        description: '''[matlab] Open App Designer Start Page or existing app file
+        appdesigner(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/appdesigner.html'
+

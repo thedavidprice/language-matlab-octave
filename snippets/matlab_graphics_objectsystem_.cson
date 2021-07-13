@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "openfig [matlab]":
+        prefix: "openfig"
+        body: '''openfig(${1:filename}, ${2:optional_copies}, ${3:optional_visibility})'''
+        description: '''[matlab] Open figure saved in FIG-file
+        openfig(filename, optional_copies, optional_visibility)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/openfig.html'
+

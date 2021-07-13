@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "rtwbuild [rtw]":
+        prefix: "rtwbuild"
+        body: '''rtwbuild(${1:filename}, 'ForceTopModelBuild', ${2:value}, 'generateCodeOnly', ${3:value}, 'Mode', ${4:value}, 'ExportFunctionInitializeFunctionName', ${5:value})'''
+        description: '''[rtw] Build generated code from a model
+        rtwbuild(filename, 'ForceTopModelBuild', value, 'generateCodeOnly', value, 'Mode', value, 'ExportFunctionInitializeFunctionName', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/rtw/ref/rtwbuild.html'
+

@@ -1,0 +1,65 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "rgb2lin [images]":
+        prefix: "rgb2lin"
+        body: '''${4:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        description: '''[images] Linearize gamma-corrected RGB values
+        B = rgb2lin(A, 'ColorSpace', value, 'OutputType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/rgb2lin.html'
+
+
+    "colorangle [images]":
+        prefix: "colorangle"
+        body: '''${3:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
+        description: '''[images] Angle between two RGB vectors
+        angle = colorangle(RGB1, RGB2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/colorangle.html'
+
+
+    "lin2rgb [images]":
+        prefix: "lin2rgb"
+        body: '''${4:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        description: '''[images] Apply gamma correction to linear RGB values
+        B = lin2rgb(A, 'ColorSpace', value, 'OutputType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/lin2rgb.html'
+
+
+    "chromadapt [images]":
+        prefix: "chromadapt"
+        body: '''${5:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
+        description: '''[images] Adjust color balance of RGB image with chromatic adaptation
+        B = chromadapt(A, illuminant, 'ColorSpace', value, 'Method', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/chromadapt.html'
+
+
+    "illumpca [images]":
+        prefix: "illumpca"
+        body: '''${4:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
+        description: '''[images] Estimate illuminant using principal component analysis (PCA)
+        illuminant = illumpca(A, optional_percentage, 'Mask', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/illumpca.html'
+
+
+    "illumgray [images]":
+        prefix: "illumgray"
+        body: '''${5:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
+        description: '''[images] Estimate illuminant using gray world algorithm
+        illuminant = illumgray(A, optional_percentiles, 'Mask', value, 'Norm', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/illumgray.html'
+
+
+    "illumwhite [images]":
+        prefix: "illumwhite"
+        body: '''${4:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
+        description: '''[images] Estimate illuminant using White Patch Retinex algorithm
+        illuminant = illumwhite(A, optional_topPercentile, 'Mask', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/illumwhite.html'
+

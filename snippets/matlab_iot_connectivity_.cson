@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "thingSpeakWrite [matlab]":
+        prefix: "thingSpeakWrite"
+        body: '''thingSpeakWrite(${1:channel_Id}, 'Values', ${2:value}, 'Fields', ${3:value}, 'Location', ${4:value}, 'Timestamp', ${5:value}, 'Timeout', ${6:value}, 'URL', ${7:value}, 'WriteKey', ${8:value})'''
+        description: '''[matlab] Write data to a ThingSpeak channel
+        thingSpeakWrite(channel_Id, 'Values', value, 'Fields', value, 'Location', value, 'Timestamp', value, 'Timeout', value, 'URL', value, 'WriteKey', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/thingspeakwrite.html'
+
+
+    "thingSpeakRead [matlab]":
+        prefix: "thingSpeakRead"
+        body: '''thingSpeakRead(${1:channel_Id}, 'DateRange', ${2:value}, 'Fields', ${3:value}, 'NumDays', ${4:value}, 'NumMinutes', ${5:value}, 'NumPoints', ${6:value}, 'OutputFormat', ${7:value}, 'ReadKey', ${8:value}, 'Location', ${9:value}, 'Timeout', ${10:value}, 'URL', ${11:value})'''
+        description: '''[matlab] Read data stored in a ThingSpeak channel
+        thingSpeakRead(channel_Id, 'DateRange', value, 'Fields', value, 'NumDays', value, 'NumMinutes', value, 'NumPoints', value, 'OutputFormat', value, 'ReadKey', value, 'Location', value, 'Timeout', value, 'URL', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/thingspeakread.html'
+

@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "parquetDatastore [matlab]":
+        prefix: "parquetDatastore"
+        body: '''${10:pds} = parquetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'VariableNames', ${5:value}, 'SelectedVariableNames', ${6:value}, 'ReadSize', ${7:value}, 'OutputType', ${8:value}, 'PreserveVariableNames', ${9:value})'''
+        description: '''[matlab] Datastore for collection of Parquet files
+        pds = parquetDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'VariableNames', value, 'SelectedVariableNames', value, 'ReadSize', value, 'OutputType', value, 'PreserveVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.io.datastore.parquetdatastore.html'
+
+
+    "matlab.io.datastore.ParquetDatastore [matlab]":
+        prefix: "matlab.io.datastore.ParquetDatastore"
+        body: '''${10:pds} = matlab.io.datastore.ParquetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'VariableNames', ${5:value}, 'SelectedVariableNames', ${6:value}, 'ReadSize', ${7:value}, 'OutputType', ${8:value}, 'PreserveVariableNames', ${9:value})'''
+        description: '''[matlab] 
+        pds = matlab.io.datastore.ParquetDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'VariableNames', value, 'SelectedVariableNames', value, 'ReadSize', value, 'OutputType', value, 'PreserveVariableNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.io.datastore.ParquetDatastore.html'
+

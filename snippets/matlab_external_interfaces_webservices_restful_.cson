@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "weboptions [matlab]":
+        prefix: "weboptions"
+        body: '''weboptions(${1:name})'''
+        description: '''[matlab] Specify parameters for RESTful web service
+        weboptions(name)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/weboptions.html'
+

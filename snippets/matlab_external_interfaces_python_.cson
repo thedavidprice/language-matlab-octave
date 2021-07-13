@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "pyenv [matlab]":
+        prefix: "pyenv"
+        body: '''pyenv('Version', ${1:value}, 'ExecutionMode', ${2:value})'''
+        description: '''[matlab] Change default environment of Python interpreter
+        pyenv('Version', value, 'ExecutionMode', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pyenv.html'
+
+
+    "pyversion [matlab]":
+        prefix: "pyversion"
+        body: '''pyversion(${1:filename}, ${2:optional_varargin})'''
+        description: '''[matlab] (Not recommended) Change default version of Python interpreter
+        pyversion(filename, optional_varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pyversion.html'
+

@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "Simulink.exportToVersion [simulink]":
+        prefix: "Simulink.exportToVersion"
+        body: '''Simulink.exportToVersion(${1:model}, ${2:target_filename}, ${3:release_name}, 'BreakUserLinks', ${4:value}, 'BreakToolboxLinks', ${5:value}, 'AllowPrompt', ${6:value})'''
+        description: '''[simulink] Export model or library for use in previous version of Simulink
+        Simulink.exportToVersion(model, target_filename, release_name, 'BreakUserLinks', value, 'BreakToolboxLinks', value, 'AllowPrompt', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slref/simulink.exporttoversion.html'
+

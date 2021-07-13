@@ -1,0 +1,668 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "dsp.MatFileWriter [dsp]":
+        prefix: "dsp.MatFileWriter"
+        body: '''dsp.MatFileWriter(${1:Filename}, ${2:VariableName}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.MatFileWriter(Filename, VariableName, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.MatFileWriter.html'
+
+
+    "dsp.CoupledAllpassFilter [dsp]":
+        prefix: "dsp.CoupledAllpassFilter"
+        body: '''dsp.CoupledAllpassFilter(${1:AllpassCoefficients1}, ${2:AllpassCoefficients2}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.CoupledAllpassFilter(AllpassCoefficients1, AllpassCoefficients2, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.CoupledAllpassFilter.html'
+
+
+    "dsp.AllpassFilter [dsp]":
+        prefix: "dsp.AllpassFilter"
+        body: '''dsp.AllpassFilter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.AllpassFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AllpassFilter.html'
+
+
+    "dsp.HampelFilter [dsp]":
+        prefix: "dsp.HampelFilter"
+        body: '''dsp.HampelFilter(${1:WindowLength}, ${2:Threshold}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.HampelFilter(WindowLength, Threshold, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.HampelFilter.html'
+
+
+    "dsp.HDLFIRRateConverter [dsp]":
+        prefix: "dsp.HDLFIRRateConverter"
+        body: '''dsp.HDLFIRRateConverter(${1:InterpolationFactor}, ${2:DecimationFactor}, ${3:Numerator}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.HDLFIRRateConverter(InterpolationFactor, DecimationFactor, Numerator, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.HDLFIRRateConverter.html'
+
+
+    "dsp.ParametricEQFilter [dsp]":
+        prefix: "dsp.ParametricEQFilter"
+        body: '''dsp.ParametricEQFilter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.ParametricEQFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ParametricEQFilter.html'
+
+
+    "dsp.AnalyticSignal [dsp]":
+        prefix: "dsp.AnalyticSignal"
+        body: '''dsp.AnalyticSignal(${1:FilterOrder}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.AnalyticSignal(FilterOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AnalyticSignal.html'
+
+
+    "dsp.ArrayVectorSubtractor [dsp]":
+        prefix: "dsp.ArrayVectorSubtractor"
+        body: '''dsp.ArrayVectorSubtractor(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.ArrayVectorSubtractor(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ArrayVectorSubtractor.html'
+
+
+    "dsp.SampleRateConverter [dsp]":
+        prefix: "dsp.SampleRateConverter"
+        body: '''dsp.SampleRateConverter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.SampleRateConverter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.SampleRateConverter.html'
+
+
+    "dsp.MovingMinimum [dsp]":
+        prefix: "dsp.MovingMinimum"
+        body: '''dsp.MovingMinimum(${1:WindowLength}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.MovingMinimum(WindowLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.MovingMinimum.html'
+
+
+    "dsp.AffineProjectionFilter [dsp]":
+        prefix: "dsp.AffineProjectionFilter"
+        body: '''dsp.AffineProjectionFilter(${1:Length}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.AffineProjectionFilter(Length, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AffineProjectionFilter.html'
+
+
+    "dsp.FilteredXLMSFilter [dsp]":
+        prefix: "dsp.FilteredXLMSFilter"
+        body: '''dsp.FilteredXLMSFilter(${1:Length}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.FilteredXLMSFilter(Length, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FilteredXLMSFilter.html'
+
+
+    "dsp.AdaptiveLatticeFilter [dsp]":
+        prefix: "dsp.AdaptiveLatticeFilter"
+        body: '''dsp.AdaptiveLatticeFilter(${1:Length}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.AdaptiveLatticeFilter(Length, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AdaptiveLatticeFilter.html'
+
+
+    "dsp.DCBlocker [dsp]":
+        prefix: "dsp.DCBlocker"
+        body: '''dsp.DCBlocker(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.DCBlocker(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.DCBlocker.html'
+
+
+    "dsp.DynamicFilterVisualizer [dsp]":
+        prefix: "dsp.DynamicFilterVisualizer"
+        body: '''dsp.DynamicFilterVisualizer(${1:FFTLength}, ${2:SampleRate}, ${3:FrequencyRange}, ${4:varargin})'''
+        description: '''[dsp] Display time-varying magnitude response of digital filters
+        dsp.DynamicFilterVisualizer(FFTLength, SampleRate, FrequencyRange, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.dynamicfiltervisualizer.html'
+
+
+    "dsp.SpectrumEstimator [dsp]":
+        prefix: "dsp.SpectrumEstimator"
+        body: '''dsp.SpectrumEstimator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.SpectrumEstimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.SpectrumEstimator.html'
+
+
+    "dsp.STFT [dsp]":
+        prefix: "dsp.STFT"
+        body: '''dsp.STFT(${1:Window}, ${2:OverlapLength}, ${3:FFTLength}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.STFT(Window, OverlapLength, FFTLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.STFT.html'
+
+
+    "dsp.ArrayPlot [dsp]":
+        prefix: "dsp.ArrayPlot"
+        body: '''dsp.ArrayPlot(${1:NumInputPorts}, ${2:varargin})'''
+        description: '''[dsp] Display vectors or arrays
+        dsp.ArrayPlot(NumInputPorts, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.arrayplot-system-object.html'
+
+
+    "dsp.VariableBandwidthFIRFilter [dsp]":
+        prefix: "dsp.VariableBandwidthFIRFilter"
+        body: '''dsp.VariableBandwidthFIRFilter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.VariableBandwidthFIRFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.VariableBandwidthFIRFilter.html'
+
+
+    "dsp.FastTransversalFilter [dsp]":
+        prefix: "dsp.FastTransversalFilter"
+        body: '''dsp.FastTransversalFilter(${1:Length}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.FastTransversalFilter(Length, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FastTransversalFilter.html'
+
+
+    "dsp.SignalSink [dsp]":
+        prefix: "dsp.SignalSink"
+        body: '''dsp.SignalSink(${1:varargin})'''
+        description: '''[dsp] Log simulation data in buffer
+        dsp.SignalSink(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.signalsink-system-object.html'
+
+
+    "dsp.HighpassFilter [dsp]":
+        prefix: "dsp.HighpassFilter"
+        body: '''dsp.HighpassFilter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.HighpassFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.HighpassFilter.html'
+
+
+    "dsp.CICCompensationInterpolator [dsp]":
+        prefix: "dsp.CICCompensationInterpolator"
+        body: '''dsp.CICCompensationInterpolator(${1:InterpolationFactor}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.CICCompensationInterpolator(InterpolationFactor, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.CICCompensationInterpolator.html'
+
+
+    "dsp.DigitalUpConverter [dsp]":
+        prefix: "dsp.DigitalUpConverter"
+        body: '''dsp.DigitalUpConverter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.DigitalUpConverter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.DigitalUpConverter.html'
+
+
+    "dsp.Channelizer [dsp]":
+        prefix: "dsp.Channelizer"
+        body: '''dsp.Channelizer(${1:NumFrequencyBands}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.Channelizer(NumFrequencyBands, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Channelizer.html'
+
+
+    "dsp.MovingRMS [dsp]":
+        prefix: "dsp.MovingRMS"
+        body: '''dsp.MovingRMS(${1:WindowLength}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.MovingRMS(WindowLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.MovingRMS.html'
+
+
+    "dsp.ISTFT [dsp]":
+        prefix: "dsp.ISTFT"
+        body: '''dsp.ISTFT(${1:Window}, ${2:OverlapLength}, ${3:ConjugateSymmetricInput}, ${4:WeightedOverlapAdd}, ${5:varargin})'''
+        description: '''[dsp] 
+        dsp.ISTFT(Window, OverlapLength, ConjugateSymmetricInput, WeightedOverlapAdd, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ISTFT.html'
+
+
+    "dsp.SpectrumAnalyzer [dsp]":
+        prefix: "dsp.SpectrumAnalyzer"
+        body: '''dsp.SpectrumAnalyzer(${1:NumInputPorts}, ${2:varargin})'''
+        description: '''[dsp] Display frequency spectrum of time-domain signals
+        dsp.SpectrumAnalyzer(NumInputPorts, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.spectrumanalyzer-system-object.html'
+
+
+    "dsp.FrequencyDomainAdaptiveFilter [dsp]":
+        prefix: "dsp.FrequencyDomainAdaptiveFilter"
+        body: '''dsp.FrequencyDomainAdaptiveFilter(${1:Length}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.FrequencyDomainAdaptiveFilter(Length, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FrequencyDomainAdaptiveFilter.html'
+
+
+    "dsp.MovingVariance [dsp]":
+        prefix: "dsp.MovingVariance"
+        body: '''dsp.MovingVariance(${1:WindowLength}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.MovingVariance(WindowLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.MovingVariance.html'
+
+
+    "dsp.CICCompensationDecimator [dsp]":
+        prefix: "dsp.CICCompensationDecimator"
+        body: '''dsp.CICCompensationDecimator(${1:DecimationFactor}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.CICCompensationDecimator(DecimationFactor, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.CICCompensationDecimator.html'
+
+
+    "dsp.MatrixViewer [dsp]":
+        prefix: "dsp.MatrixViewer"
+        body: '''dsp.MatrixViewer(${1:varargin})'''
+        description: '''[dsp] Visualize matrix data
+        dsp.MatrixViewer(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.matrixviewer-system-object.html'
+
+
+    "dsp.MedianFilter [dsp]":
+        prefix: "dsp.MedianFilter"
+        body: '''dsp.MedianFilter(${1:WindowLength}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.MedianFilter(WindowLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.MedianFilter.html'
+
+
+    "dsp.PhaseExtractor [dsp]":
+        prefix: "dsp.PhaseExtractor"
+        body: '''dsp.PhaseExtractor(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.PhaseExtractor(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.PhaseExtractor.html'
+
+
+    "dsp.FarrowRateConverter [dsp]":
+        prefix: "dsp.FarrowRateConverter"
+        body: '''dsp.FarrowRateConverter(${1:InputSampleRate}, ${2:OutputSampleRate}, ${3:OutputRateTolerance}, ${4:PolynomialOrder}, ${5:varargin})'''
+        description: '''[dsp] 
+        dsp.FarrowRateConverter(InputSampleRate, OutputSampleRate, OutputRateTolerance, PolynomialOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FarrowRateConverter.html'
+
+
+    "dsp.MovingStandardDeviation [dsp]":
+        prefix: "dsp.MovingStandardDeviation"
+        body: '''dsp.MovingStandardDeviation(${1:WindowLength}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.MovingStandardDeviation(WindowLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.MovingStandardDeviation.html'
+
+
+    "dsp.AsyncBuffer [dsp]":
+        prefix: "dsp.AsyncBuffer"
+        body: '''dsp.AsyncBuffer(${1:Capacity}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.AsyncBuffer(Capacity, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.AsyncBuffer.html'
+
+
+    "dsp.HDLNCO [dsp]":
+        prefix: "dsp.HDLNCO"
+        body: '''dsp.HDLNCO(${1:PhaseIncrement}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.HDLNCO(PhaseIncrement, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.HDLNCO.html'
+
+
+    "dsp.BinaryFileWriter [dsp]":
+        prefix: "dsp.BinaryFileWriter"
+        body: '''dsp.BinaryFileWriter(${1:Filename}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.BinaryFileWriter(Filename, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.BinaryFileWriter.html'
+
+
+    "dsp.MovingMaximum [dsp]":
+        prefix: "dsp.MovingMaximum"
+        body: '''dsp.MovingMaximum(${1:WindowLength}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.MovingMaximum(WindowLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.MovingMaximum.html'
+
+
+    "dsp.CICInterpolator [dsp]":
+        prefix: "dsp.CICInterpolator"
+        body: '''dsp.CICInterpolator(${1:InterpolationFactor}, ${2:DifferentialDelay}, ${3:NumSections}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.CICInterpolator(InterpolationFactor, DifferentialDelay, NumSections, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.CICInterpolator.html'
+
+
+    "dsp.PeakToRMS [dsp]":
+        prefix: "dsp.PeakToRMS"
+        body: '''dsp.PeakToRMS(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.PeakToRMS(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.PeakToRMS.html'
+
+
+    "dsp.HDLIFFT [dsp]":
+        prefix: "dsp.HDLIFFT"
+        body: '''dsp.HDLIFFT(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.HDLIFFT(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.HDLIFFT.html'
+
+
+    "dsp.SignalSource [dsp]":
+        prefix: "dsp.SignalSource"
+        body: '''dsp.SignalSource(${1:Signal}, ${2:SamplesPerFrame}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.SignalSource(Signal, SamplesPerFrame, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.SignalSource.html'
+
+
+    "dsp.IIRHalfbandInterpolator [dsp]":
+        prefix: "dsp.IIRHalfbandInterpolator"
+        body: '''dsp.IIRHalfbandInterpolator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.IIRHalfbandInterpolator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.IIRHalfbandInterpolator.html'
+
+
+    "dsp.CICDecimator [dsp]":
+        prefix: "dsp.CICDecimator"
+        body: '''dsp.CICDecimator(${1:DecimationFactor}, ${2:DifferentialDelay}, ${3:NumSections}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.CICDecimator(DecimationFactor, DifferentialDelay, NumSections, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.CICDecimator.html'
+
+
+    "dsp.ColoredNoise [dsp]":
+        prefix: "dsp.ColoredNoise"
+        body: '''dsp.ColoredNoise(${1:InverseFrequencyPower}, ${2:SamplesPerFrame}, ${3:NumChannels}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.ColoredNoise(InverseFrequencyPower, SamplesPerFrame, NumChannels, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ColoredNoise.html'
+
+
+    "dsp.TransferFunctionEstimator [dsp]":
+        prefix: "dsp.TransferFunctionEstimator"
+        body: '''dsp.TransferFunctionEstimator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.TransferFunctionEstimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.TransferFunctionEstimator.html'
+
+
+    "dsp.BurgSpectrumEstimator [dsp]":
+        prefix: "dsp.BurgSpectrumEstimator"
+        body: '''dsp.BurgSpectrumEstimator(${1:varargin})'''
+        description: '''[dsp] (To be removed) Parametric spectral estimate using Burg method
+        dsp.BurgSpectrumEstimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.burgspectrumestimator-system-object.html'
+
+
+    "dsp.DigitalDownConverter [dsp]":
+        prefix: "dsp.DigitalDownConverter"
+        body: '''dsp.DigitalDownConverter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.DigitalDownConverter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.DigitalDownConverter.html'
+
+
+    "dsp.ChannelSynthesizer [dsp]":
+        prefix: "dsp.ChannelSynthesizer"
+        body: '''dsp.ChannelSynthesizer(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.ChannelSynthesizer(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ChannelSynthesizer.html'
+
+
+    "dsp.MatFileReader [dsp]":
+        prefix: "dsp.MatFileReader"
+        body: '''dsp.MatFileReader(${1:Filename}, ${2:VariableName}, ${3:SamplesPerFrame}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.MatFileReader(Filename, VariableName, SamplesPerFrame, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.MatFileReader.html'
+
+
+    "dsp.Differentiator [dsp]":
+        prefix: "dsp.Differentiator"
+        body: '''dsp.Differentiator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.Differentiator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.Differentiator.html'
+
+
+    "dsp.ComplexBandpassDecimator [dsp]":
+        prefix: "dsp.ComplexBandpassDecimator"
+        body: '''dsp.ComplexBandpassDecimator(${1:DecimationFactor}, ${2:CenterFrequency}, ${3:SampleRate}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.ComplexBandpassDecimator(DecimationFactor, CenterFrequency, SampleRate, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ComplexBandpassDecimator.html'
+
+
+    "dsp.BinaryFileReader [dsp]":
+        prefix: "dsp.BinaryFileReader"
+        body: '''dsp.BinaryFileReader(${1:Filename}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.BinaryFileReader(Filename, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.BinaryFileReader.html'
+
+
+    "dsp.FIRHalfbandDecimator [dsp]":
+        prefix: "dsp.FIRHalfbandDecimator"
+        body: '''dsp.FIRHalfbandDecimator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.FIRHalfbandDecimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FIRHalfbandDecimator.html'
+
+
+    "dsp.HDLFFT [dsp]":
+        prefix: "dsp.HDLFFT"
+        body: '''dsp.HDLFFT(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.HDLFFT(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.HDLFFT.html'
+
+
+    "dsp.PeakToPeak [dsp]":
+        prefix: "dsp.PeakToPeak"
+        body: '''dsp.PeakToPeak(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.PeakToPeak(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.PeakToPeak.html'
+
+
+    "dsp.KalmanFilter [dsp]":
+        prefix: "dsp.KalmanFilter"
+        body: '''dsp.KalmanFilter(${1:StateTransitionMatrix}, ${2:MeasurementMatrix}, ${3:ProcessNoiseCovariance}, ${4:MeasurementNoiseCovariance}, ${5:ControlInputMatrix}, ${6:varargin})'''
+        description: '''[dsp] 
+        dsp.KalmanFilter(StateTransitionMatrix, MeasurementMatrix, ProcessNoiseCovariance, MeasurementNoiseCovariance, ControlInputMatrix, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.KalmanFilter.html'
+
+
+    "dsp.HDLComplexToMagnitudeAngle [dsp]":
+        prefix: "dsp.HDLComplexToMagnitudeAngle"
+        body: '''dsp.HDLComplexToMagnitudeAngle(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.HDLComplexToMagnitudeAngle(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.HDLComplexToMagnitudeAngle.html'
+
+
+    "dsp.SubbandAnalysisFilter [dsp]":
+        prefix: "dsp.SubbandAnalysisFilter"
+        body: '''dsp.SubbandAnalysisFilter(${1:LowpassCoefficients}, ${2:HighpassCoefficients}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.SubbandAnalysisFilter(LowpassCoefficients, HighpassCoefficients, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.SubbandAnalysisFilter.html'
+
+
+    "dsp.FIRHalfbandInterpolator [dsp]":
+        prefix: "dsp.FIRHalfbandInterpolator"
+        body: '''dsp.FIRHalfbandInterpolator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.FIRHalfbandInterpolator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FIRHalfbandInterpolator.html'
+
+
+    "dsp.MovingAverage [dsp]":
+        prefix: "dsp.MovingAverage"
+        body: '''dsp.MovingAverage(${1:WindowLength}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.MovingAverage(WindowLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.MovingAverage.html'
+
+
+    "dsp.SubbandSynthesisFilter [dsp]":
+        prefix: "dsp.SubbandSynthesisFilter"
+        body: '''dsp.SubbandSynthesisFilter(${1:LowpassCoefficients}, ${2:HighpassCoefficients}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.SubbandSynthesisFilter(LowpassCoefficients, HighpassCoefficients, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.SubbandSynthesisFilter.html'
+
+
+    "dsp.RLSFilter [dsp]":
+        prefix: "dsp.RLSFilter"
+        body: '''dsp.RLSFilter(${1:Length}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.RLSFilter(Length, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.RLSFilter.html'
+
+
+    "dsp.IIRHalfbandDecimator [dsp]":
+        prefix: "dsp.IIRHalfbandDecimator"
+        body: '''dsp.IIRHalfbandDecimator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.IIRHalfbandDecimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.IIRHalfbandDecimator.html'
+
+
+    "dsp.ZoomFFT [dsp]":
+        prefix: "dsp.ZoomFFT"
+        body: '''dsp.ZoomFFT(${1:DecimationFactor}, ${2:CenterFrequency}, ${3:SampleRate}, ${4:varargin})'''
+        description: '''[dsp] 
+        dsp.ZoomFFT(DecimationFactor, CenterFrequency, SampleRate, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.ZoomFFT.html'
+
+
+    "dsp.LowpassFilter [dsp]":
+        prefix: "dsp.LowpassFilter"
+        body: '''dsp.LowpassFilter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.LowpassFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.LowpassFilter.html'
+
+
+    "dsp.TimeScope [dsp]":
+        prefix: "dsp.TimeScope"
+        body: '''dsp.TimeScope(${1:NumInputPorts}, ${2:SampleRate}, ${3:varargin})'''
+        description: '''[dsp] Time domain signal display and measurement
+        dsp.TimeScope(NumInputPorts, SampleRate, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/ref/dsp.timescope-system-object.html'
+
+
+    "dsp.VariableBandwidthIIRFilter [dsp]":
+        prefix: "dsp.VariableBandwidthIIRFilter"
+        body: '''dsp.VariableBandwidthIIRFilter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.VariableBandwidthIIRFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.VariableBandwidthIIRFilter.html'
+
+
+    "dsp.CrossSpectrumEstimator [dsp]":
+        prefix: "dsp.CrossSpectrumEstimator"
+        body: '''dsp.CrossSpectrumEstimator(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.CrossSpectrumEstimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.CrossSpectrumEstimator.html'
+
+
+    "dsp.FourthOrderSectionFilter [dsp]":
+        prefix: "dsp.FourthOrderSectionFilter"
+        body: '''dsp.FourthOrderSectionFilter(${1:Numerator}, ${2:Denominator}, ${3:varargin})'''
+        description: '''[dsp] 
+        dsp.FourthOrderSectionFilter(Numerator, Denominator, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FourthOrderSectionFilter.html'
+
+
+    "dsp.FrequencyDomainFIRFilter [dsp]":
+        prefix: "dsp.FrequencyDomainFIRFilter"
+        body: '''dsp.FrequencyDomainFIRFilter(${1:Numerator}, ${2:varargin})'''
+        description: '''[dsp] 
+        dsp.FrequencyDomainFIRFilter(Numerator, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.FrequencyDomainFIRFilter.html'
+
+
+    "dsp.NotchPeakFilter [dsp]":
+        prefix: "dsp.NotchPeakFilter"
+        body: '''dsp.NotchPeakFilter(${1:varargin})'''
+        description: '''[dsp] 
+        dsp.NotchPeakFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/dsp/dsp.NotchPeakFilter.html'
+

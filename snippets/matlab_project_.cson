@@ -1,0 +1,200 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "matlab.project.Project.addFolderIncludingChildFiles [matlab]":
+        prefix: "matlab.project.Project.addFolderIncludingChildFiles"
+        body: '''${3:projectFile} = matlab.project.Project.addFolderIncludingChildFiles(${1:proj}, ${2:folder})'''
+        description: '''[matlab] 
+        projectFile = matlab.project.Project.addFolderIncludingChildFiles(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.addFolderIncludingChildFiles.html'
+
+
+    "matlab.project.Project.removeFile [matlab]":
+        prefix: "matlab.project.Project.removeFile"
+        body: '''matlab.project.Project.removeFile(${1:proj}, ${2:file})'''
+        description: '''[matlab] 
+        matlab.project.Project.removeFile(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.removeFile.html'
+
+
+    "matlab.project.Project.addShutdownFile [matlab]":
+        prefix: "matlab.project.Project.addShutdownFile"
+        body: '''${3:shortcut} = matlab.project.Project.addShutdownFile(${1:proj}, ${2:fileName})'''
+        description: '''[matlab] 
+        shortcut = matlab.project.Project.addShutdownFile(proj, fileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.addShutdownFile.html'
+
+
+    "matlab.project.Project.addStartupFile [matlab]":
+        prefix: "matlab.project.Project.addStartupFile"
+        body: '''${3:shortcut} = matlab.project.Project.addStartupFile(${1:proj}, ${2:fileName})'''
+        description: '''[matlab] 
+        shortcut = matlab.project.Project.addStartupFile(proj, fileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.addStartupFile.html'
+
+
+    "matlab.project.ProjectFile.removeLabel [matlab]":
+        prefix: "matlab.project.ProjectFile.removeLabel"
+        body: '''matlab.project.ProjectFile.removeLabel(${1:file}, ${2:LabelDefinition})'''
+        description: '''[matlab] 
+        matlab.project.ProjectFile.removeLabel(file, LabelDefinition)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.ProjectFile.removeLabel.html'
+
+
+    "matlab.project.Project.removeStartupFile [matlab]":
+        prefix: "matlab.project.Project.removeStartupFile"
+        body: '''matlab.project.Project.removeStartupFile(${1:proj}, ${2:file})'''
+        description: '''[matlab] 
+        matlab.project.Project.removeStartupFile(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.removeStartupFile.html'
+
+
+    "matlab.project.Project.removePath [matlab]":
+        prefix: "matlab.project.Project.removePath"
+        body: '''matlab.project.Project.removePath(${1:proj}, ${2:folder})'''
+        description: '''[matlab] 
+        matlab.project.Project.removePath(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.removePath.html'
+
+
+    "matlab.project.Project.addShortcut [matlab]":
+        prefix: "matlab.project.Project.addShortcut"
+        body: '''${3:shortcut} = matlab.project.Project.addShortcut(${1:proj}, ${2:fileName})'''
+        description: '''[matlab] 
+        shortcut = matlab.project.Project.addShortcut(proj, fileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.addShortcut.html'
+
+
+    "matlab.project.Project.addPath [matlab]":
+        prefix: "matlab.project.Project.addPath"
+        body: '''${3:projectPath} = matlab.project.Project.addPath(${1:proj}, ${2:folder})'''
+        description: '''[matlab] 
+        projectPath = matlab.project.Project.addPath(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.addPath.html'
+
+
+    "matlab.project.Project.addReference [matlab]":
+        prefix: "matlab.project.Project.addReference"
+        body: '''${3:projectReference} = matlab.project.Project.addReference(${1:proj}, ${2:folder})'''
+        description: '''[matlab] 
+        projectReference = matlab.project.Project.addReference(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.addReference.html'
+
+
+    "matlab.project.Project.removeReference [matlab]":
+        prefix: "matlab.project.Project.removeReference"
+        body: '''matlab.project.Project.removeReference(${1:proj}, ${2:folder})'''
+        description: '''[matlab] 
+        matlab.project.Project.removeReference(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.removeReference.html'
+
+
+    "matlab.project.ProjectFile.findLabel [matlab]":
+        prefix: "matlab.project.ProjectFile.findLabel"
+        body: '''${3:labelObject} = matlab.project.ProjectFile.findLabel(${1:file}, ${2:LabelDefinition})'''
+        description: '''[matlab] 
+        labelObject = matlab.project.ProjectFile.findLabel(file, LabelDefinition)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.ProjectFile.findLabel.html'
+
+
+    "matlab.project.Category.findLabel [matlab]":
+        prefix: "matlab.project.Category.findLabel"
+        body: '''${3:labelObject} = matlab.project.Category.findLabel(${1:category}, ${2:labelName})'''
+        description: '''[matlab] 
+        labelObject = matlab.project.Category.findLabel(category, labelName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Category.findLabel.html'
+
+
+    "matlab.project.ProjectFile.addLabel [matlab]":
+        prefix: "matlab.project.ProjectFile.addLabel"
+        body: '''${5:labelObject} = matlab.project.ProjectFile.addLabel(${1:file}, ${2:categoryName}, ${3:label}, ${4:optional_labelData})'''
+        description: '''[matlab] 
+        labelObject = matlab.project.ProjectFile.addLabel(file, categoryName, label, optional_labelData)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.ProjectFile.addLabel.html'
+
+
+    "matlab.project.Project.removeShortcut [matlab]":
+        prefix: "matlab.project.Project.removeShortcut"
+        body: '''matlab.project.Project.removeShortcut(${1:proj}, ${2:file})'''
+        description: '''[matlab] 
+        matlab.project.Project.removeShortcut(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.removeShortcut.html'
+
+
+    "matlab.project.Project.addFile [matlab]":
+        prefix: "matlab.project.Project.addFile"
+        body: '''${3:projectFile} = matlab.project.Project.addFile(${1:proj}, ${2:file})'''
+        description: '''[matlab] 
+        projectFile = matlab.project.Project.addFile(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.addFile.html'
+
+
+    "matlab.project.Project.findFile [matlab]":
+        prefix: "matlab.project.Project.findFile"
+        body: '''${3:file} = matlab.project.Project.findFile(${1:proj}, ${2:fileName})'''
+        description: '''[matlab] 
+        file = matlab.project.Project.findFile(proj, fileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.findFile.html'
+
+
+    "matlab.project.Project.removeShutdownFile [matlab]":
+        prefix: "matlab.project.Project.removeShutdownFile"
+        body: '''matlab.project.Project.removeShutdownFile(${1:proj}, ${2:file})'''
+        description: '''[matlab] 
+        matlab.project.Project.removeShutdownFile(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.removeShutdownFile.html'
+
+
+    "matlab.project.Category.removeLabel [matlab]":
+        prefix: "matlab.project.Category.removeLabel"
+        body: '''matlab.project.Category.removeLabel(${1:category}, ${2:labelName})'''
+        description: '''[matlab] 
+        matlab.project.Category.removeLabel(category, labelName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Category.removeLabel.html'
+
+
+    "matlab.project.Project.findCategory [matlab]":
+        prefix: "matlab.project.Project.findCategory"
+        body: '''${3:category} = matlab.project.Project.findCategory(${1:proj}, ${2:categoryName})'''
+        description: '''[matlab] 
+        category = matlab.project.Project.findCategory(proj, categoryName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.findCategory.html'
+
+
+    "matlab.project.Project.removeCategory [matlab]":
+        prefix: "matlab.project.Project.removeCategory"
+        body: '''matlab.project.Project.removeCategory(${1:proj}, ${2:categoryName})'''
+        description: '''[matlab] 
+        matlab.project.Project.removeCategory(proj, categoryName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.removeCategory.html'
+
+
+    "matlab.project.Project.export [matlab]":
+        prefix: "matlab.project.Project.export"
+        body: '''matlab.project.Project.export(${1:proj}, ${2:zipFileName}, ${3:definitionType})'''
+        description: '''[matlab] 
+        matlab.project.Project.export(proj, zipFileName, definitionType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.project.Project.export.html'
+

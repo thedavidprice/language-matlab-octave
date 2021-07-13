@@ -1,0 +1,626 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "uint16 [matlab]":
+        prefix: "uint16"
+        body: '''${2:y} = uint16(${1:x})'''
+        description: '''[matlab] 16-bit unsigned integer arrays
+        y = uint16(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uint16.html'
+
+
+    "ge [matlab]":
+        prefix: "ge"
+        body: '''${3:tf} = ge(${1:A}, ${2:B})'''
+        description: '''[matlab] Greater than or equal relation for handles
+        tf = ge(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/qrandstream.ge.html'
+
+
+    "uint8 [matlab]":
+        prefix: "uint8"
+        body: '''${2:y} = uint8(${1:x})'''
+        description: '''[matlab] 8-bit unsigned integer arrays
+        y = uint8(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uint8.html'
+
+
+    "ismatrix [matlab]":
+        prefix: "ismatrix"
+        body: '''${2:TF} = ismatrix(${1:V})'''
+        description: '''[matlab] Determine whether input is matrix
+        TF = ismatrix(V)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismatrix.html'
+
+
+    "length [matlab]":
+        prefix: "length"
+        body: '''${2:L} = length(${1:X})'''
+        description: '''[matlab] Number of key-value pairs in the data cache
+        L = length(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/mps_dev_test/length.html'
+
+
+    "maxk [matlab]":
+        prefix: "maxk"
+        body: '''[${4:B}, ${5:I}] = maxk(${1:A}, ${2:k}, ${3:dim})'''
+        description: '''[matlab] Find k largest elements of array
+        [B, I] = maxk(A, k, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/maxk.html'
+
+
+    "countcats [matlab]":
+        prefix: "countcats"
+        body: '''${3:B} = countcats(${1:A}, ${2:dim})'''
+        description: '''[matlab] Count occurrences of categorical array elements by category
+        B = countcats(A, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.countcats.html'
+
+
+    "uint32 [matlab]":
+        prefix: "uint32"
+        body: '''${2:y} = uint32(${1:x})'''
+        description: '''[matlab] 32-bit unsigned integer arrays
+        y = uint32(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uint32.html'
+
+
+    "union [matlab]":
+        prefix: "union"
+        body: '''[${5:C}, ${6:ia}, ${7:ib}] = union(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        description: '''[matlab] Union of polyshape objects
+        [C, ia, ib] = union(A, B, 'rows', setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.union.html'
+
+
+    "issortedrows [matlab]":
+        prefix: "issortedrows"
+        body: '''${5:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[matlab] Determine if matrix or table rows are sorted
+        TF = issortedrows(A, column, direction, 'MissingPlacement', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/issortedrows.html'
+
+
+    "iscategorical [matlab]":
+        prefix: "iscategorical"
+        body: '''${2:tf} = iscategorical(${1:A})'''
+        description: '''[matlab] Determine whether input is categorical array
+        tf = iscategorical(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/iscategorical.html'
+
+
+    "reordercats [matlab]":
+        prefix: "reordercats"
+        body: '''${3:B} = reordercats(${1:A}, ${2:neworder})'''
+        description: '''[matlab] Reorder categories in categorical array
+        B = reordercats(A, neworder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.reordercats.html'
+
+
+    "setxor [matlab]":
+        prefix: "setxor"
+        body: '''[${5:C}, ${6:ia}, ${7:ib}] = setxor(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        description: '''[matlab] Set exclusive OR of two arrays
+        [C, ia, ib] = setxor(A, B, 'rows', setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setxor.html'
+
+
+    "setcats [matlab]":
+        prefix: "setcats"
+        body: '''${3:B} = setcats(${1:A}, ${2:newcats})'''
+        description: '''[matlab] Set categories in categorical array
+        B = setcats(A, newcats)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.setcats.html'
+
+
+    "uint64 [matlab]":
+        prefix: "uint64"
+        body: '''${2:y} = uint64(${1:x})'''
+        description: '''[matlab] 64-bit unsigned integer arrays
+        y = uint64(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uint64.html'
+
+
+    "eq [matlab]":
+        prefix: "eq"
+        body: '''${3:tf} = eq(${1:A}, ${2:B})'''
+        description: '''[matlab] Determine equality
+        tf = eq(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/eq.html'
+
+
+    "intersect [matlab]":
+        prefix: "intersect"
+        body: '''[${5:C}, ${6:ia}, ${7:ib}] = intersect(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        description: '''[matlab] Intersection of polyshape objects
+        [C, ia, ib] = intersect(A, B, 'rows', setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.intersect.html'
+
+
+    "int16 [matlab]":
+        prefix: "int16"
+        body: '''${2:y} = int16(${1:x})'''
+        description: '''[matlab] 16-bit signed integer arrays
+        y = int16(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/int16.html'
+
+
+    "max [matlab]":
+        prefix: "max"
+        body: '''${4:C} = max(${1:A}, ${2:B}, ${3:nanflag})'''
+        description: '''[matlab] Maximum value
+        C = max(A, B, nanflag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/max.html'
+
+
+    "addcats [matlab]":
+        prefix: "addcats"
+        body: '''${5:B} = addcats(${1:A}, ${2:newcats}, 'Before', ${3:value}, 'After', ${4:value})'''
+        description: '''[matlab] Add categories to categorical array
+        B = addcats(A, newcats, 'Before', value, 'After', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.addcats.html'
+
+
+    "char [matlab]":
+        prefix: "char"
+        body: '''${2:S} = char(${1:A})'''
+        description: '''[matlab] Character array
+        S = char(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/char.html'
+
+
+    "cat [matlab]":
+        prefix: "cat"
+        body: '''${4:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        description: '''[matlab] Concatenate geographic or planar vector
+        C = cat(dim, A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/geopoint.cat.html'
+
+
+    "sort [matlab]":
+        prefix: "sort"
+        body: '''[${5:B}, ${6:I}] = sort(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[matlab] Sort array elements
+        [B, I] = sort(A, dim, direction, 'MissingPlacement', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sort.html'
+
+
+    "sortrows [matlab]":
+        prefix: "sortrows"
+        body: '''[${5:B}, ${6:Index}] = sortrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[matlab] Sort rows of matrix or table
+        [B, Index] = sortrows(A, column, direction, 'MissingPlacement', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/double.sortrows.html'
+
+
+    "categories [matlab]":
+        prefix: "categories"
+        body: '''${2:C} = categories(${1:A})'''
+        description: '''[matlab] Categories of categorical array
+        C = categories(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.categories.html'
+
+
+    "topkrows [matlab]":
+        prefix: "topkrows"
+        body: '''[${5:B}, ${6:Index}] = topkrows(${1:A}, ${2:k}, ${3:column}, ${4:direction})'''
+        description: '''[matlab] Top rows in sorted order
+        [B, Index] = topkrows(A, k, column, direction)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/topkrows.html'
+
+
+    "removecats [matlab]":
+        prefix: "removecats"
+        body: '''${3:B} = removecats(${1:A}, ${2:oldcats})'''
+        description: '''[matlab] Remove categories from categorical array
+        B = removecats(A, oldcats)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.removecats.html'
+
+
+    "ismember [matlab]":
+        prefix: "ismember"
+        body: '''[${4:Lia}, ${5:Locb}] = ismember(${1:A}, ${2:B}, ${3:'rows'})'''
+        description: '''[matlab] Array elements that are members of set array
+        [Lia, Locb] = ismember(A, B, 'rows')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismember.html'
+
+
+    "ctranspose [matlab]":
+        prefix: "ctranspose"
+        body: '''${2:B} = ctranspose(${1:A})'''
+        description: '''[matlab] Conjugate dynamic system model
+        B = ctranspose(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/inputoutputmodel.ctranspose.html'
+
+
+    "mode [matlab]":
+        prefix: "mode"
+        body: '''[${3:M}, ${4:F}, ${5:C}] = mode(${1:A}, ${2:dim})'''
+        description: '''[matlab] Most frequent values in array
+        [M, F, C] = mode(A, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mode.html'
+
+
+    "vertcat [matlab]":
+        prefix: "vertcat"
+        body: '''${2:C} = vertcat(${1:A})'''
+        description: '''[matlab] Concatenate arrays vertically
+        C = vertcat(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/vertcat.html'
+
+
+    "times [matlab]":
+        prefix: "times"
+        body: '''${3:C} = times(${1:A}, ${2:B})'''
+        description: '''[matlab] Financial time series multiplication
+        C = times(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/times.html'
+
+
+    "isprotected [matlab]":
+        prefix: "isprotected"
+        body: '''${2:tf} = isprotected(${1:A})'''
+        description: '''[matlab] Determine whether categories of categorical array are
+protected
+        tf = isprotected(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.isprotected.html'
+
+
+    "isrow [matlab]":
+        prefix: "isrow"
+        body: '''${2:TF} = isrow(${1:V})'''
+        description: '''[matlab] Determine whether input
+is row vector
+        TF = isrow(V)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isrow.html'
+
+
+    "int64 [matlab]":
+        prefix: "int64"
+        body: '''${2:y} = int64(${1:x})'''
+        description: '''[matlab] 64-bit signed integer arrays
+        y = int64(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/int64.html'
+
+
+    "isempty [matlab]":
+        prefix: "isempty"
+        body: '''${2:TF} = isempty(${1:A})'''
+        description: '''[matlab] Determine whether MetaData object is empty
+        TF = isempty(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.isempty.html'
+
+
+    "setdiff [matlab]":
+        prefix: "setdiff"
+        body: '''[${5:C}, ${6:ia}] = setdiff(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        description: '''[matlab] Set difference of two arrays
+        [C, ia] = setdiff(A, B, 'rows', setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setdiff.html'
+
+
+    "histcounts [matlab]":
+        prefix: "histcounts"
+        body: '''[${4:N}, ${5:categories}] = histcounts(${1:C}, ${2:Categories}, 'Normalization', ${3:value})'''
+        description: '''[matlab] Histogram bin counts
+        [N, categories] = histcounts(C, Categories, 'Normalization', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/histcounts.html'
+
+
+    "cellstr [matlab]":
+        prefix: "cellstr"
+        body: '''${2:C} = cellstr(${1:S})'''
+        description: '''[matlab] Convert to cell array of character vectors
+        C = cellstr(S)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cellstr.html'
+
+
+    "unique [matlab]":
+        prefix: "unique"
+        body: '''[${4:C}, ${5:ia}, ${6:ic}] = unique(${1:A}, ${2:'rows'}, ${3:setOrder})'''
+        description: '''[matlab] Unique values in array
+        [C, ia, ic] = unique(A, 'rows', setOrder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unique.html'
+
+
+    "isvector [matlab]":
+        prefix: "isvector"
+        body: '''${2:TF} = isvector(${1:A})'''
+        description: '''[matlab] Determine whether input is vector
+        TF = isvector(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isvector.html'
+
+
+    "single [matlab]":
+        prefix: "single"
+        body: '''${2:y} = single(${1:x})'''
+        description: '''[matlab] Single-precision arrays
+        y = single(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/single.html'
+
+
+    "le [matlab]":
+        prefix: "le"
+        body: '''${3:tf} = le(${1:A}, ${2:B})'''
+        description: '''[matlab] Less than or equal relation for handles
+        tf = le(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/qrandstream.le.html'
+
+
+    "median [matlab]":
+        prefix: "median"
+        body: '''${4:M} = median(${1:A}, ${2:dim}, ${3:nanflag})'''
+        description: '''[matlab] Median value of array
+        M = median(A, dim, nanflag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/median.html'
+
+
+    "horzcat [matlab]":
+        prefix: "horzcat"
+        body: '''${2:C} = horzcat(${1:A})'''
+        description: '''[matlab] Concatenate arrays horizontally
+        C = horzcat(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/horzcat.html'
+
+
+    "isscalar [matlab]":
+        prefix: "isscalar"
+        body: '''${2:TF} = isscalar(${1:A})'''
+        description: '''[matlab] Determine whether input is scalar
+        TF = isscalar(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isscalar.html'
+
+
+    "mergecats [matlab]":
+        prefix: "mergecats"
+        body: '''${4:B} = mergecats(${1:A}, ${2:oldcats}, ${3:newcats})'''
+        description: '''[matlab] Merge categories in categorical array
+        B = mergecats(A, oldcats, newcats)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.mergecats.html'
+
+
+    "string [matlab]":
+        prefix: "string"
+        body: '''${2:str} = string(${1:A})'''
+        description: '''[matlab] String array
+        str = string(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.html'
+
+
+    "isequaln [matlab]":
+        prefix: "isequaln"
+        body: '''${3:tf} = isequaln(${1:A}, ${2:B})'''
+        description: '''[matlab] Determine array equality, treating NaN values as equal
+        tf = isequaln(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isequaln.html'
+
+
+    "transpose [matlab]":
+        prefix: "transpose"
+        body: '''${2:B} = transpose(${1:A})'''
+        description: '''[matlab] Transpose vector or matrix
+        B = transpose(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/transpose.html'
+
+
+    "numel [matlab]":
+        prefix: "numel"
+        body: '''${2:n} = numel(${1:A})'''
+        description: '''[matlab] Number of array elements
+        n = numel(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/numel.html'
+
+
+    "lt [matlab]":
+        prefix: "lt"
+        body: '''${3:tf} = lt(${1:A}, ${2:B})'''
+        description: '''[matlab] Less than relation for handles
+        tf = lt(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/qrandstream.lt.html'
+
+
+    "int8 [matlab]":
+        prefix: "int8"
+        body: '''${2:y} = int8(${1:x})'''
+        description: '''[matlab] 8-bit signed integer arrays
+        y = int8(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/int8.html'
+
+
+    "min [matlab]":
+        prefix: "min"
+        body: '''${4:C} = min(${1:A}, ${2:B}, ${3:nanflag})'''
+        description: '''[matlab] Minimum value
+        C = min(A, B, nanflag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/min.html'
+
+
+    "mink [matlab]":
+        prefix: "mink"
+        body: '''[${4:B}, ${5:I}] = mink(${1:A}, ${2:k}, ${3:dim})'''
+        description: '''[matlab] Find k smallest elements of array
+        [B, I] = mink(A, k, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mink.html'
+
+
+    "int32 [matlab]":
+        prefix: "int32"
+        body: '''${2:y} = int32(${1:x})'''
+        description: '''[matlab] 32-bit signed integer arrays
+        y = int32(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/int32.html'
+
+
+    "isordinal [matlab]":
+        prefix: "isordinal"
+        body: '''${2:tf} = isordinal(${1:A})'''
+        description: '''[matlab] Determine whether input is ordinal categorical array
+        tf = isordinal(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.isordinal.html'
+
+
+    "iscolumn [matlab]":
+        prefix: "iscolumn"
+        body: '''${2:TF} = iscolumn(${1:V})'''
+        description: '''[matlab] Determine whether input
+is column vector
+        TF = iscolumn(V)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/iscolumn.html'
+
+
+    "summary [matlab]":
+        prefix: "summary"
+        body: '''summary(${1:A}, ${2:dim})'''
+        description: '''[matlab] Print summary of table, timetable, or categorical array
+        summary(A, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/table.summary.html'
+
+
+    "iscategory [matlab]":
+        prefix: "iscategory"
+        body: '''${3:tf} = iscategory(${1:A}, ${2:catnames})'''
+        description: '''[matlab] Test for categorical array categories
+        tf = iscategory(A, catnames)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.iscategory.html'
+
+
+    "isequal [matlab]":
+        prefix: "isequal"
+        body: '''${3:tf} = isequal(${1:A}, ${2:B})'''
+        description: '''[matlab] Multiple object equality
+        tf = isequal(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/isequal.html'
+
+
+    "issorted [matlab]":
+        prefix: "issorted"
+        body: '''${5:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[matlab] Check whether dates and times are monotonically increasing
+        TF = issorted(A, dim, direction, 'MissingPlacement', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/issorted.html'
+
+
+    "categorical [matlab]":
+        prefix: "categorical"
+        body: '''${6:C} = categorical(${1:A}, ${2:valueset}, ${3:catnames}, 'Protected', ${4:value}, 'Ordinal', ${5:value})'''
+        description: '''[matlab] Array that contains values assigned to categories
+        C = categorical(A, valueset, catnames, 'Protected', value, 'Ordinal', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.html'
+
+
+    "gt [matlab]":
+        prefix: "gt"
+        body: '''${3:tf} = gt(${1:A}, ${2:B})'''
+        description: '''[matlab] Greater than relation for handles
+        tf = gt(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/qrandstream.gt.html'
+
+
+    "ne [matlab]":
+        prefix: "ne"
+        body: '''${3:tf} = ne(${1:A}, ${2:B})'''
+        description: '''[matlab] Not equal relation for handles
+        tf = ne(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/qrandstream.ne.html'
+
+
+    "double [matlab]":
+        prefix: "double"
+        body: '''${2:y} = double(${1:x})'''
+        description: '''[matlab] Cast fixed-point filter to use double-precision arithmetic
+        y = double(x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/double.html'
+
+
+    "isundefined [matlab]":
+        prefix: "isundefined"
+        body: '''${2:tf} = isundefined(${1:A})'''
+        description: '''[matlab] Find undefined elements in categorical array
+        tf = isundefined(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.isundefined.html'
+
+
+    "permute [matlab]":
+        prefix: "permute"
+        body: '''${3:B} = permute(${1:A}, ${2:order})'''
+        description: '''[matlab] Rearrange array dimensions in model arrays
+        B = permute(A, order)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/permute.html'
+
+
+    "renamecats [matlab]":
+        prefix: "renamecats"
+        body: '''${4:B} = renamecats(${1:A}, ${2:oldnames}, ${3:newnames})'''
+        description: '''[matlab] Rename categories in categorical array
+        B = renamecats(A, oldnames, newnames)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/categorical.renamecats.html'
+

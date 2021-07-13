@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "batchsim [simulink]":
+        prefix: "batchsim"
+        body: '''batchsim(${1:optional_clus}, ${2:in}, 'AdditionalPaths', ${3:value}, 'AttachedFiles', ${4:value}, 'AutoAddClientPath', ${5:value}, 'AutoAttachFiles', ${6:value}, 'CaptureDiary', ${7:value}, 'CleanupFcn', ${8:value}, 'CurrentFolder', ${9:value}, 'EnvironmentVariables', ${10:value}, 'Pool', ${11:value}, 'Profile', ${12:value}, 'SetupFcn', ${13:value}, 'ShowProgress', ${14:value}, 'StopOnError', ${15:value}, 'UseFastRestart', ${16:value}, 'TransferBaseWorkspaceVariables', ${17:value}, 'ManageDependencies', ${18:value})'''
+        description: '''[simulink] Offload simulations to run on a compute cluster
+        batchsim(optional_clus, in, 'AdditionalPaths', value, 'AttachedFiles', value, 'AutoAddClientPath', value, 'AutoAttachFiles', value, 'CaptureDiary', value, 'CleanupFcn', value, 'CurrentFolder', value, 'EnvironmentVariables', value, 'Pool', value, 'Profile', value, 'SetupFcn', value, 'ShowProgress', value, 'StopOnError', value, 'UseFastRestart', value, 'TransferBaseWorkspaceVariables', value, 'ManageDependencies', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slref/batchsim.html'
+

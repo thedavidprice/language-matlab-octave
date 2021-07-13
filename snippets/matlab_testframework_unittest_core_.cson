@@ -1,0 +1,74 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "matlab.unittest.TestSuite.fromClass [matlab]":
+        prefix: "matlab.unittest.TestSuite.fromClass"
+        body: '''matlab.unittest.TestSuite.fromClass(${1:testClass}, 'BaseFolder', ${2:value}, 'Name', ${3:value}, 'ParameterName', ${4:value}, 'ParameterProperty', ${5:value}, 'Tag', ${6:value}, 'ProcedureName', ${7:value}, 'ExternalParameters', ${8:value}, 'Superclass', ${9:value})'''
+        description: '''[matlab] 
+        matlab.unittest.TestSuite.fromClass(testClass, 'BaseFolder', value, 'Name', value, 'ParameterName', value, 'ParameterProperty', value, 'Tag', value, 'ProcedureName', value, 'ExternalParameters', value, 'Superclass', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.unittest.TestSuite.fromClass.html'
+
+
+    "runtests [matlab]":
+        prefix: "runtests"
+        body: '''runtests(${1:optional_tests}, 'Name', ${2:value}, 'BaseFolder', ${3:value}, 'IncludeSubfolders', ${4:value}, 'IncludeSubpackages', ${5:value}, 'IncludeReferencedProjects', ${6:value}, 'ParameterName', ${7:value}, 'ParameterProperty', ${8:value}, 'Tag', ${9:value}, 'ProcedureName', ${10:value}, 'UseParallel', ${11:value}, 'Debug', ${12:value}, 'Strict', ${13:value}, 'LoggingLevel', ${14:value}, 'OutputDetail', ${15:value}, 'Superclass', ${16:value}, 'ReportCoverageFor', ${17:value})'''
+        description: '''[matlab] Run set of tests
+        runtests(optional_tests, 'Name', value, 'BaseFolder', value, 'IncludeSubfolders', value, 'IncludeSubpackages', value, 'IncludeReferencedProjects', value, 'ParameterName', value, 'ParameterProperty', value, 'Tag', value, 'ProcedureName', value, 'UseParallel', value, 'Debug', value, 'Strict', value, 'LoggingLevel', value, 'OutputDetail', value, 'Superclass', value, 'ReportCoverageFor', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/runtests.html'
+
+
+    "testsuite [matlab]":
+        prefix: "testsuite"
+        body: '''testsuite(${1:optional_tests}, 'BaseFolder', ${2:value}, 'IncludeSubfolders', ${3:value}, 'IncludeSubpackages', ${4:value}, 'IncludeReferencedProjects', ${5:value}, 'Name', ${6:value}, 'ParameterName', ${7:value}, 'ParameterProperty', ${8:value}, 'Tag', ${9:value}, 'ProcedureName', ${10:value}, 'Superclass', ${11:value})'''
+        description: '''[matlab] Create suite of tests
+        testsuite(optional_tests, 'BaseFolder', value, 'IncludeSubfolders', value, 'IncludeSubpackages', value, 'IncludeReferencedProjects', value, 'Name', value, 'ParameterName', value, 'ParameterProperty', value, 'Tag', value, 'ProcedureName', value, 'Superclass', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/testsuite.html'
+
+
+    "matlab.unittest.TestSuite.fromFile [matlab]":
+        prefix: "matlab.unittest.TestSuite.fromFile"
+        body: '''matlab.unittest.TestSuite.fromFile(${1:testFile}, 'BaseFolder', ${2:value}, 'Name', ${3:value}, 'ParameterName', ${4:value}, 'ParameterProperty', ${5:value}, 'Tag', ${6:value}, 'ProcedureName', ${7:value}, 'ExternalParameters', ${8:value}, 'Superclass', ${9:value})'''
+        description: '''[matlab] 
+        matlab.unittest.TestSuite.fromFile(testFile, 'BaseFolder', value, 'Name', value, 'ParameterName', value, 'ParameterProperty', value, 'Tag', value, 'ProcedureName', value, 'ExternalParameters', value, 'Superclass', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.unittest.TestSuite.fromFile.html'
+
+
+    "matlab.unittest.TestSuite.fromMethod [matlab]":
+        prefix: "matlab.unittest.TestSuite.fromMethod"
+        body: '''matlab.unittest.TestSuite.fromMethod(${1:testClass}, ${2:testMethod}, 'BaseFolder', ${3:value}, 'Name', ${4:value}, 'ParameterName', ${5:value}, 'ParameterProperty', ${6:value}, 'Tag', ${7:value}, 'ProcedureName', ${8:value}, 'ExternalParameters', ${9:value}, 'Superclass', ${10:value})'''
+        description: '''[matlab] 
+        matlab.unittest.TestSuite.fromMethod(testClass, testMethod, 'BaseFolder', value, 'Name', value, 'ParameterName', value, 'ParameterProperty', value, 'Tag', value, 'ProcedureName', value, 'ExternalParameters', value, 'Superclass', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.unittest.TestSuite.fromMethod.html'
+
+
+    "matlab.unittest.TestSuite.fromName [matlab]":
+        prefix: "matlab.unittest.TestSuite.fromName"
+        body: '''matlab.unittest.TestSuite.fromName(${1:name}, 'ExternalParameters', ${2:value})'''
+        description: '''[matlab] 
+        matlab.unittest.TestSuite.fromName(name, 'ExternalParameters', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.unittest.TestSuite.fromName.html'
+
+
+    "matlab.unittest.TestSuite.fromPackage [matlab]":
+        prefix: "matlab.unittest.TestSuite.fromPackage"
+        body: '''matlab.unittest.TestSuite.fromPackage(${1:package}, 'IncludingSubpackages', ${2:value}, 'BaseFolder', ${3:value}, 'Name', ${4:value}, 'ParameterName', ${5:value}, 'ParameterProperty', ${6:value}, 'Tag', ${7:value}, 'ProcedureName', ${8:value}, 'ExternalParameters', ${9:value}, 'Superclass', ${10:value})'''
+        description: '''[matlab] 
+        matlab.unittest.TestSuite.fromPackage(package, 'IncludingSubpackages', value, 'BaseFolder', value, 'Name', value, 'ParameterName', value, 'ParameterProperty', value, 'Tag', value, 'ProcedureName', value, 'ExternalParameters', value, 'Superclass', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.unittest.TestSuite.fromPackage.html'
+
+
+    "matlab.unittest.TestSuite.fromFolder [matlab]":
+        prefix: "matlab.unittest.TestSuite.fromFolder"
+        body: '''matlab.unittest.TestSuite.fromFolder(${1:folder}, 'IncludingSubfolders', ${2:value}, 'BaseFolder', ${3:value}, 'Name', ${4:value}, 'ParameterName', ${5:value}, 'ParameterProperty', ${6:value}, 'Tag', ${7:value}, 'ProcedureName', ${8:value}, 'ExternalParameters', ${9:value}, 'Superclass', ${10:value})'''
+        description: '''[matlab] 
+        matlab.unittest.TestSuite.fromFolder(folder, 'IncludingSubfolders', value, 'BaseFolder', value, 'Name', value, 'ParameterName', value, 'ParameterProperty', value, 'Tag', value, 'ProcedureName', value, 'ExternalParameters', value, 'Superclass', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.unittest.TestSuite.fromFolder.html'
+

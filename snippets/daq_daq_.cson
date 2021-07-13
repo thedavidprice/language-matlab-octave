@@ -1,0 +1,110 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "daq.Session.addAnalogInputChannel [daq]":
+        prefix: "daq.Session.addAnalogInputChannel"
+        body: '''daq.Session.addAnalogInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+        description: '''[daq] 
+        daq.Session.addAnalogInputChannel(session, deviceID, channelID, measurementType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addAnalogInputChannel.html'
+
+
+    "daq.createSession [daq]":
+        prefix: "daq.createSession"
+        body: '''daq.createSession(${1:vendorID})'''
+        description: '''[daq] Create data acquisition session for specific vendor hardware
+        daq.createSession(vendorID)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.createsession.html'
+
+
+    "daq.Session.addAudioInputChannel [daq]":
+        prefix: "daq.Session.addAudioInputChannel"
+        body: '''daq.Session.addAudioInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:optional_measurementType})'''
+        description: '''[daq] 
+        daq.Session.addAudioInputChannel(session, deviceID, channelID, optional_measurementType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addAudioInputChannel.html'
+
+
+    "daq.Session.addCounterInputChannel [daq]":
+        prefix: "daq.Session.addCounterInputChannel"
+        body: '''daq.Session.addCounterInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+        description: '''[daq] 
+        daq.Session.addCounterInputChannel(session, deviceID, channelID, measurementType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addCounterInputChannel.html'
+
+
+    "daq.Session.addTriggerConnection [daq]":
+        prefix: "daq.Session.addTriggerConnection"
+        body: '''daq.Session.addTriggerConnection(${1:session}, ${2:source}, ${3:destination}, ${4:connectionType})'''
+        description: '''[daq] 
+        daq.Session.addTriggerConnection(session, source, destination, connectionType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addTriggerConnection.html'
+
+
+    "daq.Session.addDigitalChannel [daq]":
+        prefix: "daq.Session.addDigitalChannel"
+        body: '''daq.Session.addDigitalChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:optional_directionalityParameter})'''
+        description: '''[daq] 
+        daq.Session.addDigitalChannel(session, deviceID, channelID, optional_directionalityParameter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addDigitalChannel.html'
+
+
+    "daq.Session.addCounterOutputChannel [daq]":
+        prefix: "daq.Session.addCounterOutputChannel"
+        body: '''daq.Session.addCounterOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+        description: '''[daq] 
+        daq.Session.addCounterOutputChannel(session, deviceID, channelID, measurementType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addCounterOutputChannel.html'
+
+
+    "daq.Session.addAudioOutputChannel [daq]":
+        prefix: "daq.Session.addAudioOutputChannel"
+        body: '''daq.Session.addAudioOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+        description: '''[daq] 
+        daq.Session.addAudioOutputChannel(session, deviceID, channelID, measurementType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addAudioOutputChannel.html'
+
+
+    "daq.Session.addClockConnection [daq]":
+        prefix: "daq.Session.addClockConnection"
+        body: '''daq.Session.addClockConnection(${1:session}, ${2:source}, ${3:destination}, ${4:connectionType})'''
+        description: '''[daq] 
+        daq.Session.addClockConnection(session, source, destination, connectionType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addClockConnection.html'
+
+
+    "daq.Session.addFunctionGeneratorChannel [daq]":
+        prefix: "daq.Session.addFunctionGeneratorChannel"
+        body: '''daq.Session.addFunctionGeneratorChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:waveformType})'''
+        description: '''[daq] 
+        daq.Session.addFunctionGeneratorChannel(session, deviceID, channelID, waveformType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addFunctionGeneratorChannel.html'
+
+
+    "daq.Session.addAnalogOutputChannel [daq]":
+        prefix: "daq.Session.addAnalogOutputChannel"
+        body: '''daq.Session.addAnalogOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+        description: '''[daq] 
+        daq.Session.addAnalogOutputChannel(session, deviceID, channelID, measurementType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addAnalogOutputChannel.html'
+
+
+    "daq.Session.addlistener [daq]":
+        prefix: "daq.Session.addlistener"
+        body: '''daq.Session.addlistener(${1:session}, ${2:event}, ${3:callbackFunction})'''
+        description: '''[daq] 
+        daq.Session.addlistener(session, event, callbackFunction)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/daq.Session.addlistener.html'
+

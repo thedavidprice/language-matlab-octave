@@ -1,0 +1,247 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "interp1 [matlab]":
+        prefix: "interp1"
+        body: '''interp1(${1:x}, ${2:v}, ${3:xq}, ${4:method}, ${5:extrapolation})'''
+        description: '''[matlab] 1-D data interpolation (table lookup)
+        interp1(x, v, xq, method, extrapolation)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/interp1.html'
+
+
+    "polyshape.polybuffer [matlab]":
+        prefix: "polyshape.polybuffer"
+        body: '''polyshape.polybuffer(${1:polyin}, ${2:d}, 'JointType', ${3:value}, 'MiterLimit', ${4:value})'''
+        description: '''[matlab] 
+        polyshape.polybuffer(polyin, d, 'JointType', value, 'MiterLimit', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.polybuffer.html'
+
+
+    "stlread [matlab]":
+        prefix: "stlread"
+        body: '''stlread(${1:filename})'''
+        description: '''[matlab] Create triangulation from STL file
+        stlread(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stlread.html'
+
+
+    "polyshape.plot [matlab]":
+        prefix: "polyshape.plot"
+        body: '''polyshape.plot(${1:pgon}, ${2:options})'''
+        description: '''[matlab] 
+        polyshape.plot(pgon, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.plot.html'
+
+
+    "alphaShape.criticalAlpha [matlab]":
+        prefix: "alphaShape.criticalAlpha"
+        body: '''alphaShape.criticalAlpha(${1:shp}, ${2:type})'''
+        description: '''[matlab] 
+        alphaShape.criticalAlpha(shp, type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/alphaShape.criticalAlpha.html'
+
+
+    "interpn [matlab]":
+        prefix: "interpn"
+        body: '''interpn(${1:X}, ${2:V}, ${3:Xq}, ${4:method}, ${5:extrapval})'''
+        description: '''[matlab] Interpolation for 1-D, 2-D, 3-D, and N-D gridded data
+in ndgrid format
+        interpn(X, V, Xq, method, extrapval)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/interpn.html'
+
+
+    "scatteredInterpolant [matlab]":
+        prefix: "scatteredInterpolant"
+        body: '''scatteredInterpolant(${1:x}, ${2:y}, ${3:v}, ${4:Method}, ${5:ExtrapolationMethod})'''
+        description: '''[matlab] Interpolate 2-D or 3-D scattered data
+        scatteredInterpolant(x, y, v, Method, ExtrapolationMethod)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/scatteredinterpolant.html'
+
+
+    "polyshape.simplify [matlab]":
+        prefix: "polyshape.simplify"
+        body: '''polyshape.simplify(${1:polyin}, 'KeepCollinearPoints', ${2:value})'''
+        description: '''[matlab] 
+        polyshape.simplify(polyin, 'KeepCollinearPoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.simplify.html'
+
+
+    "interp3 [matlab]":
+        prefix: "interp3"
+        body: '''interp3(${1:X}, ${2:Y}, ${3:Z}, ${4:V}, ${5:Xq}, ${6:Yq}, ${7:Zq}, ${8:method}, ${9:extrapval})'''
+        description: '''[matlab] Interpolation for 3-D gridded data in meshgrid format
+        interp3(X, Y, Z, V, Xq, Yq, Zq, method, extrapval)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/interp3.html'
+
+
+    "polyshape.sortregions [matlab]":
+        prefix: "polyshape.sortregions"
+        body: '''polyshape.sortregions(${1:pgon}, ${2:criterion}, ${3:direction})'''
+        description: '''[matlab] 
+        polyshape.sortregions(pgon, criterion, direction)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.sortregions.html'
+
+
+    "alphaShape.plot [matlab]":
+        prefix: "alphaShape.plot"
+        body: '''alphaShape.plot(${1:shp}, ${2:options})'''
+        description: '''[matlab] 
+        alphaShape.plot(shp, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/alphaShape.plot.html'
+
+
+    "convhull [matlab]":
+        prefix: "convhull"
+        body: '''convhull(${1:x}, ${2:y}, ${3:z}, 'Simplify', ${4:value})'''
+        description: '''[matlab] Convex hull of polyshape
+        convhull(x, y, z, 'Simplify', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.convhull.html'
+
+
+    "polyshape.subtract [matlab]":
+        prefix: "polyshape.subtract"
+        body: '''polyshape.subtract(${1:poly1}, ${2:poly2}, 'KeepCollinearPoints', ${3:value})'''
+        description: '''[matlab] 
+        polyshape.subtract(poly1, poly2, 'KeepCollinearPoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.subtract.html'
+
+
+    "polyshape.union [matlab]":
+        prefix: "polyshape.union"
+        body: '''polyshape.union(${1:polyvec}, 'KeepCollinearPoints', ${2:value})'''
+        description: '''[matlab] 
+        polyshape.union(polyvec, 'KeepCollinearPoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.union.html'
+
+
+    "griddatan [matlab]":
+        prefix: "griddatan"
+        body: '''griddatan(${1:x}, ${2:v}, ${3:xq}, ${4:method}, ${5:options})'''
+        description: '''[matlab] Interpolate N-D scattered data
+        griddatan(x, v, xq, method, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/griddatan.html'
+
+
+    "polyshape [matlab]":
+        prefix: "polyshape"
+        body: '''polyshape(${1:x}, ${2:y}, 'SolidBoundaryOrientation', ${3:value}, 'Simplify', ${4:value}, 'KeepCollinearPoints', ${5:value})'''
+        description: '''[matlab] 2-D polygons
+        polyshape(x, y, 'SolidBoundaryOrientation', value, 'Simplify', value, 'KeepCollinearPoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/polyshape.html'
+
+
+    "polyshape.intersect [matlab]":
+        prefix: "polyshape.intersect"
+        body: '''polyshape.intersect(${1:polyvec}, 'KeepCollinearPoints', ${2:value})'''
+        description: '''[matlab] 
+        polyshape.intersect(polyvec, 'KeepCollinearPoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.intersect.html'
+
+
+    "polyshape.xor [matlab]":
+        prefix: "polyshape.xor"
+        body: '''polyshape.xor(${1:poly1}, ${2:poly2}, 'KeepCollinearPoints', ${3:value})'''
+        description: '''[matlab] 
+        polyshape.xor(poly1, poly2, 'KeepCollinearPoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.xor.html'
+
+
+    "polyshape.addboundary [matlab]":
+        prefix: "polyshape.addboundary"
+        body: '''polyshape.addboundary(${1:polyin}, ${2:x}, ${3:y}, 'SolidBoundaryOrientation', ${4:value}, 'Simplify', ${5:value}, 'KeepCollinearPoints', ${6:value})'''
+        description: '''[matlab] 
+        polyshape.addboundary(polyin, x, y, 'SolidBoundaryOrientation', value, 'Simplify', value, 'KeepCollinearPoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.addboundary.html'
+
+
+    "polyshape.sortboundaries [matlab]":
+        prefix: "polyshape.sortboundaries"
+        body: '''polyshape.sortboundaries(${1:pgon}, ${2:criterion}, ${3:direction})'''
+        description: '''[matlab] 
+        polyshape.sortboundaries(pgon, criterion, direction)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.sortboundaries.html'
+
+
+    "stlwrite [matlab]":
+        prefix: "stlwrite"
+        body: '''stlwrite(${1:tr}, ${2:filename}, ${3:fileformat}, 'Attribute', ${4:value}, 'SolidIndex', ${5:value})'''
+        description: '''[matlab] Create STL file from triangulation
+        stlwrite(tr, filename, fileformat, 'Attribute', value, 'SolidIndex', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stlwrite.html'
+
+
+    "alphaShape [matlab]":
+        prefix: "alphaShape"
+        body: '''alphaShape(${1:x}, ${2:y}, ${3:optional_a}, 'HoleThreshold', ${4:value}, 'RegionThreshold', ${5:value})'''
+        description: '''[matlab] Polygons and polyhedra from points in 2-D and 3-D
+        alphaShape(x, y, optional_a, 'HoleThreshold', value, 'RegionThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/alphashape.html'
+
+
+    "polybuffer [matlab]":
+        prefix: "polybuffer"
+        body: '''polybuffer(${1:P}, ${2:points}, ${3:d})'''
+        description: '''[matlab] Create buffer around points, lines, or polyshape
+            objects
+        polybuffer(P, points, d)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.polybuffer.html'
+
+
+    "griddedInterpolant [matlab]":
+        prefix: "griddedInterpolant"
+        body: '''griddedInterpolant(${1:x}, ${2:v}, ${3:Method}, ${4:ExtrapolationMethod})'''
+        description: '''[matlab] Gridded data interpolation
+        griddedInterpolant(x, v, Method, ExtrapolationMethod)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/griddedinterpolant.html'
+
+
+    "griddata [matlab]":
+        prefix: "griddata"
+        body: '''griddata(${1:x}, ${2:y}, ${3:v}, ${4:xq}, ${5:yq}, ${6:method})'''
+        description: '''[matlab] Interpolate 2-D or 3-D scattered data
+        griddata(x, y, v, xq, yq, method)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/griddata.html'
+
+
+    "polyshape.rmboundary [matlab]":
+        prefix: "polyshape.rmboundary"
+        body: '''polyshape.rmboundary(${1:polyin}, ${2:I}, 'Simplify', ${3:value})'''
+        description: '''[matlab] 
+        polyshape.rmboundary(polyin, I, 'Simplify', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.rmboundary.html'
+
+
+    "interp2 [matlab]":
+        prefix: "interp2"
+        body: '''interp2(${1:X}, ${2:Y}, ${3:V}, ${4:Xq}, ${5:Yq}, ${6:method}, ${7:extrapval})'''
+        description: '''[matlab] Interpolation for 2-D gridded data in meshgrid format
+        interp2(X, Y, V, Xq, Yq, method, extrapval)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/interp2.html'
+

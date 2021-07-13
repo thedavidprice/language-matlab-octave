@@ -1,0 +1,92 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "semilogy [matlab]":
+        prefix: "semilogy"
+        body: '''${5:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''[matlab] Semilogarithmic plot
+        h = semilogy(optional_ax, Y, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/semilogy.html'
+
+
+    "loglog [matlab]":
+        prefix: "loglog"
+        body: '''${5:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''[matlab] Log-log scale plot
+        h = loglog(optional_ax, Y, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/loglog.html'
+
+
+    "axis [matlab]":
+        prefix: "axis"
+        body: '''${2:limits} = axis(${1:optional_ax})'''
+        description: '''[matlab] Set axis limits and aspect ratios
+        limits = axis(optional_ax)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/axis.html'
+
+
+    "box [matlab]":
+        prefix: "box"
+        body: '''box(${1:optional_ax}, ${2:optional_action})'''
+        description: '''[matlab] Display axes outline
+        box(optional_ax, optional_action)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/box.html'
+
+
+    "plot [matlab]":
+        prefix: "plot"
+        body: '''${5:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''[matlab] Plot cfit or sfit object
+        h = plot(optional_ax, Y, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/cfit.plot.html'
+
+
+    "grid [matlab]":
+        prefix: "grid"
+        body: '''grid(${1:optional_target}, ${2:optional_action})'''
+        description: '''[matlab] Display or hide axes grid lines
+        grid(optional_target, optional_action)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/grid.html'
+
+
+    "semilogx [matlab]":
+        prefix: "semilogx"
+        body: '''${5:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''[matlab] Semilogarithmic plot
+        h = semilogx(optional_ax, Y, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/semilogx.html'
+
+
+    "title [matlab]":
+        prefix: "title"
+        body: '''${4:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
+        description: '''[matlab] Add title
+        h = title(target, txt, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/title.html'
+
+
+    "xlabel [matlab]":
+        prefix: "xlabel"
+        body: '''${4:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        description: '''[matlab] Label  x-axis
+        h = xlabel(optional_target, txt, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xlabel.html'
+
+
+    "ylabel [matlab]":
+        prefix: "ylabel"
+        body: '''${4:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        description: '''[matlab] Label  y-axis
+        h = ylabel(optional_target, txt, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ylabel.html'
+

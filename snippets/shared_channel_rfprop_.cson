@@ -1,0 +1,182 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "rxsite.sigstrength [shared]":
+        prefix: "rxsite.sigstrength"
+        body: '''rxsite.sigstrength(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'PropagationModel', ${5:value}, 'Map', ${6:value})'''
+        description: '''[shared] 
+        rxsite.sigstrength(rx, tx, optional_PropagationModel, 'Type', value, 'PropagationModel', value, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rxsite.sigstrength.html'
+
+
+    "rfprop.AntennaSite.los [shared]":
+        prefix: "rfprop.AntennaSite.los"
+        body: '''rfprop.AntennaSite.los(${1:site1}, ${2:site2}, 'VisibleColor', ${3:value}, 'ObstructedColor', ${4:value}, 'Resolution', ${5:value}, 'Map', ${6:value})'''
+        description: '''[shared] 
+        rfprop.AntennaSite.los(site1, site2, 'VisibleColor', value, 'ObstructedColor', value, 'Resolution', value, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rfprop.AntennaSite.los.html'
+
+
+    "txsite.coverage [shared]":
+        prefix: "txsite.coverage"
+        body: '''txsite.coverage(${1:tx}, ${2:optional_rx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'SignalStrengths', ${5:value}, 'PropagationModel', ${6:value}, 'MaxRange', ${7:value}, 'Resolution', ${8:value}, 'ReceiverGain', ${9:value}, 'ReceiverAntennaHeight', ${10:value}, 'Colors', ${11:value}, 'ColorLimits', ${12:value}, 'Colormap', ${13:value}, 'Transparency', ${14:value}, 'ShowLegend', ${15:value}, 'Map', ${16:value})'''
+        description: '''[shared] 
+        txsite.coverage(tx, optional_rx, optional_PropagationModel, 'Type', value, 'SignalStrengths', value, 'PropagationModel', value, 'MaxRange', value, 'Resolution', value, 'ReceiverGain', value, 'ReceiverAntennaHeight', value, 'Colors', value, 'ColorLimits', value, 'Colormap', value, 'Transparency', value, 'ShowLegend', value, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/txsite.coverage.html'
+
+
+    "txsite [shared]":
+        prefix: "txsite"
+        body: '''txsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'TransmitterFrequency', ${8:value}, 'TransmitterPower', ${9:value})'''
+        description: '''[shared] 
+        txsite('Name', value, 'Latitude', value, 'Longitude', value, 'Antenna', value, 'AntennaAngle', value, 'AntennaHeight', value, 'SystemLoss', value, 'TransmitterFrequency', value, 'TransmitterPower', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/txsite.html'
+
+
+    "removeCustomTerrain [shared]":
+        prefix: "removeCustomTerrain"
+        body: '''removeCustomTerrain(${1:Terrain})'''
+        description: '''[shared] Remove custom terrain data
+        removeCustomTerrain(Terrain)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/removecustomterrain.html'
+
+
+    "txsite.sinr [shared]":
+        prefix: "txsite.sinr"
+        body: '''txsite.sinr(${1:tx}, ${2:optional_PropagationModel}, 'Values', ${3:value}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'MaxRange', ${6:value}, 'Resolution', ${7:value}, 'ReceiverGain', ${8:value}, 'ReceiverAntennaHeight', ${9:value}, 'ReceiverNoisePower', ${10:value}, 'ColorLimits', ${11:value}, 'Colormap', ${12:value}, 'Transparency', ${13:value}, 'ShowLegend', ${14:value}, 'Map', ${15:value})'''
+        description: '''[shared] 
+        txsite.sinr(tx, optional_PropagationModel, 'Values', value, 'SignalSource', value, 'PropagationModel', value, 'MaxRange', value, 'Resolution', value, 'ReceiverGain', value, 'ReceiverAntennaHeight', value, 'ReceiverNoisePower', value, 'ColorLimits', value, 'Colormap', value, 'Transparency', value, 'ShowLegend', value, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/txsite.sinr.html'
+
+
+    "rfprop.AntennaSite.distance [shared]":
+        prefix: "rfprop.AntennaSite.distance"
+        body: '''rfprop.AntennaSite.distance(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
+        description: '''[shared] 
+        rfprop.AntennaSite.distance(site1, site2, optional_path, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rfprop.AntennaSite.distance.html'
+
+
+    "rxsite.link [shared]":
+        prefix: "rxsite.link"
+        body: '''rxsite.link(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SuccessColor', ${4:value}, 'FailColor', ${5:value}, 'PropagationModel', ${6:value}, 'Map', ${7:value})'''
+        description: '''[shared] 
+        rxsite.link(rx, tx, optional_PropagationModel, 'SuccessColor', value, 'FailColor', value, 'PropagationModel', value, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rxsite.link.html'
+
+
+    "txsite.raytrace [shared]":
+        prefix: "txsite.raytrace"
+        body: '''txsite.raytrace(${1:tx}, ${2:rx}, 'Type', ${3:value}, 'NumReflections', ${4:value}, 'ColorLimits', ${5:value}, 'Colormap', ${6:value}, 'ShowLegend', ${7:value}, 'Map', ${8:value})'''
+        description: '''[shared] 
+        txsite.raytrace(tx, rx, 'Type', value, 'NumReflections', value, 'ColorLimits', value, 'Colormap', value, 'ShowLegend', value, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/txsite.raytrace.html'
+
+
+    "siteviewer [shared]":
+        prefix: "siteviewer"
+        body: '''siteviewer('Name', ${1:value}, 'Position', ${2:value}, 'Basemap', ${3:value}, 'Terrain', ${4:value}, 'Buildings', ${5:value})'''
+        description: '''[shared] 
+        siteviewer('Name', value, 'Position', value, 'Basemap', value, 'Terrain', value, 'Buildings', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/siteviewer.html'
+
+
+    "rfprop.AntennaSite.pattern [shared]":
+        prefix: "rfprop.AntennaSite.pattern"
+        body: '''rfprop.AntennaSite.pattern(${1:rx}, ${2:Frequency}, 'Size', ${3:value}, 'Transparency', ${4:value}, 'Colormap', ${5:value}, 'Map', ${6:value})'''
+        description: '''[shared] 
+        rfprop.AntennaSite.pattern(rx, Frequency, 'Size', value, 'Transparency', value, 'Colormap', value, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rfprop.AntennaSite.pattern.html'
+
+
+    "rfprop.AntennaSite.show [shared]":
+        prefix: "rfprop.AntennaSite.show"
+        body: '''rfprop.AntennaSite.show(${1:site}, 'Icon', ${2:value}, 'ClusterMarkers', ${3:value}, 'Map', ${4:value}, 'IconSize', ${5:value}, 'IconAlignment', ${6:value})'''
+        description: '''[shared] 
+        rfprop.AntennaSite.show(site, 'Icon', value, 'ClusterMarkers', value, 'Map', value, 'IconSize', value, 'IconAlignment', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rfprop.AntennaSite.show.html'
+
+
+    "rfprop.PropagationModel.pathloss [shared]":
+        prefix: "rfprop.PropagationModel.pathloss"
+        body: '''rfprop.PropagationModel.pathloss(${1:PropagationModel}, ${2:rx}, ${3:tx}, 'Map', ${4:value})'''
+        description: '''[shared] 
+        rfprop.PropagationModel.pathloss(PropagationModel, rx, tx, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rfprop.PropagationModel.pathloss.html'
+
+
+    "rfprop.AntennaSite.hide [shared]":
+        prefix: "rfprop.AntennaSite.hide"
+        body: '''rfprop.AntennaSite.hide(${1:site}, 'Map', ${2:value})'''
+        description: '''[shared] 
+        rfprop.AntennaSite.hide(site, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rfprop.AntennaSite.hide.html'
+
+
+    "rxsite.sinr [shared]":
+        prefix: "rxsite.sinr"
+        body: '''rxsite.sinr(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'ReceiverGain', ${6:value}, 'ReceiverAntennaHeight', ${7:value}, 'ReceiverNoisePower', ${8:value}, 'Map', ${9:value})'''
+        description: '''[shared] 
+        rxsite.sinr(rx, tx, optional_PropagationModel, 'SignalSource', value, 'PropagationModel', value, 'ReceiverGain', value, 'ReceiverAntennaHeight', value, 'ReceiverNoisePower', value, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rxsite.sinr.html'
+
+
+    "addCustomTerrain [shared]":
+        prefix: "addCustomTerrain"
+        body: '''addCustomTerrain(${1:Name}, ${2:File}, 'Attribution', ${3:value}, 'WriteLocation', ${4:value}, 'FillMissing', ${5:value})'''
+        description: '''[shared] Add custom terrain data
+        addCustomTerrain(Name, File, 'Attribution', value, 'WriteLocation', value, 'FillMissing', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/addcustomterrain.html'
+
+
+    "rfprop.AntennaSite.angle [shared]":
+        prefix: "rfprop.AntennaSite.angle"
+        body: '''rfprop.AntennaSite.angle(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
+        description: '''[shared] 
+        rfprop.AntennaSite.angle(site1, site2, optional_path, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rfprop.AntennaSite.angle.html'
+
+
+    "propagationModel [shared]":
+        prefix: "propagationModel"
+        body: '''propagationModel(${1:PropagationModel}, 'GroundPermittivity', ${2:value}, 'GroundConductivity', ${3:value}, 'AtmosphericRefractivity', ${4:value}, 'AntennaPolarization', ${5:value}, 'Humidity', ${6:value})'''
+        description: '''[shared] Create RF propagation model
+        propagationModel(PropagationModel, 'GroundPermittivity', value, 'GroundConductivity', value, 'AtmosphericRefractivity', value, 'AntennaPolarization', value, 'Humidity', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/propagationmodel.html'
+
+
+    "rxsite [shared]":
+        prefix: "rxsite"
+        body: '''rxsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'ReceiverSensitivity', ${8:value})'''
+        description: '''[shared] 
+        rxsite('Name', value, 'Latitude', value, 'Longitude', value, 'Antenna', value, 'AntennaAngle', value, 'AntennaHeight', value, 'SystemLoss', value, 'ReceiverSensitivity', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rxsite.html'
+
+
+    "rfprop.AntennaSite.elevation [shared]":
+        prefix: "rfprop.AntennaSite.elevation"
+        body: '''rfprop.AntennaSite.elevation(${1:site}, 'Map', ${2:value})'''
+        description: '''[shared] 
+        rfprop.AntennaSite.elevation(site, 'Map', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/rfprop.AntennaSite.elevation.html'
+

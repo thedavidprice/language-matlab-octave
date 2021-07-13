@@ -1,0 +1,29 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "fiaccel [fixedpoint]":
+        prefix: "fiaccel"
+        body: '''fiaccel(${1:compile_only}, ${2:debug}, ${3:report}, ${4:file}, '-d', ${5:value}, '-I', ${6:value}, '-globals', ${7:value}, '-o', ${8:value}, '-O', ${9:value}, '-args', ${10:value}, '-config', ${11:value})'''
+        description: '''[fixedpoint] 
+        fiaccel(compile_only, debug, report, file, '-d', value, '-I', value, '-globals', value, '-o', value, '-O', value, '-args', value, '-config', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/fixedpoint/fiaccel.html'
+
+
+    "fimath [fixedpoint]":
+        prefix: "fimath"
+        body: '''fimath('RoundingMethod', ${1:value}, 'OverflowAction', ${2:value}, 'ProductMode', ${3:value}, 'ProductWordLength', ${4:value}, 'ProductFractionLength', ${5:value}, 'ProductSlope', ${6:value}, 'ProductSlopeAdjustmentFactor', ${7:value}, 'ProductFixedExponent', ${8:value}, 'ProductBias', ${9:value}, 'SumMode', ${10:value}, 'SumWordLength', ${11:value}, 'SumFractionLength', ${12:value}, 'SumSlope', ${13:value}, 'SumSlopeAdjustmentFactor', ${14:value}, 'SumFixedExponent', ${15:value}, 'SumBias', ${16:value}, 'CastBeforeSum', ${17:value})'''
+        description: '''[fixedpoint] 
+        fimath('RoundingMethod', value, 'OverflowAction', value, 'ProductMode', value, 'ProductWordLength', value, 'ProductFractionLength', value, 'ProductSlope', value, 'ProductSlopeAdjustmentFactor', value, 'ProductFixedExponent', value, 'ProductBias', value, 'SumMode', value, 'SumWordLength', value, 'SumFractionLength', value, 'SumSlope', value, 'SumSlopeAdjustmentFactor', value, 'SumFixedExponent', value, 'SumBias', value, 'CastBeforeSum', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/fixedpoint/fimath.html'
+
+
+    "fixed.DataTypeSelector [fixedpoint]":
+        prefix: "fixed.DataTypeSelector"
+        body: '''fixed.DataTypeSelector('SafetyMargin', ${1:value}, 'AbsTol', ${2:value}, 'RelTol', ${3:value}, 'Signedness', ${4:value}, 'WordLength', ${5:value}, 'Scaling', ${6:value})'''
+        description: '''[fixedpoint] 
+        fixed.DataTypeSelector('SafetyMargin', value, 'AbsTol', value, 'RelTol', value, 'Signedness', value, 'WordLength', value, 'Scaling', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/fixedpoint/fixed.DataTypeSelector.html'
+

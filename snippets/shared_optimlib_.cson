@@ -1,0 +1,29 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "optimoptions [shared]":
+        prefix: "optimoptions"
+        body: '''optimoptions(${1:solver}, 'CheckpointFile', ${2:value}, 'Display', ${3:value}, 'InitialPoints', ${4:value}, 'MaxFunctionEvaluations', ${5:value}, 'MaxTime', ${6:value}, 'MinSampleDistance', ${7:value}, 'MinSurrogatePoints', ${8:value}, 'ObjectiveLimit', ${9:value}, 'OutputFcn', ${10:value}, 'PlotFcn', ${11:value}, 'UseParallel', ${12:value})'''
+        description: '''[shared] Create optimization options
+        optimoptions(solver, 'CheckpointFile', value, 'Display', value, 'InitialPoints', value, 'MaxFunctionEvaluations', value, 'MaxTime', value, 'MinSampleDistance', value, 'MinSurrogatePoints', value, 'ObjectiveLimit', value, 'OutputFcn', value, 'PlotFcn', value, 'UseParallel', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/../optim/ug/optim.problemdef.optimizationproblem.optimoptions.html'
+
+
+    "optim.options.MultiAlgorithm.resetoptions [shared]":
+        prefix: "optim.options.MultiAlgorithm.resetoptions"
+        body: '''optim.options.MultiAlgorithm.resetoptions(${1:solveroptions}, ${2:optionnames})'''
+        description: '''[shared] 
+        optim.options.MultiAlgorithm.resetoptions(solveroptions, optionnames)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/optim.options.MultiAlgorithm.resetoptions.html'
+
+
+    "optim.options.SingleAlgorithm.resetoptions [shared]":
+        prefix: "optim.options.SingleAlgorithm.resetoptions"
+        body: '''optim.options.SingleAlgorithm.resetoptions(${1:solveroptions}, ${2:optionnames})'''
+        description: '''[shared] 
+        optim.options.SingleAlgorithm.resetoptions(solveroptions, optionnames)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/optim.options.SingleAlgorithm.resetoptions.html'
+

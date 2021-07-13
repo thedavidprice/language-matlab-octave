@@ -1,0 +1,74 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "simscape.op.OperatingPoint.set [physmod]":
+        prefix: "simscape.op.OperatingPoint.set"
+        body: '''${3:op} = simscape.op.OperatingPoint.set(${1:T}, ${2:path})'''
+        description: '''[physmod] 
+        op = simscape.op.OperatingPoint.set(T, path)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint.set.html'
+
+
+    "simscape.op.OperatingPoint.get [physmod]":
+        prefix: "simscape.op.OperatingPoint.get"
+        body: '''${3:child} = simscape.op.OperatingPoint.get(${1:T}, ${2:path})'''
+        description: '''[physmod] 
+        child = simscape.op.OperatingPoint.get(T, path)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint.get.html'
+
+
+    "simscape.op.OperatingPoint.hasPath [physmod]":
+        prefix: "simscape.op.OperatingPoint.hasPath"
+        body: '''${3:f} = simscape.op.OperatingPoint.hasPath(${1:T}, ${2:path})'''
+        description: '''[physmod] 
+        f = simscape.op.OperatingPoint.hasPath(T, path)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint.hasPath.html'
+
+
+    "simscape.op.OperatingPoint.remove [physmod]":
+        prefix: "simscape.op.OperatingPoint.remove"
+        body: '''${3:op} = simscape.op.OperatingPoint.remove(${1:T}, ${2:path})'''
+        description: '''[physmod] 
+        op = simscape.op.OperatingPoint.remove(T, path)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint.remove.html'
+
+
+    "simscape.op.OperatingPoint._parenReference [physmod]":
+        prefix: "simscape.op.OperatingPoint._parenReference"
+        body: '''simscape.op.OperatingPoint._parenReference(${1:T}, ${2:path})'''
+        description: '''[physmod] 
+        simscape.op.OperatingPoint._parenReference(T, path)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint._parenReference.html'
+
+
+    "simscape.op.OperatingPoint._parenAssign [physmod]":
+        prefix: "simscape.op.OperatingPoint._parenAssign"
+        body: '''simscape.op.OperatingPoint._parenAssign(${1:T}, ${2:path})'''
+        description: '''[physmod] 
+        simscape.op.OperatingPoint._parenAssign(T, path)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint._parenAssign.html'
+
+
+    "simscape.op.OperatingPoint.move [physmod]":
+        prefix: "simscape.op.OperatingPoint.move"
+        body: '''${4:op} = simscape.op.OperatingPoint.move(${1:T}, ${2:path1}, ${3:path2})'''
+        description: '''[physmod] 
+        op = simscape.op.OperatingPoint.move(T, path1, path2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint.move.html'
+
+
+    "simscape.op.OperatingPoint.relativePath [physmod]":
+        prefix: "simscape.op.OperatingPoint.relativePath"
+        body: '''${1:f} = simscape.op.OperatingPoint.relativePath'''
+        description: '''[physmod] 
+        f = simscape.op.OperatingPoint.relativePath
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint.relativePath.html'
+

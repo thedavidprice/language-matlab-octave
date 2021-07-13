@@ -1,0 +1,676 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "brisqueModel [images]":
+        prefix: "brisqueModel"
+        body: '''${5:Model} = brisqueModel(${1:Alpha}, ${2:Bias}, ${3:SupportVectors}, ${4:Scale})'''
+        description: '''[images] Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) model
+        Model = brisqueModel(Alpha, Bias, SupportVectors, Scale)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/brisquemodel.html'
+
+
+    "imsegkmeans [images]":
+        prefix: "imsegkmeans"
+        body: '''[${7:L}, ${8:C}] = imsegkmeans(${1:I}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
+        description: '''[images] K-means clustering based image segmentation
+        [L, C] = imsegkmeans(I, k, 'NormalizeInput', value, 'NumAttempts', value, 'MaxIterations', value, 'Threshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imsegkmeans.html'
+
+
+    "dice [images]":
+        prefix: "dice"
+        body: '''${3:SIMILARITY} = dice(${1:BW1}, ${2:BW2})'''
+        description: '''[images] Sørensen-Dice similarity coefficient for image segmentation
+        SIMILARITY = dice(BW1, BW2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/dice.html'
+
+
+    "lazysnapping [images]":
+        prefix: "lazysnapping"
+        body: '''${7:BW} = lazysnapping(${1:A}, ${2:L}, ${3:FOREMASK}, ${4:BACKMASK}, 'Connectivity', ${5:value}, 'EdgeWeightScaleFactor', ${6:value})'''
+        description: '''[images] Segment image into foreground and background using graph-based
+segmentation
+        BW = lazysnapping(A, L, FOREMASK, BACKMASK, 'Connectivity', value, 'EdgeWeightScaleFactor', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/lazysnapping.html'
+
+
+    "plotChromaticity [images]":
+        prefix: "plotChromaticity"
+        body: '''plotChromaticity(${1:colorTable}, 'displayROIIndex', ${2:value}, 'Parent', ${3:value})'''
+        description: '''[images] Plot color reproduction on chromaticity diagram
+        plotChromaticity(colorTable, 'displayROIIndex', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/plotchromaticity.html'
+
+
+    "imdiffusefilt [images]":
+        prefix: "imdiffusefilt"
+        body: '''${6:B} = imdiffusefilt(${1:A}, 'GradientThreshold', ${2:value}, 'NumberOfIterations', ${3:value}, 'Connectivity', ${4:value}, 'ConductionMethod', ${5:value})'''
+        description: '''[images] Anisotropic diffusion filtering of images
+        B = imdiffusefilt(A, 'GradientThreshold', value, 'NumberOfIterations', value, 'Connectivity', value, 'ConductionMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imdiffusefilt.html'
+
+
+    "grabcut [images]":
+        prefix: "grabcut"
+        body: '''${8:BW} = grabcut(${1:A}, ${2:L}, ${3:ROI}, ${4:optional_FOREMASK}, ${5:optional_BACKMASK}, 'Connectivity', ${6:value}, 'MaximumIterations', ${7:value})'''
+        description: '''[images] Segment image into foreground and background using iterative graph-based
+            segmentation
+        BW = grabcut(A, L, ROI, optional_FOREMASK, optional_BACKMASK, 'Connectivity', value, 'MaximumIterations', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/grabcut.html'
+
+
+    "gradientweight [images]":
+        prefix: "gradientweight"
+        body: '''${5:W} = gradientweight(${1:I}, ${2:optional_sigma}, 'RolloffFactor', ${3:value}, 'WeightCutoff', ${4:value})'''
+        description: '''[images] Calculate weights for image pixels based on image gradient
+        W = gradientweight(I, optional_sigma, 'RolloffFactor', value, 'WeightCutoff', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/gradientweight.html'
+
+
+    "imcrop [images]":
+        prefix: "imcrop"
+        body: '''${3:BW} = imcrop(${1:I}, ${2:optional_RECT})'''
+        description: '''[images] Crop image
+        BW = imcrop(I, optional_RECT)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imcrop.html'
+
+
+    "imnlmfilt [images]":
+        prefix: "imnlmfilt"
+        body: '''[${5:B}, ${6:DegreeOfSmoothing}] = imnlmfilt(${1:A}, 'ComparisonWindowSize', ${2:value}, 'DegreeOfSmoothing', ${3:value}, 'SearchWindowSize', ${4:value})'''
+        description: '''[images] Non-local means filtering of image
+        [B, DegreeOfSmoothing] = imnlmfilt(A, 'ComparisonWindowSize', value, 'DegreeOfSmoothing', value, 'SearchWindowSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imnlmfilt.html'
+
+
+    "blendexposure [images]":
+        prefix: "blendexposure"
+        body: '''${7:E} = blendexposure(${1:I1}, ${2:I2}, 'Contrast', ${3:value}, 'Saturation', ${4:value}, 'WellExposedness', ${5:value}, 'ReduceStrongLight', ${6:value})'''
+        description: '''[images] Create well-exposed image from images with different exposures
+        E = blendexposure(I1, I2, 'Contrast', value, 'Saturation', value, 'WellExposedness', value, 'ReduceStrongLight', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/blendexposure.html'
+
+
+    "bwselect3 [images]":
+        prefix: "bwselect3"
+        body: '''${9:J} = bwselect3(${1:X}, ${2:Y}, ${3:Z}, ${4:V}, ${5:Xi}, ${6:Yi}, ${7:Zi}, ${8:optional_N})'''
+        description: '''[images] Select objects in binary image
+        J = bwselect3(X, Y, Z, V, Xi, Yi, Zi, optional_N)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bwselect3.html'
+
+
+    "esfrChart [images]":
+        prefix: "esfrChart"
+        body: '''${3:CHART} = esfrChart(${1:A}, 'RegistrationPoints', ${2:value})'''
+        description: '''[images] Imatest® edge spatial frequency response (eSFR) test
+            chart
+        CHART = esfrChart(A, 'RegistrationPoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/esfrchart.html'
+
+
+    "imflatfield [images]":
+        prefix: "imflatfield"
+        body: '''${5:B} = imflatfield(${1:A}, ${2:Sigma}, ${3:optional_Mask}, 'FilterSize', ${4:value})'''
+        description: '''[images] 2-D image flat-field correction
+        B = imflatfield(A, Sigma, optional_Mask, 'FilterSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imflatfield.html'
+
+
+    "randomAffine2d [images]":
+        prefix: "randomAffine2d"
+        body: '''randomAffine2d('XReflection', ${1:value}, 'YReflection', ${2:value}, 'Rotation', ${3:value}, 'Scale', ${4:value}, 'XShear', ${5:value}, 'YShear', ${6:value}, 'XTranslation', ${7:value}, 'YTranslation', ${8:value})'''
+        description: '''[images] Create randomized 2-D affine transformation
+        randomAffine2d('XReflection', value, 'YReflection', value, 'Rotation', value, 'Scale', value, 'XShear', value, 'YShear', value, 'XTranslation', value, 'YTranslation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/randomaffine2d.html'
+
+
+    "imbinarize [images]":
+        prefix: "imbinarize"
+        body: '''${5:BW} = imbinarize(${1:I}, ${2:Method}, 'Sensitivity', ${3:value}, 'ForegroundPolarity', ${4:value})'''
+        description: '''[images] Binarize 2-D grayscale image or 3-D volume by thresholding
+        BW = imbinarize(I, Method, 'Sensitivity', value, 'ForegroundPolarity', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imbinarize.html'
+
+
+    "measureColor [images]":
+        prefix: "measureColor"
+        body: '''[${2:colorTable}, ${3:colorCorrectionMatrix}] = measureColor(${1:CHART})'''
+        description: '''[images] Measure color reproduction using Imatest® eSFR
+            chart
+        [colorTable, colorCorrectionMatrix] = measureColor(CHART)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/esfrchart.measurecolor.html'
+
+
+    "bfscore [images]":
+        prefix: "bfscore"
+        body: '''[${4:SCORE}, ${5:PRECISION}, ${6:RECALL}] = bfscore(${1:PREDICTION}, ${2:GROUNDTRUTH}, ${3:optional_THRESHOLD})'''
+        description: '''[images] Contour matching score for image segmentation
+        [SCORE, PRECISION, RECALL] = bfscore(PREDICTION, GROUNDTRUTH, optional_THRESHOLD)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bfscore.html'
+
+
+    "imregmtb [images]":
+        prefix: "imregmtb"
+        body: '''[${3:R1}, ${4:shifts}] = imregmtb(${1:M1}, ${2:M2})'''
+        description: '''[images] Register 2-D images using median threshold bitmaps
+        [R1, shifts] = imregmtb(M1, M2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imregmtb.html'
+
+
+    "fspecial3 [images]":
+        prefix: "fspecial3"
+        body: '''${3:H} = fspecial3(${1:TYPE}, ${2:optional_direction})'''
+        description: '''[images] Create predefined 3-D filter
+        H = fspecial3(TYPE, optional_direction)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/fspecial3.html'
+
+
+    "jitterColorHSV [images]":
+        prefix: "jitterColorHSV"
+        body: '''jitterColorHSV(${1:A}, 'Contrast', ${2:value}, 'Brightness', ${3:value}, 'Hue', ${4:value}, 'Saturation', ${5:value})'''
+        description: '''[images] Randomly alter color of pixels
+        jitterColorHSV(A, 'Contrast', value, 'Brightness', value, 'Hue', value, 'Saturation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/jittercolorhsv.html'
+
+
+    "inpaintExemplar [images]":
+        prefix: "inpaintExemplar"
+        body: '''${5:J} = inpaintExemplar(${1:I}, ${2:mask}, 'FillOrder', ${3:value}, 'PatchSize', ${4:value})'''
+        description: '''[images] Restore specific image regions using exemplar-based image inpainting
+        J = inpaintExemplar(I, mask, 'FillOrder', value, 'PatchSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/inpaintexemplar.html'
+
+
+    "bwferet [images]":
+        prefix: "bwferet"
+        body: '''[${3:Out}, ${4:L}] = bwferet(${1:BW}, ${2:optional_Properties})'''
+        description: '''[images] Measure Feret properties
+        [Out, L] = bwferet(BW, optional_Properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bwferet.html'
+
+
+    "regionprops3 [images]":
+        prefix: "regionprops3"
+        body: '''${4:stats} = regionprops3(${1:BW}, ${2:V}, ${3:optional_Properties})'''
+        description: '''[images] Measure properties of 3-D volumetric image regions
+        stats = regionprops3(BW, V, optional_Properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/regionprops3.html'
+
+
+    "bwdist [images]":
+        prefix: "bwdist"
+        body: '''[${3:D}, ${4:IDX}] = bwdist(${1:BW}, ${2:optional_METHOD})'''
+        description: '''[images] Distance transform of binary image
+        [D, IDX] = bwdist(BW, optional_METHOD)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bwdist.html'
+
+
+    "randomAffine3d [images]":
+        prefix: "randomAffine3d"
+        body: '''randomAffine3d('XReflection', ${1:value}, 'YReflection', ${2:value}, 'ZReflection', ${3:value}, 'Rotation', ${4:value}, 'Scale', ${5:value}, 'Shear', ${6:value}, 'XTranslation', ${7:value}, 'YTranslation', ${8:value}, 'ZTranslation', ${9:value})'''
+        description: '''[images] Create randomized 3-D affine transformation
+        randomAffine3d('XReflection', value, 'YReflection', value, 'ZReflection', value, 'Rotation', value, 'Scale', value, 'Shear', value, 'XTranslation', value, 'YTranslation', value, 'ZTranslation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/randomaffine3d.html'
+
+
+    "regionprops [images]":
+        prefix: "regionprops"
+        body: '''${4:Out} = regionprops(${1:optional_Option}, ${2:BW}, ${3:optional_Properties})'''
+        description: '''[images] Measure properties of image regions
+        Out = regionprops(optional_Option, BW, optional_Properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/regionprops.html'
+
+
+    "measureNoise [images]":
+        prefix: "measureNoise"
+        body: '''${2:noiseTable} = measureNoise(${1:CHART})'''
+        description: '''[images] Measure noise using Imatest® eSFR chart
+        noiseTable = measureNoise(CHART)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/esfrchart.measurenoise.html'
+
+
+    "measureIlluminant [images]":
+        prefix: "measureIlluminant"
+        body: '''${2:illum} = measureIlluminant(${1:CHART})'''
+        description: '''[images] Measure scene illuminant using Imatest® eSFR
+            chart
+        illum = measureIlluminant(CHART)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/esfrchart.measureilluminant.html'
+
+
+    "imrotate3 [images]":
+        prefix: "imrotate3"
+        body: '''${7:B} = imrotate3(${1:V}, ${2:Angle}, ${3:W}, ${4:optional_Method}, ${5:optional_BBOX}, 'FillValues', ${6:value})'''
+        description: '''[images] Rotate 3-D volumetric grayscale image
+        B = imrotate3(V, Angle, W, optional_Method, optional_BBOX, 'FillValues', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imrotate3.html'
+
+
+    "localcontrast [images]":
+        prefix: "localcontrast"
+        body: '''${4:B} = localcontrast(${1:A}, ${2:edgeThreshold}, ${3:optional_amount})'''
+        description: '''[images] Edge-aware local contrast manipulation of images
+        B = localcontrast(A, edgeThreshold, optional_amount)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/localcontrast.html'
+
+
+    "niqe [images]":
+        prefix: "niqe"
+        body: '''${3:Score} = niqe(${1:A}, ${2:optional_Model})'''
+        description: '''[images] Naturalness Image Quality Evaluator (NIQE) no-reference image quality
+            score
+        Score = niqe(A, optional_Model)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/niqe.html'
+
+
+    "superpixels3 [images]":
+        prefix: "superpixels3"
+        body: '''[${6:L}, ${7:NumLabels}] = superpixels3(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'Method', ${4:value}, 'NumIterations', ${5:value})'''
+        description: '''[images] 3-D superpixel oversegmentation of 3-D image
+        [L, NumLabels] = superpixels3(A, N, 'Compactness', value, 'Method', value, 'NumIterations', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/superpixels3.html'
+
+
+    "imreducehaze [images]":
+        prefix: "imreducehaze"
+        body: '''[${7:D}, ${8:T}, ${9:L}] = imreducehaze(${1:X}, ${2:optional_amount}, 'Method', ${3:value}, 'AtmosphericLight', ${4:value}, 'ContrastEnhancement', ${5:value}, 'BoostAmount', ${6:value})'''
+        description: '''[images] Reduce atmospheric haze
+        [D, T, L] = imreducehaze(X, optional_amount, 'Method', value, 'AtmosphericLight', value, 'ContrastEnhancement', value, 'BoostAmount', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imreducehaze.html'
+
+
+    "measureSharpness [images]":
+        prefix: "measureSharpness"
+        body: '''[${5:sharpnessTable}, ${6:aggregateSharpnessTable}] = measureSharpness(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value}, 'PercentResponse', ${4:value})'''
+        description: '''[images] Measure spatial frequency response using Imatest®
+            eSFR chart
+        [sharpnessTable, aggregateSharpnessTable] = measureSharpness(CHART, 'ROIIndex', value, 'ROIOrientation', value, 'PercentResponse', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/esfrchart.measuresharpness.html'
+
+
+    "labeloverlay [images]":
+        prefix: "labeloverlay"
+        body: '''${6:B} = labeloverlay(${1:A}, ${2:L}, 'Colormap', ${3:value}, 'IncludedLabels', ${4:value}, 'Transparency', ${5:value})'''
+        description: '''[images] Overlay label matrix regions on 2-D image
+        B = labeloverlay(A, L, 'Colormap', value, 'IncludedLabels', value, 'Transparency', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/labeloverlay.html'
+
+
+    "bwmorph3 [images]":
+        prefix: "bwmorph3"
+        body: '''${3:J} = bwmorph3(${1:V}, ${2:Operation})'''
+        description: '''[images] Morphological operations on binary volume
+        J = bwmorph3(V, Operation)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bwmorph3.html'
+
+
+    "imsplit [images]":
+        prefix: "imsplit"
+        body: '''imsplit(${1:I})'''
+        description: '''[images] Split multichannel image into its individual channels
+        imsplit(I)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imsplit.html'
+
+
+    "measureChromaticAberration [images]":
+        prefix: "measureChromaticAberration"
+        body: '''${4:aberrationTable} = measureChromaticAberration(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value})'''
+        description: '''[images] Measure chromatic aberration at slanted edges using
+                Imatest® eSFR chart
+        aberrationTable = measureChromaticAberration(CHART, 'ROIIndex', value, 'ROIOrientation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/esfrchart.measurechromaticaberration.html'
+
+
+    "displayColorPatch [images]":
+        prefix: "displayColorPatch"
+        body: '''displayColorPatch(${1:colorTable}, 'displayROIIndex', ${2:value}, 'displayDeltaE', ${3:value}, 'Parent', ${4:value})'''
+        description: '''[images] Display visual color reproduction as color patches
+        displayColorPatch(colorTable, 'displayROIIndex', value, 'displayDeltaE', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/displaycolorpatch.html'
+
+
+    "graydiffweight [images]":
+        prefix: "graydiffweight"
+        body: '''${7:W} = graydiffweight(${1:I}, ${2:refGrayVal}, ${3:optional_MASK}, ${4:optional_C}, 'RolloffFactor', ${5:value}, 'GrayDifferenceCutoff', ${6:value})'''
+        description: '''[images] Calculate weights for image pixels based on grayscale
+intensity difference
+        W = graydiffweight(I, refGrayVal, optional_MASK, optional_C, 'RolloffFactor', value, 'GrayDifferenceCutoff', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/graydiffweight.html'
+
+
+    "imlocalbrighten [images]":
+        prefix: "imlocalbrighten"
+        body: '''[${4:B}, ${5:D}] = imlocalbrighten(${1:A}, ${2:optional_amount}, 'AlphaBlend', ${3:value})'''
+        description: '''[images] Brighten low-light image
+        [B, D] = imlocalbrighten(A, optional_amount, 'AlphaBlend', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imlocalbrighten.html'
+
+
+    "imrotate [images]":
+        prefix: "imrotate"
+        body: '''${5:B} = imrotate(${1:A}, ${2:Angle}, ${3:optional_Method}, ${4:optional_BBOX})'''
+        description: '''[images] Rotate image
+        B = imrotate(A, Angle, optional_Method, optional_BBOX)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imrotate.html'
+
+
+    "inpaintCoherent [images]":
+        prefix: "inpaintCoherent"
+        body: '''${5:J} = inpaintCoherent(${1:I}, ${2:mask}, 'SmoothingFactor', ${3:value}, 'Radius', ${4:value})'''
+        description: '''[images] Restore specific image regions using coherence transport based image
+      inpainting
+        J = inpaintCoherent(I, mask, 'SmoothingFactor', value, 'Radius', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/inpaintcoherent.html'
+
+
+    "locallapfilt [images]":
+        prefix: "locallapfilt"
+        body: '''${7:B} = locallapfilt(${1:A}, ${2:sigma}, ${3:alpha}, ${4:optional_beta}, 'ColorMode', ${5:value}, 'NumIntensityLevels', ${6:value})'''
+        description: '''[images] Fast local Laplacian filtering of images
+        B = locallapfilt(A, sigma, alpha, optional_beta, 'ColorMode', value, 'NumIntensityLevels', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/locallapfilt.html'
+
+
+    "tonemapfarbman [images]":
+        prefix: "tonemapfarbman"
+        body: '''${7:LDR} = tonemapfarbman(${1:HDR}, 'RangeCompression', ${2:value}, 'Saturation', ${3:value}, 'Exposure', ${4:value}, 'NumberOfScales', ${5:value}, 'Weights', ${6:value})'''
+        description: '''[images] Convert HDR image to LDR using edge-preserving multiscale
+      decompositions
+        LDR = tonemapfarbman(HDR, 'RangeCompression', value, 'Saturation', value, 'Exposure', value, 'NumberOfScales', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/tonemapfarbman.html'
+
+
+    "imbilatfilt [images]":
+        prefix: "imbilatfilt"
+        body: '''${6:B} = imbilatfilt(${1:A}, ${2:optional_DegreeOfSmoothing}, ${3:optional_SpatialSigma}, 'NeighborhoodSize', ${4:value}, 'Padding', ${5:value})'''
+        description: '''[images] Bilateral filtering of images with Gaussian kernels
+        B = imbilatfilt(A, optional_DegreeOfSmoothing, optional_SpatialSigma, 'NeighborhoodSize', value, 'Padding', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imbilatfilt.html'
+
+
+    "fitniqe [images]":
+        prefix: "fitniqe"
+        body: '''${4:Model} = fitniqe(${1:IMDS}, 'BlockSize', ${2:value}, 'SharpnessThreshold', ${3:value})'''
+        description: '''[images] Fit custom model for NIQE image quality score
+        Model = fitniqe(IMDS, 'BlockSize', value, 'SharpnessThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/fitniqe.html'
+
+
+    "imcrop3 [images]":
+        prefix: "imcrop3"
+        body: '''${3:VOUT} = imcrop3(${1:V}, ${2:Cuboid})'''
+        description: '''[images] Crop 3-D image
+        VOUT = imcrop3(V, Cuboid)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imcrop3.html'
+
+
+    "imsegkmeans3 [images]":
+        prefix: "imsegkmeans3"
+        body: '''[${7:L}, ${8:C}] = imsegkmeans3(${1:V}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
+        description: '''[images] K-means clustering based volume segmentation
+        [L, C] = imsegkmeans3(V, k, 'NormalizeInput', value, 'NumAttempts', value, 'MaxIterations', value, 'Threshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imsegkmeans3.html'
+
+
+    "localtonemap [images]":
+        prefix: "localtonemap"
+        body: '''${4:RGB} = localtonemap(${1:HDR}, 'RangeCompression', ${2:value}, 'EnhanceContrast', ${3:value})'''
+        description: '''[images] Render HDR image for viewing while enhancing local contrast
+        RGB = localtonemap(HDR, 'RangeCompression', value, 'EnhanceContrast', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/localtonemap.html'
+
+
+    "burstinterpolant [images]":
+        prefix: "burstinterpolant"
+        body: '''${4:E} = burstinterpolant(${1:imds}, ${2:tforms}, ${3:arg})'''
+        description: '''[images] Create high-resolution image from set of low-resolution burst mode
+      images
+        E = burstinterpolant(imds, tforms, arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/burstinterpolant.html'
+
+
+    "piqe [images]":
+        prefix: "piqe"
+        body: '''[${2:Score}, ${3:ActivityMask}, ${4:NoticeableArtifactsMask}, ${5:NoiseMask}] = piqe(${1:A})'''
+        description: '''[images] Perception based Image Quality Evaluator (PIQE) no-reference image quality
+      score
+        [Score, ActivityMask, NoticeableArtifactsMask, NoiseMask] = piqe(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/piqe.html'
+
+
+    "imdiffuseest [images]":
+        prefix: "imdiffuseest"
+        body: '''[${4:gradientThreshold}, ${5:numberOfIterations}] = imdiffuseest(${1:A}, 'Connectivity', ${2:value}, 'ConductionMethod', ${3:value})'''
+        description: '''[images] Estimate parameters for anisotropic diffusion filtering
+        [gradientThreshold, numberOfIterations] = imdiffuseest(A, 'Connectivity', value, 'ConductionMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imdiffuseest.html'
+
+
+    "integralImage [images]":
+        prefix: "integralImage"
+        body: '''integralImage(${1:I}, ${2:optional_orientation})'''
+        description: '''[images] Calculate 2-D integral image
+        integralImage(I, optional_orientation)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/integralimage.html'
+
+
+    "imsegfmm [images]":
+        prefix: "imsegfmm"
+        body: '''${7:BW} = imsegfmm(${1:W}, ${2:MASK}, ${3:THRESH}, ${4:optional_C}, ${5:optional_R}, ${6:optional_P})'''
+        description: '''[images] Binary image segmentation using Fast Marching Method
+        BW = imsegfmm(W, MASK, THRESH, optional_C, optional_R, optional_P)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imsegfmm.html'
+
+
+    "fitbrisque [images]":
+        prefix: "fitbrisque"
+        body: '''${3:Model} = fitbrisque(${1:IMDS}, ${2:OpinionScore})'''
+        description: '''[images] Fit custom model for BRISQUE image quality score
+        Model = fitbrisque(IMDS, OpinionScore)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/fitbrisque.html'
+
+
+    "adaptthresh [images]":
+        prefix: "adaptthresh"
+        body: '''${6:T} = adaptthresh(${1:I}, ${2:optional_Sensitivity}, 'NeighborhoodSize', ${3:value}, 'ForegroundPolarity', ${4:value}, 'Statistic', ${5:value})'''
+        description: '''[images] Adaptive image threshold using local first-order statistics
+        T = adaptthresh(I, optional_Sensitivity, 'NeighborhoodSize', value, 'ForegroundPolarity', value, 'Statistic', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/adaptthresh.html'
+
+
+    "brisque [images]":
+        prefix: "brisque"
+        body: '''${3:Score} = brisque(${1:A}, ${2:optional_Model})'''
+        description: '''[images] Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) no-reference image
+            quality score
+        Score = brisque(A, optional_Model)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/brisque.html'
+
+
+    "edge3 [images]":
+        prefix: "edge3"
+        body: '''${5:BW} = edge3(${1:V}, ${2:Method}, ${3:THRESH}, ${4:optional_edgeThinning})'''
+        description: '''[images] Find edges in 3-D intensity volume
+        BW = edge3(V, Method, THRESH, optional_edgeThinning)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/edge3.html'
+
+
+    "images.geotrans.Warper [images]":
+        prefix: "images.geotrans.Warper"
+        body: '''${6:warper} = images.geotrans.Warper(${1:tform}, ${2:inputSize}, ${3:optional_outputRef}, 'Interpolation', ${4:value}, 'FillValue', ${5:value})'''
+        description: '''[images] 
+        warper = images.geotrans.Warper(tform, inputSize, optional_outputRef, 'Interpolation', value, 'FillValue', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/images.geotrans.Warper.html'
+
+
+    "imadjustn [images]":
+        prefix: "imadjustn"
+        body: '''${5:J} = imadjustn(${1:V}, ${2:optional_LowHighIn}, ${3:optional_LowHighOut}, ${4:optional_gamma})'''
+        description: '''[images] Adjust intensity values in N-D volumetric image
+        J = imadjustn(V, optional_LowHighIn, optional_LowHighOut, optional_gamma)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imadjustn.html'
+
+
+    "jaccard [images]":
+        prefix: "jaccard"
+        body: '''${3:SIMILARITY} = jaccard(${1:BW1}, ${2:BW2})'''
+        description: '''[images] Jaccard similarity coefficient for image segmentation
+        SIMILARITY = jaccard(BW1, BW2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/jaccard.html'
+
+
+    "superpixels [images]":
+        prefix: "superpixels"
+        body: '''[${7:L}, ${8:NumLabels}] = superpixels(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'IsInputLab', ${4:value}, 'Method', ${5:value}, 'NumIterations', ${6:value})'''
+        description: '''[images] 2-D superpixel oversegmentation of images
+        [L, NumLabels] = superpixels(A, N, 'Compactness', value, 'IsInputLab', value, 'Method', value, 'NumIterations', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/superpixels.html'
+
+
+    "niqeModel [images]":
+        prefix: "niqeModel"
+        body: '''${5:Model} = niqeModel(${1:Mean}, ${2:Covariance}, ${3:BlockSize}, ${4:SharpnessThreshold})'''
+        description: '''[images] Naturalness Image Quality Evaluator (NIQE) model
+        Model = niqeModel(Mean, Covariance, BlockSize, SharpnessThreshold)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/niqemodel.html'
+
+
+    "activecontour [images]":
+        prefix: "activecontour"
+        body: '''${7:BW} = activecontour(${1:A}, ${2:MASK}, ${3:optional_n}, ${4:optional_method}, 'SmoothFactor', ${5:value}, 'ContractionBias', ${6:value})'''
+        description: '''[images]  Segment image into foreground and background using active contours
+            (snakes)
+        BW = activecontour(A, MASK, optional_n, optional_method, 'SmoothFactor', value, 'ContractionBias', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/activecontour.html'
+
+
+    "imfindcircles [images]":
+        prefix: "imfindcircles"
+        body: '''[${7:Centers}, ${8:Radii}, ${9:Metric}] = imfindcircles(${1:A}, ${2:Radius range}, 'ObjectPolarity', ${3:value}, 'Method', ${4:value}, 'Sensitivity', ${5:value}, 'EdgeThreshold', ${6:value})'''
+        description: '''[images] Find circles using circular Hough transform
+        [Centers, Radii, Metric] = imfindcircles(A, Radius range, 'ObjectPolarity', value, 'Method', value, 'Sensitivity', value, 'EdgeThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imfindcircles.html'
+
+
+    "imhistmatch [images]":
+        prefix: "imhistmatch"
+        body: '''[${5:B}, ${6:hgram}] = imhistmatch(${1:A}, ${2:REF}, ${3:optional_NBINS}, 'Method', ${4:value})'''
+        description: '''[images] Adjust histogram of 2-D image to match histogram of reference
+image 
+        [B, hgram] = imhistmatch(A, REF, optional_NBINS, 'Method', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imhistmatch.html'
+
+
+    "imresize3 [images]":
+        prefix: "imresize3"
+        body: '''${6:B} = imresize3(${1:V}, ${2:Scale}, 'Method', ${3:value}, 'AntiAliasing', ${4:value}, 'OutputSize', ${5:value})'''
+        description: '''[images] Resize 3-D volumetric intensity image
+        B = imresize3(V, Scale, 'Method', value, 'AntiAliasing', value, 'OutputSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imresize3.html'
+
+
+    "plotSFR [images]":
+        prefix: "plotSFR"
+        body: '''plotSFR(${1:sharpnessMeasurementTable}, 'ROIIndex', ${2:value}, 'displayLegend', ${3:value}, 'displayTitle', ${4:value}, 'Parent', ${5:value})'''
+        description: '''[images] Plot spatial frequency response of edge
+        plotSFR(sharpnessMeasurementTable, 'ROIIndex', value, 'displayLegend', value, 'displayTitle', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/plotsfr.html'
+
+
+    "fibermetric [images]":
+        prefix: "fibermetric"
+        body: '''${5:B} = fibermetric(${1:A}, ${2:optional_thickness}, 'ObjectPolarity', ${3:value}, 'StructureSensitivity', ${4:value})'''
+        description: '''[images] Enhance elongated or tubular structures in image
+        B = fibermetric(A, optional_thickness, 'ObjectPolarity', value, 'StructureSensitivity', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/fibermetric.html'
+
+
+    "displayChart [images]":
+        prefix: "displayChart"
+        body: '''displayChart(${1:CHART}, 'displayEdgeROIs', ${2:value}, 'displayGrayROIs', ${3:value}, 'displayColorROIs', ${4:value}, 'displayRegistrationPoints', ${5:value}, 'Parent', ${6:value})'''
+        description: '''[images] Display Imatest® eSFR chart with overlaid regions of
+            interest
+        displayChart(CHART, 'displayEdgeROIs', value, 'displayGrayROIs', value, 'displayColorROIs', value, 'displayRegistrationPoints', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/esfrchart.displaychart.html'
+
+
+    "affineOutputView [images]":
+        prefix: "affineOutputView"
+        body: '''affineOutputView(${1:sizeA}, ${2:tform}, 'BoundsStyle', ${3:value})'''
+        description: '''[images] Create output view for warping images
+        affineOutputView(sizeA, tform, 'BoundsStyle', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/affineoutputview.html'
+

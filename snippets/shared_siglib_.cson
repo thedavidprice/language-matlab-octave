@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "chirp [shared]":
+        prefix: "chirp"
+        body: '''${8:y} = chirp(${1:t}, ${2:f0}, ${3:t1}, ${4:f1}, ${5:method}, ${6:phi}, ${7:optional_shape})'''
+        description: '''[shared] Swept-frequency cosine
+        y = chirp(t, f0, t1, f1, method, phi, optional_shape)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/chirp.html'
+
+
+    "ellipap [shared]":
+        prefix: "ellipap"
+        body: '''[${4:z}, ${5:p}, ${6:k}] = ellipap(${1:n}, ${2:Rp}, ${3:Rs})'''
+        description: '''[shared] Elliptic analog lowpass filter prototype
+        [z, p, k] = ellipap(n, Rp, Rs)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ellipap.html'
+

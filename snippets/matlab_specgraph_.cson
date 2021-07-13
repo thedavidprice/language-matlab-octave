@@ -1,0 +1,317 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "stem3 [matlab]":
+        prefix: "stem3"
+        body: '''${6:h} = stem3(${1:optional_ax}, ${2:z}, ${3:'filled'}, ${4:LineSpec}, ${5:opts})'''
+        description: '''[matlab] Plot 3-D discrete sequence data
+        h = stem3(optional_ax, z, 'filled', LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stem3.html'
+
+
+    "histogram [matlab]":
+        prefix: "histogram"
+        body: '''${3:h} = histogram(${1:optional_ax}, ${2:opts})'''
+        description: '''[matlab] Histogram plot
+        h = histogram(optional_ax, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.primitive.histogram.html'
+
+
+    "stairs [matlab]":
+        prefix: "stairs"
+        body: '''${6:h} = stairs(${1:optional_ax}, ${2:optional_x}, ${3:y}, ${4:optional_LineSpec}, ${5:opts})'''
+        description: '''[matlab] Stairstep graph
+        h = stairs(optional_ax, optional_x, y, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stairs.html'
+
+
+    "matlab.graphics.chart.primitive.GraphPlot.labeledge [matlab]":
+        prefix: "matlab.graphics.chart.primitive.GraphPlot.labeledge"
+        body: '''matlab.graphics.chart.primitive.GraphPlot.labeledge(${1:H}, ${2:s}, ${3:t}, ${4:Labels})'''
+        description: '''[matlab] 
+        matlab.graphics.chart.primitive.GraphPlot.labeledge(H, s, t, Labels)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.primitive.GraphPlot.labeledge.html'
+
+
+    "quiver [matlab]":
+        prefix: "quiver"
+        body: '''${8:h} = quiver(${1:optional_ax}, ${2:u}, ${3:v}, ${4:optional_scale}, ${5:'filled'}, ${6:LineSpec}, ${7:opts})'''
+        description: '''[matlab] Quiver or velocity plot
+        h = quiver(optional_ax, u, v, optional_scale, 'filled', LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/quiver.html'
+
+
+    "quiver3 [matlab]":
+        prefix: "quiver3"
+        body: '''${10:h} = quiver3(${1:optional_ax}, ${2:z}, ${3:u}, ${4:v}, ${5:w}, ${6:optional_scale}, ${7:'filled'}, ${8:LineSpec}, ${9:opts})'''
+        description: '''[matlab] 3-D quiver or velocity plot
+        h = quiver3(optional_ax, z, u, v, w, optional_scale, 'filled', LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/quiver3.html'
+
+
+    "matlab.graphics.chart.ScatterHistogramChart.ylim [matlab]":
+        prefix: "matlab.graphics.chart.ScatterHistogramChart.ylim"
+        body: '''${3:mode} = matlab.graphics.chart.ScatterHistogramChart.ylim(${1:sh}, ${2:mode})'''
+        description: '''[matlab] 
+        mode = matlab.graphics.chart.ScatterHistogramChart.ylim(sh, mode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.ScatterHistogramChart.ylim.html'
+
+
+    "wordcloud [matlab]":
+        prefix: "wordcloud"
+        body: '''${6:h} = wordcloud(${1:optional_parent}, ${2:tbl}, ${3:wordvar}, ${4:sizevar}, ${5:opts})'''
+        description: '''[matlab] Create word cloud chart from text data
+        h = wordcloud(optional_parent, tbl, wordvar, sizevar, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/wordcloud.html'
+
+
+    "bar [matlab]":
+        prefix: "bar"
+        body: '''${8:h} = bar(${1:optional_ax}, ${2:optional_x}, ${3:y}, ${4:optional_width}, ${5:style}, ${6:color}, ${7:opts})'''
+        description: '''[matlab] Bar graph
+        h = bar(optional_ax, optional_x, y, optional_width, style, color, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bar.html'
+
+
+    "barh [matlab]":
+        prefix: "barh"
+        body: '''${8:h} = barh(${1:optional_ax}, ${2:optional_x}, ${3:y}, ${4:optional_width}, ${5:style}, ${6:color}, ${7:opts})'''
+        description: '''[matlab] Horizontal bar graph
+        h = barh(optional_ax, optional_x, y, optional_width, style, color, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/barh.html'
+
+
+    "scatter [matlab]":
+        prefix: "scatter"
+        body: '''${9:s} = scatter(${1:optional_ax}, ${2:x}, ${3:y}, ${4:optional_sz}, ${5:optional_c}, ${6:'filled'}, ${7:mkr}, ${8:opts})'''
+        description: '''[matlab] Scatter plot
+        s = scatter(optional_ax, x, y, optional_sz, optional_c, 'filled', mkr, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/scatter.html'
+
+
+    "parallelplot [matlab]":
+        prefix: "parallelplot"
+        body: '''${6:p} = parallelplot(${1:optional_parent}, ${2:tbl}, 'CoordinateVariables', ${3:value}, 'GroupVariable', ${4:value}, ${5:opts})'''
+        description: '''[matlab] Create parallel coordinates plot
+        p = parallelplot(optional_parent, tbl, 'CoordinateVariables', value, 'GroupVariable', value, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/parallelplot.html'
+
+
+    "heatmap [matlab]":
+        prefix: "heatmap"
+        body: '''${7:h} = heatmap(${1:optional_parent}, ${2:tbl}, ${3:xvar}, ${4:yvar}, 'ColorVariable', ${5:value}, ${6:opts})'''
+        description: '''[matlab] Create heatmap chart
+        h = heatmap(optional_parent, tbl, xvar, yvar, 'ColorVariable', value, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/heatmap.html'
+
+
+    "matlab.graphics.chart.HeatmapChart.xlim [matlab]":
+        prefix: "matlab.graphics.chart.HeatmapChart.xlim"
+        body: '''${3:mode} = matlab.graphics.chart.HeatmapChart.xlim(${1:h}, ${2:mode})'''
+        description: '''[matlab] 
+        mode = matlab.graphics.chart.HeatmapChart.xlim(h, mode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.HeatmapChart.xlim.html'
+
+
+    "matlab.graphics.chart.primitive.GraphPlot.layout [matlab]":
+        prefix: "matlab.graphics.chart.primitive.GraphPlot.layout"
+        body: '''matlab.graphics.chart.primitive.GraphPlot.layout(${1:h}, ${2:method}, 'Dimension', ${3:value})'''
+        description: '''[matlab] 
+        matlab.graphics.chart.primitive.GraphPlot.layout(h, method, 'Dimension', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.primitive.GraphPlot.layout.html'
+
+
+    "pie [matlab]":
+        prefix: "pie"
+        body: '''pie(${1:optional_ax}, ${2:X}, ${3:optional_explode}, ${4:optional_labels})'''
+        description: '''[matlab] Pie chart
+        pie(optional_ax, X, optional_explode, optional_labels)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pie.html'
+
+
+    "contour [matlab]":
+        prefix: "contour"
+        body: '''[${8:C}, ${9:h}] = contour(${1:optional_ax}, ${2:X}, ${3:Y}, ${4:Z}, ${5:optional_levels}, ${6:optional_LineSpec}, ${7:opts})'''
+        description: '''[matlab] Contour plot of matrix
+        [C, h] = contour(optional_ax, X, Y, Z, optional_levels, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/contour.html'
+
+
+    "matlab.graphics.chart.HeatmapChart.ylim [matlab]":
+        prefix: "matlab.graphics.chart.HeatmapChart.ylim"
+        body: '''${3:mode} = matlab.graphics.chart.HeatmapChart.ylim(${1:h}, ${2:mode})'''
+        description: '''[matlab] 
+        mode = matlab.graphics.chart.HeatmapChart.ylim(h, mode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.HeatmapChart.ylim.html'
+
+
+    "histogram2 [matlab]":
+        prefix: "histogram2"
+        body: '''${7:h} = histogram2(${1:optional_ax}, ${2:X}, ${3:Y}, ${4:Xedges}, ${5:Yedges}, ${6:options})'''
+        description: '''[matlab] Bivariate histogram plot
+        h = histogram2(optional_ax, X, Y, Xedges, Yedges, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.primitive.histogram2.html'
+
+
+    "scatter3 [matlab]":
+        prefix: "scatter3"
+        body: '''${10:s} = scatter3(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_a}, ${6:optional_c}, ${7:'filled'}, ${8:markertype}, ${9:opts})'''
+        description: '''[matlab] 3-D scatter plot
+        s = scatter3(optional_ax, x, y, z, optional_a, optional_c, 'filled', markertype, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/scatter3.html'
+
+
+    "matlab.graphics.chart.ScatterHistogramChart.xlim [matlab]":
+        prefix: "matlab.graphics.chart.ScatterHistogramChart.xlim"
+        body: '''matlab.graphics.chart.ScatterHistogramChart.xlim(${1:sh}, ${2:mode})'''
+        description: '''[matlab] 
+        matlab.graphics.chart.ScatterHistogramChart.xlim(sh, mode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.ScatterHistogramChart.xlim.html'
+
+
+    "stem [matlab]":
+        prefix: "stem"
+        body: '''${7:h} = stem(${1:optional_ax}, ${2:optional_x}, ${3:y}, ${4:'filled'}, ${5:LineSpec}, ${6:opts})'''
+        description: '''[matlab] Plot discrete sequence data
+        h = stem(optional_ax, optional_x, y, 'filled', LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stem.html'
+
+
+    "matlab.graphics.chart.HeatmapChart.sortx [matlab]":
+        prefix: "matlab.graphics.chart.HeatmapChart.sortx"
+        body: '''[${5:colordata}, ${6:xdata}] = matlab.graphics.chart.HeatmapChart.sortx(${1:h}, ${2:rows}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[matlab] 
+        [colordata, xdata] = matlab.graphics.chart.HeatmapChart.sortx(h, rows, optional_direction, 'MissingPlacement', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.HeatmapChart.sortx.html'
+
+
+    "contour3 [matlab]":
+        prefix: "contour3"
+        body: '''[${8:C}, ${9:h}] = contour3(${1:optional_ax}, ${2:X}, ${3:Y}, ${4:Z}, ${5:optional_levels}, ${6:optional_LineSpec}, ${7:opts})'''
+        description: '''[matlab] 3-D contour plot
+        [C, h] = contour3(optional_ax, X, Y, Z, optional_levels, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/contour3.html'
+
+
+    "area [matlab]":
+        prefix: "area"
+        body: '''${6:h} = area(${1:optional_ax}, ${2:optional_x}, ${3:y}, ${4:optional_basevalue}, ${5:opts})'''
+        description: '''[matlab] Filled area 2-D plot
+        h = area(optional_ax, optional_x, y, optional_basevalue, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/area.html'
+
+
+    "binscatter [matlab]":
+        prefix: "binscatter"
+        body: '''${6:h} = binscatter(${1:optional_ax}, ${2:X}, ${3:Y}, ${4:optional_nbins}, ${5:options})'''
+        description: '''[matlab] Binned scatter plot
+        h = binscatter(optional_ax, X, Y, optional_nbins, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/binscatter.html'
+
+
+    "errorbar [matlab]":
+        prefix: "errorbar"
+        body: '''${7:h} = errorbar(${1:optional_ax}, ${2:y}, ${3:delta}, ${4:orientation}, ${5:LineSpec}, ${6:opts})'''
+        description: '''[matlab] Line plot with error bars
+        h = errorbar(optional_ax, y, delta, orientation, LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/errorbar.html'
+
+
+    "image [matlab]":
+        prefix: "image"
+        body: '''${3:im} = image(${1:optional_ax}, ${2:opts})'''
+        description: '''[matlab] Display image from array
+        im = image(optional_ax, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/image.html'
+
+
+    "matlab.graphics.chart.primitive.GraphPlot.highlight [matlab]":
+        prefix: "matlab.graphics.chart.primitive.GraphPlot.highlight"
+        body: '''matlab.graphics.chart.primitive.GraphPlot.highlight(${1:H}, ${2:optional_nodeIDs}, 'Edges', ${3:value}, 'EdgeColor', ${4:value}, 'LineStyle', ${5:value}, 'LineWidth', ${6:value}, 'Marker', ${7:value}, 'MarkerSize', ${8:value}, 'NodeColor', ${9:value}, 'NodeLabelColor', ${10:value}, 'NodeFontSize', ${11:value}, 'NodeFontAngle', ${12:value}, 'NodeFontWeight', ${13:value}, 'EdgeLabelColor', ${14:value}, 'EdgeFontSize', ${15:value}, 'EdgeFontAngle', ${16:value}, 'EdgeFontWeight', ${17:value}, 'ArrowSize', ${18:value}, 'ArrowPosition', ${19:value})'''
+        description: '''[matlab] 
+        matlab.graphics.chart.primitive.GraphPlot.highlight(H, optional_nodeIDs, 'Edges', value, 'EdgeColor', value, 'LineStyle', value, 'LineWidth', value, 'Marker', value, 'MarkerSize', value, 'NodeColor', value, 'NodeLabelColor', value, 'NodeFontSize', value, 'NodeFontAngle', value, 'NodeFontWeight', value, 'EdgeLabelColor', value, 'EdgeFontSize', value, 'EdgeFontAngle', value, 'EdgeFontWeight', value, 'ArrowSize', value, 'ArrowPosition', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.primitive.GraphPlot.highlight.html'
+
+
+    "contourf [matlab]":
+        prefix: "contourf"
+        body: '''[${8:C}, ${9:h}] = contourf(${1:optional_ax}, ${2:X}, ${3:Y}, ${4:Z}, ${5:optional_levels}, ${6:optional_LineSpec}, ${7:opts})'''
+        description: '''[matlab] Filled 2-D contour plot
+        [C, h] = contourf(optional_ax, X, Y, Z, optional_levels, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/contourf.html'
+
+
+    "imagesc [matlab]":
+        prefix: "imagesc"
+        body: '''${2:im} = imagesc(${1:optional_ax})'''
+        description: '''[matlab] Display image with scaled colors
+        im = imagesc(optional_ax)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/imagesc.html'
+
+
+    "matlab.graphics.chart.primitive.GraphPlot.labelnode [matlab]":
+        prefix: "matlab.graphics.chart.primitive.GraphPlot.labelnode"
+        body: '''matlab.graphics.chart.primitive.GraphPlot.labelnode(${1:H}, ${2:nodeIDs}, ${3:Labels})'''
+        description: '''[matlab] 
+        matlab.graphics.chart.primitive.GraphPlot.labelnode(H, nodeIDs, Labels)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.primitive.GraphPlot.labelnode.html'
+
+
+    "stackedplot [matlab]":
+        prefix: "stackedplot"
+        body: '''${6:h} = stackedplot(${1:optional_parent}, ${2:optional_X}, ${3:Y}, ${4:optional_LineSpec}, ${5:options})'''
+        description: '''[matlab] Stacked plot of several variables with common x-axis
+        h = stackedplot(optional_parent, optional_X, Y, optional_LineSpec, options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stackedplot.html'
+
+
+    "matlab.graphics.chart.HeatmapChart.sorty [matlab]":
+        prefix: "matlab.graphics.chart.HeatmapChart.sorty"
+        body: '''[${5:colordata}, ${6:ydata}] = matlab.graphics.chart.HeatmapChart.sorty(${1:h}, ${2:columns}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[matlab] 
+        [colordata, ydata] = matlab.graphics.chart.HeatmapChart.sorty(h, columns, optional_direction, 'MissingPlacement', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.HeatmapChart.sorty.html'
+
+
+    "scatterhistogram [matlab]":
+        prefix: "scatterhistogram"
+        body: '''${7:sh} = scatterhistogram(${1:optional_parent}, ${2:tbl}, ${3:xvar}, ${4:yvar}, 'GroupVariable', ${5:value}, ${6:opts})'''
+        description: '''[matlab] Create scatter plot with histograms
+        sh = scatterhistogram(optional_parent, tbl, xvar, yvar, 'GroupVariable', value, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/scatterhistogram.html'
+

@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "uiaxes [matlab]":
+        prefix: "uiaxes"
+        body: '''uiaxes(${1:optional_Parent}, ${2:properties})'''
+        description: '''[matlab] Create UI axes for plots in App Designer
+        uiaxes(optional_Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiaxes.html'
+

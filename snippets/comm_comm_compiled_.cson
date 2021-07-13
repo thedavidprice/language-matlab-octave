@@ -1,0 +1,551 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "comm.BCHDecoder [comm]":
+        prefix: "comm.BCHDecoder"
+        body: '''comm.BCHDecoder(${1:CodewordLength}, ${2:MessageLength}, ${3:GeneratorPolynomial}, ${4:ShortMessageLength}, ${5:varargin})'''
+        description: '''[comm] 
+        comm.BCHDecoder(CodewordLength, MessageLength, GeneratorPolynomial, ShortMessageLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BCHDecoder.html'
+
+
+    "comm.BlockDeinterleaver [comm]":
+        prefix: "comm.BlockDeinterleaver"
+        body: '''comm.BlockDeinterleaver(${1:PermutationVector}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.BlockDeinterleaver(PermutationVector, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BlockDeinterleaver.html'
+
+
+    "comm.PSKTCMDemodulator [comm]":
+        prefix: "comm.PSKTCMDemodulator"
+        body: '''comm.PSKTCMDemodulator(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.PSKTCMDemodulator(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.PSKTCMDemodulator.html'
+
+
+    "comm.FSKDemodulator [comm]":
+        prefix: "comm.FSKDemodulator"
+        body: '''comm.FSKDemodulator(${1:ModulationOrder}, ${2:FrequencySeparation}, ${3:SymbolRate}, ${4:varargin})'''
+        description: '''[comm] 
+        comm.FSKDemodulator(ModulationOrder, FrequencySeparation, SymbolRate, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.FSKDemodulator.html'
+
+
+    "comm.PSKModulator [comm]":
+        prefix: "comm.PSKModulator"
+        body: '''comm.PSKModulator(${1:ModulationOrder}, ${2:PhaseOffset}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.PSKModulator(ModulationOrder, PhaseOffset, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.PSKModulator.html'
+
+
+    "comm.ErrorRate [comm]":
+        prefix: "comm.ErrorRate"
+        body: '''comm.ErrorRate(${1:varargin})'''
+        description: '''[comm] 
+        comm.ErrorRate(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.ErrorRate.html'
+
+
+    "comm.AlgebraicDeinterleaver [comm]":
+        prefix: "comm.AlgebraicDeinterleaver"
+        body: '''comm.AlgebraicDeinterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.AlgebraicDeinterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.AlgebraicDeinterleaver.html'
+
+
+    "comm.QPSKDemodulator [comm]":
+        prefix: "comm.QPSKDemodulator"
+        body: '''comm.QPSKDemodulator(${1:PhaseOffset}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.QPSKDemodulator(PhaseOffset, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.QPSKDemodulator.html'
+
+
+    "comm.MatrixInterleaver [comm]":
+        prefix: "comm.MatrixInterleaver"
+        body: '''comm.MatrixInterleaver(${1:NumRows}, ${2:NumColumns}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.MatrixInterleaver(NumRows, NumColumns, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MatrixInterleaver.html'
+
+
+    "comm.FSKModulator [comm]":
+        prefix: "comm.FSKModulator"
+        body: '''comm.FSKModulator(${1:ModulationOrder}, ${2:FrequencySeparation}, ${3:SymbolRate}, ${4:varargin})'''
+        description: '''[comm] 
+        comm.FSKModulator(ModulationOrder, FrequencySeparation, SymbolRate, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.FSKModulator.html'
+
+
+    "comm.MatrixDeinterleaver [comm]":
+        prefix: "comm.MatrixDeinterleaver"
+        body: '''comm.MatrixDeinterleaver(${1:NumRows}, ${2:NumColumns}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.MatrixDeinterleaver(NumRows, NumColumns, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MatrixDeinterleaver.html'
+
+
+    "comm.BlockInterleaver [comm]":
+        prefix: "comm.BlockInterleaver"
+        body: '''comm.BlockInterleaver(${1:PermutationVector}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.BlockInterleaver(PermutationVector, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BlockInterleaver.html'
+
+
+    "comm.DPSKDemodulator [comm]":
+        prefix: "comm.DPSKDemodulator"
+        body: '''comm.DPSKDemodulator(${1:ModulationOrder}, ${2:PhaseRotation}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.DPSKDemodulator(ModulationOrder, PhaseRotation, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DPSKDemodulator.html'
+
+
+    "comm.MultiplexedDeinterleaver [comm]":
+        prefix: "comm.MultiplexedDeinterleaver"
+        body: '''comm.MultiplexedDeinterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.MultiplexedDeinterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MultiplexedDeinterleaver.html'
+
+
+    "comm.ConvolutionalEncoder [comm]":
+        prefix: "comm.ConvolutionalEncoder"
+        body: '''comm.ConvolutionalEncoder(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.ConvolutionalEncoder(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.ConvolutionalEncoder.html'
+
+
+    "comm.Scrambler [comm]":
+        prefix: "comm.Scrambler"
+        body: '''comm.Scrambler(${1:CalculationBase}, ${2:Polynomial}, ${3:InitialConditions}, ${4:varargin})'''
+        description: '''[comm] 
+        comm.Scrambler(CalculationBase, Polynomial, InitialConditions, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.Scrambler.html'
+
+
+    "comm.GMSKModulator [comm]":
+        prefix: "comm.GMSKModulator"
+        body: '''comm.GMSKModulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.GMSKModulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.GMSKModulator.html'
+
+
+    "comm.OSTBCEncoder [comm]":
+        prefix: "comm.OSTBCEncoder"
+        body: '''comm.OSTBCEncoder(${1:NumTransmitAntennas}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.OSTBCEncoder(NumTransmitAntennas, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.OSTBCEncoder.html'
+
+
+    "comm.CPFSKModulator [comm]":
+        prefix: "comm.CPFSKModulator"
+        body: '''comm.CPFSKModulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.CPFSKModulator(ModulationOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.CPFSKModulator.html'
+
+
+    "comm.MSKDemodulator [comm]":
+        prefix: "comm.MSKDemodulator"
+        body: '''comm.MSKDemodulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.MSKDemodulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MSKDemodulator.html'
+
+
+    "comm.IntegerToBit [comm]":
+        prefix: "comm.IntegerToBit"
+        body: '''comm.IntegerToBit(${1:BitsPerInteger}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.IntegerToBit(BitsPerInteger, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.IntegerToBit.html'
+
+
+    "comm.ConvolutionalDeinterleaver [comm]":
+        prefix: "comm.ConvolutionalDeinterleaver"
+        body: '''comm.ConvolutionalDeinterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.ConvolutionalDeinterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.ConvolutionalDeinterleaver.html'
+
+
+    "comm.DQPSKDemodulator [comm]":
+        prefix: "comm.DQPSKDemodulator"
+        body: '''comm.DQPSKDemodulator(${1:PhaseRotation}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.DQPSKDemodulator(PhaseRotation, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DQPSKDemodulator.html'
+
+
+    "comm.QPSKModulator [comm]":
+        prefix: "comm.QPSKModulator"
+        body: '''comm.QPSKModulator(${1:PhaseOffset}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.QPSKModulator(PhaseOffset, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.QPSKModulator.html'
+
+
+    "comm.CPFSKDemodulator [comm]":
+        prefix: "comm.CPFSKDemodulator"
+        body: '''comm.CPFSKDemodulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.CPFSKDemodulator(ModulationOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.CPFSKDemodulator.html'
+
+
+    "comm.DBPSKModulator [comm]":
+        prefix: "comm.DBPSKModulator"
+        body: '''comm.DBPSKModulator(${1:PhaseRotation}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.DBPSKModulator(PhaseRotation, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DBPSKModulator.html'
+
+
+    "comm.MultiplexedInterleaver [comm]":
+        prefix: "comm.MultiplexedInterleaver"
+        body: '''comm.MultiplexedInterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.MultiplexedInterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MultiplexedInterleaver.html'
+
+
+    "comm.GeneralQAMDemodulator [comm]":
+        prefix: "comm.GeneralQAMDemodulator"
+        body: '''comm.GeneralQAMDemodulator(${1:Constellation}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.GeneralQAMDemodulator(Constellation, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.GeneralQAMDemodulator.html'
+
+
+    "comm.ConvolutionalInterleaver [comm]":
+        prefix: "comm.ConvolutionalInterleaver"
+        body: '''comm.ConvolutionalInterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.ConvolutionalInterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.ConvolutionalInterleaver.html'
+
+
+    "comm.DPSKModulator [comm]":
+        prefix: "comm.DPSKModulator"
+        body: '''comm.DPSKModulator(${1:ModulationOrder}, ${2:PhaseRotation}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.DPSKModulator(ModulationOrder, PhaseRotation, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DPSKModulator.html'
+
+
+    "comm.MSKModulator [comm]":
+        prefix: "comm.MSKModulator"
+        body: '''comm.MSKModulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.MSKModulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MSKModulator.html'
+
+
+    "comm.GMSKDemodulator [comm]":
+        prefix: "comm.GMSKDemodulator"
+        body: '''comm.GMSKDemodulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.GMSKDemodulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.GMSKDemodulator.html'
+
+
+    "comm.CRCGenerator [comm]":
+        prefix: "comm.CRCGenerator"
+        body: '''comm.CRCGenerator(${1:Polynomial}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.CRCGenerator(Polynomial, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.CRCGenerator.html'
+
+
+    "comm.BPSKDemodulator [comm]":
+        prefix: "comm.BPSKDemodulator"
+        body: '''comm.BPSKDemodulator(${1:PhaseOffset}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.BPSKDemodulator(PhaseOffset, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BPSKDemodulator.html'
+
+
+    "comm.MLSEEqualizer [comm]":
+        prefix: "comm.MLSEEqualizer"
+        body: '''comm.MLSEEqualizer(${1:Channel}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.MLSEEqualizer(Channel, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MLSEEqualizer.html'
+
+
+    "comm.CRCDetector [comm]":
+        prefix: "comm.CRCDetector"
+        body: '''comm.CRCDetector(${1:Polynomial}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.CRCDetector(Polynomial, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.CRCDetector.html'
+
+
+    "comm.IntegrateAndDumpFilter [comm]":
+        prefix: "comm.IntegrateAndDumpFilter"
+        body: '''comm.IntegrateAndDumpFilter(${1:IntegrationPeriod}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.IntegrateAndDumpFilter(IntegrationPeriod, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.IntegrateAndDumpFilter.html'
+
+
+    "comm.OSTBCCombiner [comm]":
+        prefix: "comm.OSTBCCombiner"
+        body: '''comm.OSTBCCombiner(${1:NumTransmitAntennas}, ${2:NumReceiveAntennas}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.OSTBCCombiner(NumTransmitAntennas, NumReceiveAntennas, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.OSTBCCombiner.html'
+
+
+    "comm.PhaseFrequencyOffset [comm]":
+        prefix: "comm.PhaseFrequencyOffset"
+        body: '''comm.PhaseFrequencyOffset(${1:varargin})'''
+        description: '''[comm] 
+        comm.PhaseFrequencyOffset(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.PhaseFrequencyOffset.html'
+
+
+    "comm.KasamiSequence [comm]":
+        prefix: "comm.KasamiSequence"
+        body: '''comm.KasamiSequence(${1:varargin})'''
+        description: '''[comm] 
+        comm.KasamiSequence(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.KasamiSequence.html'
+
+
+    "comm.BCHEncoder [comm]":
+        prefix: "comm.BCHEncoder"
+        body: '''comm.BCHEncoder(${1:CodewordLength}, ${2:MessageLength}, ${3:GeneratorPolynomial}, ${4:ShortMessageLength}, ${5:varargin})'''
+        description: '''[comm] 
+        comm.BCHEncoder(CodewordLength, MessageLength, GeneratorPolynomial, ShortMessageLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BCHEncoder.html'
+
+
+    "comm.RectangularQAMModulator [comm]":
+        prefix: "comm.RectangularQAMModulator"
+        body: '''comm.RectangularQAMModulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.RectangularQAMModulator(ModulationOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RectangularQAMModulator.html'
+
+
+    "comm.BitToInteger [comm]":
+        prefix: "comm.BitToInteger"
+        body: '''comm.BitToInteger(${1:BitsPerInteger}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.BitToInteger(BitsPerInteger, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BitToInteger.html'
+
+
+    "comm.LDPCEncoder [comm]":
+        prefix: "comm.LDPCEncoder"
+        body: '''comm.LDPCEncoder(${1:ParityCheckMatrix}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.LDPCEncoder(ParityCheckMatrix, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.LDPCEncoder.html'
+
+
+    "comm.PAMModulator [comm]":
+        prefix: "comm.PAMModulator"
+        body: '''comm.PAMModulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.PAMModulator(ModulationOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.PAMModulator.html'
+
+
+    "comm.PSKDemodulator [comm]":
+        prefix: "comm.PSKDemodulator"
+        body: '''comm.PSKDemodulator(${1:ModulationOrder}, ${2:PhaseOffset}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.PSKDemodulator(ModulationOrder, PhaseOffset, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.PSKDemodulator.html'
+
+
+    "comm.DQPSKModulator [comm]":
+        prefix: "comm.DQPSKModulator"
+        body: '''comm.DQPSKModulator(${1:PhaseRotation}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.DQPSKModulator(PhaseRotation, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DQPSKModulator.html'
+
+
+    "comm.APPDecoder [comm]":
+        prefix: "comm.APPDecoder"
+        body: '''comm.APPDecoder(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.APPDecoder(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.APPDecoder.html'
+
+
+    "comm.PAMDemodulator [comm]":
+        prefix: "comm.PAMDemodulator"
+        body: '''comm.PAMDemodulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.PAMDemodulator(ModulationOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.PAMDemodulator.html'
+
+
+    "comm.MatrixHelicalScanDeinterleaver [comm]":
+        prefix: "comm.MatrixHelicalScanDeinterleaver"
+        body: '''comm.MatrixHelicalScanDeinterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.MatrixHelicalScanDeinterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MatrixHelicalScanDeinterleaver.html'
+
+
+    "comm.Descrambler [comm]":
+        prefix: "comm.Descrambler"
+        body: '''comm.Descrambler(${1:CalculationBase}, ${2:Polynomial}, ${3:InitialConditions}, ${4:varargin})'''
+        description: '''[comm] 
+        comm.Descrambler(CalculationBase, Polynomial, InitialConditions, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.Descrambler.html'
+
+
+    "comm.MatrixHelicalScanInterleaver [comm]":
+        prefix: "comm.MatrixHelicalScanInterleaver"
+        body: '''comm.MatrixHelicalScanInterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.MatrixHelicalScanInterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MatrixHelicalScanInterleaver.html'
+
+
+    "comm.GeneralQAMModulator [comm]":
+        prefix: "comm.GeneralQAMModulator"
+        body: '''comm.GeneralQAMModulator(${1:Constellation}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.GeneralQAMModulator(Constellation, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.GeneralQAMModulator.html'
+
+
+    "comm.RectangularQAMTCMDemodulator [comm]":
+        prefix: "comm.RectangularQAMTCMDemodulator"
+        body: '''comm.RectangularQAMTCMDemodulator(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.RectangularQAMTCMDemodulator(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RectangularQAMTCMDemodulator.html'
+
+
+    "comm.BPSKModulator [comm]":
+        prefix: "comm.BPSKModulator"
+        body: '''comm.BPSKModulator(${1:PhaseOffset}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.BPSKModulator(PhaseOffset, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BPSKModulator.html'
+
+
+    "comm.PNSequence [comm]":
+        prefix: "comm.PNSequence"
+        body: '''comm.PNSequence(${1:varargin})'''
+        description: '''[comm] 
+        comm.PNSequence(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.PNSequence.html'
+
+
+    "comm.AlgebraicInterleaver [comm]":
+        prefix: "comm.AlgebraicInterleaver"
+        body: '''comm.AlgebraicInterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.AlgebraicInterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.AlgebraicInterleaver.html'
+
+
+    "comm.GeneralQAMTCMDemodulator [comm]":
+        prefix: "comm.GeneralQAMTCMDemodulator"
+        body: '''comm.GeneralQAMTCMDemodulator(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.GeneralQAMTCMDemodulator(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.GeneralQAMTCMDemodulator.html'
+
+
+    "comm.ViterbiDecoder [comm]":
+        prefix: "comm.ViterbiDecoder"
+        body: '''comm.ViterbiDecoder(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.ViterbiDecoder(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.ViterbiDecoder.html'
+
+
+    "comm.DBPSKDemodulator [comm]":
+        prefix: "comm.DBPSKDemodulator"
+        body: '''comm.DBPSKDemodulator(${1:PhaseRotation}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.DBPSKDemodulator(PhaseRotation, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DBPSKDemodulator.html'
+
+
+    "comm.RectangularQAMDemodulator [comm]":
+        prefix: "comm.RectangularQAMDemodulator"
+        body: '''comm.RectangularQAMDemodulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.RectangularQAMDemodulator(ModulationOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RectangularQAMDemodulator.html'
+

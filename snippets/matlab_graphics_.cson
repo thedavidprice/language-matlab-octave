@@ -1,0 +1,83 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "figure [matlab]":
+        prefix: "figure"
+        body: '''figure(${1:optional_f}, ${2:optional_n}, ${3:opts})'''
+        description: '''[matlab] Create figure window
+        figure(optional_f, optional_n, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/figure.html'
+
+
+    "gca [matlab]":
+        prefix: "gca"
+        body: '''${1:ax} = gca'''
+        description: '''[matlab] Current axes or chart
+        ax = gca
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gca.html'
+
+
+    "tiledlayout [matlab]":
+        prefix: "tiledlayout"
+        body: '''${5:Layout} = tiledlayout(${1:optional_parent}, ${2:m}, ${3:n}, ${4:Options})'''
+        description: '''[matlab] Create tiled chart layout
+        Layout = tiledlayout(optional_parent, m, n, Options)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tiledlayout.html'
+
+
+    "uicontrol [matlab]":
+        prefix: "uicontrol"
+        body: '''uicontrol(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create user interface control
+        uicontrol(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uicontrol.html'
+
+
+    "uicontextmenu [matlab]":
+        prefix: "uicontextmenu"
+        body: '''uicontextmenu(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create context menu
+        uicontextmenu(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uicontextmenu.html'
+
+
+    "uimenu [matlab]":
+        prefix: "uimenu"
+        body: '''uimenu(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create menu or menu items
+        uimenu(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uimenu.html'
+
+
+    "nexttile [matlab]":
+        prefix: "nexttile"
+        body: '''${4:ax} = nexttile(${1:optional_layout}, ${2:optional_tilenumber}, ${3:optional_tilespan})'''
+        description: '''[matlab] Create axes in tiled chart layout
+        ax = nexttile(optional_layout, optional_tilenumber, optional_tilespan)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/nexttile.html'
+
+
+    "close [matlab]":
+        prefix: "close"
+        body: '''${2:status} = close(${1:optional_option})'''
+        description: '''[matlab] Close map viewer window
+        status = close(optional_option)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/close.html'
+
+
+    "gcf [matlab]":
+        prefix: "gcf"
+        body: '''${1:ax} = gcf'''
+        description: '''[matlab] Current figure handle
+        ax = gcf
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gcf.html'
+

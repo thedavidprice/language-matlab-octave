@@ -1,0 +1,381 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "delete [matlab]":
+        prefix: "delete"
+        body: '''delete(${1:filename})'''
+        description: '''[matlab] Remove image acquisition object from memory
+        delete(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/delete.html'
+
+
+    "mkdir [matlab]":
+        prefix: "mkdir"
+        body: '''[${3:status}, ${4:message}, ${5:messageId}] = mkdir(${1:parentFolder}, ${2:folderName})'''
+        description: '''[matlab] Make new folder
+        [status, message, messageId] = mkdir(parentFolder, folderName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mkdir.html'
+
+
+    "javaaddpath [matlab]":
+        prefix: "javaaddpath"
+        body: '''javaaddpath(${1:dpath}, ${2:'-end'})'''
+        description: '''[matlab] Add entries to dynamic Java class path
+        javaaddpath(dpath, '-end')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/javaaddpath.html'
+
+
+    "whos [matlab]":
+        prefix: "whos"
+        body: '''whos(${1:var}, ${2:'global'})'''
+        description: '''[matlab] List variables in workspace, with sizes and types
+        whos(var, 'global')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/whos.html'
+
+
+    "fileattrib [matlab]":
+        prefix: "fileattrib"
+        body: '''[${4:status}, ${5:message}, ${6:messageId}] = fileattrib(${1:name}, ${2:attribs}, ${3:users})'''
+        description: '''[matlab] Set or get attributes of file or folder
+        [status, message, messageId] = fileattrib(name, attribs, users)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fileattrib.html'
+
+
+    "recycle [matlab]":
+        prefix: "recycle"
+        body: '''recycle(${1:optional_state})'''
+        description: '''[matlab] Set option to move deleted files to recycle folder
+        recycle(optional_state)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/recycle.html'
+
+
+    "import [matlab]":
+        prefix: "import"
+        body: '''import(${1:optional_PackageName})'''
+        description: '''[matlab] Add package, class, or functions to current import list
+        import(optional_PackageName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/import.html'
+
+
+    "dos [matlab]":
+        prefix: "dos"
+        body: '''[${3:status}, ${4:data}] = dos(${1:command}, ${2:'-echo'})'''
+        description: '''[matlab] Execute DOS command and return output
+        [status, data] = dos(command, '-echo')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dos.html'
+
+
+    "beep [matlab]":
+        prefix: "beep"
+        body: '''${2:state} = beep(${1:flag})'''
+        description: '''[matlab] Produce operating system beep sound
+        state = beep(flag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/beep.html'
+
+
+    "mex [matlab]":
+        prefix: "mex"
+        body: '''mex(${1:filenames}, ${2:compileOnly}, '-client', ${3:value}, ${4:arrayDims}, ${5:define}, '-f', ${6:value}, ${7:debugInfo}, ${8:include}, ${9:libraryPaths}, ${10:libraries}, ${11:dryrun}, ${12:optim}, '-outdir', ${13:value}, '-output', ${14:value}, '-setup', ${15:value}, ${16:silent}, ${17:verbose}, ${18:otherArgs})'''
+        description: '''[matlab] Build MEX function or engine application
+        mex(filenames, compileOnly, '-client', value, arrayDims, define, '-f', value, debugInfo, include, libraryPaths, libraries, dryrun, optim, '-outdir', value, '-output', value, '-setup', value, silent, verbose, otherArgs)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mex.html'
+
+
+    "setenv [matlab]":
+        prefix: "setenv"
+        body: '''setenv(${1:name}, ${2:value})'''
+        description: '''[matlab] Set environment variable
+        setenv(name, value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setenv.html'
+
+
+    "mex.getCompilerConfigurations [matlab]":
+        prefix: "mex.getCompilerConfigurations"
+        body: '''${3:cc} = mex.getCompilerConfigurations(${1:lang}, ${2:list})'''
+        description: '''[matlab] 
+        cc = mex.getCompilerConfigurations(lang, list)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mex.getCompilerConfigurations.html'
+
+
+    "echo [matlab]":
+        prefix: "echo"
+        body: '''echo(${1:mode}, ${2:'all'})'''
+        description: '''[matlab] Display statements during function execution
+        echo(mode, 'all')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/echo.html'
+
+
+    "cd [matlab]":
+        prefix: "cd"
+        body: '''${2:oldFolder} = cd(${1:optional_newFolder})'''
+        description: '''[matlab] Change current folder
+        oldFolder = cd(optional_newFolder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cd.html'
+
+
+    "system [matlab]":
+        prefix: "system"
+        body: '''[${3:status}, ${4:data}] = system(${1:command}, ${2:'-echo'})'''
+        description: '''[matlab] Execute operating system command and return output
+        [status, data] = system(command, '-echo')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/system.html'
+
+
+    "rehash [matlab]":
+        prefix: "rehash"
+        body: '''rehash(${1:optional_what})'''
+        description: '''[matlab] Refresh function and file system path caches
+        rehash(optional_what)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rehash.html'
+
+
+    "format [matlab]":
+        prefix: "format"
+        body: '''format(${1:optional_style})'''
+        description: '''[matlab] Set Command Window output display format
+        format(optional_style)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/format.html'
+
+
+    "clearvars [matlab]":
+        prefix: "clearvars"
+        body: '''clearvars(${1:optional_'-global'}, ${2:optional_variables})'''
+        description: '''[matlab] Clear variables from memory
+        clearvars(optional_'-global', optional_variables)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/clearvars.html'
+
+
+    "save [matlab]":
+        prefix: "save"
+        body: '''save(${1:filename}, ${2:optional_variables})'''
+        description: '''[matlab] Save image acquisition objects to MAT-file
+        save(filename, optional_variables)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/save.html'
+
+
+    "inmem [matlab]":
+        prefix: "inmem"
+        body: '''inmem(${1:optional_'-completenames'})'''
+        description: '''[matlab] Names of functions, MEX-files, classes in memory
+        inmem(optional_'-completenames')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/inmem.html'
+
+
+    "addpath [matlab]":
+        prefix: "addpath"
+        body: '''${4:oldpath} = addpath(${1:folderName}, ${2:optional_position}, ${3:optional_'-frozen'})'''
+        description: '''[matlab] Add folders to search path
+        oldpath = addpath(folderName, optional_position, optional_'-frozen')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/addpath.html'
+
+
+    "open [matlab]":
+        prefix: "open"
+        body: '''${2:output} = open(${1:name})'''
+        description: '''[matlab] Open file in appropriate application
+        output = open(name)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/open.html'
+
+
+    "movefile [matlab]":
+        prefix: "movefile"
+        body: '''[${4:status}, ${5:message}, ${6:messageId}] = movefile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
+        description: '''[matlab] Move or rename file or folder
+        [status, message, messageId] = movefile(source, destination, optional_'f')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movefile.html'
+
+
+    "isfolder [matlab]":
+        prefix: "isfolder"
+        body: '''${2:TF} = isfolder(${1:path})'''
+        description: '''[matlab] Determine if input is folder
+        TF = isfolder(path)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isfolder.html'
+
+
+    "unix [matlab]":
+        prefix: "unix"
+        body: '''[${3:status}, ${4:data}] = unix(${1:command}, ${2:'-echo'})'''
+        description: '''[matlab] Execute UNIX command and return output
+        [status, data] = unix(command, '-echo')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unix.html'
+
+
+    "rmdir [matlab]":
+        prefix: "rmdir"
+        body: '''[${3:status}, ${4:message}, ${5:messageId}] = rmdir(${1:folderName}, ${2:optional_'s'})'''
+        description: '''[matlab] Remove folder
+        [status, message, messageId] = rmdir(folderName, optional_'s')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rmdir.html'
+
+
+    "pcode [matlab]":
+        prefix: "pcode"
+        body: '''pcode(${1:filename}, ${2:'-inplace'})'''
+        description: '''[matlab] Create content-obscured, executable files
+        pcode(filename, '-inplace')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pcode.html'
+
+
+    "diary [matlab]":
+        prefix: "diary"
+        body: '''diary(${1:mode})'''
+        description: '''[matlab] Log Command Window text to file
+        diary(mode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/diary.html'
+
+
+    "rmpath [matlab]":
+        prefix: "rmpath"
+        body: '''rmpath(${1:folderName})'''
+        description: '''[matlab] Remove folders from search path
+        rmpath(folderName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rmpath.html'
+
+
+    "ls [matlab]":
+        prefix: "ls"
+        body: '''${3:list} = ls(${1:optional_flags}, ${2:optional_filename})'''
+        description: '''[matlab] List folder contents
+        list = ls(optional_flags, optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ls.html'
+
+
+    "isfile [matlab]":
+        prefix: "isfile"
+        body: '''${2:TF} = isfile(${1:path})'''
+        description: '''[matlab] Determine if input is file
+        TF = isfile(path)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isfile.html'
+
+
+    "dir [matlab]":
+        prefix: "dir"
+        body: '''${2:listing} = dir(${1:optional_filename})'''
+        description: '''[matlab] List folder contents
+        listing = dir(optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dir.html'
+
+
+    "which [matlab]":
+        prefix: "which"
+        body: '''which(${1:fun1}, ${2:'in'}, ${3:fun2})'''
+        description: '''[matlab] Locate functions and files
+        which(fun1, 'in', fun2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/which.html'
+
+
+    "who [matlab]":
+        prefix: "who"
+        body: '''who(${1:var}, ${2:'global'})'''
+        description: '''[matlab] List variables in workspace
+        who(var, 'global')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/who.html'
+
+
+    "copyfile [matlab]":
+        prefix: "copyfile"
+        body: '''[${4:status}, ${5:message}, ${6:messageId}] = copyfile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
+        description: '''[matlab] Copy file or folder
+        [status, message, messageId] = copyfile(source, destination, optional_'f')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/copyfile.html'
+
+
+    "getenv [matlab]":
+        prefix: "getenv"
+        body: '''${2:value} = getenv(${1:name})'''
+        description: '''[matlab] Environment variable
+        value = getenv(name)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/getenv.html'
+
+
+    "memory [matlab]":
+        prefix: "memory"
+        body: '''[${1:USERVIEW}, ${2:SYSTEMVIEW}] = memory'''
+        description: '''[matlab] Display memory information
+        [USERVIEW, SYSTEMVIEW] = memory
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/memory.html'
+
+
+    "what [matlab]":
+        prefix: "what"
+        body: '''what(${1:optional_folderName})'''
+        description: '''[matlab] List MATLAB files in folder
+        what(optional_folderName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/what.html'
+
+
+    "clear [matlab]":
+        prefix: "clear"
+        body: '''clear(${1:optional_ItemType})'''
+        description: '''[matlab] Remove all keys and values from cache
+        clear(optional_ItemType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/mps_dev_test/clear.html'
+
+
+    "javarmpath [matlab]":
+        prefix: "javarmpath"
+        body: '''javarmpath(${1:dpath})'''
+        description: '''[matlab] Remove entries from dynamic Java class path
+        javarmpath(dpath)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/javarmpath.html'
+
+
+    "load [matlab]":
+        prefix: "load"
+        body: '''${3:S} = load(${1:filename}, ${2:'-ascii'})'''
+        description: '''[matlab] Load image acquisition object into MATLAB workspace
+        S = load(filename, '-ascii')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/load.html'
+
+
+    "type [matlab]":
+        prefix: "type"
+        body: '''type(${1:filename})'''
+        description: '''[matlab] Name of cfit, sfit, or
+                    fittype object
+        type(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/cfit.type.html'
+

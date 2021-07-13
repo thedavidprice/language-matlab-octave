@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "dsp.LogicAnalyzer [shared]":
+        prefix: "dsp.LogicAnalyzer"
+        body: '''dsp.LogicAnalyzer(${1:NumInputPorts}, ${2:SampleTime}, ${3:varargin})'''
+        description: '''[shared] Visualize, measure, and analyze transitions and states over time
+        dsp.LogicAnalyzer(NumInputPorts, SampleTime, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/dsp.logicanalyzer-system-object.html'
+

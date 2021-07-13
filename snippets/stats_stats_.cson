@@ -1,0 +1,1757 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "fsulaplacian [stats]":
+        prefix: "fsulaplacian"
+        body: '''fsulaplacian(${1:X}, 'Similarity', ${2:value})'''
+        description: '''[stats] Rank features for unsupervised learning using Laplacian scores
+        fsulaplacian(X, 'Similarity', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fsulaplacian.html'
+
+
+    "nanstd [stats]":
+        prefix: "nanstd"
+        body: '''nanstd(${1:X}, ${2:normalization_flag}, ${3:optional_dim})'''
+        description: '''[stats] Standard deviation ignoring NaNs
+        nanstd(X, normalization_flag, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nanstd.html'
+
+
+    "mvregress [stats]":
+        prefix: "mvregress"
+        body: '''mvregress(${1:X}, ${2:Y}, 'algorithm', ${3:value}, 'beta0', ${4:value}, 'covar0', ${5:value}, 'covtype', ${6:value}, 'maxiter', ${7:value}, 'outputfcn', ${8:value}, 'tolbeta', ${9:value}, 'tolobj', ${10:value}, 'varformat', ${11:value}, 'vartype', ${12:value})'''
+        description: '''[stats] Multivariate linear regression
+        mvregress(X, Y, 'algorithm', value, 'beta0', value, 'covar0', value, 'covtype', value, 'maxiter', value, 'outputfcn', value, 'tolbeta', value, 'tolobj', value, 'varformat', value, 'vartype', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mvregress.html'
+
+
+    "anova2 [stats]":
+        prefix: "anova2"
+        body: '''anova2(${1:y}, ${2:reps}, ${3:optional_displayopt})'''
+        description: '''[stats] Two-way analysis of variance
+        anova2(y, reps, optional_displayopt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/anova2.html'
+
+
+    "tblread [stats]":
+        prefix: "tblread"
+        body: '''tblread(${1:filename}, ${2:optional_delimiter})'''
+        description: '''[stats] Read tabular data from file
+        tblread(filename, optional_delimiter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/tblread.html'
+
+
+    "perfcurve [stats]":
+        prefix: "perfcurve"
+        body: '''perfcurve(${1:labels}, ${2:scores}, ${3:posclass}, 'NegClass', ${4:value}, 'XCrit', ${5:value}, 'YCrit', ${6:value}, 'XVals', ${7:value}, 'TVals', ${8:value}, 'UseNearest', ${9:value}, 'ProcessNaN', ${10:value}, 'Prior', ${11:value}, 'Cost', ${12:value}, 'Alpha', ${13:value}, 'Weights', ${14:value}, 'NBoot', ${15:value}, 'BootType', ${16:value}, 'BootArg', ${17:value}, 'Options', ${18:value})'''
+        description: '''[stats] Receiver operating characteristic (ROC) curve or other
+performance curve for classifier output
+        perfcurve(labels, scores, posclass, 'NegClass', value, 'XCrit', value, 'YCrit', value, 'XVals', value, 'TVals', value, 'UseNearest', value, 'ProcessNaN', value, 'Prior', value, 'Cost', value, 'Alpha', value, 'Weights', value, 'NBoot', value, 'BootType', value, 'BootArg', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/perfcurve.html'
+
+
+    "cluster [stats]":
+        prefix: "cluster"
+        body: '''cluster(${1:Z}, 'cutoff', ${2:value}, 'depth', ${3:value}, 'criterion', ${4:value}, 'maxclust', ${5:value})'''
+        description: '''[stats] Construct clusters from Gaussian mixture distribution
+        cluster(Z, 'cutoff', value, 'depth', value, 'criterion', value, 'maxclust', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/gmdistribution.cluster.html'
+
+
+    "paretotails [stats]":
+        prefix: "paretotails"
+        body: '''paretotails(${1:x}, ${2:pl}, ${3:pu}, ${4:optional_cdffun})'''
+        description: '''[stats] Piecewise distribution with Pareto tails
+        paretotails(x, pl, pu, optional_cdffun)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/paretotails.html'
+
+
+    "tdfread [stats]":
+        prefix: "tdfread"
+        body: '''tdfread(${1:filename}, ${2:optional_delimiter})'''
+        description: '''[stats] Read tab-delimited file
+        tdfread(filename, optional_delimiter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/tdfread.html'
+
+
+    "anovan [stats]":
+        prefix: "anovan"
+        body: '''anovan(${1:y}, ${2:group}, 'alpha', ${3:value}, 'continuous', ${4:value}, 'display', ${5:value}, 'model', ${6:value}, 'nested', ${7:value}, 'random', ${8:value}, 'sstype', ${9:value}, 'varnames', ${10:value})'''
+        description: '''[stats] N-way analysis of variance
+        anovan(y, group, 'alpha', value, 'continuous', value, 'display', value, 'model', value, 'nested', value, 'random', value, 'sstype', value, 'varnames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/anovan.html'
+
+
+    "nlmefitsa [stats]":
+        prefix: "nlmefitsa"
+        body: '''nlmefitsa(${1:X}, ${2:Y}, ${3:GROUP}, ${4:V}, ${5:MODELFUN}, ${6:BETA0}, 'FEParamsSelect', ${7:value}, 'FEConstDesign', ${8:value}, 'FEGroupDesign', ${9:value}, 'REParamsSelect', ${10:value}, 'REConstDesign', ${11:value}, 'CovPattern', ${12:value}, 'Cov0', ${13:value}, 'ComputeStdErrors', ${14:value}, 'ErrorModel', ${15:value}, 'ErrorParameters', ${16:value}, 'LogLikMethod', ${17:value}, 'NBurnIn', ${18:value}, 'NChains', ${19:value}, 'NIterations', ${20:value}, 'NMCMCIterations', ${21:value}, 'OptimFun', ${22:value}, 'Options', ${23:value}, 'ParamTransform', ${24:value}, 'Replicates', ${25:value}, 'Vectorization', ${26:value})'''
+        description: '''[stats] Fit nonlinear mixed-effects model with stochastic EM algorithm
+        nlmefitsa(X, Y, GROUP, V, MODELFUN, BETA0, 'FEParamsSelect', value, 'FEConstDesign', value, 'FEGroupDesign', value, 'REParamsSelect', value, 'REConstDesign', value, 'CovPattern', value, 'Cov0', value, 'ComputeStdErrors', value, 'ErrorModel', value, 'ErrorParameters', value, 'LogLikMethod', value, 'NBurnIn', value, 'NChains', value, 'NIterations', value, 'NMCMCIterations', value, 'OptimFun', value, 'Options', value, 'ParamTransform', value, 'Replicates', value, 'Vectorization', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nlmefitsa.html'
+
+
+    "plsregress [stats]":
+        prefix: "plsregress"
+        body: '''plsregress(${1:X}, ${2:Y}, ${3:ncomp}, 'cv', ${4:value}, 'mcreps', ${5:value}, 'options', ${6:value})'''
+        description: '''[stats] Partial least-squares regression
+        plsregress(X, Y, ncomp, 'cv', value, 'mcreps', value, 'options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/plsregress.html'
+
+
+    "glmfit [stats]":
+        prefix: "glmfit"
+        body: '''glmfit(${1:X}, ${2:y}, ${3:distr}, 'link', ${4:value}, 'estdisp', ${5:value}, 'offset', ${6:value}, 'weights', ${7:value}, 'constant', ${8:value})'''
+        description: '''[stats] Generalized linear model regression
+        glmfit(X, y, distr, 'link', value, 'estdisp', value, 'offset', value, 'weights', value, 'constant', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/glmfit.html'
+
+
+    "squareform [stats]":
+        prefix: "squareform"
+        body: '''squareform(${1:Y}, ${2:optional_direction})'''
+        description: '''[stats] Format distance matrix
+        squareform(Y, optional_direction)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/squareform.html'
+
+
+    "lhsdesign [stats]":
+        prefix: "lhsdesign"
+        body: '''lhsdesign(${1:n}, ${2:p}, 'smooth', ${3:value}, 'criterion', ${4:value}, 'iterations', ${5:value})'''
+        description: '''[stats] Latin hypercube sample
+        lhsdesign(n, p, 'smooth', value, 'criterion', value, 'iterations', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/lhsdesign.html'
+
+
+    "nlpredci [stats]":
+        prefix: "nlpredci"
+        body: '''nlpredci(${1:modelfun}, ${2:X}, ${3:beta}, ${4:R}, 'Covariance', ${5:value}, 'Jacobian', ${6:value}, 'Alpha', ${7:value}, 'ErrorModelInfo', ${8:value}, 'MSE', ${9:value}, 'PredOpt', ${10:value}, 'SimOpt', ${11:value}, 'Weights', ${12:value})'''
+        description: '''[stats] Nonlinear regression prediction confidence intervals
+        nlpredci(modelfun, X, beta, R, 'Covariance', value, 'Jacobian', value, 'Alpha', value, 'ErrorModelInfo', value, 'MSE', value, 'PredOpt', value, 'SimOpt', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nlpredci.html'
+
+
+    "statget [stats]":
+        prefix: "statget"
+        body: '''statget(${1:options}, ${2:param}, ${3:optional_default})'''
+        description: '''[stats] Access values in statistics options structure
+        statget(options, param, optional_default)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/statget.html'
+
+
+    "gevcdf [stats]":
+        prefix: "gevcdf"
+        body: '''gevcdf(${1:x}, ${2:k}, ${3:sigma}, ${4:mu}, ${5:optional_upper})'''
+        description: '''[stats] Generalized extreme value cumulative distribution function
+        gevcdf(x, k, sigma, mu, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/gevcdf.html'
+
+
+    "chi2cdf [stats]":
+        prefix: "chi2cdf"
+        body: '''chi2cdf(${1:x}, ${2:v}, ${3:optional_upper})'''
+        description: '''[stats] Chi-square cumulative distribution function
+        chi2cdf(x, v, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/chi2cdf.html'
+
+
+    "cvpartition [stats]":
+        prefix: "cvpartition"
+        body: '''cvpartition(${1:n}, ${2:resubstitution})'''
+        description: '''[stats] Create cross-validation partition for data
+        cvpartition(n, resubstitution)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/cvpartition.html'
+
+
+    "linkage [stats]":
+        prefix: "linkage"
+        body: '''linkage(${1:X}, ${2:method}, ${3:optional_pdist_inputs})'''
+        description: '''[stats] Agglomerative hierarchical cluster tree
+        linkage(X, method, optional_pdist_inputs)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/linkage.html'
+
+
+    "mvksdensity [stats]":
+        prefix: "mvksdensity"
+        body: '''mvksdensity(${1:x}, ${2:pts}, 'bandwidth', ${3:value}, 'Function', ${4:value}, 'Kernel', ${5:value}, 'Support', ${6:value}, 'Weights', ${7:value})'''
+        description: '''[stats] Kernel smoothing function estimate for multivariate data
+        mvksdensity(x, pts, 'bandwidth', value, 'Function', value, 'Kernel', value, 'Support', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mvksdensity.html'
+
+
+    "logncdf [stats]":
+        prefix: "logncdf"
+        body: '''logncdf(${1:x}, ${2:mu}, ${3:sigma}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+        description: '''[stats] Lognormal cumulative distribution function
+        logncdf(x, mu, sigma, optional_pcov, optional_alpha, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/logncdf.html'
+
+
+    "interactionplot [stats]":
+        prefix: "interactionplot"
+        body: '''interactionplot(${1:Y}, ${2:GROUP}, 'varnames', ${3:value})'''
+        description: '''[stats] Interaction plot for grouped data
+        interactionplot(Y, GROUP, 'varnames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/interactionplot.html'
+
+
+    "mhsample [stats]":
+        prefix: "mhsample"
+        body: '''mhsample(${1:start}, ${2:nsamples}, 'pdf', ${3:value}, 'logpdf', ${4:value}, 'proppdf', ${5:value}, 'logproppdf', ${6:value}, 'proprnd', ${7:value}, 'symmetric', ${8:value}, 'burnin', ${9:value}, 'thin', ${10:value}, 'nchain', ${11:value})'''
+        description: '''[stats] Metropolis-Hastings sample
+        mhsample(start, nsamples, 'pdf', value, 'logpdf', value, 'proppdf', value, 'logproppdf', value, 'proprnd', value, 'symmetric', value, 'burnin', value, 'thin', value, 'nchain', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mhsample.html'
+
+
+    "gplotmatrix [stats]":
+        prefix: "gplotmatrix"
+        body: '''gplotmatrix(${1:x}, ${2:y}, ${3:group}, ${4:clr}, ${5:sym}, ${6:size}, ${7:doleg}, ${8:dispopt}, ${9:xnam}, ${10:optional_ynam})'''
+        description: '''[stats] Matrix of scatter plots by group
+        gplotmatrix(x, y, group, clr, sym, size, doleg, dispopt, xnam, optional_ynam)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/gplotmatrix.html'
+
+
+    "lasso [stats]":
+        prefix: "lasso"
+        body: '''lasso(${1:X}, ${2:Y}, 'Alpha', ${3:value}, 'CV', ${4:value}, 'DFmax', ${5:value}, 'Lambda', ${6:value}, 'LambdaRatio', ${7:value}, 'MaxIter', ${8:value}, 'MCReps', ${9:value}, 'NumLambda', ${10:value}, 'Options', ${11:value}, 'PredictorNames', ${12:value}, 'RelTol', ${13:value}, 'Standardize', ${14:value}, 'Weights', ${15:value})'''
+        description: '''[stats] Lasso or elastic net regularization for linear models
+        lasso(X, Y, 'Alpha', value, 'CV', value, 'DFmax', value, 'Lambda', value, 'LambdaRatio', value, 'MaxIter', value, 'MCReps', value, 'NumLambda', value, 'Options', value, 'PredictorNames', value, 'RelTol', value, 'Standardize', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/lasso.html'
+
+
+    "nlintool [stats]":
+        prefix: "nlintool"
+        body: '''nlintool(${1:X}, ${2:Y}, ${3:modelfun}, ${4:beta0}, 'alpha', ${5:value}, 'xname', ${6:value}, 'yname', ${7:value}, 'plotdata', ${8:value})'''
+        description: '''[stats] Interactive nonlinear regression
+        nlintool(X, Y, modelfun, beta0, 'alpha', value, 'xname', value, 'yname', value, 'plotdata', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nlintool.html'
+
+
+    "normcdf [stats]":
+        prefix: "normcdf"
+        body: '''normcdf(${1:x}, ${2:optional_mu}, ${3:optional_sigma}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+        description: '''[stats] Normal cumulative distribution function
+        normcdf(x, optional_mu, optional_sigma, optional_pcov, optional_alpha, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/normcdf.html'
+
+
+    "nearcorr [stats]":
+        prefix: "nearcorr"
+        body: '''nearcorr(${1:A}, 'Tolerance', ${2:value}, 'MaxIterations', ${3:value}, 'Method', ${4:value}, 'Weights', ${5:value})'''
+        description: '''[stats] Compute nearest correlation matrix by minimizing Frobenius distance
+        nearcorr(A, 'Tolerance', value, 'MaxIterations', value, 'Method', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/../stats/nearcorr.html'
+
+
+    "statset [stats]":
+        prefix: "statset"
+        body: '''statset(${1:optional_oldopts}, 'Display', ${2:value}, 'MaxFunEvals', ${3:value}, 'MaxIter', ${4:value}, 'TolBnd', ${5:value}, 'TolFun', ${6:value}, 'TolTypeFun', ${7:value}, 'TolX', ${8:value}, 'TolTypeX', ${9:value}, 'GradObj', ${10:value}, 'Jacobian', ${11:value}, 'DerivStep', ${12:value}, 'FunValCheck', ${13:value}, 'Robust', ${14:value}, 'RobustWgtFun', ${15:value}, 'Tune', ${16:value}, 'UseParallel', ${17:value}, 'UseSubstreams', ${18:value}, 'Streams', ${19:value}, 'OutputFcn', ${20:value})'''
+        description: '''[stats] Create statistics options structure
+        statset(optional_oldopts, 'Display', value, 'MaxFunEvals', value, 'MaxIter', value, 'TolBnd', value, 'TolFun', value, 'TolTypeFun', value, 'TolX', value, 'TolTypeX', value, 'GradObj', value, 'Jacobian', value, 'DerivStep', value, 'FunValCheck', value, 'Robust', value, 'RobustWgtFun', value, 'Tune', value, 'UseParallel', value, 'UseSubstreams', value, 'Streams', value, 'OutputFcn', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/statset.html'
+
+
+    "hmmestimate [stats]":
+        prefix: "hmmestimate"
+        body: '''hmmestimate(${1:seq}, ${2:states}, 'Symbols', ${3:value}, 'Statenames', ${4:value}, 'Pseudoemissions', ${5:value}, 'Pseudotransitions', ${6:value})'''
+        description: '''[stats] Hidden Markov model parameter estimates from emissions
+and states
+        hmmestimate(seq, states, 'Symbols', value, 'Statenames', value, 'Pseudoemissions', value, 'Pseudotransitions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/hmmestimate.html'
+
+
+    "tsne [stats]":
+        prefix: "tsne"
+        body: '''tsne(${1:X}, 'Algorithm', ${2:value}, 'Distance', ${3:value}, 'Exaggeration', ${4:value}, 'NumDimensions', ${5:value}, 'NumPCAComponents', ${6:value}, 'Perplexity', ${7:value}, 'Standardize', ${8:value}, 'InitialY', ${9:value}, 'LearnRate', ${10:value}, 'NumPrint', ${11:value}, 'Options', ${12:value}, 'Theta', ${13:value}, 'Verbose', ${14:value})'''
+        description: '''[stats] t-Distributed Stochastic Neighbor Embedding
+        tsne(X, 'Algorithm', value, 'Distance', value, 'Exaggeration', value, 'NumDimensions', value, 'NumPCAComponents', value, 'Perplexity', value, 'Standardize', value, 'InitialY', value, 'LearnRate', value, 'NumPrint', value, 'Options', value, 'Theta', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/tsne.html'
+
+
+    "unifcdf [stats]":
+        prefix: "unifcdf"
+        body: '''unifcdf(${1:x}, ${2:a}, ${3:b}, ${4:optional_upper})'''
+        description: '''[stats] Continuous uniform cumulative distribution function
+        unifcdf(x, a, b, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/unifcdf.html'
+
+
+    "dendrogram [stats]":
+        prefix: "dendrogram"
+        body: '''dendrogram(${1:tree}, ${2:optional_P}, 'Reorder', ${3:value}, 'CheckCrossing', ${4:value}, 'ColorThreshold', ${5:value}, 'Orientation', ${6:value}, 'Labels', ${7:value})'''
+        description: '''[stats] Dendrogram plot
+        dendrogram(tree, optional_P, 'Reorder', value, 'CheckCrossing', value, 'ColorThreshold', value, 'Orientation', value, 'Labels', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/dendrogram.html'
+
+
+    "kstest2 [stats]":
+        prefix: "kstest2"
+        body: '''kstest2(${1:x1}, ${2:x2}, 'Alpha', ${3:value}, 'Tail', ${4:value})'''
+        description: '''[stats] Two-sample Kolmogorov-Smirnov test
+        kstest2(x1, x2, 'Alpha', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/kstest2.html'
+
+
+    "confusionmat [stats]":
+        prefix: "confusionmat"
+        body: '''confusionmat(${1:group}, ${2:grouphat}, 'order', ${3:value})'''
+        description: '''[stats] Compute confusion matrix for classification problem
+        confusionmat(group, grouphat, 'order', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ref/confusionmat.html'
+
+
+    "expcdf [stats]":
+        prefix: "expcdf"
+        body: '''expcdf(${1:x}, ${2:optional_mu}, ${3:optional_pcov}, ${4:optional_alpha}, ${5:optional_upper})'''
+        description: '''[stats] Exponential cumulative distribution function
+        expcdf(x, optional_mu, optional_pcov, optional_alpha, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/expcdf.html'
+
+
+    "binocdf [stats]":
+        prefix: "binocdf"
+        body: '''binocdf(${1:x}, ${2:N}, ${3:p}, ${4:optional_upper})'''
+        description: '''[stats] Binomial cumulative distribution function
+        binocdf(x, N, p, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/binocdf.html'
+
+
+    "regstats [stats]":
+        prefix: "regstats"
+        body: '''regstats(${1:y}, ${2:X}, ${3:model}, ${4:optional_whichstats})'''
+        description: '''[stats] Regression diagnostics
+        regstats(y, X, model, optional_whichstats)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/regstats.html'
+
+
+    "rangesearch [stats]":
+        prefix: "rangesearch"
+        body: '''rangesearch(${1:X}, ${2:Y}, ${3:r}, 'BucketSize', ${4:value}, 'Cov', ${5:value}, 'Distance', ${6:value}, 'NSMethod', ${7:value}, 'P', ${8:value}, 'Scale', ${9:value}, 'SortIndices', ${10:value})'''
+        description: '''[stats] Find all neighbors within specified distance using input data
+        rangesearch(X, Y, r, 'BucketSize', value, 'Cov', value, 'Distance', value, 'NSMethod', value, 'P', value, 'Scale', value, 'SortIndices', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/rangesearch.html'
+
+
+    "candexch [stats]":
+        prefix: "candexch"
+        body: '''candexch(${1:C}, ${2:nrows}, 'display', ${3:value}, 'init', ${4:value}, 'maxiter', ${5:value}, 'options', ${6:value}, 'start', ${7:value}, 'tries', ${8:value})'''
+        description: '''[stats] D-optimal design from candidate set
+using row exchanges
+        candexch(C, nrows, 'display', value, 'init', value, 'maxiter', value, 'options', value, 'start', value, 'tries', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/candexch.html'
+
+
+    "princomp [stats]":
+        prefix: "princomp"
+        body: '''princomp(${1:X}, ${2:optional_econ})'''
+        description: '''[stats] 
+        princomp(X, optional_econ)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/princomp.html'
+
+
+    "geocdf [stats]":
+        prefix: "geocdf"
+        body: '''geocdf(${1:x}, ${2:p}, ${3:optional_upper})'''
+        description: '''[stats] Geometric cumulative distribution function
+        geocdf(x, p, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/geocdf.html'
+
+
+    "tiedrank [stats]":
+        prefix: "tiedrank"
+        body: '''tiedrank(${1:X}, ${2:tieflag}, ${3:optional_bidirectional})'''
+        description: '''[stats] Rank adjusted for ties
+        tiedrank(X, tieflag, optional_bidirectional)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/tiedrank.html'
+
+
+    "qrandstream [stats]":
+        prefix: "qrandstream"
+        body: '''qrandstream(${1:p})'''
+        description: '''[stats] Construct quasi-random number stream
+        qrandstream(p)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/qrandstream.html'
+
+
+    "ecdf [stats]":
+        prefix: "ecdf"
+        body: '''ecdf(${1:optional_ax}, ${2:y}, 'censoring', ${3:value}, 'frequency', ${4:value}, 'alpha', ${5:value}, 'function', ${6:value}, 'bounds', ${7:value})'''
+        description: '''[stats] Empirical cumulative distribution function
+        ecdf(optional_ax, y, 'censoring', value, 'frequency', value, 'alpha', value, 'function', value, 'bounds', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ecdf.html'
+
+
+    "kstest [stats]":
+        prefix: "kstest"
+        body: '''kstest(${1:x}, 'Alpha', ${2:value}, 'CDF', ${3:value}, 'Tail', ${4:value})'''
+        description: '''[stats] One-sample Kolmogorov-Smirnov test
+        kstest(x, 'Alpha', value, 'CDF', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/kstest.html'
+
+
+    "gscatter [stats]":
+        prefix: "gscatter"
+        body: '''gscatter(${1:x}, ${2:y}, ${3:group}, ${4:clr}, ${5:sym}, ${6:size}, ${7:doleg}, ${8:xnam}, ${9:optional_yname})'''
+        description: '''[stats] Scatter plot by group
+        gscatter(x, y, group, clr, sym, size, doleg, xnam, optional_yname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/gscatter.html'
+
+
+    "hmmgenerate [stats]":
+        prefix: "hmmgenerate"
+        body: '''hmmgenerate(${1:len}, ${2:TRANS}, ${3:EMIS}, 'Symbols', ${4:value}, 'Statenames', ${5:value})'''
+        description: '''[stats] Hidden Markov model states and emissions
+        hmmgenerate(len, TRANS, EMIS, 'Symbols', value, 'Statenames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/hmmgenerate.html'
+
+
+    "andrewsplot [stats]":
+        prefix: "andrewsplot"
+        body: '''andrewsplot(${1:X}, 'Standardize', ${2:value}, 'Quantile', ${3:value}, 'Group', ${4:value}, ${5:properties})'''
+        description: '''[stats] Andrews plot
+        andrewsplot(X, 'Standardize', value, 'Quantile', value, 'Group', value, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/andrewsplot.html'
+
+
+    "daugment [stats]":
+        prefix: "daugment"
+        body: '''daugment(${1:dce}, ${2:mruns}, ${3:model}, 'display', ${4:value}, 'init', ${5:value}, 'maxiter', ${6:value}, 'tries', ${7:value}, 'bounds', ${8:value}, 'levels', ${9:value}, 'excludefun', ${10:value}, 'categorical', ${11:value}, 'options', ${12:value})'''
+        description: '''[stats] D-optimal augmentation
+        daugment(dce, mruns, model, 'display', value, 'init', value, 'maxiter', value, 'tries', value, 'bounds', value, 'levels', value, 'excludefun', value, 'categorical', value, 'options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/daugment.html'
+
+
+    "histfit [stats]":
+        prefix: "histfit"
+        body: '''histfit(${1:data}, ${2:nbins}, ${3:optional_distname})'''
+        description: '''[stats] Histogram with a distribution fit
+        histfit(data, nbins, optional_distname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/histfit.html'
+
+
+    "nbincdf [stats]":
+        prefix: "nbincdf"
+        body: '''nbincdf(${1:x}, ${2:R}, ${3:p}, ${4:optional_upper})'''
+        description: '''[stats] Negative binomial cumulative distribution function
+        nbincdf(x, R, p, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nbincdf.html'
+
+
+    "friedman [stats]":
+        prefix: "friedman"
+        body: '''friedman(${1:x}, ${2:reps}, ${3:optional_displayopt})'''
+        description: '''[stats] Friedman’s test
+        friedman(x, reps, optional_displayopt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/friedman.html'
+
+
+    "nlmefit [stats]":
+        prefix: "nlmefit"
+        body: '''nlmefit(${1:X}, ${2:y}, ${3:group}, ${4:V}, ${5:fun}, ${6:beta0}, 'FEParamsSelect', ${7:value}, 'FEConstDesign', ${8:value}, 'FEGroupDesign', ${9:value}, 'FEObsDesign', ${10:value}, 'REParamsSelect', ${11:value}, 'REConstDesign', ${12:value}, 'REGroupDesign', ${13:value}, 'REObsDesign', ${14:value}, 'RefineBeta0', ${15:value}, 'ErrorModel', ${16:value}, 'ApproximationType', ${17:value}, 'Vectorization', ${18:value}, 'CovParameterization', ${19:value}, 'CovPattern', ${20:value}, 'ParamTransform', ${21:value}, 'Options', ${22:value}, 'OptimFun', ${23:value})'''
+        description: '''[stats] Nonlinear mixed-effects estimation
+        nlmefit(X, y, group, V, fun, beta0, 'FEParamsSelect', value, 'FEConstDesign', value, 'FEGroupDesign', value, 'FEObsDesign', value, 'REParamsSelect', value, 'REConstDesign', value, 'REGroupDesign', value, 'REObsDesign', value, 'RefineBeta0', value, 'ErrorModel', value, 'ApproximationType', value, 'Vectorization', value, 'CovParameterization', value, 'CovPattern', value, 'ParamTransform', value, 'Options', value, 'OptimFun', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nlmefit.html'
+
+
+    "nlinfit [stats]":
+        prefix: "nlinfit"
+        body: '''nlinfit(${1:X}, ${2:Y}, ${3:modelfun}, ${4:beta0}, ${5:optional_options}, 'ErrorModel', ${6:value}, 'ErrorParameters', ${7:value}, 'Weights', ${8:value})'''
+        description: '''[stats] Nonlinear regression
+        nlinfit(X, Y, modelfun, beta0, optional_options, 'ErrorModel', value, 'ErrorParameters', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nlinfit.html'
+
+
+    "lassoPlot [stats]":
+        prefix: "lassoPlot"
+        body: '''lassoPlot(${1:B}, ${2:FitInfo}, 'Parent', ${3:value}, 'PlotType', ${4:value}, 'PredictorNames', ${5:value}, 'XScale', ${6:value})'''
+        description: '''[stats] Trace plot of lasso fit
+        lassoPlot(B, FitInfo, 'Parent', value, 'PlotType', value, 'PredictorNames', value, 'XScale', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/lassoplot.html'
+
+
+    "ccdesign [stats]":
+        prefix: "ccdesign"
+        body: '''ccdesign(${1:n}, 'center', ${2:value}, 'fraction', ${3:value}, 'type', ${4:value}, 'blocksize', ${5:value})'''
+        description: '''[stats] Central composite design
+        ccdesign(n, 'center', value, 'fraction', value, 'type', value, 'blocksize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ccdesign.html'
+
+
+    "copularnd [stats]":
+        prefix: "copularnd"
+        body: '''copularnd(${1:family}, ${2:alpha}, ${3:n})'''
+        description: '''[stats] Copula random numbers
+        copularnd(family, alpha, n)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/copularnd.html'
+
+
+    "sequentialfs [stats]":
+        prefix: "sequentialfs"
+        body: '''sequentialfs(${1:fun}, ${2:x}, ${3:optional_y}, 'cv', ${4:value}, 'mcreps', ${5:value}, 'direction', ${6:value}, 'keepin', ${7:value}, 'keepout', ${8:value}, 'nfeatures', ${9:value}, 'nullmodel', ${10:value}, 'options', ${11:value})'''
+        description: '''[stats] Sequential feature selection using custom criterion
+        sequentialfs(fun, x, optional_y, 'cv', value, 'mcreps', value, 'direction', value, 'keepin', value, 'keepout', value, 'nfeatures', value, 'nullmodel', value, 'options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/sequentialfs.html'
+
+
+    "unidcdf [stats]":
+        prefix: "unidcdf"
+        body: '''unidcdf(${1:x}, ${2:N}, ${3:optional_upper})'''
+        description: '''[stats] Discrete uniform cumulative distribution function
+        unidcdf(x, N, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/unidcdf.html'
+
+
+    "rstool [stats]":
+        prefix: "rstool"
+        body: '''rstool(${1:X}, ${2:Y}, ${3:model}, ${4:alpha}, ${5:xname}, ${6:optional_yname})'''
+        description: '''[stats] Interactive response surface modeling
+        rstool(X, Y, model, alpha, xname, optional_yname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/rstool.html'
+
+
+    "multcompare [stats]":
+        prefix: "multcompare"
+        body: '''multcompare(${1:stats}, 'Alpha', ${2:value}, 'CType', ${3:value}, 'Display', ${4:value}, 'Dimension', ${5:value}, 'Estimate', ${6:value})'''
+        description: '''[stats] Multiple comparison of estimated marginal means
+        multcompare(stats, 'Alpha', value, 'CType', value, 'Display', value, 'Dimension', value, 'Estimate', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/repeatedmeasuresmodel.multcompare.html'
+
+
+    "normspec [stats]":
+        prefix: "normspec"
+        body: '''normspec(${1:specs}, ${2:mu}, ${3:sigma}, ${4:optional_region})'''
+        description: '''[stats] Normal density plot shading between specifications
+        normspec(specs, mu, sigma, optional_region)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/normspec.html'
+
+
+    "copulastat [stats]":
+        prefix: "copulastat"
+        body: '''copulastat(${1:family}, ${2:alpha}, 'Type', ${3:value})'''
+        description: '''[stats] Copula rank correlation
+        copulastat(family, alpha, 'Type', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/copulastat.html'
+
+
+    "cordexch [stats]":
+        prefix: "cordexch"
+        body: '''cordexch(${1:nfactors}, ${2:nruns}, ${3:model}, 'bounds', ${4:value}, 'categorical', ${5:value}, 'display', ${6:value}, 'excludefun', ${7:value}, 'init', ${8:value}, 'levels', ${9:value}, 'maxiter', ${10:value}, 'tries', ${11:value}, 'options', ${12:value})'''
+        description: '''[stats] Coordinate exchange
+        cordexch(nfactors, nruns, model, 'bounds', value, 'categorical', value, 'display', value, 'excludefun', value, 'init', value, 'levels', value, 'maxiter', value, 'tries', value, 'options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/cordexch.html'
+
+
+    "skewness [stats]":
+        prefix: "skewness"
+        body: '''skewness(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''[stats] Skewness
+        skewness(X, flag, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/skewness.html'
+
+
+    "raylcdf [stats]":
+        prefix: "raylcdf"
+        body: '''raylcdf(${1:x}, ${2:b}, ${3:optional_upper})'''
+        description: '''[stats] Rayleigh cumulative distribution function
+        raylcdf(x, b, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/raylcdf.html'
+
+
+    "kmeans [stats]":
+        prefix: "kmeans"
+        body: '''kmeans(${1:X}, ${2:k}, 'Display', ${3:value}, 'Distance', ${4:value}, 'EmptyAction', ${5:value}, 'MaxIter', ${6:value}, 'OnlinePhase', ${7:value}, 'Options', ${8:value}, 'Replicates', ${9:value}, 'Start', ${10:value})'''
+        description: '''[stats] k-means clustering
+        kmeans(X, k, 'Display', value, 'Distance', value, 'EmptyAction', value, 'MaxIter', value, 'OnlinePhase', value, 'Options', value, 'Replicates', value, 'Start', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/kmeans.html'
+
+
+    "wblcdf [stats]":
+        prefix: "wblcdf"
+        body: '''wblcdf(${1:x}, ${2:a}, ${3:b}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+        description: '''[stats] Weibull cumulative distribution function
+        wblcdf(x, a, b, optional_pcov, optional_alpha, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/wblcdf.html'
+
+
+    "sobolset [stats]":
+        prefix: "sobolset"
+        body: '''sobolset(${1:d}, 'Skip', ${2:value}, 'Leap', ${3:value}, 'PointOrder', ${4:value}, 'ScrambleMethod', ${5:value})'''
+        description: '''[stats] Sobol quasirandom point set
+        sobolset(d, 'Skip', value, 'Leap', value, 'PointOrder', value, 'ScrambleMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/sobolset.html'
+
+
+    "lhsnorm [stats]":
+        prefix: "lhsnorm"
+        body: '''lhsnorm(${1:mu}, ${2:sigma}, ${3:n}, ${4:flag})'''
+        description: '''[stats] Latin hypercube sample from normal distribution
+        lhsnorm(mu, sigma, n, flag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/lhsnorm.html'
+
+
+    "bootci [stats]":
+        prefix: "bootci"
+        body: '''bootci(${1:nboot}, ${2:bootfun}, 'alpha', ${3:value}, 'type', ${4:value}, 'nbootstd', ${5:value}, 'stderr', ${6:value}, 'Weights', ${7:value}, 'Options', ${8:value})'''
+        description: '''[stats] Bootstrap confidence interval
+        bootci(nboot, bootfun, 'alpha', value, 'type', value, 'nbootstd', value, 'stderr', value, 'Weights', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/bootci.html'
+
+
+    "nctcdf [stats]":
+        prefix: "nctcdf"
+        body: '''nctcdf(${1:x}, ${2:nu}, ${3:delta}, ${4:optional_upper})'''
+        description: '''[stats] Noncentral t cumulative distribution
+function
+        nctcdf(x, nu, delta, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nctcdf.html'
+
+
+    "TreeBagger [stats]":
+        prefix: "TreeBagger"
+        body: '''TreeBagger(${1:NumTrees}, ${2:Tbl}, ${3:ResponseVarName}, 'InBagFraction', ${4:value}, 'Cost', ${5:value}, 'SampleWithReplacement', ${6:value}, 'OOBPrediction', ${7:value}, 'OOBPredictorImportance', ${8:value}, 'Method', ${9:value}, 'NumPredictorsToSample', ${10:value}, 'NumPrint', ${11:value}, 'MinLeafSize', ${12:value}, 'Options', ${13:value}, 'Prior', ${14:value}, 'PredictorNames', ${15:value}, 'CategoricalPredictors', ${16:value}, 'AlgorithmForCategorical', ${17:value}, 'MaxNumCategories', ${18:value}, 'MaxNumSplits', ${19:value}, 'MergeLeaves', ${20:value}, 'PredictorSelection', ${21:value}, 'Prune', ${22:value}, 'PruneCriterion', ${23:value}, 'SplitCriterion', ${24:value}, 'Surrogate', ${25:value}, 'Weights', ${26:value}, 'QuadraticErrorTolerance', ${27:value})'''
+        description: '''[stats] Create bag of decision trees
+        TreeBagger(NumTrees, Tbl, ResponseVarName, 'InBagFraction', value, 'Cost', value, 'SampleWithReplacement', value, 'OOBPrediction', value, 'OOBPredictorImportance', value, 'Method', value, 'NumPredictorsToSample', value, 'NumPrint', value, 'MinLeafSize', value, 'Options', value, 'Prior', value, 'PredictorNames', value, 'CategoricalPredictors', value, 'AlgorithmForCategorical', value, 'MaxNumCategories', value, 'MaxNumSplits', value, 'MergeLeaves', value, 'PredictorSelection', value, 'Prune', value, 'PruneCriterion', value, 'SplitCriterion', value, 'Surrogate', value, 'Weights', value, 'QuadraticErrorTolerance', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/treebagger.html'
+
+
+    "fishertest [stats]":
+        prefix: "fishertest"
+        body: '''fishertest(${1:x}, 'Alpha', ${2:value}, 'Tail', ${3:value})'''
+        description: '''[stats] Fisher’s exact test 
+        fishertest(x, 'Alpha', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fishertest.html'
+
+
+    "fitgmdist [stats]":
+        prefix: "fitgmdist"
+        body: '''fitgmdist(${1:X}, ${2:k}, 'CovarianceType', ${3:value}, 'Options', ${4:value}, 'ProbabilityTolerance', ${5:value}, 'RegularizationValue', ${6:value}, 'Replicates', ${7:value}, 'SharedCovariance', ${8:value}, 'Start', ${9:value})'''
+        description: '''[stats] Fit Gaussian mixture model to data
+        fitgmdist(X, k, 'CovarianceType', value, 'Options', value, 'ProbabilityTolerance', value, 'RegularizationValue', value, 'Replicates', value, 'SharedCovariance', value, 'Start', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitgmdist.html'
+
+
+    "datasample [stats]":
+        prefix: "datasample"
+        body: '''datasample(${1:optional_s}, ${2:data}, ${3:k}, ${4:optional_dim}, 'Replace', ${5:value}, 'Weights', ${6:value})'''
+        description: '''[stats] Randomly sample from data, with or without replacement
+        datasample(optional_s, data, k, optional_dim, 'Replace', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/datasample.html'
+
+
+    "dbscan [stats]":
+        prefix: "dbscan"
+        body: '''dbscan(${1:X}, ${2:epsilon}, ${3:minpts}, 'Distance', ${4:value}, 'Cov', ${5:value}, 'P', ${6:value}, 'Scale', ${7:value})'''
+        description: '''[stats] Density-based spatial clustering of applications with noise (DBSCAN)
+        dbscan(X, epsilon, minpts, 'Distance', value, 'Cov', value, 'P', value, 'Scale', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/dbscan.html'
+
+
+    "manovacluster [stats]":
+        prefix: "manovacluster"
+        body: '''manovacluster(${1:stats}, ${2:optional_method})'''
+        description: '''[stats] Dendrogram of group mean clusters following MANOVA
+        manovacluster(stats, optional_method)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/manovacluster.html'
+
+
+    "mnrfit [stats]":
+        prefix: "mnrfit"
+        body: '''mnrfit(${1:X}, ${2:Y}, 'Model', ${3:value}, 'Interactions', ${4:value}, 'Link', ${5:value}, 'EstDisp', ${6:value})'''
+        description: '''[stats] Multinomial logistic regression
+        mnrfit(X, Y, 'Model', value, 'Interactions', value, 'Link', value, 'EstDisp', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mnrfit.html'
+
+
+    "aoctool [stats]":
+        prefix: "aoctool"
+        body: '''aoctool(${1:x}, ${2:y}, ${3:group}, ${4:alpha}, ${5:xname}, ${6:yname}, ${7:gname}, ${8:displayopt}, ${9:optional_model})'''
+        description: '''[stats] Interactive analysis of covariance
+        aoctool(x, y, group, alpha, xname, yname, gname, displayopt, optional_model)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/aoctool.html'
+
+
+    "sampsizepwr [stats]":
+        prefix: "sampsizepwr"
+        body: '''sampsizepwr(${1:testtype}, ${2:p0}, ${3:p1}, ${4:pwr}, ${5:n}, 'Alpha', ${6:value}, 'Ratio', ${7:value}, 'Tail', ${8:value})'''
+        description: '''[stats] Sample size and power of test
+        sampsizepwr(testtype, p0, p1, pwr, n, 'Alpha', value, 'Ratio', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/sampsizepwr.html'
+
+
+    "anova1 [stats]":
+        prefix: "anova1"
+        body: '''anova1(${1:y}, ${2:group}, ${3:optional_displayopt})'''
+        description: '''[stats] One-way analysis of variance
+        anova1(y, group, optional_displayopt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/anova1.html'
+
+
+    "candgen [stats]":
+        prefix: "candgen"
+        body: '''candgen(${1:nfactors}, ${2:model}, 'bounds', ${3:value}, 'levels', ${4:value}, 'categorical', ${5:value})'''
+        description: '''[stats] Candidate set generation
+        candgen(nfactors, model, 'bounds', value, 'levels', value, 'categorical', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/candgen.html'
+
+
+    "pdist [stats]":
+        prefix: "pdist"
+        body: '''pdist(${1:X}, ${2:Mahalanobis}, ${3:optional_Covariance})'''
+        description: '''[stats] Pairwise distance between pairs of observations
+        pdist(X, Mahalanobis, optional_Covariance)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/pdist.html'
+
+
+    "bootstrp [stats]":
+        prefix: "bootstrp"
+        body: '''bootstrp(${1:nboot}, ${2:bootfun}, ${3:d1}, 'Weights', ${4:value}, 'Options', ${5:value})'''
+        description: '''[stats] Bootstrap sampling
+        bootstrp(nboot, bootfun, d1, 'Weights', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/bootstrp.html'
+
+
+    "ttest [stats]":
+        prefix: "ttest"
+        body: '''ttest(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value})'''
+        description: '''[stats] One-sample and paired-sample t-test
+        ttest(x, y, 'Alpha', value, 'Dim', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ttest.html'
+
+
+    "ncx2cdf [stats]":
+        prefix: "ncx2cdf"
+        body: '''ncx2cdf(${1:x}, ${2:v}, ${3:delta}, ${4:optional_upper})'''
+        description: '''[stats] Noncentral chi-square cumulative distribution function
+        ncx2cdf(x, v, delta, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ncx2cdf.html'
+
+
+    "trimmean [stats]":
+        prefix: "trimmean"
+        body: '''trimmean(${1:X}, ${2:percent}, ${3:optional_dim}, ${4:optional_flag})'''
+        description: '''[stats] Mean, excluding outliers
+        trimmean(X, percent, optional_dim, optional_flag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/trimmean.html'
+
+
+    "chi2gof [stats]":
+        prefix: "chi2gof"
+        body: '''chi2gof(${1:x}, 'NBins', ${2:value}, 'Ctrs', ${3:value}, 'Edges', ${4:value}, 'CDF', ${5:value}, 'Expected', ${6:value}, 'NParams', ${7:value}, 'EMin', ${8:value}, 'Frequency', ${9:value}, 'Alpha', ${10:value})'''
+        description: '''[stats] Chi-square goodness-of-fit test
+        chi2gof(x, 'NBins', value, 'Ctrs', value, 'Edges', value, 'CDF', value, 'Expected', value, 'NParams', value, 'EMin', value, 'Frequency', value, 'Alpha', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/chi2gof.html'
+
+
+    "pca [stats]":
+        prefix: "pca"
+        body: '''pca(${1:X}, 'Algorithm', ${2:value}, 'Centered', ${3:value}, 'Economy', ${4:value}, 'NumComponents', ${5:value}, 'Rows', ${6:value}, 'Weights', ${7:value}, 'VariableWeights', ${8:value}, 'Coeff0', ${9:value}, 'Score0', ${10:value}, 'Options', ${11:value})'''
+        description: '''[stats] Principal component analysis of raw data
+        pca(X, 'Algorithm', value, 'Centered', value, 'Economy', value, 'NumComponents', value, 'Rows', value, 'Weights', value, 'VariableWeights', value, 'Coeff0', value, 'Score0', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/pca.html'
+
+
+    "coxphfit [stats]":
+        prefix: "coxphfit"
+        body: '''coxphfit(${1:X}, ${2:T}, 'B0', ${3:value}, 'Baseline', ${4:value}, 'Censoring', ${5:value}, 'Frequency', ${6:value}, 'Strata', ${7:value}, 'Ties', ${8:value}, 'Options', ${9:value})'''
+        description: '''[stats] Cox proportional hazards regression
+        coxphfit(X, T, 'B0', value, 'Baseline', value, 'Censoring', value, 'Frequency', value, 'Strata', value, 'Ties', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/coxphfit.html'
+
+
+    "kmedoids [stats]":
+        prefix: "kmedoids"
+        body: '''kmedoids(${1:X}, ${2:k}, 'Algorithm', ${3:value}, 'OnlinePhase', ${4:value}, 'Distance', ${5:value}, 'Options', ${6:value}, 'Replicates', ${7:value}, 'NumSamples', ${8:value}, 'PercentNeighbors', ${9:value}, 'Start', ${10:value})'''
+        description: '''[stats] k-medoids clustering
+        kmedoids(X, k, 'Algorithm', value, 'OnlinePhase', value, 'Distance', value, 'Options', value, 'Replicates', value, 'NumSamples', value, 'PercentNeighbors', value, 'Start', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/kmedoids.html'
+
+
+    "controlchart [stats]":
+        prefix: "controlchart"
+        body: '''controlchart(${1:X}, ${2:optional_group}, 'charttype', ${3:value}, 'display', ${4:value}, 'label', ${5:value}, 'lambda', ${6:value}, 'limits', ${7:value}, 'mean', ${8:value}, 'nsigma', ${9:value}, 'parent', ${10:value}, 'rules', ${11:value}, 'sigma', ${12:value}, 'specs', ${13:value}, 'unit', ${14:value}, 'width', ${15:value})'''
+        description: '''[stats] Shewhart control charts
+        controlchart(X, optional_group, 'charttype', value, 'display', value, 'label', value, 'lambda', value, 'limits', value, 'mean', value, 'nsigma', value, 'parent', value, 'rules', value, 'sigma', value, 'specs', value, 'unit', value, 'width', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/controlchart.html'
+
+
+    "clusterdata [stats]":
+        prefix: "clusterdata"
+        body: '''clusterdata(${1:X}, ${2:optional_cutoff_argument}, 'criterion', ${3:value}, 'cutoff', ${4:value}, 'depth', ${5:value}, 'distance', ${6:value}, 'linkage', ${7:value}, 'maxclust', ${8:value}, 'savememory', ${9:value})'''
+        description: '''[stats] Construct agglomerative clusters from data
+        clusterdata(X, optional_cutoff_argument, 'criterion', value, 'cutoff', value, 'depth', value, 'distance', value, 'linkage', value, 'maxclust', value, 'savememory', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/clusterdata.html'
+
+
+    "evcdf [stats]":
+        prefix: "evcdf"
+        body: '''evcdf(${1:x}, ${2:optional_mu}, ${3:optional_sigma}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+        description: '''[stats] Extreme value cumulative distribution function
+        evcdf(x, optional_mu, optional_sigma, optional_pcov, optional_alpha, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/evcdf.html'
+
+
+    "ncfcdf [stats]":
+        prefix: "ncfcdf"
+        body: '''ncfcdf(${1:x}, ${2:nu1}, ${3:nu2}, ${4:delta}, ${5:optional_upper})'''
+        description: '''[stats] Noncentral F cumulative distribution
+function
+        ncfcdf(x, nu1, nu2, delta, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ncfcdf.html'
+
+
+    "signrank [stats]":
+        prefix: "signrank"
+        body: '''signrank(${1:x}, ${2:y}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+        description: '''[stats] Wilcoxon signed rank test
+        signrank(x, y, 'alpha', value, 'method', value, 'tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/signrank.html'
+
+
+    "nlparci [stats]":
+        prefix: "nlparci"
+        body: '''nlparci(${1:beta}, ${2:resid}, 'covariance', ${3:value}, 'jacobian', ${4:value}, 'alpha', ${5:value})'''
+        description: '''[stats] Nonlinear regression parameter confidence intervals
+        nlparci(beta, resid, 'covariance', value, 'jacobian', value, 'alpha', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nlparci.html'
+
+
+    "factoran [stats]":
+        prefix: "factoran"
+        body: '''factoran(${1:X}, ${2:m}, 'xtype', ${3:value}, 'scores', ${4:value}, 'start', ${5:value}, 'rotate', ${6:value}, 'coeff', ${7:value}, 'normalize', ${8:value}, 'reltol', ${9:value}, 'maxit', ${10:value}, 'target', ${11:value}, 'type', ${12:value}, 'power', ${13:value}, 'userargs', ${14:value}, 'nobs', ${15:value}, 'delta', ${16:value}, 'optimopts', ${17:value})'''
+        description: '''[stats] Factor analysis
+        factoran(X, m, 'xtype', value, 'scores', value, 'start', value, 'rotate', value, 'coeff', value, 'normalize', value, 'reltol', value, 'maxit', value, 'target', value, 'type', value, 'power', value, 'userargs', value, 'nobs', value, 'delta', value, 'optimopts', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/factoran.html'
+
+
+    "gpcdf [stats]":
+        prefix: "gpcdf"
+        body: '''gpcdf(${1:x}, ${2:k}, ${3:sigma}, ${4:theta}, ${5:optional_upper})'''
+        description: '''[stats] Generalized Pareto cumulative distribution function
+        gpcdf(x, k, sigma, theta, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/gpcdf.html'
+
+
+    "hmmdecode [stats]":
+        prefix: "hmmdecode"
+        body: '''hmmdecode(${1:seq}, ${2:TRANS}, ${3:EMIS}, 'Symbols', ${4:value})'''
+        description: '''[stats] Hidden Markov model posterior state probabilities
+        hmmdecode(seq, TRANS, EMIS, 'Symbols', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/hmmdecode.html'
+
+
+    "copulaparam [stats]":
+        prefix: "copulaparam"
+        body: '''copulaparam(${1:family}, ${2:r}, 'Type', ${3:value})'''
+        description: '''[stats] Copula parameters as function of rank correlation
+        copulaparam(family, r, 'Type', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/copulaparam.html'
+
+
+    "ridge [stats]":
+        prefix: "ridge"
+        body: '''ridge(${1:y}, ${2:X}, ${3:k}, ${4:optional_scaled})'''
+        description: '''[stats] Ridge regression
+        ridge(y, X, k, optional_scaled)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ridge.html'
+
+
+    "hist3 [stats]":
+        prefix: "hist3"
+        body: '''hist3(${1:X}, ${2:optional_nbins or ctrs}, 'Edges', ${3:value}, 'nbins', ${4:value}, 'ctrs', ${5:value}, 'EdgeColor', ${6:value}, 'LineStyle', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'FaceLighting', ${10:value})'''
+        description: '''[stats] Bivariate histogram plot
+        hist3(X, optional_nbins or ctrs, 'Edges', value, 'nbins', value, 'ctrs', value, 'EdgeColor', value, 'LineStyle', value, 'FaceColor', value, 'FaceAlpha', value, 'FaceLighting', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/hist3.html'
+
+
+    "robustfit [stats]":
+        prefix: "robustfit"
+        body: '''robustfit(${1:X}, ${2:y}, ${3:wfun}, ${4:tune}, ${5:optional_const})'''
+        description: '''[stats] Robust regression
+        robustfit(X, y, wfun, tune, optional_const)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/robustfit.html'
+
+
+    "relieff [stats]":
+        prefix: "relieff"
+        body: '''relieff(${1:X}, ${2:Y}, ${3:K}, 'method', ${4:value}, 'prior', ${5:value}, 'updates', ${6:value}, 'categoricalx', ${7:value}, 'sigma', ${8:value})'''
+        description: '''[stats] Rank importance of predictors using ReliefF or RReliefF algorithm
+        relieff(X, Y, K, 'method', value, 'prior', value, 'updates', value, 'categoricalx', value, 'sigma', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/relieff.html'
+
+
+    "rowexch [stats]":
+        prefix: "rowexch"
+        body: '''rowexch(${1:nfactors}, ${2:nruns}, ${3:model}, 'bounds', ${4:value}, 'categorical', ${5:value}, 'display', ${6:value}, 'excludefun', ${7:value}, 'init', ${8:value}, 'levels', ${9:value}, 'maxiter', ${10:value}, 'options', ${11:value}, 'tries', ${12:value})'''
+        description: '''[stats] Row exchange
+        rowexch(nfactors, nruns, model, 'bounds', value, 'categorical', value, 'display', value, 'excludefun', value, 'init', value, 'levels', value, 'maxiter', value, 'options', value, 'tries', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/rowexch.html'
+
+
+    "copulacdf [stats]":
+        prefix: "copulacdf"
+        body: '''copulacdf(${1:family}, ${2:u}, ${3:alpha})'''
+        description: '''[stats] Copula cumulative distribution function
+        copulacdf(family, u, alpha)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/copulacdf.html'
+
+
+    "silhouette [stats]":
+        prefix: "silhouette"
+        body: '''silhouette(${1:x}, ${2:clust}, ${3:distfun}, ${4:optional_distfun_params})'''
+        description: '''[stats] Silhouette plot
+        silhouette(x, clust, distfun, optional_distfun_params)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/silhouette.html'
+
+
+    "controlrules [stats]":
+        prefix: "controlrules"
+        body: '''controlrules(${1:rules}, ${2:x}, ${3:cl}, ${4:se})'''
+        description: '''[stats] Western Electric and Nelson control rules
+        controlrules(rules, x, cl, se)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/controlrules.html'
+
+
+    "partialcorri [stats]":
+        prefix: "partialcorri"
+        body: '''partialcorri(${1:y}, ${2:x}, ${3:optional_z}, 'Type', ${4:value}, 'Rows', ${5:value}, 'Tail', ${6:value})'''
+        description: '''[stats] Partial correlation coefficients adjusted for internal
+variables
+        partialcorri(y, x, optional_z, 'Type', value, 'Rows', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/partialcorri.html'
+
+
+    "robustcov [stats]":
+        prefix: "robustcov"
+        body: '''robustcov(${1:x}, 'Method', ${2:value}, 'OutlierFraction', ${3:value}, 'NumTrials', ${4:value}, 'BiasCorrection', ${5:value}, 'NumOGKIterations', ${6:value}, 'UnivariateEstimator', ${7:value}, 'ReweightingMethod', ${8:value}, 'NumConcentrationSteps', ${9:value}, 'StartMethod', ${10:value})'''
+        description: '''[stats] Robust multivariate covariance and mean estimate
+        robustcov(x, 'Method', value, 'OutlierFraction', value, 'NumTrials', value, 'BiasCorrection', value, 'NumOGKIterations', value, 'UnivariateEstimator', value, 'ReweightingMethod', value, 'NumConcentrationSteps', value, 'StartMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/robustcov.html'
+
+
+    "nlmefitoutputfcn [stats]":
+        prefix: "nlmefitoutputfcn"
+        body: '''nlmefitoutputfcn(${1:beta}, ${2:status}, ${3:state})'''
+        description: '''[stats] 
+        nlmefitoutputfcn(beta, status, state)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nlmefitoutputfcn.html'
+
+
+    "gamcdf [stats]":
+        prefix: "gamcdf"
+        body: '''gamcdf(${1:x}, ${2:a}, ${3:optional_b}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+        description: '''[stats] Gamma cumulative distribution function
+        gamcdf(x, a, optional_b, optional_pcov, optional_alpha, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/gamcdf.html'
+
+
+    "biplot [stats]":
+        prefix: "biplot"
+        body: '''biplot(${1:coefs}, 'Scores', ${2:value}, 'VarLabels', ${3:value}, 'ObsLabels', ${4:value}, 'Positive', ${5:value}, ${6:properties})'''
+        description: '''[stats] Biplot
+        biplot(coefs, 'Scores', value, 'VarLabels', value, 'ObsLabels', value, 'Positive', value, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/biplot.html'
+
+
+    "polyconf [stats]":
+        prefix: "polyconf"
+        body: '''polyconf(${1:p}, ${2:X}, ${3:S}, 'alpha', ${4:value}, 'mu', ${5:value}, 'predopt', ${6:value}, 'simopt', ${7:value})'''
+        description: '''[stats] Polynomial confidence intervals
+        polyconf(p, X, S, 'alpha', value, 'mu', value, 'predopt', value, 'simopt', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/polyconf.html'
+
+
+    "cdf [stats]":
+        prefix: "cdf"
+        body: '''cdf(${1:name}, ${2:x}, ${3:optional_A}, ${4:optional_B}, ${5:optional_C}, ${6:optional_D}, ${7:optional_upper})'''
+        description: '''[stats] Cumulative distribution function for Gaussian mixture distribution
+        cdf(name, x, optional_A, optional_B, optional_C, optional_D, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/gmdistribution.cdf.html'
+
+
+    "hygecdf [stats]":
+        prefix: "hygecdf"
+        body: '''hygecdf(${1:x}, ${2:M}, ${3:K}, ${4:N}, ${5:optional_upper})'''
+        description: '''[stats] Hypergeometric cumulative distribution function
+        hygecdf(x, M, K, N, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/hygecdf.html'
+
+
+    "maineffectsplot [stats]":
+        prefix: "maineffectsplot"
+        body: '''maineffectsplot(${1:Y}, ${2:GROUP}, 'varnames', ${3:value}, 'statistic', ${4:value}, 'parent', ${5:value})'''
+        description: '''[stats] Main effects plot for grouped data
+        maineffectsplot(Y, GROUP, 'varnames', value, 'statistic', value, 'parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/maineffectsplot.html'
+
+
+    "parallelcoords [stats]":
+        prefix: "parallelcoords"
+        body: '''parallelcoords(${1:x}, 'Group', ${2:value}, 'Labels', ${3:value}, 'Quantile', ${4:value}, 'Standardize', ${5:value})'''
+        description: '''[stats] Parallel coordinates plot
+        parallelcoords(x, 'Group', value, 'Labels', value, 'Quantile', value, 'Standardize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/parallelcoords.html'
+
+
+    "classify [stats]":
+        prefix: "classify"
+        body: '''classify(${1:sample}, ${2:training}, ${3:group}, ${4:type}, ${5:optional_prior})'''
+        description: '''[stats] Classify data using a trained deep learning neural network
+        classify(sample, training, group, type, optional_prior)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ref/classify.html'
+
+
+    "multivarichart [stats]":
+        prefix: "multivarichart"
+        body: '''multivarichart(${1:y}, ${2:optional_GROUP}, 'varnames', ${3:value}, 'plotorder', ${4:value})'''
+        description: '''[stats] Multivari chart for grouped data
+        multivarichart(y, optional_GROUP, 'varnames', value, 'plotorder', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/multivarichart.html'
+
+
+    "haltonset [stats]":
+        prefix: "haltonset"
+        body: '''haltonset(${1:d}, 'Skip', ${2:value}, 'Leap', ${3:value}, 'ScrambleMethod', ${4:value})'''
+        description: '''[stats] Halton quasirandom point set
+        haltonset(d, 'Skip', value, 'Leap', value, 'ScrambleMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/haltonset.html'
+
+
+    "adtest [stats]":
+        prefix: "adtest"
+        body: '''adtest(${1:x}, 'Distribution', ${2:value}, 'Alpha', ${3:value}, 'MCTol', ${4:value}, 'Asymptotic', ${5:value})'''
+        description: '''[stats] Anderson-Darling test
+        adtest(x, 'Distribution', value, 'Alpha', value, 'MCTol', value, 'Asymptotic', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/adtest.html'
+
+
+    "mlecov [stats]":
+        prefix: "mlecov"
+        body: '''mlecov(${1:param}, ${2:data}, 'pdf', ${3:value}, 'cdf', ${4:value}, 'logpdf', ${5:value}, 'logsf', ${6:value}, 'nloglf', ${7:value}, 'censoring', ${8:value}, 'frequency', ${9:value}, 'options', ${10:value})'''
+        description: '''[stats] Asymptotic covariance of maximum likelihood estimators
+        mlecov(param, data, 'pdf', value, 'cdf', value, 'logpdf', value, 'logsf', value, 'nloglf', value, 'censoring', value, 'frequency', value, 'options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mlecov.html'
+
+
+    "gagerr [stats]":
+        prefix: "gagerr"
+        body: '''gagerr(${1:y}, ${2:{part,operator}}, 'spec', ${3:value}, 'printtable', ${4:value}, 'printgraph', ${5:value}, 'randomoperator', ${6:value}, 'model', ${7:value})'''
+        description: '''[stats] Gage repeatability and reproducibility study
+        gagerr(y, {part,operator}, 'spec', value, 'printtable', value, 'printgraph', value, 'randomoperator', value, 'model', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/gagerr.html'
+
+
+    "lillietest [stats]":
+        prefix: "lillietest"
+        body: '''lillietest(${1:x}, 'Alpha', ${2:value}, 'Distr', ${3:value}, 'MCTol', ${4:value})'''
+        description: '''[stats] Lilliefors test
+        lillietest(x, 'Alpha', value, 'Distr', value, 'MCTol', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/lillietest.html'
+
+
+    "vartestn [stats]":
+        prefix: "vartestn"
+        body: '''vartestn(${1:x}, ${2:optional_group}, 'Display', ${3:value}, 'TestType', ${4:value})'''
+        description: '''[stats]  Multiple-sample tests for equal variances
+        vartestn(x, optional_group, 'Display', value, 'TestType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/vartestn.html'
+
+
+    "copulafit [stats]":
+        prefix: "copulafit"
+        body: '''copulafit(${1:family}, ${2:u}, 'Alpha', ${3:value}, 'Method', ${4:value}, 'Options', ${5:value})'''
+        description: '''[stats] Fit copula to data
+        copulafit(family, u, 'Alpha', value, 'Method', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/copulafit.html'
+
+
+    "rotatefactors [stats]":
+        prefix: "rotatefactors"
+        body: '''rotatefactors(${1:A}, 'Method', ${2:value}, 'normalize', ${3:value}, 'coeff', ${4:value}, 'reltol', ${5:value}, 'maxit', ${6:value}, 'power', ${7:value}, 'target', ${8:value}, 'type', ${9:value})'''
+        description: '''[stats] Rotate factor loadings
+        rotatefactors(A, 'Method', value, 'normalize', value, 'coeff', value, 'reltol', value, 'maxit', value, 'power', value, 'target', value, 'type', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/rotatefactors.html'
+
+
+    "hmmtrain [stats]":
+        prefix: "hmmtrain"
+        body: '''hmmtrain(${1:seq}, ${2:TRGUESS}, ${3:EMITGUESS}, 'Algorithms', ${4:value}, 'Symbols', ${5:value}, 'Tolerance', ${6:value}, 'Maxiterations', ${7:value}, 'Verbose', ${8:value}, 'Pseudoemissions', ${9:value}, 'Pseudotransitions', ${10:value})'''
+        description: '''[stats] Hidden Markov model parameter estimates from emissions
+        hmmtrain(seq, TRGUESS, EMITGUESS, 'Algorithms', value, 'Symbols', value, 'Tolerance', value, 'Maxiterations', value, 'Verbose', value, 'Pseudoemissions', value, 'Pseudotransitions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/hmmtrain.html'
+
+
+    "mle [stats]":
+        prefix: "mle"
+        body: '''mle(${1:data}, 'distribution', ${2:value}, 'pdf', ${3:value}, 'logpdf', ${4:value}, 'nloglf', ${5:value}, 'start', ${6:value}, 'cdf', ${7:value}, 'logsf', ${8:value}, 'Censoring', ${9:value}, 'Frequency', ${10:value}, 'Alpha', ${11:value}, 'NTrials', ${12:value}, 'Options', ${13:value}, 'LowerBound', ${14:value}, 'UpperBound', ${15:value}, 'OptimFun', ${16:value})'''
+        description: '''[stats] Maximum likelihood estimates
+        mle(data, 'distribution', value, 'pdf', value, 'logpdf', value, 'nloglf', value, 'start', value, 'cdf', value, 'logsf', value, 'Censoring', value, 'Frequency', value, 'Alpha', value, 'NTrials', value, 'Options', value, 'LowerBound', value, 'UpperBound', value, 'OptimFun', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mle.html'
+
+
+    "ztest [stats]":
+        prefix: "ztest"
+        body: '''ztest(${1:x}, ${2:m}, ${3:sigma}, 'Alpha', ${4:value}, 'Dim', ${5:value}, 'Tail', ${6:value})'''
+        description: '''[stats] z-test
+        ztest(x, m, sigma, 'Alpha', value, 'Dim', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ztest.html'
+
+
+    "bbdesign [stats]":
+        prefix: "bbdesign"
+        body: '''bbdesign(${1:n}, 'center', ${2:value}, 'blocksize', ${3:value})'''
+        description: '''[stats] Box-Behnken design
+        bbdesign(n, 'center', value, 'blocksize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/bbdesign.html'
+
+
+    "dwtest [stats]":
+        prefix: "dwtest"
+        body: '''dwtest(${1:r}, ${2:x}, 'Method', ${3:value}, 'Tail', ${4:value})'''
+        description: '''[stats] Durbin-Watson test with linear regression model object
+        dwtest(r, x, 'Method', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/linearmodel.dwtest.html'
+
+
+    "boxplot [stats]":
+        prefix: "boxplot"
+        body: '''boxplot(${1:x}, 'BoxStyle', ${2:value}, 'Colors', ${3:value}, 'MedianStyle', ${4:value}, 'Notch', ${5:value}, 'OutlierSize', ${6:value}, 'PlotStyle', ${7:value}, 'Symbol', ${8:value}, 'Widths', ${9:value}, 'ColorGroup', ${10:value}, 'FactorDirection', ${11:value}, 'FullFactors', ${12:value}, 'FactorGap', ${13:value}, 'FactorSeparator', ${14:value}, 'GroupOrder', ${15:value}, 'DataLim', ${16:value}, 'ExtremeMode', ${17:value}, 'Jitter', ${18:value}, 'Whisker', ${19:value}, 'Labels', ${20:value}, 'LabelOrientation', ${21:value}, 'LabelVerbosity', ${22:value}, 'Orientation', ${23:value}, 'Positions', ${24:value})'''
+        description: '''[stats] Box plot
+        boxplot(x, 'BoxStyle', value, 'Colors', value, 'MedianStyle', value, 'Notch', value, 'OutlierSize', value, 'PlotStyle', value, 'Symbol', value, 'Widths', value, 'ColorGroup', value, 'FactorDirection', value, 'FullFactors', value, 'FactorGap', value, 'FactorSeparator', value, 'GroupOrder', value, 'DataLim', value, 'ExtremeMode', value, 'Jitter', value, 'Whisker', value, 'Labels', value, 'LabelOrientation', value, 'LabelVerbosity', value, 'Orientation', value, 'Positions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/boxplot.html'
+
+
+    "signtest [stats]":
+        prefix: "signtest"
+        body: '''signtest(${1:x}, ${2:y}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+        description: '''[stats] Sign test
+        signtest(x, y, 'alpha', value, 'method', value, 'tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/signtest.html'
+
+
+    "piecewisedistribution.cdf [stats]":
+        prefix: "piecewisedistribution.cdf"
+        body: '''piecewisedistribution.cdf(${1:obj}, ${2:x}, ${3:optional_upper})'''
+        description: '''[stats] 
+        piecewisedistribution.cdf(obj, x, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/piecewisedistribution.cdf.html'
+
+
+    "svmtrain [stats]":
+        prefix: "svmtrain"
+        body: '''svmtrain(${1:Training}, ${2:Group}, 'autoscale', ${3:value}, 'boxconstraint', ${4:value}, 'kernelcachelimit', ${5:value}, 'kernel_function', ${6:value}, 'kktviolationlevel', ${7:value}, 'method', ${8:value}, 'mlp_params', ${9:value}, 'options', ${10:value}, 'polyorder', ${11:value}, 'rbf_sigma', ${12:value}, 'showplot', ${13:value}, 'tolkkt', ${14:value})'''
+        description: '''[stats] 
+        svmtrain(Training, Group, 'autoscale', value, 'boxconstraint', value, 'kernelcachelimit', value, 'kernel_function', value, 'kktviolationlevel', value, 'method', value, 'mlp_params', value, 'options', value, 'polyorder', value, 'rbf_sigma', value, 'showplot', value, 'tolkkt', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/svmtrain.html'
+
+
+    "zscore [stats]":
+        prefix: "zscore"
+        body: '''zscore(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''[stats] Standardized z-scores
+        zscore(X, flag, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/zscore.html'
+
+
+    "stepwisefit [stats]":
+        prefix: "stepwisefit"
+        body: '''stepwisefit(${1:X}, ${2:y}, 'inmodel', ${3:value}, 'penter', ${4:value}, 'premove', ${5:value}, 'display', ${6:value}, 'maxiter', ${7:value}, 'keep', ${8:value}, 'scale', ${9:value})'''
+        description: '''[stats] Stepwise regression
+        stepwisefit(X, y, 'inmodel', value, 'penter', value, 'premove', value, 'display', value, 'maxiter', value, 'keep', value, 'scale', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/stepwisefit.html'
+
+
+    "hmmviterbi [stats]":
+        prefix: "hmmviterbi"
+        body: '''hmmviterbi(${1:seq}, ${2:TRANS}, ${3:EMIS}, 'Symbols', ${4:value}, 'Statenames', ${5:value})'''
+        description: '''[stats] Hidden Markov model most probable state path
+        hmmviterbi(seq, TRANS, EMIS, 'Symbols', value, 'Statenames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/hmmviterbi.html'
+
+
+    "partialcorr [stats]":
+        prefix: "partialcorr"
+        body: '''partialcorr(${1:x}, ${2:optional_y}, ${3:optional_z}, 'Type', ${4:value}, 'Rows', ${5:value}, 'Tail', ${6:value})'''
+        description: '''[stats] Linear or rank partial correlation coefficients
+        partialcorr(x, optional_y, optional_z, 'Type', value, 'Rows', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/partialcorr.html'
+
+
+    "ppca [stats]":
+        prefix: "ppca"
+        body: '''ppca(${1:Y}, ${2:K}, 'W0', ${3:value}, 'v0', ${4:value}, 'options', ${5:value})'''
+        description: '''[stats] Probabilistic principal component analysis
+        ppca(Y, K, 'W0', value, 'v0', value, 'options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ppca.html'
+
+
+    "vartest [stats]":
+        prefix: "vartest"
+        body: '''vartest(${1:x}, ${2:v}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value})'''
+        description: '''[stats] Chi-square variance test
+        vartest(x, v, 'Alpha', value, 'Dim', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/vartest.html'
+
+
+    "ttest2 [stats]":
+        prefix: "ttest2"
+        body: '''ttest2(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value}, 'Vartype', ${6:value})'''
+        description: '''[stats] Two-sample t-test
+        ttest2(x, y, 'Alpha', value, 'Dim', value, 'Tail', value, 'Vartype', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ttest2.html'
+
+
+    "optimalleaforder [stats]":
+        prefix: "optimalleaforder"
+        body: '''optimalleaforder(${1:tree}, ${2:D}, 'Criteria', ${3:value}, 'Transformation', ${4:value})'''
+        description: '''[stats] Optimal leaf ordering for hierarchical clustering
+        optimalleaforder(tree, D, 'Criteria', value, 'Transformation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/optimalleaforder.html'
+
+
+    "betacdf [stats]":
+        prefix: "betacdf"
+        body: '''betacdf(${1:x}, ${2:a}, ${3:b}, ${4:optional_upper})'''
+        description: '''[stats] Beta cumulative distribution function
+        betacdf(x, a, b, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/betacdf.html'
+
+
+    "tblwrite [stats]":
+        prefix: "tblwrite"
+        body: '''tblwrite(${1:data}, ${2:varnames}, ${3:casenames}, ${4:filename}, ${5:optional_delimiter})'''
+        description: '''[stats] Write tabular data to file
+        tblwrite(data, varnames, casenames, filename, optional_delimiter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/tblwrite.html'
+
+
+    "copulapdf [stats]":
+        prefix: "copulapdf"
+        body: '''copulapdf(${1:family}, ${2:u}, ${3:alpha})'''
+        description: '''[stats] Copula probability density function
+        copulapdf(family, u, alpha)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/copulapdf.html'
+
+
+    "fitdist [stats]":
+        prefix: "fitdist"
+        body: '''fitdist(${1:x}, ${2:distname}, 'By', ${3:value}, 'Censoring', ${4:value}, 'Frequency', ${5:value}, 'Options', ${6:value}, 'NTrials', ${7:value}, 'Theta', ${8:value}, 'Kernel', ${9:value}, 'Support', ${10:value}, 'Width', ${11:value})'''
+        description: '''[stats] Fit probability distribution object to data
+        fitdist(x, distname, 'By', value, 'Censoring', value, 'Frequency', value, 'Options', value, 'NTrials', value, 'Theta', value, 'Kernel', value, 'Support', value, 'Width', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitdist.html'
+
+
+    "knnsearch [stats]":
+        prefix: "knnsearch"
+        body: '''knnsearch(${1:X}, ${2:Y}, 'K', ${3:value}, 'IncludeTies', ${4:value}, 'NSMethod', ${5:value}, 'Distance', ${6:value}, 'P', ${7:value}, 'Cov', ${8:value}, 'Scale', ${9:value}, 'BucketSize', ${10:value}, 'SortIndices', ${11:value})'''
+        description: '''[stats] Find k-nearest neighbors using input data
+        knnsearch(X, Y, 'K', value, 'IncludeTies', value, 'NSMethod', value, 'Distance', value, 'P', value, 'Cov', value, 'Scale', value, 'BucketSize', value, 'SortIndices', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/knnsearch.html'
+
+
+    "createns [stats]":
+        prefix: "createns"
+        body: '''createns(${1:X}, 'NSMethod', ${2:value}, 'Distance', ${3:value}, 'P', ${4:value}, 'Cov', ${5:value}, 'Scale', ${6:value}, 'BucketSize', ${7:value})'''
+        description: '''[stats] Create nearest neighbor searcher object
+        createns(X, 'NSMethod', value, 'Distance', value, 'P', value, 'Cov', value, 'Scale', value, 'BucketSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/createns.html'
+
+
+    "procrustes [stats]":
+        prefix: "procrustes"
+        body: '''procrustes(${1:X}, ${2:Y}, 'scaling', ${3:value}, 'reflection', ${4:value})'''
+        description: '''[stats] Procrustes analysis
+        procrustes(X, Y, 'scaling', value, 'reflection', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/procrustes.html'
+
+
+    "mvregresslike [stats]":
+        prefix: "mvregresslike"
+        body: '''mvregresslike(${1:X}, ${2:Y}, ${3:b}, ${4:Sigma}, ${5:alg}, ${6:type}, ${7:optional_format})'''
+        description: '''[stats] Negative log-likelihood for multivariate regression
+        mvregresslike(X, Y, b, Sigma, alg, type, optional_format)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mvregresslike.html'
+
+
+    "random [stats]":
+        prefix: "random"
+        body: '''random(${1:name}, ${2:A})'''
+        description: '''[stats] Simulate responses for nonlinear regression model
+        random(name, A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nonlinearmodel.random.html'
+
+
+    "leverage [stats]":
+        prefix: "leverage"
+        body: '''leverage(${1:data}, ${2:model})'''
+        description: '''[stats] Leverage
+        leverage(data, model)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/leverage.html'
+
+
+    "kurtosis [stats]":
+        prefix: "kurtosis"
+        body: '''kurtosis(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''[stats] Kurtosis
+        kurtosis(X, flag, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/kurtosis.html'
+
+
+    "vartest2 [stats]":
+        prefix: "vartest2"
+        body: '''vartest2(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value})'''
+        description: '''[stats] Two-sample F-test for equal variances
+        vartest2(x, y, 'Alpha', value, 'Dim', value, 'Tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/vartest2.html'
+
+
+    "xptread [stats]":
+        prefix: "xptread"
+        body: '''xptread(${1:optional_filename}, 'ReadObsNames', ${2:value})'''
+        description: '''[stats] Create table from data stored in SAS XPORT format file
+        xptread(optional_filename, 'ReadObsNames', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/xptread.html'
+
+
+    "fcdf [stats]":
+        prefix: "fcdf"
+        body: '''fcdf(${1:x}, ${2:v1}, ${3:v2}, ${4:optional_upper})'''
+        description: '''[stats] F cumulative distribution function
+        fcdf(x, v1, v2, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fcdf.html'
+
+
+    "glmval [stats]":
+        prefix: "glmval"
+        body: '''glmval(${1:b}, ${2:X}, ${3:link}, ${4:optional_stats}, 'confidence', ${5:value}, 'size', ${6:value}, 'offset', ${7:value}, 'constant', ${8:value}, 'simultaneous', ${9:value})'''
+        description: '''[stats] Generalized linear model values
+        glmval(b, X, link, optional_stats, 'confidence', value, 'size', value, 'offset', value, 'constant', value, 'simultaneous', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/glmval.html'
+
+
+    "ansaribradley [stats]":
+        prefix: "ansaribradley"
+        body: '''ansaribradley(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value}, 'Method', ${6:value})'''
+        description: '''[stats] Ansari-Bradley test
+        ansaribradley(x, y, 'Alpha', value, 'Dim', value, 'Tail', value, 'Method', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ansaribradley.html'
+
+
+    "mnrval [stats]":
+        prefix: "mnrval"
+        body: '''mnrval(${1:B}, ${2:X}, ${3:stats}, 'model', ${4:value}, 'interactions', ${5:value}, 'link', ${6:value}, 'type', ${7:value}, 'confidence', ${8:value})'''
+        description: '''[stats] Multinomial logistic regression values
+        mnrval(B, X, stats, 'model', value, 'interactions', value, 'link', value, 'type', value, 'confidence', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mnrval.html'
+
+
+    "mdscale [stats]":
+        prefix: "mdscale"
+        body: '''mdscale(${1:D}, ${2:p}, 'Criterion', ${3:value}, 'Weights', ${4:value}, 'Start', ${5:value}, 'Replicates', ${6:value}, 'Options', ${7:value})'''
+        description: '''[stats] Nonclassical multidimensional scaling
+        mdscale(D, p, 'Criterion', value, 'Weights', value, 'Start', value, 'Replicates', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mdscale.html'
+
+
+    "slicesample [stats]":
+        prefix: "slicesample"
+        body: '''slicesample(${1:initial}, ${2:nsamples}, 'pdf', ${3:value}, 'logpdf', ${4:value}, 'burnin', ${5:value}, 'thin', ${6:value}, 'width', ${7:value})'''
+        description: '''[stats] Slice sampler
+        slicesample(initial, nsamples, 'pdf', value, 'logpdf', value, 'burnin', value, 'thin', value, 'width', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/slicesample.html'
+
+
+    "nnmf [stats]":
+        prefix: "nnmf"
+        body: '''nnmf(${1:A}, ${2:k}, 'algorithm', ${3:value}, 'w0', ${4:value}, 'h0', ${5:value}, 'options', ${6:value}, 'replicates', ${7:value})'''
+        description: '''[stats] Nonnegative matrix factorization
+        nnmf(A, k, 'algorithm', value, 'w0', value, 'h0', value, 'options', value, 'replicates', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nnmf.html'
+
+
+    "kruskalwallis [stats]":
+        prefix: "kruskalwallis"
+        body: '''kruskalwallis(${1:x}, ${2:group}, ${3:optional_displayopt})'''
+        description: '''[stats] Kruskal-Wallis test
+        kruskalwallis(x, group, optional_displayopt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/kruskalwallis.html'
+
+
+    "mad [stats]":
+        prefix: "mad"
+        body: '''mad(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''[stats] Mean or median absolute deviation
+        mad(X, flag, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/mad.html'
+
+
+    "poisscdf [stats]":
+        prefix: "poisscdf"
+        body: '''poisscdf(${1:x}, ${2:lambda}, ${3:optional_upper})'''
+        description: '''[stats] Poisson cumulative distribution function
+        poisscdf(x, lambda, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/poisscdf.html'
+
+
+    "crossval [stats]":
+        prefix: "crossval"
+        body: '''crossval(${1:criterion}, ${2:X}, ${3:y}, 'Predfun', ${4:value}, 'holdout', ${5:value}, 'kfold', ${6:value}, 'leaveout', ${7:value}, 'mcreps', ${8:value}, 'partition', ${9:value}, 'stratify', ${10:value}, 'options', ${11:value})'''
+        description: '''[stats] Loss estimate using cross-validation
+        crossval(criterion, X, y, 'Predfun', value, 'holdout', value, 'kfold', value, 'leaveout', value, 'mcreps', value, 'partition', value, 'stratify', value, 'options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/crossval.html'
+
+
+    "randsample [stats]":
+        prefix: "randsample"
+        body: '''randsample(${1:n_or_population}, ${2:k}, ${3:optional_replacement}, ${4:optional_weight})'''
+        description: '''[stats] Random sample
+        randsample(n_or_population, k, optional_replacement, optional_weight)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/randsample.html'
+
+
+    "dcovary [stats]":
+        prefix: "dcovary"
+        body: '''dcovary(${1:nfactors}, ${2:fixed}, ${3:model}, 'bounds', ${4:value}, 'categorical', ${5:value}, 'display', ${6:value}, 'excludefun', ${7:value}, 'init', ${8:value}, 'levels', ${9:value}, 'maxiter', ${10:value}, 'options', ${11:value})'''
+        description: '''[stats] D-optimal design with fixed covariates
+        dcovary(nfactors, fixed, model, 'bounds', value, 'categorical', value, 'display', value, 'excludefun', value, 'init', value, 'levels', value, 'maxiter', value, 'options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/dcovary.html'
+
+
+    "tcdf [stats]":
+        prefix: "tcdf"
+        body: '''tcdf(${1:x}, ${2:nu}, ${3:optional_upper})'''
+        description: '''[stats] Student's t cumulative distribution
+function
+        tcdf(x, nu, optional_upper)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/tcdf.html'
+
+
+    "probplot [stats]":
+        prefix: "probplot"
+        body: '''probplot(${1:ax}, ${2:fun}, ${3:params}, ${4:optional_noref})'''
+        description: '''[stats] Probability plots
+        probplot(ax, fun, params, optional_noref)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/probplot.html'
+
+
+    "spectralcluster [stats]":
+        prefix: "spectralcluster"
+        body: '''spectralcluster(${1:X}, ${2:k}, 'Distance', ${3:value}, 'Cov', ${4:value}, 'P', ${5:value}, 'Scale', ${6:value}, 'LaplacianNormalization', ${7:value}, 'SimilarityGraph', ${8:value}, 'NumNeighbors', ${9:value}, 'KNNGraphType', ${10:value}, 'Radius', ${11:value}, 'KernelScale', ${12:value}, 'ClusterMethod', ${13:value})'''
+        description: '''[stats] Spectral clustering
+        spectralcluster(X, k, 'Distance', value, 'Cov', value, 'P', value, 'Scale', value, 'LaplacianNormalization', value, 'SimilarityGraph', value, 'NumNeighbors', value, 'KNNGraphType', value, 'Radius', value, 'KernelScale', value, 'ClusterMethod', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/spectralcluster.html'
+
+
+    "hmcSampler [stats]":
+        prefix: "hmcSampler"
+        body: '''hmcSampler(${1:logpdf}, ${2:startpoint}, 'StepSize', ${3:value}, 'NumSteps', ${4:value}, 'MassVector', ${5:value}, 'JitterMethod', ${6:value}, 'StepSizeTuningMethod', ${7:value}, 'MassVectorTuningMethod', ${8:value}, 'CheckGradient', ${9:value}, 'VariableNames', ${10:value}, 'UseNumericalGradient', ${11:value})'''
+        description: '''[stats] Hamiltonian Monte Carlo (HMC) sampler
+        hmcSampler(logpdf, startpoint, 'StepSize', value, 'NumSteps', value, 'MassVector', value, 'JitterMethod', value, 'StepSizeTuningMethod', value, 'MassVectorTuningMethod', value, 'CheckGradient', value, 'VariableNames', value, 'UseNumericalGradient', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/hmcsampler.html'
+
+
+    "gmdistribution.cdf [stats]":
+        prefix: "gmdistribution.cdf"
+        body: '''gmdistribution.cdf(${1:obj}, ${2:x})'''
+        description: '''[stats] 
+        gmdistribution.cdf(obj, x)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/gmdistribution.cdf.html'
+
+
+    "nanvar [stats]":
+        prefix: "nanvar"
+        body: '''nanvar(${1:X}, ${2:w}, ${3:optional_dim})'''
+        description: '''[stats] Variance ignoring NaNs
+        nanvar(X, w, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nanvar.html'
+
+
+    "runstest [stats]":
+        prefix: "runstest"
+        body: '''runstest(${1:x}, ${2:v}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+        description: '''[stats] Run test for randomness
+        runstest(x, v, 'alpha', value, 'method', value, 'tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/runstest.html'
+
+
+    "ranksum [stats]":
+        prefix: "ranksum"
+        body: '''ranksum(${1:x}, ${2:y}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+        description: '''[stats] Wilcoxon rank sum test
+        ranksum(x, y, 'alpha', value, 'method', value, 'tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ranksum.html'
+
+
+    "fracfact [stats]":
+        prefix: "fracfact"
+        body: '''fracfact(${1:gen}, 'FactorNames', ${2:value}, 'MaxInt', ${3:value})'''
+        description: '''[stats] Fractional factorial design
+        fracfact(gen, 'FactorNames', value, 'MaxInt', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fracfact.html'
+
+
+    "pdist2 [stats]":
+        prefix: "pdist2"
+        body: '''pdist2(${1:X}, ${2:Y}, ${3:Distance}, 'Smallest', ${4:value})'''
+        description: '''[stats] Pairwise distance between two sets of observations
+        pdist2(X, Y, Distance, 'Smallest', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/pdist2.html'
+
+
+    "x2fx [stats]":
+        prefix: "x2fx"
+        body: '''x2fx(${1:X}, ${2:model}, ${3:categ}, ${4:optional_catlevels})'''
+        description: '''[stats] Convert predictor matrix to design matrix
+        x2fx(X, model, categ, optional_catlevels)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/x2fx.html'
+
+
+    "invpred [stats]":
+        prefix: "invpred"
+        body: '''invpred(${1:X}, ${2:Y}, ${3:Y0}, 'alpha', ${4:value}, 'predopt', ${5:value})'''
+        description: '''[stats] Inverse prediction
+        invpred(X, Y, Y0, 'alpha', value, 'predopt', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/invpred.html'
+
+
+    "scatterhist [stats]":
+        prefix: "scatterhist"
+        body: '''scatterhist(${1:x}, ${2:y}, 'NBins', ${3:value}, 'Location', ${4:value}, 'Direction', ${5:value}, 'Group', ${6:value}, 'PlotGroup', ${7:value}, 'Style', ${8:value}, 'Kernel', ${9:value}, 'Bandwidth', ${10:value}, 'Legend', ${11:value}, 'Parent', ${12:value}, 'LineStyle', ${13:value}, 'LineWidth', ${14:value}, 'Color', ${15:value}, 'Marker', ${16:value}, 'MarkerSize', ${17:value})'''
+        description: '''[stats] Scatter plot with marginal histograms
+        scatterhist(x, y, 'NBins', value, 'Location', value, 'Direction', value, 'Group', value, 'PlotGroup', value, 'Style', value, 'Kernel', value, 'Bandwidth', value, 'Legend', value, 'Parent', value, 'LineStyle', value, 'LineWidth', value, 'Color', value, 'Marker', value, 'MarkerSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/scatterhist.html'
+
+
+    "corr [stats]":
+        prefix: "corr"
+        body: '''corr(${1:X}, ${2:Y}, 'type', ${3:value}, 'rows', ${4:value}, 'tail', ${5:value})'''
+        description: '''[stats] Linear or rank correlation
+        corr(X, Y, 'type', value, 'rows', value, 'tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/corr.html'
+
+
+    "grpstats [stats]":
+        prefix: "grpstats"
+        body: '''grpstats(${1:X}, ${2:group}, ${3:whichstats}, 'Alpha', ${4:value})'''
+        description: '''[stats] Compute descriptive statistics of repeated measures data
+by group
+        grpstats(X, group, whichstats, 'Alpha', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/repeatedmeasuresmodel.grpstats.html'
+
+
+    "glyphplot [stats]":
+        prefix: "glyphplot"
+        body: '''glyphplot(${1:X}, 'glyph', ${2:value}, 'features', ${3:value}, 'grid', ${4:value}, 'page', ${5:value}, 'centers', ${6:value}, 'radius', ${7:value}, 'obslabels', ${8:value}, 'varlabels', ${9:value}, 'standardize', ${10:value}, 'Color', ${11:value}, 'LineStyle', ${12:value}, 'LineWidth', ${13:value}, 'Marker', ${14:value}, 'MarkerSize', ${15:value})'''
+        description: '''[stats] Glyph plot
+        glyphplot(X, 'glyph', value, 'features', value, 'grid', value, 'page', value, 'centers', value, 'radius', value, 'obslabels', value, 'varlabels', value, 'standardize', value, 'Color', value, 'LineStyle', value, 'LineWidth', value, 'Marker', value, 'MarkerSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/glyphplot.html'
+
+
+    "ksdensity [stats]":
+        prefix: "ksdensity"
+        body: '''ksdensity(${1:optional_ax}, ${2:x}, ${3:pts}, 'Bandwidth', ${4:value}, 'BoundaryCorrection', ${5:value}, 'Censoring', ${6:value}, 'Function', ${7:value}, 'Kernel', ${8:value}, 'NumPoints', ${9:value}, 'Support', ${10:value}, 'PlotFcn', ${11:value}, 'Weights', ${12:value})'''
+        description: '''[stats] Kernel smoothing function estimate for univariate and
+bivariate data
+        ksdensity(optional_ax, x, pts, 'Bandwidth', value, 'BoundaryCorrection', value, 'Censoring', value, 'Function', value, 'Kernel', value, 'NumPoints', value, 'Support', value, 'PlotFcn', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ksdensity.html'
+
+
+    "nancov [stats]":
+        prefix: "nancov"
+        body: '''nancov(${1:X}, ${2:optional_X2}, ${3:domle}, ${4:optional_dopairwise})'''
+        description: '''[stats] Covariance ignoring NaNs
+        nancov(X, optional_X2, domle, optional_dopairwise)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/nancov.html'
+

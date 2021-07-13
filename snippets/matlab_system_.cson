@@ -1,0 +1,47 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "matlab.system.display.Action [matlab]":
+        prefix: "matlab.system.display.Action"
+        body: '''matlab.system.display.Action(${1:ActionCalledFcn}, 'Label', ${2:value}, 'Description', ${3:value}, 'Placement', ${4:value}, 'Alignment', ${5:value})'''
+        description: '''[matlab] 
+        matlab.system.display.Action(ActionCalledFcn, 'Label', value, 'Description', value, 'Placement', value, 'Alignment', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.system.display.Action.html'
+
+
+    "matlab.system.display.Header [matlab]":
+        prefix: "matlab.system.display.Header"
+        body: '''matlab.system.display.Header(${1:optional_system}, 'Title', ${2:value}, 'Text', ${3:value}, 'ShowSourceLink', ${4:value})'''
+        description: '''[matlab] 
+        matlab.system.display.Header(optional_system, 'Title', value, 'Text', value, 'ShowSourceLink', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.system.display.Header.html'
+
+
+    "matlab.system.display.Section [matlab]":
+        prefix: "matlab.system.display.Section"
+        body: '''matlab.system.display.Section(${1:optional_system}, 'Title', ${2:value}, 'TitleSource', ${3:value}, 'Description', ${4:value}, 'PropertyList', ${5:value}, 'Actions', ${6:value})'''
+        description: '''[matlab] 
+        matlab.system.display.Section(optional_system, 'Title', value, 'TitleSource', value, 'Description', value, 'PropertyList', value, 'Actions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.system.display.Section.html'
+
+
+    "matlab.system.display.Icon [matlab]":
+        prefix: "matlab.system.display.Icon"
+        body: '''matlab.system.display.Icon(${1:ImageFile})'''
+        description: '''[matlab] 
+        matlab.system.display.Icon(ImageFile)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.system.display.Icon.html'
+
+
+    "matlab.system.display.SectionGroup [matlab]":
+        prefix: "matlab.system.display.SectionGroup"
+        body: '''matlab.system.display.SectionGroup(${1:optional_system}, 'Title', ${2:value}, 'TitleSource', ${3:value}, 'Description', ${4:value}, 'PropertyList', ${5:value}, 'Sections', ${6:value}, 'Actions', ${7:value})'''
+        description: '''[matlab] 
+        matlab.system.display.SectionGroup(optional_system, 'Title', value, 'TitleSource', value, 'Description', value, 'PropertyList', value, 'Sections', value, 'Actions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.system.display.SectionGroup.html'
+

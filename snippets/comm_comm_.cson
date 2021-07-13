@@ -1,0 +1,709 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "comm.HelicalDeinterleaver [comm]":
+        prefix: "comm.HelicalDeinterleaver"
+        body: '''comm.HelicalDeinterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.HelicalDeinterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.HelicalDeinterleaver.html'
+
+
+    "comm.BinarySymmetricChannel [comm]":
+        prefix: "comm.BinarySymmetricChannel"
+        body: '''comm.BinarySymmetricChannel(${1:varargin})'''
+        description: '''[comm] 
+        comm.BinarySymmetricChannel(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BinarySymmetricChannel.html'
+
+
+    "algintrlv [comm]":
+        prefix: "algintrlv"
+        body: '''algintrlv(${1:data}, ${2:num}, ${3:type}, ${4:arg})'''
+        description: '''[comm] Reorder symbols using algebraically
+derived permutation table
+        algintrlv(data, num, type, arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/ref/algintrlv.html'
+
+
+    "comm.FMBroadcastDemodulator [comm]":
+        prefix: "comm.FMBroadcastDemodulator"
+        body: '''comm.FMBroadcastDemodulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.FMBroadcastDemodulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.FMBroadcastDemodulator.html'
+
+
+    "comm.HDLRSEncoder [comm]":
+        prefix: "comm.HDLRSEncoder"
+        body: '''comm.HDLRSEncoder(${1:CodewordLength}, ${2:MessageLength}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.HDLRSEncoder(CodewordLength, MessageLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.HDLRSEncoder.html'
+
+
+    "comm.RSEncoder [comm]":
+        prefix: "comm.RSEncoder"
+        body: '''comm.RSEncoder(${1:CodewordLength}, ${2:MessageLength}, ${3:GeneratorPolynomial}, ${4:ShortMessageLength}, ${5:varargin})'''
+        description: '''[comm] 
+        comm.RSEncoder(CodewordLength, MessageLength, GeneratorPolynomial, ShortMessageLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RSEncoder.html'
+
+
+    "comm.ConstellationDiagram [comm]":
+        prefix: "comm.ConstellationDiagram"
+        body: '''comm.ConstellationDiagram(${1:NumInputPorts}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.ConstellationDiagram(NumInputPorts, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.ConstellationDiagram.html'
+
+
+    "comm.BarkerCode [comm]":
+        prefix: "comm.BarkerCode"
+        body: '''comm.BarkerCode(${1:varargin})'''
+        description: '''[comm] 
+        comm.BarkerCode(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BarkerCode.html'
+
+
+    "comm.HDLCRCDetector [comm]":
+        prefix: "comm.HDLCRCDetector"
+        body: '''comm.HDLCRCDetector(${1:Polynomial}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.HDLCRCDetector(Polynomial, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.HDLCRCDetector.html'
+
+
+    "comm.OFDMDemodulator [comm]":
+        prefix: "comm.OFDMDemodulator"
+        body: '''comm.OFDMDemodulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.OFDMDemodulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.OFDMDemodulator.html'
+
+
+    "gsmUplinkConfig [comm]":
+        prefix: "gsmUplinkConfig"
+        body: '''gsmUplinkConfig(${1:SamplesPerSymbol}, ${2:arg})'''
+        description: '''[comm] 
+        gsmUplinkConfig(SamplesPerSymbol, arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/gsmUplinkConfig.html'
+
+
+    "comm.IQImbalanceCompensator [comm]":
+        prefix: "comm.IQImbalanceCompensator"
+        body: '''comm.IQImbalanceCompensator(${1:varargin})'''
+        description: '''[comm] 
+        comm.IQImbalanceCompensator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.IQImbalanceCompensator.html'
+
+
+    "comm.MER [comm]":
+        prefix: "comm.MER"
+        body: '''comm.MER(${1:varargin})'''
+        description: '''[comm] 
+        comm.MER(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MER.html'
+
+
+    "comm.DifferentialEncoder [comm]":
+        prefix: "comm.DifferentialEncoder"
+        body: '''comm.DifferentialEncoder(${1:InitialCondition}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.DifferentialEncoder(InitialCondition, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DifferentialEncoder.html'
+
+
+    "comm.MIMOChannel [comm]":
+        prefix: "comm.MIMOChannel"
+        body: '''comm.MIMOChannel(${1:varargin})'''
+        description: '''[comm] 
+        comm.MIMOChannel(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MIMOChannel.html'
+
+
+    "comm.gpu.PSKDemodulator [comm]":
+        prefix: "comm.gpu.PSKDemodulator"
+        body: '''comm.gpu.PSKDemodulator(${1:ModulationOrder}, ${2:PhaseOffset}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.gpu.PSKDemodulator(ModulationOrder, PhaseOffset, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.PSKDemodulator.html'
+
+
+    "comm.HDLRSDecoder [comm]":
+        prefix: "comm.HDLRSDecoder"
+        body: '''comm.HDLRSDecoder(${1:CodewordLength}, ${2:MessageLength}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.HDLRSDecoder(CodewordLength, MessageLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.HDLRSDecoder.html'
+
+
+    "comm.DPD [comm]":
+        prefix: "comm.DPD"
+        body: '''comm.DPD(${1:varargin})'''
+        description: '''[comm] 
+        comm.DPD(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DPD.html'
+
+
+    "comm.BasebandFileReader [comm]":
+        prefix: "comm.BasebandFileReader"
+        body: '''comm.BasebandFileReader(${1:Filename}, ${2:SamplesPerFrame}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.BasebandFileReader(Filename, SamplesPerFrame, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BasebandFileReader.html'
+
+
+    "comm.gpu.BlockDeinterleaver [comm]":
+        prefix: "comm.gpu.BlockDeinterleaver"
+        body: '''comm.gpu.BlockDeinterleaver(${1:PermutationVector}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.gpu.BlockDeinterleaver(PermutationVector, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.BlockDeinterleaver.html'
+
+
+    "comm.DifferentialDecoder [comm]":
+        prefix: "comm.DifferentialDecoder"
+        body: '''comm.DifferentialDecoder(${1:InitialCondition}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.DifferentialDecoder(InitialCondition, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DifferentialDecoder.html'
+
+
+    "comm.CPMModulator [comm]":
+        prefix: "comm.CPMModulator"
+        body: '''comm.CPMModulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.CPMModulator(ModulationOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.CPMModulator.html'
+
+
+    "comm.gpu.LDPCDecoder [comm]":
+        prefix: "comm.gpu.LDPCDecoder"
+        body: '''comm.gpu.LDPCDecoder(${1:ParityCheckMatrix}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.gpu.LDPCDecoder(ParityCheckMatrix, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.LDPCDecoder.html'
+
+
+    "comm.RayleighChannel [comm]":
+        prefix: "comm.RayleighChannel"
+        body: '''comm.RayleighChannel(${1:varargin})'''
+        description: '''[comm] 
+        comm.RayleighChannel(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RayleighChannel.html'
+
+
+    "comm.gpu.TurboDecoder [comm]":
+        prefix: "comm.gpu.TurboDecoder"
+        body: '''comm.gpu.TurboDecoder(${1:TrellisStructure}, ${2:InterleaverIndices}, ${3:NumIterations}, ${4:varargin})'''
+        description: '''[comm] 
+        comm.gpu.TurboDecoder(TrellisStructure, InterleaverIndices, NumIterations, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.TurboDecoder.html'
+
+
+    "comm.CarrierSynchronizer [comm]":
+        prefix: "comm.CarrierSynchronizer"
+        body: '''comm.CarrierSynchronizer(${1:varargin})'''
+        description: '''[comm] 
+        comm.CarrierSynchronizer(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.CarrierSynchronizer.html'
+
+
+    "comm.PreambleDetector [comm]":
+        prefix: "comm.PreambleDetector"
+        body: '''comm.PreambleDetector(${1:Preamble}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.PreambleDetector(Preamble, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.PreambleDetector.html'
+
+
+    "comm.WalshCode [comm]":
+        prefix: "comm.WalshCode"
+        body: '''comm.WalshCode(${1:varargin})'''
+        description: '''[comm] 
+        comm.WalshCode(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.WalshCode.html'
+
+
+    "comm.RBDSWaveformGenerator [comm]":
+        prefix: "comm.RBDSWaveformGenerator"
+        body: '''comm.RBDSWaveformGenerator(${1:varargin})'''
+        description: '''[comm] 
+        comm.RBDSWaveformGenerator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RBDSWaveformGenerator.html'
+
+
+    "comm.CCDF [comm]":
+        prefix: "comm.CCDF"
+        body: '''comm.CCDF(${1:varargin})'''
+        description: '''[comm] 
+        comm.CCDF(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.CCDF.html'
+
+
+    "comm.GeneralQAMTCMModulator [comm]":
+        prefix: "comm.GeneralQAMTCMModulator"
+        body: '''comm.GeneralQAMTCMModulator(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.GeneralQAMTCMModulator(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.GeneralQAMTCMModulator.html'
+
+
+    "comm.gpu.BlockInterleaver [comm]":
+        prefix: "comm.gpu.BlockInterleaver"
+        body: '''comm.gpu.BlockInterleaver(${1:PermutationVector}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.gpu.BlockInterleaver(PermutationVector, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.BlockInterleaver.html'
+
+
+    "comm.OVSFCode [comm]":
+        prefix: "comm.OVSFCode"
+        body: '''comm.OVSFCode(${1:varargin})'''
+        description: '''[comm] 
+        comm.OVSFCode(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.OVSFCode.html'
+
+
+    "comm.FMBroadcastModulator [comm]":
+        prefix: "comm.FMBroadcastModulator"
+        body: '''comm.FMBroadcastModulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.FMBroadcastModulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.FMBroadcastModulator.html'
+
+
+    "comm.gpu.PSKModulator [comm]":
+        prefix: "comm.gpu.PSKModulator"
+        body: '''comm.gpu.PSKModulator(${1:ModulationOrder}, ${2:PhaseOffset}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.gpu.PSKModulator(ModulationOrder, PhaseOffset, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.PSKModulator.html'
+
+
+    "comm.LDPCDecoder [comm]":
+        prefix: "comm.LDPCDecoder"
+        body: '''comm.LDPCDecoder(${1:ParityCheckMatrix}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.LDPCDecoder(ParityCheckMatrix, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.LDPCDecoder.html'
+
+
+    "comm.CPMDemodulator [comm]":
+        prefix: "comm.CPMDemodulator"
+        body: '''comm.CPMDemodulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.CPMDemodulator(ModulationOrder, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.CPMDemodulator.html'
+
+
+    "comm.AGC [comm]":
+        prefix: "comm.AGC"
+        body: '''comm.AGC(${1:varargin})'''
+        description: '''[comm] 
+        comm.AGC(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.AGC.html'
+
+
+    "comm.PSKCoarseFrequencyEstimator [comm]":
+        prefix: "comm.PSKCoarseFrequencyEstimator"
+        body: '''comm.PSKCoarseFrequencyEstimator(${1:varargin})'''
+        description: '''[comm] (To be removed)
+   Estimate frequency offset for PSK signal
+        comm.PSKCoarseFrequencyEstimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/ref/comm.pskcoarsefrequencyestimator-system-object.html'
+
+
+    "comm.QAMCoarseFrequencyEstimator [comm]":
+        prefix: "comm.QAMCoarseFrequencyEstimator"
+        body: '''comm.QAMCoarseFrequencyEstimator(${1:varargin})'''
+        description: '''[comm] (To be removed)
+   Estimate frequency offset for QAM signal
+        comm.QAMCoarseFrequencyEstimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/ref/comm.qamcoarsefrequencyestimator-system-object.html'
+
+
+    "algdeintrlv [comm]":
+        prefix: "algdeintrlv"
+        body: '''algdeintrlv(${1:data}, ${2:num}, ${3:type}, ${4:arg})'''
+        description: '''[comm] Restore ordering of symbols
+using algebraically derived permutation table
+        algdeintrlv(data, num, type, arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/ref/algdeintrlv.html'
+
+
+    "comm.SymbolSynchronizer [comm]":
+        prefix: "comm.SymbolSynchronizer"
+        body: '''comm.SymbolSynchronizer(${1:varargin})'''
+        description: '''[comm] 
+        comm.SymbolSynchronizer(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.SymbolSynchronizer.html'
+
+
+    "comm.TurboEncoder [comm]":
+        prefix: "comm.TurboEncoder"
+        body: '''comm.TurboEncoder(${1:TrellisStructure}, ${2:InterleaverIndices}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.TurboEncoder(TrellisStructure, InterleaverIndices, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.TurboEncoder.html'
+
+
+    "comm.RaisedCosineReceiveFilter [comm]":
+        prefix: "comm.RaisedCosineReceiveFilter"
+        body: '''comm.RaisedCosineReceiveFilter(${1:varargin})'''
+        description: '''[comm] 
+        comm.RaisedCosineReceiveFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RaisedCosineReceiveFilter.html'
+
+
+    "comm.LinearEqualizer [comm]":
+        prefix: "comm.LinearEqualizer"
+        body: '''comm.LinearEqualizer(${1:varargin})'''
+        description: '''[comm] 
+        comm.LinearEqualizer(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.LinearEqualizer.html'
+
+
+    "comm.SphereDecoder [comm]":
+        prefix: "comm.SphereDecoder"
+        body: '''comm.SphereDecoder(${1:Constellation}, ${2:BitTable}, ${3:varargin})'''
+        description: '''[comm] 
+        comm.SphereDecoder(Constellation, BitTable, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.SphereDecoder.html'
+
+
+    "comm.FMModulator [comm]":
+        prefix: "comm.FMModulator"
+        body: '''comm.FMModulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.FMModulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.FMModulator.html'
+
+
+    "comm.FMDemodulator [comm]":
+        prefix: "comm.FMDemodulator"
+        body: '''comm.FMDemodulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.FMDemodulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.FMDemodulator.html'
+
+
+    "comm.gpu.ConvolutionalInterleaver [comm]":
+        prefix: "comm.gpu.ConvolutionalInterleaver"
+        body: '''comm.gpu.ConvolutionalInterleaver(${1:NumRegisters}, ${2:RegisterLengthStep}, ${3:InitialConditions}, ${4:varargin})'''
+        description: '''[comm] 
+        comm.gpu.ConvolutionalInterleaver(NumRegisters, RegisterLengthStep, InitialConditions, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.ConvolutionalInterleaver.html'
+
+
+    "comm.PSKTCMModulator [comm]":
+        prefix: "comm.PSKTCMModulator"
+        body: '''comm.PSKTCMModulator(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.PSKTCMModulator(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.PSKTCMModulator.html'
+
+
+    "comm.RicianChannel [comm]":
+        prefix: "comm.RicianChannel"
+        body: '''comm.RicianChannel(${1:varargin})'''
+        description: '''[comm] 
+        comm.RicianChannel(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RicianChannel.html'
+
+
+    "comm.RSDecoder [comm]":
+        prefix: "comm.RSDecoder"
+        body: '''comm.RSDecoder(${1:CodewordLength}, ${2:MessageLength}, ${3:GeneratorPolynomial}, ${4:ShortMessageLength}, ${5:varargin})'''
+        description: '''[comm] 
+        comm.RSDecoder(CodewordLength, MessageLength, GeneratorPolynomial, ShortMessageLength, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RSDecoder.html'
+
+
+    "comm.ThermalNoise [comm]":
+        prefix: "comm.ThermalNoise"
+        body: '''comm.ThermalNoise(${1:varargin})'''
+        description: '''[comm] 
+        comm.ThermalNoise(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.ThermalNoise.html'
+
+
+    "comm.ACPR [comm]":
+        prefix: "comm.ACPR"
+        body: '''comm.ACPR(${1:varargin})'''
+        description: '''[comm] 
+        comm.ACPR(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.ACPR.html'
+
+
+    "comm.AWGNChannel [comm]":
+        prefix: "comm.AWGNChannel"
+        body: '''comm.AWGNChannel(${1:varargin})'''
+        description: '''[comm] 
+        comm.AWGNChannel(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.AWGNChannel.html'
+
+
+    "comm.HDLCRCGenerator [comm]":
+        prefix: "comm.HDLCRCGenerator"
+        body: '''comm.HDLCRCGenerator(${1:Polynomial}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.HDLCRCGenerator(Polynomial, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.HDLCRCGenerator.html'
+
+
+    "comm.GoldSequence [comm]":
+        prefix: "comm.GoldSequence"
+        body: '''comm.GoldSequence(${1:varargin})'''
+        description: '''[comm] 
+        comm.GoldSequence(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.GoldSequence.html'
+
+
+    "comm.HelicalInterleaver [comm]":
+        prefix: "comm.HelicalInterleaver"
+        body: '''comm.HelicalInterleaver(${1:varargin})'''
+        description: '''[comm] 
+        comm.HelicalInterleaver(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.HelicalInterleaver.html'
+
+
+    "comm.gpu.ViterbiDecoder [comm]":
+        prefix: "comm.gpu.ViterbiDecoder"
+        body: '''comm.gpu.ViterbiDecoder(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.gpu.ViterbiDecoder(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.ViterbiDecoder.html'
+
+
+    "comm.gpu.ConvolutionalDeinterleaver [comm]":
+        prefix: "comm.gpu.ConvolutionalDeinterleaver"
+        body: '''comm.gpu.ConvolutionalDeinterleaver(${1:NumRegisters}, ${2:RegisterLengthStep}, ${3:InitialConditions}, ${4:varargin})'''
+        description: '''[comm] 
+        comm.gpu.ConvolutionalDeinterleaver(NumRegisters, RegisterLengthStep, InitialConditions, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.ConvolutionalDeinterleaver.html'
+
+
+    "comm.TurboDecoder [comm]":
+        prefix: "comm.TurboDecoder"
+        body: '''comm.TurboDecoder(${1:TrellisStructure}, ${2:InterleaverIndices}, ${3:NumIterations}, ${4:varargin})'''
+        description: '''[comm] 
+        comm.TurboDecoder(TrellisStructure, InterleaverIndices, NumIterations, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.TurboDecoder.html'
+
+
+    "comm.RaisedCosineTransmitFilter [comm]":
+        prefix: "comm.RaisedCosineTransmitFilter"
+        body: '''comm.RaisedCosineTransmitFilter(${1:varargin})'''
+        description: '''[comm] 
+        comm.RaisedCosineTransmitFilter(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RaisedCosineTransmitFilter.html'
+
+
+    "comm.DecisionFeedbackEqualizer [comm]":
+        prefix: "comm.DecisionFeedbackEqualizer"
+        body: '''comm.DecisionFeedbackEqualizer(${1:varargin})'''
+        description: '''[comm] 
+        comm.DecisionFeedbackEqualizer(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DecisionFeedbackEqualizer.html'
+
+
+    "comm.LTEMIMOChannel [comm]":
+        prefix: "comm.LTEMIMOChannel"
+        body: '''comm.LTEMIMOChannel(${1:varargin})'''
+        description: '''[comm]  (To be removed) Filter input
+            signal through LTE MIMO multipath fading channel
+        comm.LTEMIMOChannel(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/ref/comm.ltemimochannel-system-object.html'
+
+
+    "comm.OFDMModulator [comm]":
+        prefix: "comm.OFDMModulator"
+        body: '''comm.OFDMModulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.OFDMModulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.OFDMModulator.html'
+
+
+    "comm.HadamardCode [comm]":
+        prefix: "comm.HadamardCode"
+        body: '''comm.HadamardCode(${1:varargin})'''
+        description: '''[comm] 
+        comm.HadamardCode(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.HadamardCode.html'
+
+
+    "gsmDownlinkConfig [comm]":
+        prefix: "gsmDownlinkConfig"
+        body: '''gsmDownlinkConfig(${1:SamplesPerSymbol}, ${2:arg})'''
+        description: '''[comm] 
+        gsmDownlinkConfig(SamplesPerSymbol, arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/gsmDownlinkConfig.html'
+
+
+    "comm.DPDCoefficientEstimator [comm]":
+        prefix: "comm.DPDCoefficientEstimator"
+        body: '''comm.DPDCoefficientEstimator(${1:varargin})'''
+        description: '''[comm] 
+        comm.DPDCoefficientEstimator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DPDCoefficientEstimator.html'
+
+
+    "comm.BasebandFileWriter [comm]":
+        prefix: "comm.BasebandFileWriter"
+        body: '''comm.BasebandFileWriter(${1:Filename}, ${2:SampleRate}, ${3:CenterFrequency}, ${4:Metadata}, ${5:varargin})'''
+        description: '''[comm] 
+        comm.BasebandFileWriter(Filename, SampleRate, CenterFrequency, Metadata, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.BasebandFileWriter.html'
+
+
+    "comm.DiscreteTimeVCO [comm]":
+        prefix: "comm.DiscreteTimeVCO"
+        body: '''comm.DiscreteTimeVCO(${1:varargin})'''
+        description: '''[comm] 
+        comm.DiscreteTimeVCO(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.DiscreteTimeVCO.html'
+
+
+    "comm.MemorylessNonlinearity [comm]":
+        prefix: "comm.MemorylessNonlinearity"
+        body: '''comm.MemorylessNonlinearity(${1:varargin})'''
+        description: '''[comm] 
+        comm.MemorylessNonlinearity(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.MemorylessNonlinearity.html'
+
+
+    "comm.gpu.AWGNChannel [comm]":
+        prefix: "comm.gpu.AWGNChannel"
+        body: '''comm.gpu.AWGNChannel(${1:varargin})'''
+        description: '''[comm] 
+        comm.gpu.AWGNChannel(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.AWGNChannel.html'
+
+
+    "comm.OQPSKDemodulator [comm]":
+        prefix: "comm.OQPSKDemodulator"
+        body: '''comm.OQPSKDemodulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.OQPSKDemodulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.OQPSKDemodulator.html'
+
+
+    "comm.CoarseFrequencyCompensator [comm]":
+        prefix: "comm.CoarseFrequencyCompensator"
+        body: '''comm.CoarseFrequencyCompensator(${1:varargin})'''
+        description: '''[comm] 
+        comm.CoarseFrequencyCompensator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.CoarseFrequencyCompensator.html'
+
+
+    "comm.OQPSKModulator [comm]":
+        prefix: "comm.OQPSKModulator"
+        body: '''comm.OQPSKModulator(${1:varargin})'''
+        description: '''[comm] 
+        comm.OQPSKModulator(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.OQPSKModulator.html'
+
+
+    "comm.RectangularQAMTCMModulator [comm]":
+        prefix: "comm.RectangularQAMTCMModulator"
+        body: '''comm.RectangularQAMTCMModulator(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.RectangularQAMTCMModulator(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.RectangularQAMTCMModulator.html'
+
+
+    "comm.gpu.ConvolutionalEncoder [comm]":
+        prefix: "comm.gpu.ConvolutionalEncoder"
+        body: '''comm.gpu.ConvolutionalEncoder(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''[comm] 
+        comm.gpu.ConvolutionalEncoder(TrellisStructure, varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.gpu.ConvolutionalEncoder.html'
+
+
+    "comm.EVM [comm]":
+        prefix: "comm.EVM"
+        body: '''comm.EVM(${1:varargin})'''
+        description: '''[comm] 
+        comm.EVM(varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/comm/comm.EVM.html'
+

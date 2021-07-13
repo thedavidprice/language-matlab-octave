@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "evalclusters [stats]":
+        prefix: "evalclusters"
+        body: '''evalclusters(${1:x}, ${2:clust}, ${3:criterion}, 'KList', ${4:value}, 'Distance', ${5:value}, 'ClusterPriors', ${6:value})'''
+        description: '''[stats] Evaluate clustering solutions
+        evalclusters(x, clust, criterion, 'KList', value, 'Distance', value, 'ClusterPriors', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/evalclusters.html'
+

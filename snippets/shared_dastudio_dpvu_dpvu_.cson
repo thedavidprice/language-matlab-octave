@@ -1,0 +1,12 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "depview [shared]":
+        prefix: "depview"
+        body: '''depview(${1:optional_models}, 'FileDependenciesIncludingLibraries', ${2:value}, 'FileDependenciesExcludingLibraries', ${3:value}, 'ModelReferenceInstance', ${4:value})'''
+        description: '''[shared] Display graph of model referencing dependencies with or without library
+            dependencies
+        depview(optional_models, 'FileDependenciesIncludingLibraries', value, 'FileDependenciesExcludingLibraries', value, 'ModelReferenceInstance', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/../simulink/slref/depview.html'
+

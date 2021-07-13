@@ -1,0 +1,38 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "uiprogressdlg [matlab]":
+        prefix: "uiprogressdlg"
+        body: '''uiprogressdlg(${1:f}, 'Message', ${2:value}, 'Title', ${3:value}, 'Value', ${4:value}, 'Icon', ${5:value}, 'Indeterminate', ${6:value}, 'ShowPercentage', ${7:value}, 'Cancelable', ${8:value}, 'CancelText', ${9:value})'''
+        description: '''[matlab] Create progress dialog box
+        uiprogressdlg(f, 'Message', value, 'Title', value, 'Value', value, 'Icon', value, 'Indeterminate', value, 'ShowPercentage', value, 'Cancelable', value, 'CancelText', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiprogressdlg.html'
+
+
+    "uifigure [matlab]":
+        prefix: "uifigure"
+        body: '''uifigure(${1:opts})'''
+        description: '''[matlab] Create figure for designing apps in App Designer
+        uifigure(opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uifigure.html'
+
+
+    "uialert [matlab]":
+        prefix: "uialert"
+        body: '''uialert(${1:figure}, ${2:message}, ${3:title}, 'CloseFcn', ${4:value}, 'Icon', ${5:value}, 'Modal', ${6:value})'''
+        description: '''[matlab] Display alert dialog box
+        uialert(figure, message, title, 'CloseFcn', value, 'Icon', value, 'Modal', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uialert.html'
+
+
+    "uiconfirm [matlab]":
+        prefix: "uiconfirm"
+        body: '''uiconfirm(${1:f}, ${2:message}, ${3:title}, 'Icon', ${4:value}, 'CloseFcn', ${5:value}, 'Options', ${6:value}, 'DefaultOption', ${7:value}, 'CancelOption', ${8:value})'''
+        description: '''[matlab] Create confirmation dialog box
+        uiconfirm(f, message, title, 'Icon', value, 'CloseFcn', value, 'Options', value, 'DefaultOption', value, 'CancelOption', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiconfirm.html'
+

@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "edit [matlab]":
+        prefix: "edit"
+        body: '''edit(${1:optional_file})'''
+        description: '''[matlab] Edit or create file
+        edit(optional_file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/edit.html'
+

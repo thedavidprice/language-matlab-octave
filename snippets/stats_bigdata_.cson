@@ -1,0 +1,258 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "fitcnb [stats]":
+        prefix: "fitcnb"
+        body: '''fitcnb(${1:Tbl}, ${2:Y}, 'DistributionNames', ${3:value}, 'CategoricalPredictors', ${4:value}, 'PredictorNames', ${5:value}, 'ResponseName', ${6:value}, 'ScoreTransform', ${7:value}, 'Weights', ${8:value}, 'Prior', ${9:value}, 'Cost', ${10:value})'''
+        description: '''[stats] Train multiclass naive Bayes model
+        fitcnb(Tbl, Y, 'DistributionNames', value, 'CategoricalPredictors', value, 'PredictorNames', value, 'ResponseName', value, 'ScoreTransform', value, 'Weights', value, 'Prior', value, 'Cost', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitcnb.html'
+
+
+    "zscore [stats]":
+        prefix: "zscore"
+        body: '''zscore(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''[stats] Standardized z-scores
+        zscore(X, flag, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/zscore.html'
+
+
+    "skewness [stats]":
+        prefix: "skewness"
+        body: '''skewness(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''[stats] Skewness
+        skewness(X, flag, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/skewness.html'
+
+
+    "fitcecoc [stats]":
+        prefix: "fitcecoc"
+        body: '''fitcecoc(${1:X}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'Coding', ${5:value}, 'Learners', ${6:value}, 'Prior', ${7:value}, 'Verbose', ${8:value}, 'NumConcurrent', ${9:value}, 'Weights', ${10:value})'''
+        description: '''[stats] Fit multiclass models for support vector machines or other
+classifiers
+        fitcecoc(X, Y, 'ClassNames', value, 'Cost', value, 'Coding', value, 'Learners', value, 'Prior', value, 'Verbose', value, 'NumConcurrent', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitcecoc.html'
+
+
+    "fitlm [stats]":
+        prefix: "fitlm"
+        body: '''fitlm(${1:tbl}, ${2:optional_modelspec}, 'CategoricalVars', ${3:value}, 'Exclude', ${4:value}, 'Intercept', ${5:value}, 'PredictorVars', ${6:value}, 'ResponseVar', ${7:value}, 'VarNames', ${8:value}, 'Weights', ${9:value})'''
+        description: '''[stats] Fit linear regression model
+        fitlm(tbl, optional_modelspec, 'CategoricalVars', value, 'Exclude', value, 'Intercept', value, 'PredictorVars', value, 'ResponseVar', value, 'VarNames', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitlm.html'
+
+
+    "kmeans [stats]":
+        prefix: "kmeans"
+        body: '''kmeans(${1:X}, ${2:k}, 'Display', ${3:value}, 'MaxIter', ${4:value}, 'Options', ${5:value}, 'Replicates', ${6:value}, 'Start', ${7:value})'''
+        description: '''[stats] k-means clustering
+        kmeans(X, k, 'Display', value, 'MaxIter', value, 'Options', value, 'Replicates', value, 'Start', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/kmeans.html'
+
+
+    "fitglm [stats]":
+        prefix: "fitglm"
+        body: '''fitglm(${1:tbl}, ${2:optional_modelspec}, 'BinomialSize', ${3:value}, 'CategoricalVars', ${4:value}, 'DispersionFlag', ${5:value}, 'Distribution', ${6:value}, 'Exclude', ${7:value}, 'Intercept', ${8:value}, 'Link', ${9:value}, 'Offset', ${10:value}, 'PredictorVars', ${11:value}, 'ResponseVar', ${12:value}, 'VarNames', ${13:value}, 'Weights', ${14:value})'''
+        description: '''[stats] Create generalized linear regression model
+        fitglm(tbl, optional_modelspec, 'BinomialSize', value, 'CategoricalVars', value, 'DispersionFlag', value, 'Distribution', value, 'Exclude', value, 'Intercept', value, 'Link', value, 'Offset', value, 'PredictorVars', value, 'ResponseVar', value, 'VarNames', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitglm.html'
+
+
+    "fitrlinear [stats]":
+        prefix: "fitrlinear"
+        body: '''fitrlinear(${1:X}, ${2:Y}, 'Epsilon', ${3:value}, 'ObservationsIn', ${4:value}, 'Lambda', ${5:value}, 'Learner', ${6:value}, 'Regularization', ${7:value}, 'Solver', ${8:value}, 'Verbose', ${9:value}, 'Beta', ${10:value}, 'Bias', ${11:value}, 'Weights', ${12:value}, 'HessianHistorySize', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'IterationLimit', ${16:value}, 'OptimizeHyperparameters', ${17:value}, 'HyperparameterOptimizationOptions', ${18:value})'''
+        description: '''[stats] Fit linear regression model to high-dimensional data
+        fitrlinear(X, Y, 'Epsilon', value, 'ObservationsIn', value, 'Lambda', value, 'Learner', value, 'Regularization', value, 'Solver', value, 'Verbose', value, 'Beta', value, 'Bias', value, 'Weights', value, 'HessianHistorySize', value, 'BetaTolerance', value, 'GradientTolerance', value, 'IterationLimit', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitrlinear.html'
+
+
+    "harmmean [stats]":
+        prefix: "harmmean"
+        body: '''harmmean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
+        description: '''[stats] Harmonic mean
+        harmmean(tx, optional_dim, optional_nanflag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/harmmean.html'
+
+
+    "fitctree [stats]":
+        prefix: "fitctree"
+        body: '''fitctree(${1:Tbl}, ${2:Y}, 'AlgorithmForCategorical', ${3:value}, 'CategoricalPredictors', ${4:value}, 'ClassNames', ${5:value}, 'MaxNumCategories', ${6:value}, 'MaxNumSplits', ${7:value}, 'MergeLeaves', ${8:value}, 'MinLeafSize', ${9:value}, 'MinParentSize', ${10:value}, 'NumVariablesToSample', ${11:value}, 'PredictorNames', ${12:value}, 'ResponseName', ${13:value}, 'ScoreTransform', ${14:value}, 'SplitCriterion', ${15:value}, 'Weights', ${16:value}, 'MaxDepth', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value}, 'Prior', ${20:value}, 'Cost', ${21:value})'''
+        description: '''[stats] Fit binary decision tree for multiclass classification
+        fitctree(Tbl, Y, 'AlgorithmForCategorical', value, 'CategoricalPredictors', value, 'ClassNames', value, 'MaxNumCategories', value, 'MaxNumSplits', value, 'MergeLeaves', value, 'MinLeafSize', value, 'MinParentSize', value, 'NumVariablesToSample', value, 'PredictorNames', value, 'ResponseName', value, 'ScoreTransform', value, 'SplitCriterion', value, 'Weights', value, 'MaxDepth', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value, 'Prior', value, 'Cost', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitctree.html'
+
+
+    "fitrkernel [stats]":
+        prefix: "fitrkernel"
+        body: '''fitrkernel(${1:X}, ${2:Y}, 'BoxConstraint', ${3:value}, 'Epsilon', ${4:value}, 'NumExpansionDimensions', ${5:value}, 'KernelScale', ${6:value}, 'Lambda', ${7:value}, 'Learner', ${8:value}, 'Verbose', ${9:value}, 'BlockSize', ${10:value}, 'RandomStream', ${11:value}, 'ResponseTransform', ${12:value}, 'Weights', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'HessianHistorySize', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
+        description: '''[stats] Fit Gaussian kernel regression model using random feature expansion
+        fitrkernel(X, Y, 'BoxConstraint', value, 'Epsilon', value, 'NumExpansionDimensions', value, 'KernelScale', value, 'Lambda', value, 'Learner', value, 'Verbose', value, 'BlockSize', value, 'RandomStream', value, 'ResponseTransform', value, 'Weights', value, 'BetaTolerance', value, 'GradientTolerance', value, 'HessianHistorySize', value, 'IterationLimit', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitrkernel.html'
+
+
+    "lasso [stats]":
+        prefix: "lasso"
+        body: '''lasso(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'LambdaRatio', ${4:value}, 'NumLambda', ${5:value}, 'Standardize', ${6:value}, 'PredictorNames', ${7:value}, 'RelTol', ${8:value}, 'Weights', ${9:value}, 'Rho', ${10:value}, 'AbsTol', ${11:value}, 'DFmax', ${12:value}, 'MaxIter', ${13:value}, 'B0', ${14:value}, 'U0', ${15:value})'''
+        description: '''[stats] Lasso or elastic net regularization for linear models
+        lasso(X, Y, 'Lambda', value, 'LambdaRatio', value, 'NumLambda', value, 'Standardize', value, 'PredictorNames', value, 'RelTol', value, 'Weights', value, 'Rho', value, 'AbsTol', value, 'DFmax', value, 'MaxIter', value, 'B0', value, 'U0', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/lasso.html'
+
+
+    "fitcdiscr [stats]":
+        prefix: "fitcdiscr"
+        body: '''fitcdiscr(${1:Tbl}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'DiscrimType', ${5:value}, 'PredictorNames', ${6:value}, 'Prior', ${7:value}, 'ResponseName', ${8:value}, 'ScoreTransform', ${9:value}, 'Weights', ${10:value}, 'OptimizeHyperparameters', ${11:value}, 'HyperparameterOptimizationOptions', ${12:value})'''
+        description: '''[stats] Fit discriminant analysis classifier
+        fitcdiscr(Tbl, Y, 'ClassNames', value, 'Cost', value, 'DiscrimType', value, 'PredictorNames', value, 'Prior', value, 'ResponseName', value, 'ScoreTransform', value, 'Weights', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitcdiscr.html'
+
+
+    "rangesearch [stats]":
+        prefix: "rangesearch"
+        body: '''rangesearch(${1:X}, ${2:Y}, ${3:r}, 'BucketSize', ${4:value}, 'Cov', ${5:value}, 'Distance', ${6:value}, 'NSMethod', ${7:value}, 'P', ${8:value}, 'Scale', ${9:value}, 'SortIndices', ${10:value})'''
+        description: '''[stats] Find all neighbors within specified distance using input data
+        rangesearch(X, Y, r, 'BucketSize', value, 'Cov', value, 'Distance', value, 'NSMethod', value, 'P', value, 'Scale', value, 'SortIndices', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/rangesearch.html'
+
+
+    "TreeBagger [stats]":
+        prefix: "TreeBagger"
+        body: '''TreeBagger(${1:NumTrees}, ${2:Tbl}, ${3:Y}, 'NumPredictorsToSample', ${4:value}, 'MinLeafSize', ${5:value}, 'ChunkSize', ${6:value}, 'AlgorithmForCategorical', ${7:value}, 'CategoricalPredictors', ${8:value}, 'MaxNumCategories', ${9:value}, 'MergeLeaves', ${10:value}, 'PredictorNames', ${11:value}, 'PredictorSelection', ${12:value}, 'Prune', ${13:value}, 'PruneCriterion', ${14:value}, 'Surrogate', ${15:value}, 'MaxNumSplits', ${16:value}, 'SplitCriterion', ${17:value})'''
+        description: '''[stats] Create bag of decision trees
+        TreeBagger(NumTrees, Tbl, Y, 'NumPredictorsToSample', value, 'MinLeafSize', value, 'ChunkSize', value, 'AlgorithmForCategorical', value, 'CategoricalPredictors', value, 'MaxNumCategories', value, 'MergeLeaves', value, 'PredictorNames', value, 'PredictorSelection', value, 'Prune', value, 'PruneCriterion', value, 'Surrogate', value, 'MaxNumSplits', value, 'SplitCriterion', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/treebagger.html'
+
+
+    "prctile [stats]":
+        prefix: "prctile"
+        body: '''prctile(${1:X}, ${2:P}, ${3:optional_dim}, 'Method', ${4:value})'''
+        description: '''[stats] Percentiles of a data set
+        prctile(X, P, optional_dim, 'Method', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/prctile.html'
+
+
+    "pdist2 [stats]":
+        prefix: "pdist2"
+        body: '''pdist2(${1:X}, ${2:Y}, ${3:Distance}, 'Smallest', ${4:value})'''
+        description: '''[stats] Pairwise distance between two sets of observations
+        pdist2(X, Y, Distance, 'Smallest', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/pdist2.html'
+
+
+    "binScatterPlot [stats]":
+        prefix: "binScatterPlot"
+        body: '''binScatterPlot(${1:X}, ${2:Y}, ${3:optional_nbins}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Color', ${6:value}, 'Gamma', ${7:value}, 'XBinLimits', ${8:value}, 'YBinLimits', ${9:value})'''
+        description: '''[stats] Scatter plot of bins for tall arrays
+        binScatterPlot(X, Y, optional_nbins, 'BinMethod', value, 'BinWidth', value, 'Color', value, 'Gamma', value, 'XBinLimits', value, 'YBinLimits', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/binscatterplot.html'
+
+
+    "fitckernel [stats]":
+        prefix: "fitckernel"
+        body: '''fitckernel(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'KernelScale', ${4:value}, 'Learner', ${5:value}, 'Verbose', ${6:value}, 'ExpansionDimension', ${7:value}, 'BlockSize', ${8:value}, 'RandomStream', ${9:value}, 'ClassNames', ${10:value}, 'Cost', ${11:value}, 'Prior', ${12:value}, 'Weights', ${13:value}, 'HessianHistorySize', ${14:value}, 'BetaTolerance', ${15:value}, 'GradientTolerance', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
+        description: '''[stats] Fit Gaussian kernel classification model using random feature
+            expansion
+        fitckernel(X, Y, 'Lambda', value, 'KernelScale', value, 'Learner', value, 'Verbose', value, 'ExpansionDimension', value, 'BlockSize', value, 'RandomStream', value, 'ClassNames', value, 'Cost', value, 'Prior', value, 'Weights', value, 'HessianHistorySize', value, 'BetaTolerance', value, 'GradientTolerance', value, 'IterationLimit', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitckernel.html'
+
+
+    "fitclinear [stats]":
+        prefix: "fitclinear"
+        body: '''fitclinear(${1:X}, ${2:Y}, 'ObservationsIn', ${3:value}, 'Lambda', ${4:value}, 'Learner', ${5:value}, 'Regularization', ${6:value}, 'Solver', ${7:value}, 'Verbose', ${8:value}, 'Beta', ${9:value}, 'Bias', ${10:value}, 'ClassNames', ${11:value}, 'Cost', ${12:value}, 'Prior', ${13:value}, 'Weights', ${14:value}, 'HessianHistorySize', ${15:value}, 'BetaTolerance', ${16:value}, 'GradientTolerance', ${17:value}, 'IterationLimit', ${18:value}, 'OptimizeHyperparameters', ${19:value}, 'HyperparameterOptimizationOptions', ${20:value})'''
+        description: '''[stats] Fit linear classification model to high-dimensional data
+        fitclinear(X, Y, 'ObservationsIn', value, 'Lambda', value, 'Learner', value, 'Regularization', value, 'Solver', value, 'Verbose', value, 'Beta', value, 'Bias', value, 'ClassNames', value, 'Cost', value, 'Prior', value, 'Weights', value, 'HessianHistorySize', value, 'BetaTolerance', value, 'GradientTolerance', value, 'IterationLimit', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitclinear.html'
+
+
+    "corr [stats]":
+        prefix: "corr"
+        body: '''corr(${1:X}, ${2:optional_Y}, 'type', ${3:value}, 'rows', ${4:value}, 'tail', ${5:value})'''
+        description: '''[stats] Linear or rank correlation
+        corr(X, optional_Y, 'type', value, 'rows', value, 'tail', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/corr.html'
+
+
+    "cvpartition [stats]":
+        prefix: "cvpartition"
+        body: '''cvpartition(${1:group}, ${2:HoldOut}, ${3:p})'''
+        description: '''[stats] Create cross-validation partition for data
+        cvpartition(group, HoldOut, p)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/cvpartition.html'
+
+
+    "datasample [stats]":
+        prefix: "datasample"
+        body: '''datasample(${1:optional_s}, ${2:data}, ${3:k}, ${4:optional_dim}, 'Weights', ${5:value})'''
+        description: '''[stats] Randomly sample from data, with or without replacement
+        datasample(optional_s, data, k, optional_dim, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/datasample.html'
+
+
+    "geomean [stats]":
+        prefix: "geomean"
+        body: '''geomean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
+        description: '''[stats] Geometric mean
+        geomean(tx, optional_dim, optional_nanflag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/geomean.html'
+
+
+    "grpstats [stats]":
+        prefix: "grpstats"
+        body: '''grpstats(${1:X}, ${2:group}, ${3:optional_whichstats})'''
+        description: '''[stats] Compute descriptive statistics of repeated measures data
+by group
+        grpstats(X, group, optional_whichstats)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/repeatedmeasuresmodel.grpstats.html'
+
+
+    "kurtosis [stats]":
+        prefix: "kurtosis"
+        body: '''kurtosis(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''[stats] Kurtosis
+        kurtosis(X, flag, optional_dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/kurtosis.html'
+
+
+    "knnsearch [stats]":
+        prefix: "knnsearch"
+        body: '''knnsearch(${1:X}, ${2:Y}, 'K', ${3:value}, 'IncludeTies', ${4:value}, 'NSMethod', ${5:value}, 'Distance', ${6:value}, 'P', ${7:value}, 'Cov', ${8:value}, 'Scale', ${9:value}, 'BucketSize', ${10:value}, 'SortIndices', ${11:value})'''
+        description: '''[stats] Find k-nearest neighbors using input data
+        knnsearch(X, Y, 'K', value, 'IncludeTies', value, 'NSMethod', value, 'Distance', value, 'P', value, 'Cov', value, 'Scale', value, 'BucketSize', value, 'SortIndices', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/knnsearch.html'
+
+
+    "ksdensity [stats]":
+        prefix: "ksdensity"
+        body: '''ksdensity(${1:optional_ax}, ${2:x}, ${3:optional_xi}, 'Kernel', ${4:value}, 'Weights', ${5:value}, 'Bandwidth', ${6:value}, 'Function', ${7:value}, 'NumPoints', ${8:value}, 'PlotFcn', ${9:value})'''
+        description: '''[stats] Kernel smoothing function estimate for univariate and
+bivariate data
+        ksdensity(optional_ax, x, optional_xi, 'Kernel', value, 'Weights', value, 'Bandwidth', value, 'Function', value, 'NumPoints', value, 'PlotFcn', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/ksdensity.html'
+

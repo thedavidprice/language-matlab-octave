@@ -1,0 +1,310 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "uitab [matlab]":
+        prefix: "uitab"
+        body: '''uitab(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create tabbed panel
+        uitab(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitab.html'
+
+
+    "clipboard [matlab]":
+        prefix: "clipboard"
+        body: '''clipboard(${1:action}, ${2:optional_data})'''
+        description: '''[matlab] Copy and paste text to and from system clipboard
+        clipboard(action, optional_data)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/clipboard.html'
+
+
+    "uisetpref [matlab]":
+        prefix: "uisetpref"
+        body: '''uisetpref(${1:clearall})'''
+        description: '''[matlab] Manage preferences used in uigetpref
+        uisetpref(clearall)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uisetpref.html'
+
+
+    "msgbox [matlab]":
+        prefix: "msgbox"
+        body: '''msgbox(${1:message}, ${2:title}, ${3:icon}, ${4:icondata}, ${5:iconcmap}, ${6:optional_createmode})'''
+        description: '''[matlab] Create message dialog box
+        msgbox(message, title, icon, icondata, iconcmap, optional_createmode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/msgbox.html'
+
+
+    "dialog [matlab]":
+        prefix: "dialog"
+        body: '''dialog(${1:opts})'''
+        description: '''[matlab] Create empty modal dialog box
+        dialog(opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dialog.html'
+
+
+    "movegui [matlab]":
+        prefix: "movegui"
+        body: '''movegui(${1:optional_h}, ${2:optional_position})'''
+        description: '''[matlab] Move figure to specified location on screen
+        movegui(optional_h, optional_position)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movegui.html'
+
+
+    "uigetpref [matlab]":
+        prefix: "uigetpref"
+        body: '''uigetpref(${1:group}, ${2:pref}, ${3:quest}, ${4:btns}, 'CheckboxState', ${5:value}, 'CheckboxString', ${6:value}, 'HelpString', ${7:value}, 'HelpFcn', ${8:value}, 'ExtraOptions', ${9:value}, 'DefaultButton', ${10:value})'''
+        description: '''[matlab]  Create dialog box that opens according to user preference
+        uigetpref(group, pref, quest, btns, 'CheckboxState', value, 'CheckboxString', value, 'HelpString', value, 'HelpFcn', value, 'ExtraOptions', value, 'DefaultButton', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uigetpref.html'
+
+
+    "uitabgroup [matlab]":
+        prefix: "uitabgroup"
+        body: '''uitabgroup(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create container for tabbed panels
+        uitabgroup(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitabgroup.html'
+
+
+    "errordlg [matlab]":
+        prefix: "errordlg"
+        body: '''errordlg(${1:msg}, ${2:title}, ${3:optional_opts})'''
+        description: '''[matlab] Create error dialog box
+        errordlg(msg, title, optional_opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/errordlg.html'
+
+
+    "uistack [matlab]":
+        prefix: "uistack"
+        body: '''uistack(${1:h}, ${2:stackopt}, ${3:optional_step})'''
+        description: '''[matlab] Reorder visual stacking of UI components
+        uistack(h, stackopt, optional_step)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uistack.html'
+
+
+    "uitoggletool [matlab]":
+        prefix: "uitoggletool"
+        body: '''uitoggletool(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create toggle button on toolbar
+        uitoggletool(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitoggletool.html'
+
+
+    "uigetfile [matlab]":
+        prefix: "uigetfile"
+        body: '''uigetfile(${1:optional_filter}, ${2:optional_title}, ${3:optional_defname}, 'MultiSelect', ${4:value})'''
+        description: '''[matlab] Open file selection dialog box
+        uigetfile(optional_filter, optional_title, optional_defname, 'MultiSelect', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uigetfile.html'
+
+
+    "waitbar [matlab]":
+        prefix: "waitbar"
+        body: '''waitbar(${1:x}, ${2:msg}, 'CreateCancelBtn', ${3:value}, ${4:opts})'''
+        description: '''[matlab] Create or update wait bar dialog box
+        waitbar(x, msg, 'CreateCancelBtn', value, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/waitbar.html'
+
+
+    "uibuttongroup [matlab]":
+        prefix: "uibuttongroup"
+        body: '''uibuttongroup(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create button group to manage radio buttons and toggle
+buttons
+        uibuttongroup(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uibuttongroup.html'
+
+
+    "uiputfile [matlab]":
+        prefix: "uiputfile"
+        body: '''uiputfile(${1:filter}, ${2:title}, ${3:optional_defname})'''
+        description: '''[matlab] Open dialog box for saving files
+        uiputfile(filter, title, optional_defname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiputfile.html'
+
+
+    "uitable [matlab]":
+        prefix: "uitable"
+        body: '''uitable(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab]  Create table user interface component
+        uitable(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitable.html'
+
+
+    "align [matlab]":
+        prefix: "align"
+        body: '''align(${1:HandleList_CurPosition}, ${2:HorizontalAlignment}, ${3:VerticalAlignment})'''
+        description: '''[matlab] Align UI components and graphics objects
+        align(HandleList_CurPosition, HorizontalAlignment, VerticalAlignment)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/align.html'
+
+
+    "setpixelposition [matlab]":
+        prefix: "setpixelposition"
+        body: '''setpixelposition(${1:handle}, ${2:position}, ${3:optional_recursive})'''
+        description: '''[matlab] Set component position in pixels
+        setpixelposition(handle, position, optional_recursive)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setpixelposition.html'
+
+
+    "uigetdir [matlab]":
+        prefix: "uigetdir"
+        body: '''uigetdir(${1:path}, ${2:optional_title})'''
+        description: '''[matlab] Open folder selection dialog box
+        uigetdir(path, optional_title)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uigetdir.html'
+
+
+    "uiresume [matlab]":
+        prefix: "uiresume"
+        body: '''uiresume(${1:h})'''
+        description: '''[matlab] Resume execution of blocked program
+        uiresume(h)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiresume.html'
+
+
+    "btngroup [matlab]":
+        prefix: "btngroup"
+        body: '''btngroup(${1:optional_fighandle}, 'GroupID', ${2:value}, 'ButtonID', ${3:value}, 'IconFunctions', ${4:value}, 'Cdata', ${5:value}, 'PressType', ${6:value}, 'Exclusive', ${7:value}, 'Callbacks', ${8:value}, 'ButtonDownFcn', ${9:value}, 'GroupSize', ${10:value}, 'InitialState', ${11:value}, 'Units', ${12:value}, 'Position', ${13:value}, 'BevelWidth', ${14:value}, 'ButtonColor', ${15:value}, 'ButtonDark', ${16:value}, 'BevelLight', ${17:value}, 'BevelDark', ${18:value}, 'Orientation', ${19:value})'''
+        description: '''[matlab] 
+        btngroup(optional_fighandle, 'GroupID', value, 'ButtonID', value, 'IconFunctions', value, 'Cdata', value, 'PressType', value, 'Exclusive', value, 'Callbacks', value, 'ButtonDownFcn', value, 'GroupSize', value, 'InitialState', value, 'Units', value, 'Position', value, 'BevelWidth', value, 'ButtonColor', value, 'ButtonDark', value, 'BevelLight', value, 'BevelDark', value, 'Orientation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/btngroup.html'
+
+
+    "uipushtool [matlab]":
+        prefix: "uipushtool"
+        body: '''uipushtool(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create push button on toolbar
+        uipushtool(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uipushtool.html'
+
+
+    "uipanel [matlab]":
+        prefix: "uipanel"
+        body: '''uipanel(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create panel container object
+        uipanel(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uipanel.html'
+
+
+    "uisetcolor [matlab]":
+        prefix: "uisetcolor"
+        body: '''uisetcolor(${1:obj}, ${2:optional_title})'''
+        description: '''[matlab] Open color picker
+        uisetcolor(obj, optional_title)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uisetcolor.html'
+
+
+    "warndlg [matlab]":
+        prefix: "warndlg"
+        body: '''warndlg(${1:msg}, ${2:title}, ${3:optional_opts})'''
+        description: '''[matlab] Create warning dialog box
+        warndlg(msg, title, optional_opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/warndlg.html'
+
+
+    "btnicon [matlab]":
+        prefix: "btnicon"
+        body: '''btnicon(${1:option})'''
+        description: '''[matlab] 
+        btnicon(option)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/btnicon.html'
+
+
+    "getpixelposition [matlab]":
+        prefix: "getpixelposition"
+        body: '''getpixelposition(${1:handle}, ${2:optional_recursive})'''
+        description: '''[matlab] Get component position in pixels
+        getpixelposition(handle, optional_recursive)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/getpixelposition.html'
+
+
+    "uisetfont [matlab]":
+        prefix: "uisetfont"
+        body: '''uisetfont(${1:optional_opts}, ${2:optional_title})'''
+        description: '''[matlab] Open font selection dialog box
+        uisetfont(optional_opts, optional_title)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uisetfont.html'
+
+
+    "uitoolbar [matlab]":
+        prefix: "uitoolbar"
+        body: '''uitoolbar(${1:optional_parent}, ${2:opts})'''
+        description: '''[matlab] Create toolbar on figure
+        uitoolbar(optional_parent, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitoolbar.html'
+
+
+    "listdlg [matlab]":
+        prefix: "listdlg"
+        body: '''listdlg('ListString', ${1:value}, 'SelectionMode', ${2:value}, 'ListSize', ${3:value}, 'InitialValue', ${4:value}, 'Name', ${5:value}, 'PromptString', ${6:value}, 'OKString', ${7:value}, 'CancelString', ${8:value})'''
+        description: '''[matlab] Create list selection dialog box
+        listdlg('ListString', value, 'SelectionMode', value, 'ListSize', value, 'InitialValue', value, 'Name', value, 'PromptString', value, 'OKString', value, 'CancelString', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/listdlg.html'
+
+
+    "uiwait [matlab]":
+        prefix: "uiwait"
+        body: '''uiwait(${1:h}, ${2:optional_timeout})'''
+        description: '''[matlab] Block program execution and wait to resume
+        uiwait(h, optional_timeout)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiwait.html'
+
+
+    "uisave [matlab]":
+        prefix: "uisave"
+        body: '''uisave(${1:vars}, ${2:optional_file})'''
+        description: '''[matlab] Open dialog box for saving variables to MAT-file
+        uisave(vars, optional_file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uisave.html'
+
+
+    "uiopen [matlab]":
+        prefix: "uiopen"
+        body: '''uiopen(${1:file}, ${2:optional_tf})'''
+        description: '''[matlab] Open file selection dialog box and load selected file into
+            workspace
+        uiopen(file, optional_tf)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiopen.html'
+
+
+    "inputdlg [matlab]":
+        prefix: "inputdlg"
+        body: '''inputdlg(${1:prompt}, ${2:title}, ${3:dims}, ${4:definput}, ${5:optional_opts})'''
+        description: '''[matlab] Create dialog box to gather user input
+        inputdlg(prompt, title, dims, definput, optional_opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/inputdlg.html'
+

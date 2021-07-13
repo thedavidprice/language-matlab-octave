@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "coder.matlabtarget.deploytohardware.deploy [target]":
+        prefix: "coder.matlabtarget.deploytohardware.deploy"
+        body: '''coder.matlabtarget.deploytohardware.deploy(${1:obj}, ${2:functionName}, ${3:customConfigObject})'''
+        description: '''[target] 
+        coder.matlabtarget.deploytohardware.deploy(obj, functionName, customConfigObject)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/target/coder.matlabtarget.deploytohardware.deploy.html'
+

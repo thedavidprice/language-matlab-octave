@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "winopen [matlab]":
+        prefix: "winopen"
+        body: '''winopen(${1:filename}, ${2:optional_varargin})'''
+        description: '''[matlab] Open file in appropriate application (Windows)
+        winopen(filename, optional_varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/winopen.html'
+

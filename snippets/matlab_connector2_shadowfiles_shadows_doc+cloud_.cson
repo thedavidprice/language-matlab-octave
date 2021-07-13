@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "doc [matlab]":
+        prefix: "doc"
+        body: '''doc(${1:optional_filename})'''
+        description: '''[matlab] Reference page in Help browser
+        doc(optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/doc.html'
+

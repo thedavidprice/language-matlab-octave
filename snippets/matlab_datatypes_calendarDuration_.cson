@@ -1,0 +1,473 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "calmonths [matlab]":
+        prefix: "calmonths"
+        body: '''${2:M} = calmonths(${1:X})'''
+        description: '''[matlab] Calendar duration in months
+        M = calmonths(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarduration.calmonths.html'
+
+
+    "ismatrix [matlab]":
+        prefix: "ismatrix"
+        body: '''${2:TF} = ismatrix(${1:V})'''
+        description: '''[matlab] Determine whether input is matrix
+        TF = ismatrix(V)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismatrix.html'
+
+
+    "length [matlab]":
+        prefix: "length"
+        body: '''${2:L} = length(${1:X})'''
+        description: '''[matlab] Number of key-value pairs in the data cache
+        L = length(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/mps_dev_test/length.html'
+
+
+    "movmedian [matlab]":
+        prefix: "movmedian"
+        body: '''${7:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''[matlab] Moving median
+        M = movmedian(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmedian.html'
+
+
+    "calendarDuration [matlab]":
+        prefix: "calendarDuration"
+        body: '''${3:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
+        description: '''[matlab] Lengths of time in variable-length calendar units
+        D = calendarDuration(YMD, 'Format', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarduration.html'
+
+
+    "split [matlab]":
+        prefix: "split"
+        body: '''${3:C} = split(${1:t}, ${2:units})'''
+        description: '''[matlab] Split calendar duration into numeric and duration units
+        C = split(t, units)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarduration.split.html'
+
+
+    "issortedrows [matlab]":
+        prefix: "issortedrows"
+        body: '''${5:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[matlab] Determine if matrix or table rows are sorted
+        TF = issortedrows(A, column, direction, 'MissingPlacement', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/issortedrows.html'
+
+
+    "calquarters [matlab]":
+        prefix: "calquarters"
+        body: '''${2:Q} = calquarters(${1:X})'''
+        description: '''[matlab] Calendar duration in quarters
+        Q = calquarters(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarduration.calquarters.html'
+
+
+    "time [matlab]":
+        prefix: "time"
+        body: '''${2:t} = time(${1:d})'''
+        description: '''[matlab] Convert time of calendar duration to duration
+        t = time(d)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarduration.time.html'
+
+
+    "isdst [matlab]":
+        prefix: "isdst"
+        body: '''${2:tf} = isdst(${1:t})'''
+        description: '''[matlab] Determine daylight saving time elements
+        tf = isdst(t)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/datetime.isdst.html'
+
+
+    "isinf [matlab]":
+        prefix: "isinf"
+        body: '''${2:TF} = isinf(${1:A})'''
+        description: '''[matlab] Determine which array elements are infinite
+        TF = isinf(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isinf.html'
+
+
+    "datenum [matlab]":
+        prefix: "datenum"
+        body: '''${2:DateNumber} = datenum(${1:t})'''
+        description: '''[matlab] Convert date and time to serial date number
+        DateNumber = datenum(t)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/datenum.html'
+
+
+    "plus [matlab]":
+        prefix: "plus"
+        body: '''${3:C} = plus(${1:A}, ${2:B})'''
+        description: '''[matlab] Financial time series addition
+        C = plus(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/plus.html'
+
+
+    "movprod [matlab]":
+        prefix: "movprod"
+        body: '''${7:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''[matlab] Moving product
+        M = movprod(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movprod.html'
+
+
+    "char [matlab]":
+        prefix: "char"
+        body: '''${4:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
+        description: '''[matlab] Character array
+        S = char(D, fmt, locale)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/char.html'
+
+
+    "cat [matlab]":
+        prefix: "cat"
+        body: '''${4:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        description: '''[matlab] Concatenate geographic or planar vector
+        C = cat(dim, A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/geopoint.cat.html'
+
+
+    "movmean [matlab]":
+        prefix: "movmean"
+        body: '''${7:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''[matlab] Moving mean
+        M = movmean(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmean.html'
+
+
+    "caldays [matlab]":
+        prefix: "caldays"
+        body: '''${2:D} = caldays(${1:X})'''
+        description: '''[matlab] Calendar duration in days
+        D = caldays(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarduration.caldays.html'
+
+
+    "ctranspose [matlab]":
+        prefix: "ctranspose"
+        body: '''${2:B} = ctranspose(${1:A})'''
+        description: '''[matlab] Conjugate dynamic system model
+        B = ctranspose(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/inputoutputmodel.ctranspose.html'
+
+
+    "vertcat [matlab]":
+        prefix: "vertcat"
+        body: '''${2:C} = vertcat(${1:A})'''
+        description: '''[matlab] Concatenate arrays vertically
+        C = vertcat(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/vertcat.html'
+
+
+    "calyears [matlab]":
+        prefix: "calyears"
+        body: '''${2:Y} = calyears(${1:X})'''
+        description: '''[matlab] Calendar duration in years
+        Y = calyears(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarduration.calyears.html'
+
+
+    "times [matlab]":
+        prefix: "times"
+        body: '''${3:C} = times(${1:A}, ${2:B})'''
+        description: '''[matlab] Financial time series multiplication
+        C = times(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/times.html'
+
+
+    "isrow [matlab]":
+        prefix: "isrow"
+        body: '''${2:TF} = isrow(${1:V})'''
+        description: '''[matlab] Determine whether input
+is row vector
+        TF = isrow(V)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isrow.html'
+
+
+    "movstd [matlab]":
+        prefix: "movstd"
+        body: '''${8:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        description: '''[matlab] Moving standard deviation
+        M = movstd(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movstd.html'
+
+
+    "isempty [matlab]":
+        prefix: "isempty"
+        body: '''${2:TF} = isempty(${1:A})'''
+        description: '''[matlab] Determine whether MetaData object is empty
+        TF = isempty(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.isempty.html'
+
+
+    "cellstr [matlab]":
+        prefix: "cellstr"
+        body: '''${4:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
+        description: '''[matlab] Convert to cell array of character vectors
+        S = cellstr(D, fmt, locale)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cellstr.html'
+
+
+    "isvector [matlab]":
+        prefix: "isvector"
+        body: '''${2:TF} = isvector(${1:A})'''
+        description: '''[matlab] Determine whether input is vector
+        TF = isvector(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isvector.html'
+
+
+    "calweeks [matlab]":
+        prefix: "calweeks"
+        body: '''${2:W} = calweeks(${1:X})'''
+        description: '''[matlab] Calendar duration in weeks
+        W = calweeks(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarduration.calweeks.html'
+
+
+    "minus [matlab]":
+        prefix: "minus"
+        body: '''${3:C} = minus(${1:A}, ${2:B})'''
+        description: '''[matlab] Financial time series subtraction
+        C = minus(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/minus.html'
+
+
+    "isfinite [matlab]":
+        prefix: "isfinite"
+        body: '''${2:TF} = isfinite(${1:A})'''
+        description: '''[matlab] Determine if model has finite coefficients
+        TF = isfinite(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isfinite.html'
+
+
+    "horzcat [matlab]":
+        prefix: "horzcat"
+        body: '''${2:C} = horzcat(${1:A})'''
+        description: '''[matlab] Concatenate arrays horizontally
+        C = horzcat(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/horzcat.html'
+
+
+    "isscalar [matlab]":
+        prefix: "isscalar"
+        body: '''${2:TF} = isscalar(${1:A})'''
+        description: '''[matlab] Determine whether input is scalar
+        TF = isscalar(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isscalar.html'
+
+
+    "ndims [matlab]":
+        prefix: "ndims"
+        body: '''${2:N} = ndims(${1:X})'''
+        description: '''[matlab] Query number of dimensions of dynamic system model or
+model array
+        N = ndims(X)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ndims.html'
+
+
+    "movmax [matlab]":
+        prefix: "movmax"
+        body: '''${7:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''[matlab] Moving maximum
+        M = movmax(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmax.html'
+
+
+    "uminus [matlab]":
+        prefix: "uminus"
+        body: '''${2:C} = uminus(${1:A})'''
+        description: '''[matlab] Unary minus of financial time series object
+        C = uminus(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/uminus.html'
+
+
+    "string [matlab]":
+        prefix: "string"
+        body: '''${4:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
+        description: '''[matlab] String array
+        str = string(D, fmt, locale)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.html'
+
+
+    "isequaln [matlab]":
+        prefix: "isequaln"
+        body: '''${3:tf} = isequaln(${1:A}, ${2:B})'''
+        description: '''[matlab] Determine array equality, treating NaN values as equal
+        tf = isequaln(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isequaln.html'
+
+
+    "transpose [matlab]":
+        prefix: "transpose"
+        body: '''${2:B} = transpose(${1:A})'''
+        description: '''[matlab] Transpose vector or matrix
+        B = transpose(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/transpose.html'
+
+
+    "numel [matlab]":
+        prefix: "numel"
+        body: '''${2:n} = numel(${1:A})'''
+        description: '''[matlab] Number of array elements
+        n = numel(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/numel.html'
+
+
+    "movsum [matlab]":
+        prefix: "movsum"
+        body: '''${7:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''[matlab] Moving sum
+        M = movsum(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movsum.html'
+
+
+    "mtimes [matlab]":
+        prefix: "mtimes"
+        body: '''${3:C} = mtimes(${1:A}, ${2:B})'''
+        description: '''[matlab] Financial time series matrix multiplication
+        C = mtimes(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/mtimes.html'
+
+
+    "iscalendarduration [matlab]":
+        prefix: "iscalendarduration"
+        body: '''${2:tf} = iscalendarduration(${1:d})'''
+        description: '''[matlab] Determine if input is calendar duration array
+        tf = iscalendarduration(d)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/iscalendarduration.html'
+
+
+    "movmad [matlab]":
+        prefix: "movmad"
+        body: '''${7:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''[matlab] Moving median absolute deviation
+        M = movmad(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmad.html'
+
+
+    "hms [matlab]":
+        prefix: "hms"
+        body: '''[${2:h}, ${3:m}, ${4:s}] = hms(${1:t})'''
+        description: '''[matlab] Hour, minute, and second numbers of datetime or duration
+        [h, m, s] = hms(t)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/datetime.hms.html'
+
+
+    "iscolumn [matlab]":
+        prefix: "iscolumn"
+        body: '''${2:TF} = iscolumn(${1:V})'''
+        description: '''[matlab] Determine whether input
+is column vector
+        TF = iscolumn(V)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/iscolumn.html'
+
+
+    "movmin [matlab]":
+        prefix: "movmin"
+        body: '''${7:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''[matlab] Moving minimum
+        M = movmin(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmin.html'
+
+
+    "isequal [matlab]":
+        prefix: "isequal"
+        body: '''${3:tf} = isequal(${1:A}, ${2:B})'''
+        description: '''[matlab] Multiple object equality
+        tf = isequal(A, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/isequal.html'
+
+
+    "movvar [matlab]":
+        prefix: "movvar"
+        body: '''${8:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        description: '''[matlab] Moving variance
+        M = movvar(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movvar.html'
+
+
+    "issorted [matlab]":
+        prefix: "issorted"
+        body: '''${5:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[matlab] Check whether dates and times are monotonically increasing
+        TF = issorted(A, dim, direction, 'MissingPlacement', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/issorted.html'
+
+
+    "size [matlab]":
+        prefix: "size"
+        body: '''${3:szdim} = size(${1:A}, ${2:dim})'''
+        description: '''[matlab] Return size of MetaData object
+        szdim = size(A, dim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.size.html'
+
+
+    "reshape [matlab]":
+        prefix: "reshape"
+        body: '''${3:B} = reshape(${1:A}, ${2:sz})'''
+        description: '''[matlab] Change shape of model array
+        B = reshape(A, sz)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/reshape.html'
+
+
+    "permute [matlab]":
+        prefix: "permute"
+        body: '''${3:B} = permute(${1:A}, ${2:order})'''
+        description: '''[matlab] Rearrange array dimensions in model arrays
+        B = permute(A, order)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/permute.html'
+

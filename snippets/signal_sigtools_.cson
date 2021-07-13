@@ -1,0 +1,30 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "wvtool [signal]":
+        prefix: "wvtool"
+        body: '''${2:H} = wvtool(${1:WindowVector})'''
+        description: '''[signal] Open Window Visualization Tool 
+        H = wvtool(WindowVector)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/signal/ref/wvtool.html'
+
+
+    "fvtool [signal]":
+        prefix: "fvtool"
+        body: '''${2:h} = fvtool(${1:d})'''
+        description: '''[signal] Visualize frequency response of digital down converter or digital up converter
+            filter cascade
+        h = fvtool(d)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/signal/ref/dsp.digitaldownconverter.fvtool.html'
+
+
+    "fmethod.abstractdesign.isfir [signal]":
+        prefix: "fmethod.abstractdesign.isfir"
+        body: '''${2:flag} = fmethod.abstractdesign.isfir(${1:d})'''
+        description: '''[signal] 
+        flag = fmethod.abstractdesign.isfir(d)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/signal/fmethod.abstractdesign.isfir.html'
+

@@ -1,0 +1,47 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "matlab.addons.enableAddon [matlab]":
+        prefix: "matlab.addons.enableAddon"
+        body: '''matlab.addons.enableAddon(${1:addOnName}, ${2:optional_version})'''
+        description: '''[matlab] Enable installed add-on
+        matlab.addons.enableAddon(addOnName, optional_version)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.addons.enableaddon.html'
+
+
+    "matlab.addons.install [matlab]":
+        prefix: "matlab.addons.install"
+        body: '''matlab.addons.install(${1:fileName}, ${2:agreeToLicense}, ${3:optional_installOption})'''
+        description: '''[matlab] Install add-on
+        matlab.addons.install(fileName, agreeToLicense, optional_installOption)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.addons.install.html'
+
+
+    "matlab.addons.disableAddon [matlab]":
+        prefix: "matlab.addons.disableAddon"
+        body: '''matlab.addons.disableAddon(${1:addOnName}, ${2:optional_version})'''
+        description: '''[matlab] Disable installed add-on
+        matlab.addons.disableAddon(addOnName, optional_version)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.addons.disableaddon.html'
+
+
+    "matlab.addons.uninstall [matlab]":
+        prefix: "matlab.addons.uninstall"
+        body: '''matlab.addons.uninstall(${1:addOnName}, ${2:optional_version})'''
+        description: '''[matlab] Uninstall add-on
+        matlab.addons.uninstall(addOnName, optional_version)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.addons.uninstall.html'
+
+
+    "matlab.addons.isAddonEnabled [matlab]":
+        prefix: "matlab.addons.isAddonEnabled"
+        body: '''matlab.addons.isAddonEnabled(${1:addOnName}, ${2:optional_version})'''
+        description: '''[matlab] Determine if add-on is enabled
+        matlab.addons.isAddonEnabled(addOnName, optional_version)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.addons.isaddonenabled.html'
+
