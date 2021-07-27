@@ -1089,22 +1089,26 @@ repository:
   import:
     comment: 'Import statement'
     name: 'meta.import.matlab'
-    contentName: 'entity.name.namespace.matlab'
-    begin: '\\b(import)\\b[^\\S\\n]+(?=\\w)'
-    beginCaptures:
+    match: '\\b(import)\\b[^\\S\\n]+([a-zA-Z0-9.]*)(?=;|%|$)'
+    captures:
       '1':
         name: 'keyword.other.import.matlab'
-    end: '(?=;|\\n|%)'
-    patterns: [
-      {
-        name: 'punctuation.separator.matlab'
-        match: '\\.'
-      }
-      {
-        name: 'variable.language.wildcard.matlab'
-        match: '\\*'
-      }
-    ]
+      '2':
+        name: 'entity.name.namespace.matlab'
+        patterns: [
+          {
+            name: 'entity.name.module.matlab'
+            match: '\\w+'
+          }
+          {
+            name: 'punctuation.separator.matlab'
+            match: '\\.'
+          }
+          {
+            name: 'variable.language.wildcard.matlab'
+            match: '\\*'
+          }
+        ]
   indexing_by_expression:
     comment: 'Index array with expression evaluated to variable name or number'
     contentName: 'meta.parens.matlab'
