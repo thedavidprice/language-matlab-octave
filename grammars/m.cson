@@ -78,7 +78,7 @@ injections: {
         include: '#package_word_operators'
       }
     ]
-  'source.matlab -(comment, function-call, support, string, interpolation, comment *, function-call *, support *, string *, interpolation *)':
+  'source.matlab -(comment, support, string, interpolation, entity.name.function, entity.name.namespace, comment *, support *, string *, interpolation *, entity.name.function *, entity.name.namespace *)':
     patterns: [
       {
         include: '#readwrite_operations'
