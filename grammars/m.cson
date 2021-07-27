@@ -626,7 +626,7 @@ repository:
                 ]
             endCaptures:
               '1':
-                name: 'keyword.control.properties.end.matlab'
+                name: 'keyword.control.end.properties.matlab'
             patterns: [
               {
                 include: '#validators'
@@ -676,7 +676,7 @@ repository:
                 ]
             endCaptures:
               '1':
-                name: 'keyword.control.methods.end.matlab'
+                name: 'keyword.control.end.methods.matlab'
             patterns: [
               {
                 include: '$self'
@@ -723,7 +723,7 @@ repository:
                 ]
             endCaptures:
               '1':
-                name: 'keyword.control.events.end.matlab'
+                name: 'keyword.control.end.events.matlab'
             patterns: [
               {
                 name: 'meta.assignment.definition.event.matlab'
@@ -752,7 +752,7 @@ repository:
                 name: 'keyword.control.enum.matlab'
             endCaptures:
               '1':
-                name: 'keyword.control.enum.end.matlab'
+                name: 'keyword.control.end.enum.matlab'
             patterns: [
               {
                 name: 'meta.assignment.definition.enummember.matlab'
@@ -1025,7 +1025,7 @@ repository:
                 ]
             endCaptures:
               '1':
-                name: 'keyword.control.arguments.end.matlab'
+                name: 'keyword.control.end.arguments.matlab'
             patterns: [
               {
                 comment: 'Class property name-value arguments'
