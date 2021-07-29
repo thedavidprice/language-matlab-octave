@@ -4,7 +4,7 @@ fileTypes: [
 ]
 keyEquivalent: '^~M'
 scopeName: 'source.matlab'
-uuid: '0C463768-44FD-4D00-880B-E7F5553D6880'
+uuid: '00727D6C-EF5E-42F1-A155-5EB15931A4C6'
 patterns: [
   {
     comment: 'Rules are split into groups so #command_dual can be excluded in things like (), {}, []'
@@ -5754,22 +5754,32 @@ repository:
       }
     ]
   readwrite_operations:
-    patterns: [
-      {
-        include: '#property'
-      }
-      {
-        include: '#readwrite_variable'
-      }
-    ]
+    match: '(?<![a-zA-Z0-9_]|\\.)[a-zA-Z][a-zA-Z0-9_]*(?:\\.[a-zA-Z][a-zA-Z0-9_]*)*(?![a-zA-Z0-9_]|(?:\\(|\\{|\\.\\())'
+    captures:
+      '0':
+        patterns: [
+          {
+            include: '#property'
+          }
+          {
+            include: '#readwrite_variable'
+          }
+          {
+            include: '#property_access'
+          }
+        ]
   property:
     comment: 'Class property or enumeration member access'
     name: 'variable.other.property.matlab'
-    match: '(?<=\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:["\']|\\(|\\{|\\.\\())'
+    match: '(?<=\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:\\(|\\{|\\.\\())'
   readwrite_variable:
     comment: 'Top-level workspace variable highlighting'
     name: 'variable.other.readwrite.matlab'
-    match: '(?<![a-zA-Z0-9_]|\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:["\']|\\(|\\{|\\.\\())'
+    match: '(?<![a-zA-Z0-9_]|\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:\\(|\\{|\\.\\())'
+  property_access:
+    comment: 'Struct/class property dot index'
+    name: 'punctuation.accessor.dot.matlab'
+    match: '\\.'
   argument_validation:
     comment: 'Argument validation functions'
     name: 'keyword.operator.word.matlab'
