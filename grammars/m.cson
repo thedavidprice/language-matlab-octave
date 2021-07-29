@@ -18,7 +18,7 @@ patterns: [
   }
 ]
 injections: {
-  'source.matlab -(comment, string, interpolation, comment *, string *, interpolation *)':
+  'source.matlab -(comment, string, interpolation, source.shell, comment *, string *, interpolation *, source.shell *)':
     patterns: [
       {
         include: '#keywords'
@@ -54,7 +54,7 @@ injections: {
         include: '#overload_definition'
       }
     ]
-  'source.matlab -(comment, string, interpolation, assignment, comment *, string *, interpolation *, assignment *)':
+  'source.matlab -(comment, string, interpolation, assignment, source.shell, comment *, string *, interpolation *, assignment *, source.shell *)':
     patterns: [
       {
         include: '#package_builtin_functions'
@@ -78,7 +78,7 @@ injections: {
         include: '#package_word_operators'
       }
     ]
-  'source.matlab -(comment, support, string, interpolation, entity.name.function, entity.name.namespace, comment *, support *, string *, interpolation *, entity.name.function *, entity.name.namespace *)':
+  'source.matlab -(comment, support, string, interpolation, entity.name, source.shell, comment *, support *, string *, interpolation *, entity.name *, source.shell *)':
     patterns: [
       {
         include: '#readwrite_operations'
