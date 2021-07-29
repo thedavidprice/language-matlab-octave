@@ -5765,11 +5765,11 @@ repository:
   property:
     comment: 'Class property or enumeration member access'
     name: 'variable.other.property.matlab'
-    match: '(?<=\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:\\(|\\{|\\.\\())'
+    match: '(?<=\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:["\']|\\(|\\{|\\.\\())'
   readwrite_variable:
     comment: 'Top-level workspace variable highlighting'
     name: 'variable.other.readwrite.matlab'
-    match: '(?<![a-zA-Z0-9_]|\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|\\(|\\{|\\.\\()'
+    match: '(?<![a-zA-Z0-9_]|\\.)[a-zA-Z][a-zA-Z0-9_]*(?![a-zA-Z0-9_]|(?:["\']|\\(|\\{|\\.\\())'
   argument_validation:
     comment: 'Argument validation functions'
     name: 'keyword.operator.word.matlab'
