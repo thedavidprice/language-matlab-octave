@@ -1,0 +1,146 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "internal.Serialport.writeread [matlab]":
+        prefix: "internal.Serialport.writeread"
+        body: '''${3:response} = internal.Serialport.writeread(${1:obj}, ${2:command})'''
+        description: '''[matlab] 
+        response = internal.Serialport.writeread(obj, command)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.writeread.html'
+
+
+    "internal.Serialport.flush [matlab]":
+        prefix: "internal.Serialport.flush"
+        body: '''internal.Serialport.flush(${1:obj}, ${2:optional_buffer})'''
+        description: '''[matlab] 
+        internal.Serialport.flush(obj, optional_buffer)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.flush.html'
+
+
+    "internal.Serialport.readline [matlab]":
+        prefix: "internal.Serialport.readline"
+        body: '''${2:data} = internal.Serialport.readline(${1:obj})'''
+        description: '''[matlab] 
+        data = internal.Serialport.readline(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.readline.html'
+
+
+    "internal.Serialport.readbinblock [matlab]":
+        prefix: "internal.Serialport.readbinblock"
+        body: '''${3:data} = internal.Serialport.readbinblock(${1:obj}, ${2:optional_precision})'''
+        description: '''[matlab] 
+        data = internal.Serialport.readbinblock(obj, optional_precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.readbinblock.html'
+
+
+    "internal.Serialport.write [matlab]":
+        prefix: "internal.Serialport.write"
+        body: '''internal.Serialport.write(${1:obj}, ${2:data}, ${3:precision})'''
+        description: '''[matlab] 
+        internal.Serialport.write(obj, data, precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.write.html'
+
+
+    "internal.Serialport.configureTerminator [matlab]":
+        prefix: "internal.Serialport.configureTerminator"
+        body: '''internal.Serialport.configureTerminator(${1:obj}, ${2:terminator}, ${3:writeTerminator})'''
+        description: '''[matlab] 
+        internal.Serialport.configureTerminator(obj, terminator, writeTerminator)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.configureTerminator.html'
+
+
+    "internal.Serialport.getpinstatus [matlab]":
+        prefix: "internal.Serialport.getpinstatus"
+        body: '''${2:status} = internal.Serialport.getpinstatus(${1:obj})'''
+        description: '''[matlab] 
+        status = internal.Serialport.getpinstatus(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.getpinstatus.html'
+
+
+    "internal.Serialport.setRTS [matlab]":
+        prefix: "internal.Serialport.setRTS"
+        body: '''internal.Serialport.setRTS(${1:obj}, ${2:flag})'''
+        description: '''[matlab] 
+        internal.Serialport.setRTS(obj, flag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.setRTS.html'
+
+
+    "internal.Serialport.read [matlab]":
+        prefix: "internal.Serialport.read"
+        body: '''${4:data} = internal.Serialport.read(${1:obj}, ${2:count}, ${3:precision})'''
+        description: '''[matlab] 
+        data = internal.Serialport.read(obj, count, precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.read.html'
+
+
+    "internal.Serialport.writebinblock [matlab]":
+        prefix: "internal.Serialport.writebinblock"
+        body: '''internal.Serialport.writebinblock(${1:obj}, ${2:data}, ${3:precision})'''
+        description: '''[matlab] 
+        internal.Serialport.writebinblock(obj, data, precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.writebinblock.html'
+
+
+    "serialport [matlab]":
+        prefix: "serialport"
+        body: '''${9:obj} = serialport(${1:Port}, ${2:BaudRate}, 'ByteOrder', ${3:value}, 'DataBits', ${4:value}, 'FlowControl', ${5:value}, 'Parity', ${6:value}, 'StopBits', ${7:value}, 'Timeout', ${8:value})'''
+        description: '''[matlab] Connection to serial port
+        obj = serialport(Port, BaudRate, 'ByteOrder', value, 'DataBits', value, 'FlowControl', value, 'Parity', value, 'StopBits', value, 'Timeout', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/serialport.html'
+
+
+    "internal.Serialport.configureCallback [matlab]":
+        prefix: "internal.Serialport.configureCallback"
+        body: '''internal.Serialport.configureCallback(${1:obj}, ${2:mode}, ${3:count}, ${4:callbackfcn})'''
+        description: '''[matlab] 
+        internal.Serialport.configureCallback(obj, mode, count, callbackfcn)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.configureCallback.html'
+
+
+    "internal.Serialport.setDTR [matlab]":
+        prefix: "internal.Serialport.setDTR"
+        body: '''internal.Serialport.setDTR(${1:obj}, ${2:flag})'''
+        description: '''[matlab] 
+        internal.Serialport.setDTR(obj, flag)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.setDTR.html'
+
+
+    "internal.Serialport.writeline [matlab]":
+        prefix: "internal.Serialport.writeline"
+        body: '''internal.Serialport.writeline(${1:obj}, ${2:data})'''
+        description: '''[matlab] 
+        internal.Serialport.writeline(obj, data)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.writeline.html'
+
+
+    "serialportlist [matlab]":
+        prefix: "serialportlist"
+        body: '''serialportlist(${1:optional_ports})'''
+        description: '''[matlab] List of serial ports connected to your system
+        serialportlist(optional_ports)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/serialportlist.html'
+
+
+    "internal.Serialport.delete [matlab]":
+        prefix: "internal.Serialport.delete"
+        body: '''internal.Serialport.delete(${1:obj})'''
+        description: '''[matlab] 
+        internal.Serialport.delete(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/internal.Serialport.delete.html'
+

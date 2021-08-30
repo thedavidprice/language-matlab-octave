@@ -1,0 +1,392 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "fitcnb [stats]":
+        prefix: "fitcnb"
+        body: '''fitcnb(${1:Tbl}, ${2:ResponseVarName}, 'DistributionNames', ${3:value}, 'Kernel', ${4:value}, 'Support', ${5:value}, 'Width', ${6:value}, 'CrossVal', ${7:value}, 'CVPartition', ${8:value}, 'Holdout', ${9:value}, 'KFold', ${10:value}, 'Leaveout', ${11:value}, 'CategoricalPredictors', ${12:value}, 'ClassNames', ${13:value}, 'Cost', ${14:value}, 'PredictorNames', ${15:value}, 'Prior', ${16:value}, 'ResponseName', ${17:value}, 'ScoreTransform', ${18:value}, 'Weights', ${19:value}, 'OptimizeHyperparameters', ${20:value}, 'HyperparameterOptimizationOptions', ${21:value})'''
+        description: '''[stats] Train multiclass naive Bayes model
+        fitcnb(Tbl, ResponseVarName, 'DistributionNames', value, 'Kernel', value, 'Support', value, 'Width', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'CategoricalPredictors', value, 'ClassNames', value, 'Cost', value, 'PredictorNames', value, 'Prior', value, 'ResponseName', value, 'ScoreTransform', value, 'Weights', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitcnb.html'
+
+
+    "lassoglm [stats]":
+        prefix: "lassoglm"
+        body: '''lassoglm(${1:X}, ${2:Y}, ${3:distr}, 'Alpha', ${4:value}, 'CV', ${5:value}, 'DFmax', ${6:value}, 'Lambda', ${7:value}, 'LambdaRatio', ${8:value}, 'Link', ${9:value}, 'MaxIter', ${10:value}, 'MCReps', ${11:value}, 'NumLambda', ${12:value}, 'Offset', ${13:value}, 'Options', ${14:value}, 'PredictorNames', ${15:value}, 'RelTol', ${16:value}, 'Standardize', ${17:value}, 'Weights', ${18:value})'''
+        description: '''[stats] Lasso or elastic net regularization for generalized linear models
+        lassoglm(X, Y, distr, 'Alpha', value, 'CV', value, 'DFmax', value, 'Lambda', value, 'LambdaRatio', value, 'Link', value, 'MaxIter', value, 'MCReps', value, 'NumLambda', value, 'Offset', value, 'Options', value, 'PredictorNames', value, 'RelTol', value, 'Standardize', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/lassoglm.html'
+
+
+    "makecdiscr [stats]":
+        prefix: "makecdiscr"
+        body: '''makecdiscr(${1:Mu}, ${2:Sigma}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'PredictorNames', ${5:value}, 'Prior', ${6:value}, 'ResponseName', ${7:value})'''
+        description: '''[stats] Construct discriminant analysis classifier from parameters
+        makecdiscr(Mu, Sigma, 'ClassNames', value, 'Cost', value, 'PredictorNames', value, 'Prior', value, 'ResponseName', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/makecdiscr.html'
+
+
+    "testcholdout [stats]":
+        prefix: "testcholdout"
+        body: '''testcholdout(${1:YHat1}, ${2:YHat2}, ${3:Y}, 'Alpha', ${4:value}, 'Alternative', ${5:value}, 'ClassNames', ${6:value}, 'Cost', ${7:value}, 'CostTest', ${8:value}, 'Test', ${9:value})'''
+        description: '''[stats] Compare predictive accuracies of two classification models
+        testcholdout(YHat1, YHat2, Y, 'Alpha', value, 'Alternative', value, 'ClassNames', value, 'Cost', value, 'CostTest', value, 'Test', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/testcholdout.html'
+
+
+    "fsrnca [stats]":
+        prefix: "fsrnca"
+        body: '''fsrnca(${1:X}, ${2:Y}, 'FitMethod', ${3:value}, 'NumPartitions', ${4:value}, 'Lambda', ${5:value}, 'LengthScale', ${6:value}, 'InitialFeatureWeights', ${7:value}, 'Weights', ${8:value}, 'Standardize', ${9:value}, 'Verbose', ${10:value}, 'Solver', ${11:value}, 'LossFunction', ${12:value}, 'Epsilon', ${13:value}, 'CacheSize', ${14:value}, 'HessianHistorySize', ${15:value}, 'InitialStepSize', ${16:value}, 'LineSearchMethod', ${17:value}, 'MaxLineSearchIterations', ${18:value}, 'GradientTolerance', ${19:value}, 'InitialLearningRate', ${20:value}, 'MiniBatchSize', ${21:value}, 'PassLimit', ${22:value}, 'NumPrint', ${23:value}, 'NumTuningIterations', ${24:value}, 'TuningSubsetSize', ${25:value}, 'IterationLimit', ${26:value}, 'StepTolerance', ${27:value}, 'MiniBatchLBFGSIterations', ${28:value})'''
+        description: '''[stats] Feature selection using neighborhood component analysis
+for regression 
+        fsrnca(X, Y, 'FitMethod', value, 'NumPartitions', value, 'Lambda', value, 'LengthScale', value, 'InitialFeatureWeights', value, 'Weights', value, 'Standardize', value, 'Verbose', value, 'Solver', value, 'LossFunction', value, 'Epsilon', value, 'CacheSize', value, 'HessianHistorySize', value, 'InitialStepSize', value, 'LineSearchMethod', value, 'MaxLineSearchIterations', value, 'GradientTolerance', value, 'InitialLearningRate', value, 'MiniBatchSize', value, 'PassLimit', value, 'NumPrint', value, 'NumTuningIterations', value, 'TuningSubsetSize', value, 'IterationLimit', value, 'StepTolerance', value, 'MiniBatchLBFGSIterations', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fsrnca.html'
+
+
+    "fitcecoc [stats]":
+        prefix: "fitcecoc"
+        body: '''fitcecoc(${1:Tbl}, ${2:ResponseVarName}, 'Coding', ${3:value}, 'FitPosterior', ${4:value}, 'Learners', ${5:value}, 'ObservationsIn', ${6:value}, 'Verbose', ${7:value}, 'CrossVal', ${8:value}, 'CVPartition', ${9:value}, 'Holdout', ${10:value}, 'KFold', ${11:value}, 'Leaveout', ${12:value}, 'CategoricalPredictors', ${13:value}, 'ClassNames', ${14:value}, 'Cost', ${15:value}, 'Options', ${16:value}, 'PredictorNames', ${17:value}, 'Prior', ${18:value}, 'ResponseName', ${19:value}, 'Weights', ${20:value}, 'NumBins', ${21:value}, 'OptimizeHyperparameters', ${22:value}, 'ScoreTransform', ${23:value}, 'HyperparameterOptimizationOptions', ${24:value})'''
+        description: '''[stats] Fit multiclass models for support vector machines or other
+classifiers
+        fitcecoc(Tbl, ResponseVarName, 'Coding', value, 'FitPosterior', value, 'Learners', value, 'ObservationsIn', value, 'Verbose', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'CategoricalPredictors', value, 'ClassNames', value, 'Cost', value, 'Options', value, 'PredictorNames', value, 'Prior', value, 'ResponseName', value, 'Weights', value, 'NumBins', value, 'OptimizeHyperparameters', value, 'ScoreTransform', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitcecoc.html'
+
+
+    "fitlm [stats]":
+        prefix: "fitlm"
+        body: '''fitlm(${1:tbl}, ${2:optional_modelspec}, 'CategoricalVars', ${3:value}, 'Exclude', ${4:value}, 'Intercept', ${5:value}, 'PredictorVars', ${6:value}, 'ResponseVar', ${7:value}, 'RobustOpts', ${8:value}, 'VarNames', ${9:value}, 'Weights', ${10:value})'''
+        description: '''[stats] Fit linear regression model
+        fitlm(tbl, optional_modelspec, 'CategoricalVars', value, 'Exclude', value, 'Intercept', value, 'PredictorVars', value, 'ResponseVar', value, 'RobustOpts', value, 'VarNames', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitlm.html'
+
+
+    "fitrsvm [stats]":
+        prefix: "fitrsvm"
+        body: '''fitrsvm(${1:Tbl}, ${2:ResponseVarName}, 'BoxConstraint', ${3:value}, 'KernelFunction', ${4:value}, 'KernelScale', ${5:value}, 'PolynomialOrder', ${6:value}, 'KernelOffset', ${7:value}, 'Epsilon', ${8:value}, 'Standardize', ${9:value}, 'Solver', ${10:value}, 'Alpha', ${11:value}, 'CacheSize', ${12:value}, 'ClipAlphas', ${13:value}, 'NumPrint', ${14:value}, 'OutlierFraction', ${15:value}, 'RemoveDuplicates', ${16:value}, 'Verbose', ${17:value}, 'CategoricalPredictors', ${18:value}, 'PredictorNames', ${19:value}, 'ResponseName', ${20:value}, 'Weights', ${21:value}, 'CrossVal', ${22:value}, 'CVPartition', ${23:value}, 'Holdout', ${24:value}, 'KFold', ${25:value}, 'Leaveout', ${26:value}, 'DeltaGradientTolerance', ${27:value}, 'GapTolerance', ${28:value}, 'IterationLimit', ${29:value}, 'KKTTolerance', ${30:value}, 'ShrinkagePeriod', ${31:value}, 'OptimizeHyperparameters', ${32:value}, 'HyperparameterOptimizationOptions', ${33:value})'''
+        description: '''[stats] Fit a support vector machine regression model
+        fitrsvm(Tbl, ResponseVarName, 'BoxConstraint', value, 'KernelFunction', value, 'KernelScale', value, 'PolynomialOrder', value, 'KernelOffset', value, 'Epsilon', value, 'Standardize', value, 'Solver', value, 'Alpha', value, 'CacheSize', value, 'ClipAlphas', value, 'NumPrint', value, 'OutlierFraction', value, 'RemoveDuplicates', value, 'Verbose', value, 'CategoricalPredictors', value, 'PredictorNames', value, 'ResponseName', value, 'Weights', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'DeltaGradientTolerance', value, 'GapTolerance', value, 'IterationLimit', value, 'KKTTolerance', value, 'ShrinkagePeriod', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitrsvm.html'
+
+
+    "fitSVMPosterior [stats]":
+        prefix: "fitSVMPosterior"
+        body: '''fitSVMPosterior(${1:SVMModel}, 'CVPartition', ${2:value}, 'Holdout', ${3:value}, 'KFold', ${4:value}, 'Leaveout', ${5:value})'''
+        description: '''[stats] Fit posterior probabilities
+        fitSVMPosterior(SVMModel, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitsvmposterior.html'
+
+
+    "fitglme [stats]":
+        prefix: "fitglme"
+        body: '''fitglme(${1:tbl}, ${2:formula}, 'BinomialSize', ${3:value}, 'CheckHessian', ${4:value}, 'CovarianceMethod', ${5:value}, 'CovariancePattern', ${6:value}, 'DispersionFlag', ${7:value}, 'Distribution', ${8:value}, 'DummyVarCoding', ${9:value}, 'EBMethod', ${10:value}, 'EBOptions', ${11:value}, 'Exclude', ${12:value}, 'FitMethod', ${13:value}, 'InitPLIterations', ${14:value}, 'Link', ${15:value}, 'MuStart', ${16:value}, 'Offset', ${17:value}, 'Optimizer', ${18:value}, 'OptimizerOptions', ${19:value}, 'PLIterations', ${20:value}, 'PLTolerance', ${21:value}, 'StartMethod', ${22:value}, 'UseSequentialFitting', ${23:value}, 'Verbose', ${24:value}, 'Weights', ${25:value})'''
+        description: '''[stats] Fit generalized linear mixed-effects model
+        fitglme(tbl, formula, 'BinomialSize', value, 'CheckHessian', value, 'CovarianceMethod', value, 'CovariancePattern', value, 'DispersionFlag', value, 'Distribution', value, 'DummyVarCoding', value, 'EBMethod', value, 'EBOptions', value, 'Exclude', value, 'FitMethod', value, 'InitPLIterations', value, 'Link', value, 'MuStart', value, 'Offset', value, 'Optimizer', value, 'OptimizerOptions', value, 'PLIterations', value, 'PLTolerance', value, 'StartMethod', value, 'UseSequentialFitting', value, 'Verbose', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitglme.html'
+
+
+    "fitglm [stats]":
+        prefix: "fitglm"
+        body: '''fitglm(${1:tbl}, ${2:optional_modelspec}, 'BinomialSize', ${3:value}, 'CategoricalVars', ${4:value}, 'DispersionFlag', ${5:value}, 'Distribution', ${6:value}, 'Exclude', ${7:value}, 'Intercept', ${8:value}, 'Link', ${9:value}, 'Offset', ${10:value}, 'PredictorVars', ${11:value}, 'ResponseVar', ${12:value}, 'VarNames', ${13:value}, 'Weights', ${14:value})'''
+        description: '''[stats] Create generalized linear regression model
+        fitglm(tbl, optional_modelspec, 'BinomialSize', value, 'CategoricalVars', value, 'DispersionFlag', value, 'Distribution', value, 'Exclude', value, 'Intercept', value, 'Link', value, 'Offset', value, 'PredictorVars', value, 'ResponseVar', value, 'VarNames', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitglm.html'
+
+
+    "fitrlinear [stats]":
+        prefix: "fitrlinear"
+        body: '''fitrlinear(${1:X}, ${2:Y}, 'Epsilon', ${3:value}, 'Lambda', ${4:value}, 'Learner', ${5:value}, 'ObservationsIn', ${6:value}, 'Regularization', ${7:value}, 'Solver', ${8:value}, 'Beta', ${9:value}, 'Bias', ${10:value}, 'FitBias', ${11:value}, 'PostFitBias', ${12:value}, 'Verbose', ${13:value}, 'BatchSize', ${14:value}, 'LearnRate', ${15:value}, 'OptimizeLearnRate', ${16:value}, 'TruncationPeriod', ${17:value}, 'Weights', ${18:value}, 'CrossVal', ${19:value}, 'CVPartition', ${20:value}, 'Holdout', ${21:value}, 'KFold', ${22:value}, 'BatchLimit', ${23:value}, 'BetaTolerance', ${24:value}, 'NumCheckConvergence', ${25:value}, 'PassLimit', ${26:value}, 'ValidationData', ${27:value}, 'GradientTolerance', ${28:value}, 'HessianHistorySize', ${29:value}, 'IterationLimit', ${30:value}, 'DeltaGradientTolerance', ${31:value}, 'OptimizeHyperparameters', ${32:value}, 'HyperparameterOptimizationOptions', ${33:value})'''
+        description: '''[stats] Fit linear regression model to high-dimensional data
+        fitrlinear(X, Y, 'Epsilon', value, 'Lambda', value, 'Learner', value, 'ObservationsIn', value, 'Regularization', value, 'Solver', value, 'Beta', value, 'Bias', value, 'FitBias', value, 'PostFitBias', value, 'Verbose', value, 'BatchSize', value, 'LearnRate', value, 'OptimizeLearnRate', value, 'TruncationPeriod', value, 'Weights', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'BatchLimit', value, 'BetaTolerance', value, 'NumCheckConvergence', value, 'PassLimit', value, 'ValidationData', value, 'GradientTolerance', value, 'HessianHistorySize', value, 'IterationLimit', value, 'DeltaGradientTolerance', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitrlinear.html'
+
+
+    "generateLearnerDataTypeFcn [stats]":
+        prefix: "generateLearnerDataTypeFcn"
+        body: '''generateLearnerDataTypeFcn(${1:filename}, ${2:X}, 'OutputFunctionName', ${3:value}, 'WordLength', ${4:value}, 'OutputRange', ${5:value}, 'PercentSafetyMargin', ${6:value})'''
+        description: '''[stats] Generate function that defines data types for fixed-point code
+      generation
+        generateLearnerDataTypeFcn(filename, X, 'OutputFunctionName', value, 'WordLength', value, 'OutputRange', value, 'PercentSafetyMargin', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/generatelearnerdatatypefcn.html'
+
+
+    "LinearModel.plotResiduals [stats]":
+        prefix: "LinearModel.plotResiduals"
+        body: '''LinearModel.plotResiduals(${1:model}, ${2:plottype}, ${3:properties})'''
+        description: '''[stats] 
+        LinearModel.plotResiduals(model, plottype, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/LinearModel.plotResiduals.html'
+
+
+    "loadLearnerForCoder [stats]":
+        prefix: "loadLearnerForCoder"
+        body: '''loadLearnerForCoder(${1:filename}, 'DataType', ${2:value})'''
+        description: '''[stats] Reconstruct model object from saved model for code generation
+        loadLearnerForCoder(filename, 'DataType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/loadlearnerforcoder.html'
+
+
+    "saveLearnerForCoder [stats]":
+        prefix: "saveLearnerForCoder"
+        body: '''saveLearnerForCoder(${1:Mdl}, ${2:filename})'''
+        description: '''[stats] Save model object in file for code generation
+        saveLearnerForCoder(Mdl, filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/savelearnerforcoder.html'
+
+
+    "loadCompactModel [stats]":
+        prefix: "loadCompactModel"
+        body: '''loadCompactModel(${1:filename})'''
+        description: '''[stats] (To be removed) Reconstruct model object from saved model for code
+            generation
+        loadCompactModel(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/loadcompactmodel.html'
+
+
+    "fitcknn [stats]":
+        prefix: "fitcknn"
+        body: '''fitcknn(${1:Tbl}, ${2:ResponseVarName}, 'BreakTies', ${3:value}, 'BucketSize', ${4:value}, 'CategoricalPredictors', ${5:value}, 'ClassNames', ${6:value}, 'Cost', ${7:value}, 'Cov', ${8:value}, 'IncludeTies', ${9:value}, 'NSMethod', ${10:value}, 'PredictorNames', ${11:value}, 'Prior', ${12:value}, 'ResponseName', ${13:value}, 'Scale', ${14:value}, 'ScoreTransform', ${15:value}, 'Weights', ${16:value}, 'CrossVal', ${17:value}, 'CVPartition', ${18:value}, 'Holdout', ${19:value}, 'KFold', ${20:value}, 'Leaveout', ${21:value}, 'Distance', ${22:value}, 'DistanceWeight', ${23:value}, 'Exponent', ${24:value}, 'NumNeighbors', ${25:value}, 'Standardize', ${26:value}, 'OptimizeHyperparameters', ${27:value}, 'HyperparameterOptimizationOptions', ${28:value})'''
+        description: '''[stats] Fit k-nearest neighbor classifier
+        fitcknn(Tbl, ResponseVarName, 'BreakTies', value, 'BucketSize', value, 'CategoricalPredictors', value, 'ClassNames', value, 'Cost', value, 'Cov', value, 'IncludeTies', value, 'NSMethod', value, 'PredictorNames', value, 'Prior', value, 'ResponseName', value, 'Scale', value, 'ScoreTransform', value, 'Weights', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'Distance', value, 'DistanceWeight', value, 'Exponent', value, 'NumNeighbors', value, 'Standardize', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitcknn.html'
+
+
+    "fitctree [stats]":
+        prefix: "fitctree"
+        body: '''fitctree(${1:Tbl}, ${2:ResponseVarName}, 'AlgorithmForCategorical', ${3:value}, 'CategoricalPredictors', ${4:value}, 'ClassNames', ${5:value}, 'Cost', ${6:value}, 'MaxNumCategories', ${7:value}, 'MergeLeaves', ${8:value}, 'MinParentSize', ${9:value}, 'NumBins', ${10:value}, 'PredictorNames', ${11:value}, 'PredictorSelection', ${12:value}, 'Prior', ${13:value}, 'Prune', ${14:value}, 'PruneCriterion', ${15:value}, 'ResponseName', ${16:value}, 'ScoreTransform', ${17:value}, 'Surrogate', ${18:value}, 'Weights', ${19:value}, 'CrossVal', ${20:value}, 'CVPartition', ${21:value}, 'Holdout', ${22:value}, 'KFold', ${23:value}, 'Leaveout', ${24:value}, 'MaxNumSplits', ${25:value}, 'MinLeafSize', ${26:value}, 'NumVariablesToSample', ${27:value}, 'SplitCriterion', ${28:value}, 'OptimizeHyperparameters', ${29:value}, 'HyperparameterOptimizationOptions', ${30:value})'''
+        description: '''[stats] Fit binary decision tree for multiclass classification
+        fitctree(Tbl, ResponseVarName, 'AlgorithmForCategorical', value, 'CategoricalPredictors', value, 'ClassNames', value, 'Cost', value, 'MaxNumCategories', value, 'MergeLeaves', value, 'MinParentSize', value, 'NumBins', value, 'PredictorNames', value, 'PredictorSelection', value, 'Prior', value, 'Prune', value, 'PruneCriterion', value, 'ResponseName', value, 'ScoreTransform', value, 'Surrogate', value, 'Weights', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'MaxNumSplits', value, 'MinLeafSize', value, 'NumVariablesToSample', value, 'SplitCriterion', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitctree.html'
+
+
+    "fitrkernel [stats]":
+        prefix: "fitrkernel"
+        body: '''fitrkernel(${1:X}, ${2:Y}, 'BoxConstraint', ${3:value}, 'Epsilon', ${4:value}, 'NumExpansionDimensions', ${5:value}, 'KernelScale', ${6:value}, 'Lambda', ${7:value}, 'Learner', ${8:value}, 'Verbose', ${9:value}, 'BlockSize', ${10:value}, 'RandomStream', ${11:value}, 'ResponseTransform', ${12:value}, 'Weights', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'HessianHistorySize', ${16:value}, 'IterationLimit', ${17:value})'''
+        description: '''[stats] Fit Gaussian kernel regression model using random feature expansion
+        fitrkernel(X, Y, 'BoxConstraint', value, 'Epsilon', value, 'NumExpansionDimensions', value, 'KernelScale', value, 'Lambda', value, 'Learner', value, 'Verbose', value, 'BlockSize', value, 'RandomStream', value, 'ResponseTransform', value, 'Weights', value, 'BetaTolerance', value, 'GradientTolerance', value, 'HessianHistorySize', value, 'IterationLimit', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitrkernel.html'
+
+
+    "fitcdiscr [stats]":
+        prefix: "fitcdiscr"
+        body: '''fitcdiscr(${1:Tbl}, ${2:ResponseVarName}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'FillCoeffs', ${5:value}, 'PredictorNames', ${6:value}, 'Prior', ${7:value}, 'ResponseName', ${8:value}, 'SaveMemory', ${9:value}, 'ScoreTransform', ${10:value}, 'Weights', ${11:value}, 'CrossVal', ${12:value}, 'CVPartition', ${13:value}, 'Holdout', ${14:value}, 'KFold', ${15:value}, 'Leaveout', ${16:value}, 'Delta', ${17:value}, 'DiscrimType', ${18:value}, 'Gamma', ${19:value}, 'OptimizeHyperparameters', ${20:value}, 'HyperparameterOptimizationOptions', ${21:value})'''
+        description: '''[stats] Fit discriminant analysis classifier
+        fitcdiscr(Tbl, ResponseVarName, 'ClassNames', value, 'Cost', value, 'FillCoeffs', value, 'PredictorNames', value, 'Prior', value, 'ResponseName', value, 'SaveMemory', value, 'ScoreTransform', value, 'Weights', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'Delta', value, 'DiscrimType', value, 'Gamma', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitcdiscr.html'
+
+
+    "fitnlm [stats]":
+        prefix: "fitnlm"
+        body: '''fitnlm(${1:tbl}, ${2:modelfun}, ${3:beta0}, 'CoefficientNames', ${4:value}, 'ErrorModel', ${5:value}, 'ErrorParameters', ${6:value}, 'Exclude', ${7:value}, 'Options', ${8:value}, 'PredictorVars', ${9:value}, 'ResponseVar', ${10:value}, 'VarNames', ${11:value}, 'Weights', ${12:value})'''
+        description: '''[stats] Fit nonlinear regression model
+        fitnlm(tbl, modelfun, beta0, 'CoefficientNames', value, 'ErrorModel', value, 'ErrorParameters', value, 'Exclude', value, 'Options', value, 'PredictorVars', value, 'ResponseVar', value, 'VarNames', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitnlm.html'
+
+
+    "designecoc [stats]":
+        prefix: "designecoc"
+        body: '''designecoc(${1:K}, ${2:name}, 'NumTrials', ${3:value})'''
+        description: '''[stats] Coding matrix for reducing error-correcting output code
+to binary
+        designecoc(K, name, 'NumTrials', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/designecoc.html'
+
+
+    "LinearModel.plotDiagnostics [stats]":
+        prefix: "LinearModel.plotDiagnostics"
+        body: '''LinearModel.plotDiagnostics(${1:model}, ${2:plottype}, ${3:properties})'''
+        description: '''[stats] 
+        LinearModel.plotDiagnostics(model, plottype, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/LinearModel.plotDiagnostics.html'
+
+
+    "fitrm [stats]":
+        prefix: "fitrm"
+        body: '''fitrm(${1:tbl}, ${2:modelspec}, 'WithinDesign', ${3:value}, 'WithinModel', ${4:value})'''
+        description: '''[stats] Fit repeated measures model
+        fitrm(tbl, modelspec, 'WithinDesign', value, 'WithinModel', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitrm.html'
+
+
+    "fitcensemble [stats]":
+        prefix: "fitcensemble"
+        body: '''fitcensemble(${1:Tbl}, ${2:ResponseVarName}, 'Method', ${3:value}, 'NumLearningCycles', ${4:value}, 'Learners', ${5:value}, 'NumBins', ${6:value}, 'NPrint', ${7:value}, 'CategoricalPredictors', ${8:value}, 'PredictorNames', ${9:value}, 'ResponseName', ${10:value}, 'CrossVal', ${11:value}, 'CVPartition', ${12:value}, 'Holdout', ${13:value}, 'KFold', ${14:value}, 'Leaveout', ${15:value}, 'ClassNames', ${16:value}, 'Cost', ${17:value}, 'Prior', ${18:value}, 'Weights', ${19:value}, 'FResample', ${20:value}, 'Replace', ${21:value}, 'Resample', ${22:value}, 'LearnRate', ${23:value}, 'RatioToSmallest', ${24:value}, 'MarginPrecision', ${25:value}, 'RobustErrorGoal', ${26:value}, 'RobustMarginSigma', ${27:value}, 'RobustMaxMargin', ${28:value}, 'NPredToSample', ${29:value}, 'OptimizeHyperparameters', ${30:value}, 'HyperparameterOptimizationOptions', ${31:value})'''
+        description: '''[stats] Fit ensemble of learners for classification
+        fitcensemble(Tbl, ResponseVarName, 'Method', value, 'NumLearningCycles', value, 'Learners', value, 'NumBins', value, 'NPrint', value, 'CategoricalPredictors', value, 'PredictorNames', value, 'ResponseName', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'ClassNames', value, 'Cost', value, 'Prior', value, 'Weights', value, 'FResample', value, 'Replace', value, 'Resample', value, 'LearnRate', value, 'RatioToSmallest', value, 'MarginPrecision', value, 'RobustErrorGoal', value, 'RobustMarginSigma', value, 'RobustMaxMargin', value, 'NPredToSample', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitcensemble.html'
+
+
+    "fscmrmr [stats]":
+        prefix: "fscmrmr"
+        body: '''fscmrmr(${1:Tbl}, ${2:ResponseVarName}, 'CategoricalPredictors', ${3:value}, 'ClassNames', ${4:value}, 'Prior', ${5:value}, 'Weights', ${6:value}, 'Verbose', ${7:value})'''
+        description: '''[stats] Rank features for classification using minimum redundancy maximum relevance
+      (MRMR) algorithm
+        fscmrmr(Tbl, ResponseVarName, 'CategoricalPredictors', value, 'ClassNames', value, 'Prior', value, 'Weights', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fscmrmr.html'
+
+
+    "hyperparameters [stats]":
+        prefix: "hyperparameters"
+        body: '''hyperparameters(${1:FitFcnName}, ${2:predictors}, ${3:response}, ${4:optional_LearnerType})'''
+        description: '''[stats] Variable descriptions for optimizing a fit function
+        hyperparameters(FitFcnName, predictors, response, optional_LearnerType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/hyperparameters.html'
+
+
+    "stepwiselm [stats]":
+        prefix: "stepwiselm"
+        body: '''stepwiselm(${1:tbl}, ${2:modelspec}, 'CategoricalVars', ${3:value}, 'Criterion', ${4:value}, 'Exclude', ${5:value}, 'Intercept', ${6:value}, 'Lower', ${7:value}, 'NSteps', ${8:value}, 'PEnter', ${9:value}, 'PredictorVars', ${10:value}, 'PRemove', ${11:value}, 'ResponseVar', ${12:value}, 'Upper', ${13:value}, 'VarNames', ${14:value}, 'Verbose', ${15:value}, 'Weights', ${16:value})'''
+        description: '''[stats]  Fit linear regression model using stepwise regression
+        stepwiselm(tbl, modelspec, 'CategoricalVars', value, 'Criterion', value, 'Exclude', value, 'Intercept', value, 'Lower', value, 'NSteps', value, 'PEnter', value, 'PredictorVars', value, 'PRemove', value, 'ResponseVar', value, 'Upper', value, 'VarNames', value, 'Verbose', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/stepwiselm.html'
+
+
+    "fscnca [stats]":
+        prefix: "fscnca"
+        body: '''fscnca(${1:X}, ${2:Y}, 'FitMethod', ${3:value}, 'NumPartitions', ${4:value}, 'Lambda', ${5:value}, 'LengthScale', ${6:value}, 'InitialFeatureWeights', ${7:value}, 'Weights', ${8:value}, 'Prior', ${9:value}, 'Standardize', ${10:value}, 'Verbose', ${11:value}, 'Solver', ${12:value}, 'LossFunction', ${13:value}, 'CacheSize', ${14:value}, 'HessianHistorySize', ${15:value}, 'InitialStepSize', ${16:value}, 'LineSearchMethod', ${17:value}, 'MaxLineSearchIterations', ${18:value}, 'GradientTolerance', ${19:value}, 'InitialLearningRate', ${20:value}, 'MiniBatchSize', ${21:value}, 'PassLimit', ${22:value}, 'NumPrint', ${23:value}, 'NumTuningIterations', ${24:value}, 'TuningSubsetSize', ${25:value}, 'IterationLimit', ${26:value}, 'StepTolerance', ${27:value}, 'MiniBatchLBFGSIterations', ${28:value})'''
+        description: '''[stats] Feature selection using neighborhood component analysis
+for classification 
+        fscnca(X, Y, 'FitMethod', value, 'NumPartitions', value, 'Lambda', value, 'LengthScale', value, 'InitialFeatureWeights', value, 'Weights', value, 'Prior', value, 'Standardize', value, 'Verbose', value, 'Solver', value, 'LossFunction', value, 'CacheSize', value, 'HessianHistorySize', value, 'InitialStepSize', value, 'LineSearchMethod', value, 'MaxLineSearchIterations', value, 'GradientTolerance', value, 'InitialLearningRate', value, 'MiniBatchSize', value, 'PassLimit', value, 'NumPrint', value, 'NumTuningIterations', value, 'TuningSubsetSize', value, 'IterationLimit', value, 'StepTolerance', value, 'MiniBatchLBFGSIterations', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fscnca.html'
+
+
+    "saveCompactModel [stats]":
+        prefix: "saveCompactModel"
+        body: '''saveCompactModel(${1:Mdl}, ${2:filename})'''
+        description: '''[stats] (To be removed) Save model object in file for code
+                        generation
+        saveCompactModel(Mdl, filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/savecompactmodel.html'
+
+
+    "learnerCoderConfigurer [stats]":
+        prefix: "learnerCoderConfigurer"
+        body: '''learnerCoderConfigurer(${1:Mdl}, ${2:X}, 'NumOutputs', ${3:value}, 'OutputFileName', ${4:value}, 'Verbose', ${5:value})'''
+        description: '''[stats] Create coder configurer of machine learning model
+        learnerCoderConfigurer(Mdl, X, 'NumOutputs', value, 'OutputFileName', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/learnercoderconfigurer.html'
+
+
+    "fitckernel [stats]":
+        prefix: "fitckernel"
+        body: '''fitckernel(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'KernelScale', ${4:value}, 'Learner', ${5:value}, 'Verbose', ${6:value}, 'ExpansionDimension', ${7:value}, 'BlockSize', ${8:value}, 'RandomStream', ${9:value}, 'ClassNames', ${10:value}, 'Cost', ${11:value}, 'Prior', ${12:value}, 'Weights', ${13:value}, 'HessianHistorySize', ${14:value}, 'BetaTolerance', ${15:value}, 'GradientTolerance', ${16:value}, 'IterationLimit', ${17:value})'''
+        description: '''[stats] Fit Gaussian kernel classification model using random feature
+            expansion
+        fitckernel(X, Y, 'Lambda', value, 'KernelScale', value, 'Learner', value, 'Verbose', value, 'ExpansionDimension', value, 'BlockSize', value, 'RandomStream', value, 'ClassNames', value, 'Cost', value, 'Prior', value, 'Weights', value, 'HessianHistorySize', value, 'BetaTolerance', value, 'GradientTolerance', value, 'IterationLimit', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitckernel.html'
+
+
+    "fitcsvm [stats]":
+        prefix: "fitcsvm"
+        body: '''fitcsvm(${1:Tbl}, ${2:ResponseVarName}, 'BoxConstraint', ${3:value}, 'KernelFunction', ${4:value}, 'KernelScale', ${5:value}, 'PolynomialOrder', ${6:value}, 'KernelOffset', ${7:value}, 'Standardize', ${8:value}, 'Solver', ${9:value}, 'Alpha', ${10:value}, 'CacheSize', ${11:value}, 'ClipAlphas', ${12:value}, 'Nu', ${13:value}, 'NumPrint', ${14:value}, 'OutlierFraction', ${15:value}, 'RemoveDuplicates', ${16:value}, 'Verbose', ${17:value}, 'CategoricalPredictors', ${18:value}, 'ClassNames', ${19:value}, 'Cost', ${20:value}, 'PredictorNames', ${21:value}, 'Prior', ${22:value}, 'ResponseName', ${23:value}, 'ScoreTransform', ${24:value}, 'Weights', ${25:value}, 'CrossVal', ${26:value}, 'CVPartition', ${27:value}, 'Holdout', ${28:value}, 'KFold', ${29:value}, 'Leaveout', ${30:value}, 'DeltaGradientTolerance', ${31:value}, 'GapTolerance', ${32:value}, 'IterationLimit', ${33:value}, 'KKTTolerance', ${34:value}, 'ShrinkagePeriod', ${35:value}, 'OptimizeHyperparameters', ${36:value}, 'HyperparameterOptimizationOptions', ${37:value})'''
+        description: '''[stats] Train support vector machine (SVM) classifier for one-class and binary
+            classification
+        fitcsvm(Tbl, ResponseVarName, 'BoxConstraint', value, 'KernelFunction', value, 'KernelScale', value, 'PolynomialOrder', value, 'KernelOffset', value, 'Standardize', value, 'Solver', value, 'Alpha', value, 'CacheSize', value, 'ClipAlphas', value, 'Nu', value, 'NumPrint', value, 'OutlierFraction', value, 'RemoveDuplicates', value, 'Verbose', value, 'CategoricalPredictors', value, 'ClassNames', value, 'Cost', value, 'PredictorNames', value, 'Prior', value, 'ResponseName', value, 'ScoreTransform', value, 'Weights', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'DeltaGradientTolerance', value, 'GapTolerance', value, 'IterationLimit', value, 'KKTTolerance', value, 'ShrinkagePeriod', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitcsvm.html'
+
+
+    "fitclinear [stats]":
+        prefix: "fitclinear"
+        body: '''fitclinear(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'Learner', ${4:value}, 'ObservationsIn', ${5:value}, 'Regularization', ${6:value}, 'Solver', ${7:value}, 'Beta', ${8:value}, 'Bias', ${9:value}, 'FitBias', ${10:value}, 'PostFitBias', ${11:value}, 'Verbose', ${12:value}, 'BatchSize', ${13:value}, 'LearnRate', ${14:value}, 'OptimizeLearnRate', ${15:value}, 'TruncationPeriod', ${16:value}, 'ClassNames', ${17:value}, 'Cost', ${18:value}, 'Prior', ${19:value}, 'Weights', ${20:value}, 'CrossVal', ${21:value}, 'CVPartition', ${22:value}, 'Holdout', ${23:value}, 'KFold', ${24:value}, 'BatchLimit', ${25:value}, 'BetaTolerance', ${26:value}, 'NumCheckConvergence', ${27:value}, 'PassLimit', ${28:value}, 'ValidationData', ${29:value}, 'DeltaGradientTolerance', ${30:value}, 'GradientTolerance', ${31:value}, 'HessianHistorySize', ${32:value}, 'IterationLimit', ${33:value}, 'OptimizeHyperparameters', ${34:value}, 'HyperparameterOptimizationOptions', ${35:value})'''
+        description: '''[stats] Fit linear classification model to high-dimensional data
+        fitclinear(X, Y, 'Lambda', value, 'Learner', value, 'ObservationsIn', value, 'Regularization', value, 'Solver', value, 'Beta', value, 'Bias', value, 'FitBias', value, 'PostFitBias', value, 'Verbose', value, 'BatchSize', value, 'LearnRate', value, 'OptimizeLearnRate', value, 'TruncationPeriod', value, 'ClassNames', value, 'Cost', value, 'Prior', value, 'Weights', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'BatchLimit', value, 'BetaTolerance', value, 'NumCheckConvergence', value, 'PassLimit', value, 'ValidationData', value, 'DeltaGradientTolerance', value, 'GradientTolerance', value, 'HessianHistorySize', value, 'IterationLimit', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitclinear.html'
+
+
+    "fitlme [stats]":
+        prefix: "fitlme"
+        body: '''fitlme(${1:tbl}, ${2:formula}, 'CovariancePattern', ${3:value}, 'FitMethod', ${4:value}, 'Weights', ${5:value}, 'Exclude', ${6:value}, 'DummyVarCoding', ${7:value}, 'Optimizer', ${8:value}, 'OptimizerOptions', ${9:value}, 'StartMethod', ${10:value}, 'Verbose', ${11:value}, 'CheckHessian', ${12:value})'''
+        description: '''[stats] Fit linear mixed-effects model
+        fitlme(tbl, formula, 'CovariancePattern', value, 'FitMethod', value, 'Weights', value, 'Exclude', value, 'DummyVarCoding', value, 'Optimizer', value, 'OptimizerOptions', value, 'StartMethod', value, 'Verbose', value, 'CheckHessian', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitlme.html'
+
+
+    "fitlmematrix [stats]":
+        prefix: "fitlmematrix"
+        body: '''fitlmematrix(${1:X}, ${2:y}, ${3:Z}, ${4:G}, 'FixedEffectPredictors', ${5:value}, 'RandomEffectPredictors', ${6:value}, 'ResponseVarName', ${7:value}, 'RandomEffectGroups', ${8:value}, 'CovariancePattern', ${9:value}, 'FitMethod', ${10:value}, 'Weights', ${11:value}, 'Exclude', ${12:value}, 'DummyVarCoding', ${13:value}, 'Optimizer', ${14:value}, 'OptimizerOptions', ${15:value}, 'StartMethod', ${16:value}, 'Verbose', ${17:value}, 'CheckHessian', ${18:value})'''
+        description: '''[stats] Fit linear mixed-effects model
+        fitlmematrix(X, y, Z, G, 'FixedEffectPredictors', value, 'RandomEffectPredictors', value, 'ResponseVarName', value, 'RandomEffectGroups', value, 'CovariancePattern', value, 'FitMethod', value, 'Weights', value, 'Exclude', value, 'DummyVarCoding', value, 'Optimizer', value, 'OptimizerOptions', value, 'StartMethod', value, 'Verbose', value, 'CheckHessian', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitlmematrix.html'
+
+
+    "stepwiseglm [stats]":
+        prefix: "stepwiseglm"
+        body: '''stepwiseglm(${1:tbl}, ${2:modelspec}, 'BinomialSize', ${3:value}, 'CategoricalVars', ${4:value}, 'Criterion', ${5:value}, 'DispersionFlag', ${6:value}, 'Distribution', ${7:value}, 'Exclude', ${8:value}, 'Intercept', ${9:value}, 'Link', ${10:value}, 'Lower', ${11:value}, 'Offset', ${12:value}, 'PEnter', ${13:value}, 'PredictorVars', ${14:value}, 'PRemove', ${15:value}, 'ResponseVar', ${16:value}, 'Upper', ${17:value}, 'VarNames', ${18:value}, 'Weights', ${19:value})'''
+        description: '''[stats] Create generalized linear regression model by stepwise
+regression
+        stepwiseglm(tbl, modelspec, 'BinomialSize', value, 'CategoricalVars', value, 'Criterion', value, 'DispersionFlag', value, 'Distribution', value, 'Exclude', value, 'Intercept', value, 'Link', value, 'Lower', value, 'Offset', value, 'PEnter', value, 'PredictorVars', value, 'PRemove', value, 'ResponseVar', value, 'Upper', value, 'VarNames', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/stepwiseglm.html'
+
+
+    "testckfold [stats]":
+        prefix: "testckfold"
+        body: '''testckfold(${1:C1}, ${2:C2}, ${3:X1}, ${4:X2}, ${5:optional_Y}, 'Alpha', ${6:value}, 'Alternative', ${7:value}, 'X1CategoricalPredictors', ${8:value}, 'X2CategoricalPredictors', ${9:value}, 'ClassNames', ${10:value}, 'Cost', ${11:value}, 'LossFunction', ${12:value}, 'Options', ${13:value}, 'Prior', ${14:value}, 'Test', ${15:value}, 'Verbose', ${16:value}, 'Weights', ${17:value})'''
+        description: '''[stats] Compare accuracies of two classification models by repeated
+            cross-validation
+        testckfold(C1, C2, X1, X2, optional_Y, 'Alpha', value, 'Alternative', value, 'X1CategoricalPredictors', value, 'X2CategoricalPredictors', value, 'ClassNames', value, 'Cost', value, 'LossFunction', value, 'Options', value, 'Prior', value, 'Test', value, 'Verbose', value, 'Weights', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/testckfold.html'
+
+
+    "fitrgp [stats]":
+        prefix: "fitrgp"
+        body: '''fitrgp(${1:tbl}, ${2:ResponseVarName}, 'FitMethod', ${3:value}, 'BasisFunction', ${4:value}, 'Beta', ${5:value}, 'Sigma', ${6:value}, 'ConstantSigma', ${7:value}, 'SigmaLowerBound', ${8:value}, 'CategoricalPredictors', ${9:value}, 'Standardize', ${10:value}, 'Regularization', ${11:value}, 'ComputationMethod', ${12:value}, 'KernelFunction', ${13:value}, 'KernelParameters', ${14:value}, 'DistanceMethod', ${15:value}, 'ActiveSet', ${16:value}, 'ActiveSetSize', ${17:value}, 'ActiveSetMethod', ${18:value}, 'RandomSearchSetSize', ${19:value}, 'ToleranceActiveSet', ${20:value}, 'NumActiveSetRepeats', ${21:value}, 'PredictMethod', ${22:value}, 'BlockSizeBCD', ${23:value}, 'NumGreedyBCD', ${24:value}, 'ToleranceBCD', ${25:value}, 'StepToleranceBCD', ${26:value}, 'IterationLimitBCD', ${27:value}, 'Optimizer', ${28:value}, 'OptimizerOptions', ${29:value}, 'CrossVal', ${30:value}, 'CVPartition', ${31:value}, 'Holdout', ${32:value}, 'KFold', ${33:value}, 'Leaveout', ${34:value}, 'OptimizeHyperparameters', ${35:value}, 'HyperparameterOptimizationOptions', ${36:value}, 'PredictorNames', ${37:value}, 'ResponseName', ${38:value}, 'Verbose', ${39:value}, 'CacheSize', ${40:value})'''
+        description: '''[stats] Fit a Gaussian process regression (GPR) model
+        fitrgp(tbl, ResponseVarName, 'FitMethod', value, 'BasisFunction', value, 'Beta', value, 'Sigma', value, 'ConstantSigma', value, 'SigmaLowerBound', value, 'CategoricalPredictors', value, 'Standardize', value, 'Regularization', value, 'ComputationMethod', value, 'KernelFunction', value, 'KernelParameters', value, 'DistanceMethod', value, 'ActiveSet', value, 'ActiveSetSize', value, 'ActiveSetMethod', value, 'RandomSearchSetSize', value, 'ToleranceActiveSet', value, 'NumActiveSetRepeats', value, 'PredictMethod', value, 'BlockSizeBCD', value, 'NumGreedyBCD', value, 'ToleranceBCD', value, 'StepToleranceBCD', value, 'IterationLimitBCD', value, 'Optimizer', value, 'OptimizerOptions', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value, 'PredictorNames', value, 'ResponseName', value, 'Verbose', value, 'CacheSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitrgp.html'
+
+
+    "fitrensemble [stats]":
+        prefix: "fitrensemble"
+        body: '''fitrensemble(${1:Tbl}, ${2:ResponseVarName}, 'Method', ${3:value}, 'NumLearningCycles', ${4:value}, 'Learners', ${5:value}, 'NumBins', ${6:value}, 'NPrint', ${7:value}, 'CategoricalPredictors', ${8:value}, 'PredictorNames', ${9:value}, 'ResponseName', ${10:value}, 'CrossVal', ${11:value}, 'CVPartition', ${12:value}, 'Holdout', ${13:value}, 'KFold', ${14:value}, 'Leaveout', ${15:value}, 'Weights', ${16:value}, 'FResample', ${17:value}, 'Replace', ${18:value}, 'Resample', ${19:value}, 'LearnRate', ${20:value}, 'OptimizeHyperparameters', ${21:value}, 'HyperparameterOptimizationOptions', ${22:value})'''
+        description: '''[stats] Fit ensemble of learners for regression
+        fitrensemble(Tbl, ResponseVarName, 'Method', value, 'NumLearningCycles', value, 'Learners', value, 'NumBins', value, 'NPrint', value, 'CategoricalPredictors', value, 'PredictorNames', value, 'ResponseName', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'Weights', value, 'FResample', value, 'Replace', value, 'Resample', value, 'LearnRate', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitrensemble.html'
+
+
+    "fitrtree [stats]":
+        prefix: "fitrtree"
+        body: '''fitrtree(${1:Tbl}, ${2:ResponseVarName}, 'CategoricalPredictors', ${3:value}, 'MergeLeaves', ${4:value}, 'MinParentSize', ${5:value}, 'PredictorNames', ${6:value}, 'PredictorSelection', ${7:value}, 'Prune', ${8:value}, 'PruneCriterion', ${9:value}, 'QuadraticErrorTolerance', ${10:value}, 'ResponseName', ${11:value}, 'ResponseTransform', ${12:value}, 'SplitCriterion', ${13:value}, 'Surrogate', ${14:value}, 'Weights', ${15:value}, 'CrossVal', ${16:value}, 'CVPartition', ${17:value}, 'Holdout', ${18:value}, 'KFold', ${19:value}, 'Leaveout', ${20:value}, 'MaxNumSplits', ${21:value}, 'MinLeafSize', ${22:value}, 'NumBins', ${23:value}, 'NumVariablesToSample', ${24:value}, 'OptimizeHyperparameters', ${25:value}, 'HyperparameterOptimizationOptions', ${26:value})'''
+        description: '''[stats] Fit binary decision tree for regression
+        fitrtree(Tbl, ResponseVarName, 'CategoricalPredictors', value, 'MergeLeaves', value, 'MinParentSize', value, 'PredictorNames', value, 'PredictorSelection', value, 'Prune', value, 'PruneCriterion', value, 'QuadraticErrorTolerance', value, 'ResponseName', value, 'ResponseTransform', value, 'SplitCriterion', value, 'Surrogate', value, 'Weights', value, 'CrossVal', value, 'CVPartition', value, 'Holdout', value, 'KFold', value, 'Leaveout', value, 'MaxNumSplits', value, 'MinLeafSize', value, 'NumBins', value, 'NumVariablesToSample', value, 'OptimizeHyperparameters', value, 'HyperparameterOptimizationOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/fitrtree.html'
+

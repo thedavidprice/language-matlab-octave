@@ -1,0 +1,119 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "dbstop [matlab]":
+        prefix: "dbstop"
+        body: '''dbstop(${1:s})'''
+        description: '''[matlab] Set breakpoints for debugging
+        dbstop(s)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbstop.html'
+
+
+    "publish [matlab]":
+        prefix: "publish"
+        body: '''${3:my_doc} = publish(${1:file}, ${2:optional_format})'''
+        description: '''[matlab] Generate view of MATLAB file in specified format
+        my_doc = publish(file, optional_format)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/publish.html'
+
+
+    "dbclear [matlab]":
+        prefix: "dbclear"
+        body: '''dbclear(${1:optional_'all'})'''
+        description: '''[matlab] Remove breakpoints
+        dbclear(optional_'all')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbclear.html'
+
+
+    "dbquit [matlab]":
+        prefix: "dbquit"
+        body: '''dbquit(${1:optional_'all'})'''
+        description: '''[matlab] Quit debug mode
+        dbquit(optional_'all')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbquit.html'
+
+
+    "edit [matlab]":
+        prefix: "edit"
+        body: '''edit(${1:optional_file})'''
+        description: '''[matlab] Edit or create file
+        edit(optional_file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/edit.html'
+
+
+    "checkcode [matlab]":
+        prefix: "checkcode"
+        body: '''checkcode(${1:filename}, ${2:action})'''
+        description: '''[matlab] Check MATLAB code files for possible problems
+        checkcode(filename, action)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/checkcode.html'
+
+
+    "dbtype [matlab]":
+        prefix: "dbtype"
+        body: '''dbtype(${1:filespec}, ${2:optional_range})'''
+        description: '''[matlab] Display file with line numbers
+        dbtype(filespec, optional_range)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbtype.html'
+
+
+    "uiimport [matlab]":
+        prefix: "uiimport"
+        body: '''uiimport(${1:filename}, ${2:optional_varargin})'''
+        description: '''[matlab] 
+        uiimport(filename, optional_varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiimport.html'
+
+
+    "validateFunctionSignaturesJSON [matlab]":
+        prefix: "validateFunctionSignaturesJSON"
+        body: '''validateFunctionSignaturesJSON(${1:optional_filename})'''
+        description: '''[matlab] Validate functionSignatures.json files
+        validateFunctionSignaturesJSON(optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/validatefunctionsignaturesjson.html'
+
+
+    "dbstep [matlab]":
+        prefix: "dbstep"
+        body: '''dbstep(${1:optional_inout})'''
+        description: '''[matlab] Execute next executable line from current breakpoint
+        dbstep(optional_inout)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbstep.html'
+
+
+    "profile [matlab]":
+        prefix: "profile"
+        body: '''profile(${1:action}, ${2:historyFlag}, '-historysize', ${3:value}, '-timer', ${4:value})'''
+        description: '''[matlab] Profile execution time for functions
+        profile(action, historyFlag, '-historysize', value, '-timer', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/profile.html'
+
+
+    "dbstatus [matlab]":
+        prefix: "dbstatus"
+        body: '''${3:s} = dbstatus(${1:optional_filespec}, ${2:'-completenames'})'''
+        description: '''[matlab] List all breakpoints
+        s = dbstatus(optional_filespec, '-completenames')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbstatus.html'
+
+
+    "dbstack [matlab]":
+        prefix: "dbstack"
+        body: '''[${3:st}, ${4:i}] = dbstack(${1:optional_nframes}, ${2:'-completenames'})'''
+        description: '''[matlab] Function call stack
+        [st, i] = dbstack(optional_nframes, '-completenames')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbstack.html'
+

@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses [shared]":
+        prefix: "mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses"
+        body: '''mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses(${1:c}, ${2:direction})'''
+        description: '''[shared] 
+        mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses(c, direction)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses.html'
+
+
+    "confusionchart [shared]":
+        prefix: "confusionchart"
+        body: '''${8:c} = confusionchart(${1:optional_parent}, ${2:trueLabels}, ${3:predictedLabels}, 'RowSummary', ${4:value}, 'ColumnSummary', ${5:value}, 'Normalization', ${6:value}, ${7:opts})'''
+        description: '''[shared] Create confusion matrix chart for classification problem
+        c = confusionchart(optional_parent, trueLabels, predictedLabels, 'RowSummary', value, 'ColumnSummary', value, 'Normalization', value, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/confusionchart.html'
+

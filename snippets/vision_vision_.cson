@@ -1,0 +1,2113 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "segmentGroundFromLidarData [vision]":
+        prefix: "segmentGroundFromLidarData"
+        body: '''segmentGroundFromLidarData(${1:ptCloud}, 'ElevationAngleDelta', ${2:value}, 'InitialElevationAngle', ${3:value})'''
+        description: '''[vision] Segment  ground points from organized lidar data
+        segmentGroundFromLidarData(ptCloud, 'ElevationAngleDelta', value, 'InitialElevationAngle', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/segmentgroundfromlidardata.html'
+
+
+    "boxLabelDatastore.readall [vision]":
+        prefix: "boxLabelDatastore.readall"
+        body: '''${2:data} = boxLabelDatastore.readall(${1:blds})'''
+        description: '''[vision] 
+        data = boxLabelDatastore.readall(blds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.readall.html'
+
+
+    "pixelLabelDatastore.readimage [vision]":
+        prefix: "pixelLabelDatastore.readimage"
+        body: '''pixelLabelDatastore.readimage(${1:pxds}, ${2:k})'''
+        description: '''[vision] 
+        pixelLabelDatastore.readimage(pxds, k)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelDatastore.readimage.html'
+
+
+    "regionProposalLayer [vision]":
+        prefix: "regionProposalLayer"
+        body: '''regionProposalLayer(${1:anchorBoxes}, 'Name', ${2:value})'''
+        description: '''[vision] Region proposal layer for Faster R-CNN
+        regionProposalLayer(anchorBoxes, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.regionproposallayer.html'
+
+
+    "pcregistericp [vision]":
+        prefix: "pcregistericp"
+        body: '''pcregistericp(${1:moving}, ${2:fixed}, 'Metric', ${3:value}, 'Extrapolate', ${4:value}, 'InlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'InitialTransform', ${8:value}, 'Verbose', ${9:value})'''
+        description: '''[vision] Register two point clouds using ICP algorithm
+        pcregistericp(moving, fixed, 'Metric', value, 'Extrapolate', value, 'InlierRatio', value, 'MaxIterations', value, 'Tolerance', value, 'InitialTransform', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcregistericp.html'
+
+
+    "semanticseg [vision]":
+        prefix: "semanticseg"
+        body: '''semanticseg(${1:I}, ${2:network}, ${3:optional_roi}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'Acceleration', ${6:value}, 'WriteLocation', ${7:value}, 'NamePrefix', ${8:value}, 'Verbose', ${9:value})'''
+        description: '''[vision] Semantic image segmentation using deep learning
+        semanticseg(I, network, optional_roi, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'WriteLocation', value, 'NamePrefix', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/semanticseg.html'
+
+
+    "SURFPoints [vision]":
+        prefix: "SURFPoints"
+        body: '''SURFPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value}, 'SignOfLaplacian', ${5:value})'''
+        description: '''[vision] Object for storing SURF interest points
+        SURFPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value, 'SignOfLaplacian', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/surfpoints.html'
+
+
+    "cameraPoseToExtrinsics [vision]":
+        prefix: "cameraPoseToExtrinsics"
+        body: '''cameraPoseToExtrinsics(${1:orientation}, ${2:location})'''
+        description: '''[vision] Convert camera pose to extrinsics
+        cameraPoseToExtrinsics(orientation, location)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/cameraposetoextrinsics.html'
+
+
+    "unet3dLayers [vision]":
+        prefix: "unet3dLayers"
+        body: '''unet3dLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
+        description: '''[vision] Create 3-D U-Net layers for semantic segmentation of volumetric images
+        unet3dLayers(inputSize, numClasses, 'EncoderDepth', value, 'NumFirstEncoderFilters', value, 'FilterSize', value, 'ConvolutionPadding', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/unet3dlayers.html'
+
+
+    "pcfitplane [vision]":
+        prefix: "pcfitplane"
+        body: '''pcfitplane(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
+        description: '''[vision] Fit plane to 3-D point cloud
+        pcfitplane(ptCloudIn, maxDistance, optional_referenceVector, maxAngularDistance, 'SampleIndices', value, 'MaxNumTrials', value, 'Confidence', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcfitplane.html'
+
+
+    "labelDefinitionCreator.addSublabel [vision]":
+        prefix: "labelDefinitionCreator.addSublabel"
+        body: '''labelDefinitionCreator.addSublabel(${1:ldc}, ${2:labelName}, ${3:sublabelName}, ${4:typeOfSublabel}, 'Description', ${5:value})'''
+        description: '''[vision] 
+        labelDefinitionCreator.addSublabel(ldc, labelName, sublabelName, typeOfSublabel, 'Description', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/labelDefinitionCreator.addSublabel.html'
+
+
+    "estimateCameraMatrix [vision]":
+        prefix: "estimateCameraMatrix"
+        body: '''estimateCameraMatrix(${1:imagePoints}, ${2:worldPoints})'''
+        description: '''[vision] Estimate camera projection matrix from world-to-image point
+      correspondences
+        estimateCameraMatrix(imagePoints, worldPoints)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimatecameramatrix.html'
+
+
+    "cornerPoints [vision]":
+        prefix: "cornerPoints"
+        body: '''cornerPoints(${1:location}, 'Metric', ${2:value})'''
+        description: '''[vision] Object for storing corner points
+        cornerPoints(location, 'Metric', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/cornerpoints.html'
+
+
+    "opticalFlowFarneback.estimateFlow [vision]":
+        prefix: "opticalFlowFarneback.estimateFlow"
+        body: '''opticalFlowFarneback.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        description: '''[vision] 
+        opticalFlowFarneback.estimateFlow(opticalFlow, I)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowFarneback.estimateFlow.html'
+
+
+    "stereoCameraCalibrator [vision]":
+        prefix: "stereoCameraCalibrator"
+        body: '''stereoCameraCalibrator(${1:sessionFile})'''
+        description: '''[vision] 
+        stereoCameraCalibrator(sessionFile)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/stereoCameraCalibrator.html'
+
+
+    "trainRCNNObjectDetector [vision]":
+        prefix: "trainRCNNObjectDetector"
+        body: '''trainRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'PositiveOverlapRange', ${4:value}, 'NegativeOverlapRange', ${5:value}, 'NumStrongestRegions', ${6:value}, 'RegionProposalFcn', ${7:value})'''
+        description: '''[vision] Train an R-CNN deep learning object detector
+        trainRCNNObjectDetector(trainingData, network, options, 'PositiveOverlapRange', value, 'NegativeOverlapRange', value, 'NumStrongestRegions', value, 'RegionProposalFcn', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/trainrcnnobjectdetector.html'
+
+
+    "vision.AlphaBlender.step [vision]":
+        prefix: "vision.AlphaBlender.step"
+        body: '''vision.AlphaBlender.step(${1:obj}, ${2:I1}, ${3:I2}, ${4:optional_opacity}, ${5:optional_mask}, ${6:optional_location})'''
+        description: '''[vision] 
+        vision.AlphaBlender.step(obj, I1, I2, optional_opacity, optional_mask, optional_location)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/vision.AlphaBlender.step.html'
+
+
+    "dicePixelClassificationLayer [vision]":
+        prefix: "dicePixelClassificationLayer"
+        body: '''dicePixelClassificationLayer('Classes', ${1:value}, 'Name', ${2:value})'''
+        description: '''[vision] Create pixel classification layer using generalized Dice loss for semantic
+      segmentation
+        dicePixelClassificationLayer('Classes', value, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.dicepixelclassificationlayer.html'
+
+
+    "fastRCNNObjectDetector.detect [vision]":
+        prefix: "fastRCNNObjectDetector.detect"
+        body: '''fastRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
+        description: '''[vision] 
+        fastRCNNObjectDetector.detect(detector, I, optional_roi, 'Threshold', value, 'NumStrongestRegions', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'MinSize', value, 'MaxSize', value, 'ExecutionEnvironment', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/fastRCNNObjectDetector.detect.html'
+
+
+    "indexImages [vision]":
+        prefix: "indexImages"
+        body: '''indexImages(${1:imds}, ${2:optional_bag}, 'SaveFeatureLocations', ${3:value}, 'Verbose', ${4:value})'''
+        description: '''[vision] Create image search index
+        indexImages(imds, optional_bag, 'SaveFeatureLocations', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/indeximages.html'
+
+
+    "ransac [vision]":
+        prefix: "ransac"
+        body: '''ransac(${1:data}, ${2:fitFcn}, ${3:distFcn}, ${4:sampleSize}, ${5:maxDistance}, 'ValidateModelFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value}, 'MaxNumTrials', ${8:value}, 'Confidence', ${9:value})'''
+        description: '''[vision] Fit model to noisy data
+        ransac(data, fitFcn, distFcn, sampleSize, maxDistance, 'ValidateModelFcn', value, 'MaxSamplingAttempts', value, 'MaxNumTrials', value, 'Confidence', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/ransac.html'
+
+
+    "pixelLabelDatastore.partition [vision]":
+        prefix: "pixelLabelDatastore.partition"
+        body: '''pixelLabelDatastore.partition(${1:pxds}, ${2:N}, ${3:index})'''
+        description: '''[vision] 
+        pixelLabelDatastore.partition(pxds, N, index)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelDatastore.partition.html'
+
+
+    "planeModel.plot [vision]":
+        prefix: "planeModel.plot"
+        body: '''planeModel.plot(${1:model}, 'Parent', ${2:value}, 'Color', ${3:value})'''
+        description: '''[vision] Plot plane in a figure window
+        planeModel.plot(model, 'Parent', value, 'Color', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/planemodel.plot.html'
+
+
+    "BRISKPoints.selectStrongest [vision]":
+        prefix: "BRISKPoints.selectStrongest"
+        body: '''BRISKPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''[vision] 
+        BRISKPoints.selectStrongest(points, N)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/BRISKPoints.selectStrongest.html'
+
+
+    "detectMinEigenFeatures [vision]":
+        prefix: "detectMinEigenFeatures"
+        body: '''detectMinEigenFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
+        description: '''[vision] Detect corners using minimum eigenvalue algorithm and
+return cornerPoints object
+        detectMinEigenFeatures(I, 'MinQuality', value, 'FilterSize', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/detectmineigenfeatures.html'
+
+
+    "ocr [vision]":
+        prefix: "ocr"
+        body: '''ocr(${1:I}, ${2:optional_roi}, 'TextLayout', ${3:value}, 'Language', ${4:value}, 'CharacterSet', ${5:value})'''
+        description: '''[vision] Recognize text using optical character recognition
+        ocr(I, optional_roi, 'TextLayout', value, 'Language', value, 'CharacterSet', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/ocr.html'
+
+
+    "estimateEssentialMatrix [vision]":
+        prefix: "estimateEssentialMatrix"
+        body: '''estimateEssentialMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:optional_cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
+        description: '''[vision] Estimate essential matrix from corresponding points in
+a pair of images
+        estimateEssentialMatrix(matchedPoints1, matchedPoints2, optional_cameraParams, 'MaxNumTrials', value, 'Confidence', value, 'MaxDistance', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimateessentialmatrix.html'
+
+
+    "rectifyStereoImages [vision]":
+        prefix: "rectifyStereoImages"
+        body: '''rectifyStereoImages(${1:I1}, ${2:I2}, ${3:stereoParams}, ${4:optional_interp}, 'OutputView', ${5:value}, 'FillValues', ${6:value})'''
+        description: '''[vision] Rectify a pair of stereo images
+        rectifyStereoImages(I1, I2, stereoParams, optional_interp, 'OutputView', value, 'FillValues', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/rectifystereoimages.html'
+
+
+    "fisheyeParameters [vision]":
+        prefix: "fisheyeParameters"
+        body: '''fisheyeParameters(${1:fisheyeParameters}, 'EstimateAlignment', ${2:value}, 'RotationVectors', ${3:value}, 'TranslationVectors', ${4:value}, 'WorldPoints', ${5:value}, 'WorldUnits', ${6:value}, 'ReprojectionErrors', ${7:value})'''
+        description: '''[vision] Object for storing fisheye camera parameters
+        fisheyeParameters(fisheyeParameters, 'EstimateAlignment', value, 'RotationVectors', value, 'TranslationVectors', value, 'WorldPoints', value, 'WorldUnits', value, 'ReprojectionErrors', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/fisheyeparameters.html'
+
+
+    "disparityBM [vision]":
+        prefix: "disparityBM"
+        body: '''disparityBM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'BlockSize', ${4:value}, 'ContrastThreshold', ${5:value}, 'UniquenessThreshold', ${6:value}, 'DistanceThreshold', ${7:value}, 'TextureThreshold', ${8:value})'''
+        description: '''[vision] Compute disparity map using block matching
+        disparityBM(I1, I2, 'DisparityRange', value, 'BlockSize', value, 'ContrastThreshold', value, 'UniquenessThreshold', value, 'DistanceThreshold', value, 'TextureThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/disparitybm.html'
+
+
+    "opticalFlow.plot [vision]":
+        prefix: "opticalFlow.plot"
+        body: '''opticalFlow.plot(${1:flow}, 'DecimationFactor', ${2:value}, 'ScaleFactor', ${3:value}, 'Parent', ${4:value})'''
+        description: '''[vision] 
+        opticalFlow.plot(flow, 'DecimationFactor', value, 'ScaleFactor', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlow.plot.html'
+
+
+    "cameraCalibrator [vision]":
+        prefix: "cameraCalibrator"
+        body: '''cameraCalibrator(${1:sessionFile})'''
+        description: '''[vision] 
+        cameraCalibrator(sessionFile)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraCalibrator.html'
+
+
+    "pcfitcylinder [vision]":
+        prefix: "pcfitcylinder"
+        body: '''pcfitcylinder(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
+        description: '''[vision] Fit cylinder to 3-D point cloud
+        pcfitcylinder(ptCloudIn, maxDistance, optional_referenceVector, maxAngularDistance, 'SampleIndices', value, 'MaxNumTrials', value, 'Confidence', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcfitcylinder.html'
+
+
+    "unetLayers [vision]":
+        prefix: "unetLayers"
+        body: '''unetLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
+        description: '''[vision] Create U-Net layers for semantic segmentation
+        unetLayers(inputSize, numClasses, 'EncoderDepth', value, 'NumFirstEncoderFilters', value, 'FilterSize', value, 'ConvolutionPadding', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/unetlayers.html'
+
+
+    "bboxOverlapRatio [vision]":
+        prefix: "bboxOverlapRatio"
+        body: '''bboxOverlapRatio(${1:bboxA}, ${2:bboxB}, ${3:optional_ratioType})'''
+        description: '''[vision] Compute bounding box overlap ratio
+        bboxOverlapRatio(bboxA, bboxB, optional_ratioType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/bboxoverlapratio.html'
+
+
+    "yolov2ObjectDetector.detect [vision]":
+        prefix: "yolov2ObjectDetector.detect"
+        body: '''yolov2ObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'ExecutionEnvironment', ${9:value}, 'Acceleration', ${10:value})'''
+        description: '''[vision] 
+        yolov2ObjectDetector.detect(detector, I, optional_roi, 'Threshold', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'MinSize', value, 'MaxSize', value, 'ExecutionEnvironment', value, 'Acceleration', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/yolov2ObjectDetector.detect.html'
+
+
+    "detectCheckerboardPoints [vision]":
+        prefix: "detectCheckerboardPoints"
+        body: '''detectCheckerboardPoints(${1:I}, 'MinCornerMetric', ${2:value})'''
+        description: '''[vision] Detect checkerboard pattern in image
+        detectCheckerboardPoints(I, 'MinCornerMetric', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/detectcheckerboardpoints.html'
+
+
+    "fasterRCNNLayers [vision]":
+        prefix: "fasterRCNNLayers"
+        body: '''fasterRCNNLayers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ROIMaxPoolingLayer', ${6:value}, 'ROIOutputSize', ${7:value})'''
+        description: '''[vision] Create a faster R-CNN object detection network
+        fasterRCNNLayers(imageSize, numClasses, anchorBoxes, network, featureLayer, 'ROIMaxPoolingLayer', value, 'ROIOutputSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/fasterrcnnlayers.html'
+
+
+    "evaluateImageRetrieval [vision]":
+        prefix: "evaluateImageRetrieval"
+        body: '''evaluateImageRetrieval(${1:queryImage}, ${2:imageIndex}, ${3:expectedIDs}, 'NumResults', ${4:value}, 'ROI', ${5:value})'''
+        description: '''[vision] Evaluate image search results
+        evaluateImageRetrieval(queryImage, imageIndex, expectedIDs, 'NumResults', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/evaluateimageretrieval.html'
+
+
+    "fitPolynomialRANSAC [vision]":
+        prefix: "fitPolynomialRANSAC"
+        body: '''fitPolynomialRANSAC(${1:xyPoints}, ${2:N}, ${3:maxDistance}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'ValidatePolynomialFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value})'''
+        description: '''[vision] Fit polynomial to points using RANSAC
+        fitPolynomialRANSAC(xyPoints, N, maxDistance, 'MaxNumTrials', value, 'Confidence', value, 'ValidatePolynomialFcn', value, 'MaxSamplingAttempts', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/fitpolynomialransac.html'
+
+
+    "showExtrinsics [vision]":
+        prefix: "showExtrinsics"
+        body: '''showExtrinsics(${1:cameraParams}, ${2:optional_view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
+        description: '''[vision] Visualize extrinsic camera parameters
+        showExtrinsics(cameraParams, optional_view, 'HighlightIndex', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/showextrinsics.html'
+
+
+    "cornerPoints.plot [vision]":
+        prefix: "cornerPoints.plot"
+        body: '''cornerPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''[vision] 
+        cornerPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/cornerPoints.plot.html'
+
+
+    "trainCascadeObjectDetector [vision]":
+        prefix: "trainCascadeObjectDetector"
+        body: '''trainCascadeObjectDetector(${1:outputXMLFilename}, 'ObjectTrainingSize', ${2:value}, 'NegativeSamplesFactor', ${3:value}, 'NumCascadeStages', ${4:value}, 'FalseAlarmRate', ${5:value}, 'TruePositiveRate', ${6:value}, 'FeatureType', ${7:value})'''
+        description: '''[vision] Train cascade object detector model
+        trainCascadeObjectDetector(outputXMLFilename, 'ObjectTrainingSize', value, 'NegativeSamplesFactor', value, 'NumCascadeStages', value, 'FalseAlarmRate', value, 'TruePositiveRate', value, 'FeatureType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/traincascadeobjectdetector.html'
+
+
+    "triangulateMultiview [vision]":
+        prefix: "triangulateMultiview"
+        body: '''triangulateMultiview(${1:pointTracks}, ${2:cameraPoses}, ${3:cameraParams})'''
+        description: '''[vision] 3-D locations of undistorted points matched across multiple
+images
+        triangulateMultiview(pointTracks, cameraPoses, cameraParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/triangulatemultiview.html'
+
+
+    "undistortFisheyeImage [vision]":
+        prefix: "undistortFisheyeImage"
+        body: '''undistortFisheyeImage(${1:I}, ${2:intrinsics}, ${3:optional_interp}, 'OutputView', ${4:value}, 'ScaleFactor', ${5:value}, 'FillValues', ${6:value})'''
+        description: '''[vision] Correct fisheye image for lens distortion
+        undistortFisheyeImage(I, intrinsics, optional_interp, 'OutputView', value, 'ScaleFactor', value, 'FillValues', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/undistortfisheyeimage.html'
+
+
+    "fisheyeIntrinsics.worldToImage [vision]":
+        prefix: "fisheyeIntrinsics.worldToImage"
+        body: '''fisheyeIntrinsics.worldToImage(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints})'''
+        description: '''[vision] 
+        fisheyeIntrinsics.worldToImage(fisheyeIntrinsics, rotationMatrix, translationVector, worldPoints)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/fisheyeIntrinsics.worldToImage.html'
+
+
+    "extrinsics [vision]":
+        prefix: "extrinsics"
+        body: '''extrinsics(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams})'''
+        description: '''[vision] Compute location of calibrated camera
+        extrinsics(imagePoints, worldPoints, cameraParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/extrinsics.html'
+
+
+    "viewSet.addView [vision]":
+        prefix: "viewSet.addView"
+        body: '''viewSet.addView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
+        description: '''[vision] 
+        viewSet.addView(vSet, viewId, 'Points', value, 'Orientation', value, 'Location', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.addView.html'
+
+
+    "pcdownsample [vision]":
+        prefix: "pcdownsample"
+        body: '''pcdownsample(${1:ptCloudIn}, ${2:random}, ${3:percentage})'''
+        description: '''[vision] Downsample a 3-D point cloud
+        pcdownsample(ptCloudIn, random, percentage)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcdownsample.html'
+
+
+    "cameraParameters.toStruct [vision]":
+        prefix: "cameraParameters.toStruct"
+        body: '''cameraParameters.toStruct(${1:cameraParams})'''
+        description: '''[vision] 
+        cameraParameters.toStruct(cameraParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraParameters.toStruct.html'
+
+
+    "BRISKPoints.selectUniform [vision]":
+        prefix: "BRISKPoints.selectUniform"
+        body: '''BRISKPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''[vision] 
+        BRISKPoints.selectUniform(points, N, imageSize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/BRISKPoints.selectUniform.html'
+
+
+    "undistortPoints [vision]":
+        prefix: "undistortPoints"
+        body: '''undistortPoints(${1:points}, ${2:cameraParams})'''
+        description: '''[vision] Correct point coordinates for lens distortion
+        undistortPoints(points, cameraParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/undistortpoints.html'
+
+
+    "segnetLayers [vision]":
+        prefix: "segnetLayers"
+        body: '''segnetLayers(${1:imageSize}, ${2:numClasses}, ${3:model}, 'NumConvolutionLayers', ${4:value}, 'NumOutputChannels', ${5:value}, 'FilterSize', ${6:value})'''
+        description: '''[vision] Create SegNet layers for semantic segmentation
+        segnetLayers(imageSize, numClasses, model, 'NumConvolutionLayers', value, 'NumOutputChannels', value, 'FilterSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/segnetlayers.html'
+
+
+    "evaluateDetectionMissRate [vision]":
+        prefix: "evaluateDetectionMissRate"
+        body: '''evaluateDetectionMissRate(${1:detectionResults}, ${2:groundTruthData}, ${3:threshold})'''
+        description: '''[vision] Evaluate miss rate metric for object detection
+        evaluateDetectionMissRate(detectionResults, groundTruthData, threshold)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/evaluatedetectionmissrate.html'
+
+
+    "generateCheckerboardPoints [vision]":
+        prefix: "generateCheckerboardPoints"
+        body: '''generateCheckerboardPoints(${1:boardSize}, ${2:squareSize})'''
+        description: '''[vision] Generate checkerboard corner locations
+        generateCheckerboardPoints(boardSize, squareSize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/generatecheckerboardpoints.html'
+
+
+    "pcshow [vision]":
+        prefix: "pcshow"
+        body: '''pcshow(${1:ptCloud}, 'MarkerSize', ${2:value}, 'VerticalAxis', ${3:value}, 'VerticalAxisDir', ${4:value}, 'Parent', ${5:value})'''
+        description: '''[vision] Plot 3-D point cloud
+        pcshow(ptCloud, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcshow.html'
+
+
+    "cylinderModel [vision]":
+        prefix: "cylinderModel"
+        body: '''cylinderModel(${1:Parameters})'''
+        description: '''[vision] Object for storing a parametric cylinder model
+        cylinderModel(Parameters)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/cylindermodel-class.html'
+
+
+    "insertShape [vision]":
+        prefix: "insertShape"
+        body: '''insertShape(${1:I}, ${2:shape}, ${3:position}, 'LineWidth', ${4:value}, 'Color', ${5:value}, 'Opacity', ${6:value}, 'SmoothEdges', ${7:value})'''
+        description: '''[vision] Insert shapes in image or video
+        insertShape(I, shape, position, 'LineWidth', value, 'Color', value, 'Opacity', value, 'SmoothEdges', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/insertshape.html'
+
+
+    "labelDefinitionCreator.addAttribute [vision]":
+        prefix: "labelDefinitionCreator.addAttribute"
+        body: '''labelDefinitionCreator.addAttribute(${1:ldc}, ${2:labelName}, ${3:attributeName}, ${4:typeOfAttribute}, 'Description', ${5:value})'''
+        description: '''[vision] 
+        labelDefinitionCreator.addAttribute(ldc, labelName, attributeName, typeOfAttribute, 'Description', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/labelDefinitionCreator.addAttribute.html'
+
+
+    "boxLabelDatastore.countEachLabel [vision]":
+        prefix: "boxLabelDatastore.countEachLabel"
+        body: '''${2:TBL} = boxLabelDatastore.countEachLabel(${1:blds})'''
+        description: '''[vision] 
+        TBL = boxLabelDatastore.countEachLabel(blds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.countEachLabel.html'
+
+
+    "planeModel [vision]":
+        prefix: "planeModel"
+        body: '''planeModel(${1:Parameters})'''
+        description: '''[vision] Object for storing a parametric plane model
+        planeModel(Parameters)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/planemodel.html'
+
+
+    "integralKernel [vision]":
+        prefix: "integralKernel"
+        body: '''integralKernel(${1:bbox}, ${2:weights}, ${3:optional_orientation})'''
+        description: '''[vision]  Define filter for use with integral images
+        integralKernel(bbox, weights, optional_orientation)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/integralkernel-class.html'
+
+
+    "pcfitsphere [vision]":
+        prefix: "pcfitsphere"
+        body: '''pcfitsphere(${1:ptCloudIn}, ${2:maxDistance}, 'SampleIndices', ${3:value}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value})'''
+        description: '''[vision] Fit sphere to 3-D point cloud
+        pcfitsphere(ptCloudIn, maxDistance, 'SampleIndices', value, 'MaxNumTrials', value, 'Confidence', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcfitsphere.html'
+
+
+    "pcregistercpd [vision]":
+        prefix: "pcregistercpd"
+        body: '''pcregistercpd(${1:moving}, ${2:fixed}, 'Transform', ${3:value}, 'OutlierRatio', ${4:value}, 'MaxIterations', ${5:value}, 'Tolerance', ${6:value}, 'InteractionSigma', ${7:value}, 'SmoothingWeight', ${8:value}, 'Verbose', ${9:value})'''
+        description: '''[vision] Register two point clouds using CPD algorithm
+        pcregistercpd(moving, fixed, 'Transform', value, 'OutlierRatio', value, 'MaxIterations', value, 'Tolerance', value, 'InteractionSigma', value, 'SmoothingWeight', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcregistercpd.html'
+
+
+    "bboxresize [vision]":
+        prefix: "bboxresize"
+        body: '''bboxresize(${1:bboxA}, ${2:scale})'''
+        description: '''[vision] Resize bounding boxes
+        bboxresize(bboxA, scale)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/bboxresize.html'
+
+
+    "insertObjectAnnotation [vision]":
+        prefix: "insertObjectAnnotation"
+        body: '''insertObjectAnnotation(${1:I}, ${2:shape}, ${3:position}, ${4:label}, 'Font', ${5:value}, 'FontSize', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'TextColor', ${9:value}, 'TextBoxOpacity', ${10:value})'''
+        description: '''[vision] Annotate truecolor or grayscale image or video stream
+        insertObjectAnnotation(I, shape, position, label, 'Font', value, 'FontSize', value, 'LineWidth', value, 'Color', value, 'TextColor', value, 'TextBoxOpacity', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/insertobjectannotation.html'
+
+
+    "ORBPoints [vision]":
+        prefix: "ORBPoints"
+        body: '''ORBPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
+        description: '''[vision] Object for storing ORB keypoints
+        ORBPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/orbpoints.html'
+
+
+    "segmentLidarData [vision]":
+        prefix: "segmentLidarData"
+        body: '''segmentLidarData(${1:ptCloud}, ${2:distThreshold}, ${3:angleThreshold})'''
+        description: '''[vision] Segment organized 3-D range data into clusters
+        segmentLidarData(ptCloud, distThreshold, angleThreshold)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/segmentlidardata.html'
+
+
+    "detectBRISKFeatures [vision]":
+        prefix: "detectBRISKFeatures"
+        body: '''detectBRISKFeatures(${1:I}, 'MinContrast', ${2:value}, 'MinQuality', ${3:value}, 'NumOctaves', ${4:value}, 'ROI', ${5:value})'''
+        description: '''[vision] Detect BRISK features and return BRISKPoints object
+        detectBRISKFeatures(I, 'MinContrast', value, 'MinQuality', value, 'NumOctaves', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/detectbriskfeatures.html'
+
+
+    "pctransform [vision]":
+        prefix: "pctransform"
+        body: '''pctransform(${1:ptCloudIn}, ${2:tform})'''
+        description: '''[vision] Transform 3-D point cloud
+        pctransform(ptCloudIn, tform)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pctransform.html'
+
+
+    "insertText [vision]":
+        prefix: "insertText"
+        body: '''insertText(${1:I}, ${2:position}, ${3:text}, 'Font', ${4:value}, 'FontSize', ${5:value}, 'TextColor', ${6:value}, 'BoxColor', ${7:value}, 'BoxOpacity', ${8:value}, 'AnchorPoint', ${9:value})'''
+        description: '''[vision] Insert text in image or video
+        insertText(I, position, text, 'Font', value, 'FontSize', value, 'TextColor', value, 'BoxColor', value, 'BoxOpacity', value, 'AnchorPoint', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/inserttext.html'
+
+
+    "detectSURFFeatures [vision]":
+        prefix: "detectSURFFeatures"
+        body: '''detectSURFFeatures(${1:I}, 'MetricThreshold', ${2:value}, 'NumOctaves', ${3:value}, 'NumScaleLevels', ${4:value}, 'ROI', ${5:value})'''
+        description: '''[vision] Detect SURF features and return SURFPoints
+      object
+        detectSURFFeatures(I, 'MetricThreshold', value, 'NumOctaves', value, 'NumScaleLevels', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/detectsurffeatures.html'
+
+
+    "viewSet.addConnection [vision]":
+        prefix: "viewSet.addConnection"
+        body: '''viewSet.addConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
+        description: '''[vision] 
+        viewSet.addConnection(vSet, viewId1, viewId2, 'Matches', value, 'Orientation', value, 'Location', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.addConnection.html'
+
+
+    "roiInputLayer [vision]":
+        prefix: "roiInputLayer"
+        body: '''roiInputLayer('Name', ${1:value})'''
+        description: '''[vision] ROI input layer for Fast R-CNN
+        roiInputLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.roiinputlayer.html'
+
+
+    "trainACFObjectDetector [vision]":
+        prefix: "trainACFObjectDetector"
+        body: '''trainACFObjectDetector(${1:trainingData}, 'ObjectTrainingSize', ${2:value}, 'NumStages', ${3:value}, 'NegativeSamplesFactor', ${4:value}, 'MaxWeakLearners', ${5:value}, 'Verbose', ${6:value})'''
+        description: '''[vision] Train ACF object detector
+        trainACFObjectDetector(trainingData, 'ObjectTrainingSize', value, 'NumStages', value, 'NegativeSamplesFactor', value, 'MaxWeakLearners', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/trainacfobjectdetector.html'
+
+
+    "bboxPrecisionRecall [vision]":
+        prefix: "bboxPrecisionRecall"
+        body: '''bboxPrecisionRecall(${1:boundingBoxes}, ${2:groundTruthData}, ${3:optional_threshold})'''
+        description: '''[vision] Compute bounding box precision and recall against ground truth
+        bboxPrecisionRecall(boundingBoxes, groundTruthData, optional_threshold)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/bboxprecisionrecall.html'
+
+
+    "configureKalmanFilter [vision]":
+        prefix: "configureKalmanFilter"
+        body: '''configureKalmanFilter(${1:MotionModel}, ${2:InitialLocation}, ${3:InitialEstimateError}, ${4:MotionNoise}, ${5:MeasurementNoise})'''
+        description: '''[vision] Create Kalman filter for object tracking
+        configureKalmanFilter(MotionModel, InitialLocation, InitialEstimateError, MotionNoise, MeasurementNoise)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/configurekalmanfilter.html'
+
+
+    "pixelLabelDatastore [vision]":
+        prefix: "pixelLabelDatastore"
+        body: '''pixelLabelDatastore(${1:gTruth}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value})'''
+        description: '''[vision] Datastore for pixel label data
+        pixelLabelDatastore(gTruth, 'ReadSize', value, 'AlternateFileSystemRoots', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/../vision/ref/pixellabeldatastore.html'
+
+
+    "vision.AlphaBlender [vision]":
+        prefix: "vision.AlphaBlender"
+        body: '''vision.AlphaBlender('Operation', ${1:value}, 'OpacitySource', ${2:value}, 'Opacity', ${3:value}, 'MaskSource', ${4:value}, 'Mask', ${5:value}, 'LocationSource', ${6:value}, 'Location', ${7:value}, 'RoundingMethod', ${8:value}, 'OverflowAction', ${9:value}, 'OpacityDataType', ${10:value}, 'CustomOpacityDataType', ${11:value}, 'ProductDataType', ${12:value}, 'CustomProductDataType', ${13:value}, 'AccumulatorDataType', ${14:value}, 'CustomAccumulatorDataType', ${15:value}, 'OutputDataType', ${16:value}, 'CustomOutputDataType', ${17:value})'''
+        description: '''[vision] 
+        vision.AlphaBlender('Operation', value, 'OpacitySource', value, 'Opacity', value, 'MaskSource', value, 'Mask', value, 'LocationSource', value, 'Location', value, 'RoundingMethod', value, 'OverflowAction', value, 'OpacityDataType', value, 'CustomOpacityDataType', value, 'ProductDataType', value, 'CustomProductDataType', value, 'AccumulatorDataType', value, 'CustomAccumulatorDataType', value, 'OutputDataType', value, 'CustomOutputDataType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/vision.AlphaBlender.html'
+
+
+    "assignDetectionsToTracks [vision]":
+        prefix: "assignDetectionsToTracks"
+        body: '''assignDetectionsToTracks(${1:costMatrix}, ${2:costOfNonAssignment})'''
+        description: '''[vision] Assign detections to tracks for multiobject tracking
+        assignDetectionsToTracks(costMatrix, costOfNonAssignment)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/assigndetectionstotracks.html'
+
+
+    "rotationVectorToMatrix [vision]":
+        prefix: "rotationVectorToMatrix"
+        body: '''rotationVectorToMatrix(${1:rotationVector})'''
+        description: '''[vision] Convert 3-D rotation vector to rotation matrix
+        rotationVectorToMatrix(rotationVector)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/rotationvectortomatrix.html'
+
+
+    "pcmerge [vision]":
+        prefix: "pcmerge"
+        body: '''pcmerge(${1:ptCloudA}, ${2:ptCloudB}, ${3:gridStep})'''
+        description: '''[vision] Merge two 3-D point clouds
+        pcmerge(ptCloudA, ptCloudB, gridStep)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcmerge.html'
+
+
+    "selectStrongestBboxMulticlass [vision]":
+        prefix: "selectStrongestBboxMulticlass"
+        body: '''selectStrongestBboxMulticlass(${1:bbox}, ${2:scores}, ${3:labels}, 'RatioType', ${4:value}, 'OverlapThreshold', ${5:value})'''
+        description: '''[vision] Select strongest multiclass bounding boxes from overlapping
+            clusters
+        selectStrongestBboxMulticlass(bbox, scores, labels, 'RatioType', value, 'OverlapThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/selectstrongestbboxmulticlass.html'
+
+
+    "evaluateDetectionPrecision [vision]":
+        prefix: "evaluateDetectionPrecision"
+        body: '''evaluateDetectionPrecision(${1:detectionResults}, ${2:groundTruthData}, ${3:optional_threshold})'''
+        description: '''[vision] Evaluate precision metric for object detection
+        evaluateDetectionPrecision(detectionResults, groundTruthData, optional_threshold)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/evaluatedetectionprecision.html'
+
+
+    "labelDefinitionCreator.addLabel [vision]":
+        prefix: "labelDefinitionCreator.addLabel"
+        body: '''labelDefinitionCreator.addLabel(${1:ldc}, ${2:labelName}, ${3:typeOfLabel}, 'Description', ${4:value})'''
+        description: '''[vision] 
+        labelDefinitionCreator.addLabel(ldc, labelName, typeOfLabel, 'Description', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/labelDefinitionCreator.addLabel.html'
+
+
+    "cornerPoints.selectUniform [vision]":
+        prefix: "cornerPoints.selectUniform"
+        body: '''cornerPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''[vision] 
+        cornerPoints.selectUniform(points, N, imageSize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/cornerPoints.selectUniform.html'
+
+
+    "stereoAnaglyph [vision]":
+        prefix: "stereoAnaglyph"
+        body: '''stereoAnaglyph(${1:I1}, ${2:I2})'''
+        description: '''[vision] Create red-cyan anaglyph from stereo pair of images
+        stereoAnaglyph(I1, I2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/stereoanaglyph.html'
+
+
+    "fisheyeIntrinsics.pointsToWorld [vision]":
+        prefix: "fisheyeIntrinsics.pointsToWorld"
+        body: '''fisheyeIntrinsics.pointsToWorld(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
+        description: '''[vision] 
+        fisheyeIntrinsics.pointsToWorld(fisheyeIntrinsics, rotationMatrix, translationVector, imagePoints)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/fisheyeIntrinsics.pointsToWorld.html'
+
+
+    "pcshowpair [vision]":
+        prefix: "pcshowpair"
+        body: '''pcshowpair(${1:ptCloudA}, ${2:ptCloudB}, 'MarkerSize', ${3:value}, 'VerticalAxis', ${4:value}, 'VerticalAxisDir', ${5:value}, 'Parent', ${6:value})'''
+        description: '''[vision] Visualize difference between two point clouds
+        pcshowpair(ptCloudA, ptCloudB, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcshowpair.html'
+
+
+    "rcnnBoxRegressionLayer [vision]":
+        prefix: "rcnnBoxRegressionLayer"
+        body: '''rcnnBoxRegressionLayer('Name', ${1:value})'''
+        description: '''[vision] Box regression layer for Fast and Faster R-CNN
+        rcnnBoxRegressionLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.rcnnboxregressionlayer.html'
+
+
+    "detectMSERFeatures [vision]":
+        prefix: "detectMSERFeatures"
+        body: '''detectMSERFeatures(${1:I}, 'ThresholdDelta', ${2:value}, 'RegionAreaRange', ${3:value}, 'MaxAreaVariation', ${4:value}, 'ROI', ${5:value})'''
+        description: '''[vision] Detect MSER features and return MSERRegions object
+        detectMSERFeatures(I, 'ThresholdDelta', value, 'RegionAreaRange', value, 'MaxAreaVariation', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/detectmserfeatures.html'
+
+
+    "pcwrite [vision]":
+        prefix: "pcwrite"
+        body: '''pcwrite(${1:ptCloud}, ${2:filename}, 'Encoding', ${3:value})'''
+        description: '''[vision] Write 3-D point cloud to PLY or PCD file
+        pcwrite(ptCloud, filename, 'Encoding', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcwrite.html'
+
+
+    "sphereModel [vision]":
+        prefix: "sphereModel"
+        body: '''sphereModel(${1:Parameters})'''
+        description: '''[vision] Object for storing a parametric sphere model
+        sphereModel(Parameters)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/spheremodel-class.html'
+
+
+    "cornerPoints.selectStrongest [vision]":
+        prefix: "cornerPoints.selectStrongest"
+        body: '''cornerPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''[vision] 
+        cornerPoints.selectStrongest(points, N)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/cornerPoints.selectStrongest.html'
+
+
+    "fasterRCNNObjectDetector.detect [vision]":
+        prefix: "fasterRCNNObjectDetector.detect"
+        body: '''fasterRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
+        description: '''[vision] 
+        fasterRCNNObjectDetector.detect(detector, I, optional_roi, 'Threshold', value, 'NumStrongestRegions', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'MinSize', value, 'MaxSize', value, 'ExecutionEnvironment', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/fasterRCNNObjectDetector.detect.html'
+
+
+    "trainFasterRCNNObjectDetector [vision]":
+        prefix: "trainFasterRCNNObjectDetector"
+        body: '''trainFasterRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingMethod', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'SmallestImageDimension', ${8:value}, 'MinBoxSizes', ${9:value}, 'BoxPyramidScale', ${10:value}, 'NumBoxPyramidLevels', ${11:value}, 'FreezeBatchNormalization', ${12:value})'''
+        description: '''[vision] Train a Faster R-CNN deep learning object detector
+        trainFasterRCNNObjectDetector(trainingData, network, options, 'TrainingMethod', value, 'PositiveOverlapRange', value, 'NegativeOverlapRange', value, 'NumStrongestRegions', value, 'SmallestImageDimension', value, 'MinBoxSizes', value, 'BoxPyramidScale', value, 'NumBoxPyramidLevels', value, 'FreezeBatchNormalization', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/trainfasterrcnnobjectdetector.html'
+
+
+    "pcread [vision]":
+        prefix: "pcread"
+        body: '''pcread(${1:filename})'''
+        description: '''[vision] Read 3-D point cloud from PLY or PCD file
+        pcread(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcread.html'
+
+
+    "rcnnObjectDetector.detect [vision]":
+        prefix: "rcnnObjectDetector.detect"
+        body: '''rcnnObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumStrongestRegions', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'ExecutionEnvironment', ${7:value})'''
+        description: '''[vision] 
+        rcnnObjectDetector.detect(detector, I, optional_roi, 'NumStrongestRegions', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'ExecutionEnvironment', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/rcnnObjectDetector.detect.html'
+
+
+    "groundTruth [vision]":
+        prefix: "groundTruth"
+        body: '''groundTruth(${1:dataSource}, ${2:labelDefs}, ${3:labelData})'''
+        description: '''[vision] Object for storing ground truth labels
+        groundTruth(dataSource, labelDefs, labelData)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/groundtruth.html'
+
+
+    "BRISKPoints [vision]":
+        prefix: "BRISKPoints"
+        body: '''BRISKPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
+        description: '''[vision] Object for storing BRISK interest points
+        BRISKPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/briskpoints.html'
+
+
+    "selectStrongestBbox [vision]":
+        prefix: "selectStrongestBbox"
+        body: '''selectStrongestBbox(${1:bbox}, ${2:score}, 'RatioType', ${3:value}, 'OverlapThreshold', ${4:value})'''
+        description: '''[vision] Select strongest bounding boxes from overlapping clusters
+        selectStrongestBbox(bbox, score, 'RatioType', value, 'OverlapThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/selectstrongestbbox.html'
+
+
+    "stereoParameters.toStruct [vision]":
+        prefix: "stereoParameters.toStruct"
+        body: '''stereoParameters.toStruct(${1:cameraParams})'''
+        description: '''[vision] 
+        stereoParameters.toStruct(cameraParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/stereoParameters.toStruct.html'
+
+
+    "pixelLabelImageDatastore [vision]":
+        prefix: "pixelLabelImageDatastore"
+        body: '''pixelLabelImageDatastore(${1:gTruth}, 'DataAugmentation', ${2:value}, 'ColorPreprocessing', ${3:value}, 'OutputSize', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})'''
+        description: '''[vision] Datastore for semantic segmentation networks
+        pixelLabelImageDatastore(gTruth, 'DataAugmentation', value, 'ColorPreprocessing', value, 'OutputSize', value, 'OutputSizeMode', value, 'DispatchInBackground', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/../vision/ref/pixellabelimagedatastore.html'
+
+
+    "cameraParameters.worldToImage [vision]":
+        prefix: "cameraParameters.worldToImage"
+        body: '''cameraParameters.worldToImage(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints}, 'ApplyDistortion', ${5:value})'''
+        description: '''[vision] 
+        cameraParameters.worldToImage(cameraParams, rotationMatrix, translationVector, worldPoints, 'ApplyDistortion', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraParameters.worldToImage.html'
+
+
+    "pcnormals [vision]":
+        prefix: "pcnormals"
+        body: '''pcnormals(${1:ptCloud}, ${2:optional_k})'''
+        description: '''[vision] Estimate normals for point cloud
+        pcnormals(ptCloud, optional_k)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcnormals.html'
+
+
+    "showReprojectionErrors [vision]":
+        prefix: "showReprojectionErrors"
+        body: '''showReprojectionErrors(${1:cameraParams}, ${2:view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
+        description: '''[vision] Visualize calibration errors
+        showReprojectionErrors(cameraParams, view, 'HighlightIndex', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/showreprojectionerrors.html'
+
+
+    "KAZEPoints.selectUniform [vision]":
+        prefix: "KAZEPoints.selectUniform"
+        body: '''KAZEPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''[vision] 
+        KAZEPoints.selectUniform(points, N, imageSize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/KAZEPoints.selectUniform.html'
+
+
+    "pointTrack [vision]":
+        prefix: "pointTrack"
+        body: '''pointTrack(${1:viewIDs}, ${2:points})'''
+        description: '''[vision] Object for storing matching points from multiple views
+        pointTrack(viewIDs, points)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pointtrack-class.html'
+
+
+    "estimateStereoBaseline [vision]":
+        prefix: "estimateStereoBaseline"
+        body: '''estimateStereoBaseline(${1:imagePoints}, ${2:worldPoints}, ${3:intrinsics1}, ${4:intrinsics2}, 'WorldUnits', ${5:value})'''
+        description: '''[vision] Estimate baseline of stereo camera
+        estimateStereoBaseline(imagePoints, worldPoints, intrinsics1, intrinsics2, 'WorldUnits', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimatestereobaseline.html'
+
+
+    "SURFPoints.selectStrongest [vision]":
+        prefix: "SURFPoints.selectStrongest"
+        body: '''SURFPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''[vision] 
+        SURFPoints.selectStrongest(points, N)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/SURFPoints.selectStrongest.html'
+
+
+    "pixelLabelImageDatastore.readByIndex [vision]":
+        prefix: "pixelLabelImageDatastore.readByIndex"
+        body: '''pixelLabelImageDatastore.readByIndex(${1:pximds}, ${2:ind})'''
+        description: '''[vision] 
+        pixelLabelImageDatastore.readByIndex(pximds, ind)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelImageDatastore.readByIndex.html'
+
+
+    "ocrText.locateText [vision]":
+        prefix: "ocrText.locateText"
+        body: '''ocrText.locateText(${1:ocrText}, ${2:pattern}, 'UseRegexp', ${3:value}, 'IgnoreCase', ${4:value})'''
+        description: '''[vision] 
+        ocrText.locateText(ocrText, pattern, 'UseRegexp', value, 'IgnoreCase', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ocrText.locateText.html'
+
+
+    "estimateGeometricTransform [vision]":
+        prefix: "estimateGeometricTransform"
+        body: '''estimateGeometricTransform(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:transformType}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
+        description: '''[vision] Estimate geometric transform from matching point pairs
+        estimateGeometricTransform(matchedPoints1, matchedPoints2, transformType, 'MaxNumTrials', value, 'Confidence', value, 'MaxDistance', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimategeometrictransform.html'
+
+
+    "ORBPoints.plot [vision]":
+        prefix: "ORBPoints.plot"
+        body: '''ORBPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''[vision] 
+        ORBPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ORBPoints.plot.html'
+
+
+    "bbox2points [vision]":
+        prefix: "bbox2points"
+        body: '''bbox2points(${1:rectangle})'''
+        description: '''[vision] Convert rectangle to corner points list
+        bbox2points(rectangle)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/bbox2points.html'
+
+
+    "opticalFlowHS [vision]":
+        prefix: "opticalFlowHS"
+        body: '''opticalFlowHS('Smoothness', ${1:value}, 'MaxIteration', ${2:value}, 'VelocityDifference', ${3:value})'''
+        description: '''[vision] Object for estimating optical flow using Horn-Schunck method
+        opticalFlowHS('Smoothness', value, 'MaxIteration', value, 'VelocityDifference', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/opticalflowhs.html'
+
+
+    "stereoCalibrationErrors.displayErrors [vision]":
+        prefix: "stereoCalibrationErrors.displayErrors"
+        body: '''stereoCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:stereoParams})'''
+        description: '''[vision] 
+        stereoCalibrationErrors.displayErrors(estimationErrors, stereoParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/stereoCalibrationErrors.displayErrors.html'
+
+
+    "yolov2TransformLayer [vision]":
+        prefix: "yolov2TransformLayer"
+        body: '''yolov2TransformLayer(${1:numAnchors}, 'Name', ${2:value})'''
+        description: '''[vision] Create transform layer for YOLO v2 object detection network
+        yolov2TransformLayer(numAnchors, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.yolov2transformlayer.html'
+
+
+    "viewSet.hasConnection [vision]":
+        prefix: "viewSet.hasConnection"
+        body: '''viewSet.hasConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
+        description: '''[vision] 
+        viewSet.hasConnection(vSet, viewId1, viewId2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.hasConnection.html'
+
+
+    "pixelLabelDatastore.numpartitions [vision]":
+        prefix: "pixelLabelDatastore.numpartitions"
+        body: '''pixelLabelDatastore.numpartitions(${1:pxds}, ${2:optional_pool})'''
+        description: '''[vision] 
+        pixelLabelDatastore.numpartitions(pxds, optional_pool)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelDatastore.numpartitions.html'
+
+
+    "objectDetectorTrainingData [vision]":
+        prefix: "objectDetectorTrainingData"
+        body: '''objectDetectorTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
+        description: '''[vision] Create training data for an object detector
+        objectDetectorTrainingData(gTruth, 'SamplingFactor', value, 'WriteLocation', value, 'ImageFormat', value, 'NamePrefix', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/objectdetectortrainingdata.html'
+
+
+    "boxLabelDatastore.read [vision]":
+        prefix: "boxLabelDatastore.read"
+        body: '''[${2:data}, ${3:info}] = boxLabelDatastore.read(${1:blds})'''
+        description: '''[vision] 
+        [data, info] = boxLabelDatastore.read(blds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.read.html'
+
+
+    "opticalFlowLK.estimateFlow [vision]":
+        prefix: "opticalFlowLK.estimateFlow"
+        body: '''opticalFlowLK.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        description: '''[vision] 
+        opticalFlowLK.estimateFlow(opticalFlow, I)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowLK.estimateFlow.html'
+
+
+    "SURFPoints.plot [vision]":
+        prefix: "SURFPoints.plot"
+        body: '''SURFPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''[vision] 
+        SURFPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/SURFPoints.plot.html'
+
+
+    "pixelLabelImageDatastore.partitionByIndex [vision]":
+        prefix: "pixelLabelImageDatastore.partitionByIndex"
+        body: '''pixelLabelImageDatastore.partitionByIndex(${1:pximds}, ${2:ind})'''
+        description: '''[vision] 
+        pixelLabelImageDatastore.partitionByIndex(pximds, ind)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelImageDatastore.partitionByIndex.html'
+
+
+    "opticalFlowHS.estimateFlow [vision]":
+        prefix: "opticalFlowHS.estimateFlow"
+        body: '''opticalFlowHS.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        description: '''[vision] 
+        opticalFlowHS.estimateFlow(opticalFlow, I)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowHS.estimateFlow.html'
+
+
+    "undistortImage [vision]":
+        prefix: "undistortImage"
+        body: '''undistortImage(${1:I}, ${2:cameraParams}, ${3:optional_interp}, 'FillValues', ${4:value}, 'OutputView', ${5:value})'''
+        description: '''[vision] Correct image for lens distortion
+        undistortImage(I, cameraParams, optional_interp, 'FillValues', value, 'OutputView', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/undistortimage.html'
+
+
+    "boxLabelDatastore [vision]":
+        prefix: "boxLabelDatastore"
+        body: '''${2:blds} = boxLabelDatastore(${1:TBL})'''
+        description: '''[vision] Datastore for bounding box label data
+        blds = boxLabelDatastore(TBL)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/boxlabeldatastore.html'
+
+
+    "rpnSoftmaxLayer [vision]":
+        prefix: "rpnSoftmaxLayer"
+        body: '''rpnSoftmaxLayer('Name', ${1:value})'''
+        description: '''[vision] Softmax layer for region proposal network (RPN)
+        rpnSoftmaxLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.rpnsoftmaxlayer.html'
+
+
+    "viewSet.deleteConnection [vision]":
+        prefix: "viewSet.deleteConnection"
+        body: '''viewSet.deleteConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
+        description: '''[vision] 
+        viewSet.deleteConnection(vSet, viewId1, viewId2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.deleteConnection.html'
+
+
+    "boxLabelDatastore.numpartitions [vision]":
+        prefix: "boxLabelDatastore.numpartitions"
+        body: '''${3:N} = boxLabelDatastore.numpartitions(${1:blds}, ${2:optional_pool})'''
+        description: '''[vision] 
+        N = boxLabelDatastore.numpartitions(blds, optional_pool)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.numpartitions.html'
+
+
+    "pcregisterndt [vision]":
+        prefix: "pcregisterndt"
+        body: '''pcregisterndt(${1:moving}, ${2:fixed}, ${3:gridStep}, 'InitialTransform', ${4:value}, 'OutlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'Verbose', ${8:value})'''
+        description: '''[vision] Register two point clouds using NDT algorithm
+        pcregisterndt(moving, fixed, gridStep, 'InitialTransform', value, 'OutlierRatio', value, 'MaxIterations', value, 'Tolerance', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcregisterndt.html'
+
+
+    "deeplabv3plusLayers [vision]":
+        prefix: "deeplabv3plusLayers"
+        body: '''deeplabv3plusLayers(${1:imageSize}, ${2:numClasses}, ${3:network}, 'DownsamplingFactor', ${4:value})'''
+        description: '''[vision] Create DeepLab v3+ convolutional neural network for semantic image
+      segmentation
+        deeplabv3plusLayers(imageSize, numClasses, network, 'DownsamplingFactor', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/deeplabv3pluslayers.html'
+
+
+    "estimateFundamentalMatrix [vision]":
+        prefix: "estimateFundamentalMatrix"
+        body: '''estimateFundamentalMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, 'Method', ${3:value}, 'OutputClass', ${4:value}, 'NumTrials', ${5:value}, 'DistanceType', ${6:value}, 'DistanceThreshold', ${7:value}, 'Confidence', ${8:value}, 'InlierPercentage', ${9:value}, 'ReportRuntimeError', ${10:value})'''
+        description: '''[vision] Estimate fundamental matrix from corresponding points
+in stereo images
+        estimateFundamentalMatrix(matchedPoints1, matchedPoints2, 'Method', value, 'OutputClass', value, 'NumTrials', value, 'DistanceType', value, 'DistanceThreshold', value, 'Confidence', value, 'InlierPercentage', value, 'ReportRuntimeError', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimatefundamentalmatrix.html'
+
+
+    "KAZEPoints.plot [vision]":
+        prefix: "KAZEPoints.plot"
+        body: '''KAZEPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''[vision] 
+        KAZEPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/KAZEPoints.plot.html'
+
+
+    "invertedImageIndex.removeImages [vision]":
+        prefix: "invertedImageIndex.removeImages"
+        body: '''invertedImageIndex.removeImages(${1:imageIndex}, ${2:indices})'''
+        description: '''[vision] 
+        invertedImageIndex.removeImages(imageIndex, indices)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/invertedImageIndex.removeImages.html'
+
+
+    "KAZEPoints.selectStrongest [vision]":
+        prefix: "KAZEPoints.selectStrongest"
+        body: '''KAZEPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''[vision] 
+        KAZEPoints.selectStrongest(points, N)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/KAZEPoints.selectStrongest.html'
+
+
+    "bboxwarp [vision]":
+        prefix: "bboxwarp"
+        body: '''bboxwarp(${1:bboxA}, ${2:tform}, ${3:ref}, 'OverlapThreshold', ${4:value})'''
+        description: '''[vision] Apply geometric transformation to bounding boxes
+        bboxwarp(bboxA, tform, ref, 'OverlapThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/bboxwarp.html'
+
+
+    "estimateUncalibratedRectification [vision]":
+        prefix: "estimateUncalibratedRectification"
+        body: '''estimateUncalibratedRectification(${1:F}, ${2:inlierPoints1}, ${3:inlierPoints2}, ${4:imagesize})'''
+        description: '''[vision] Uncalibrated stereo rectification
+        estimateUncalibratedRectification(F, inlierPoints1, inlierPoints2, imagesize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimateuncalibratedrectification.html'
+
+
+    "extrinsicsToCameraPose [vision]":
+        prefix: "extrinsicsToCameraPose"
+        body: '''extrinsicsToCameraPose(${1:rotationMatrix}, ${2:translationVector})'''
+        description: '''[vision] Convert extrinsics to camera pose
+        extrinsicsToCameraPose(rotationMatrix, translationVector)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/extrinsicstocamerapose.html'
+
+
+    "cameraIntrinsics [vision]":
+        prefix: "cameraIntrinsics"
+        body: '''cameraIntrinsics(${1:focalLength}, ${2:principalPoint}, ${3:imageSize}, 'RadialDistortion', ${4:value}, 'TangentialDistortion', ${5:value}, 'Skew', ${6:value})'''
+        description: '''[vision]  Object for storing intrinsic camera parameters
+        cameraIntrinsics(focalLength, principalPoint, imageSize, 'RadialDistortion', value, 'TangentialDistortion', value, 'Skew', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/cameraintrinsics.html'
+
+
+    "invertedImageIndex [vision]":
+        prefix: "invertedImageIndex"
+        body: '''invertedImageIndex(${1:bag}, ${2:optional_SaveFeatureLocations})'''
+        description: '''[vision] Search index that maps visual words to images
+        invertedImageIndex(bag, optional_SaveFeatureLocations)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/invertedimageindex-class.html'
+
+
+    "showMatchedFeatures [vision]":
+        prefix: "showMatchedFeatures"
+        body: '''showMatchedFeatures(${1:I1}, ${2:I2}, ${3:matchedPoints1}, ${4:matchedPoints2}, ${5:optional_method}, 'PlotOptions', ${6:value}, 'Parent', ${7:value})'''
+        description: '''[vision] Display corresponding feature points
+        showMatchedFeatures(I1, I2, matchedPoints1, matchedPoints2, optional_method, 'PlotOptions', value, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/showmatchedfeatures.html'
+
+
+    "binaryFeatures [vision]":
+        prefix: "binaryFeatures"
+        body: '''binaryFeatures(${1:featureVectors})'''
+        description: '''[vision] Object for storing binary feature vectors
+        binaryFeatures(featureVectors)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/binaryfeatures.html'
+
+
+    "detectFASTFeatures [vision]":
+        prefix: "detectFASTFeatures"
+        body: '''detectFASTFeatures(${1:I}, 'MinQuality', ${2:value}, 'MinContrast', ${3:value}, 'ROI', ${4:value})'''
+        description: '''[vision] Detect corners using FAST algorithm and return cornerPoints object
+        detectFASTFeatures(I, 'MinQuality', value, 'MinContrast', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/detectfastfeatures.html'
+
+
+    "opticalFlowLK [vision]":
+        prefix: "opticalFlowLK"
+        body: '''opticalFlowLK('NoiseThreshold', ${1:value})'''
+        description: '''[vision] Object for estimating optical flow using Lucas-Kanade method
+        opticalFlowLK('NoiseThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/opticalflowlk.html'
+
+
+    "detectHarrisFeatures [vision]":
+        prefix: "detectHarrisFeatures"
+        body: '''detectHarrisFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
+        description: '''[vision] Detect corners using Harris–Stephens algorithm
+and return cornerPoints object
+        detectHarrisFeatures(I, 'MinQuality', value, 'FilterSize', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/detectharrisfeatures.html'
+
+
+    "detectORBFeatures [vision]":
+        prefix: "detectORBFeatures"
+        body: '''detectORBFeatures(${1:I}, 'ScaleFactor', ${2:value}, 'NumLevels', ${3:value}, 'ROI', ${4:value})'''
+        description: '''[vision] Detect and store ORB keypoints
+        detectORBFeatures(I, 'ScaleFactor', value, 'NumLevels', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/detectorbfeatures.html'
+
+
+    "ORBPoints.selectUniform [vision]":
+        prefix: "ORBPoints.selectUniform"
+        body: '''ORBPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''[vision] 
+        ORBPoints.selectUniform(points, N, imageSize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ORBPoints.selectUniform.html'
+
+
+    "pcfromkinect [vision]":
+        prefix: "pcfromkinect"
+        body: '''pcfromkinect(${1:depthDevice}, ${2:depthImage}, ${3:colorImage}, ${4:alignment})'''
+        description: '''[vision] Point cloud from Kinect for Windows
+        pcfromkinect(depthDevice, depthImage, colorImage, alignment)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcfromkinect.html'
+
+
+    "lineToBorderPoints [vision]":
+        prefix: "lineToBorderPoints"
+        body: '''lineToBorderPoints(${1:lines}, ${2:imagesize})'''
+        description: '''[vision] Intersection points of lines in image and image border
+        lineToBorderPoints(lines, imagesize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/linetoborderpoints.html'
+
+
+    "pixelLabelTrainingData [vision]":
+        prefix: "pixelLabelTrainingData"
+        body: '''pixelLabelTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
+        description: '''[vision] Create training data for semantic segmentation from ground truth
+        pixelLabelTrainingData(gTruth, 'SamplingFactor', value, 'WriteLocation', value, 'ImageFormat', value, 'NamePrefix', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pixellabeltrainingdata.html'
+
+
+    "estimateWorldCameraPose [vision]":
+        prefix: "estimateWorldCameraPose"
+        body: '''estimateWorldCameraPose(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxReprojectionError', ${6:value})'''
+        description: '''[vision] Estimate camera pose from 3-D to 2-D point correspondences
+        estimateWorldCameraPose(imagePoints, worldPoints, cameraParams, 'MaxNumTrials', value, 'Confidence', value, 'MaxReprojectionError', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimateworldcamerapose.html'
+
+
+    "cameraCalibrationErrors.displayErrors [vision]":
+        prefix: "cameraCalibrationErrors.displayErrors"
+        body: '''cameraCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:cameraParams})'''
+        description: '''[vision] 
+        cameraCalibrationErrors.displayErrors(estimationErrors, cameraParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraCalibrationErrors.displayErrors.html'
+
+
+    "relativeCameraPose [vision]":
+        prefix: "relativeCameraPose"
+        body: '''relativeCameraPose(${1:M}, ${2:cameraParams}, ${3:inlierPoints1}, ${4:inlierPoints2})'''
+        description: '''[vision] Compute relative rotation and translation between camera
+poses
+        relativeCameraPose(M, cameraParams, inlierPoints1, inlierPoints2)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/relativecamerapose.html'
+
+
+    "boxLabelDatastore.partition [vision]":
+        prefix: "boxLabelDatastore.partition"
+        body: '''${4:subds} = boxLabelDatastore.partition(${1:blds}, ${2:N}, ${3:index})'''
+        description: '''[vision] 
+        subds = boxLabelDatastore.partition(blds, N, index)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.partition.html'
+
+
+    "opticalFlowLKDoG.estimateFlow [vision]":
+        prefix: "opticalFlowLKDoG.estimateFlow"
+        body: '''opticalFlowLKDoG.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        description: '''[vision] 
+        opticalFlowLKDoG.estimateFlow(opticalFlow, I)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowLKDoG.estimateFlow.html'
+
+
+    "pcsegdist [vision]":
+        prefix: "pcsegdist"
+        body: '''pcsegdist(${1:ptCloud}, ${2:minDistance})'''
+        description: '''[vision] Segment point cloud into clusters based on Euclidean distance
+        pcsegdist(ptCloud, minDistance)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcsegdist.html'
+
+
+    "SURFPoints.selectUniform [vision]":
+        prefix: "SURFPoints.selectUniform"
+        body: '''SURFPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''[vision] 
+        SURFPoints.selectUniform(points, N, imageSize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/SURFPoints.selectUniform.html'
+
+
+    "opticalFlowFarneback [vision]":
+        prefix: "opticalFlowFarneback"
+        body: '''opticalFlowFarneback('NumPyramidLevels', ${1:value}, 'PyramidScale', ${2:value}, 'NumIterations', ${3:value}, 'NeighborhoodSize', ${4:value}, 'FilterSize', ${5:value})'''
+        description: '''[vision] Object for estimating optical flow using Farneback method
+        opticalFlowFarneback('NumPyramidLevels', value, 'PyramidScale', value, 'NumIterations', value, 'NeighborhoodSize', value, 'FilterSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/opticalflowfarneback.html'
+
+
+    "cameraParameters.pointsToWorld [vision]":
+        prefix: "cameraParameters.pointsToWorld"
+        body: '''cameraParameters.pointsToWorld(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
+        description: '''[vision] 
+        cameraParameters.pointsToWorld(cameraParams, rotationMatrix, translationVector, imagePoints)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraParameters.pointsToWorld.html'
+
+
+    "bagOfFeatures [vision]":
+        prefix: "bagOfFeatures"
+        body: '''bagOfFeatures(${1:imds}, 'CustomExtractor', ${2:value}, 'VocabularySize', ${3:value}, 'StrongestFeatures', ${4:value}, 'Verbose', ${5:value}, 'PointSelection', ${6:value}, 'GridStep', ${7:value}, 'BlockWidth', ${8:value}, 'Upright', ${9:value})'''
+        description: '''[vision] Bag of visual words object
+        bagOfFeatures(imds, 'CustomExtractor', value, 'VocabularySize', value, 'StrongestFeatures', value, 'Verbose', value, 'PointSelection', value, 'GridStep', value, 'BlockWidth', value, 'Upright', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/bagoffeatures.html'
+
+
+    "fisheyeCalibrationErrors.displayErrors [vision]":
+        prefix: "fisheyeCalibrationErrors.displayErrors"
+        body: '''fisheyeCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:fisheyeParams})'''
+        description: '''[vision] 
+        fisheyeCalibrationErrors.displayErrors(estimationErrors, fisheyeParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/fisheyeCalibrationErrors.displayErrors.html'
+
+
+    "viewSet.updateView [vision]":
+        prefix: "viewSet.updateView"
+        body: '''viewSet.updateView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
+        description: '''[vision] 
+        viewSet.updateView(vSet, viewId, 'Points', value, 'Orientation', value, 'Location', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.updateView.html'
+
+
+    "trainImageCategoryClassifier [vision]":
+        prefix: "trainImageCategoryClassifier"
+        body: '''trainImageCategoryClassifier(${1:imds}, ${2:bag}, 'Verbose', ${3:value}, 'LearnerOptions', ${4:value})'''
+        description: '''[vision] Train an image category classifier
+        trainImageCategoryClassifier(imds, bag, 'Verbose', value, 'LearnerOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/trainimagecategoryclassifier.html'
+
+
+    "triangulate [vision]":
+        prefix: "triangulate"
+        body: '''triangulate(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:stereoParams})'''
+        description: '''[vision] 3-D locations of undistorted matching points in stereo
+images
+        triangulate(matchedPoints1, matchedPoints2, stereoParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/triangulate.html'
+
+
+    "plotCamera [vision]":
+        prefix: "plotCamera"
+        body: '''plotCamera(${1:optional_cameraTable})'''
+        description: '''[vision] Plot a camera in 3-D coordinates
+        plotCamera(optional_cameraTable)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/plotcamera.html'
+
+
+    "ORBPoints.selectStrongest [vision]":
+        prefix: "ORBPoints.selectStrongest"
+        body: '''ORBPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''[vision] 
+        ORBPoints.selectStrongest(points, N)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ORBPoints.selectStrongest.html'
+
+
+    "evaluateSemanticSegmentation [vision]":
+        prefix: "evaluateSemanticSegmentation"
+        body: '''${5:metrics} = evaluateSemanticSegmentation(${1:pxdsResults}, ${2:pxdsTruth}, 'Metrics', ${3:value}, 'Verbose', ${4:value})'''
+        description: '''[vision] Evaluate semantic segmentation data set against ground truth
+        metrics = evaluateSemanticSegmentation(pxdsResults, pxdsTruth, 'Metrics', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/evaluatesemanticsegmentation.html'
+
+
+    "opticalFlowLKDoG [vision]":
+        prefix: "opticalFlowLKDoG"
+        body: '''opticalFlowLKDoG('NumFrames', ${1:value}, 'ImageFilterSigma', ${2:value}, 'GradientFilterSigma', ${3:value}, 'NoiseThreshold', ${4:value})'''
+        description: '''[vision] Object for estimating optical flow using Lucas-Kanade derivative of Gaussian
+      method
+        opticalFlowLKDoG('NumFrames', value, 'ImageFilterSigma', value, 'GradientFilterSigma', value, 'NoiseThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/opticalflowlkdog.html'
+
+
+    "viewSet.findTracks [vision]":
+        prefix: "viewSet.findTracks"
+        body: '''viewSet.findTracks(${1:vSet}, ${2:viewIds})'''
+        description: '''[vision] 
+        viewSet.findTracks(vSet, viewIds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.findTracks.html'
+
+
+    "MSERRegions.plot [vision]":
+        prefix: "MSERRegions.plot"
+        body: '''MSERRegions.plot(${1:points}, ${2:optional_ax}, 'showEllipses', ${3:value}, 'ShowOrientation', ${4:value}, 'showPixelList', ${5:value})'''
+        description: '''[vision] 
+        MSERRegions.plot(points, optional_ax, 'showEllipses', value, 'ShowOrientation', value, 'showPixelList', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/MSERRegions.plot.html'
+
+
+    "pixelClassificationLayer [vision]":
+        prefix: "pixelClassificationLayer"
+        body: '''pixelClassificationLayer('Classes', ${1:value}, 'ClassWeights', ${2:value}, 'Name', ${3:value})'''
+        description: '''[vision] Create pixel classification layer for semantic segmentation
+        pixelClassificationLayer('Classes', value, 'ClassWeights', value, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.pixelclassificationlayer.html'
+
+
+    "roiMaxPooling2dLayer [vision]":
+        prefix: "roiMaxPooling2dLayer"
+        body: '''roiMaxPooling2dLayer(${1:outputSize}, 'Name', ${2:value})'''
+        description: '''[vision] Neural network layer used to output fixed-size feature maps for rectangular
+      ROIs
+        roiMaxPooling2dLayer(outputSize, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.roimaxpooling2dlayer.html'
+
+
+    "pcdenoise [vision]":
+        prefix: "pcdenoise"
+        body: '''pcdenoise(${1:ptCloudIn}, 'NumNeighbors', ${2:value}, 'Threshold', ${3:value})'''
+        description: '''[vision] Remove noise from 3-D point cloud
+        pcdenoise(ptCloudIn, 'NumNeighbors', value, 'Threshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/pcdenoise.html'
+
+
+    "extractFeatures [vision]":
+        prefix: "extractFeatures"
+        body: '''extractFeatures(${1:I}, ${2:points}, 'Method', ${3:value}, 'BlockSize', ${4:value}, 'Upright', ${5:value}, 'FeatureSize', ${6:value})'''
+        description: '''[vision] Extract interest point descriptors
+        extractFeatures(I, points, 'Method', value, 'BlockSize', value, 'Upright', value, 'FeatureSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/extractfeatures.html'
+
+
+    "groundTruthDataSource [vision]":
+        prefix: "groundTruthDataSource"
+        body: '''groundTruthDataSource(${1:videoFileName})'''
+        description: '''[vision] Object for storing ground truth data sources
+        groundTruthDataSource(videoFileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/groundtruthdatasource.html'
+
+
+    "velodyneFileReader.hasFrame [vision]":
+        prefix: "velodyneFileReader.hasFrame"
+        body: '''velodyneFileReader.hasFrame(${1:veloReader})'''
+        description: '''[vision] 
+        velodyneFileReader.hasFrame(veloReader)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/velodyneFileReader.hasFrame.html'
+
+
+    "bundleAdjustment [vision]":
+        prefix: "bundleAdjustment"
+        body: '''bundleAdjustment(${1:xyzPoints}, ${2:pointTracks}, ${3:cameraPoses}, ${4:cameraParams}, 'MaxIterations', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'PointsUndistorted', ${8:value}, 'FixedViewIDs', ${9:value}, 'Verbose', ${10:value})'''
+        description: '''[vision] Refine camera poses and 3-D points
+        bundleAdjustment(xyzPoints, pointTracks, cameraPoses, cameraParams, 'MaxIterations', value, 'AbsoluteTolerance', value, 'RelativeTolerance', value, 'PointsUndistorted', value, 'FixedViewIDs', value, 'Verbose', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/bundleadjustment.html'
+
+
+    "rotationMatrixToVector [vision]":
+        prefix: "rotationMatrixToVector"
+        body: '''rotationMatrixToVector(${1:rotationMatrix})'''
+        description: '''[vision] Convert 3-D rotation matrix to rotation vector
+        rotationMatrixToVector(rotationMatrix)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/rotationmatrixtovector.html'
+
+
+    "estimateAnchorBoxes [vision]":
+        prefix: "estimateAnchorBoxes"
+        body: '''estimateAnchorBoxes(${1:trainingData}, ${2:numAnchors})'''
+        description: '''[vision] Estimate anchor boxes for deep learning object detectors
+        estimateAnchorBoxes(trainingData, numAnchors)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimateanchorboxes.html'
+
+
+    "retrieveImages [vision]":
+        prefix: "retrieveImages"
+        body: '''retrieveImages(${1:queryImage}, ${2:imageIndex}, 'NumResults', ${3:value}, 'ROI', ${4:value})'''
+        description: '''[vision] Search image set for similar image
+        retrieveImages(queryImage, imageIndex, 'NumResults', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/retrieveimages.html'
+
+
+    "KAZEPoints [vision]":
+        prefix: "KAZEPoints"
+        body: '''KAZEPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
+        description: '''[vision] Object for storing KAZE interest points
+        KAZEPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/kazepoints.html'
+
+
+    "disparitySGM [vision]":
+        prefix: "disparitySGM"
+        body: '''disparitySGM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'UniquenessThreshold', ${4:value})'''
+        description: '''[vision] Compute disparity map through semi-global matching
+        disparitySGM(I1, I2, 'DisparityRange', value, 'UniquenessThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/disparitysgm.html'
+
+
+    "invertedImageIndex.addImages [vision]":
+        prefix: "invertedImageIndex.addImages"
+        body: '''invertedImageIndex.addImages(${1:imageIndex}, ${2:imds})'''
+        description: '''[vision] 
+        invertedImageIndex.addImages(imageIndex, imds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/invertedImageIndex.addImages.html'
+
+
+    "estimateCameraParameters [vision]":
+        prefix: "estimateCameraParameters"
+        body: '''estimateCameraParameters(${1:imagePoints}, ${2:worldPoints}, 'WorldUnits', ${3:value}, 'EstimateSkew', ${4:value}, 'NumRadialDistortionCoefficients', ${5:value}, 'EstimateTangentialDistortion', ${6:value}, 'InitialIntrinsicMatrix', ${7:value}, 'InitialRadialDistortion', ${8:value}, 'ImageSize', ${9:value})'''
+        description: '''[vision] Calibrate a single or stereo camera
+        estimateCameraParameters(imagePoints, worldPoints, 'WorldUnits', value, 'EstimateSkew', value, 'NumRadialDistortionCoefficients', value, 'EstimateTangentialDistortion', value, 'InitialIntrinsicMatrix', value, 'InitialRadialDistortion', value, 'ImageSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimatecameraparameters.html'
+
+
+    "trainYOLOv2ObjectDetector [vision]":
+        prefix: "trainYOLOv2ObjectDetector"
+        body: '''trainYOLOv2ObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingImageSize', ${4:value})'''
+        description: '''[vision] Train YOLO v2 object detector
+        trainYOLOv2ObjectDetector(trainingData, network, options, 'TrainingImageSize', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/trainyolov2objectdetector.html'
+
+
+    "boxLabelDatastore.reset [vision]":
+        prefix: "boxLabelDatastore.reset"
+        body: '''boxLabelDatastore.reset(${1:blds})'''
+        description: '''[vision] 
+        boxLabelDatastore.reset(blds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.reset.html'
+
+
+    "isfilterseparable [vision]":
+        prefix: "isfilterseparable"
+        body: '''isfilterseparable(${1:H})'''
+        description: '''[vision] Determine whether filter coefficients are separable
+        isfilterseparable(H)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/isfilterseparable.html'
+
+
+    "rcnnObjectDetector.classifyRegions [vision]":
+        prefix: "rcnnObjectDetector.classifyRegions"
+        body: '''rcnnObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value})'''
+        description: '''[vision] 
+        rcnnObjectDetector.classifyRegions(detector, I, optional_rois, 'MiniBatchSize', value, 'ExecutionEnvironment', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/rcnnObjectDetector.classifyRegions.html'
+
+
+    "rpnClassificationLayer [vision]":
+        prefix: "rpnClassificationLayer"
+        body: '''rpnClassificationLayer('Name', ${1:value})'''
+        description: '''[vision] Classification layer for region proposal networks (RPNs)
+        rpnClassificationLayer('Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.rpnclassificationlayer.html'
+
+
+    "yolov2Layers [vision]":
+        prefix: "yolov2Layers"
+        body: '''yolov2Layers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ReorgLayerSource', ${6:value})'''
+        description: '''[vision] Create YOLO v2 object detection network
+        yolov2Layers(imageSize, numClasses, anchorBoxes, network, featureLayer, 'ReorgLayerSource', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/yolov2layers.html'
+
+
+    "videoLabeler [vision]":
+        prefix: "videoLabeler"
+        body: '''videoLabeler(${1:optional_videoFileName})'''
+        description: '''[vision] 
+        videoLabeler(optional_videoFileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/videoLabeler.html'
+
+
+    "fastRCNNObjectDetector.classifyRegions [vision]":
+        prefix: "fastRCNNObjectDetector.classifyRegions"
+        body: '''fastRCNNObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'ExecutionEnvironment', ${4:value})'''
+        description: '''[vision] 
+        fastRCNNObjectDetector.classifyRegions(detector, I, optional_rois, 'ExecutionEnvironment', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/fastRCNNObjectDetector.classifyRegions.html'
+
+
+    "velodyneFileReader.readFrame [vision]":
+        prefix: "velodyneFileReader.readFrame"
+        body: '''velodyneFileReader.readFrame(${1:veloReader}, ${2:optional_frameNumber})'''
+        description: '''[vision] 
+        velodyneFileReader.readFrame(veloReader, optional_frameNumber)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/velodyneFileReader.readFrame.html'
+
+
+    "viewSet.deleteView [vision]":
+        prefix: "viewSet.deleteView"
+        body: '''viewSet.deleteView(${1:vSet}, ${2:viewId})'''
+        description: '''[vision] 
+        viewSet.deleteView(vSet, viewId)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.deleteView.html'
+
+
+    "fcnLayers [vision]":
+        prefix: "fcnLayers"
+        body: '''fcnLayers(${1:imageSize}, ${2:numClasses}, 'Type', ${3:value})'''
+        description: '''[vision] Create fully convolutional network layers for semantic segmentation
+        fcnLayers(imageSize, numClasses, 'Type', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/fcnlayers.html'
+
+
+    "undistortFisheyePoints [vision]":
+        prefix: "undistortFisheyePoints"
+        body: '''undistortFisheyePoints(${1:points}, ${2:intrinsics}, ${3:optional_scaleFactor})'''
+        description: '''[vision] Correct point coordinates for fisheye lens distortion
+        undistortFisheyePoints(points, intrinsics, optional_scaleFactor)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/undistortfisheyepoints.html'
+
+
+    "trainFastRCNNObjectDetector [vision]":
+        prefix: "trainFastRCNNObjectDetector"
+        body: '''trainFastRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'RegionProposalFcn', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'NumRegionsToSample', ${8:value}, 'SmallestImageDimension', ${9:value}, 'FreezeBatchNormalization', ${10:value})'''
+        description: '''[vision] Train a Fast R-CNN deep learning object detector
+        trainFastRCNNObjectDetector(trainingData, network, options, 'RegionProposalFcn', value, 'PositiveOverlapRange', value, 'NegativeOverlapRange', value, 'NumStrongestRegions', value, 'NumRegionsToSample', value, 'SmallestImageDimension', value, 'FreezeBatchNormalization', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/trainfastrcnnobjectdetector.html'
+
+
+    "integralFilter [vision]":
+        prefix: "integralFilter"
+        body: '''integralFilter(${1:intI}, ${2:H})'''
+        description: '''[vision] Filter using integral image
+        integralFilter(intI, H)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/integralfilter.html'
+
+
+    "estimateFisheyeParameters [vision]":
+        prefix: "estimateFisheyeParameters"
+        body: '''estimateFisheyeParameters(${1:imagePoints}, ${2:worldPoints}, ${3:imageSize}, 'EstimateAlignment', ${4:value}, 'WorldUnits', ${5:value})'''
+        description: '''[vision] Calibrate fisheye camera
+        estimateFisheyeParameters(imagePoints, worldPoints, imageSize, 'EstimateAlignment', value, 'WorldUnits', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/estimatefisheyeparameters.html'
+
+
+    "bboxcrop [vision]":
+        prefix: "bboxcrop"
+        body: '''bboxcrop(${1:bboxA}, ${2:win}, 'OverlapThreshold', ${3:value})'''
+        description: '''[vision] Crop bounding boxes
+        bboxcrop(bboxA, win, 'OverlapThreshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/bboxcrop.html'
+
+
+    "sphereModel.plot [vision]":
+        prefix: "sphereModel.plot"
+        body: '''sphereModel.plot(${1:model}, 'Parent', ${2:value})'''
+        description: '''[vision] 
+        sphereModel.plot(model, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/sphereModel.plot.html'
+
+
+    "imageCategoryClassifier.evaluate [vision]":
+        prefix: "imageCategoryClassifier.evaluate"
+        body: '''imageCategoryClassifier.evaluate(${1:classifier}, ${2:imds})'''
+        description: '''[vision] 
+        imageCategoryClassifier.evaluate(classifier, imds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/imageCategoryClassifier.evaluate.html'
+
+
+    "peopleDetectorACF [vision]":
+        prefix: "peopleDetectorACF"
+        body: '''peopleDetectorACF(${1:optional_name})'''
+        description: '''[vision] Detect people using aggregate channel features
+        peopleDetectorACF(optional_name)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/peopledetectoracf.html'
+
+
+    "cameraParameters [vision]":
+        prefix: "cameraParameters"
+        body: '''cameraParameters(${1:paramStruct})'''
+        description: '''[vision] Object for storing camera parameters
+        cameraParameters(paramStruct)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/cameraparameters.html'
+
+
+    "cameraMatrix [vision]":
+        prefix: "cameraMatrix"
+        body: '''cameraMatrix(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector})'''
+        description: '''[vision] Camera projection matrix
+        cameraMatrix(cameraParams, rotationMatrix, translationVector)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/cameramatrix.html'
+
+
+    "labelDefinitionCreator [vision]":
+        prefix: "labelDefinitionCreator"
+        body: '''labelDefinitionCreator(${1:optional_ldc})'''
+        description: '''[vision] Object for storing, modifying and creating label definitions table
+        labelDefinitionCreator(optional_ldc)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/labeldefinitioncreator.html'
+
+
+    "viewSet.hasView [vision]":
+        prefix: "viewSet.hasView"
+        body: '''viewSet.hasView(${1:vSet}, ${2:viewId})'''
+        description: '''[vision] 
+        viewSet.hasView(vSet, viewId)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.hasView.html'
+
+
+    "viewSet.updateConnection [vision]":
+        prefix: "viewSet.updateConnection"
+        body: '''viewSet.updateConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
+        description: '''[vision] Modify a connection between two views in a view set object
+        viewSet.updateConnection(vSet, viewId1, viewId2, 'Matches', value, 'Orientation', value, 'Location', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/viewset.updateconnection.html'
+
+
+    "epipolarLine [vision]":
+        prefix: "epipolarLine"
+        body: '''epipolarLine(${1:F}, ${2:points})'''
+        description: '''[vision] Compute epipolar lines for stereo images
+        epipolarLine(F, points)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/epipolarline.html'
+
+
+    "viewSet.poses [vision]":
+        prefix: "viewSet.poses"
+        body: '''viewSet.poses(${1:vSet}, ${2:optional_viewIds})'''
+        description: '''[vision] 
+        viewSet.poses(vSet, optional_viewIds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.poses.html'
+
+
+    "imageLabeler [vision]":
+        prefix: "imageLabeler"
+        body: '''imageLabeler(${1:optional_imageFolder})'''
+        description: '''[vision] 
+        imageLabeler(optional_imageFolder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/imageLabeler.html'
+
+
+    "BRISKPoints.plot [vision]":
+        prefix: "BRISKPoints.plot"
+        body: '''BRISKPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''[vision] 
+        BRISKPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/BRISKPoints.plot.html'
+
+
+    "ocrTrainer [vision]":
+        prefix: "ocrTrainer"
+        body: '''ocrTrainer(${1:optional_sessionFile})'''
+        description: '''[vision] 
+        ocrTrainer(optional_sessionFile)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ocrTrainer.html'
+
+
+    "MSERRegions [vision]":
+        prefix: "MSERRegions"
+        body: '''MSERRegions(${1:pixellist})'''
+        description: '''[vision] Object for storing MSER regions
+        MSERRegions(pixellist)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/mserregions.html'
+
+
+    "reconstructScene [vision]":
+        prefix: "reconstructScene"
+        body: '''reconstructScene(${1:disparityMap}, ${2:stereoParams})'''
+        description: '''[vision] Reconstruct 3-D scene from disparity map
+        reconstructScene(disparityMap, stereoParams)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/reconstructscene.html'
+
+
+    "detectKAZEFeatures [vision]":
+        prefix: "detectKAZEFeatures"
+        body: '''detectKAZEFeatures(${1:I}, 'Diffusion', ${2:value}, 'Threshold', ${3:value}, 'NumOctaves', ${4:value}, 'NumScaleLevels', ${5:value}, 'ROI', ${6:value})'''
+        description: '''[vision] Detect KAZE features
+        detectKAZEFeatures(I, 'Diffusion', value, 'Threshold', value, 'NumOctaves', value, 'NumScaleLevels', value, 'ROI', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/detectkazefeatures.html'
+
+
+    "extractHOGFeatures [vision]":
+        prefix: "extractHOGFeatures"
+        body: '''extractHOGFeatures(${1:I}, ${2:optional_points}, 'CellSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOverlap', ${5:value}, 'NumBins', ${6:value}, 'UseSignedOrientation', ${7:value})'''
+        description: '''[vision] Extract histogram of oriented gradients (HOG) features
+        extractHOGFeatures(I, optional_points, 'CellSize', value, 'BlockSize', value, 'BlockOverlap', value, 'NumBins', value, 'UseSignedOrientation', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/extracthogfeatures.html'
+
+
+    "extractLBPFeatures [vision]":
+        prefix: "extractLBPFeatures"
+        body: '''extractLBPFeatures(${1:I}, 'NumNeighbors', ${2:value}, 'Radius', ${3:value}, 'Upright', ${4:value}, 'Interpolation', ${5:value}, 'CellSize', ${6:value}, 'Normalization', ${7:value})'''
+        description: '''[vision] Extract local binary pattern (LBP) features
+        extractLBPFeatures(I, 'NumNeighbors', value, 'Radius', value, 'Upright', value, 'Interpolation', value, 'CellSize', value, 'Normalization', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/extractlbpfeatures.html'
+
+
+    "fisheyeIntrinsics [vision]":
+        prefix: "fisheyeIntrinsics"
+        body: '''fisheyeIntrinsics(${1:mappingCoeffecients}, ${2:imageSize}, ${3:distortionCenter}, ${4:optional_stretchMatrix})'''
+        description: '''[vision] Object for storing intrinsic fisheye camera parameters
+        fisheyeIntrinsics(mappingCoeffecients, imageSize, distortionCenter, optional_stretchMatrix)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/fisheyeintrinsics.html'
+
+
+    "isEpipoleInImage [vision]":
+        prefix: "isEpipoleInImage"
+        body: '''isEpipoleInImage(${1:F}, ${2:imagesize})'''
+        description: '''[vision] Determine whether image contains epipole
+        isEpipoleInImage(F, imagesize)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/isepipoleinimage.html'
+
+
+    "yolov2ReorgLayer [vision]":
+        prefix: "yolov2ReorgLayer"
+        body: '''yolov2ReorgLayer(${1:stride}, 'Name', ${2:value})'''
+        description: '''[vision] Create reorganization layer for YOLO v2 object detection network
+        yolov2ReorgLayer(stride, 'Name', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.yolov2reorglayer.html'
+
+
+    "imageCategoryClassifier.predict [vision]":
+        prefix: "imageCategoryClassifier.predict"
+        body: '''imageCategoryClassifier.predict(${1:categoryClassifier}, ${2:imds})'''
+        description: '''[vision] 
+        imageCategoryClassifier.predict(categoryClassifier, imds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/imageCategoryClassifier.predict.html'
+
+
+    "matchFeatures [vision]":
+        prefix: "matchFeatures"
+        body: '''matchFeatures(${1:features1}, ${2:features2}, 'Method', ${3:value}, 'MatchThreshold', ${4:value}, 'MaxRatio', ${5:value}, 'Metric', ${6:value}, 'Unique', ${7:value})'''
+        description: '''[vision] Find matching features
+        matchFeatures(features1, features2, 'Method', value, 'MatchThreshold', value, 'MaxRatio', value, 'Metric', value, 'Unique', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/matchfeatures.html'
+
+
+    "acfObjectDetector.detect [vision]":
+        prefix: "acfObjectDetector.detect"
+        body: '''acfObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumScaleLevels', ${4:value}, 'WindowStride', ${5:value}, 'SelectStrongest', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'Threshold', ${9:value})'''
+        description: '''[vision] 
+        acfObjectDetector.detect(detector, I, optional_roi, 'NumScaleLevels', value, 'WindowStride', value, 'SelectStrongest', value, 'MinSize', value, 'MaxSize', value, 'Threshold', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/acfObjectDetector.detect.html'
+
+
+    "yolov2OutputLayer [vision]":
+        prefix: "yolov2OutputLayer"
+        body: '''yolov2OutputLayer(${1:anchorBoxes}, 'Name', ${2:value}, 'LossFactors', ${3:value})'''
+        description: '''[vision] Create output layer for YOLO v2 object detection network
+        yolov2OutputLayer(anchorBoxes, 'Name', value, 'LossFactors', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.yolov2outputlayer.html'
+
+
+    "insertMarker [vision]":
+        prefix: "insertMarker"
+        body: '''insertMarker(${1:I}, ${2:position}, ${3:optional_marker}, 'Size', ${4:value}, 'Color', ${5:value})'''
+        description: '''[vision] Insert markers in image or video
+        insertMarker(I, position, optional_marker, 'Size', value, 'Color', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/insertmarker.html'
+
+
+    "velodyneFileReader [vision]":
+        prefix: "velodyneFileReader"
+        body: '''velodyneFileReader(${1:filename}, ${2:deviceModel}, 'CalibrationFile', ${3:value})'''
+        description: '''[vision] Read point cloud data from Velodyne PCAP file
+        velodyneFileReader(filename, deviceModel, 'CalibrationFile', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/velodynefilereader.html'
+
+
+    "boxLabelDatastore.hasdata [vision]":
+        prefix: "boxLabelDatastore.hasdata"
+        body: '''${2:TF} = boxLabelDatastore.hasdata(${1:blds})'''
+        description: '''[vision] 
+        TF = boxLabelDatastore.hasdata(blds)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.hasdata.html'
+
+
+    "stereoParameters [vision]":
+        prefix: "stereoParameters"
+        body: '''stereoParameters(${1:paramStruct})'''
+        description: '''[vision] Object for storing stereo camera system parameters
+        stereoParameters(paramStruct)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/stereoparameters.html'
+
+
+    "cylinderModel.plot [vision]":
+        prefix: "cylinderModel.plot"
+        body: '''cylinderModel.plot(${1:model}, 'Parent', ${2:value})'''
+        description: '''[vision] 
+        cylinderModel.plot(model, 'Parent', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/cylinderModel.plot.html'
+
+
+    "opticalFlow [vision]":
+        prefix: "opticalFlow"
+        body: '''opticalFlow(${1:Vx}, ${2:Vy})'''
+        description: '''[vision] Object for storing optical flow matrices
+        opticalFlow(Vx, Vy)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/vision/ref/opticalflowobject.html'
+

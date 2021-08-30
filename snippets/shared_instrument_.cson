@@ -1,0 +1,155 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "delete [shared]":
+        prefix: "delete"
+        body: '''delete(${1:obj})'''
+        description: '''[shared] Remove image acquisition object from memory
+        delete(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/delete.html'
+
+
+    "fclose [shared]":
+        prefix: "fclose"
+        body: '''fclose(${1:obj})'''
+        description: '''[shared] Disconnect interface object from instrument
+        fclose(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fclose.html'
+
+
+    "disp [shared]":
+        prefix: "disp"
+        body: '''disp(${1:obj})'''
+        description: '''[shared] Filter properties and values
+        disp(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/disp.html'
+
+
+    "binblockread [shared]":
+        prefix: "binblockread"
+        body: '''[${3:A}, ${4:count}, ${5:msg}] = binblockread(${1:obj}, ${2:optional_precision})'''
+        description: '''[shared] Read binblock data from instrument
+        [A, count, msg] = binblockread(obj, optional_precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/binblockread.html'
+
+
+    "flushoutput [shared]":
+        prefix: "flushoutput"
+        body: '''flushoutput(${1:obj})'''
+        description: '''[shared] Remove data from output buffer
+        flushoutput(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/flushoutput.html'
+
+
+    "readasync [shared]":
+        prefix: "readasync"
+        body: '''readasync(${1:obj}, ${2:optional_size})'''
+        description: '''[shared] Read data asynchronously from instrument
+        readasync(obj, optional_size)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/readasync.html'
+
+
+    "flushinput [shared]":
+        prefix: "flushinput"
+        body: '''flushinput(${1:obj})'''
+        description: '''[shared] Remove data from input buffer
+        flushinput(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/flushinput.html'
+
+
+    "binblockwrite [shared]":
+        prefix: "binblockwrite"
+        body: '''binblockwrite(${1:obj}, ${2:A}, ${3:optional_precision}, ${4:optional_header}, ${5:optional_headerformat})'''
+        description: '''[shared] Write binblock data to instrument
+        binblockwrite(obj, A, optional_precision, optional_header, optional_headerformat)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/binblockwrite.html'
+
+
+    "fgets [shared]":
+        prefix: "fgets"
+        body: '''[${2:tline}, ${3:count}, ${4:msg}, ${5:datagramaddress}, ${6:datagramport}] = fgets(${1:obj})'''
+        description: '''[shared] Read line of text from instrument and include terminator
+        [tline, count, msg, datagramaddress, datagramport] = fgets(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fgets.html'
+
+
+    "instrfindall [shared]":
+        prefix: "instrfindall"
+        body: '''${28:out} = instrfindall(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
+        description: '''[shared] Find visible and hidden instrument objects
+        out = instrfindall(optional_obj, 'BitRate', value, 'BoardIndex', value, 'BoardSerial', value, 'ByteOrder', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'PullupResistors', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RecordStatus', value, 'RemoteAddress', value, 'Status', value, 'Tag', value, 'TargetPower', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'TransferStatus', value, 'Type', value, 'UserData', value, 'ValuesReceived', value, 'ValuesSent', value, 'Vendor', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/instrfindall.html'
+
+
+    "fgetl [shared]":
+        prefix: "fgetl"
+        body: '''[${2:tline}, ${3:count}, ${4:msg}, ${5:datagramaddress}, ${6:datagramport}] = fgetl(${1:obj})'''
+        description: '''[shared] Read line of text from instrument and discard terminator
+        [tline, count, msg, datagramaddress, datagramport] = fgetl(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fgetl.html'
+
+
+    "instrcallback [shared]":
+        prefix: "instrcallback"
+        body: '''instrcallback(${1:obj}, ${2:event})'''
+        description: '''[shared] Display event information when event occurs
+        instrcallback(obj, event)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/instrcallback.html'
+
+
+    "scanstr [shared]":
+        prefix: "scanstr"
+        body: '''[${4:A}, ${5:count}, ${6:msg}] = scanstr(${1:obj}, ${2:optional_delimiter}, ${3:optional_format})'''
+        description: '''[shared] Read data from instrument, format as text, and parse
+        [A, count, msg] = scanstr(obj, optional_delimiter, optional_format)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/scanstr.html'
+
+
+    "fopen [shared]":
+        prefix: "fopen"
+        body: '''fopen(${1:obj})'''
+        description: '''[shared] Connect interface object to instrument
+        fopen(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fopen.html'
+
+
+    "record [shared]":
+        prefix: "record"
+        body: '''record(${1:obj}, ${2:optional_switch})'''
+        description: '''[shared] Record data and event information to file
+        record(obj, optional_switch)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/record.html'
+
+
+    "fprintf [shared]":
+        prefix: "fprintf"
+        body: '''fprintf(${1:obj}, ${2:optional_format}, ${3:cmd}, ${4:optional_mode})'''
+        description: '''[shared] Write text to instrument
+        fprintf(obj, optional_format, cmd, optional_mode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fprintf.html'
+
+
+    "stopasync [shared]":
+        prefix: "stopasync"
+        body: '''stopasync(${1:obj})'''
+        description: '''[shared] Stop asynchronous read and write operations
+        stopasync(obj)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/stopasync.html'
+

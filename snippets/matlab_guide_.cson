@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "guide [matlab]":
+        prefix: "guide"
+        body: '''guide(${1:HandleList})'''
+        description: '''[matlab] (To be removed) Create or edit UI file in GUIDE
+        guide(HandleList)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/guide.html'
+

@@ -1,0 +1,56 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "randn [matlab]":
+        prefix: "randn"
+        body: '''randn(${1:optional_s}, ${2:sz}, ${3:optional_classname})'''
+        description: '''[matlab] Normally distributed random numbers
+        randn(optional_s, sz, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/randn.html'
+
+
+    "rng [matlab]":
+        prefix: "rng"
+        body: '''rng(${1:seed}, ${2:optional_generator})'''
+        description: '''[matlab] Control random number generation
+        rng(seed, optional_generator)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rng.html'
+
+
+    "RandStream.create [matlab]":
+        prefix: "RandStream.create"
+        body: '''RandStream.create(${1:gentype}, 'NumStreams', ${2:value}, 'Seed', ${3:value}, 'NormalTransform', ${4:value}, 'CellOutput', ${5:value}, 'StreamIndices', ${6:value})'''
+        description: '''[matlab] Create random number streams
+        RandStream.create(gentype, 'NumStreams', value, 'Seed', value, 'NormalTransform', value, 'CellOutput', value, 'StreamIndices', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/randstream.create.html'
+
+
+    "rand [matlab]":
+        prefix: "rand"
+        body: '''rand(${1:optional_s}, ${2:sz}, ${3:optional_classname})'''
+        description: '''[matlab] Uniformly distributed random numbers
+        rand(optional_s, sz, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rand.html'
+
+
+    "randi [matlab]":
+        prefix: "randi"
+        body: '''randi(${1:optional_s}, ${2:imax}, ${3:sz}, ${4:optional_classname})'''
+        description: '''[matlab] Uniformly distributed pseudorandom integers
+        randi(optional_s, imax, sz, optional_classname)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/randi.html'
+
+
+    "RandStream [matlab]":
+        prefix: "RandStream"
+        body: '''RandStream(${1:gentype}, 'Seed', ${2:value}, 'NormalTransform', ${3:value})'''
+        description: '''[matlab] Random number stream
+        RandStream(gentype, 'Seed', value, 'NormalTransform', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/randstream.html'
+

@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "userpath [local]":
+        prefix: "userpath"
+        body: '''userpath(${1:optional_path})'''
+        description: '''[local] View or change default user work folder
+        userpath(optional_path)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/local/ref/userpath.html'
+

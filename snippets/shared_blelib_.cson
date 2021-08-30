@@ -1,0 +1,74 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "matlabshared.blelib.Characteristic.write [shared]":
+        prefix: "matlabshared.blelib.Characteristic.write"
+        body: '''matlabshared.blelib.Characteristic.write(${1:obj}, ${2:data}, ${3:type}, ${4:precision})'''
+        description: '''[shared] 
+        matlabshared.blelib.Characteristic.write(obj, data, type, precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Characteristic.write.html'
+
+
+    "ble [shared]":
+        prefix: "ble"
+        body: '''${2:b} = ble(${1:input})'''
+        description: '''[shared] Connect to Bluetooth Low Energy peripheral device
+        b = ble(input)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ble.html'
+
+
+    "matlabshared.blelib.Descriptor.write [shared]":
+        prefix: "matlabshared.blelib.Descriptor.write"
+        body: '''matlabshared.blelib.Descriptor.write(${1:obj}, ${2:data}, ${3:precision})'''
+        description: '''[shared] 
+        matlabshared.blelib.Descriptor.write(obj, data, precision)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Descriptor.write.html'
+
+
+    "ble.characteristic [shared]":
+        prefix: "ble.characteristic"
+        body: '''${4:c} = ble.characteristic(${1:obj}, ${2:sid}, ${3:cid})'''
+        description: '''[shared] 
+        c = ble.characteristic(obj, sid, cid)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ble.characteristic.html'
+
+
+    "matlabshared.blelib.Characteristic.subscribe [shared]":
+        prefix: "matlabshared.blelib.Characteristic.subscribe"
+        body: '''matlabshared.blelib.Characteristic.subscribe(${1:obj}, ${2:type})'''
+        description: '''[shared] 
+        matlabshared.blelib.Characteristic.subscribe(obj, type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Characteristic.subscribe.html'
+
+
+    "matlabshared.blelib.Characteristic.descriptor [shared]":
+        prefix: "matlabshared.blelib.Characteristic.descriptor"
+        body: '''${3:d} = matlabshared.blelib.Characteristic.descriptor(${1:obj}, ${2:did})'''
+        description: '''[shared] 
+        d = matlabshared.blelib.Characteristic.descriptor(obj, did)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Characteristic.descriptor.html'
+
+
+    "matlabshared.blelib.Characteristic.read [shared]":
+        prefix: "matlabshared.blelib.Characteristic.read"
+        body: '''[${3:value}, ${4:timestamp}] = matlabshared.blelib.Characteristic.read(${1:obj}, ${2:mode})'''
+        description: '''[shared] 
+        [value, timestamp] = matlabshared.blelib.Characteristic.read(obj, mode)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Characteristic.read.html'
+
+
+    "blelist [shared]":
+        prefix: "blelist"
+        body: '''${4:list} = blelist('Name', ${1:value}, 'Timeout', ${2:value}, 'Services', ${3:value})'''
+        description: '''[shared] Scan nearby Bluetooth Low Energy peripheral devices
+        list = blelist('Name', value, 'Timeout', value, 'Services', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/blelist.html'
+

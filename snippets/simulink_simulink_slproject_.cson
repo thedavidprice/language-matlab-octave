@@ -1,0 +1,209 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "slproject.ProjectManager.removeReference [simulink]":
+        prefix: "slproject.ProjectManager.removeReference"
+        body: '''slproject.ProjectManager.removeReference(${1:proj}, ${2:folder})'''
+        description: '''[simulink] 
+        slproject.ProjectManager.removeReference(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.removeReference.html'
+
+
+    "slproject.ProjectFile.removeLabel [simulink]":
+        prefix: "slproject.ProjectFile.removeLabel"
+        body: '''slproject.ProjectFile.removeLabel(${1:category}, ${2:labelName})'''
+        description: '''[simulink] 
+        slproject.ProjectFile.removeLabel(category, labelName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectFile.removeLabel.html'
+
+
+    "slproject.ProjectManager.addReference [simulink]":
+        prefix: "slproject.ProjectManager.addReference"
+        body: '''${3:projectReference} = slproject.ProjectManager.addReference(${1:proj}, ${2:folder})'''
+        description: '''[simulink] 
+        projectReference = slproject.ProjectManager.addReference(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.addReference.html'
+
+
+    "slproject.loadProject [simulink]":
+        prefix: "slproject.loadProject"
+        body: '''${2:proj} = slproject.loadProject(${1:projectPath})'''
+        description: '''[simulink] (Not recommended) Load project
+        proj = slproject.loadProject(projectPath)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slref/slproject.loadproject.html'
+
+
+    "slproject.ProjectManager.export [simulink]":
+        prefix: "slproject.ProjectManager.export"
+        body: '''slproject.ProjectManager.export(${1:proj}, ${2:zipFileName}, ${3:definitionType})'''
+        description: '''[simulink] 
+        slproject.ProjectManager.export(proj, zipFileName, definitionType)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.export.html'
+
+
+    "slproject.ProjectManager.removeCategory [simulink]":
+        prefix: "slproject.ProjectManager.removeCategory"
+        body: '''slproject.ProjectManager.removeCategory(${1:proj}, ${2:categoryName})'''
+        description: '''[simulink] 
+        slproject.ProjectManager.removeCategory(proj, categoryName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.removeCategory.html'
+
+
+    "slproject.ProjectManager.addFile [simulink]":
+        prefix: "slproject.ProjectManager.addFile"
+        body: '''${3:projectFile} = slproject.ProjectManager.addFile(${1:proj}, ${2:file})'''
+        description: '''[simulink] 
+        projectFile = slproject.ProjectManager.addFile(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.addFile.html'
+
+
+    "slproject.ProjectManager.addPath [simulink]":
+        prefix: "slproject.ProjectManager.addPath"
+        body: '''${3:projectPath} = slproject.ProjectManager.addPath(${1:proj}, ${2:folder})'''
+        description: '''[simulink] 
+        projectPath = slproject.ProjectManager.addPath(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.addPath.html'
+
+
+    "slproject.ProjectManager.findCategory [simulink]":
+        prefix: "slproject.ProjectManager.findCategory"
+        body: '''${3:category} = slproject.ProjectManager.findCategory(${1:proj}, ${2:categoryName})'''
+        description: '''[simulink] 
+        category = slproject.ProjectManager.findCategory(proj, categoryName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.findCategory.html'
+
+
+    "slproject.ProjectManager.removeFile [simulink]":
+        prefix: "slproject.ProjectManager.removeFile"
+        body: '''slproject.ProjectManager.removeFile(${1:proj}, ${2:file})'''
+        description: '''[simulink] 
+        slproject.ProjectManager.removeFile(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.removeFile.html'
+
+
+    "slproject.ProjectManager.findFile [simulink]":
+        prefix: "slproject.ProjectManager.findFile"
+        body: '''${3:file} = slproject.ProjectManager.findFile(${1:proj}, ${2:fileName})'''
+        description: '''[simulink] 
+        file = slproject.ProjectManager.findFile(proj, fileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.findFile.html'
+
+
+    "slproject.ProjectManager.removePath [simulink]":
+        prefix: "slproject.ProjectManager.removePath"
+        body: '''slproject.ProjectManager.removePath(${1:proj}, ${2:folder})'''
+        description: '''[simulink] 
+        slproject.ProjectManager.removePath(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.removePath.html'
+
+
+    "slproject.ProjectManager.addShortcut [simulink]":
+        prefix: "slproject.ProjectManager.addShortcut"
+        body: '''${3:shortcut} = slproject.ProjectManager.addShortcut(${1:proj}, ${2:fileName})'''
+        description: '''[simulink] 
+        shortcut = slproject.ProjectManager.addShortcut(proj, fileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.addShortcut.html'
+
+
+    "slproject.ProjectFile.addLabel [simulink]":
+        prefix: "slproject.ProjectFile.addLabel"
+        body: '''${5:labelObject} = slproject.ProjectFile.addLabel(${1:file}, ${2:categoryName}, ${3:label}, ${4:optional_labelData})'''
+        description: '''[simulink] 
+        labelObject = slproject.ProjectFile.addLabel(file, categoryName, label, optional_labelData)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectFile.addLabel.html'
+
+
+    "simulinkproject [simulink]":
+        prefix: "simulinkproject"
+        body: '''${2:proj} = simulinkproject(${1:projectPath})'''
+        description: '''[simulink] (Not recommended) Open project and get project object
+        proj = simulinkproject(projectPath)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slref/simulinkproject.html'
+
+
+    "slproject.ProjectManager.removeShortcut [simulink]":
+        prefix: "slproject.ProjectManager.removeShortcut"
+        body: '''slproject.ProjectManager.removeShortcut(${1:proj}, ${2:file})'''
+        description: '''[simulink] 
+        slproject.ProjectManager.removeShortcut(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.removeShortcut.html'
+
+
+    "slproject.ProjectManager.addFolderIncludingChildFiles [simulink]":
+        prefix: "slproject.ProjectManager.addFolderIncludingChildFiles"
+        body: '''${3:projectFile} = slproject.ProjectManager.addFolderIncludingChildFiles(${1:proj}, ${2:folder})'''
+        description: '''[simulink] 
+        projectFile = slproject.ProjectManager.addFolderIncludingChildFiles(proj, folder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.addFolderIncludingChildFiles.html'
+
+
+    "slproject.ProjectManager.addStartupFile [simulink]":
+        prefix: "slproject.ProjectManager.addStartupFile"
+        body: '''${3:shortcut} = slproject.ProjectManager.addStartupFile(${1:proj}, ${2:fileName})'''
+        description: '''[simulink] 
+        shortcut = slproject.ProjectManager.addStartupFile(proj, fileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.addStartupFile.html'
+
+
+    "slproject.ProjectFile.findLabel [simulink]":
+        prefix: "slproject.ProjectFile.findLabel"
+        body: '''${3:labelObject} = slproject.ProjectFile.findLabel(${1:category}, ${2:labelName})'''
+        description: '''[simulink] 
+        labelObject = slproject.ProjectFile.findLabel(category, labelName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectFile.findLabel.html'
+
+
+    "slproject.ProjectManager.removeShutdownFile [simulink]":
+        prefix: "slproject.ProjectManager.removeShutdownFile"
+        body: '''slproject.ProjectManager.removeShutdownFile(${1:proj}, ${2:file})'''
+        description: '''[simulink] 
+        slproject.ProjectManager.removeShutdownFile(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.removeShutdownFile.html'
+
+
+    "slproject.create [simulink]":
+        prefix: "slproject.create"
+        body: '''${2:proj} = slproject.create(${1:projectPath})'''
+        description: '''[simulink] (Not recommended) Create blank project
+        proj = slproject.create(projectPath)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slref/slproject.create.html'
+
+
+    "slproject.ProjectManager.addShutdownFile [simulink]":
+        prefix: "slproject.ProjectManager.addShutdownFile"
+        body: '''${3:shortcut} = slproject.ProjectManager.addShutdownFile(${1:proj}, ${2:fileName})'''
+        description: '''[simulink] 
+        shortcut = slproject.ProjectManager.addShutdownFile(proj, fileName)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.addShutdownFile.html'
+
+
+    "slproject.ProjectManager.removeStartupFile [simulink]":
+        prefix: "slproject.ProjectManager.removeStartupFile"
+        body: '''slproject.ProjectManager.removeStartupFile(${1:proj}, ${2:file})'''
+        description: '''[simulink] 
+        slproject.ProjectManager.removeStartupFile(proj, file)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/slproject.ProjectManager.removeStartupFile.html'
+

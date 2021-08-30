@@ -1,0 +1,47 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "target.get [targetdefinition]":
+        prefix: "target.get"
+        body: '''${3:targetObjectInstance} = target.get(${1:targetObjectClassString}, ${2:identifier})'''
+        description: '''[targetdefinition] Retrieve target feature object from MATLAB memory
+        targetObjectInstance = target.get(targetObjectClassString, identifier)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.get.html'
+
+
+    "target.add [targetdefinition]":
+        prefix: "target.add"
+        body: '''target.add(${1:targetObjectInstances}, 'UserInstall', ${2:value})'''
+        description: '''[targetdefinition] Add target  feature object to MATLAB memory
+        target.add(targetObjectInstances, 'UserInstall', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.add.html'
+
+
+    "target.export [targetdefinition]":
+        prefix: "target.export"
+        body: '''target.export(${1:targetObjectInstances}, 'FileName', ${2:value}, 'Overwrite', ${3:value})'''
+        description: '''[targetdefinition] Export target feature data
+        target.export(targetObjectInstances, 'FileName', value, 'Overwrite', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.export.html'
+
+
+    "target.create [targetdefinition]":
+        prefix: "target.create"
+        body: '''${3:targetObjectInstance} = target.create(${1:targetObjectClassString}, 'Copy', ${2:value})'''
+        description: '''[targetdefinition] Create target feature object
+        targetObjectInstance = target.create(targetObjectClassString, 'Copy', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.create.html'
+
+
+    "target.upgrade [targetdefinition]":
+        prefix: "target.upgrade"
+        body: '''target.upgrade(${1:upgrader}, 'ExportToMATLABFunction', ${2:value}, 'ExportFileName', ${3:value}, 'Overwrite', ${4:value})'''
+        description: '''[targetdefinition] Upgrade existing definitions of hardware devices
+        target.upgrade(upgrader, 'ExportToMATLABFunction', value, 'ExportFileName', value, 'Overwrite', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.upgrade.html'
+

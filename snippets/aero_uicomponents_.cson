@@ -1,0 +1,74 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "uiaerohorizon [aero]":
+        prefix: "uiaerohorizon"
+        body: '''uiaerohorizon(${1:Parent}, ${2:properties})'''
+        description: '''[aero] Create artificial horizon component
+        uiaerohorizon(Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ug/aero.ui.control.artificialhorizon.uiaerohorizon.html'
+
+
+    "uiaeroairspeed [aero]":
+        prefix: "uiaeroairspeed"
+        body: '''uiaeroairspeed(${1:Parent}, ${2:properties})'''
+        description: '''[aero] Create airspeed indicator component
+        uiaeroairspeed(Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ug/aero.ui.control.airspeedindicator.uiaeroairspeed.html'
+
+
+    "uiaerorpm [aero]":
+        prefix: "uiaerorpm"
+        body: '''uiaerorpm(${1:Parent}, ${2:properties})'''
+        description: '''[aero] Create revolutions per minute (RPM) indicator component
+        uiaerorpm(Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ug/aero.ui.control.rpmindicator.uiaerorpm.html'
+
+
+    "uiaeroclimb [aero]":
+        prefix: "uiaeroclimb"
+        body: '''uiaeroclimb(${1:Parent}, ${2:properties})'''
+        description: '''[aero] Create climb rate indicator component
+        uiaeroclimb(Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ug/aero.ui.control.climbindicator.uiaeroclimb.html'
+
+
+    "uiaeroturn [aero]":
+        prefix: "uiaeroturn"
+        body: '''uiaeroturn(${1:Parent}, ${2:properties})'''
+        description: '''[aero] Create turn coordinator component
+        uiaeroturn(Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ug/aero.ui.control.turncoordinator.uiaeroturn.html'
+
+
+    "uiaeroheading [aero]":
+        prefix: "uiaeroheading"
+        body: '''uiaeroheading(${1:Parent}, ${2:properties})'''
+        description: '''[aero] Create heading indicator component
+        uiaeroheading(Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ug/aero.ui.control.headingindicator.uiaeroheading.html'
+
+
+    "uiaeroegt [aero]":
+        prefix: "uiaeroegt"
+        body: '''uiaeroegt(${1:Parent}, ${2:properties})'''
+        description: '''[aero] Create exhaust gas temperature (EGT) indicator component
+        uiaeroegt(Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ug/aero.ui.control.egtindicator.uiaeroegt.html'
+
+
+    "uiaeroaltimeter [aero]":
+        prefix: "uiaeroaltimeter"
+        body: '''uiaeroaltimeter(${1:Parent}, ${2:properties})'''
+        description: '''[aero] Create altimeter component
+        uiaeroaltimeter(Parent, properties)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ug/aero.ui.control.altimeter.uiaeroaltimeter.html'
+

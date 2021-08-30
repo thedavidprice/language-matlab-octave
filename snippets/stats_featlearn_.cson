@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "rica [stats]":
+        prefix: "rica"
+        body: '''rica(${1:X}, ${2:q}, 'IterationLimit', ${3:value}, 'VerbosityLevel', ${4:value}, 'Lambda', ${5:value}, 'Standardize', ${6:value}, 'ContrastFcn', ${7:value}, 'InitialTransformWeights', ${8:value}, 'NonGaussianityIndicator', ${9:value}, 'GradientTolerance', ${10:value}, 'StepTolerance', ${11:value})'''
+        description: '''[stats] Feature extraction by using reconstruction ICA
+        rica(X, q, 'IterationLimit', value, 'VerbosityLevel', value, 'Lambda', value, 'Standardize', value, 'ContrastFcn', value, 'InitialTransformWeights', value, 'NonGaussianityIndicator', value, 'GradientTolerance', value, 'StepTolerance', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/rica.html'
+
+
+    "sparsefilt [stats]":
+        prefix: "sparsefilt"
+        body: '''sparsefilt(${1:X}, ${2:q}, 'IterationLimit', ${3:value}, 'VerbosityLevel', ${4:value}, 'Lambda', ${5:value}, 'Standardize', ${6:value}, 'InitialTransformWeights', ${7:value}, 'GradientTolerance', ${8:value}, 'StepTolerance', ${9:value})'''
+        description: '''[stats] Feature extraction by using sparse filtering
+        sparsefilt(X, q, 'IterationLimit', value, 'VerbosityLevel', value, 'Lambda', value, 'Standardize', value, 'InitialTransformWeights', value, 'GradientTolerance', value, 'StepTolerance', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/stats/sparsefilt.html'
+

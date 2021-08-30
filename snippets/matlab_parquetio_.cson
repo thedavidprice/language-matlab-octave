@@ -1,0 +1,29 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "parquetread [matlab]":
+        prefix: "parquetread"
+        body: '''${5:T} = parquetread(${1:filename}, 'SelectedVariableNames', ${2:value}, 'PreserveVariableNames', ${3:value}, 'OutputType', ${4:value})'''
+        description: '''[matlab] Read columnar data from a Parquet file
+        T = parquetread(filename, 'SelectedVariableNames', value, 'PreserveVariableNames', value, 'OutputType', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/parquetread.html'
+
+
+    "parquetwrite [matlab]":
+        prefix: "parquetwrite"
+        body: '''parquetwrite(${1:filename}, ${2:T}, 'VariableCompression', ${3:value})'''
+        description: '''[matlab] Write columnar data to Parquet file
+        parquetwrite(filename, T, 'VariableCompression', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/parquetwrite.html'
+
+
+    "parquetinfo [matlab]":
+        prefix: "parquetinfo"
+        body: '''${2:P} = parquetinfo(${1:filename})'''
+        description: '''[matlab] Get information about Parquet file
+        P = parquetinfo(filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.io.parquet.parquetinfo.html'
+

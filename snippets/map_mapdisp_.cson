@@ -1,0 +1,663 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "lightm [map]":
+        prefix: "lightm"
+        body: '''${5:h} = lightm(${1:lat}, ${2:lon}, ${3:optional_alt}, ${4:opts})'''
+        description: '''[map] Project light objects on map axes
+        h = lightm(lat, lon, optional_alt, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/lightm.html'
+
+
+    "maptool [map]":
+        prefix: "maptool"
+        body: '''${51:h} = maptool(${1:optional_ProjectionFile}, 'MapProjection', ${2:value}, 'AngleUnits', ${3:value}, 'Aspect', ${4:value}, 'FalseEasting', ${5:value}, 'FalseNorthing', ${6:value}, 'Geoid', ${7:value}, 'MapLatLimit', ${8:value}, 'MapLonLimit', ${9:value}, 'MapParallels', ${10:value}, 'Origin', ${11:value}, 'ScaleFactor', ${12:value}, 'Zone', ${13:value}, 'Frame', ${14:value}, 'FFill', ${15:value}, 'FEdgeColor', ${16:value}, 'FFaceColor', ${17:value}, 'FLatLimit', ${18:value}, 'FLineWidth', ${19:value}, 'FLonLimit', ${20:value}, 'Grid', ${21:value}, 'GAltitude', ${22:value}, 'GColor', ${23:value}, 'GLineStyle', ${24:value}, 'GLineWidth', ${25:value}, 'MLineException', ${26:value}, 'MLineFill', ${27:value}, 'MLineLimit', ${28:value}, 'MLineLocation', ${29:value}, 'PLineException', ${30:value}, 'PLineFill', ${31:value}, 'PLineLimit', ${32:value}, 'PLineLocation', ${33:value}, 'FontColor', ${34:value}, 'FontAngle', ${35:value}, 'FontName', ${36:value}, 'FontSize', ${37:value}, 'FontUnits', ${38:value}, 'FontWeight', ${39:value}, 'LabelFormat', ${40:value}, 'LabelRotation', ${41:value}, 'LabelUnits', ${42:value}, 'MeridianLabel', ${43:value}, 'MLabelLocation', ${44:value}, 'MLabelParallel', ${45:value}, 'MLabelRound', ${46:value}, 'ParallelLabel', ${47:value}, 'PLabelLocation', ${48:value}, 'PLabelMeridian', ${49:value}, 'PLabelRound', ${50:value})'''
+        description: '''[map] Add menu-activated tools to map figure
+        h = maptool(optional_ProjectionFile, 'MapProjection', value, 'AngleUnits', value, 'Aspect', value, 'FalseEasting', value, 'FalseNorthing', value, 'Geoid', value, 'MapLatLimit', value, 'MapLonLimit', value, 'MapParallels', value, 'Origin', value, 'ScaleFactor', value, 'Zone', value, 'Frame', value, 'FFill', value, 'FEdgeColor', value, 'FFaceColor', value, 'FLatLimit', value, 'FLineWidth', value, 'FLonLimit', value, 'Grid', value, 'GAltitude', value, 'GColor', value, 'GLineStyle', value, 'GLineWidth', value, 'MLineException', value, 'MLineFill', value, 'MLineLimit', value, 'MLineLocation', value, 'PLineException', value, 'PLineFill', value, 'PLineLimit', value, 'PLineLocation', value, 'FontColor', value, 'FontAngle', value, 'FontName', value, 'FontSize', value, 'FontUnits', value, 'FontWeight', value, 'LabelFormat', value, 'LabelRotation', value, 'LabelUnits', value, 'MeridianLabel', value, 'MLabelLocation', value, 'MLabelParallel', value, 'MLabelRound', value, 'ParallelLabel', value, 'PLabelLocation', value, 'PLabelMeridian', value, 'PLabelRound', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/maptool.html'
+
+
+    "ismap [map]":
+        prefix: "ismap"
+        body: '''[${2:mflag}, ${3:msg}] = ismap(${1:optional_hndl})'''
+        description: '''[map] True for axes with map projection
+        [mflag, msg] = ismap(optional_hndl)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/ismap.html'
+
+
+    "fill3m [map]":
+        prefix: "fill3m"
+        body: '''${6:h} = fill3m(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_cdata}, ${5:opts})'''
+        description: '''[map] Project filled 3-D patch objects on map axes
+        h = fill3m(lat, lon, z, optional_cdata, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/fill3m.html'
+
+
+    "tagm [map]":
+        prefix: "tagm"
+        body: '''tagm(${1:hndl}, ${2:tagstr})'''
+        description: '''[map] Set Tag property of map graphics
+object
+        tagm(hndl, tagstr)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/tagm.html'
+
+
+    "symbolm [map]":
+        prefix: "symbolm"
+        body: '''${6:h} = symbolm(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_MarkerType}, ${5:opts})'''
+        description: '''[map] Project point markers with variable size
+        h = symbolm(lat, lon, z, optional_MarkerType, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/symbolm.html'
+
+
+    "inputm [map]":
+        prefix: "inputm"
+        body: '''[${3:lat}, ${4:lon}, ${5:button}] = inputm(${1:n}, ${2:optional_h})'''
+        description: '''[map] Latitudes and longitudes of mouse-click locations
+        [lat, lon, button] = inputm(n, optional_h)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/inputm.html'
+
+
+    "quiver3m [map]":
+        prefix: "quiver3m"
+        body: '''${10:h} = quiver3m(${1:lat}, ${2:lon}, ${3:alt}, ${4:u}, ${5:v}, ${6:w}, ${7:optional_linestyle}, ${8:optional_scale}, ${9:filled})'''
+        description: '''[map] Project 3-D quiver plot on map axes
+        h = quiver3m(lat, lon, alt, u, v, w, optional_linestyle, optional_scale, filled)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/quiver3m.html'
+
+
+    "clma [map]":
+        prefix: "clma"
+        body: '''clma(${1:optional_opts})'''
+        description: '''[map] Clear current map axes
+        clma(optional_opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/clma.html'
+
+
+    "pcolorm [map]":
+        prefix: "pcolorm"
+        body: '''${5:h} = pcolorm(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:opts})'''
+        description: '''[map] Project regular data grid on map axes in z = 0 plane
+        h = pcolorm(latlim, lonlim, Z, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/pcolorm.html'
+
+
+    "clegendm [map]":
+        prefix: "clegendm"
+        body: '''${6:h} = clegendm(${1:cs}, ${2:h}, ${3:optional_loc}, ${4:optional_unitstr}, ${5:optional_labels})'''
+        description: '''[map] Add legend labels to map contour display
+        h = clegendm(cs, h, optional_loc, optional_unitstr, optional_labels)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/clegendm.html'
+
+
+    "getm [map]":
+        prefix: "getm"
+        body: '''getm(${1:opts})'''
+        description: '''[map] Map object properties
+        getm(opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/getm.html'
+
+
+    "clrmenu [map]":
+        prefix: "clrmenu"
+        body: '''clrmenu(${1:optional_h})'''
+        description: '''[map] Add colormap menu to figure window
+        clrmenu(optional_h)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/clrmenu.html'
+
+
+    "gcm [map]":
+        prefix: "gcm"
+        body: '''${2:mstruct} = gcm(${1:optional_hndl})'''
+        description: '''[map] Current map projection structure
+        mstruct = gcm(optional_hndl)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/gcm.html'
+
+
+    "clabelm [map]":
+        prefix: "clabelm"
+        body: '''${4:text_handles} = clabelm(${1:C}, ${2:optional_h}, ${3:optional_manual})'''
+        description: '''[map] Add contour labels to map contour display
+        text_handles = clabelm(C, optional_h, optional_manual)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/clabelm.html'
+
+
+    "tissot [map]":
+        prefix: "tissot"
+        body: '''${3:h} = tissot(${1:spec}, ${2:opts})'''
+        description: '''[map] Project Tissot indicatrices on map axes
+        h = tissot(spec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/tissot.html'
+
+
+    "maptrim [map]":
+        prefix: "maptrim"
+        body: '''maptrim(${1:datagrid}, ${2:refvec}, ${3:opts})'''
+        description: '''[map] Interactively trim and convert map data from vector to
+raster format
+        maptrim(datagrid, refvec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/maptrim.html'
+
+
+    "framem [map]":
+        prefix: "framem"
+        body: '''framem(${1:linespec}, 'Frame', ${2:value}, 'FFill', ${3:value}, 'FEdgeColor', ${4:value}, 'FFaceColor', ${5:value}, 'FLatLimit', ${6:value}, 'FLineWidth', ${7:value}, 'FLonLimit', ${8:value})'''
+        description: '''[map] Toggle and control display of map frame
+        framem(linespec, 'Frame', value, 'FFill', value, 'FEdgeColor', value, 'FFaceColor', value, 'FLatLimit', value, 'FLineWidth', value, 'FLonLimit', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/framem.html'
+
+
+    "namem [map]":
+        prefix: "namem"
+        body: '''${2:obj_names} = namem(${1:optional_h})'''
+        description: '''[map] Names of graphics objects
+        obj_names = namem(optional_h)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/namem.html'
+
+
+    "mlabel [map]":
+        prefix: "mlabel"
+        body: '''mlabel(${1:parallel}, 'MLineException', ${2:value}, 'MLineFill', ${3:value}, 'MLineLimit', ${4:value}, 'MLineLocation', ${5:value}, 'MeridianLabel', ${6:value}, 'MLabelLocation', ${7:value}, 'MLabelParallel', ${8:value}, 'MLabelRound', ${9:value})'''
+        description: '''[map] Toggle and control display of meridian labels
+        mlabel(parallel, 'MLineException', value, 'MLineFill', value, 'MLineLimit', value, 'MLineLocation', value, 'MeridianLabel', value, 'MLabelLocation', value, 'MLabelParallel', value, 'MLabelRound', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/mlabel.html'
+
+
+    "contourm [map]":
+        prefix: "contourm"
+        body: '''[${13:C}, ${14:h}] = contourm(${1:Z}, ${2:R}, ${3:optional_n}, ${4:optional_LineSpec}, 'Fill', ${5:value}, 'LabelSpacing', ${6:value}, 'LevelList', ${7:value}, 'LevelStep', ${8:value}, 'LineColor', ${9:value}, 'LineStyle', ${10:value}, 'LineWidth', ${11:value}, 'ShowText', ${12:value})'''
+        description: '''[map] Project 2-D contour plot of map data
+        [C, h] = contourm(Z, R, optional_n, optional_LineSpec, 'Fill', value, 'LabelSpacing', value, 'LevelList', value, 'LevelStep', value, 'LineColor', value, 'LineStyle', value, 'LineWidth', value, 'ShowText', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/contourm.html'
+
+
+    "showaxes [map]":
+        prefix: "showaxes"
+        body: '''showaxes(${1:optional_action})'''
+        description: '''[map] Toggle display of map coordinate axes
+        showaxes(optional_action)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/showaxes.html'
+
+
+    "patchm [map]":
+        prefix: "patchm"
+        body: '''${6:h} = patchm(${1:lat}, ${2:lon}, ${3:optional_z}, ${4:optional_cdata}, ${5:opts})'''
+        description: '''[map] Project patch objects on map axes
+        h = patchm(lat, lon, optional_z, optional_cdata, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/patchm.html'
+
+
+    "scaleruler [map]":
+        prefix: "scaleruler"
+        body: '''${25:h} = scaleruler('Azimuth', ${1:value}, 'Color', ${2:value}, 'FontAngle', ${3:value}, 'FontName', ${4:value}, 'FontSize', ${5:value}, 'FontUnits', ${6:value}, 'FontWeight', ${7:value}, 'Label', ${8:value}, 'Lat', ${9:value}, 'Long', ${10:value}, 'LineWidth', ${11:value}, 'MajorTick', ${12:value}, 'MajorTickLabel', ${13:value}, 'MajorTickLength', ${14:value}, 'MinorTick', ${15:value}, 'MinorTickLabel', ${16:value}, 'MinorTickLength', ${17:value}, 'Radius', ${18:value}, 'RulerStyle', ${19:value}, 'TickDir', ${20:value}, 'TickMode', ${21:value}, 'Units', ${22:value}, 'XLoc', ${23:value}, 'YLoc', ${24:value})'''
+        description: '''[map] Add or modify graphic scale on map axes
+        h = scaleruler('Azimuth', value, 'Color', value, 'FontAngle', value, 'FontName', value, 'FontSize', value, 'FontUnits', value, 'FontWeight', value, 'Label', value, 'Lat', value, 'Long', value, 'LineWidth', value, 'MajorTick', value, 'MajorTickLabel', value, 'MajorTickLength', value, 'MinorTick', value, 'MinorTickLabel', value, 'MinorTickLength', value, 'Radius', value, 'RulerStyle', value, 'TickDir', value, 'TickMode', value, 'Units', value, 'XLoc', value, 'YLoc', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/scaleruler.html'
+
+
+    "usamap [map]":
+        prefix: "usamap"
+        body: '''${2:h} = usamap(${1:state})'''
+        description: '''[map] Construct map axes for United States of America
+        h = usamap(state)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/usamap.html'
+
+
+    "axesm [map]":
+        prefix: "axesm"
+        body: '''axesm(${1:optional_projid}, 'MapProjection', ${2:value}, 'AngleUnits', ${3:value}, 'Aspect', ${4:value}, 'FalseEasting', ${5:value}, 'FalseNorthing', ${6:value}, 'Geoid', ${7:value}, 'MapLatLimit', ${8:value}, 'MapLonLimit', ${9:value}, 'MapParallels', ${10:value}, 'Origin', ${11:value}, 'ScaleFactor', ${12:value}, 'Zone', ${13:value}, 'Frame', ${14:value}, 'FFill', ${15:value}, 'FEdgeColor', ${16:value}, 'FFaceColor', ${17:value}, 'FLatLimit', ${18:value}, 'FLineWidth', ${19:value}, 'FLonLimit', ${20:value}, 'Grid', ${21:value}, 'GAltitude', ${22:value}, 'GColor', ${23:value}, 'GLineStyle', ${24:value}, 'GLineWidth', ${25:value}, 'MLineException', ${26:value}, 'MLineFill', ${27:value}, 'MLineLimit', ${28:value}, 'MLineLocation', ${29:value}, 'PLineException', ${30:value}, 'PLineFill', ${31:value}, 'PLineLimit', ${32:value}, 'PLineLocation', ${33:value}, 'FontColor', ${34:value}, 'FontAngle', ${35:value}, 'FontName', ${36:value}, 'FontSize', ${37:value}, 'FontUnits', ${38:value}, 'FontWeight', ${39:value}, 'LabelFormat', ${40:value}, 'LabelRotation', ${41:value}, 'LabelUnits', ${42:value}, 'MeridianLabel', ${43:value}, 'MLabelLocation', ${44:value}, 'MLabelParallel', ${45:value}, 'MLabelRound', ${46:value}, 'ParallelLabel', ${47:value}, 'PLabelLocation', ${48:value}, 'PLabelMeridian', ${49:value}, 'PLabelRound', ${50:value})'''
+        description: '''[map] Create map axes
+        axesm(optional_projid, 'MapProjection', value, 'AngleUnits', value, 'Aspect', value, 'FalseEasting', value, 'FalseNorthing', value, 'Geoid', value, 'MapLatLimit', value, 'MapLonLimit', value, 'MapParallels', value, 'Origin', value, 'ScaleFactor', value, 'Zone', value, 'Frame', value, 'FFill', value, 'FEdgeColor', value, 'FFaceColor', value, 'FLatLimit', value, 'FLineWidth', value, 'FLonLimit', value, 'Grid', value, 'GAltitude', value, 'GColor', value, 'GLineStyle', value, 'GLineWidth', value, 'MLineException', value, 'MLineFill', value, 'MLineLimit', value, 'MLineLocation', value, 'PLineException', value, 'PLineFill', value, 'PLineLimit', value, 'PLineLocation', value, 'FontColor', value, 'FontAngle', value, 'FontName', value, 'FontSize', value, 'FontUnits', value, 'FontWeight', value, 'LabelFormat', value, 'LabelRotation', value, 'LabelUnits', value, 'MeridianLabel', value, 'MLabelLocation', value, 'MLabelParallel', value, 'MLabelRound', value, 'ParallelLabel', value, 'PLabelLocation', value, 'PLabelMeridian', value, 'PLabelRound', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/axesm.html'
+
+
+    "worldmap [map]":
+        prefix: "worldmap"
+        body: '''${2:h} = worldmap(${1:region})'''
+        description: '''[map] Construct map axes for given region of world
+        h = worldmap(region)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/worldmap.html'
+
+
+    "polcmap [map]":
+        prefix: "polcmap"
+        body: '''${5:cmap} = polcmap(${1:ncolors}, ${2:huelimits}, ${3:saturationlimits}, ${4:optional_valuelimits})'''
+        description: '''[map]  Create colormap appropriate to political regions
+        cmap = polcmap(ncolors, huelimits, saturationlimits, optional_valuelimits)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/polcmap.html'
+
+
+    "gcpmap [map]":
+        prefix: "gcpmap"
+        body: '''${2:pt} = gcpmap(${1:optional_hndl})'''
+        description: '''[map] Current mouse point from map axes
+        pt = gcpmap(optional_hndl)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/gcpmap.html'
+
+
+    "quiverm [map]":
+        prefix: "quiverm"
+        body: '''${8:h} = quiverm(${1:lat}, ${2:lon}, ${3:deltalat}, ${4:deltalon}, ${5:optional_linestyle}, ${6:optional_scale}, ${7:filled})'''
+        description: '''[map] Project 2-D quiver plot on map axes
+        h = quiverm(lat, lon, deltalat, deltalon, optional_linestyle, optional_scale, filled)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/quiverm.html'
+
+
+    "contourcbar [map]":
+        prefix: "contourcbar"
+        body: '''${2:H} = contourcbar(${1:off})'''
+        description: '''[map] Color bar for filled contour map display 
+        H = contourcbar(off)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/contourcbar.html'
+
+
+    "daspectm [map]":
+        prefix: "daspectm"
+        body: '''daspectm(${1:zunits}, ${2:vfac}, ${3:lat}, ${4:long}, ${5:az}, ${6:optional_radius})'''
+        description: '''[map] Control vertical exaggeration in map display
+        daspectm(zunits, vfac, lat, long, az, optional_radius)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/daspectm.html'
+
+
+    "scatterm [map]":
+        prefix: "scatterm"
+        body: '''${8:h} = scatterm(${1:optional_ax}, ${2:lat}, ${3:lon}, ${4:optional_s}, ${5:optional_c}, ${6:filled}, ${7:m})'''
+        description: '''[map] Project point markers with variable color and area
+        h = scatterm(optional_ax, lat, lon, optional_s, optional_c, filled, m)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/scatterm.html'
+
+
+    "plot3m [map]":
+        prefix: "plot3m"
+        body: '''${6:h} = plot3m(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_linespec}, ${5:opts})'''
+        description: '''[map] Project 3-D lines and points on map axes
+        h = plot3m(lat, lon, z, optional_linespec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/plot3m.html'
+
+
+    "mdistort [map]":
+        prefix: "mdistort"
+        body: '''${2:h} = mdistort(${1:parameter})'''
+        description: '''[map] Display contours of constant map distortion
+        h = mdistort(parameter)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/mdistort.html'
+
+
+    "stem3m [map]":
+        prefix: "stem3m"
+        body: '''${6:h} = stem3m(${1:lat}, ${2:lon}, ${3:z}, ${4:optional_LineType}, ${5:opts})'''
+        description: '''[map] Project stem plot on map axes
+        h = stem3m(lat, lon, z, optional_LineType, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/stem3m.html'
+
+
+    "scircleg [map]":
+        prefix: "scircleg"
+        body: '''${6:h} = scircleg(${1:optional_track}, ${2:ncirc}, ${3:optional_npts}, ${4:optional_linestyle}, ${5:opts})'''
+        description: '''[map] Small circle defined via mouse input
+        h = scircleg(optional_track, ncirc, optional_npts, optional_linestyle, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/scircleg.html'
+
+
+    "utmzoneui [map]":
+        prefix: "utmzoneui"
+        body: '''utmzoneui(${1:optional_InitZone})'''
+        description: '''[map] Choose or identify UTM zone by clicking map
+        utmzoneui(optional_InitZone)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/utmzoneui.html'
+
+
+    "rotatetext [map]":
+        prefix: "rotatetext"
+        body: '''rotatetext(${1:objects}, ${2:rotation})'''
+        description: '''[map] Rotate text to projected graticule
+        rotatetext(objects, rotation)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/rotatetext.html'
+
+
+    "linem [map]":
+        prefix: "linem"
+        body: '''${6:h} = linem(${1:lat}, ${2:lon}, ${3:optional_z}, ${4:optional_linetype}, ${5:opts})'''
+        description: '''[map] Project line object on map axes
+        h = linem(lat, lon, optional_z, optional_linetype, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/linem.html'
+
+
+    "camupm [map]":
+        prefix: "camupm"
+        body: '''[${3:x}, ${4:y}, ${5:z}] = camupm(${1:lat}, ${2:long})'''
+        description: '''[map] Set camera up vector using geographic coordinates
+        [x, y, z] = camupm(lat, long)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/camupm.html'
+
+
+    "shaderel [map]":
+        prefix: "shaderel"
+        body: '''[${8:cindx}, ${9:cimap}, ${10:clim}] = shaderel(${1:X}, ${2:Y}, ${3:Z}, ${4:cmap}, ${5:[azim elev]}, ${6:cmapl}, ${7:optional_clim})'''
+        description: '''[map] Construct cdata and colormap for shaded
+relief
+        [cindx, cimap, clim] = shaderel(X, Y, Z, cmap, [azim elev], cmapl, optional_clim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/shaderel.html'
+
+
+    "trackui [map]":
+        prefix: "trackui"
+        body: '''trackui(${1:optional_h})'''
+        description: '''[map] GUI to display great circles and rhumb lines on map axes
+        trackui(optional_h)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/trackui.html'
+
+
+    "meshm [map]":
+        prefix: "meshm"
+        body: '''${6:H} = meshm(${1:Z}, ${2:R}, ${3:optional_gratsize}, ${4:optional_alt}, ${5:opts})'''
+        description: '''[map] Project regular data grid on map axes
+        H = meshm(Z, R, optional_gratsize, optional_alt, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/meshm.html'
+
+
+    "plabel [map]":
+        prefix: "plabel"
+        body: '''plabel(${1:meridian}, 'PLineException', ${2:value}, 'PLineFill', ${3:value}, 'PLineLimit', ${4:value}, 'PLineLocation', ${5:value}, 'ParallelLabel', ${6:value}, 'PLabelLocation', ${7:value}, 'PLabelMeridian', ${8:value}, 'PLabelRound', ${9:value})'''
+        description: '''[map] Toggle and control display of parallel labels
+        plabel(meridian, 'PLineException', value, 'PLineFill', value, 'PLineLimit', value, 'PLineLocation', value, 'ParallelLabel', value, 'PLabelLocation', value, 'PLabelMeridian', value, 'PLabelRound', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/plabel.html'
+
+
+    "camtargm [map]":
+        prefix: "camtargm"
+        body: '''[${4:x}, ${5:y}, ${6:z}] = camtargm(${1:lat}, ${2:long}, ${3:alt})'''
+        description: '''[map] Set camera target using geographic coordinates
+        [x, y, z] = camtargm(lat, long, alt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/camtargm.html'
+
+
+    "fillm [map]":
+        prefix: "fillm"
+        body: '''${5:h} = fillm(${1:lat}, ${2:lon}, ${3:optional_cdata}, ${4:opts})'''
+        description: '''[map] Project filled 2-D patch objects on map axes
+        h = fillm(lat, lon, optional_cdata, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/fillm.html'
+
+
+    "surfm [map]":
+        prefix: "surfm"
+        body: '''${6:h} = surfm(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:optional_alt}, ${5:opts})'''
+        description: '''[map] Project geolocated data grid on map axes
+        h = surfm(latlim, lonlim, Z, optional_alt, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/surfm.html'
+
+
+    "parallelui [map]":
+        prefix: "parallelui"
+        body: '''parallelui(${1:optional_opts})'''
+        description: '''[map] Interactively modify map parallels
+        parallelui(optional_opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/parallelui.html'
+
+
+    "contourcmap [map]":
+        prefix: "contourcmap"
+        body: '''${11:h} = contourcmap(${1:cmapstr}, ${2:optional_cdelta}, 'Location', ${3:value}, 'Colorbar', ${4:value}, 'ColorAlignment', ${5:value}, 'SourceObject', ${6:value}, 'TitleString', ${7:value}, 'XLabelString', ${8:value}, 'YLabelString', ${9:value}, 'ZLabelString', ${10:value})'''
+        description: '''[map] Contour colormap and colorbar for current axes
+        h = contourcmap(cmapstr, optional_cdelta, 'Location', value, 'Colorbar', value, 'ColorAlignment', value, 'SourceObject', value, 'TitleString', value, 'XLabelString', value, 'YLabelString', value, 'ZLabelString', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/contourcmap.html'
+
+
+    "contour3m [map]":
+        prefix: "contour3m"
+        body: '''[${13:C}, ${14:h}] = contour3m(${1:Z}, ${2:R}, ${3:optional_n}, ${4:optional_LineSpec}, 'Fill', ${5:value}, 'LabelSpacing', ${6:value}, 'LevelList', ${7:value}, 'LevelStep', ${8:value}, 'LineColor', ${9:value}, 'LineStyle', ${10:value}, 'LineWidth', ${11:value}, 'ShowText', ${12:value})'''
+        description: '''[map] Project 3-D contour plot of map data
+        [C, h] = contour3m(Z, R, optional_n, optional_LineSpec, 'Fill', value, 'LabelSpacing', value, 'LevelList', value, 'LevelStep', value, 'LineColor', value, 'LineStyle', value, 'LineWidth', value, 'ShowText', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/contour3m.html'
+
+
+    "scirclui [map]":
+        prefix: "scirclui"
+        body: '''scirclui(${1:optional_h})'''
+        description: '''[map] GUI to display small circles on map axes
+        scirclui(optional_h)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/scirclui.html'
+
+
+    "defaultm [map]":
+        prefix: "defaultm"
+        body: '''${2:mstruct} = defaultm(${1:mstruct})'''
+        description: '''[map] Initialize or reset map projection structure
+        mstruct = defaultm(mstruct)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/defaultm.html'
+
+
+    "trackg [map]":
+        prefix: "trackg"
+        body: '''${6:h} = trackg(${1:optional_track}, ${2:ntrax}, ${3:optional_npts}, ${4:optional_linestyle}, ${5:opts})'''
+        description: '''[map] Great circle or rhumb line defined via mouse input
+        h = trackg(optional_track, ntrax, optional_npts, optional_linestyle, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/trackg.html'
+
+
+    "setm [map]":
+        prefix: "setm"
+        body: '''setm(${1:surfhndl}, ${2:'MeshGrat'}, ${3:npts}, ${4:alt})'''
+        description: '''[map] Set properties of map axes and graphics objects
+        setm(surfhndl, 'MeshGrat', npts, alt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/setm.html'
+
+
+    "originui [map]":
+        prefix: "originui"
+        body: '''originui(${1:optional_opts})'''
+        description: '''[map] Interactively modify map origin
+        originui(optional_opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/originui.html'
+
+
+    "grid2image [map]":
+        prefix: "grid2image"
+        body: '''${4:h} = grid2image(${1:Z}, ${2:R}, ${3:opts})'''
+        description: '''[map] Display regular data grid as image
+        h = grid2image(Z, R, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/grid2image.html'
+
+
+    "handlem [map]":
+        prefix: "handlem"
+        body: '''${4:h} = handlem(${1:object}, ${2:axesh}, ${3:optional_searchmethod})'''
+        description: '''[map] Handles of displayed map objects
+        h = handlem(object, axesh, optional_searchmethod)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/handlem.html'
+
+
+    "camposm [map]":
+        prefix: "camposm"
+        body: '''[${4:x}, ${5:y}, ${6:z}] = camposm(${1:lat}, ${2:long}, ${3:alt})'''
+        description: '''[map] Set camera position using geographic coordinates
+        [x, y, z] = camposm(lat, long, alt)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/camposm.html'
+
+
+    "patchesm [map]":
+        prefix: "patchesm"
+        body: '''${6:h} = patchesm(${1:lat}, ${2:lon}, ${3:optional_z}, ${4:optional_cdata}, ${5:opts})'''
+        description: '''[map] Project patches on map axes as individual objects
+        h = patchesm(lat, lon, optional_z, optional_cdata, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/patchesm.html'
+
+
+    "gtextm [map]":
+        prefix: "gtextm"
+        body: '''${3:h} = gtextm(${1:string}, ${2:opts})'''
+        description: '''[map] Place text on map using mouse
+        h = gtextm(string, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/gtextm.html'
+
+
+    "surfacem [map]":
+        prefix: "surfacem"
+        body: '''${6:h} = surfacem(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:optional_alt}, ${5:opts})'''
+        description: '''[map] Project and add geolocated data grid to current map axes
+        h = surfacem(latlim, lonlim, Z, optional_alt, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/surfacem.html'
+
+
+    "demcmap [map]":
+        prefix: "demcmap"
+        body: '''[${6:cmap}, ${7:climits}] = demcmap(${1:literal}, ${2:Z}, ${3:deltaz}, ${4:cmapsea}, ${5:optional_cmapland})'''
+        description: '''[map] Colormaps appropriate to terrain elevation data
+        [cmap, climits] = demcmap(literal, Z, deltaz, cmapsea, optional_cmapland)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/demcmap.html'
+
+
+    "contourfm [map]":
+        prefix: "contourfm"
+        body: '''[${11:C}, ${12:h}] = contourfm(${1:Z}, ${2:R}, ${3:optional_n}, ${4:optional_LineSpec}, 'LabelSpacing', ${5:value}, 'LevelList', ${6:value}, 'LevelStep', ${7:value}, 'LineStyle', ${8:value}, 'LineWidth', ${9:value}, 'ShowText', ${10:value})'''
+        description: '''[map] Project filled 2-D contour plot of map data
+        [C, h] = contourfm(Z, R, optional_n, optional_LineSpec, 'LabelSpacing', value, 'LevelList', value, 'LevelStep', value, 'LineStyle', value, 'LineWidth', value, 'ShowText', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/contourfm.html'
+
+
+    "surflm [map]":
+        prefix: "surflm"
+        body: '''${6:h} = surflm(${1:latlim}, ${2:lonlim}, ${3:Z}, ${4:s}, ${5:optional_k})'''
+        description: '''[map] 3-D shaded surface with lighting on map axes
+        h = surflm(latlim, lonlim, Z, s, optional_k)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/surflm.html'
+
+
+    "surflsrm [map]":
+        prefix: "surflsrm"
+        body: '''${7:h} = surflsrm(${1:lat}, ${2:long}, ${3:Z}, ${4:[azim elev]}, ${5:cmap}, ${6:optional_clim})'''
+        description: '''[map] 3-D lighted shaded relief of geolocated data grid
+        h = surflsrm(lat, long, Z, [azim elev], cmap, optional_clim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/surflsrm.html'
+
+
+    "rotatem [map]":
+        prefix: "rotatem"
+        body: '''[${6:lat1}, ${7:lon1}] = rotatem(${1:lat}, ${2:lon}, ${3:origin}, ${4:transform}, ${5:optional_units})'''
+        description: '''[map] Transform vector map data to new origin and orientation
+        [lat1, lon1] = rotatem(lat, lon, origin, transform, optional_units)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/rotatem.html'
+
+
+    "meshlsrm [map]":
+        prefix: "meshlsrm"
+        body: '''${6:h} = meshlsrm(${1:Z}, ${2:R}, ${3:[azim elev]}, ${4:cmap}, ${5:optional_clim})'''
+        description: '''[map] 3-D lighted shaded relief of regular data grid
+        h = meshlsrm(Z, R, [azim elev], cmap, optional_clim)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/meshlsrm.html'
+
+
+    "gridm [map]":
+        prefix: "gridm"
+        body: '''${7:h} = gridm(${1:linespec}, 'Grid', ${2:value}, 'GAltitude', ${3:value}, 'GColor', ${4:value}, 'GLineStyle', ${5:value}, 'GLineWidth', ${6:value})'''
+        description: '''[map] Toggle and control display of graticule lines
+        h = gridm(linespec, 'Grid', value, 'GAltitude', value, 'GColor', value, 'GLineStyle', value, 'GLineWidth', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/gridm.html'
+
+
+    "plotm [map]":
+        prefix: "plotm"
+        body: '''${4:h} = plotm(${1:[lat lon]}, ${2:optional_linetype}, ${3:opts})'''
+        description: '''[map] Project 2-D lines and points on map axes
+        h = plotm([lat lon], optional_linetype, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/plotm.html'
+
+
+    "zdatam [map]":
+        prefix: "zdatam"
+        body: '''zdatam(${1:hndl}, ${2:optional_zdata})'''
+        description: '''[map] Adjust z-plane of displayed map objects
+        zdatam(hndl, optional_zdata)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/zdatam.html'
+
+
+    "northarrow [map]":
+        prefix: "northarrow"
+        body: '''northarrow('latitude', ${1:value}, 'longitude', ${2:value}, 'facecolor', ${3:value}, 'edgecolor', ${4:value}, 'linewidth', ${5:value}, 'scaleratio', ${6:value})'''
+        description: '''[map] Add graphic element pointing to geographic North Pole
+        northarrow('latitude', value, 'longitude', value, 'facecolor', value, 'edgecolor', value, 'linewidth', value, 'scaleratio', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/northarrow.html'
+
+
+    "clipdata [map]":
+        prefix: "clipdata"
+        body: '''[${4:lat}, ${5:long}, ${6:splitpts}] = clipdata(${1:lat}, ${2:long}, ${3:object})'''
+        description: '''[map] Clip data at +/-pi in longitude, +/-pi in
+latitude
+        [lat, long, splitpts] = clipdata(lat, long, object)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/clipdata.html'
+

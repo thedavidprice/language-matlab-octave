@@ -1,0 +1,30 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "write [matlab]":
+        prefix: "write"
+        body: '''write(${1:obj}, ${2:data})'''
+        description: '''[matlab] Write contents of BioRead or BioMap object to file
+        write(obj, data)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bioread.write.html'
+
+
+    "tcpclient [matlab]":
+        prefix: "tcpclient"
+        body: '''${5:t} = tcpclient(${1:Address}, ${2:Port}, 'Timeout', ${3:value}, 'ConnectTimeout', ${4:value})'''
+        description: '''[matlab] Create TCP/IP client object to communicate over TCP/IP
+        t = tcpclient(Address, Port, 'Timeout', value, 'ConnectTimeout', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tcpclient.html'
+
+
+    "read [matlab]":
+        prefix: "read"
+        body: '''${4:data} = read(${1:obj}, ${2:size}, ${3:optional_datatype})'''
+        description: '''[matlab] Read one or more entries from source file associated with
+BioIndexedFile object
+        data = read(obj, size, optional_datatype)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/readbioindexedfile.html'
+

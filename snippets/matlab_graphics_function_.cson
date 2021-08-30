@@ -1,0 +1,65 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "fcontour [matlab]":
+        prefix: "fcontour"
+        body: '''${6:h} = fcontour(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
+        description: '''[matlab] Plot contours
+        h = fcontour(optional_ax, f, optional_range, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fcontour.html'
+
+
+    "fimplicit [matlab]":
+        prefix: "fimplicit"
+        body: '''${6:h} = fimplicit(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
+        description: '''[matlab] Plot implicit function
+        h = fimplicit(optional_ax, f, optional_range, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fimplicit.html'
+
+
+    "fsurf [matlab]":
+        prefix: "fsurf"
+        body: '''${8:h} = fsurf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
+        description: '''[matlab] Plot 3-D surface
+        h = fsurf(optional_ax, x, y, z, optional_range, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fsurf.html'
+
+
+    "fmesh [matlab]":
+        prefix: "fmesh"
+        body: '''${8:h} = fmesh(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
+        description: '''[matlab] Plot 3-D mesh
+        h = fmesh(optional_ax, x, y, z, optional_range, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fmesh.html'
+
+
+    "fplot3 [matlab]":
+        prefix: "fplot3"
+        body: '''${8:h} = fplot3(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
+        description: '''[matlab] 3-D parametric curve plotter
+        h = fplot3(optional_ax, x, y, z, optional_range, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fplot3.html'
+
+
+    "fimplicit3 [matlab]":
+        prefix: "fimplicit3"
+        body: '''${6:h} = fimplicit3(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
+        description: '''[matlab] Plot 3-D implicit function
+        h = fimplicit3(optional_ax, f, optional_range, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fimplicit3.html'
+
+
+    "fplot [matlab]":
+        prefix: "fplot"
+        body: '''${7:h} = fplot(${1:optional_ax}, ${2:x}, ${3:y}, ${4:optional_range}, ${5:optional_LineSpec}, ${6:opts})'''
+        description: '''[matlab] Plot expression or function
+        h = fplot(optional_ax, x, y, optional_range, optional_LineSpec, opts)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fplot.html'
+

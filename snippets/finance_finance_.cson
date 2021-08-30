@@ -1,0 +1,440 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "modifybins [finance]":
+        prefix: "modifybins"
+        body: '''modifybins(${1:sc}, ${2:PredictorVar}, 'CutPoints', ${3:value}, 'CatGrouping', ${4:value}, 'BinLabels', ${5:value}, 'MinValue', ${6:value}, 'MaxValue', ${7:value})'''
+        description: '''[finance] Modify predictor’s bins
+        modifybins(sc, PredictorVar, 'CutPoints', value, 'CatGrouping', value, 'BinLabels', value, 'MinValue', value, 'MaxValue', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.modifybins.html'
+
+
+    "fwd2zero [finance]":
+        prefix: "fwd2zero"
+        body: '''[${8:ZeroRates}, ${9:CurveDates}] = fwd2zero(${1:forwardRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
+        description: '''[finance] Zero curve given forward curve
+        [ZeroRates, CurveDates] = fwd2zero(forwardRates, curveDates, settle, 'InputCompounding', value, 'InputBasis', value, 'OutputCompounding', value, 'OutputBasis', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/fwd2zero.html'
+
+
+    "PortfolioMAD.setSolverMINLP [finance]":
+        prefix: "PortfolioMAD.setSolverMINLP"
+        body: '''PortfolioMAD.setSolverMINLP(${1:obj}, ${2:solverType}, 'MaxIterations', ${3:value}, 'AbsoluteGapTolerance', ${4:value}, 'RelativeGapTolerance', ${5:value}, 'Display', ${6:value}, 'NonlinearScalingFactor', ${7:value}, 'ObjectiveScalingFactor', ${8:value}, 'NumIterationsEarlyIntegerConvergence', ${9:value}, 'ActiveCutTolerance', ${10:value}, 'CutGeneration', ${11:value}, 'MaxIterationsInactiveCut', ${12:value}, 'TrustRegionStartIteration', ${13:value}, 'DeltaLimit', ${14:value}, 'ShrinkRatio', ${15:value}, 'IntMasterSolverOptions', ${16:value})'''
+        description: '''[finance] 
+        PortfolioMAD.setSolverMINLP(obj, solverType, 'MaxIterations', value, 'AbsoluteGapTolerance', value, 'RelativeGapTolerance', value, 'Display', value, 'NonlinearScalingFactor', value, 'ObjectiveScalingFactor', value, 'NumIterationsEarlyIntegerConvergence', value, 'ActiveCutTolerance', value, 'CutGeneration', value, 'MaxIterationsInactiveCut', value, 'TrustRegionStartIteration', value, 'DeltaLimit', value, 'ShrinkRatio', value, 'IntMasterSolverOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioMAD.setSolverMINLP.html'
+
+
+    "Portfolio.estimateFrontierByRisk [finance]":
+        prefix: "Portfolio.estimateFrontierByRisk"
+        body: '''Portfolio.estimateFrontierByRisk(${1:obj}, ${2:TargetRisk}, 'Method', ${3:value})'''
+        description: '''[finance] 
+        Portfolio.estimateFrontierByRisk(obj, TargetRisk, 'Method', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/Portfolio.estimateFrontierByRisk.html'
+
+
+    "Portfolio.estimateAssetMoments [finance]":
+        prefix: "Portfolio.estimateAssetMoments"
+        body: '''Portfolio.estimateAssetMoments(${1:obj}, ${2:AssetReturns}, 'DataFormat', ${3:value}, 'MissingData', ${4:value}, 'GetAssetList', ${5:value})'''
+        description: '''[finance] 
+        Portfolio.estimateAssetMoments(obj, AssetReturns, 'DataFormat', value, 'MissingData', value, 'GetAssetList', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/Portfolio.estimateAssetMoments.html'
+
+
+    "displaypoints [finance]":
+        prefix: "displaypoints"
+        body: '''[${3:PointsInfo}, ${4:MinScore}, ${5:MaxScore}] = displaypoints(${1:sc}, 'ShowCategoricalMembers', ${2:value})'''
+        description: '''[finance] Return points per predictor per bin
+        [PointsInfo, MinScore, MaxScore] = displaypoints(sc, 'ShowCategoricalMembers', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.displaypoints.html'
+
+
+    "plotbins [finance]":
+        prefix: "plotbins"
+        body: '''plotbins(${1:sc}, ${2:PredictorVar}, 'BinText', ${3:value}, 'WOE', ${4:value}, 'Legend', ${5:value})'''
+        description: '''[finance] Plot histogram counts for predictor variables
+        plotbins(sc, PredictorVar, 'BinText', value, 'WOE', value, 'Legend', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.plotbins.html'
+
+
+    "PortfolioMAD.setBounds [finance]":
+        prefix: "PortfolioMAD.setBounds"
+        body: '''PortfolioMAD.setBounds(${1:obj}, ${2:LowerBound}, ${3:UpperBound}, 'BoundType', ${4:value}, 'NumAssets', ${5:value})'''
+        description: '''[finance] 
+        PortfolioMAD.setBounds(obj, LowerBound, UpperBound, 'BoundType', value, 'NumAssets', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioMAD.setBounds.html'
+
+
+    "PortfolioCVaR.setSolver [finance]":
+        prefix: "PortfolioCVaR.setSolver"
+        body: '''PortfolioCVaR.setSolver(${1:obj}, ${2:solverType}, 'Algorithm', ${3:value}, 'CheckGradients', ${4:value}, 'ConstraintTolerance', ${5:value}, 'Display', ${6:value}, 'FiniteDifferenceStepSize', ${7:value}, 'FiniteDifferenceType', ${8:value}, 'FunctionTolerance', ${9:value}, 'HonorBounds', ${10:value}, 'MaxFunctionEvaluations', ${11:value}, 'MaxIterations', ${12:value}, 'ObjectiveLimit', ${13:value}, 'OptimalityTolerance', ${14:value}, 'ScaleProblem', ${15:value}, 'SpecifyConstraintGradient', ${16:value}, 'SpecifyObjectiveGradient', ${17:value}, 'StepTolerance', ${18:value}, 'SubproblemAlgorithm', ${19:value}, 'TypicalX', ${20:value}, 'UseParallel', ${21:value})'''
+        description: '''[finance] 
+        PortfolioCVaR.setSolver(obj, solverType, 'Algorithm', value, 'CheckGradients', value, 'ConstraintTolerance', value, 'Display', value, 'FiniteDifferenceStepSize', value, 'FiniteDifferenceType', value, 'FunctionTolerance', value, 'HonorBounds', value, 'MaxFunctionEvaluations', value, 'MaxIterations', value, 'ObjectiveLimit', value, 'OptimalityTolerance', value, 'ScaleProblem', value, 'SpecifyConstraintGradient', value, 'SpecifyObjectiveGradient', value, 'StepTolerance', value, 'SubproblemAlgorithm', value, 'TypicalX', value, 'UseParallel', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioCVaR.setSolver.html'
+
+
+    "PortfolioCVaR.simulateNormalScenariosByData [finance]":
+        prefix: "PortfolioCVaR.simulateNormalScenariosByData"
+        body: '''PortfolioCVaR.simulateNormalScenariosByData(${1:obj}, ${2:AssetReturns}, ${3:NumScenarios}, 'DataFormat', ${4:value}, 'MissingData', ${5:value}, 'GetAssetList', ${6:value})'''
+        description: '''[finance] 
+        PortfolioCVaR.simulateNormalScenariosByData(obj, AssetReturns, NumScenarios, 'DataFormat', value, 'MissingData', value, 'GetAssetList', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioCVaR.simulateNormalScenariosByData.html'
+
+
+    "PortfolioMAD.estimateFrontierByRisk [finance]":
+        prefix: "PortfolioMAD.estimateFrontierByRisk"
+        body: '''PortfolioMAD.estimateFrontierByRisk(${1:obj}, ${2:TargetRisk}, 'Method', ${3:value})'''
+        description: '''[finance] 
+        PortfolioMAD.estimateFrontierByRisk(obj, TargetRisk, 'Method', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioMAD.estimateFrontierByRisk.html'
+
+
+    "validatemodel [finance]":
+        prefix: "validatemodel"
+        body: '''validatemodel(${1:sc}, 'data', ${2:value}, 'AnalysisLevel', ${3:value}, 'Plot', ${4:value})'''
+        description: '''[finance] Validate quality of credit scorecard model
+        validatemodel(sc, 'data', value, 'AnalysisLevel', value, 'Plot', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.validatemodel.html'
+
+
+    "predictorinfo [finance]":
+        prefix: "predictorinfo"
+        body: '''[${3:T}, ${4:Stats}] = predictorinfo(${1:sc}, ${2:PredictorVar})'''
+        description: '''[finance] Summary of credit scorecard predictor properties
+        [T, Stats] = predictorinfo(sc, PredictorVar)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.predictorinfo.html'
+
+
+    "transprobgrouptotals [finance]":
+        prefix: "transprobgrouptotals"
+        body: '''${3:totalsGrouped} = transprobgrouptotals(${1:totals}, ${2:groupingEdges})'''
+        description: '''[finance] Aggregate credit ratings information into fewer rating
+                categories
+        totalsGrouped = transprobgrouptotals(totals, groupingEdges)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/transprobgrouptotals.html'
+
+
+    "PortfolioMAD.simulateNormalScenariosByData [finance]":
+        prefix: "PortfolioMAD.simulateNormalScenariosByData"
+        body: '''PortfolioMAD.simulateNormalScenariosByData(${1:obj}, ${2:AssetReturns}, ${3:NumScenarios}, 'DataFormat', ${4:value}, 'MissingData', ${5:value}, 'GetAssetList', ${6:value})'''
+        description: '''[finance] 
+        PortfolioMAD.simulateNormalScenariosByData(obj, AssetReturns, NumScenarios, 'DataFormat', value, 'MissingData', value, 'GetAssetList', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioMAD.simulateNormalScenariosByData.html'
+
+
+    "creditscorecard [finance]":
+        prefix: "creditscorecard"
+        body: '''creditscorecard(${1:data}, 'ResponseVar', ${2:value}, 'GoodLabel', ${3:value}, 'IDVar', ${4:value}, 'PredictorVars', ${5:value}, 'BinMissingData', ${6:value}, 'WeightsVar', ${7:value})'''
+        description: '''[finance] 
+        creditscorecard(data, 'ResponseVar', value, 'GoodLabel', value, 'IDVar', value, 'PredictorVars', value, 'BinMissingData', value, 'WeightsVar', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.html'
+
+
+    "blsimpv [finance]":
+        prefix: "blsimpv"
+        body: '''${11:Volatility} = blsimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Yield', ${7:value}, 'Tolerance', ${8:value}, 'Class', ${9:value}, 'Method', ${10:value})'''
+        description: '''[finance] Black-Scholes implied volatility
+        Volatility = blsimpv(Price, Strike, Rate, Time, Value, 'Limit', value, 'Yield', value, 'Tolerance', value, 'Class', value, 'Method', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/blsimpv.html'
+
+
+    "Portfolio.estimateMaxSharpeRatio [finance]":
+        prefix: "Portfolio.estimateMaxSharpeRatio"
+        body: '''Portfolio.estimateMaxSharpeRatio(${1:obj}, 'Method', ${2:value})'''
+        description: '''[finance] 
+        Portfolio.estimateMaxSharpeRatio(obj, 'Method', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/Portfolio.estimateMaxSharpeRatio.html'
+
+
+    "modifypredictor [finance]":
+        prefix: "modifypredictor"
+        body: '''modifypredictor(${1:sc}, ${2:PredictorVar}, 'PredictorType', ${3:value}, 'Ordinal', ${4:value})'''
+        description: '''[finance] Set properties of credit scorecard predictors
+        modifypredictor(sc, PredictorVar, 'PredictorType', value, 'Ordinal', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.modifypredictor.html'
+
+
+    "PortfolioCVaR.setBounds [finance]":
+        prefix: "PortfolioCVaR.setBounds"
+        body: '''PortfolioCVaR.setBounds(${1:obj}, ${2:LowerBound}, ${3:UpperBound}, 'BoundType', ${4:value}, 'NumAssets', ${5:value})'''
+        description: '''[finance] 
+        PortfolioCVaR.setBounds(obj, LowerBound, UpperBound, 'BoundType', value, 'NumAssets', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioCVaR.setBounds.html'
+
+
+    "PortfolioMAD [finance]":
+        prefix: "PortfolioMAD"
+        body: '''PortfolioMAD('AssetList', ${1:value}, 'Name', ${2:value}, 'NumAssets', ${3:value}, 'InitPort', ${4:value}, 'RiskFreeRate', ${5:value}, 'Budget', ${6:value}, 'LowerBudget', ${7:value}, 'UpperBudget', ${8:value}, 'BuyCost', ${9:value}, 'SellCost', ${10:value}, 'Turnover', ${11:value}, 'BuyTurnover', ${12:value}, 'SellTurnover', ${13:value}, 'LowerBound', ${14:value}, 'UpperBound', ${15:value}, 'AEquality', ${16:value}, 'bEquality', ${17:value}, 'AInequality', ${18:value}, 'bInequality', ${19:value}, 'GroupA', ${20:value}, 'GroupB', ${21:value}, 'LowerRatio', ${22:value}, 'UpperRatio', ${23:value}, 'GroupMatrix', ${24:value}, 'LowerGroup', ${25:value}, 'UpperGroup', ${26:value}, 'Scenarios', ${27:value}, 'BoundType', ${28:value}, 'MinNumAssets', ${29:value}, 'MaxNumAssets', ${30:value})'''
+        description: '''[finance] 
+        PortfolioMAD('AssetList', value, 'Name', value, 'NumAssets', value, 'InitPort', value, 'RiskFreeRate', value, 'Budget', value, 'LowerBudget', value, 'UpperBudget', value, 'BuyCost', value, 'SellCost', value, 'Turnover', value, 'BuyTurnover', value, 'SellTurnover', value, 'LowerBound', value, 'UpperBound', value, 'AEquality', value, 'bEquality', value, 'AInequality', value, 'bInequality', value, 'GroupA', value, 'GroupB', value, 'LowerRatio', value, 'UpperRatio', value, 'GroupMatrix', value, 'LowerGroup', value, 'UpperGroup', value, 'Scenarios', value, 'BoundType', value, 'MinNumAssets', value, 'MaxNumAssets', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioMAD.html'
+
+
+    "transprobbytotals [finance]":
+        prefix: "transprobbytotals"
+        body: '''[${4:transMat}, ${5:sampleTotals}] = transprobbytotals(${1:totals}, 'snapsPerYear', ${2:value}, 'transInterval', ${3:value})'''
+        description: '''[finance] Estimate transition probabilities using totals structure
+                input
+        [transMat, sampleTotals] = transprobbytotals(totals, 'snapsPerYear', value, 'transInterval', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/transprobbytotals.html'
+
+
+    "blkimpv [finance]":
+        prefix: "blkimpv"
+        body: '''${10:Volatility} = blkimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Tolerance', ${7:value}, 'Class', ${8:value}, 'Method', ${9:value})'''
+        description: '''[finance] Implied volatility for futures options from Black model 
+        Volatility = blkimpv(Price, Strike, Rate, Time, Value, 'Limit', value, 'Tolerance', value, 'Class', value, 'Method', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/blkimpv.html'
+
+
+    "bininfo [finance]":
+        prefix: "bininfo"
+        body: '''bininfo(${1:PredictorVar}, 'Statistics', ${2:value}, 'Totals', ${3:value})'''
+        description: '''[finance] Return predictor’s bin information
+        bininfo(PredictorVar, 'Statistics', value, 'Totals', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.bininfo.html'
+
+
+    "disc2zero [finance]":
+        prefix: "disc2zero"
+        body: '''[${6:ZeroRates}, ${7:CurveDates}] = disc2zero(${1:discRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
+        description: '''[finance] Zero curve given discount curve
+        [ZeroRates, CurveDates] = disc2zero(discRates, curveDates, settle, 'Compounding', value, 'Basis', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/disc2zero.html'
+
+
+    "transprobfromthresholds [finance]":
+        prefix: "transprobfromthresholds"
+        body: '''${2:trans} = transprobfromthresholds(${1:thresh})'''
+        description: '''[finance] Convert from credit quality thresholds to transition
+                probabilities
+        trans = transprobfromthresholds(thresh)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/transprobfromthresholds.html'
+
+
+    "score [finance]":
+        prefix: "score"
+        body: '''[${3:Scores}, ${4:Points}] = score(${1:sc}, 'data', ${2:value})'''
+        description: '''[finance] Compute credit scores for given data
+        [Scores, Points] = score(sc, 'data', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.score.html'
+
+
+    "fitConstrainedModel [finance]":
+        prefix: "fitConstrainedModel"
+        body: '''fitConstrainedModel(${1:sc}, 'PredictorVars', ${2:value}, 'LowerBound', ${3:value}, 'UpperBound', ${4:value}, 'AInequality', ${5:value}, 'bInequality', ${6:value}, 'AEquality', ${7:value}, 'bEquality', ${8:value}, 'Bootstrap', ${9:value}, 'BootstrapIter', ${10:value}, 'Options', ${11:value})'''
+        description: '''[finance] Fit logistic regression model to Weight of Evidence (WOE) data subject to
+            constraints on model coefficients
+        fitConstrainedModel(sc, 'PredictorVars', value, 'LowerBound', value, 'UpperBound', value, 'AInequality', value, 'bInequality', value, 'AEquality', value, 'bEquality', value, 'Bootstrap', value, 'BootstrapIter', value, 'Options', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.fitconstrainedmodel.html'
+
+
+    "zero2fwd [finance]":
+        prefix: "zero2fwd"
+        body: '''[${8:ForwardRates}, ${9:CurveDates}] = zero2fwd(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
+        description: '''[finance] Forward curve given zero curve
+        [ForwardRates, CurveDates] = zero2fwd(zeroRates, curveDates, settle, 'InputCompounding', value, 'InputBasis', value, 'OutputCompounding', value, 'OutputBasis', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/zero2fwd.html'
+
+
+    "PortfolioCVaR [finance]":
+        prefix: "PortfolioCVaR"
+        body: '''PortfolioCVaR('AssetList', ${1:value}, 'Name', ${2:value}, 'NumAssets', ${3:value}, 'InitPort', ${4:value}, 'ProbabilityLevel', ${5:value}, 'RiskFreeRate', ${6:value}, 'Budget', ${7:value}, 'LowerBudget', ${8:value}, 'UpperBudget', ${9:value}, 'BuyCost', ${10:value}, 'SellCost', ${11:value}, 'Turnover', ${12:value}, 'BuyTurnover', ${13:value}, 'SellTurnover', ${14:value}, 'LowerBound', ${15:value}, 'UpperBound', ${16:value}, 'AEquality', ${17:value}, 'bEquality', ${18:value}, 'AInequality', ${19:value}, 'bInequality', ${20:value}, 'GroupA', ${21:value}, 'GroupB', ${22:value}, 'LowerRatio', ${23:value}, 'UpperRatio', ${24:value}, 'GroupMatrix', ${25:value}, 'LowerGroup', ${26:value}, 'UpperGroup', ${27:value}, 'ProbabilityLevel', ${28:value}, 'Scenarios', ${29:value}, 'BoundType', ${30:value}, 'MinNumAssets', ${31:value}, 'MaxNumAssets', ${32:value})'''
+        description: '''[finance] 
+        PortfolioCVaR('AssetList', value, 'Name', value, 'NumAssets', value, 'InitPort', value, 'ProbabilityLevel', value, 'RiskFreeRate', value, 'Budget', value, 'LowerBudget', value, 'UpperBudget', value, 'BuyCost', value, 'SellCost', value, 'Turnover', value, 'BuyTurnover', value, 'SellTurnover', value, 'LowerBound', value, 'UpperBound', value, 'AEquality', value, 'bEquality', value, 'AInequality', value, 'bInequality', value, 'GroupA', value, 'GroupB', value, 'LowerRatio', value, 'UpperRatio', value, 'GroupMatrix', value, 'LowerGroup', value, 'UpperGroup', value, 'ProbabilityLevel', value, 'Scenarios', value, 'BoundType', value, 'MinNumAssets', value, 'MaxNumAssets', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioCVaR.html'
+
+
+    "formatpoints [finance]":
+        prefix: "formatpoints"
+        body: '''formatpoints(${1:sc}, 'BasePoints', ${2:value}, 'Round', ${3:value}, 'Missing', ${4:value}, 'ShiftAndSlope', ${5:value}, 'WorstAndBestScores', ${6:value}, 'PointsOddsAndPDO', ${7:value})'''
+        description: '''[finance] Format scorecard points and scaling
+        formatpoints(sc, 'BasePoints', value, 'Round', value, 'Missing', value, 'ShiftAndSlope', value, 'WorstAndBestScores', value, 'PointsOddsAndPDO', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.formatpoints.html'
+
+
+    "compact [finance]":
+        prefix: "compact"
+        body: '''${2:ccsc} = compact(${1:sc})'''
+        description: '''[finance] Create compact credit scorecard
+        ccsc = compact(sc)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.compact.html'
+
+
+    "PortfolioCVaR.setSolverMINLP [finance]":
+        prefix: "PortfolioCVaR.setSolverMINLP"
+        body: '''PortfolioCVaR.setSolverMINLP(${1:obj}, ${2:solverType}, 'MaxIterations', ${3:value}, 'AbsoluteGapTolerance', ${4:value}, 'RelativeGapTolerance', ${5:value}, 'Display', ${6:value}, 'NonlinearScalingFactor', ${7:value}, 'ObjectiveScalingFactor', ${8:value}, 'NumIterationsEarlyIntegerConvergence', ${9:value}, 'ActiveCutTolerance', ${10:value}, 'CutGeneration', ${11:value}, 'MaxIterationsInactiveCut', ${12:value}, 'TrustRegionStartIteration', ${13:value}, 'DeltaLimit', ${14:value}, 'ShrinkRatio', ${15:value}, 'IntMasterSolverOptions', ${16:value})'''
+        description: '''[finance] 
+        PortfolioCVaR.setSolverMINLP(obj, solverType, 'MaxIterations', value, 'AbsoluteGapTolerance', value, 'RelativeGapTolerance', value, 'Display', value, 'NonlinearScalingFactor', value, 'ObjectiveScalingFactor', value, 'NumIterationsEarlyIntegerConvergence', value, 'ActiveCutTolerance', value, 'CutGeneration', value, 'MaxIterationsInactiveCut', value, 'TrustRegionStartIteration', value, 'DeltaLimit', value, 'ShrinkRatio', value, 'IntMasterSolverOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioCVaR.setSolverMINLP.html'
+
+
+    "autobinning [finance]":
+        prefix: "autobinning"
+        body: '''${6:sc} = autobinning(${1:sc}, 'PredictorVar', ${2:value}, 'Algorithm', ${3:value}, 'AlgorithmOptions', ${4:value}, 'Display', ${5:value})'''
+        description: '''[finance] Perform automatic binning of given predictors
+        sc = autobinning(sc, 'PredictorVar', value, 'Algorithm', value, 'AlgorithmOptions', value, 'Display', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.autobinning.html'
+
+
+    "Portfolio [finance]":
+        prefix: "Portfolio"
+        body: '''Portfolio('AssetList', ${1:value}, 'Name', ${2:value}, 'NumAssets', ${3:value}, 'InitPort', ${4:value}, 'AssetMean', ${5:value}, 'AssetCovar', ${6:value}, 'RiskFreeRate', ${7:value}, 'Budget', ${8:value}, 'LowerBudget', ${9:value}, 'UpperBudget', ${10:value}, 'BuyCost', ${11:value}, 'SellCost', ${12:value}, 'TrackingPort', ${13:value}, 'TrackingError', ${14:value}, 'Turnover', ${15:value}, 'BuyTurnover', ${16:value}, 'SellTurnover', ${17:value}, 'LowerBound', ${18:value}, 'UpperBound', ${19:value}, 'AEquality', ${20:value}, 'bEquality', ${21:value}, 'AInequality', ${22:value}, 'bInequality', ${23:value}, 'GroupA', ${24:value}, 'GroupB', ${25:value}, 'LowerRatio', ${26:value}, 'UpperRatio', ${27:value}, 'GroupMatrix', ${28:value}, 'LowerGroup', ${29:value}, 'UpperGroup', ${30:value}, 'BoundType', ${31:value}, 'MinNumAssets', ${32:value}, 'MaxNumAssets', ${33:value})'''
+        description: '''[finance] 
+        Portfolio('AssetList', value, 'Name', value, 'NumAssets', value, 'InitPort', value, 'AssetMean', value, 'AssetCovar', value, 'RiskFreeRate', value, 'Budget', value, 'LowerBudget', value, 'UpperBudget', value, 'BuyCost', value, 'SellCost', value, 'TrackingPort', value, 'TrackingError', value, 'Turnover', value, 'BuyTurnover', value, 'SellTurnover', value, 'LowerBound', value, 'UpperBound', value, 'AEquality', value, 'bEquality', value, 'AInequality', value, 'bInequality', value, 'GroupA', value, 'GroupB', value, 'LowerRatio', value, 'UpperRatio', value, 'GroupMatrix', value, 'LowerGroup', value, 'UpperGroup', value, 'BoundType', value, 'MinNumAssets', value, 'MaxNumAssets', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/Portfolio.html'
+
+
+    "PortfolioCVaR.setScenarios [finance]":
+        prefix: "PortfolioCVaR.setScenarios"
+        body: '''PortfolioCVaR.setScenarios(${1:obj}, ${2:AssetScenarios}, 'DataFormat', ${3:value}, 'GetAssetList', ${4:value})'''
+        description: '''[finance] 
+        PortfolioCVaR.setScenarios(obj, AssetScenarios, 'DataFormat', value, 'GetAssetList', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioCVaR.setScenarios.html'
+
+
+    "zero2disc [finance]":
+        prefix: "zero2disc"
+        body: '''[${6:DiscRates}, ${7:CurveDates}] = zero2disc(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
+        description: '''[finance] Discount curve given zero curve
+        [DiscRates, CurveDates] = zero2disc(zeroRates, curveDates, settle, 'Compounding', value, 'Basis', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/zero2disc.html'
+
+
+    "setmodel [finance]":
+        prefix: "setmodel"
+        body: '''setmodel(${1:sc}, ${2:ModelPredictors}, ${3:ModelCoefficients})'''
+        description: '''[finance] Set model predictors and coefficients
+        setmodel(sc, ModelPredictors, ModelCoefficients)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.setmodel.html'
+
+
+    "PortfolioMAD.setScenarios [finance]":
+        prefix: "PortfolioMAD.setScenarios"
+        body: '''PortfolioMAD.setScenarios(${1:obj}, ${2:AssetScenarios}, 'DataFormat', ${3:value}, 'GetAssetList', ${4:value})'''
+        description: '''[finance] 
+        PortfolioMAD.setScenarios(obj, AssetScenarios, 'DataFormat', value, 'GetAssetList', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioMAD.setScenarios.html'
+
+
+    "cdsspread [finance]":
+        prefix: "cdsspread"
+        body: '''[${13:Spread}, ${14:PaymentDates}, ${15:PaymentTimes}] = cdsspread(${1:ZeroData}, ${2:ProbData}, ${3:Settle}, ${4:Maturity}, 'RecoveryRate', ${5:value}, 'Period', ${6:value}, 'Basis', ${7:value}, 'BusDayConvention', ${8:value}, 'PayAccruedPremium', ${9:value}, 'TimeStep', ${10:value}, 'ZeroCompounding', ${11:value}, 'ZeroBasis', ${12:value})'''
+        description: '''[finance] Determine spread of credit default swap
+        [Spread, PaymentDates, PaymentTimes] = cdsspread(ZeroData, ProbData, Settle, Maturity, 'RecoveryRate', value, 'Period', value, 'Basis', value, 'BusDayConvention', value, 'PayAccruedPremium', value, 'TimeStep', value, 'ZeroCompounding', value, 'ZeroBasis', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/cdsspread.html'
+
+
+    "Portfolio.setSolverMINLP [finance]":
+        prefix: "Portfolio.setSolverMINLP"
+        body: '''Portfolio.setSolverMINLP(${1:obj}, ${2:solverType}, 'MaxIterations', ${3:value}, 'AbsoluteGapTolerance', ${4:value}, 'RelativeGapTolerance', ${5:value}, 'Display', ${6:value}, 'NonlinearScalingFactor', ${7:value}, 'ObjectiveScalingFactor', ${8:value}, 'NumIterationsEarlyIntegerConvergence', ${9:value}, 'ActiveCutTolerance', ${10:value}, 'CutGeneration', ${11:value}, 'MaxIterationsInactiveCut', ${12:value}, 'TrustRegionStartIteration', ${13:value}, 'DeltaLimit', ${14:value}, 'ShrinkRatio', ${15:value}, 'IntMasterSolverOptions', ${16:value})'''
+        description: '''[finance] 
+        Portfolio.setSolverMINLP(obj, solverType, 'MaxIterations', value, 'AbsoluteGapTolerance', value, 'RelativeGapTolerance', value, 'Display', value, 'NonlinearScalingFactor', value, 'ObjectiveScalingFactor', value, 'NumIterationsEarlyIntegerConvergence', value, 'ActiveCutTolerance', value, 'CutGeneration', value, 'MaxIterationsInactiveCut', value, 'TrustRegionStartIteration', value, 'DeltaLimit', value, 'ShrinkRatio', value, 'IntMasterSolverOptions', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/Portfolio.setSolverMINLP.html'
+
+
+    "transprobtothresholds [finance]":
+        prefix: "transprobtothresholds"
+        body: '''${2:thresh} = transprobtothresholds(${1:trans})'''
+        description: '''[finance] Convert from transition probabilities to credit quality
+                thresholds
+        thresh = transprobtothresholds(trans)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/transprobtothresholds.html'
+
+
+    "Portfolio.setBounds [finance]":
+        prefix: "Portfolio.setBounds"
+        body: '''Portfolio.setBounds(${1:obj}, ${2:LowerBound}, ${3:UpperBound}, 'BoundType', ${4:value}, 'NumAssets', ${5:value})'''
+        description: '''[finance] 
+        Portfolio.setBounds(obj, LowerBound, UpperBound, 'BoundType', value, 'NumAssets', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/Portfolio.setBounds.html'
+
+
+    "transprobprep [finance]":
+        prefix: "transprobprep"
+        body: '''${3:prepData} = transprobprep(${1:data}, 'labels', ${2:value})'''
+        description: '''[finance] Preprocess credit ratings data to estimate transition
+                probabilities
+        prepData = transprobprep(data, 'labels', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/transprobprep.html'
+
+
+    "fitmodel [finance]":
+        prefix: "fitmodel"
+        body: '''fitmodel(${1:sc}, 'PredictorVars', ${2:value}, 'VariableSelection', ${3:value}, 'StartingModel', ${4:value}, 'Display', ${5:value})'''
+        description: '''[finance] Fit logistic regression model to Weight of Evidence (WOE) data 
+        fitmodel(sc, 'PredictorVars', value, 'VariableSelection', value, 'StartingModel', value, 'Display', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.fitmodel.html'
+
+
+    "probdefault [finance]":
+        prefix: "probdefault"
+        body: '''${3:pd} = probdefault(${1:sc}, 'data', ${2:value})'''
+        description: '''[finance] Likelihood of default for given data set
+        pd = probdefault(sc, 'data', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/creditscorecard.probdefault.html'
+
+
+    "PortfolioMAD.setSolver [finance]":
+        prefix: "PortfolioMAD.setSolver"
+        body: '''PortfolioMAD.setSolver(${1:obj}, ${2:solverType}, 'Algorithm', ${3:value}, 'CheckGradients', ${4:value}, 'ConstraintTolerance', ${5:value}, 'Display', ${6:value}, 'FiniteDifferenceStepSize', ${7:value}, 'FiniteDifferenceType', ${8:value}, 'FunctionTolerance', ${9:value}, 'HonorBounds', ${10:value}, 'MaxFunctionEvaluations', ${11:value}, 'MaxIterations', ${12:value}, 'ObjectiveLimit', ${13:value}, 'OptimalityTolerance', ${14:value}, 'ScaleProblem', ${15:value}, 'SpecifyConstraintGradient', ${16:value}, 'SpecifyObjectiveGradient', ${17:value}, 'StepTolerance', ${18:value}, 'SubproblemAlgorithm', ${19:value}, 'TypicalX', ${20:value}, 'UseParallel', ${21:value})'''
+        description: '''[finance] 
+        PortfolioMAD.setSolver(obj, solverType, 'Algorithm', value, 'CheckGradients', value, 'ConstraintTolerance', value, 'Display', value, 'FiniteDifferenceStepSize', value, 'FiniteDifferenceType', value, 'FunctionTolerance', value, 'HonorBounds', value, 'MaxFunctionEvaluations', value, 'MaxIterations', value, 'ObjectiveLimit', value, 'OptimalityTolerance', value, 'ScaleProblem', value, 'SpecifyConstraintGradient', value, 'SpecifyObjectiveGradient', value, 'StepTolerance', value, 'SubproblemAlgorithm', value, 'TypicalX', value, 'UseParallel', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/PortfolioMAD.setSolver.html'
+
+
+    "transprob [finance]":
+        prefix: "transprob"
+        body: '''[${9:transMat}, ${10:sampleTotals}, ${11:idTotals}] = transprob(${1:data}, 'labels', ${2:value}, 'excludeLabels', ${3:value}, 'startDate', ${4:value}, 'endDate', ${5:value}, 'algorithm', ${6:value}, 'snapsPerYear', ${7:value}, 'transInterval', ${8:value})'''
+        description: '''[finance] Estimate transition probabilities from credit ratings data
+        [transMat, sampleTotals, idTotals] = transprob(data, 'labels', value, 'excludeLabels', value, 'startDate', value, 'endDate', value, 'algorithm', value, 'snapsPerYear', value, 'transInterval', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/finance/transprob.html'
+

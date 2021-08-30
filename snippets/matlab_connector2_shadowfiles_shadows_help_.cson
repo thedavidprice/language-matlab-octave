@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "help [matlab]":
+        prefix: "help"
+        body: '''help(${1:optional_filename})'''
+        description: '''[matlab] Help for design method with filter specification
+        help(optional_filename)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/help.html'
+

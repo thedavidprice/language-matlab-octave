@@ -1,0 +1,11 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+'.source.matlab, source.m':
+
+    "sscnewfile [physmod]":
+        prefix: "sscnewfile"
+        body: '''sscnewfile(${1:name}, ${2:template})'''
+        description: '''[physmod] Create new Simscape file populated by required and commonly used keywords
+        sscnewfile(name, template)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/ref/sscnewfile.html'
+
