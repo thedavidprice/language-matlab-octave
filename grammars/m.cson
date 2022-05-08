@@ -902,7 +902,7 @@ repository:
           {
             name: 'meta.function.declaration.matlab'
             begin: '\\G'
-            end: '(?<=\\))'
+            end: '(?<=[\\)\\n])'
             patterns: [
               {
                 comment: 'Function output'
@@ -942,7 +942,7 @@ repository:
               {
                 comment: 'Function name'
                 name: 'entity.name.function.matlab'
-                match: '[a-zA-Z][a-zA-Z0-9_.]*(?=\\s*\\()'
+                match: '[a-zA-Z][a-zA-Z0-9_.]*(?=[^a-zA-Z0-9_.])'
                 patterns: [
                   {
                     name: 'punctuation.accessor.dot.matlab'
